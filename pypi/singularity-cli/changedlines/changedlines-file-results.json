@@ -1,0 +1,544 @@
+{
+    "EMPTY..0.1.0": [
+        {
+            "insertions": 21,
+            "deletions": 0,
+            "lines": 21,
+            "object": "/tmp/singularity-cli-qztatfy8/LICENSE.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 0,
+            "lines": 1,
+            "object": "/tmp/singularity-cli-qztatfy8/MANIFEST.in",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 320,
+            "deletions": 0,
+            "lines": 320,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 259,
+            "deletions": 0,
+            "lines": 259,
+            "object": "/tmp/singularity-cli-qztatfy8/README.md",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 11,
+            "deletions": 0,
+            "lines": 11,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.cfg",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 54,
+            "deletions": 0,
+            "lines": 54,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 0,
+            "deletions": 0,
+            "lines": 0,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/__init__.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 46,
+            "deletions": 0,
+            "lines": 46,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/cli.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 88,
+            "deletions": 0,
+            "lines": 88,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 0,
+            "deletions": 0,
+            "lines": 0,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/__init__.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 159,
+            "deletions": 0,
+            "lines": 159,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 55,
+            "deletions": 0,
+            "lines": 55,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_state.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 16,
+            "deletions": 0,
+            "lines": 16,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_task.py",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 320,
+            "deletions": 0,
+            "lines": 320,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 19,
+            "deletions": 0,
+            "lines": 19,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/SOURCES.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 0,
+            "lines": 1,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/dependency_links.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 3,
+            "deletions": 0,
+            "lines": 3,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/entry_points.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 0,
+            "lines": 1,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/not-zip-safe",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 3,
+            "deletions": 0,
+            "lines": 3,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/requires.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 0,
+            "lines": 1,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/top_level.txt",
+            "commit": "5510ec5c9986129130d1bc75c2146f7c9a40c8fa",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        }
+    ],
+    "0.1.0..0.1.1": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "f747ddf016a1755af54e706deee0947f4d9ce94d",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "f747ddf016a1755af54e706deee0947f4d9ce94d",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "f747ddf016a1755af54e706deee0947f4d9ce94d",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 27,
+            "deletions": 10,
+            "lines": 37,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "f747ddf016a1755af54e706deee0947f4d9ce94d",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "f747ddf016a1755af54e706deee0947f4d9ce94d",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        }
+    ],
+    "0.1.1..0.1.10": [
+        {
+            "insertions": 21,
+            "deletions": 10,
+            "lines": 31,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "3102f7210758979948beb1defbc5616933ece6d5",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 83,
+            "deletions": 23,
+            "lines": 106,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "3102f7210758979948beb1defbc5616933ece6d5",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        }
+    ],
+    "0.1.10..0.1.2": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "bad6e6eaae9f1fcf30191e90a83392a0c2ec87de",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "bad6e6eaae9f1fcf30191e90a83392a0c2ec87de",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 6,
+            "deletions": 16,
+            "lines": 22,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "bad6e6eaae9f1fcf30191e90a83392a0c2ec87de",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 11,
+            "deletions": 60,
+            "lines": 71,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "bad6e6eaae9f1fcf30191e90a83392a0c2ec87de",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "bad6e6eaae9f1fcf30191e90a83392a0c2ec87de",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:44-0700"
+        }
+    ],
+    "0.1.2..0.1.4": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "92ddc814488c41fec97b3058671879648e415854",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "92ddc814488c41fec97b3058671879648e415854",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "92ddc814488c41fec97b3058671879648e415854",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 5,
+            "deletions": 2,
+            "lines": 7,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "92ddc814488c41fec97b3058671879648e415854",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "92ddc814488c41fec97b3058671879648e415854",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ],
+    "0.1.4..0.1.5": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "1a1583298591653b86af095c67c6f888f1fd01ca",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "1a1583298591653b86af095c67c6f888f1fd01ca",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 7,
+            "deletions": 2,
+            "lines": 9,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "1a1583298591653b86af095c67c6f888f1fd01ca",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 34,
+            "deletions": 5,
+            "lines": 39,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "1a1583298591653b86af095c67c6f888f1fd01ca",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "1a1583298591653b86af095c67c6f888f1fd01ca",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ],
+    "0.1.5..0.1.6": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "86199ecce3ee04c07ea3f5b0eadfe41158330f70",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "86199ecce3ee04c07ea3f5b0eadfe41158330f70",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "86199ecce3ee04c07ea3f5b0eadfe41158330f70",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "86199ecce3ee04c07ea3f5b0eadfe41158330f70",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ],
+    "0.1.6..0.1.7": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "a59ec477aba96e4ee58ea366a01b61fbe54e2dff",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "a59ec477aba96e4ee58ea366a01b61fbe54e2dff",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 3,
+            "deletions": 2,
+            "lines": 5,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/client.py",
+            "commit": "a59ec477aba96e4ee58ea366a01b61fbe54e2dff",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "a59ec477aba96e4ee58ea366a01b61fbe54e2dff",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ],
+    "0.1.7..0.1.8": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "b1237e0f42ad0c45606441a2524524b25819f9f0",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "b1237e0f42ad0c45606441a2524524b25819f9f0",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "b1237e0f42ad0c45606441a2524524b25819f9f0",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "b1237e0f42ad0c45606441a2524524b25819f9f0",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ],
+    "0.1.8..0.1.9": [
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/PKG-INFO",
+            "commit": "3af13a7a0008f8508617de3ee1a52e5047eabec2",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/setup.py",
+            "commit": "3af13a7a0008f8508617de3ee1a52e5047eabec2",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 20,
+            "deletions": 3,
+            "lines": 23,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity/commands/cmd_request.py",
+            "commit": "3af13a7a0008f8508617de3ee1a52e5047eabec2",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        },
+        {
+            "insertions": 1,
+            "deletions": 1,
+            "lines": 2,
+            "object": "/tmp/singularity-cli-qztatfy8/singularity_cli.egg-info/PKG-INFO",
+            "commit": "3af13a7a0008f8508617de3ee1a52e5047eabec2",
+            "author": "vsoch-caliper@users.noreply.github.com",
+            "timestamp": "2020-12-20T16:27:45-0700"
+        }
+    ]
+}
