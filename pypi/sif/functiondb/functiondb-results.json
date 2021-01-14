@@ -1,0 +1,446 @@
+{
+    "by-file": {
+        "0.0.1": {
+            "sif": {},
+            "sif.main": {},
+            "sif.logger": {
+                "bar": [
+                    "it",
+                    "label",
+                    "width",
+                    "hide",
+                    "empty_char",
+                    "filled_char",
+                    "expected_size",
+                    "every"
+                ],
+                "ProgressBar": {
+                    "__enter__": [
+                        "self"
+                    ],
+                    "__exit__": [
+                        "self",
+                        "exc_type",
+                        "exc_val",
+                        "exc_tb"
+                    ],
+                    "__init__": [
+                        "self",
+                        "label",
+                        "width",
+                        "hide",
+                        "empty_char",
+                        "filled_char",
+                        "expected_size",
+                        "every"
+                    ],
+                    "show": [
+                        "self",
+                        "progress",
+                        "count"
+                    ],
+                    "done": [
+                        "self"
+                    ],
+                    "format_time": [
+                        "self",
+                        "seconds"
+                    ]
+                }
+            },
+            "sif.header": {
+                "get_structure": [
+                    "version"
+                ]
+            },
+            "sif.header.v02": {
+                "HeaderBase": {
+                    "__init__": [
+                        "self",
+                        "updates"
+                    ],
+                    "__str__": [
+                        "self"
+                    ],
+                    "__repr__": [
+                        "self"
+                    ],
+                    "get_attribute": [
+                        "self",
+                        "key",
+                        "default"
+                    ],
+                    "set_attribute": [
+                        "self",
+                        "key",
+                        "value"
+                    ]
+                }
+            },
+            "sif.utils": {
+                "get_image_hash": [
+                    "image_path"
+                ],
+                "parse_image_name": [
+                    "image_name",
+                    "tag",
+                    "version",
+                    "defaults",
+                    "ext",
+                    "default_collection",
+                    "default_tag",
+                    "base"
+                ],
+                "format_container_name": [
+                    "name",
+                    "special_characters"
+                ],
+                "get_uri": [
+                    "image"
+                ],
+                "remove_uri": [
+                    "image"
+                ]
+            },
+            "sif.client": {
+                "get_parser": [],
+                "get_subparsers": [
+                    "parser"
+                ],
+                "main": []
+            }
+        },
+        "0.0.11": {
+            "sif": {},
+            "sif.main": {},
+            "sif.logger": {
+                "bar": [
+                    "it",
+                    "label",
+                    "width",
+                    "hide",
+                    "empty_char",
+                    "filled_char",
+                    "expected_size",
+                    "every"
+                ],
+                "ProgressBar": {
+                    "__enter__": [
+                        "self"
+                    ],
+                    "__exit__": [
+                        "self",
+                        "exc_type",
+                        "exc_val",
+                        "exc_tb"
+                    ],
+                    "__init__": [
+                        "self",
+                        "label",
+                        "width",
+                        "hide",
+                        "empty_char",
+                        "filled_char",
+                        "expected_size",
+                        "every"
+                    ],
+                    "show": [
+                        "self",
+                        "progress",
+                        "count"
+                    ],
+                    "done": [
+                        "self"
+                    ],
+                    "format_time": [
+                        "self",
+                        "seconds"
+                    ]
+                }
+            },
+            "sif.header": {
+                "get_structure": [
+                    "version"
+                ]
+            },
+            "sif.header.v02": {
+                "HeaderBase": {
+                    "__init__": [
+                        "self",
+                        "updates"
+                    ],
+                    "__str__": [
+                        "self"
+                    ],
+                    "__repr__": [
+                        "self"
+                    ],
+                    "get_attribute": [
+                        "self",
+                        "key",
+                        "default"
+                    ],
+                    "set_attribute": [
+                        "self",
+                        "key",
+                        "value"
+                    ]
+                }
+            },
+            "sif.utils": {
+                "get_image_hash": [
+                    "image_path"
+                ],
+                "parse_image_name": [
+                    "image_name",
+                    "tag",
+                    "version",
+                    "defaults",
+                    "ext",
+                    "default_collection",
+                    "default_tag",
+                    "base"
+                ],
+                "format_container_name": [
+                    "name",
+                    "special_characters"
+                ],
+                "get_uri": [
+                    "image"
+                ],
+                "remove_uri": [
+                    "image"
+                ]
+            },
+            "sif.client": {
+                "get_parser": [],
+                "get_subparsers": [
+                    "parser"
+                ],
+                "main": []
+            }
+        }
+    },
+    "by-group": {
+        "0.0.1": {
+            "sif": {},
+            "sif.main": {},
+            "sif.logger": {
+                "bar": [
+                    "it",
+                    "label",
+                    "width",
+                    "hide",
+                    "empty_char",
+                    "filled_char",
+                    "expected_size",
+                    "every"
+                ],
+                "ProgressBar": {
+                    "__enter__": [
+                        "self"
+                    ],
+                    "__exit__": [
+                        "self",
+                        "exc_type",
+                        "exc_val",
+                        "exc_tb"
+                    ],
+                    "__init__": [
+                        "self",
+                        "label",
+                        "width",
+                        "hide",
+                        "empty_char",
+                        "filled_char",
+                        "expected_size",
+                        "every"
+                    ],
+                    "show": [
+                        "self",
+                        "progress",
+                        "count"
+                    ],
+                    "done": [
+                        "self"
+                    ],
+                    "format_time": [
+                        "self",
+                        "seconds"
+                    ]
+                }
+            },
+            "sif.header": {
+                "get_structure": [
+                    "version"
+                ]
+            },
+            "sif.header.v02": {
+                "HeaderBase": {
+                    "__init__": [
+                        "self",
+                        "updates"
+                    ],
+                    "__str__": [
+                        "self"
+                    ],
+                    "__repr__": [
+                        "self"
+                    ],
+                    "get_attribute": [
+                        "self",
+                        "key",
+                        "default"
+                    ],
+                    "set_attribute": [
+                        "self",
+                        "key",
+                        "value"
+                    ]
+                }
+            },
+            "sif.utils": {
+                "get_image_hash": [
+                    "image_path"
+                ],
+                "parse_image_name": [
+                    "image_name",
+                    "tag",
+                    "version",
+                    "defaults",
+                    "ext",
+                    "default_collection",
+                    "default_tag",
+                    "base"
+                ],
+                "format_container_name": [
+                    "name",
+                    "special_characters"
+                ],
+                "get_uri": [
+                    "image"
+                ],
+                "remove_uri": [
+                    "image"
+                ]
+            },
+            "sif.client": {
+                "get_parser": [],
+                "get_subparsers": [
+                    "parser"
+                ],
+                "main": []
+            }
+        },
+        "0.0.11": {
+            "sif": {},
+            "sif.main": {},
+            "sif.logger": {
+                "bar": [
+                    "it",
+                    "label",
+                    "width",
+                    "hide",
+                    "empty_char",
+                    "filled_char",
+                    "expected_size",
+                    "every"
+                ],
+                "ProgressBar": {
+                    "__enter__": [
+                        "self"
+                    ],
+                    "__exit__": [
+                        "self",
+                        "exc_type",
+                        "exc_val",
+                        "exc_tb"
+                    ],
+                    "__init__": [
+                        "self",
+                        "label",
+                        "width",
+                        "hide",
+                        "empty_char",
+                        "filled_char",
+                        "expected_size",
+                        "every"
+                    ],
+                    "show": [
+                        "self",
+                        "progress",
+                        "count"
+                    ],
+                    "done": [
+                        "self"
+                    ],
+                    "format_time": [
+                        "self",
+                        "seconds"
+                    ]
+                }
+            },
+            "sif.header": {
+                "get_structure": [
+                    "version"
+                ]
+            },
+            "sif.header.v02": {
+                "HeaderBase": {
+                    "__init__": [
+                        "self",
+                        "updates"
+                    ],
+                    "__str__": [
+                        "self"
+                    ],
+                    "__repr__": [
+                        "self"
+                    ],
+                    "get_attribute": [
+                        "self",
+                        "key",
+                        "default"
+                    ],
+                    "set_attribute": [
+                        "self",
+                        "key",
+                        "value"
+                    ]
+                }
+            },
+            "sif.utils": {
+                "get_image_hash": [
+                    "image_path"
+                ],
+                "parse_image_name": [
+                    "image_name",
+                    "tag",
+                    "version",
+                    "defaults",
+                    "ext",
+                    "default_collection",
+                    "default_tag",
+                    "base"
+                ],
+                "format_container_name": [
+                    "name",
+                    "special_characters"
+                ],
+                "get_uri": [
+                    "image"
+                ],
+                "remove_uri": [
+                    "image"
+                ]
+            },
+            "sif.client": {
+                "get_parser": [],
+                "get_subparsers": [
+                    "parser"
+                ],
+                "main": []
+            }
+        }
+    }
+}
