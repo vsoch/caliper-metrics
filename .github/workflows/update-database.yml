@@ -1,13 +1,12 @@
 name: Update Database
 
 on:
-  pull_request: []
   schedule:
-    # Run nightly 1am - we will update this to weekly
+    # Run nightly 1am - we will update this to weekly once it's working
     - cron: 0 1 * * *
 
 jobs:
-  clean-jobs:
+  update-database:
 
     runs-on: ubuntu-latest
 
