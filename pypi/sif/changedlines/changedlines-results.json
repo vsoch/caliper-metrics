@@ -1,0 +1,398 @@
+{
+    "EMPTY..0.0.1": {
+        "by-file": [
+            {
+                "insertions": 661,
+                "deletions": 0,
+                "lines": 661,
+                "object": "/tmp/sif-a484nw6d/LICENSE",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 9,
+                "deletions": 0,
+                "lines": 9,
+                "object": "/tmp/sif-a484nw6d/MANIFEST.in",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 28,
+                "deletions": 0,
+                "lines": 28,
+                "object": "/tmp/sif-a484nw6d/PKG-INFO",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 8,
+                "deletions": 0,
+                "lines": 8,
+                "object": "/tmp/sif-a484nw6d/README.md",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 4,
+                "deletions": 0,
+                "lines": 4,
+                "object": "/tmp/sif-a484nw6d/setup.cfg",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 118,
+                "deletions": 0,
+                "lines": 118,
+                "object": "/tmp/sif-a484nw6d/setup.py",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 28,
+                "deletions": 0,
+                "lines": 28,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/PKG-INFO",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 12,
+                "deletions": 0,
+                "lines": 12,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/SOURCES.txt",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 0,
+                "lines": 1,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/dependency_links.txt",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 3,
+                "deletions": 0,
+                "lines": 3,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/entry_points.txt",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 0,
+                "lines": 1,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/not-zip-safe",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 0,
+                "lines": 1,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/top_level.txt",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 20,
+                "deletions": 0,
+                "lines": 20,
+                "object": "/tmp/sif-a484nw6d/sif/__init__.py",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 29,
+                "deletions": 0,
+                "lines": 29,
+                "object": "/tmp/sif-a484nw6d/sif/version.py",
+                "commit": "2555c3789a1d3f2d4c56cd5d3c2c6d6e800e58fe",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            }
+        ],
+        "by-group": {
+            "insertions": 923,
+            "deletions": 0,
+            "lines": 923
+        }
+    },
+    "0.0.1..0.0.11": {
+        "by-file": [
+            {
+                "insertions": 151,
+                "deletions": 5,
+                "lines": 156,
+                "object": "/tmp/sif-a484nw6d/PKG-INFO",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 147,
+                "deletions": 2,
+                "lines": 149,
+                "object": "/tmp/sif-a484nw6d/README.md",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 2,
+                "deletions": 2,
+                "lines": 4,
+                "object": "/tmp/sif-a484nw6d/setup.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 151,
+                "deletions": 5,
+                "lines": 156,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/PKG-INFO",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 21,
+                "deletions": 1,
+                "lines": 22,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/SOURCES.txt",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 1,
+                "lines": 2,
+                "object": "/tmp/sif-a484nw6d/sif.egg-info/entry_points.txt",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 0,
+                "lines": 1,
+                "object": "/tmp/sif-a484nw6d/sif/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 134,
+                "deletions": 0,
+                "lines": 134,
+                "object": "/tmp/sif-a484nw6d/sif/client/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 71,
+                "deletions": 0,
+                "lines": 71,
+                "object": "/tmp/sif-a484nw6d/sif/client/shell.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 44,
+                "deletions": 0,
+                "lines": 44,
+                "object": "/tmp/sif-a484nw6d/sif/defaults.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 62,
+                "deletions": 0,
+                "lines": 62,
+                "object": "/tmp/sif-a484nw6d/sif/header/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 26,
+                "deletions": 0,
+                "lines": 26,
+                "object": "/tmp/sif-a484nw6d/sif/header/v02/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 109,
+                "deletions": 0,
+                "lines": 109,
+                "object": "/tmp/sif-a484nw6d/sif/header/v02/descriptors.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 111,
+                "deletions": 0,
+                "lines": 111,
+                "object": "/tmp/sif-a484nw6d/sif/header/v02/globalHeader.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 3,
+                "deletions": 0,
+                "lines": 3,
+                "object": "/tmp/sif-a484nw6d/sif/logger/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 356,
+                "deletions": 0,
+                "lines": 356,
+                "object": "/tmp/sif-a484nw6d/sif/logger/message.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 95,
+                "deletions": 0,
+                "lines": 95,
+                "object": "/tmp/sif-a484nw6d/sif/logger/namer.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 135,
+                "deletions": 0,
+                "lines": 135,
+                "object": "/tmp/sif-a484nw6d/sif/logger/progress.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 85,
+                "deletions": 0,
+                "lines": 85,
+                "object": "/tmp/sif-a484nw6d/sif/logger/spinner.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 1,
+                "deletions": 0,
+                "lines": 1,
+                "object": "/tmp/sif-a484nw6d/sif/main/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 101,
+                "deletions": 0,
+                "lines": 101,
+                "object": "/tmp/sif-a484nw6d/sif/main/extra.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 412,
+                "deletions": 0,
+                "lines": 412,
+                "object": "/tmp/sif-a484nw6d/sif/main/header.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 18,
+                "deletions": 0,
+                "lines": 18,
+                "object": "/tmp/sif-a484nw6d/sif/utils/__init__.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 109,
+                "deletions": 0,
+                "lines": 109,
+                "object": "/tmp/sif-a484nw6d/sif/utils/cache.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 210,
+                "deletions": 0,
+                "lines": 210,
+                "object": "/tmp/sif-a484nw6d/sif/utils/fileio.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 180,
+                "deletions": 0,
+                "lines": 180,
+                "object": "/tmp/sif-a484nw6d/sif/utils/names.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 141,
+                "deletions": 0,
+                "lines": 141,
+                "object": "/tmp/sif-a484nw6d/sif/utils/terminal.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            },
+            {
+                "insertions": 2,
+                "deletions": 2,
+                "lines": 4,
+                "object": "/tmp/sif-a484nw6d/sif/version.py",
+                "commit": "4942a30d120946d85431f7049fe1f61af33947d8",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-01-16T22:40:33-0700"
+            }
+        ],
+        "by-group": {
+            "insertions": 2879,
+            "deletions": 18,
+            "lines": 2897
+        }
+    }
+}

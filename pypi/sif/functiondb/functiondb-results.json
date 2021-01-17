@@ -1,747 +1,287 @@
 {
-    "by-file": {
-        "0.0.1": {
-            "sif.defaults": {},
-            "sif.__init__": {},
-            "sif.version": {},
-            "sif.main.header": {
-                "SIFHeader": {
-                    "__init__": [
-                        "self",
-                        "image",
-                        "load_header",
-                        "version"
-                    ],
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ],
-                    "print_header": [
-                        "self"
-                    ],
-                    "print_descriptor": [
-                        "self",
-                        "descriptor",
-                        "skip_keys"
-                    ],
-                    "print_descriptor_deffile": [
-                        "self"
-                    ],
-                    "print_descriptor_partition": [
-                        "self"
-                    ],
-                    "print_descriptor_signature": [
-                        "self"
-                    ],
-                    "print_deffile": [
-                        "self"
-                    ],
-                    "print_arch": [
-                        "self"
-                    ],
-                    "is_sif": [
-                        "self",
-                        "image"
-                    ],
-                    "unpack_chars": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number",
-                        "encoding"
-                    ],
-                    "load_base": [
-                        "self",
-                        "version"
-                    ],
-                    "read_and_strip": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "read_bytes": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "unpack_bytes": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "load_header": [
-                        "self"
-                    ],
-                    "_load_deffile": [
-                        "self"
-                    ],
-                    "_load_partition": [
-                        "self"
-                    ],
-                    "_load_signature": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.main.__init__": {},
-            "sif.logger.spinner": {
-                "Spinner": {
-                    "spinning_cursor": [],
-                    "balloons_cursor": [],
-                    "changing_arrows": [],
-                    "select_generator": [
-                        "self",
-                        "generator"
-                    ],
-                    "__init__": [
-                        "self",
-                        "delay",
-                        "generator"
-                    ],
-                    "run": [
-                        "self"
-                    ],
-                    "start": [
-                        "self"
-                    ],
-                    "stop": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.logger.namer": {
-                "main": [],
-                "RobotNamer": {
-                    "generate": [
-                        "self",
-                        "delim",
-                        "length",
-                        "chars"
-                    ],
-                    "_select": [
-                        "self",
-                        "select_from"
-                    ]
-                }
-            },
-            "sif.logger.__init__": {},
-            "sif.logger.message": {
-                "get_logging_level": [],
-                "get_user_color_preference": [],
-                "convert2boolean": [
-                    "arg"
-                ],
-                "SIFMessage": {
-                    "__init__": [
-                        "self",
-                        "MESSAGELEVEL"
-                    ],
-                    "useColor": [
-                        "self"
-                    ],
-                    "addColor": [
-                        "self",
-                        "level",
-                        "text"
-                    ],
-                    "emitError": [
-                        "self",
-                        "level"
-                    ],
-                    "emitOutput": [
-                        "self",
-                        "level"
-                    ],
-                    "isEnabledFor": [
-                        "self",
-                        "messageLevel"
-                    ],
-                    "emit": [
-                        "self",
-                        "level",
-                        "message",
-                        "prefix",
-                        "color"
-                    ],
-                    "write": [
-                        "self",
-                        "stream",
-                        "message"
-                    ],
-                    "get_logs": [
-                        "self",
-                        "join_newline"
-                    ],
-                    "show_progress": [
-                        "self",
-                        "iteration",
-                        "total",
-                        "length",
-                        "min_level",
-                        "prefix",
-                        "carriage_return",
-                        "suffix",
-                        "symbol"
-                    ],
-                    "abort": [
-                        "self",
-                        "message"
-                    ],
-                    "critical": [
-                        "self",
-                        "message"
-                    ],
-                    "error": [
-                        "self",
-                        "message"
-                    ],
-                    "exit": [
-                        "self",
-                        "message",
-                        "return_code"
-                    ],
-                    "warning": [
-                        "self",
-                        "message"
-                    ],
-                    "log": [
-                        "self",
-                        "message"
-                    ],
-                    "custom": [
-                        "self",
-                        "prefix",
-                        "message",
-                        "color"
-                    ],
-                    "info": [
-                        "self",
-                        "message"
-                    ],
-                    "newline": [
-                        "self"
-                    ],
-                    "verbose": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose1": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose2": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose3": [
-                        "self",
-                        "message"
-                    ],
-                    "debug": [
-                        "self",
-                        "message"
-                    ],
-                    "is_quiet": [
-                        "self"
-                    ],
-                    "table": [
-                        "self",
-                        "rows",
-                        "col_width"
-                    ]
-                }
-            },
-            "sif.logger.progress": {
-                "bar": [
-                    "it",
-                    "label",
-                    "width",
-                    "hide",
-                    "empty_char",
-                    "filled_char",
-                    "expected_size",
-                    "every"
-                ],
-                "ProgressBar": {
-                    "__enter__": [
-                        "self"
-                    ],
-                    "__exit__": [
-                        "self",
-                        "exc_type",
-                        "exc_val",
-                        "exc_tb"
-                    ],
-                    "__init__": [
-                        "self",
-                        "label",
-                        "width",
-                        "hide",
-                        "empty_char",
-                        "filled_char",
-                        "expected_size",
-                        "every"
-                    ],
-                    "show": [
-                        "self",
-                        "progress",
-                        "count"
-                    ],
-                    "done": [
-                        "self"
-                    ],
-                    "format_time": [
-                        "self",
-                        "seconds"
-                    ]
-                }
-            },
-            "sif.header.__init__": {
-                "get_structure": [
+    "0.0.1": {
+        "sif": {},
+        "sif.version": {}
+    },
+    "0.0.11": {
+        "sif.defaults": {},
+        "sif": {},
+        "sif.version": {},
+        "sif.main.header": {
+            "SIFHeader": {
+                "__init__": [
+                    "self",
+                    "image",
+                    "load_header",
                     "version"
-                ]
-            },
-            "sif.header.v02.__init__": {},
-            "sif.header.v02.descriptors": {
-                "Descriptor": {
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ]
-                },
-                "Deffile": {
-                    "__init__": [
-                        "self"
-                    ]
-                },
-                "Partition": {
-                    "__init__": [
-                        "self"
-                    ]
-                },
-                "Signature": {
-                    "__init__": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.header.v02.globalHeader": {
-                "HeaderBase": {
-                    "__init__": [
-                        "self",
-                        "updates"
-                    ],
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ],
-                    "get_attribute": [
-                        "self",
-                        "key",
-                        "default"
-                    ],
-                    "set_attribute": [
-                        "self",
-                        "key",
-                        "value"
-                    ]
-                }
-            },
-            "sif.utils.terminal": {
-                "get_singularity_version": [
-                    "singularity_version"
                 ],
-                "which": [
-                    "software",
-                    "strip_newline"
+                "__str__": [
+                    "self"
                 ],
-                "check_install": [
-                    "software",
-                    "quiet"
+                "__repr__": [
+                    "self"
                 ],
-                "get_installdir": [],
-                "run_command": [
-                    "cmd",
-                    "sudo"
-                ]
-            },
-            "sif.utils.__init__": {},
-            "sif.utils.cache": {
-                "clean_path": [
-                    "path"
+                "print_header": [
+                    "self"
                 ],
-                "convert2boolean": [
-                    "arg"
+                "print_descriptor": [
+                    "self",
+                    "descriptor",
+                    "skip_keys"
                 ],
-                "getenv": [
-                    "variable_key",
-                    "default",
-                    "required",
-                    "silent"
+                "print_descriptor_deffile": [
+                    "self"
                 ],
-                "get_cache": [
-                    "subfolder",
-                    "quiet"
-                ]
-            },
-            "sif.utils.fileio": {
-                "mkdir_p": [
-                    "path"
+                "print_descriptor_partition": [
+                    "self"
                 ],
-                "get_tmpfile": [
-                    "requested_tmpdir",
-                    "prefix"
+                "print_descriptor_signature": [
+                    "self"
                 ],
-                "get_tmpdir": [
-                    "requested_tmpdir",
-                    "prefix",
-                    "create"
+                "print_deffile": [
+                    "self"
                 ],
-                "get_userhome": [],
-                "extract_tar": [
-                    "archive",
-                    "output_folder",
-                    "handle_whiteout"
+                "print_arch": [
+                    "self"
                 ],
-                "write_file": [
-                    "filename",
-                    "content",
-                    "mode"
-                ],
-                "write_json": [
-                    "json_obj",
-                    "filename",
-                    "mode",
-                    "print_pretty"
-                ],
-                "print_json": [
-                    "json_obj"
-                ],
-                "read_file": [
-                    "filename",
-                    "mode",
-                    "readlines"
-                ],
-                "read_json": [
-                    "filename",
-                    "mode"
-                ]
-            },
-            "sif.utils.names": {
-                "get_image_hash": [
-                    "image_path"
-                ],
-                "parse_image_name": [
-                    "image_name",
-                    "tag",
-                    "version",
-                    "defaults",
-                    "ext",
-                    "default_collection",
-                    "default_tag",
-                    "base"
-                ],
-                "format_container_name": [
-                    "name",
-                    "special_characters"
-                ],
-                "get_uri": [
+                "is_sif": [
+                    "self",
                     "image"
                 ],
-                "remove_uri": [
-                    "image"
+                "unpack_chars": [
+                    "self",
+                    "filey",
+                    "fmt",
+                    "number",
+                    "encoding"
+                ],
+                "load_base": [
+                    "self",
+                    "version"
+                ],
+                "read_and_strip": [
+                    "self",
+                    "filey",
+                    "fmt",
+                    "number"
+                ],
+                "read_bytes": [
+                    "self",
+                    "filey",
+                    "fmt",
+                    "number"
+                ],
+                "unpack_bytes": [
+                    "self",
+                    "filey",
+                    "fmt",
+                    "number"
+                ],
+                "load_header": [
+                    "self"
+                ],
+                "_load_deffile": [
+                    "self"
+                ],
+                "_load_partition": [
+                    "self"
+                ],
+                "_load_signature": [
+                    "self"
                 ]
-            },
-            "sif.client.shell": {
-                "main": [
-                    "args"
-                ],
-                "ipython": [
-                    "image"
-                ],
-                "bpython": [
-                    "image"
-                ],
-                "python": [
-                    "image"
-                ]
-            },
-            "sif.client.__init__": {
-                "get_parser": [],
-                "get_subparsers": [
-                    "parser"
-                ],
-                "main": []
             }
         },
-        "0.0.11": {
-            "sif.defaults": {},
-            "sif.__init__": {},
-            "sif.version": {},
-            "sif.main.header": {
-                "SIFHeader": {
-                    "__init__": [
-                        "self",
-                        "image",
-                        "load_header",
-                        "version"
-                    ],
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ],
-                    "print_header": [
-                        "self"
-                    ],
-                    "print_descriptor": [
-                        "self",
-                        "descriptor",
-                        "skip_keys"
-                    ],
-                    "print_descriptor_deffile": [
-                        "self"
-                    ],
-                    "print_descriptor_partition": [
-                        "self"
-                    ],
-                    "print_descriptor_signature": [
-                        "self"
-                    ],
-                    "print_deffile": [
-                        "self"
-                    ],
-                    "print_arch": [
-                        "self"
-                    ],
-                    "is_sif": [
-                        "self",
-                        "image"
-                    ],
-                    "unpack_chars": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number",
-                        "encoding"
-                    ],
-                    "load_base": [
-                        "self",
-                        "version"
-                    ],
-                    "read_and_strip": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "read_bytes": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "unpack_bytes": [
-                        "self",
-                        "filey",
-                        "fmt",
-                        "number"
-                    ],
-                    "load_header": [
-                        "self"
-                    ],
-                    "_load_deffile": [
-                        "self"
-                    ],
-                    "_load_partition": [
-                        "self"
-                    ],
-                    "_load_signature": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.main.__init__": {},
-            "sif.logger.spinner": {
-                "Spinner": {
-                    "spinning_cursor": [],
-                    "balloons_cursor": [],
-                    "changing_arrows": [],
-                    "select_generator": [
-                        "self",
-                        "generator"
-                    ],
-                    "__init__": [
-                        "self",
-                        "delay",
-                        "generator"
-                    ],
-                    "run": [
-                        "self"
-                    ],
-                    "start": [
-                        "self"
-                    ],
-                    "stop": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.logger.namer": {
-                "main": [],
-                "RobotNamer": {
-                    "generate": [
-                        "self",
-                        "delim",
-                        "length",
-                        "chars"
-                    ],
-                    "_select": [
-                        "self",
-                        "select_from"
-                    ]
-                }
-            },
-            "sif.logger.__init__": {},
-            "sif.logger.message": {
-                "get_logging_level": [],
-                "get_user_color_preference": [],
-                "convert2boolean": [
-                    "arg"
+        "sif.main": {},
+        "sif.logger.spinner": {
+            "Spinner": {
+                "spinning_cursor": [],
+                "balloons_cursor": [],
+                "changing_arrows": [],
+                "select_generator": [
+                    "self",
+                    "generator"
                 ],
-                "SIFMessage": {
-                    "__init__": [
-                        "self",
-                        "MESSAGELEVEL"
-                    ],
-                    "useColor": [
-                        "self"
-                    ],
-                    "addColor": [
-                        "self",
-                        "level",
-                        "text"
-                    ],
-                    "emitError": [
-                        "self",
-                        "level"
-                    ],
-                    "emitOutput": [
-                        "self",
-                        "level"
-                    ],
-                    "isEnabledFor": [
-                        "self",
-                        "messageLevel"
-                    ],
-                    "emit": [
-                        "self",
-                        "level",
-                        "message",
-                        "prefix",
-                        "color"
-                    ],
-                    "write": [
-                        "self",
-                        "stream",
-                        "message"
-                    ],
-                    "get_logs": [
-                        "self",
-                        "join_newline"
-                    ],
-                    "show_progress": [
-                        "self",
-                        "iteration",
-                        "total",
-                        "length",
-                        "min_level",
-                        "prefix",
-                        "carriage_return",
-                        "suffix",
-                        "symbol"
-                    ],
-                    "abort": [
-                        "self",
-                        "message"
-                    ],
-                    "critical": [
-                        "self",
-                        "message"
-                    ],
-                    "error": [
-                        "self",
-                        "message"
-                    ],
-                    "exit": [
-                        "self",
-                        "message",
-                        "return_code"
-                    ],
-                    "warning": [
-                        "self",
-                        "message"
-                    ],
-                    "log": [
-                        "self",
-                        "message"
-                    ],
-                    "custom": [
-                        "self",
-                        "prefix",
-                        "message",
-                        "color"
-                    ],
-                    "info": [
-                        "self",
-                        "message"
-                    ],
-                    "newline": [
-                        "self"
-                    ],
-                    "verbose": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose1": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose2": [
-                        "self",
-                        "message"
-                    ],
-                    "verbose3": [
-                        "self",
-                        "message"
-                    ],
-                    "debug": [
-                        "self",
-                        "message"
-                    ],
-                    "is_quiet": [
-                        "self"
-                    ],
-                    "table": [
-                        "self",
-                        "rows",
-                        "col_width"
-                    ]
-                }
-            },
-            "sif.logger.progress": {
-                "bar": [
-                    "it",
+                "__init__": [
+                    "self",
+                    "delay",
+                    "generator"
+                ],
+                "run": [
+                    "self"
+                ],
+                "start": [
+                    "self"
+                ],
+                "stop": [
+                    "self"
+                ]
+            }
+        },
+        "sif.logger.namer": {
+            "main": [],
+            "RobotNamer": {
+                "generate": [
+                    "self",
+                    "delim",
+                    "length",
+                    "chars"
+                ],
+                "_select": [
+                    "self",
+                    "select_from"
+                ]
+            }
+        },
+        "sif.logger": {},
+        "sif.logger.message": {
+            "get_logging_level": [],
+            "get_user_color_preference": [],
+            "convert2boolean": [
+                "arg"
+            ],
+            "SIFMessage": {
+                "__init__": [
+                    "self",
+                    "MESSAGELEVEL"
+                ],
+                "useColor": [
+                    "self"
+                ],
+                "addColor": [
+                    "self",
+                    "level",
+                    "text"
+                ],
+                "emitError": [
+                    "self",
+                    "level"
+                ],
+                "emitOutput": [
+                    "self",
+                    "level"
+                ],
+                "isEnabledFor": [
+                    "self",
+                    "messageLevel"
+                ],
+                "emit": [
+                    "self",
+                    "level",
+                    "message",
+                    "prefix",
+                    "color"
+                ],
+                "write": [
+                    "self",
+                    "stream",
+                    "message"
+                ],
+                "get_logs": [
+                    "self",
+                    "join_newline"
+                ],
+                "show_progress": [
+                    "self",
+                    "iteration",
+                    "total",
+                    "length",
+                    "min_level",
+                    "prefix",
+                    "carriage_return",
+                    "suffix",
+                    "symbol"
+                ],
+                "abort": [
+                    "self",
+                    "message"
+                ],
+                "critical": [
+                    "self",
+                    "message"
+                ],
+                "error": [
+                    "self",
+                    "message"
+                ],
+                "exit": [
+                    "self",
+                    "message",
+                    "return_code"
+                ],
+                "warning": [
+                    "self",
+                    "message"
+                ],
+                "log": [
+                    "self",
+                    "message"
+                ],
+                "custom": [
+                    "self",
+                    "prefix",
+                    "message",
+                    "color"
+                ],
+                "info": [
+                    "self",
+                    "message"
+                ],
+                "newline": [
+                    "self"
+                ],
+                "verbose": [
+                    "self",
+                    "message"
+                ],
+                "verbose1": [
+                    "self",
+                    "message"
+                ],
+                "verbose2": [
+                    "self",
+                    "message"
+                ],
+                "verbose3": [
+                    "self",
+                    "message"
+                ],
+                "debug": [
+                    "self",
+                    "message"
+                ],
+                "is_quiet": [
+                    "self"
+                ],
+                "table": [
+                    "self",
+                    "rows",
+                    "col_width"
+                ]
+            }
+        },
+        "sif.logger.progress": {
+            "bar": [
+                "it",
+                "label",
+                "width",
+                "hide",
+                "empty_char",
+                "filled_char",
+                "expected_size",
+                "every"
+            ],
+            "ProgressBar": {
+                "__enter__": [
+                    "self"
+                ],
+                "__exit__": [
+                    "self",
+                    "exc_type",
+                    "exc_val",
+                    "exc_tb"
+                ],
+                "__init__": [
+                    "self",
                     "label",
                     "width",
                     "hide",
@@ -750,222 +290,200 @@
                     "expected_size",
                     "every"
                 ],
-                "ProgressBar": {
-                    "__enter__": [
-                        "self"
-                    ],
-                    "__exit__": [
-                        "self",
-                        "exc_type",
-                        "exc_val",
-                        "exc_tb"
-                    ],
-                    "__init__": [
-                        "self",
-                        "label",
-                        "width",
-                        "hide",
-                        "empty_char",
-                        "filled_char",
-                        "expected_size",
-                        "every"
-                    ],
-                    "show": [
-                        "self",
-                        "progress",
-                        "count"
-                    ],
-                    "done": [
-                        "self"
-                    ],
-                    "format_time": [
-                        "self",
-                        "seconds"
-                    ]
-                }
-            },
-            "sif.header.__init__": {
-                "get_structure": [
-                    "version"
+                "show": [
+                    "self",
+                    "progress",
+                    "count"
+                ],
+                "done": [
+                    "self"
+                ],
+                "format_time": [
+                    "self",
+                    "seconds"
                 ]
-            },
-            "sif.header.v02.__init__": {},
-            "sif.header.v02.descriptors": {
-                "Descriptor": {
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ]
-                },
-                "Deffile": {
-                    "__init__": [
-                        "self"
-                    ]
-                },
-                "Partition": {
-                    "__init__": [
-                        "self"
-                    ]
-                },
-                "Signature": {
-                    "__init__": [
-                        "self"
-                    ]
-                }
-            },
-            "sif.header.v02.globalHeader": {
-                "HeaderBase": {
-                    "__init__": [
-                        "self",
-                        "updates"
-                    ],
-                    "__str__": [
-                        "self"
-                    ],
-                    "__repr__": [
-                        "self"
-                    ],
-                    "get_attribute": [
-                        "self",
-                        "key",
-                        "default"
-                    ],
-                    "set_attribute": [
-                        "self",
-                        "key",
-                        "value"
-                    ]
-                }
-            },
-            "sif.utils.terminal": {
-                "get_singularity_version": [
-                    "singularity_version"
-                ],
-                "which": [
-                    "software",
-                    "strip_newline"
-                ],
-                "check_install": [
-                    "software",
-                    "quiet"
-                ],
-                "get_installdir": [],
-                "run_command": [
-                    "cmd",
-                    "sudo"
-                ]
-            },
-            "sif.utils.__init__": {},
-            "sif.utils.cache": {
-                "clean_path": [
-                    "path"
-                ],
-                "convert2boolean": [
-                    "arg"
-                ],
-                "getenv": [
-                    "variable_key",
-                    "default",
-                    "required",
-                    "silent"
-                ],
-                "get_cache": [
-                    "subfolder",
-                    "quiet"
-                ]
-            },
-            "sif.utils.fileio": {
-                "mkdir_p": [
-                    "path"
-                ],
-                "get_tmpfile": [
-                    "requested_tmpdir",
-                    "prefix"
-                ],
-                "get_tmpdir": [
-                    "requested_tmpdir",
-                    "prefix",
-                    "create"
-                ],
-                "get_userhome": [],
-                "extract_tar": [
-                    "archive",
-                    "output_folder",
-                    "handle_whiteout"
-                ],
-                "write_file": [
-                    "filename",
-                    "content",
-                    "mode"
-                ],
-                "write_json": [
-                    "json_obj",
-                    "filename",
-                    "mode",
-                    "print_pretty"
-                ],
-                "print_json": [
-                    "json_obj"
-                ],
-                "read_file": [
-                    "filename",
-                    "mode",
-                    "readlines"
-                ],
-                "read_json": [
-                    "filename",
-                    "mode"
-                ]
-            },
-            "sif.utils.names": {
-                "get_image_hash": [
-                    "image_path"
-                ],
-                "parse_image_name": [
-                    "image_name",
-                    "tag",
-                    "version",
-                    "defaults",
-                    "ext",
-                    "default_collection",
-                    "default_tag",
-                    "base"
-                ],
-                "format_container_name": [
-                    "name",
-                    "special_characters"
-                ],
-                "get_uri": [
-                    "image"
-                ],
-                "remove_uri": [
-                    "image"
-                ]
-            },
-            "sif.client.shell": {
-                "main": [
-                    "args"
-                ],
-                "ipython": [
-                    "image"
-                ],
-                "bpython": [
-                    "image"
-                ],
-                "python": [
-                    "image"
-                ]
-            },
-            "sif.client.__init__": {
-                "get_parser": [],
-                "get_subparsers": [
-                    "parser"
-                ],
-                "main": []
             }
+        },
+        "sif.header": {
+            "get_structure": [
+                "version"
+            ]
+        },
+        "sif.header.v02": {},
+        "sif.header.v02.descriptors": {
+            "Descriptor": {
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "Deffile": {
+                "__init__": [
+                    "self"
+                ]
+            },
+            "Partition": {
+                "__init__": [
+                    "self"
+                ]
+            },
+            "Signature": {
+                "__init__": [
+                    "self"
+                ]
+            }
+        },
+        "sif.header.v02.globalHeader": {
+            "HeaderBase": {
+                "__init__": [
+                    "self",
+                    "updates"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "get_attribute": [
+                    "self",
+                    "key",
+                    "default"
+                ],
+                "set_attribute": [
+                    "self",
+                    "key",
+                    "value"
+                ]
+            }
+        },
+        "sif.utils.terminal": {
+            "get_singularity_version": [
+                "singularity_version"
+            ],
+            "which": [
+                "software",
+                "strip_newline"
+            ],
+            "check_install": [
+                "software",
+                "quiet"
+            ],
+            "get_installdir": [],
+            "run_command": [
+                "cmd",
+                "sudo"
+            ]
+        },
+        "sif.utils": {},
+        "sif.utils.cache": {
+            "clean_path": [
+                "path"
+            ],
+            "convert2boolean": [
+                "arg"
+            ],
+            "getenv": [
+                "variable_key",
+                "default",
+                "required",
+                "silent"
+            ],
+            "get_cache": [
+                "subfolder",
+                "quiet"
+            ]
+        },
+        "sif.utils.fileio": {
+            "mkdir_p": [
+                "path"
+            ],
+            "get_tmpfile": [
+                "requested_tmpdir",
+                "prefix"
+            ],
+            "get_tmpdir": [
+                "requested_tmpdir",
+                "prefix",
+                "create"
+            ],
+            "get_userhome": [],
+            "extract_tar": [
+                "archive",
+                "output_folder",
+                "handle_whiteout"
+            ],
+            "write_file": [
+                "filename",
+                "content",
+                "mode"
+            ],
+            "write_json": [
+                "json_obj",
+                "filename",
+                "mode",
+                "print_pretty"
+            ],
+            "print_json": [
+                "json_obj"
+            ],
+            "read_file": [
+                "filename",
+                "mode",
+                "readlines"
+            ],
+            "read_json": [
+                "filename",
+                "mode"
+            ]
+        },
+        "sif.utils.names": {
+            "get_image_hash": [
+                "image_path"
+            ],
+            "parse_image_name": [
+                "image_name",
+                "tag",
+                "version",
+                "defaults",
+                "ext",
+                "default_collection",
+                "default_tag",
+                "base"
+            ],
+            "format_container_name": [
+                "name",
+                "special_characters"
+            ],
+            "get_uri": [
+                "image"
+            ],
+            "remove_uri": [
+                "image"
+            ]
+        },
+        "sif.client.shell": {
+            "main": [
+                "args"
+            ],
+            "ipython": [
+                "image"
+            ],
+            "bpython": [
+                "image"
+            ],
+            "python": [
+                "image"
+            ]
+        },
+        "sif.client": {
+            "get_parser": [],
+            "get_subparsers": [
+                "parser"
+            ],
+            "main": []
         }
-    },
-    "by-group": []
+    }
 }

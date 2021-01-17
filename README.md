@@ -7,6 +7,12 @@ Both the library and data repository are under development. Example extractions 
 $ caliper extract pypi:sif --metric functiondb
 ```
 
+or for a larger project (that we need zip for)
+
+```bash
+$ caliper extract --metric functiondb --fmt zip pypi:tensorflow
+```
+
 to generate output in the present working directory under [pypi](pypi) or another
 package manager, respectfully. Each metric output file is organized by a complete
 version (e.g., `0.0.11`) in the case of a `MetricBase`, or a range (e.g., `0.0.1..0.0.11`)
