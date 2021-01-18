@@ -1,0 +1,6264 @@
+{
+    "0.9.0": {
+        "scipy.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy": {},
+        "scipy.version": {},
+        "scipy.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path",
+                "setup_name"
+            ]
+        },
+        "scipy.ndimage.measurements": {
+            "label": [
+                "input",
+                "structure",
+                "output"
+            ],
+            "find_objects": [
+                "input",
+                "max_label"
+            ],
+            "labeled_comprehension": [
+                "input",
+                "labels",
+                "index",
+                "func",
+                "out_dtype",
+                "default",
+                "pass_positions"
+            ],
+            "_safely_castable_to_int": [
+                "dt"
+            ],
+            "_stats": [
+                "input",
+                "labels",
+                "index",
+                "centered"
+            ],
+            "sum": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "mean": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "variance": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "standard_deviation": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "_select": [
+                "input",
+                "labels",
+                "index",
+                "find_min",
+                "find_max",
+                "find_min_positions",
+                "find_max_positions"
+            ],
+            "minimum": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "maximum": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "minimum_position": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "maximum_position": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "extrema": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "center_of_mass": [
+                "input",
+                "labels",
+                "index"
+            ],
+            "histogram": [
+                "input",
+                "min",
+                "max",
+                "bins",
+                "labels",
+                "index"
+            ],
+            "watershed_ift": [
+                "input",
+                "markers",
+                "structure",
+                "output"
+            ]
+        },
+        "scipy.ndimage.io": {
+            "imread": [
+                "fname",
+                "flatten"
+            ]
+        },
+        "scipy.ndimage.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.ndimage.filters": {
+            "correlate1d": [
+                "input",
+                "weights",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "convolve1d": [
+                "input",
+                "weights",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "gaussian_filter1d": [
+                "input",
+                "sigma",
+                "axis",
+                "order",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "gaussian_filter": [
+                "input",
+                "sigma",
+                "order",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "prewitt": [
+                "input",
+                "axis",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "sobel": [
+                "input",
+                "axis",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "generic_laplace": [
+                "input",
+                "derivative2",
+                "output",
+                "mode",
+                "cval",
+                "extra_arguments",
+                "extra_keywords"
+            ],
+            "laplace": [
+                "input",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "gaussian_laplace": [
+                "input",
+                "sigma",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "generic_gradient_magnitude": [
+                "input",
+                "derivative",
+                "output",
+                "mode",
+                "cval",
+                "extra_arguments",
+                "extra_keywords"
+            ],
+            "gaussian_gradient_magnitude": [
+                "input",
+                "sigma",
+                "output",
+                "mode",
+                "cval"
+            ],
+            "_correlate_or_convolve": [
+                "input",
+                "weights",
+                "output",
+                "mode",
+                "cval",
+                "origin",
+                "convolution"
+            ],
+            "correlate": [
+                "input",
+                "weights",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "convolve": [
+                "input",
+                "weights",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "uniform_filter1d": [
+                "input",
+                "size",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "uniform_filter": [
+                "input",
+                "size",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "minimum_filter1d": [
+                "input",
+                "size",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "maximum_filter1d": [
+                "input",
+                "size",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "_min_or_max_filter": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin",
+                "minimum"
+            ],
+            "minimum_filter": [
+                "input",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "maximum_filter": [
+                "input",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "_rank_filter": [
+                "input",
+                "rank",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin",
+                "operation"
+            ],
+            "rank_filter": [
+                "input",
+                "rank",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "median_filter": [
+                "input",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "percentile_filter": [
+                "input",
+                "percentile",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "generic_filter1d": [
+                "input",
+                "function",
+                "filter_size",
+                "axis",
+                "output",
+                "mode",
+                "cval",
+                "origin",
+                "extra_arguments",
+                "extra_keywords"
+            ],
+            "generic_filter": [
+                "input",
+                "function",
+                "size",
+                "footprint",
+                "output",
+                "mode",
+                "cval",
+                "origin",
+                "extra_arguments",
+                "extra_keywords"
+            ]
+        },
+        "scipy.ndimage": {},
+        "scipy.ndimage.info": {},
+        "scipy.ndimage.fourier": {
+            "_get_output_fourier": [
+                "output",
+                "input"
+            ],
+            "_get_output_fourier_complex": [
+                "output",
+                "input"
+            ],
+            "fourier_gaussian": [
+                "input",
+                "sigma",
+                "n",
+                "axis",
+                "output"
+            ],
+            "fourier_uniform": [
+                "input",
+                "size",
+                "n",
+                "axis",
+                "output"
+            ],
+            "fourier_ellipsoid": [
+                "input",
+                "size",
+                "n",
+                "axis",
+                "output"
+            ],
+            "fourier_shift": [
+                "input",
+                "shift",
+                "n",
+                "axis",
+                "output"
+            ]
+        },
+        "scipy.ndimage._ni_support": {
+            "_extend_mode_to_code": [
+                "mode"
+            ],
+            "_normalize_sequence": [
+                "input",
+                "rank",
+                "array_type"
+            ],
+            "_get_output": [
+                "output",
+                "input",
+                "shape"
+            ],
+            "_check_axis": [
+                "axis",
+                "rank"
+            ]
+        },
+        "scipy.ndimage.morphology": {
+            "_center_is_true": [
+                "structure",
+                "origin"
+            ],
+            "iterate_structure": [
+                "structure",
+                "iterations",
+                "origin"
+            ],
+            "generate_binary_structure": [
+                "rank",
+                "connectivity"
+            ],
+            "_binary_erosion": [
+                "input",
+                "structure",
+                "iterations",
+                "mask",
+                "output",
+                "border_value",
+                "origin",
+                "invert",
+                "brute_force"
+            ],
+            "binary_erosion": [
+                "input",
+                "structure",
+                "iterations",
+                "mask",
+                "output",
+                "border_value",
+                "origin",
+                "brute_force"
+            ],
+            "binary_dilation": [
+                "input",
+                "structure",
+                "iterations",
+                "mask",
+                "output",
+                "border_value",
+                "origin",
+                "brute_force"
+            ],
+            "binary_opening": [
+                "input",
+                "structure",
+                "iterations",
+                "output",
+                "origin"
+            ],
+            "binary_closing": [
+                "input",
+                "structure",
+                "iterations",
+                "output",
+                "origin"
+            ],
+            "binary_hit_or_miss": [
+                "input",
+                "structure1",
+                "structure2",
+                "output",
+                "origin1",
+                "origin2"
+            ],
+            "binary_propagation": [
+                "input",
+                "structure",
+                "mask",
+                "output",
+                "border_value",
+                "origin"
+            ],
+            "binary_fill_holes": [
+                "input",
+                "structure",
+                "output",
+                "origin"
+            ],
+            "grey_erosion": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "grey_dilation": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "grey_opening": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "grey_closing": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "morphological_gradient": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "morphological_laplace": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "white_tophat": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "black_tophat": [
+                "input",
+                "size",
+                "footprint",
+                "structure",
+                "output",
+                "mode",
+                "cval",
+                "origin"
+            ],
+            "distance_transform_bf": [
+                "input",
+                "metric",
+                "sampling",
+                "return_distances",
+                "return_indices",
+                "distances",
+                "indices"
+            ],
+            "distance_transform_cdt": [
+                "input",
+                "metric",
+                "return_distances",
+                "return_indices",
+                "distances",
+                "indices"
+            ],
+            "distance_transform_edt": [
+                "input",
+                "sampling",
+                "return_distances",
+                "return_indices",
+                "distances",
+                "indices"
+            ]
+        },
+        "scipy.ndimage.interpolation": {
+            "_extend_mode_to_code": [
+                "mode"
+            ],
+            "spline_filter1d": [
+                "input",
+                "order",
+                "axis",
+                "output"
+            ],
+            "spline_filter": [
+                "input",
+                "order",
+                "output"
+            ],
+            "geometric_transform": [
+                "input",
+                "mapping",
+                "output_shape",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter",
+                "extra_arguments",
+                "extra_keywords"
+            ],
+            "map_coordinates": [
+                "input",
+                "coordinates",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter"
+            ],
+            "affine_transform": [
+                "input",
+                "matrix",
+                "offset",
+                "output_shape",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter"
+            ],
+            "shift": [
+                "input",
+                "shift",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter"
+            ],
+            "zoom": [
+                "input",
+                "zoom",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter"
+            ],
+            "_minmax": [
+                "coor",
+                "minc",
+                "maxc"
+            ],
+            "rotate": [
+                "input",
+                "angle",
+                "axes",
+                "reshape",
+                "output",
+                "order",
+                "mode",
+                "cval",
+                "prefilter"
+            ]
+        },
+        "scipy.ndimage.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.interpolate.polyint": {
+            "krogh_interpolate": [
+                "xi",
+                "yi",
+                "x",
+                "der"
+            ],
+            "approximate_taylor_polynomial": [
+                "f",
+                "x",
+                "degree",
+                "scale",
+                "order"
+            ],
+            "barycentric_interpolate": [
+                "xi",
+                "yi",
+                "x"
+            ],
+            "piecewise_polynomial_interpolate": [
+                "xi",
+                "yi",
+                "x",
+                "orders",
+                "der"
+            ],
+            "_isscalar": [
+                "x"
+            ],
+            "_edge_case": [
+                "m0",
+                "d1"
+            ],
+            "_find_derivatives": [
+                "x",
+                "y"
+            ],
+            "pchip": [
+                "x",
+                "y"
+            ],
+            "KroghInterpolator": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ],
+                "derivatives": [
+                    "self",
+                    "x",
+                    "der"
+                ],
+                "derivative": [
+                    "self",
+                    "x",
+                    "der"
+                ]
+            },
+            "BarycentricInterpolator": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "set_yi": [
+                    "self",
+                    "yi"
+                ],
+                "add_xi": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ]
+            },
+            "PiecewisePolynomial": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "orders",
+                    "direction"
+                ],
+                "_make_polynomial": [
+                    "self",
+                    "x1",
+                    "y1",
+                    "x2",
+                    "y2",
+                    "order",
+                    "direction"
+                ],
+                "append": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "order"
+                ],
+                "extend": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "orders"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ],
+                "derivative": [
+                    "self",
+                    "x",
+                    "der"
+                ],
+                "derivatives": [
+                    "self",
+                    "x",
+                    "der"
+                ]
+            }
+        },
+        "scipy.interpolate.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.interpolate": {},
+        "scipy.interpolate.info": {},
+        "scipy.interpolate.rbf": {
+            "Rbf": {
+                "_euclidean_norm": [
+                    "self",
+                    "x1",
+                    "x2"
+                ],
+                "_h_multiquadric": [
+                    "self",
+                    "r"
+                ],
+                "_h_inverse_multiquadric": [
+                    "self",
+                    "r"
+                ],
+                "_h_gaussian": [
+                    "self",
+                    "r"
+                ],
+                "_h_linear": [
+                    "self",
+                    "r"
+                ],
+                "_h_cubic": [
+                    "self",
+                    "r"
+                ],
+                "_h_quintic": [
+                    "self",
+                    "r"
+                ],
+                "_h_thin_plate": [
+                    "self",
+                    "r"
+                ],
+                "_init_function": [
+                    "self",
+                    "r"
+                ],
+                "__init__": [
+                    "self"
+                ],
+                "_call_norm": [
+                    "self",
+                    "x1",
+                    "x2"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.interpolate.interpolate_wrapper": {
+            "atleast_1d_and_contiguous": [
+                "ary",
+                "dtype"
+            ],
+            "nearest": [
+                "x",
+                "y",
+                "new_x"
+            ],
+            "linear": [
+                "x",
+                "y",
+                "new_x"
+            ],
+            "logarithmic": [
+                "x",
+                "y",
+                "new_x"
+            ],
+            "block_average_above": [
+                "x",
+                "y",
+                "new_x"
+            ],
+            "block": [
+                "x",
+                "y",
+                "new_x"
+            ]
+        },
+        "scipy.interpolate.generate_interpnd": {},
+        "scipy.interpolate.ndgriddata": {
+            "griddata": [
+                "points",
+                "values",
+                "xi",
+                "method",
+                "fill_value"
+            ],
+            "NearestNDInterpolator": {
+                "__init__": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.interpolate.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.dumb_shelve": {
+            "open": [
+                "filename",
+                "flag"
+            ],
+            "DbfilenameShelf": {
+                "__init__": [
+                    "self",
+                    "filename",
+                    "flag"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ]
+            }
+        },
+        "scipy.io.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io": {},
+        "scipy.io.data_store": {
+            "_create_module": [
+                "file_name"
+            ],
+            "_create_shelf": [
+                "file_name",
+                "data"
+            ],
+            "save_as_module": [
+                "file_name",
+                "data"
+            ]
+        },
+        "scipy.io.info": {},
+        "scipy.io.netcdf": {
+            "netcdf_file": {
+                "__init__": [
+                    "self",
+                    "filename",
+                    "mode",
+                    "mmap",
+                    "version"
+                ],
+                "__setattr__": [
+                    "self",
+                    "attr",
+                    "value"
+                ],
+                "close": [
+                    "self"
+                ],
+                "createDimension": [
+                    "self",
+                    "name",
+                    "length"
+                ],
+                "createVariable": [
+                    "self",
+                    "name",
+                    "type",
+                    "dimensions"
+                ],
+                "flush": [
+                    "self"
+                ],
+                "_write": [
+                    "self"
+                ],
+                "_write_numrecs": [
+                    "self"
+                ],
+                "_write_dim_array": [
+                    "self"
+                ],
+                "_write_gatt_array": [
+                    "self"
+                ],
+                "_write_att_array": [
+                    "self",
+                    "attributes"
+                ],
+                "_write_var_array": [
+                    "self"
+                ],
+                "_write_var_metadata": [
+                    "self",
+                    "name"
+                ],
+                "_write_var_data": [
+                    "self",
+                    "name"
+                ],
+                "_write_values": [
+                    "self",
+                    "values"
+                ],
+                "_read": [
+                    "self"
+                ],
+                "_read_numrecs": [
+                    "self"
+                ],
+                "_read_dim_array": [
+                    "self"
+                ],
+                "_read_gatt_array": [
+                    "self"
+                ],
+                "_read_att_array": [
+                    "self"
+                ],
+                "_read_var_array": [
+                    "self"
+                ],
+                "_read_var": [
+                    "self"
+                ],
+                "_read_values": [
+                    "self"
+                ],
+                "_pack_begin": [
+                    "self",
+                    "begin"
+                ],
+                "_pack_int": [
+                    "self",
+                    "value"
+                ],
+                "_unpack_int": [
+                    "self"
+                ],
+                "_pack_int64": [
+                    "self",
+                    "value"
+                ],
+                "_unpack_int64": [
+                    "self"
+                ],
+                "_pack_string": [
+                    "self",
+                    "s"
+                ],
+                "_unpack_string": [
+                    "self"
+                ]
+            },
+            "netcdf_variable": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "typecode",
+                    "shape",
+                    "dimensions",
+                    "attributes"
+                ],
+                "__setattr__": [
+                    "self",
+                    "attr",
+                    "value"
+                ],
+                "isrec": [
+                    "self"
+                ],
+                "shape": [
+                    "self"
+                ],
+                "getValue": [
+                    "self"
+                ],
+                "assignValue": [
+                    "self",
+                    "value"
+                ],
+                "typecode": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "index"
+                ],
+                "__setitem__": [
+                    "self",
+                    "index",
+                    "data"
+                ]
+            }
+        },
+        "scipy.io.wavfile": {
+            "_read_fmt_chunk": [
+                "fid"
+            ],
+            "_read_data_chunk": [
+                "fid",
+                "noc",
+                "bits"
+            ],
+            "_read_riff_chunk": [
+                "fid"
+            ],
+            "read": [
+                "file"
+            ],
+            "write": [
+                "filename",
+                "rate",
+                "data"
+            ],
+            "WavFileWarning": {}
+        },
+        "scipy.io.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.arff.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.arff": {},
+        "scipy.io.arff.myfunctools": {
+            "partial": {
+                "__init__": [
+                    "self",
+                    "fun"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.io.arff.utils": {},
+        "scipy.io.matlab.mio5_params": {
+            "_convert_codecs": [
+                "template",
+                "byte_order"
+            ],
+            "mat_struct": {},
+            "MatlabObject": {
+                "__new__": [
+                    "cls",
+                    "input_array",
+                    "classname"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ]
+            },
+            "MatlabFunction": {
+                "__new__": [
+                    "cls",
+                    "input_array"
+                ]
+            },
+            "MatlabOpaque": {
+                "__new__": [
+                    "cls",
+                    "input_array"
+                ]
+            }
+        },
+        "scipy.io.matlab.mio4": {
+            "arr_to_2d": [
+                "arr",
+                "oned_as"
+            ],
+            "VarHeader4": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "dtype",
+                    "mclass",
+                    "dims",
+                    "is_complex"
+                ]
+            },
+            "VarReader4": {
+                "__init__": [
+                    "self",
+                    "file_reader"
+                ],
+                "read_header": [
+                    "self"
+                ],
+                "array_from_header": [
+                    "self",
+                    "hdr",
+                    "process"
+                ],
+                "read_sub_array": [
+                    "self",
+                    "hdr",
+                    "copy"
+                ],
+                "read_full_array": [
+                    "self",
+                    "hdr"
+                ],
+                "read_char_array": [
+                    "self",
+                    "hdr"
+                ],
+                "read_sparse_array": [
+                    "self",
+                    "hdr"
+                ]
+            },
+            "MatFile4Reader": {
+                "__init__": [
+                    "self",
+                    "mat_stream"
+                ],
+                "guess_byte_order": [
+                    "self"
+                ],
+                "initialize_read": [
+                    "self"
+                ],
+                "read_var_header": [
+                    "self"
+                ],
+                "read_var_array": [
+                    "self",
+                    "header",
+                    "process"
+                ],
+                "get_variables": [
+                    "self",
+                    "variable_names"
+                ]
+            },
+            "VarWriter4": {
+                "__init__": [
+                    "self",
+                    "file_writer"
+                ],
+                "write_bytes": [
+                    "self",
+                    "arr"
+                ],
+                "write_string": [
+                    "self",
+                    "s"
+                ],
+                "write_header": [
+                    "self",
+                    "name",
+                    "shape",
+                    "P",
+                    "T",
+                    "imagf"
+                ],
+                "write": [
+                    "self",
+                    "arr",
+                    "name"
+                ],
+                "write_numeric": [
+                    "self",
+                    "arr",
+                    "name"
+                ],
+                "write_char": [
+                    "self",
+                    "arr",
+                    "name"
+                ],
+                "write_sparse": [
+                    "self",
+                    "arr",
+                    "name"
+                ]
+            },
+            "MatFile4Writer": {
+                "__init__": [
+                    "self",
+                    "file_stream",
+                    "oned_as"
+                ],
+                "put_variables": [
+                    "self",
+                    "mdict",
+                    "write_header"
+                ]
+            }
+        },
+        "scipy.io.matlab.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.matlab": {},
+        "scipy.io.matlab.byteordercodes": {
+            "to_numpy_code": [
+                "code"
+            ]
+        },
+        "scipy.io.matlab.mio": {
+            "find_mat_file": [
+                "file_name",
+                "appendmat"
+            ],
+            "_open_file": [
+                "file_like",
+                "appendmat"
+            ],
+            "mat_reader_factory": [
+                "file_name",
+                "appendmat"
+            ],
+            "loadmat": [
+                "file_name",
+                "mdict",
+                "appendmat"
+            ],
+            "savemat": [
+                "file_name",
+                "mdict",
+                "appendmat",
+                "format",
+                "long_field_names",
+                "do_compression",
+                "oned_as"
+            ]
+        },
+        "scipy.io.matlab.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.matlab.miobase": {
+            "convert_dtypes": [
+                "dtype_template",
+                "order_code"
+            ],
+            "read_dtype": [
+                "mat_stream",
+                "a_dtype"
+            ],
+            "get_matfile_version": [
+                "fileobj"
+            ],
+            "matdims": [
+                "arr",
+                "oned_as"
+            ],
+            "arr_dtype_number": [
+                "arr",
+                "num"
+            ],
+            "arr_to_chars": [
+                "arr"
+            ],
+            "MatReadError": {},
+            "MatWriteError": {},
+            "MatReadWarning": {},
+            "MatVarReader": {
+                "__init__": [
+                    "self",
+                    "file_reader"
+                ],
+                "read_header": [
+                    "self"
+                ],
+                "array_from_header": [
+                    "self",
+                    "header"
+                ]
+            },
+            "MatFileReader": {
+                "__init__": [
+                    "self",
+                    "mat_stream",
+                    "byte_order",
+                    "mat_dtype",
+                    "squeeze_me",
+                    "chars_as_strings",
+                    "matlab_compatible",
+                    "struct_as_record"
+                ],
+                "set_matlab_compatible": [
+                    "self"
+                ],
+                "guess_byte_order": [
+                    "self"
+                ],
+                "end_of_stream": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.special.special_version": {},
+        "scipy.special.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.special": {},
+        "scipy.special.spfun_stats": {
+            "multigammaln": [
+                "a",
+                "d"
+            ]
+        },
+        "scipy.special.orthogonal": {
+            "poch": [
+                "z",
+                "m"
+            ],
+            "gen_roots_and_weights": [
+                "n",
+                "an_func",
+                "sqrt_bn_func",
+                "mu"
+            ],
+            "j_roots": [
+                "n",
+                "alpha",
+                "beta",
+                "mu"
+            ],
+            "jacobi": [
+                "n",
+                "alpha",
+                "beta",
+                "monic"
+            ],
+            "js_roots": [
+                "n",
+                "p1",
+                "q1",
+                "mu"
+            ],
+            "sh_jacobi": [
+                "n",
+                "p",
+                "q",
+                "monic"
+            ],
+            "la_roots": [
+                "n",
+                "alpha",
+                "mu"
+            ],
+            "genlaguerre": [
+                "n",
+                "alpha",
+                "monic"
+            ],
+            "l_roots": [
+                "n",
+                "mu"
+            ],
+            "laguerre": [
+                "n",
+                "monic"
+            ],
+            "h_roots": [
+                "n",
+                "mu"
+            ],
+            "hermite": [
+                "n",
+                "monic"
+            ],
+            "he_roots": [
+                "n",
+                "mu"
+            ],
+            "hermitenorm": [
+                "n",
+                "monic"
+            ],
+            "cg_roots": [
+                "n",
+                "alpha",
+                "mu"
+            ],
+            "gegenbauer": [
+                "n",
+                "alpha",
+                "monic"
+            ],
+            "t_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyt": [
+                "n",
+                "monic"
+            ],
+            "u_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyu": [
+                "n",
+                "monic"
+            ],
+            "c_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyc": [
+                "n",
+                "monic"
+            ],
+            "s_roots": [
+                "n",
+                "mu"
+            ],
+            "chebys": [
+                "n",
+                "monic"
+            ],
+            "ts_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_chebyt": [
+                "n",
+                "monic"
+            ],
+            "us_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_chebyu": [
+                "n",
+                "monic"
+            ],
+            "p_roots": [
+                "n",
+                "mu"
+            ],
+            "legendre": [
+                "n",
+                "monic"
+            ],
+            "ps_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_legendre": [
+                "n",
+                "monic"
+            ],
+            "orthopoly1d": {
+                "__init__": [
+                    "self",
+                    "roots",
+                    "weights",
+                    "hn",
+                    "kn",
+                    "wfunc",
+                    "limits",
+                    "monic",
+                    "eval_func"
+                ],
+                "__call__": [
+                    "self",
+                    "v"
+                ],
+                "_scale": [
+                    "self",
+                    "p"
+                ]
+            }
+        },
+        "scipy.special.info": {},
+        "scipy.special.gendoc": {
+            "parse": [
+                "infile"
+            ]
+        },
+        "scipy.special.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.linalg.misc": {
+            "norm": [
+                "a",
+                "ord"
+            ],
+            "_datanotshared": [
+                "a1",
+                "a"
+            ]
+        },
+        "scipy.linalg.decomp_schur": {
+            "schur": [
+                "a",
+                "output",
+                "lwork",
+                "overwrite_a"
+            ],
+            "_commonType": [],
+            "_castCopy": [
+                "type"
+            ],
+            "rsf2csf": [
+                "T",
+                "Z"
+            ]
+        },
+        "scipy.linalg.decomp": {
+            "_make_complex_eigvecs": [
+                "w",
+                "vin",
+                "dtype"
+            ],
+            "_geneig": [
+                "a1",
+                "b",
+                "left",
+                "right",
+                "overwrite_a",
+                "overwrite_b"
+            ],
+            "eig": [
+                "a",
+                "b",
+                "left",
+                "right",
+                "overwrite_a",
+                "overwrite_b"
+            ],
+            "eigh": [
+                "a",
+                "b",
+                "lower",
+                "eigvals_only",
+                "overwrite_a",
+                "overwrite_b",
+                "turbo",
+                "eigvals",
+                "type"
+            ],
+            "eig_banded": [
+                "a_band",
+                "lower",
+                "eigvals_only",
+                "overwrite_a_band",
+                "select",
+                "select_range",
+                "max_ev"
+            ],
+            "eigvals": [
+                "a",
+                "b",
+                "overwrite_a"
+            ],
+            "eigvalsh": [
+                "a",
+                "b",
+                "lower",
+                "overwrite_a",
+                "overwrite_b",
+                "turbo",
+                "eigvals",
+                "type"
+            ],
+            "eigvals_banded": [
+                "a_band",
+                "lower",
+                "overwrite_a_band",
+                "select",
+                "select_range"
+            ],
+            "hessenberg": [
+                "a",
+                "calc_q",
+                "overwrite_a"
+            ]
+        },
+        "scipy.linalg.decomp_qr": {
+            "qr": [
+                "a",
+                "overwrite_a",
+                "lwork",
+                "mode"
+            ],
+            "qr_old": [
+                "a",
+                "overwrite_a",
+                "lwork"
+            ],
+            "rq": [
+                "a",
+                "overwrite_a",
+                "lwork"
+            ]
+        },
+        "scipy.linalg.decomp_svd": {
+            "svd": [
+                "a",
+                "full_matrices",
+                "compute_uv",
+                "overwrite_a"
+            ],
+            "svdvals": [
+                "a",
+                "overwrite_a"
+            ],
+            "diagsvd": [
+                "s",
+                "M",
+                "N"
+            ],
+            "orth": [
+                "A"
+            ]
+        },
+        "scipy.linalg.setup": {
+            "needs_cblas_wrapper": [
+                "info"
+            ],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.linalg": {},
+        "scipy.linalg.linalg_version": {},
+        "scipy.linalg.setup_atlas_version": {
+            "configuration": [
+                "parent_package"
+            ]
+        },
+        "scipy.linalg.blas": {
+            "has_column_major_storage": [
+                "arr"
+            ],
+            "get_blas_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.linalg.info": {},
+        "scipy.linalg.flinalg": {
+            "has_column_major_storage": [
+                "arr"
+            ],
+            "get_flinalg_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.linalg.special_matrices": {
+            "tri": [
+                "N",
+                "M",
+                "k",
+                "dtype"
+            ],
+            "tril": [
+                "m",
+                "k"
+            ],
+            "triu": [
+                "m",
+                "k"
+            ],
+            "toeplitz": [
+                "c",
+                "r"
+            ],
+            "circulant": [
+                "c"
+            ],
+            "hankel": [
+                "c",
+                "r"
+            ],
+            "hadamard": [
+                "n",
+                "dtype"
+            ],
+            "leslie": [
+                "f",
+                "s"
+            ],
+            "all_mat": [],
+            "kron": [
+                "a",
+                "b"
+            ],
+            "block_diag": [],
+            "companion": [
+                "a"
+            ]
+        },
+        "scipy.linalg.scons_support": {
+            "do_generate_interface": [
+                "target",
+                "source",
+                "env"
+            ],
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.linalg.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib": {},
+        "scipy.lib.info": {},
+        "scipy.lib.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.lapack.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.lapack.info": {},
+        "scipy.lib.lapack.scons_support": {
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.lib.lapack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.blas.setup": {
+            "needs_cblas_wrapper": [
+                "info"
+            ],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.blas": {
+            "get_blas_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.lib.blas.info": {},
+        "scipy.lib.blas.scons_support": {
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.lib.blas.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.csgraph": {
+            "cs_graph_components": [
+                "x"
+            ]
+        },
+        "scipy.sparse.csc": {
+            "isspmatrix_csc": [
+                "x"
+            ],
+            "csc_matrix": {
+                "transpose": [
+                    "self",
+                    "copy"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "tocsc": [
+                    "self",
+                    "copy"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "_swap": [
+                    "self",
+                    "x"
+                ]
+            }
+        },
+        "scipy.sparse.data": {
+            "_data_matrix": {
+                "__init__": [
+                    "self"
+                ],
+                "_get_dtype": [
+                    "self"
+                ],
+                "_set_dtype": [
+                    "self",
+                    "newtype"
+                ],
+                "__abs__": [
+                    "self"
+                ],
+                "_real": [
+                    "self"
+                ],
+                "_imag": [
+                    "self"
+                ],
+                "__neg__": [
+                    "self"
+                ],
+                "__imul__": [
+                    "self",
+                    "other"
+                ],
+                "__itruediv__": [
+                    "self",
+                    "other"
+                ],
+                "astype": [
+                    "self",
+                    "t"
+                ],
+                "conj": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "_mul_scalar": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.sparse.extract": {
+            "find": [
+                "A"
+            ],
+            "tril": [
+                "A",
+                "k",
+                "format"
+            ],
+            "triu": [
+                "A",
+                "k",
+                "format"
+            ]
+        },
+        "scipy.sparse.spfuncs": {
+            "extract_diagonal": [
+                "A"
+            ],
+            "estimate_blocksize": [
+                "A",
+                "efficiency"
+            ],
+            "count_blocks": [
+                "A",
+                "blocksize"
+            ]
+        },
+        "scipy.sparse.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse": {},
+        "scipy.sparse.csr": {
+            "isspmatrix_csr": [
+                "x"
+            ],
+            "csr_matrix": {
+                "transpose": [
+                    "self",
+                    "copy"
+                ],
+                "tolil": [
+                    "self"
+                ],
+                "tocsr": [
+                    "self",
+                    "copy"
+                ],
+                "tocsc": [
+                    "self"
+                ],
+                "tobsr": [
+                    "self",
+                    "blocksize",
+                    "copy"
+                ],
+                "_swap": [
+                    "self",
+                    "x"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "_get_single_element": [
+                    "self",
+                    "row",
+                    "col"
+                ],
+                "_get_row_slice": [
+                    "self",
+                    "i",
+                    "cslice"
+                ],
+                "_get_submatrix": [
+                    "self",
+                    "row_slice",
+                    "col_slice"
+                ]
+            }
+        },
+        "scipy.sparse.lil": {
+            "isspmatrix_lil": [
+                "x"
+            ],
+            "lil_matrix": {
+                "__init__": [
+                    "self",
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy"
+                ],
+                "__iadd__": [
+                    "self",
+                    "other"
+                ],
+                "__isub__": [
+                    "self",
+                    "other"
+                ],
+                "__imul__": [
+                    "self",
+                    "other"
+                ],
+                "__itruediv__": [
+                    "self",
+                    "other"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "getrowview": [
+                    "self",
+                    "i"
+                ],
+                "getrow": [
+                    "self",
+                    "i"
+                ],
+                "_get1": [
+                    "self",
+                    "i",
+                    "j"
+                ],
+                "_slicetoseq": [
+                    "self",
+                    "j",
+                    "shape"
+                ],
+                "__getitem__": [
+                    "self",
+                    "index"
+                ],
+                "_insertat2": [
+                    "self",
+                    "row",
+                    "data",
+                    "j",
+                    "x"
+                ],
+                "_setitem_setrow": [
+                    "self",
+                    "row",
+                    "data",
+                    "j",
+                    "xrow",
+                    "xdata",
+                    "xcols"
+                ],
+                "__setitem__": [
+                    "self",
+                    "index",
+                    "x"
+                ],
+                "_mul_scalar": [
+                    "self",
+                    "other"
+                ],
+                "__truediv__": [
+                    "self",
+                    "other"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "reshape": [
+                    "self",
+                    "shape"
+                ],
+                "toarray": [
+                    "self"
+                ],
+                "transpose": [
+                    "self"
+                ],
+                "tolil": [
+                    "self",
+                    "copy"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "tocsc": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.sparse.construct": {
+            "spdiags": [
+                "data",
+                "diags",
+                "m",
+                "n",
+                "format"
+            ],
+            "identity": [
+                "n",
+                "dtype",
+                "format"
+            ],
+            "eye": [
+                "m",
+                "n",
+                "k",
+                "dtype",
+                "format"
+            ],
+            "kron": [
+                "A",
+                "B",
+                "format"
+            ],
+            "kronsum": [
+                "A",
+                "B",
+                "format"
+            ],
+            "hstack": [
+                "blocks",
+                "format",
+                "dtype"
+            ],
+            "vstack": [
+                "blocks",
+                "format",
+                "dtype"
+            ],
+            "bmat": [
+                "blocks",
+                "format",
+                "dtype"
+            ],
+            "rand": [
+                "m",
+                "n",
+                "density",
+                "format",
+                "dtype"
+            ]
+        },
+        "scipy.sparse.info": {},
+        "scipy.sparse.dia": {
+            "isspmatrix_dia": [
+                "x"
+            ],
+            "dia_matrix": {
+                "__init__": [
+                    "self",
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multimatrix": [
+                    "self",
+                    "other"
+                ],
+                "todia": [
+                    "self",
+                    "copy"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "tocsc": [
+                    "self"
+                ],
+                "tocoo": [
+                    "self"
+                ],
+                "_with_data": [
+                    "self",
+                    "data",
+                    "copy"
+                ]
+            }
+        },
+        "scipy.sparse.base": {
+            "isspmatrix": [
+                "x"
+            ],
+            "SparseWarning": {},
+            "SparseFormatWarning": {},
+            "SparseEfficiencyWarning": {},
+            "spmatrix": {
+                "__init__": [
+                    "self",
+                    "maxprint"
+                ],
+                "set_shape": [
+                    "self",
+                    "shape"
+                ],
+                "get_shape": [
+                    "self"
+                ],
+                "reshape": [
+                    "self",
+                    "shape"
+                ],
+                "astype": [
+                    "self",
+                    "t"
+                ],
+                "asfptype": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "getmaxprint": [
+                    "self"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "getformat": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__nonzero__": [
+                    "self"
+                ],
+                "__len__": [
+                    "self"
+                ],
+                "asformat": [
+                    "self",
+                    "format"
+                ],
+                "multiply": [
+                    "self",
+                    "other"
+                ],
+                "dot": [
+                    "self",
+                    "other"
+                ],
+                "__abs__": [
+                    "self"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "__radd__": [
+                    "self",
+                    "other"
+                ],
+                "__sub__": [
+                    "self",
+                    "other"
+                ],
+                "__rsub__": [
+                    "self",
+                    "other"
+                ],
+                "__mul__": [
+                    "self",
+                    "other"
+                ],
+                "_mul_scalar": [
+                    "self",
+                    "other"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multivector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_sparse_matrix": [
+                    "self",
+                    "other"
+                ],
+                "__rmul__": [
+                    "self",
+                    "other"
+                ],
+                "__truediv__": [
+                    "self",
+                    "other"
+                ],
+                "__div__": [
+                    "self",
+                    "other"
+                ],
+                "__neg__": [
+                    "self"
+                ],
+                "__iadd__": [
+                    "self",
+                    "other"
+                ],
+                "__isub__": [
+                    "self",
+                    "other"
+                ],
+                "__imul__": [
+                    "self",
+                    "other"
+                ],
+                "__idiv__": [
+                    "self",
+                    "other"
+                ],
+                "__itruediv__": [
+                    "self",
+                    "other"
+                ],
+                "__pow__": [
+                    "self",
+                    "other"
+                ],
+                "__getattr__": [
+                    "self",
+                    "attr"
+                ],
+                "transpose": [
+                    "self"
+                ],
+                "conj": [
+                    "self"
+                ],
+                "conjugate": [
+                    "self"
+                ],
+                "getH": [
+                    "self"
+                ],
+                "_real": [
+                    "self"
+                ],
+                "_imag": [
+                    "self"
+                ],
+                "nonzero": [
+                    "self"
+                ],
+                "getcol": [
+                    "self",
+                    "j"
+                ],
+                "getrow": [
+                    "self",
+                    "i"
+                ],
+                "todense": [
+                    "self"
+                ],
+                "toarray": [
+                    "self"
+                ],
+                "todok": [
+                    "self"
+                ],
+                "tocoo": [
+                    "self"
+                ],
+                "tolil": [
+                    "self"
+                ],
+                "todia": [
+                    "self"
+                ],
+                "tobsr": [
+                    "self",
+                    "blocksize"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "sum": [
+                    "self",
+                    "axis"
+                ],
+                "mean": [
+                    "self",
+                    "axis"
+                ],
+                "diagonal": [
+                    "self"
+                ],
+                "setdiag": [
+                    "self",
+                    "values",
+                    "k"
+                ]
+            }
+        },
+        "scipy.sparse.sputils": {
+            "upcast": [],
+            "to_native": [
+                "A"
+            ],
+            "getdtype": [
+                "dtype",
+                "a",
+                "default"
+            ],
+            "isscalarlike": [
+                "x"
+            ],
+            "isintlike": [
+                "x"
+            ],
+            "isshape": [
+                "x"
+            ],
+            "issequence": [
+                "t"
+            ],
+            "_isinstance": [
+                "x",
+                "_class"
+            ],
+            "isdense": [
+                "x"
+            ]
+        },
+        "scipy.sparse.compressed": {
+            "_cs_matrix": {
+                "__init__": [
+                    "self",
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "_set_self": [
+                    "self",
+                    "other",
+                    "copy"
+                ],
+                "check_format": [
+                    "self",
+                    "full_check"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "__radd__": [
+                    "self",
+                    "other"
+                ],
+                "__sub__": [
+                    "self",
+                    "other"
+                ],
+                "__rsub__": [
+                    "self",
+                    "other"
+                ],
+                "__truediv__": [
+                    "self",
+                    "other"
+                ],
+                "multiply": [
+                    "self",
+                    "other"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multivector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_sparse_matrix": [
+                    "self",
+                    "other"
+                ],
+                "diagonal": [
+                    "self"
+                ],
+                "sum": [
+                    "self",
+                    "axis"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "_get_single_element": [
+                    "self",
+                    "row",
+                    "col"
+                ],
+                "_get_slice": [
+                    "self",
+                    "i",
+                    "start",
+                    "stop",
+                    "stride",
+                    "shape"
+                ],
+                "_get_submatrix": [
+                    "self",
+                    "slice0",
+                    "slice1"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "val"
+                ],
+                "todia": [
+                    "self"
+                ],
+                "todok": [
+                    "self"
+                ],
+                "tocoo": [
+                    "self",
+                    "copy"
+                ],
+                "toarray": [
+                    "self"
+                ],
+                "eliminate_zeros": [
+                    "self"
+                ],
+                "sum_duplicates": [
+                    "self"
+                ],
+                "__get_sorted": [
+                    "self"
+                ],
+                "__set_sorted": [
+                    "self",
+                    "val"
+                ],
+                "sorted_indices": [
+                    "self"
+                ],
+                "sort_indices": [
+                    "self"
+                ],
+                "prune": [
+                    "self"
+                ],
+                "_with_data": [
+                    "self",
+                    "data",
+                    "copy"
+                ],
+                "_binopt": [
+                    "self",
+                    "other",
+                    "op"
+                ]
+            }
+        },
+        "scipy.sparse.coo": {
+            "isspmatrix_coo": [
+                "x"
+            ],
+            "coo_matrix": {
+                "__init__": [
+                    "self",
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "_check": [
+                    "self"
+                ],
+                "transpose": [
+                    "self",
+                    "copy"
+                ],
+                "toarray": [
+                    "self"
+                ],
+                "tocsc": [
+                    "self"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "tocoo": [
+                    "self",
+                    "copy"
+                ],
+                "todia": [
+                    "self"
+                ],
+                "todok": [
+                    "self"
+                ],
+                "_with_data": [
+                    "self",
+                    "data",
+                    "copy"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multivector": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.sparse.dok": {
+            "isspmatrix_dok": [
+                "x"
+            ],
+            "dok_matrix": {
+                "__init__": [
+                    "self",
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "__len__": [
+                    "self"
+                ],
+                "get": [
+                    "self",
+                    "key",
+                    "default"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "__radd__": [
+                    "self",
+                    "other"
+                ],
+                "__neg__": [
+                    "self"
+                ],
+                "_mul_scalar": [
+                    "self",
+                    "other"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multivector": [
+                    "self",
+                    "other"
+                ],
+                "__imul__": [
+                    "self",
+                    "other"
+                ],
+                "__truediv__": [
+                    "self",
+                    "other"
+                ],
+                "__itruediv__": [
+                    "self",
+                    "other"
+                ],
+                "transpose": [
+                    "self"
+                ],
+                "conjtransp": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "take": [
+                    "self",
+                    "cols_or_rows",
+                    "columns"
+                ],
+                "split": [
+                    "self",
+                    "cols_or_rows",
+                    "columns"
+                ],
+                "tocoo": [
+                    "self"
+                ],
+                "todok": [
+                    "self",
+                    "copy"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "tocsc": [
+                    "self"
+                ],
+                "toarray": [
+                    "self"
+                ],
+                "resize": [
+                    "self",
+                    "shape"
+                ]
+            }
+        },
+        "scipy.sparse.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg": {},
+        "scipy.sparse.linalg.interface": {
+            "aslinearoperator": [
+                "A"
+            ],
+            "LinearOperator": {
+                "__init__": [
+                    "self",
+                    "shape",
+                    "matvec",
+                    "rmatvec",
+                    "matmat",
+                    "dtype"
+                ],
+                "_matmat": [
+                    "self",
+                    "X"
+                ],
+                "matvec": [
+                    "self",
+                    "x"
+                ],
+                "matmat": [
+                    "self",
+                    "X"
+                ],
+                "__mul__": [
+                    "self",
+                    "x"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.sparse.linalg.info": {},
+        "scipy.sparse.linalg.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.isolve.lgmres": {
+            "norm2": [
+                "q"
+            ],
+            "lgmres": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "M",
+                "callback",
+                "inner_m",
+                "outer_k",
+                "outer_v",
+                "store_outer_Av"
+            ]
+        },
+        "scipy.sparse.linalg.isolve.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.isolve": {},
+        "scipy.sparse.linalg.isolve.iterative": {
+            "set_docstring": [
+                "header",
+                "footer"
+            ],
+            "bicg": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "xtype",
+                "M",
+                "callback"
+            ],
+            "bicgstab": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "xtype",
+                "M",
+                "callback"
+            ],
+            "cg": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "xtype",
+                "M",
+                "callback"
+            ],
+            "cgs": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "xtype",
+                "M",
+                "callback"
+            ],
+            "gmres": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "restart",
+                "maxiter",
+                "xtype",
+                "M",
+                "callback",
+                "restrt"
+            ],
+            "qmr": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "xtype",
+                "M1",
+                "M2",
+                "callback"
+            ]
+        },
+        "scipy.sparse.linalg.isolve.utils": {
+            "coerce": [
+                "x",
+                "y"
+            ],
+            "id": [
+                "x"
+            ],
+            "make_system": [
+                "A",
+                "M",
+                "x0",
+                "b",
+                "xtype"
+            ]
+        },
+        "scipy.sparse.linalg.isolve.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen": {},
+        "scipy.sparse.linalg.eigen.info": {},
+        "scipy.sparse.linalg.eigen.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.arpack.setup": {
+            "needs_veclib_wrapper": [
+                "info"
+            ],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.arpack": {},
+        "scipy.sparse.linalg.eigen.arpack.info": {},
+        "scipy.sparse.linalg.eigen.arpack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.lobpcg.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.lobpcg": {},
+        "scipy.sparse.linalg.eigen.lobpcg.info": {},
+        "scipy.sparse.linalg.eigen.lobpcg.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve": {},
+        "scipy.sparse.linalg.dsolve.info": {},
+        "scipy.sparse.linalg.dsolve.linsolve": {
+            "use_solver": [],
+            "spsolve": [
+                "A",
+                "b",
+                "permc_spec",
+                "use_umfpack"
+            ],
+            "splu": [
+                "A",
+                "permc_spec",
+                "diag_pivot_thresh",
+                "drop_tol",
+                "relax",
+                "panel_size",
+                "options"
+            ],
+            "spilu": [
+                "A",
+                "drop_tol",
+                "fill_factor",
+                "drop_rule",
+                "permc_spec",
+                "diag_pivot_thresh",
+                "relax",
+                "panel_size",
+                "options"
+            ],
+            "factorized": [
+                "A"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve.umfpack.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve.umfpack": {},
+        "scipy.sparse.linalg.dsolve.umfpack.info": {},
+        "scipy.sparse.linalg.dsolve.umfpack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.sparsetools.csgraph": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "cs_graph_components": []
+        },
+        "scipy.sparse.sparsetools.csc": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "csc_matmat_pass1": [],
+            "csc_diagonal": [],
+            "csc_tocsr": [],
+            "csc_matmat_pass2": [],
+            "csc_matvec": [],
+            "csc_matvecs": [],
+            "csc_elmul_csc": [],
+            "csc_eldiv_csc": [],
+            "csc_plus_csc": [],
+            "csc_minus_csc": []
+        },
+        "scipy.sparse.sparsetools.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.sparsetools": {},
+        "scipy.sparse.sparsetools.csr": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "expandptr": [],
+            "csr_matmat_pass1": [],
+            "csr_count_blocks": [],
+            "csr_has_sorted_indices": [],
+            "csr_diagonal": [],
+            "csr_scale_rows": [],
+            "csr_scale_columns": [],
+            "csr_tocsc": [],
+            "csr_tobsr": [],
+            "csr_matmat_pass2": [],
+            "csr_matvec": [],
+            "csr_matvecs": [],
+            "csr_elmul_csr": [],
+            "csr_eldiv_csr": [],
+            "csr_plus_csr": [],
+            "csr_minus_csr": [],
+            "csr_sort_indices": [],
+            "csr_eliminate_zeros": [],
+            "csr_sum_duplicates": [],
+            "get_csr_submatrix": [],
+            "csr_sample_values": []
+        },
+        "scipy.sparse.sparsetools.dia": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "dia_matvec": []
+        },
+        "scipy.sparse.sparsetools.coo": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "coo_count_diagonals": [],
+            "coo_tocsr": [],
+            "coo_tocsc": [],
+            "coo_todense": [],
+            "coo_matvec": []
+        },
+        "scipy.sparse.sparsetools.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.sparsetools.bsr": {
+            "_swig_setattr_nondynamic": [
+                "self",
+                "class_type",
+                "name",
+                "value",
+                "static"
+            ],
+            "_swig_setattr": [
+                "self",
+                "class_type",
+                "name",
+                "value"
+            ],
+            "_swig_getattr": [
+                "self",
+                "class_type",
+                "name"
+            ],
+            "_swig_repr": [
+                "self"
+            ],
+            "bsr_diagonal": [],
+            "bsr_scale_rows": [],
+            "bsr_scale_columns": [],
+            "bsr_transpose": [],
+            "bsr_matmat_pass2": [],
+            "bsr_matvec": [],
+            "bsr_matvecs": [],
+            "bsr_elmul_bsr": [],
+            "bsr_eldiv_bsr": [],
+            "bsr_plus_bsr": [],
+            "bsr_minus_bsr": [],
+            "bsr_sort_indices": []
+        },
+        "scipy.weave.base_info": {
+            "unique_values": [
+                "lst"
+            ],
+            "base_info": {
+                "set_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "check_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "warnings": [
+                    "self"
+                ],
+                "headers": [
+                    "self"
+                ],
+                "include_dirs": [
+                    "self"
+                ],
+                "libraries": [
+                    "self"
+                ],
+                "library_dirs": [
+                    "self"
+                ],
+                "support_code": [
+                    "self"
+                ],
+                "module_init_code": [
+                    "self"
+                ],
+                "sources": [
+                    "self"
+                ],
+                "define_macros": [
+                    "self"
+                ],
+                "undefine_macros": [
+                    "self"
+                ],
+                "extra_compile_args": [
+                    "self"
+                ],
+                "extra_link_args": [
+                    "self"
+                ]
+            },
+            "custom_info": {
+                "__init__": [
+                    "self"
+                ],
+                "add_warning": [
+                    "self",
+                    "warning"
+                ],
+                "add_header": [
+                    "self",
+                    "header"
+                ],
+                "add_include_dir": [
+                    "self",
+                    "include_dir"
+                ],
+                "add_library": [
+                    "self",
+                    "library"
+                ],
+                "add_library_dir": [
+                    "self",
+                    "library_dir"
+                ],
+                "add_support_code": [
+                    "self",
+                    "support_code"
+                ],
+                "add_module_init_code": [
+                    "self",
+                    "module_init_code"
+                ],
+                "add_source": [
+                    "self",
+                    "source"
+                ],
+                "add_define_macro": [
+                    "self",
+                    "define_macro"
+                ],
+                "add_undefine_macro": [
+                    "self",
+                    "undefine_macro"
+                ],
+                "add_extra_compile_arg": [
+                    "self",
+                    "compile_arg"
+                ],
+                "add_extra_link_arg": [
+                    "self",
+                    "link_arg"
+                ]
+            },
+            "info_list": {
+                "get_unique_values": [
+                    "self",
+                    "attribute"
+                ],
+                "extra_compile_args": [
+                    "self"
+                ],
+                "extra_link_args": [
+                    "self"
+                ],
+                "sources": [
+                    "self"
+                ],
+                "define_macros": [
+                    "self"
+                ],
+                "warnings": [
+                    "self"
+                ],
+                "headers": [
+                    "self"
+                ],
+                "include_dirs": [
+                    "self"
+                ],
+                "libraries": [
+                    "self"
+                ],
+                "library_dirs": [
+                    "self"
+                ],
+                "support_code": [
+                    "self"
+                ],
+                "module_init_code": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.swigptr2": {},
+        "scipy.weave.swigptr": {},
+        "scipy.weave.common_info": {
+            "basic_module_info": {},
+            "inline_info": {},
+            "swig_info": {}
+        },
+        "scipy.weave.converters": {},
+        "scipy.weave.blitz_spec": {
+            "array_info": {
+                "check_compiler": [
+                    "self",
+                    "compiler"
+                ]
+            },
+            "array_converter": {
+                "init_info": [
+                    "self"
+                ],
+                "info_object": [
+                    "self"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "template_vars": [
+                    "self",
+                    "inline"
+                ],
+                "declaration_code": [
+                    "self",
+                    "templatize",
+                    "inline"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.weave.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.weave.md5_load": {},
+        "scipy.weave.numpy_scalar_spec": {
+            "numpy_complex_scalar_converter": {
+                "init_info": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave": {},
+        "scipy.weave.cpp_namespace_spec": {
+            "cpp_namespace_converter": {
+                "__init__": [
+                    "self",
+                    "class_name"
+                ],
+                "type_match": [
+                    "self",
+                    "value"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "declaration_code": [
+                    "self",
+                    "inline"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.weave.standard_array_spec": {
+            "array_converter": {
+                "init_info": [
+                    "self"
+                ],
+                "get_var_type": [
+                    "self",
+                    "value"
+                ],
+                "template_vars": [
+                    "self",
+                    "inline"
+                ],
+                "declaration_code": [
+                    "self",
+                    "templatize",
+                    "inline"
+                ],
+                "cleanup_code": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.info": {},
+        "scipy.weave.base_spec": {
+            "base_converter": {
+                "set_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "type_match": [
+                    "self",
+                    "value"
+                ],
+                "build_information": [
+                    "self"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "declaration_code": [
+                    "self",
+                    "templatize"
+                ],
+                "local_dict_code": [
+                    "self"
+                ],
+                "cleanup_code": [
+                    "self"
+                ],
+                "retrieve_py_variable": [
+                    "self",
+                    "inline"
+                ],
+                "py_reference": [
+                    "self"
+                ],
+                "py_pointer": [
+                    "self"
+                ],
+                "py_variable": [
+                    "self"
+                ],
+                "reference": [
+                    "self"
+                ],
+                "pointer": [
+                    "self"
+                ],
+                "init_flag": [
+                    "self"
+                ],
+                "variable": [
+                    "self"
+                ],
+                "variable_as_string": [
+                    "self"
+                ]
+            },
+            "arg_spec_list": {
+                "build_information": [
+                    "self"
+                ],
+                "py_references": [
+                    "self"
+                ],
+                "py_pointers": [
+                    "self"
+                ],
+                "py_variables": [
+                    "self"
+                ],
+                "references": [
+                    "self"
+                ],
+                "pointers": [
+                    "self"
+                ],
+                "variables": [
+                    "self"
+                ],
+                "init_flags": [
+                    "self"
+                ],
+                "variable_as_strings": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.ext_tools": {
+            "generate_file_name": [
+                "module_name",
+                "module_location"
+            ],
+            "generate_module": [
+                "module_string",
+                "module_file"
+            ],
+            "assign_variable_types": [
+                "variables",
+                "local_dict",
+                "global_dict",
+                "auto_downcast",
+                "type_converters"
+            ],
+            "downcast": [
+                "var_specs"
+            ],
+            "indent": [
+                "st",
+                "spaces"
+            ],
+            "format_error_msg": [
+                "errors"
+            ],
+            "ext_function_from_specs": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "code_block",
+                    "arg_specs"
+                ],
+                "header_code": [
+                    "self"
+                ],
+                "function_declaration_code": [
+                    "self"
+                ],
+                "template_declaration_code": [
+                    "self"
+                ],
+                "parse_tuple_code": [
+                    "self"
+                ],
+                "arg_declaration_code": [
+                    "self"
+                ],
+                "arg_cleanup_code": [
+                    "self"
+                ],
+                "arg_local_dict_code": [
+                    "self"
+                ],
+                "function_code": [
+                    "self"
+                ],
+                "python_function_definition_code": [
+                    "self"
+                ],
+                "set_compiler": [
+                    "self",
+                    "compiler"
+                ]
+            },
+            "ext_function": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "code_block",
+                    "args",
+                    "local_dict",
+                    "global_dict",
+                    "auto_downcast",
+                    "type_converters"
+                ]
+            },
+            "ext_module": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "compiler"
+                ],
+                "add_function": [
+                    "self",
+                    "func"
+                ],
+                "module_code": [
+                    "self"
+                ],
+                "arg_specs": [
+                    "self"
+                ],
+                "build_information": [
+                    "self"
+                ],
+                "get_headers": [
+                    "self"
+                ],
+                "warning_code": [
+                    "self"
+                ],
+                "header_code": [
+                    "self"
+                ],
+                "support_code": [
+                    "self"
+                ],
+                "function_code": [
+                    "self"
+                ],
+                "python_function_definition_code": [
+                    "self"
+                ],
+                "module_init_code": [
+                    "self"
+                ],
+                "generate_file": [
+                    "self",
+                    "file_name",
+                    "location"
+                ],
+                "set_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "build_kw_and_file": [
+                    "self",
+                    "location",
+                    "kw"
+                ],
+                "setup_extension": [
+                    "self",
+                    "location"
+                ],
+                "compile": [
+                    "self",
+                    "location",
+                    "compiler",
+                    "verbose"
+                ]
+            }
+        },
+        "scipy.weave.vtk_spec": {
+            "vtk_converter": {
+                "__init__": [
+                    "self",
+                    "class_name"
+                ],
+                "init_info": [
+                    "self"
+                ],
+                "type_match": [
+                    "self",
+                    "value"
+                ],
+                "generate_build_info": [
+                    "self"
+                ],
+                "py_to_c_code": [
+                    "self"
+                ],
+                "c_to_py_code": [
+                    "self"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.weave.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.weave.weave_version": {},
+        "scipy.fftpack.helper": {
+            "rfftfreq": [
+                "n",
+                "d"
+            ]
+        },
+        "scipy.fftpack.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.fftpack": {},
+        "scipy.fftpack.basic": {
+            "istype": [
+                "arr",
+                "typeclass"
+            ],
+            "_is_safe_size": [
+                "n"
+            ],
+            "_fake_crfft": [
+                "x",
+                "n"
+            ],
+            "_fake_cfft": [
+                "x",
+                "n"
+            ],
+            "_fake_rfft": [
+                "x",
+                "n"
+            ],
+            "_fake_cfftnd": [
+                "x",
+                "shape"
+            ],
+            "_asfarray": [
+                "x"
+            ],
+            "_fix_shape": [
+                "x",
+                "n",
+                "axis"
+            ],
+            "_raw_fft": [
+                "x",
+                "n",
+                "axis",
+                "direction",
+                "overwrite_x",
+                "work_function"
+            ],
+            "fft": [
+                "x",
+                "n",
+                "axis",
+                "overwrite_x"
+            ],
+            "ifft": [
+                "x",
+                "n",
+                "axis",
+                "overwrite_x"
+            ],
+            "rfft": [
+                "x",
+                "n",
+                "axis",
+                "overwrite_x"
+            ],
+            "irfft": [
+                "x",
+                "n",
+                "axis",
+                "overwrite_x"
+            ],
+            "_raw_fftnd": [
+                "x",
+                "s",
+                "axes",
+                "direction",
+                "overwrite_x",
+                "work_function"
+            ],
+            "fftn": [
+                "x",
+                "shape",
+                "axes",
+                "overwrite_x"
+            ],
+            "_raw_fftn_dispatch": [
+                "x",
+                "shape",
+                "axes",
+                "overwrite_x",
+                "direction"
+            ],
+            "ifftn": [
+                "x",
+                "shape",
+                "axes",
+                "overwrite_x"
+            ],
+            "fft2": [
+                "x",
+                "shape",
+                "axes",
+                "overwrite_x"
+            ],
+            "ifft2": [
+                "x",
+                "shape",
+                "axes",
+                "overwrite_x"
+            ]
+        },
+        "scipy.fftpack.info": {},
+        "scipy.fftpack.pseudo_diffs": {
+            "diff": [
+                "x",
+                "order",
+                "period",
+                "_cache"
+            ],
+            "tilbert": [
+                "x",
+                "h",
+                "period",
+                "_cache"
+            ],
+            "itilbert": [
+                "x",
+                "h",
+                "period",
+                "_cache"
+            ],
+            "hilbert": [
+                "x",
+                "_cache"
+            ],
+            "ihilbert": [
+                "x"
+            ],
+            "cs_diff": [
+                "x",
+                "a",
+                "b",
+                "period",
+                "_cache"
+            ],
+            "sc_diff": [
+                "x",
+                "a",
+                "b",
+                "period",
+                "_cache"
+            ],
+            "ss_diff": [
+                "x",
+                "a",
+                "b",
+                "period",
+                "_cache"
+            ],
+            "cc_diff": [
+                "x",
+                "a",
+                "b",
+                "period",
+                "_cache"
+            ],
+            "shift": [
+                "x",
+                "a",
+                "period",
+                "_cache"
+            ]
+        },
+        "scipy.fftpack.realtransforms": {
+            "dct": [
+                "x",
+                "type",
+                "n",
+                "axis",
+                "norm"
+            ],
+            "idct": [
+                "x",
+                "type",
+                "n",
+                "axis",
+                "norm"
+            ],
+            "_dct": [
+                "x",
+                "type",
+                "n",
+                "axis",
+                "overwrite_x",
+                "normalize"
+            ]
+        },
+        "scipy.fftpack.fftpack_version": {},
+        "scipy.fftpack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.integrate.ode": {
+            "find_integrator": [
+                "name"
+            ],
+            "ode": {
+                "__init__": [
+                    "self",
+                    "f",
+                    "jac"
+                ],
+                "set_initial_value": [
+                    "self",
+                    "y",
+                    "t"
+                ],
+                "set_integrator": [
+                    "self",
+                    "name"
+                ],
+                "integrate": [
+                    "self",
+                    "t",
+                    "step",
+                    "relax"
+                ],
+                "successful": [
+                    "self"
+                ],
+                "set_f_params": [
+                    "self"
+                ],
+                "set_jac_params": [
+                    "self"
+                ]
+            },
+            "complex_ode": {
+                "__init__": [
+                    "self",
+                    "f",
+                    "jac"
+                ],
+                "_wrap": [
+                    "self",
+                    "t",
+                    "y"
+                ],
+                "_wrap_jac": [
+                    "self",
+                    "t",
+                    "y"
+                ],
+                "set_integrator": [
+                    "self",
+                    "name"
+                ],
+                "set_initial_value": [
+                    "self",
+                    "y",
+                    "t"
+                ],
+                "integrate": [
+                    "self",
+                    "t",
+                    "step",
+                    "relax"
+                ]
+            },
+            "IntegratorBase": {
+                "reset": [
+                    "self",
+                    "n",
+                    "has_jac"
+                ],
+                "run": [
+                    "self",
+                    "f",
+                    "jac",
+                    "y0",
+                    "t0",
+                    "t1",
+                    "f_params",
+                    "jac_params"
+                ],
+                "step": [
+                    "self",
+                    "f",
+                    "jac",
+                    "y0",
+                    "t0",
+                    "t1",
+                    "f_params",
+                    "jac_params"
+                ],
+                "run_relax": [
+                    "self",
+                    "f",
+                    "jac",
+                    "y0",
+                    "t0",
+                    "t1",
+                    "f_params",
+                    "jac_params"
+                ]
+            },
+            "vode": {
+                "__init__": [
+                    "self",
+                    "method",
+                    "with_jacobian",
+                    "rtol",
+                    "atol",
+                    "lband",
+                    "uband",
+                    "order",
+                    "nsteps",
+                    "max_step",
+                    "min_step",
+                    "first_step"
+                ],
+                "reset": [
+                    "self",
+                    "n",
+                    "has_jac"
+                ],
+                "run": [
+                    "self"
+                ],
+                "step": [
+                    "self"
+                ],
+                "run_relax": [
+                    "self"
+                ]
+            },
+            "zvode": {
+                "reset": [
+                    "self",
+                    "n",
+                    "has_jac"
+                ],
+                "run": [
+                    "self"
+                ]
+            },
+            "dopri5": {
+                "__init__": [
+                    "self",
+                    "rtol",
+                    "atol",
+                    "nsteps",
+                    "max_step",
+                    "first_step",
+                    "safety",
+                    "ifactor",
+                    "dfactor",
+                    "beta",
+                    "method"
+                ],
+                "reset": [
+                    "self",
+                    "n",
+                    "has_jac"
+                ],
+                "run": [
+                    "self",
+                    "f",
+                    "jac",
+                    "y0",
+                    "t0",
+                    "t1",
+                    "f_params",
+                    "jac_params"
+                ],
+                "_solout": [
+                    "self"
+                ]
+            },
+            "dop853": {
+                "__init__": [
+                    "self",
+                    "rtol",
+                    "atol",
+                    "nsteps",
+                    "max_step",
+                    "first_step",
+                    "safety",
+                    "ifactor",
+                    "dfactor",
+                    "beta",
+                    "method"
+                ],
+                "reset": [
+                    "self",
+                    "n",
+                    "has_jac"
+                ]
+            }
+        },
+        "scipy.integrate.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.integrate": {},
+        "scipy.integrate.info": {},
+        "scipy.integrate.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.maxentropy.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.maxentropy": {},
+        "scipy.maxentropy.info": {},
+        "scipy.maxentropy.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.odr.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.odr": {},
+        "scipy.odr.info": {},
+        "scipy.odr.models": {
+            "_lin_fcn": [
+                "B",
+                "x"
+            ],
+            "_lin_fjb": [
+                "B",
+                "x"
+            ],
+            "_lin_fjd": [
+                "B",
+                "x"
+            ],
+            "_lin_est": [
+                "data"
+            ],
+            "_poly_fcn": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_poly_fjacb": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_poly_fjacd": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_exp_fcn": [
+                "B",
+                "x"
+            ],
+            "_exp_fjd": [
+                "B",
+                "x"
+            ],
+            "_exp_fjb": [
+                "B",
+                "x"
+            ],
+            "_exp_est": [
+                "data"
+            ],
+            "polynomial": [
+                "order"
+            ],
+            "_unilin": [
+                "B",
+                "x"
+            ],
+            "_unilin_fjd": [
+                "B",
+                "x"
+            ],
+            "_unilin_fjb": [
+                "B",
+                "x"
+            ],
+            "_unilin_est": [
+                "data"
+            ],
+            "_quadratic": [
+                "B",
+                "x"
+            ],
+            "_quad_fjd": [
+                "B",
+                "x"
+            ],
+            "_quad_fjb": [
+                "B",
+                "x"
+            ],
+            "_quad_est": [
+                "data"
+            ]
+        },
+        "scipy.odr.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.spatial.kdtree": {
+            "minkowski_distance_p": [
+                "x",
+                "y",
+                "p"
+            ],
+            "minkowski_distance": [
+                "x",
+                "y",
+                "p"
+            ],
+            "distance_matrix": [
+                "x",
+                "y",
+                "p",
+                "threshold"
+            ],
+            "Rectangle": {
+                "__init__": [
+                    "self",
+                    "maxes",
+                    "mins"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "volume": [
+                    "self"
+                ],
+                "split": [
+                    "self",
+                    "d",
+                    "split"
+                ],
+                "min_distance_point": [
+                    "self",
+                    "x",
+                    "p"
+                ],
+                "max_distance_point": [
+                    "self",
+                    "x",
+                    "p"
+                ],
+                "min_distance_rectangle": [
+                    "self",
+                    "other",
+                    "p"
+                ],
+                "max_distance_rectangle": [
+                    "self",
+                    "other",
+                    "p"
+                ]
+            },
+            "KDTree": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "leafsize"
+                ],
+                "__build": [
+                    "self",
+                    "idx",
+                    "maxes",
+                    "mins"
+                ],
+                "__query": [
+                    "self",
+                    "x",
+                    "k",
+                    "eps",
+                    "p",
+                    "distance_upper_bound"
+                ],
+                "query": [
+                    "self",
+                    "x",
+                    "k",
+                    "eps",
+                    "p",
+                    "distance_upper_bound"
+                ],
+                "__query_ball_point": [
+                    "self",
+                    "x",
+                    "r",
+                    "p",
+                    "eps"
+                ],
+                "query_ball_point": [
+                    "self",
+                    "x",
+                    "r",
+                    "p",
+                    "eps"
+                ],
+                "query_ball_tree": [
+                    "self",
+                    "other",
+                    "r",
+                    "p",
+                    "eps"
+                ],
+                "query_pairs": [
+                    "self",
+                    "r",
+                    "p",
+                    "eps"
+                ],
+                "count_neighbors": [
+                    "self",
+                    "other",
+                    "r",
+                    "p"
+                ],
+                "sparse_distance_matrix": [
+                    "self",
+                    "other",
+                    "max_distance",
+                    "p"
+                ]
+            }
+        },
+        "scipy.spatial.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.spatial": {},
+        "scipy.spatial.info": {},
+        "scipy.spatial.generate_qhull": {},
+        "scipy.spatial.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.optimize.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.optimize": {},
+        "scipy.optimize.nnls": {
+            "nnls": [
+                "A",
+                "b"
+            ]
+        },
+        "scipy.optimize.info": {},
+        "scipy.optimize.minpack": {
+            "_check_func": [
+                "checker",
+                "argname",
+                "thefunc",
+                "x0",
+                "args",
+                "numinputs",
+                "output_shape"
+            ],
+            "fsolve": [
+                "func",
+                "x0",
+                "args",
+                "fprime",
+                "full_output",
+                "col_deriv",
+                "xtol",
+                "maxfev",
+                "band",
+                "epsfcn",
+                "factor",
+                "diag"
+            ],
+            "leastsq": [
+                "func",
+                "x0",
+                "args",
+                "Dfun",
+                "full_output",
+                "col_deriv",
+                "ftol",
+                "xtol",
+                "gtol",
+                "maxfev",
+                "epsfcn",
+                "factor",
+                "diag"
+            ],
+            "_general_function": [
+                "params",
+                "xdata",
+                "ydata",
+                "function"
+            ],
+            "_weighted_general_function": [
+                "params",
+                "xdata",
+                "ydata",
+                "function",
+                "weights"
+            ],
+            "curve_fit": [
+                "f",
+                "xdata",
+                "ydata",
+                "p0",
+                "sigma"
+            ],
+            "check_gradient": [
+                "fcn",
+                "Dfcn",
+                "x0",
+                "args",
+                "col_deriv"
+            ],
+            "fixed_point": [
+                "func",
+                "x0",
+                "args",
+                "xtol",
+                "maxiter"
+            ]
+        },
+        "scipy.optimize.linesearch": {
+            "line_search_wolfe1": [
+                "f",
+                "fprime",
+                "xk",
+                "pk",
+                "gfk",
+                "old_fval",
+                "old_old_fval",
+                "args",
+                "c1",
+                "c2",
+                "amax",
+                "amin",
+                "xtol"
+            ],
+            "scalar_search_wolfe1": [
+                "phi",
+                "derphi",
+                "phi0",
+                "old_phi0",
+                "derphi0",
+                "c1",
+                "c2",
+                "amax",
+                "amin",
+                "xtol"
+            ],
+            "line_search_wolfe2": [
+                "f",
+                "myfprime",
+                "xk",
+                "pk",
+                "gfk",
+                "old_fval",
+                "old_old_fval",
+                "args",
+                "c1",
+                "c2",
+                "amax"
+            ],
+            "scalar_search_wolfe2": [
+                "phi",
+                "derphi",
+                "phi0",
+                "old_phi0",
+                "derphi0",
+                "c1",
+                "c2",
+                "amax"
+            ],
+            "_cubicmin": [
+                "a",
+                "fa",
+                "fpa",
+                "b",
+                "fb",
+                "c",
+                "fc"
+            ],
+            "_quadmin": [
+                "a",
+                "fa",
+                "fpa",
+                "b",
+                "fb"
+            ],
+            "_zoom": [
+                "a_lo",
+                "a_hi",
+                "phi_lo",
+                "phi_hi",
+                "derphi_lo",
+                "phi",
+                "derphi",
+                "phi0",
+                "derphi0",
+                "c1",
+                "c2"
+            ],
+            "line_search_armijo": [
+                "f",
+                "xk",
+                "pk",
+                "gfk",
+                "old_fval",
+                "args",
+                "c1",
+                "alpha0"
+            ],
+            "line_search_BFGS": [
+                "f",
+                "xk",
+                "pk",
+                "gfk",
+                "old_fval",
+                "args",
+                "c1",
+                "alpha0"
+            ],
+            "scalar_search_armijo": [
+                "phi",
+                "phi0",
+                "derphi0",
+                "c1",
+                "alpha0",
+                "amin"
+            ]
+        },
+        "scipy.optimize.cobyla": {
+            "fmin_cobyla": [
+                "func",
+                "x0",
+                "cons",
+                "args",
+                "consargs",
+                "rhobeg",
+                "rhoend",
+                "iprint",
+                "maxfun",
+                "disp"
+            ]
+        },
+        "scipy.optimize.zeros": {
+            "results_c": [
+                "full_output",
+                "r"
+            ],
+            "newton": [
+                "func",
+                "x0",
+                "fprime",
+                "args",
+                "tol",
+                "maxiter"
+            ],
+            "bisect": [
+                "f",
+                "a",
+                "b",
+                "args",
+                "xtol",
+                "rtol",
+                "maxiter",
+                "full_output",
+                "disp"
+            ],
+            "ridder": [
+                "f",
+                "a",
+                "b",
+                "args",
+                "xtol",
+                "rtol",
+                "maxiter",
+                "full_output",
+                "disp"
+            ],
+            "brentq": [
+                "f",
+                "a",
+                "b",
+                "args",
+                "xtol",
+                "rtol",
+                "maxiter",
+                "full_output",
+                "disp"
+            ],
+            "brenth": [
+                "f",
+                "a",
+                "b",
+                "args",
+                "xtol",
+                "rtol",
+                "maxiter",
+                "full_output",
+                "disp"
+            ],
+            "RootResults": {
+                "__init__": [
+                    "self",
+                    "root",
+                    "iterations",
+                    "function_calls",
+                    "flag"
+                ]
+            }
+        },
+        "scipy.optimize.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.optimize._tstutils": {
+            "f1": [
+                "x"
+            ],
+            "f2": [
+                "x"
+            ],
+            "f3": [
+                "x"
+            ],
+            "f4": [
+                "x"
+            ],
+            "f5": [
+                "x"
+            ],
+            "f6": [
+                "x"
+            ]
+        },
+        "scipy.signal.bsplines": {
+            "factorial": [
+                "n"
+            ],
+            "spline_filter": [
+                "Iin",
+                "lmbda"
+            ],
+            "_bspline_piecefunctions": [
+                "order"
+            ],
+            "bspline": [
+                "x",
+                "n"
+            ],
+            "gauss_spline": [
+                "x",
+                "n"
+            ],
+            "cubic": [
+                "x"
+            ],
+            "quadratic": [
+                "x"
+            ],
+            "c0_P": [
+                "order"
+            ],
+            "_coeff_smooth": [
+                "lam"
+            ],
+            "_hc": [
+                "k",
+                "cs",
+                "rho",
+                "omega"
+            ],
+            "_hs": [
+                "k",
+                "cs",
+                "rho",
+                "omega"
+            ],
+            "_cubic_smooth_coeff": [
+                "signal",
+                "lamb"
+            ],
+            "_cubic_coeff": [
+                "signal"
+            ],
+            "_quadratic_coeff": [
+                "signal"
+            ],
+            "cspline1d": [
+                "signal",
+                "lamb"
+            ],
+            "qspline1d": [
+                "signal",
+                "lamb"
+            ],
+            "cspline1d_eval": [
+                "cj",
+                "newx",
+                "dx",
+                "x0"
+            ],
+            "qspline1d_eval": [
+                "cj",
+                "newx",
+                "dx",
+                "x0"
+            ]
+        },
+        "scipy.signal.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.signal": {},
+        "scipy.signal.waveforms": {
+            "sawtooth": [
+                "t",
+                "width"
+            ],
+            "square": [
+                "t",
+                "duty"
+            ],
+            "gausspulse": [
+                "t",
+                "fc",
+                "bw",
+                "bwr",
+                "tpr",
+                "retquad",
+                "retenv"
+            ],
+            "chirp": [
+                "t",
+                "f0",
+                "t1",
+                "f1",
+                "method",
+                "phi",
+                "vertex_zero"
+            ],
+            "_chirp_phase": [
+                "t",
+                "f0",
+                "t1",
+                "f1",
+                "method",
+                "vertex_zero"
+            ],
+            "sweep_poly": [
+                "t",
+                "poly",
+                "phi"
+            ],
+            "_sweep_poly_phase": [
+                "t",
+                "poly"
+            ]
+        },
+        "scipy.signal.fir_filter_design": {
+            "kaiser_beta": [
+                "a"
+            ],
+            "kaiser_atten": [
+                "numtaps",
+                "width"
+            ],
+            "kaiserord": [
+                "ripple",
+                "width"
+            ],
+            "firwin": [
+                "numtaps",
+                "cutoff",
+                "width",
+                "window",
+                "pass_zero",
+                "scale",
+                "nyq"
+            ],
+            "firwin2": [
+                "numtaps",
+                "freq",
+                "gain",
+                "nfreqs",
+                "window",
+                "nyq"
+            ],
+            "remez": [
+                "numtaps",
+                "bands",
+                "desired",
+                "weight",
+                "Hz",
+                "type",
+                "maxiter",
+                "grid_density"
+            ]
+        },
+        "scipy.signal.windows": {
+            "boxcar": [
+                "M",
+                "sym"
+            ],
+            "triang": [
+                "M",
+                "sym"
+            ],
+            "parzen": [
+                "M",
+                "sym"
+            ],
+            "bohman": [
+                "M",
+                "sym"
+            ],
+            "blackman": [
+                "M",
+                "sym"
+            ],
+            "nuttall": [
+                "M",
+                "sym"
+            ],
+            "blackmanharris": [
+                "M",
+                "sym"
+            ],
+            "flattop": [
+                "M",
+                "sym"
+            ],
+            "bartlett": [
+                "M",
+                "sym"
+            ],
+            "hanning": [
+                "M",
+                "sym"
+            ],
+            "barthann": [
+                "M",
+                "sym"
+            ],
+            "hamming": [
+                "M",
+                "sym"
+            ],
+            "kaiser": [
+                "M",
+                "beta",
+                "sym"
+            ],
+            "gaussian": [
+                "M",
+                "std",
+                "sym"
+            ],
+            "general_gaussian": [
+                "M",
+                "p",
+                "sig",
+                "sym"
+            ],
+            "chebwin": [
+                "M",
+                "at",
+                "sym"
+            ],
+            "slepian": [
+                "M",
+                "width",
+                "sym"
+            ],
+            "get_window": [
+                "window",
+                "Nx",
+                "fftbins"
+            ]
+        },
+        "scipy.signal.info": {},
+        "scipy.signal.wavelets": {
+            "daub": [
+                "p"
+            ],
+            "qmf": [
+                "hk"
+            ],
+            "wavedec": [
+                "amn",
+                "hk"
+            ],
+            "cascade": [
+                "hk",
+                "J"
+            ],
+            "morlet": [
+                "M",
+                "w",
+                "s",
+                "complete"
+            ]
+        },
+        "scipy.signal.ltisys": {
+            "tf2ss": [
+                "num",
+                "den"
+            ],
+            "_none_to_empty": [
+                "arg"
+            ],
+            "abcd_normalize": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "ss2tf": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "input"
+            ],
+            "zpk2ss": [
+                "z",
+                "p",
+                "k"
+            ],
+            "ss2zpk": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "input"
+            ],
+            "lsim2": [
+                "system",
+                "U",
+                "T",
+                "X0"
+            ],
+            "lsim": [
+                "system",
+                "U",
+                "T",
+                "X0",
+                "interp"
+            ],
+            "_default_response_times": [
+                "A",
+                "n"
+            ],
+            "impulse": [
+                "system",
+                "X0",
+                "T",
+                "N"
+            ],
+            "impulse2": [
+                "system",
+                "X0",
+                "T",
+                "N"
+            ],
+            "step": [
+                "system",
+                "X0",
+                "T",
+                "N"
+            ],
+            "step2": [
+                "system",
+                "X0",
+                "T",
+                "N"
+            ],
+            "lti": {
+                "__init__": [
+                    "self"
+                ],
+                "__setattr__": [
+                    "self",
+                    "attr",
+                    "val"
+                ],
+                "impulse": [
+                    "self",
+                    "X0",
+                    "T",
+                    "N"
+                ],
+                "step": [
+                    "self",
+                    "X0",
+                    "T",
+                    "N"
+                ],
+                "output": [
+                    "self",
+                    "U",
+                    "T",
+                    "X0"
+                ]
+            }
+        },
+        "scipy.signal.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.cluster.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.cluster": {},
+        "scipy.cluster.info": {},
+        "scipy.cluster.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.stats.mstats_basic": {
+            "_chk_asarray": [
+                "a",
+                "axis"
+            ],
+            "_chk2_asarray": [
+                "a",
+                "b",
+                "axis"
+            ],
+            "_chk_size": [
+                "a",
+                "b"
+            ],
+            "argstoarray": [],
+            "find_repeats": [
+                "arr"
+            ],
+            "count_tied_groups": [
+                "x",
+                "use_missing"
+            ],
+            "rankdata": [
+                "data",
+                "axis",
+                "use_missing"
+            ],
+            "gmean": [
+                "a",
+                "axis"
+            ],
+            "hmean": [
+                "a",
+                "axis"
+            ],
+            "mode": [
+                "a",
+                "axis"
+            ],
+            "betai": [
+                "a",
+                "b",
+                "x"
+            ],
+            "msign": [
+                "x"
+            ],
+            "pearsonr": [
+                "x",
+                "y"
+            ],
+            "spearmanr": [
+                "x",
+                "y",
+                "use_ties"
+            ],
+            "kendalltau": [
+                "x",
+                "y",
+                "use_ties",
+                "use_missing"
+            ],
+            "kendalltau_seasonal": [
+                "x"
+            ],
+            "pointbiserialr": [
+                "x",
+                "y"
+            ],
+            "linregress": [],
+            "theilslopes": [
+                "y",
+                "x",
+                "alpha"
+            ],
+            "sen_seasonal_slopes": [
+                "x"
+            ],
+            "ttest_onesamp": [
+                "a",
+                "popmean"
+            ],
+            "ttest_ind": [
+                "a",
+                "b",
+                "axis"
+            ],
+            "ttest_rel": [
+                "a",
+                "b",
+                "axis"
+            ],
+            "chisquare": [
+                "f_obs",
+                "f_exp"
+            ],
+            "mannwhitneyu": [
+                "x",
+                "y",
+                "use_continuity"
+            ],
+            "kruskalwallis": [],
+            "_kolmog1": [
+                "x",
+                "n"
+            ],
+            "ks_twosamp": [
+                "data1",
+                "data2",
+                "alternative"
+            ],
+            "ks_twosamp_old": [
+                "data1",
+                "data2"
+            ],
+            "threshold": [
+                "a",
+                "threshmin",
+                "threshmax",
+                "newval"
+            ],
+            "trima": [
+                "a",
+                "limits",
+                "inclusive"
+            ],
+            "trimr": [
+                "a",
+                "limits",
+                "inclusive",
+                "axis"
+            ],
+            "trim": [
+                "a",
+                "limits",
+                "inclusive",
+                "relative",
+                "axis"
+            ],
+            "trimboth": [
+                "data",
+                "proportiontocut",
+                "inclusive",
+                "axis"
+            ],
+            "trimtail": [
+                "data",
+                "proportiontocut",
+                "tail",
+                "inclusive",
+                "axis"
+            ],
+            "trimmed_mean": [
+                "a",
+                "limits",
+                "inclusive",
+                "relative",
+                "axis"
+            ],
+            "trimmed_var": [
+                "a",
+                "limits",
+                "inclusive",
+                "relative",
+                "axis",
+                "ddof"
+            ],
+            "trimmed_std": [
+                "a",
+                "limits",
+                "inclusive",
+                "relative",
+                "axis",
+                "ddof"
+            ],
+            "trimmed_stde": [
+                "a",
+                "limits",
+                "inclusive",
+                "axis"
+            ],
+            "tmean": [
+                "a",
+                "limits",
+                "inclusive"
+            ],
+            "tvar": [
+                "a",
+                "limits",
+                "inclusive"
+            ],
+            "tmin": [
+                "a",
+                "lowerlimit",
+                "axis",
+                "inclusive"
+            ],
+            "tmax": [
+                "a",
+                "upperlimit",
+                "axis",
+                "inclusive"
+            ],
+            "tsem": [
+                "a",
+                "limits",
+                "inclusive"
+            ],
+            "winsorize": [
+                "a",
+                "limits",
+                "inclusive",
+                "inplace",
+                "axis"
+            ],
+            "moment": [
+                "a",
+                "moment",
+                "axis"
+            ],
+            "variation": [
+                "a",
+                "axis"
+            ],
+            "skew": [
+                "a",
+                "axis",
+                "bias"
+            ],
+            "kurtosis": [
+                "a",
+                "axis",
+                "fisher",
+                "bias"
+            ],
+            "describe": [
+                "a",
+                "axis"
+            ],
+            "stde_median": [
+                "data",
+                "axis"
+            ],
+            "skewtest": [
+                "a",
+                "axis"
+            ],
+            "kurtosistest": [
+                "a",
+                "axis"
+            ],
+            "normaltest": [
+                "a",
+                "axis"
+            ],
+            "mquantiles": [
+                "a",
+                "prob",
+                "alphap",
+                "betap",
+                "axis",
+                "limit"
+            ],
+            "scoreatpercentile": [
+                "data",
+                "per",
+                "limit",
+                "alphap",
+                "betap"
+            ],
+            "plotting_positions": [
+                "data",
+                "alpha",
+                "beta"
+            ],
+            "obrientransform": [],
+            "signaltonoise": [
+                "data",
+                "axis"
+            ],
+            "sem": [
+                "a",
+                "axis"
+            ],
+            "f_oneway": [],
+            "f_value_wilks_lambda": [
+                "ER",
+                "EF",
+                "dfnum",
+                "dfden",
+                "a",
+                "b"
+            ],
+            "friedmanchisquare": []
+        },
+        "scipy.stats.rv": {
+            "randwppf": [
+                "ppf",
+                "args",
+                "size"
+            ],
+            "randwcdf": [
+                "cdf",
+                "mean",
+                "args",
+                "size"
+            ]
+        },
+        "scipy.stats.mstats": {},
+        "scipy.stats.kde": {
+            "gaussian_kde": {
+                "__init__": [
+                    "self",
+                    "dataset"
+                ],
+                "evaluate": [
+                    "self",
+                    "points"
+                ],
+                "integrate_gaussian": [
+                    "self",
+                    "mean",
+                    "cov"
+                ],
+                "integrate_box_1d": [
+                    "self",
+                    "low",
+                    "high"
+                ],
+                "integrate_box": [
+                    "self",
+                    "low_bounds",
+                    "high_bounds",
+                    "maxpts"
+                ],
+                "integrate_kde": [
+                    "self",
+                    "other"
+                ],
+                "resample": [
+                    "self",
+                    "size"
+                ],
+                "scotts_factor": [
+                    "self"
+                ],
+                "silverman_factor": [
+                    "self"
+                ],
+                "_compute_covariance": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.stats.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.stats": {},
+        "scipy.stats.vonmises": {
+            "von_mises_cdf_series": [
+                "k",
+                "x",
+                "p"
+            ],
+            "von_mises_cdf_normalapprox": [
+                "k",
+                "x",
+                "C1"
+            ],
+            "von_mises_cdf": [
+                "k",
+                "x"
+            ]
+        },
+        "scipy.stats.info": {},
+        "scipy.stats.mstats_extras": {
+            "hdquantiles": [
+                "data",
+                "prob",
+                "axis",
+                "var"
+            ],
+            "hdmedian": [
+                "data",
+                "axis",
+                "var"
+            ],
+            "hdquantiles_sd": [
+                "data",
+                "prob",
+                "axis"
+            ],
+            "trimmed_mean_ci": [
+                "data",
+                "limits",
+                "inclusive",
+                "alpha",
+                "axis"
+            ],
+            "mjci": [
+                "data",
+                "prob",
+                "axis"
+            ],
+            "mquantiles_cimj": [
+                "data",
+                "prob",
+                "alpha",
+                "axis"
+            ],
+            "median_cihs": [
+                "data",
+                "alpha",
+                "axis"
+            ],
+            "compare_medians_ms": [
+                "group_1",
+                "group_2",
+                "axis"
+            ],
+            "idealfourths": [
+                "data",
+                "axis"
+            ],
+            "rsh": [
+                "data",
+                "points"
+            ]
+        },
+        "scipy.stats.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.constants.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.constants.constants": {
+            "C2K": [
+                "C"
+            ],
+            "K2C": [
+                "K"
+            ],
+            "F2C": [
+                "F"
+            ],
+            "C2F": [
+                "C"
+            ],
+            "F2K": [
+                "F"
+            ],
+            "K2F": [
+                "K"
+            ],
+            "lambda2nu": [
+                "lambda_"
+            ],
+            "nu2lambda": [
+                "nu"
+            ]
+        },
+        "scipy.constants": {},
+        "scipy.misc.doccer": {
+            "docformat": [
+                "docstring",
+                "docdict"
+            ],
+            "indentcount_lines": [
+                "lines"
+            ],
+            "filldoc": [
+                "docdict",
+                "unindent_params"
+            ],
+            "unindent_dict": [
+                "docdict"
+            ],
+            "unindent_string": [
+                "docstring"
+            ]
+        },
+        "scipy.misc.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.misc": {
+            "info": [
+                "object",
+                "maxwidth",
+                "output",
+                "toplevel"
+            ]
+        },
+        "scipy.misc.pilutil": {
+            "bytescale": [
+                "data",
+                "cmin",
+                "cmax",
+                "high",
+                "low"
+            ],
+            "imread": [
+                "name",
+                "flatten"
+            ],
+            "imsave": [
+                "name",
+                "arr"
+            ],
+            "fromimage": [
+                "im",
+                "flatten"
+            ],
+            "toimage": [
+                "arr",
+                "high",
+                "low",
+                "cmin",
+                "cmax",
+                "pal",
+                "mode",
+                "channel_axis"
+            ],
+            "imrotate": [
+                "arr",
+                "angle",
+                "interp"
+            ],
+            "imshow": [
+                "arr"
+            ],
+            "imresize": [
+                "arr",
+                "size",
+                "interp",
+                "mode"
+            ],
+            "imfilter": [
+                "arr",
+                "ftype"
+            ],
+            "radon": [
+                "arr",
+                "theta"
+            ]
+        },
+        "scipy.misc.info": {},
+        "scipy.misc.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "doc.sphinxext.setup": {},
+        "doc.sphinxext.compiler_unparse": {
+            "unparse": [
+                "ast",
+                "single_line_functions"
+            ],
+            "UnparseCompilerAst": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "file",
+                    "single_line_functions"
+                ],
+                "_fill": [
+                    "self",
+                    "text"
+                ],
+                "_write": [
+                    "self",
+                    "text"
+                ],
+                "_enter": [
+                    "self"
+                ],
+                "_leave": [
+                    "self"
+                ],
+                "_dispatch": [
+                    "self",
+                    "tree"
+                ],
+                "_Add": [
+                    "self",
+                    "t"
+                ],
+                "_And": [
+                    "self",
+                    "t"
+                ],
+                "_AssAttr": [
+                    "self",
+                    "t"
+                ],
+                "_Assign": [
+                    "self",
+                    "t"
+                ],
+                "_AssName": [
+                    "self",
+                    "t"
+                ],
+                "_AssTuple": [
+                    "self",
+                    "t"
+                ],
+                "_AugAssign": [
+                    "self",
+                    "t"
+                ],
+                "_Bitand": [
+                    "self",
+                    "t"
+                ],
+                "_Bitor": [
+                    "self",
+                    "t"
+                ],
+                "_CallFunc": [
+                    "self",
+                    "t"
+                ],
+                "_Compare": [
+                    "self",
+                    "t"
+                ],
+                "_Const": [
+                    "self",
+                    "t"
+                ],
+                "_Decorators": [
+                    "self",
+                    "t"
+                ],
+                "_Dict": [
+                    "self",
+                    "t"
+                ],
+                "_Discard": [
+                    "self",
+                    "t"
+                ],
+                "_Div": [
+                    "self",
+                    "t"
+                ],
+                "_Ellipsis": [
+                    "self",
+                    "t"
+                ],
+                "_From": [
+                    "self",
+                    "t"
+                ],
+                "_Function": [
+                    "self",
+                    "t"
+                ],
+                "_Getattr": [
+                    "self",
+                    "t"
+                ],
+                "_If": [
+                    "self",
+                    "t"
+                ],
+                "_IfExp": [
+                    "self",
+                    "t"
+                ],
+                "_Import": [
+                    "self",
+                    "t"
+                ],
+                "_Keyword": [
+                    "self",
+                    "t"
+                ],
+                "_List": [
+                    "self",
+                    "t"
+                ],
+                "_Module": [
+                    "self",
+                    "t"
+                ],
+                "_Mul": [
+                    "self",
+                    "t"
+                ],
+                "_Name": [
+                    "self",
+                    "t"
+                ],
+                "_NoneType": [
+                    "self",
+                    "t"
+                ],
+                "_Not": [
+                    "self",
+                    "t"
+                ],
+                "_Or": [
+                    "self",
+                    "t"
+                ],
+                "_Pass": [
+                    "self",
+                    "t"
+                ],
+                "_Printnl": [
+                    "self",
+                    "t"
+                ],
+                "_Power": [
+                    "self",
+                    "t"
+                ],
+                "_Return": [
+                    "self",
+                    "t"
+                ],
+                "_Slice": [
+                    "self",
+                    "t"
+                ],
+                "_Sliceobj": [
+                    "self",
+                    "t"
+                ],
+                "_Stmt": [
+                    "self",
+                    "tree"
+                ],
+                "_Sub": [
+                    "self",
+                    "t"
+                ],
+                "_Subscript": [
+                    "self",
+                    "t"
+                ],
+                "_TryExcept": [
+                    "self",
+                    "t"
+                ],
+                "_Tuple": [
+                    "self",
+                    "t"
+                ],
+                "_UnaryAdd": [
+                    "self",
+                    "t"
+                ],
+                "_UnarySub": [
+                    "self",
+                    "t"
+                ],
+                "_With": [
+                    "self",
+                    "t"
+                ],
+                "_int": [
+                    "self",
+                    "t"
+                ],
+                "__binary_op": [
+                    "self",
+                    "t",
+                    "symbol"
+                ],
+                "_float": [
+                    "self",
+                    "t"
+                ],
+                "_str": [
+                    "self",
+                    "t"
+                ],
+                "_tuple": [
+                    "self",
+                    "t"
+                ]
+            }
+        },
+        "doc.sphinxext": {},
+        "doc.sphinxext.comment_eater": {
+            "strip_comment_marker": [
+                "text"
+            ],
+            "get_class_traits": [
+                "klass"
+            ],
+            "Comment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno",
+                    "text"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "NonComment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "CommentBlocker": {
+                "__init__": [
+                    "self"
+                ],
+                "process_file": [
+                    "self",
+                    "file"
+                ],
+                "process_token": [
+                    "self",
+                    "kind",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "new_noncomment": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "new_comment": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "make_index": [
+                    "self"
+                ],
+                "search_for_comment": [
+                    "self",
+                    "lineno",
+                    "default"
+                ]
+            }
+        },
+        "doc.sphinxext.docscrape_sphinx": {
+            "get_doc_object": [
+                "obj",
+                "what",
+                "doc",
+                "config"
+            ],
+            "SphinxDocString": {
+                "__init__": [
+                    "self",
+                    "docstring",
+                    "config"
+                ],
+                "_str_header": [
+                    "self",
+                    "name",
+                    "symbol"
+                ],
+                "_str_field_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_indent": [
+                    "self",
+                    "doc",
+                    "indent"
+                ],
+                "_str_signature": [
+                    "self"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "_str_param_list": [
+                    "self",
+                    "name"
+                ],
+                "_obj": [
+                    "self"
+                ],
+                "_str_member_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_section": [
+                    "self",
+                    "name"
+                ],
+                "_str_see_also": [
+                    "self",
+                    "func_role"
+                ],
+                "_str_warnings": [
+                    "self"
+                ],
+                "_str_index": [
+                    "self"
+                ],
+                "_str_references": [
+                    "self"
+                ],
+                "_str_examples": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            },
+            "SphinxFunctionDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "config"
+                ]
+            },
+            "SphinxClassDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "func_doc",
+                    "config"
+                ]
+            },
+            "SphinxObjDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "config"
+                ]
+            }
+        },
+        "doc.sphinxext.traitsdoc": {
+            "looks_like_issubclass": [
+                "obj",
+                "classname"
+            ],
+            "get_doc_object": [
+                "obj",
+                "what",
+                "config"
+            ],
+            "setup": [
+                "app"
+            ],
+            "SphinxTraitsDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "modulename",
+                    "func_doc"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,2461 @@
+{
+    "0.2.0": {
+        "tests": {},
+        "tests.manual.check_callbacks": {
+            "combine_imgs": [
+                "imgs",
+                "grid"
+            ],
+            "Frames": {
+                "__init__": [
+                    "self",
+                    "n_plots"
+                ],
+                "add_frame": [
+                    "self",
+                    "i",
+                    "frame"
+                ],
+                "set_title": [
+                    "self",
+                    "title"
+                ]
+            },
+            "SubplotTimedAnimation": {
+                "__init__": [
+                    "self",
+                    "fig",
+                    "frames",
+                    "grid",
+                    "interval",
+                    "blit"
+                ],
+                "_draw_frame": [
+                    "self",
+                    "j"
+                ],
+                "new_frame_seq": [
+                    "self"
+                ],
+                "_init_draw": [
+                    "self"
+                ]
+            },
+            "DrawActivations": {
+                "__init__": [
+                    "self",
+                    "figsize"
+                ],
+                "on_train_begin": [
+                    "self",
+                    "logs"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_train_end": [
+                    "self",
+                    "logs"
+                ]
+            }
+        },
+        "tests.manual.check_autoencoder": {
+            "build_lstm_autoencoder": [
+                "autoencoder",
+                "X_train",
+                "X_test"
+            ],
+            "build_deep_classical_autoencoder": [
+                "autoencoder"
+            ]
+        },
+        "tests.manual.check_model_utils": {},
+        "tests.manual": {},
+        "tests.manual.check_save_weights": {
+            "create_model": []
+        },
+        "tests.manual.check_yaml": {},
+        "tests.manual.check_constraints": {},
+        "tests.manual.check_masked_recurrent": {},
+        "tests.manual.check_wrappers": {},
+        "keras.optimizers": {
+            "clip_norm": [
+                "g",
+                "c",
+                "n"
+            ],
+            "kl_divergence": [
+                "p",
+                "p_hat"
+            ],
+            "get": [
+                "identifier",
+                "kwargs"
+            ],
+            "Optimizer": {
+                "__init__": [
+                    "self"
+                ],
+                "get_state": [
+                    "self"
+                ],
+                "set_state": [
+                    "self",
+                    "value_list"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_gradients": [
+                    "self",
+                    "loss",
+                    "params"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "SGD": {
+                "__init__": [
+                    "self",
+                    "lr",
+                    "momentum",
+                    "decay",
+                    "nesterov"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "RMSprop": {
+                "__init__": [
+                    "self",
+                    "lr",
+                    "rho",
+                    "epsilon"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Adagrad": {
+                "__init__": [
+                    "self",
+                    "lr",
+                    "epsilon"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Adadelta": {
+                "__init__": [
+                    "self",
+                    "lr",
+                    "rho",
+                    "epsilon"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Adam": {
+                "__init__": [
+                    "self",
+                    "lr",
+                    "beta_1",
+                    "beta_2",
+                    "epsilon"
+                ],
+                "get_updates": [
+                    "self",
+                    "params",
+                    "constraints",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.constraints": {
+            "get": [
+                "identifier",
+                "kwargs"
+            ],
+            "Constraint": {
+                "__call__": [
+                    "self",
+                    "p"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "MaxNorm": {
+                "__init__": [
+                    "self",
+                    "m"
+                ],
+                "__call__": [
+                    "self",
+                    "p"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "NonNeg": {
+                "__call__": [
+                    "self",
+                    "p"
+                ]
+            },
+            "UnitNorm": {
+                "__call__": [
+                    "self",
+                    "p"
+                ]
+            }
+        },
+        "keras.initializations": {
+            "get_fans": [
+                "shape"
+            ],
+            "uniform": [
+                "shape",
+                "scale"
+            ],
+            "normal": [
+                "shape",
+                "scale"
+            ],
+            "lecun_uniform": [
+                "shape"
+            ],
+            "glorot_normal": [
+                "shape"
+            ],
+            "glorot_uniform": [
+                "shape"
+            ],
+            "he_normal": [
+                "shape"
+            ],
+            "he_uniform": [
+                "shape"
+            ],
+            "orthogonal": [
+                "shape",
+                "scale"
+            ],
+            "identity": [
+                "shape",
+                "scale"
+            ],
+            "zero": [
+                "shape"
+            ],
+            "one": [
+                "shape"
+            ],
+            "get": [
+                "identifier"
+            ]
+        },
+        "keras": {},
+        "keras.objectives": {
+            "mean_squared_error": [
+                "y_true",
+                "y_pred"
+            ],
+            "mean_absolute_error": [
+                "y_true",
+                "y_pred"
+            ],
+            "mean_absolute_percentage_error": [
+                "y_true",
+                "y_pred"
+            ],
+            "mean_squared_logarithmic_error": [
+                "y_true",
+                "y_pred"
+            ],
+            "squared_hinge": [
+                "y_true",
+                "y_pred"
+            ],
+            "hinge": [
+                "y_true",
+                "y_pred"
+            ],
+            "categorical_crossentropy": [
+                "y_true",
+                "y_pred"
+            ],
+            "binary_crossentropy": [
+                "y_true",
+                "y_pred"
+            ],
+            "poisson_loss": [
+                "y_true",
+                "y_pred"
+            ],
+            "get": [
+                "identifier"
+            ]
+        },
+        "keras.regularizers": {
+            "l1": [
+                "l"
+            ],
+            "l2": [
+                "l"
+            ],
+            "l1l2": [
+                "l1",
+                "l2"
+            ],
+            "activity_l1": [
+                "l"
+            ],
+            "activity_l2": [
+                "l"
+            ],
+            "activity_l1l2": [
+                "l1",
+                "l2"
+            ],
+            "get": [
+                "identifier",
+                "kwargs"
+            ],
+            "Regularizer": {
+                "set_param": [
+                    "self",
+                    "p"
+                ],
+                "set_layer": [
+                    "self",
+                    "layer"
+                ],
+                "__call__": [
+                    "self",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "WeightRegularizer": {
+                "__init__": [
+                    "self",
+                    "l1",
+                    "l2"
+                ],
+                "set_param": [
+                    "self",
+                    "p"
+                ],
+                "__call__": [
+                    "self",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ActivityRegularizer": {
+                "__init__": [
+                    "self",
+                    "l1",
+                    "l2"
+                ],
+                "set_layer": [
+                    "self",
+                    "layer"
+                ],
+                "__call__": [
+                    "self",
+                    "loss"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.callbacks": {
+            "CallbackList": {
+                "__init__": [
+                    "self",
+                    "callbacks",
+                    "queue_length"
+                ],
+                "append": [
+                    "self",
+                    "callback"
+                ],
+                "_set_params": [
+                    "self",
+                    "params"
+                ],
+                "_set_model": [
+                    "self",
+                    "model"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_begin": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_train_begin": [
+                    "self",
+                    "logs"
+                ],
+                "on_train_end": [
+                    "self",
+                    "logs"
+                ]
+            },
+            "Callback": {
+                "__init__": [
+                    "self"
+                ],
+                "_set_params": [
+                    "self",
+                    "params"
+                ],
+                "_set_model": [
+                    "self",
+                    "model"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_begin": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_train_begin": [
+                    "self",
+                    "logs"
+                ],
+                "on_train_end": [
+                    "self",
+                    "logs"
+                ]
+            },
+            "BaseLogger": {
+                "on_train_begin": [
+                    "self",
+                    "logs"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_begin": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            },
+            "History": {
+                "on_train_begin": [
+                    "self",
+                    "logs"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            },
+            "ModelCheckpoint": {
+                "__init__": [
+                    "self",
+                    "filepath",
+                    "monitor",
+                    "verbose",
+                    "save_best_only"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            },
+            "EarlyStopping": {
+                "__init__": [
+                    "self",
+                    "monitor",
+                    "patience",
+                    "verbose"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            },
+            "RemoteMonitor": {
+                "__init__": [
+                    "self",
+                    "root"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ],
+                "on_batch_end": [
+                    "self",
+                    "batch",
+                    "logs"
+                ],
+                "on_epoch_end": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            },
+            "LearningRateScheduler": {
+                "__init__": [
+                    "self",
+                    "schedule"
+                ],
+                "on_epoch_begin": [
+                    "self",
+                    "epoch",
+                    "logs"
+                ]
+            }
+        },
+        "keras.models": {
+            "standardize_y": [
+                "y"
+            ],
+            "batch_shuffle": [
+                "index_array",
+                "batch_size"
+            ],
+            "make_batches": [
+                "size",
+                "batch_size"
+            ],
+            "standardize_X": [
+                "X"
+            ],
+            "slice_X": [
+                "X",
+                "start",
+                "stop"
+            ],
+            "weighted_objective": [
+                "fn"
+            ],
+            "standardize_weights": [
+                "y",
+                "sample_weight",
+                "class_weight"
+            ],
+            "model_from_yaml": [
+                "yaml_string",
+                "custom_layers"
+            ],
+            "model_from_json": [
+                "json_string",
+                "custom_layers"
+            ],
+            "model_from_config": [
+                "config",
+                "custom_layers"
+            ],
+            "get_function_name": [
+                "o"
+            ],
+            "Model": {
+                "_fit": [
+                    "self",
+                    "f",
+                    "ins",
+                    "out_labels",
+                    "batch_size",
+                    "nb_epoch",
+                    "verbose",
+                    "callbacks",
+                    "val_f",
+                    "val_ins",
+                    "shuffle",
+                    "metrics"
+                ],
+                "_predict_loop": [
+                    "self",
+                    "f",
+                    "ins",
+                    "batch_size",
+                    "verbose"
+                ],
+                "_test_loop": [
+                    "self",
+                    "f",
+                    "ins",
+                    "batch_size",
+                    "verbose"
+                ],
+                "get_config": [
+                    "self",
+                    "verbose"
+                ],
+                "to_yaml": [
+                    "self"
+                ],
+                "to_json": [
+                    "self"
+                ]
+            },
+            "Sequential": {
+                "compile": [
+                    "self",
+                    "optimizer",
+                    "loss",
+                    "class_mode",
+                    "theano_mode"
+                ],
+                "train_on_batch": [
+                    "self",
+                    "X",
+                    "y",
+                    "accuracy",
+                    "class_weight",
+                    "sample_weight"
+                ],
+                "test_on_batch": [
+                    "self",
+                    "X",
+                    "y",
+                    "accuracy",
+                    "sample_weight"
+                ],
+                "predict_on_batch": [
+                    "self",
+                    "X"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "batch_size",
+                    "nb_epoch",
+                    "verbose",
+                    "callbacks",
+                    "validation_split",
+                    "validation_data",
+                    "shuffle",
+                    "show_accuracy",
+                    "class_weight",
+                    "sample_weight"
+                ],
+                "predict": [
+                    "self",
+                    "X",
+                    "batch_size",
+                    "verbose"
+                ],
+                "predict_proba": [
+                    "self",
+                    "X",
+                    "batch_size",
+                    "verbose"
+                ],
+                "predict_classes": [
+                    "self",
+                    "X",
+                    "batch_size",
+                    "verbose"
+                ],
+                "evaluate": [
+                    "self",
+                    "X",
+                    "y",
+                    "batch_size",
+                    "show_accuracy",
+                    "verbose",
+                    "sample_weight"
+                ],
+                "save_weights": [
+                    "self",
+                    "filepath",
+                    "overwrite"
+                ],
+                "load_weights": [
+                    "self",
+                    "filepath"
+                ]
+            },
+            "Graph": {
+                "compile": [
+                    "self",
+                    "optimizer",
+                    "loss",
+                    "theano_mode"
+                ],
+                "train_on_batch": [
+                    "self",
+                    "data",
+                    "class_weight",
+                    "sample_weight"
+                ],
+                "test_on_batch": [
+                    "self",
+                    "data",
+                    "sample_weight"
+                ],
+                "predict_on_batch": [
+                    "self",
+                    "data"
+                ],
+                "fit": [
+                    "self",
+                    "data",
+                    "batch_size",
+                    "nb_epoch",
+                    "verbose",
+                    "callbacks",
+                    "validation_split",
+                    "validation_data",
+                    "shuffle",
+                    "class_weight",
+                    "sample_weight"
+                ],
+                "evaluate": [
+                    "self",
+                    "data",
+                    "batch_size",
+                    "verbose",
+                    "sample_weight"
+                ],
+                "predict": [
+                    "self",
+                    "data",
+                    "batch_size",
+                    "verbose"
+                ],
+                "save_weights": [
+                    "self",
+                    "filepath",
+                    "overwrite"
+                ],
+                "load_weights": [
+                    "self",
+                    "filepath"
+                ]
+            }
+        },
+        "keras.activations": {
+            "softmax": [
+                "x"
+            ],
+            "time_distributed_softmax": [
+                "x"
+            ],
+            "softplus": [
+                "x"
+            ],
+            "relu": [
+                "x"
+            ],
+            "tanh": [
+                "x"
+            ],
+            "sigmoid": [
+                "x"
+            ],
+            "hard_sigmoid": [
+                "x"
+            ],
+            "linear": [
+                "x"
+            ],
+            "get": [
+                "identifier"
+            ]
+        },
+        "keras.utils.np_utils": {
+            "to_categorical": [
+                "y",
+                "nb_classes"
+            ],
+            "normalize": [
+                "a",
+                "axis",
+                "order"
+            ],
+            "binary_logloss": [
+                "p",
+                "y"
+            ],
+            "multiclass_logloss": [
+                "P",
+                "Y"
+            ],
+            "accuracy": [
+                "p",
+                "y"
+            ],
+            "probas_to_classes": [
+                "y_pred"
+            ],
+            "categorical_probas_to_classes": [
+                "p"
+            ]
+        },
+        "keras.utils.theano_utils": {
+            "floatX": [
+                "X"
+            ],
+            "sharedX": [
+                "X",
+                "dtype",
+                "name"
+            ],
+            "shared_zeros": [
+                "shape",
+                "dtype",
+                "name"
+            ],
+            "shared_scalar": [
+                "val",
+                "dtype",
+                "name"
+            ],
+            "shared_ones": [
+                "shape",
+                "dtype",
+                "name"
+            ],
+            "alloc_zeros_matrix": [],
+            "ndim_tensor": [
+                "ndim"
+            ],
+            "on_gpu": []
+        },
+        "keras.utils": {},
+        "keras.utils.test_utils": {
+            "get_test_data": [
+                "nb_train",
+                "nb_test",
+                "input_shape",
+                "output_shape",
+                "classification",
+                "nb_class"
+            ]
+        },
+        "keras.utils.layer_utils": {
+            "container_from_config": [
+                "original_layer_dict",
+                "custom_layers"
+            ],
+            "print_layer_shapes": [
+                "model",
+                "input_shapes"
+            ],
+            "get_layer": [
+                "identifier",
+                "kwargs",
+                "custom_layers"
+            ]
+        },
+        "keras.utils.generic_utils": {
+            "get_from_module": [
+                "identifier",
+                "module_params",
+                "module_name",
+                "instantiate",
+                "kwargs"
+            ],
+            "make_tuple": [],
+            "printv": [
+                "v",
+                "prefix"
+            ],
+            "Progbar": {
+                "__init__": [
+                    "self",
+                    "target",
+                    "width",
+                    "verbose"
+                ],
+                "update": [
+                    "self",
+                    "current",
+                    "values"
+                ],
+                "add": [
+                    "self",
+                    "n",
+                    "values"
+                ]
+            }
+        },
+        "keras.utils.io_utils": {
+            "save_array": [
+                "array",
+                "name"
+            ],
+            "load_array": [
+                "name"
+            ],
+            "HDF5Matrix": {
+                "__init__": [
+                    "self",
+                    "datapath",
+                    "dataset",
+                    "start",
+                    "end",
+                    "normalizer"
+                ],
+                "__len__": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "shape": [
+                    "self"
+                ]
+            }
+        },
+        "keras.utils.visualize_util": {
+            "plot": [
+                "model",
+                "to_file"
+            ]
+        },
+        "keras.layers.embeddings": {
+            "Embedding": {
+                "__init__": [
+                    "self",
+                    "input_dim",
+                    "output_dim",
+                    "init",
+                    "input_length",
+                    "W_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "mask_zero",
+                    "weights"
+                ],
+                "build": [
+                    "self"
+                ],
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "WordContextProduct": {
+                "__init__": [
+                    "self",
+                    "input_dim",
+                    "proj_dim",
+                    "init",
+                    "activation",
+                    "weights"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers": {},
+        "keras.layers.normalization": {
+            "BatchNormalization": {
+                "__init__": [
+                    "self",
+                    "epsilon",
+                    "mode",
+                    "momentum",
+                    "weights"
+                ],
+                "build": [
+                    "self"
+                ],
+                "get_weights": [
+                    "self"
+                ],
+                "set_weights": [
+                    "self",
+                    "weights"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "LRN2D": {
+                "__init__": [
+                    "self",
+                    "alpha",
+                    "k",
+                    "beta",
+                    "n"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.containers": {
+            "Sequential": {
+                "__init__": [
+                    "self",
+                    "layers"
+                ],
+                "set_previous": [
+                    "self",
+                    "layer"
+                ],
+                "add": [
+                    "self",
+                    "layer"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "set_input": [
+                    "self"
+                ],
+                "get_input": [
+                    "self",
+                    "train"
+                ],
+                "input": [
+                    "self"
+                ],
+                "get_weights": [
+                    "self"
+                ],
+                "set_weights": [
+                    "self",
+                    "weights"
+                ],
+                "get_config": [
+                    "self"
+                ],
+                "count_params": [
+                    "self"
+                ]
+            },
+            "Graph": {
+                "__init__": [
+                    "self"
+                ],
+                "nb_input": [
+                    "self"
+                ],
+                "nb_output": [
+                    "self"
+                ],
+                "set_previous": [
+                    "self",
+                    "layer",
+                    "connection_map"
+                ],
+                "get_input": [
+                    "self",
+                    "train"
+                ],
+                "input": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "add_input": [
+                    "self",
+                    "name",
+                    "input_shape",
+                    "dtype"
+                ],
+                "add_node": [
+                    "self",
+                    "layer",
+                    "name",
+                    "input",
+                    "inputs",
+                    "merge_mode",
+                    "concat_axis",
+                    "create_output"
+                ],
+                "add_output": [
+                    "self",
+                    "name",
+                    "input",
+                    "inputs",
+                    "merge_mode",
+                    "concat_axis"
+                ],
+                "get_config": [
+                    "self"
+                ],
+                "count_params": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.core": {
+            "Layer": {
+                "__init__": [
+                    "self"
+                ],
+                "set_previous": [
+                    "self",
+                    "layer",
+                    "connection_map"
+                ],
+                "build": [
+                    "self"
+                ],
+                "nb_input": [
+                    "self"
+                ],
+                "nb_output": [
+                    "self"
+                ],
+                "input_shape": [
+                    "self"
+                ],
+                "set_input_shape": [
+                    "self",
+                    "input_shape"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_input": [
+                    "self",
+                    "train"
+                ],
+                "supports_masked_input": [
+                    "self"
+                ],
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ],
+                "set_weights": [
+                    "self",
+                    "weights"
+                ],
+                "get_weights": [
+                    "self"
+                ],
+                "get_config": [
+                    "self"
+                ],
+                "get_params": [
+                    "self"
+                ],
+                "set_name": [
+                    "self",
+                    "name"
+                ],
+                "count_params": [
+                    "self"
+                ]
+            },
+            "MaskedLayer": {
+                "supports_masked_input": [
+                    "self"
+                ],
+                "get_input_mask": [
+                    "self",
+                    "train"
+                ],
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ]
+            },
+            "Masking": {
+                "__init__": [
+                    "self",
+                    "mask_value"
+                ],
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "TimeDistributedMerge": {
+                "__init__": [
+                    "self",
+                    "mode"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Merge": {
+                "__init__": [
+                    "self",
+                    "layers",
+                    "mode",
+                    "concat_axis"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_params": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_input": [
+                    "self",
+                    "train"
+                ],
+                "input": [
+                    "self"
+                ],
+                "supports_masked_input": [
+                    "self"
+                ],
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ],
+                "get_weights": [
+                    "self"
+                ],
+                "set_weights": [
+                    "self",
+                    "weights"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Dropout": {
+                "__init__": [
+                    "self",
+                    "p"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Activation": {
+                "__init__": [
+                    "self",
+                    "activation",
+                    "target",
+                    "beta"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Reshape": {
+                "__init__": [
+                    "self",
+                    "dims"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Permute": {
+                "__init__": [
+                    "self",
+                    "dims"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Flatten": {
+                "__init__": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ]
+            },
+            "RepeatVector": {
+                "__init__": [
+                    "self",
+                    "n"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Dense": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "activation",
+                    "weights",
+                    "W_regularizer",
+                    "b_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "b_constraint",
+                    "input_dim"
+                ],
+                "build": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ActivityRegularization": {
+                "__init__": [
+                    "self",
+                    "l1",
+                    "l2"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "TimeDistributedDense": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "activation",
+                    "weights",
+                    "W_regularizer",
+                    "b_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "b_constraint",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "AutoEncoder": {
+                "__init__": [
+                    "self",
+                    "encoder",
+                    "decoder",
+                    "output_reconstruction",
+                    "weights"
+                ],
+                "set_previous": [
+                    "self",
+                    "node"
+                ],
+                "get_weights": [
+                    "self"
+                ],
+                "set_weights": [
+                    "self",
+                    "weights"
+                ],
+                "get_input": [
+                    "self",
+                    "train"
+                ],
+                "input": [
+                    "self"
+                ],
+                "_get_hidden": [
+                    "self",
+                    "train"
+                ],
+                "input_shape": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "MaxoutDense": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "nb_feature",
+                    "init",
+                    "weights",
+                    "W_regularizer",
+                    "b_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "b_constraint",
+                    "input_dim"
+                ],
+                "build": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.recurrent": {
+            "Recurrent": {
+                "get_output_mask": [
+                    "self",
+                    "train"
+                ],
+                "get_padded_shuffled_mask": [
+                    "self",
+                    "train",
+                    "X",
+                    "pad"
+                ],
+                "output_shape": [
+                    "self"
+                ]
+            },
+            "SimpleRNN": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "x_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "u"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "SimpleDeepRNN": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "depth",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "x_t"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "GRU": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "xz_t",
+                    "xr_t",
+                    "xh_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "u_z",
+                    "u_r",
+                    "u_h"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "LSTM": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "forget_bias_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "xi_t",
+                    "xf_t",
+                    "xo_t",
+                    "xc_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "c_tm1",
+                    "u_i",
+                    "u_f",
+                    "u_o",
+                    "u_c"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "JZS1": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "xz_t",
+                    "xr_t",
+                    "xh_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "u_r",
+                    "u_h"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "JZS2": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "xz_t",
+                    "xr_t",
+                    "xh_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "u_z",
+                    "u_r",
+                    "u_h"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "JZS3": {
+                "__init__": [
+                    "self",
+                    "output_dim",
+                    "init",
+                    "inner_init",
+                    "activation",
+                    "inner_activation",
+                    "weights",
+                    "truncate_gradient",
+                    "return_sequences",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "_step": [
+                    "self",
+                    "xz_t",
+                    "xr_t",
+                    "xh_t",
+                    "mask_tm1",
+                    "h_tm1",
+                    "u_z",
+                    "u_r",
+                    "u_h"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.convolutional": {
+            "conv_output_length": [
+                "input_length",
+                "filter_size",
+                "border_mode",
+                "stride"
+            ],
+            "pool_output_length": [
+                "input_length",
+                "pool_size",
+                "ignore_border",
+                "stride"
+            ],
+            "Convolution1D": {
+                "__init__": [
+                    "self",
+                    "nb_filter",
+                    "filter_length",
+                    "init",
+                    "activation",
+                    "weights",
+                    "border_mode",
+                    "subsample_length",
+                    "W_regularizer",
+                    "b_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "b_constraint",
+                    "input_dim",
+                    "input_length"
+                ],
+                "build": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "Convolution2D": {
+                "__init__": [
+                    "self",
+                    "nb_filter",
+                    "nb_row",
+                    "nb_col",
+                    "init",
+                    "activation",
+                    "weights",
+                    "border_mode",
+                    "subsample",
+                    "W_regularizer",
+                    "b_regularizer",
+                    "activity_regularizer",
+                    "W_constraint",
+                    "b_constraint"
+                ],
+                "build": [
+                    "self"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "MaxPooling1D": {
+                "__init__": [
+                    "self",
+                    "pool_length",
+                    "stride",
+                    "ignore_border"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "MaxPooling2D": {
+                "__init__": [
+                    "self",
+                    "pool_size",
+                    "stride",
+                    "ignore_border"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "UpSample1D": {
+                "__init__": [
+                    "self",
+                    "length"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "UpSample2D": {
+                "__init__": [
+                    "self",
+                    "size"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ZeroPadding1D": {
+                "__init__": [
+                    "self",
+                    "padding"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ZeroPadding2D": {
+                "__init__": [
+                    "self",
+                    "padding"
+                ],
+                "output_shape": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.noise": {
+            "GaussianNoise": {
+                "__init__": [
+                    "self",
+                    "sigma"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "GaussianDropout": {
+                "__init__": [
+                    "self",
+                    "p"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.layers.advanced_activations": {
+            "LeakyReLU": {
+                "__init__": [
+                    "self",
+                    "alpha"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "PReLU": {
+                "__init__": [
+                    "self",
+                    "init",
+                    "weights"
+                ],
+                "build": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ParametricSoftplus": {
+                "__init__": [
+                    "self",
+                    "alpha_init",
+                    "beta_init",
+                    "weights"
+                ],
+                "build": [
+                    "self"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ThresholdedLinear": {
+                "__init__": [
+                    "self",
+                    "theta"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            },
+            "ThresholdedReLU": {
+                "__init__": [
+                    "self",
+                    "theta"
+                ],
+                "get_output": [
+                    "self",
+                    "train"
+                ],
+                "get_config": [
+                    "self"
+                ]
+            }
+        },
+        "keras.wrappers": {},
+        "keras.wrappers.scikit_learn": {
+            "BaseWrapper": {
+                "__init__": [
+                    "self",
+                    "model",
+                    "optimizer",
+                    "loss",
+                    "train_batch_size",
+                    "test_batch_size",
+                    "nb_epoch",
+                    "shuffle",
+                    "show_accuracy",
+                    "validation_split",
+                    "validation_data",
+                    "callbacks",
+                    "verbose"
+                ],
+                "get_params": [
+                    "self",
+                    "deep"
+                ],
+                "set_params": [
+                    "self"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            },
+            "KerasClassifier": {
+                "__init__": [
+                    "self",
+                    "model",
+                    "optimizer",
+                    "loss"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "predict_proba": [
+                    "self",
+                    "X"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            },
+            "KerasRegressor": {
+                "__init__": [
+                    "self",
+                    "model",
+                    "optimizer",
+                    "loss"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            }
+        },
+        "keras.datasets.cifar10": {
+            "load_data": []
+        },
+        "keras.datasets.cifar100": {
+            "load_data": [
+                "label_mode"
+            ]
+        },
+        "keras.datasets.data_utils": {
+            "get_file": [
+                "fname",
+                "origin",
+                "untar"
+            ],
+            "ParanoidURLopener": {
+                "http_error_default": [
+                    "self",
+                    "url",
+                    "fp",
+                    "errcode",
+                    "errmsg",
+                    "headers"
+                ]
+            }
+        },
+        "keras.datasets.mnist": {
+            "load_data": [
+                "path"
+            ]
+        },
+        "keras.datasets": {},
+        "keras.datasets.reuters": {
+            "make_reuters_dataset": [
+                "path",
+                "min_samples_per_topic"
+            ],
+            "load_data": [
+                "path",
+                "nb_words",
+                "skip_top",
+                "maxlen",
+                "test_split",
+                "seed",
+                "start_char",
+                "oov_char",
+                "index_from"
+            ],
+            "get_word_index": [
+                "path"
+            ]
+        },
+        "keras.datasets.imdb": {
+            "load_data": [
+                "path",
+                "nb_words",
+                "skip_top",
+                "maxlen",
+                "test_split",
+                "seed",
+                "start_char",
+                "oov_char",
+                "index_from"
+            ]
+        },
+        "keras.datasets.cifar": {
+            "load_batch": [
+                "fpath",
+                "label_key"
+            ]
+        },
+        "keras.preprocessing": {},
+        "keras.preprocessing.text": {
+            "base_filter": [],
+            "text_to_word_sequence": [
+                "text",
+                "filters",
+                "lower",
+                "split"
+            ],
+            "one_hot": [
+                "text",
+                "n",
+                "filters",
+                "lower",
+                "split"
+            ],
+            "Tokenizer": {
+                "__init__": [
+                    "self",
+                    "nb_words",
+                    "filters",
+                    "lower",
+                    "split"
+                ],
+                "fit_on_texts": [
+                    "self",
+                    "texts"
+                ],
+                "fit_on_sequences": [
+                    "self",
+                    "sequences"
+                ],
+                "texts_to_sequences": [
+                    "self",
+                    "texts"
+                ],
+                "texts_to_sequences_generator": [
+                    "self",
+                    "texts"
+                ],
+                "texts_to_matrix": [
+                    "self",
+                    "texts",
+                    "mode"
+                ],
+                "sequences_to_matrix": [
+                    "self",
+                    "sequences",
+                    "mode"
+                ]
+            }
+        },
+        "keras.preprocessing.image": {
+            "random_rotation": [
+                "x",
+                "rg",
+                "fill_mode",
+                "cval"
+            ],
+            "random_shift": [
+                "x",
+                "wrg",
+                "hrg",
+                "fill_mode",
+                "cval"
+            ],
+            "horizontal_flip": [
+                "x"
+            ],
+            "vertical_flip": [
+                "x"
+            ],
+            "random_barrel_transform": [
+                "x",
+                "intensity"
+            ],
+            "random_shear": [
+                "x",
+                "intensity"
+            ],
+            "random_channel_shift": [
+                "x",
+                "rg"
+            ],
+            "random_zoom": [
+                "x",
+                "rg",
+                "fill_mode",
+                "cval"
+            ],
+            "array_to_img": [
+                "x",
+                "scale"
+            ],
+            "img_to_array": [
+                "img"
+            ],
+            "load_img": [
+                "path",
+                "grayscale"
+            ],
+            "list_pictures": [
+                "directory",
+                "ext"
+            ],
+            "ImageDataGenerator": {
+                "__init__": [
+                    "self",
+                    "featurewise_center",
+                    "samplewise_center",
+                    "featurewise_std_normalization",
+                    "samplewise_std_normalization",
+                    "zca_whitening",
+                    "rotation_range",
+                    "width_shift_range",
+                    "height_shift_range",
+                    "horizontal_flip",
+                    "vertical_flip"
+                ],
+                "flow": [
+                    "self",
+                    "X",
+                    "y",
+                    "batch_size",
+                    "shuffle",
+                    "seed",
+                    "save_to_dir",
+                    "save_prefix",
+                    "save_format"
+                ],
+                "standardize": [
+                    "self",
+                    "x"
+                ],
+                "random_transform": [
+                    "self",
+                    "x"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "augment",
+                    "rounds",
+                    "seed"
+                ]
+            }
+        },
+        "keras.preprocessing.sequence": {
+            "pad_sequences": [
+                "sequences",
+                "maxlen",
+                "dtype",
+                "padding",
+                "truncating",
+                "value"
+            ],
+            "make_sampling_table": [
+                "size",
+                "sampling_factor"
+            ],
+            "skipgrams": [
+                "sequence",
+                "vocabulary_size",
+                "window_size",
+                "negative_samples",
+                "shuffle",
+                "categorical",
+                "sampling_table"
+            ]
+        }
+    }
+}

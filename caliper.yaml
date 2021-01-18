@@ -1,7 +1,12 @@
 metrics:
   - name: pypi:tensorflow
   - name: pypi:sif
-  - name: pypi:singularity-cli
+  - name: pypi:numpy
+  - name: pypi:pandas
+  - name: pypi:scikit-learn
+  - name: pypi:scikit-image
+  - name: pypi:scipy
+  - name: pypi:keras
   - name: pypi:sregistry
   - name: github:spack/spack
   - name: github:vsoch/pull-request-action

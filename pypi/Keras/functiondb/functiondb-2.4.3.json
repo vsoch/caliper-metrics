@@ -1,0 +1,242 @@
+{
+    "2.4.3": {
+        "keras.constraints": {},
+        "keras.initializers": {},
+        "keras.backend": {},
+        "keras.losses": {},
+        "keras": {},
+        "keras.objectives": {},
+        "keras.regularizers": {},
+        "keras.callbacks": {},
+        "keras.metrics": {},
+        "keras.models": {},
+        "keras.activations": {},
+        "keras.applications.imagenet_utils": {},
+        "keras.applications.xception": {},
+        "keras.applications.resnet50": {},
+        "keras.applications.mobilenet_v2": {},
+        "keras.applications.inception_v3": {},
+        "keras.applications.vgg19": {},
+        "keras.applications": {},
+        "keras.applications.vgg16": {},
+        "keras.applications.resnet_v2": {},
+        "keras.applications.nasnet": {},
+        "keras.applications.inception_resnet_v2": {},
+        "keras.applications.mobilenet": {},
+        "keras.applications.densenet": {},
+        "keras.applications.resnet": {},
+        "keras.utils.np_utils": {},
+        "keras.utils.vis_utils": {},
+        "keras.utils.data_utils": {},
+        "keras.utils": {},
+        "keras.utils.test_utils": {
+            "get_test_data": [
+                "num_train",
+                "num_test",
+                "input_shape",
+                "output_shape",
+                "classification",
+                "num_classes"
+            ],
+            "layer_test": [
+                "layer_cls",
+                "kwargs",
+                "input_shape",
+                "input_dtype",
+                "input_data",
+                "expected_output",
+                "expected_output_dtype",
+                "fixed_batch_size"
+            ]
+        },
+        "keras.utils.layer_utils": {
+            "count_params": [
+                "weights"
+            ],
+            "convert_all_kernels_in_model": [
+                "model"
+            ],
+            "convert_dense_weights_data_format": [
+                "dense",
+                "previous_feature_map_shape",
+                "target_data_format"
+            ]
+        },
+        "keras.utils.generic_utils": {
+            "to_list": [
+                "x",
+                "allow_tuple"
+            ],
+            "unpack_singleton": [
+                "x"
+            ],
+            "object_list_uid": [
+                "object_list"
+            ],
+            "is_all_none": [
+                "iterable_or_element"
+            ],
+            "slice_arrays": [
+                "arrays",
+                "start",
+                "stop"
+            ],
+            "transpose_shape": [
+                "shape",
+                "target_format",
+                "spatial_axes"
+            ],
+            "check_for_unexpected_keys": [
+                "name",
+                "input_dict",
+                "expected_values"
+            ],
+            "has_arg": [
+                "fn",
+                "name",
+                "accept_all"
+            ]
+        },
+        "keras.utils.conv_utils": {
+            "normalize_tuple": [
+                "value",
+                "n",
+                "name"
+            ],
+            "normalize_padding": [
+                "value"
+            ],
+            "convert_kernel": [
+                "kernel"
+            ],
+            "conv_output_length": [
+                "input_length",
+                "filter_size",
+                "padding",
+                "stride",
+                "dilation"
+            ],
+            "conv_input_length": [
+                "output_length",
+                "filter_size",
+                "padding",
+                "stride"
+            ],
+            "deconv_length": [
+                "dim_size",
+                "stride_size",
+                "kernel_size",
+                "padding",
+                "output_padding",
+                "dilation"
+            ]
+        },
+        "keras.utils.multi_gpu_utils": {},
+        "keras.utils.io_utils": {},
+        "keras.layers.embeddings": {},
+        "keras.layers.pooling": {},
+        "keras.layers": {},
+        "keras.layers.normalization": {},
+        "keras.layers.core": {},
+        "keras.layers.wrappers": {},
+        "keras.layers.recurrent": {},
+        "keras.layers.merge": {},
+        "keras.layers.cudnn_recurrent": {},
+        "keras.layers.convolutional": {},
+        "keras.layers.convolutional_recurrent": {},
+        "keras.layers.noise": {},
+        "keras.layers.local": {},
+        "keras.layers.advanced_activations": {},
+        "keras.layers.experimental": {},
+        "keras.layers.experimental.preprocessing": {},
+        "keras.wrappers": {},
+        "keras.wrappers.scikit_learn": {},
+        "keras.datasets.cifar10": {},
+        "keras.datasets.cifar100": {},
+        "keras.datasets.mnist": {},
+        "keras.datasets": {},
+        "keras.datasets.boston_housing": {},
+        "keras.datasets.reuters": {},
+        "keras.datasets.imdb": {},
+        "keras.datasets.fashion_mnist": {},
+        "keras.engine.saving": {},
+        "keras.engine.training": {},
+        "keras.engine.network": {},
+        "keras.engine.base_layer": {},
+        "keras.engine": {},
+        "keras.engine.topology": {},
+        "keras.engine.sequential": {},
+        "keras.engine.input_layer": {},
+        "keras.optimizers": {},
+        "keras.optimizers.schedules": {},
+        "keras.preprocessing": {},
+        "keras.preprocessing.text": {},
+        "keras.preprocessing.image": {},
+        "keras.preprocessing.sequence": {},
+        "docs.autogen": {
+            "get_function_signature": [
+                "function",
+                "method"
+            ],
+            "get_class_signature": [
+                "cls"
+            ],
+            "post_process_signature": [
+                "signature"
+            ],
+            "clean_module_name": [
+                "name"
+            ],
+            "class_to_source_link": [
+                "cls"
+            ],
+            "code_snippet": [
+                "snippet"
+            ],
+            "count_leading_spaces": [
+                "s"
+            ],
+            "process_list_block": [
+                "docstring",
+                "starting_point",
+                "section_end",
+                "leading_spaces",
+                "marker"
+            ],
+            "process_docstring": [
+                "docstring"
+            ],
+            "add_np_implementation": [
+                "function",
+                "docstring"
+            ],
+            "read_file": [
+                "path"
+            ],
+            "collect_class_methods": [
+                "cls",
+                "methods"
+            ],
+            "render_function": [
+                "function",
+                "method"
+            ],
+            "read_page_data": [
+                "page_data",
+                "type"
+            ],
+            "get_module_docstring": [
+                "filepath"
+            ],
+            "copy_examples": [
+                "examples_dir",
+                "destination_dir"
+            ],
+            "generate": [
+                "sources_dir"
+            ]
+        },
+        "docs": {},
+        "docs.structure": {}
+    }
+}
