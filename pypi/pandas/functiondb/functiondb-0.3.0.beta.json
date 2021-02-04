@@ -1,16 +1,17 @@
 {
     "0.3.0.beta": {
-        "pandas.version": {},
         "pandas.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
+        "pandas.version": {},
         "pandas.info": {},
         "pandas.util.misc": {
             "exclusive": []
         },
+        "pandas.util": {},
         "pandas.util.testing": {
             "rands": [
                 "n"
@@ -84,424 +85,14 @@
             ],
             "makeLongPanel": []
         },
-        "pandas.util": {},
-        "pandas.io.pytables": {
-            "_read_group": [
-                "group"
-            ],
-            "_read_series": [
-                "group"
-            ],
-            "_read_frame": [
-                "group"
-            ],
-            "_read_matrix": [
-                "group"
-            ],
-            "_read_wide": [
-                "group"
-            ],
-            "_read_long": [
-                "group"
-            ],
-            "_read_index": [
-                "group",
-                "key"
-            ],
-            "_convert_index": [
-                "index"
-            ],
-            "_unconvert_index": [
-                "data",
-                "kind"
-            ],
-            "HDFStore": {
-                "__init__": [
-                    "self",
-                    "path"
-                ],
-                "close": [
-                    "self"
-                ],
-                "flush": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "get": [
-                    "self",
-                    "key"
-                ],
-                "put": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_write_group": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_write_series": [
-                    "self",
-                    "group",
-                    "series"
-                ],
-                "_write_frame": [
-                    "self",
-                    "group",
-                    "df"
-                ],
-                "_write_matrix": [
-                    "self",
-                    "group",
-                    "dm"
-                ],
-                "_write_wide": [
-                    "self",
-                    "group",
-                    "value"
-                ],
-                "_write_long": [
-                    "self",
-                    "group",
-                    "value"
-                ],
-                "_write_index": [
-                    "self",
-                    "group",
-                    "key",
-                    "value"
-                ],
-                "_write_array": [
-                    "self",
-                    "group",
-                    "key",
-                    "value"
-                ],
-                "_get_write_handler": [
-                    "self",
-                    "kind"
-                ]
-            }
-        },
-        "pandas.io.parsers": {
-            "simpleParser": [
-                "nestedList",
-                "colNames",
-                "header",
-                "indexCol"
-            ],
-            "parseCSV": [
-                "filepath",
-                "header",
-                "indexCol"
-            ],
-            "parseText": [
-                "filepath",
-                "sep",
-                "header",
-                "indexCol",
-                "colNames"
-            ],
-            "ole2datetime": [
-                "oledt"
-            ],
-            "parseExcel": [
-                "filepath",
-                "header",
-                "indexCol",
-                "dateCol",
-                "sheetname"
+        "pandas.sandbox": {},
+        "pandas.core.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
             ]
         },
-        "pandas.io": {},
-        "pandas.core.matrix": {
-            "_reorder_columns": [
-                "mat",
-                "current",
-                "desired"
-            ],
-            "DataMatrix": {
-                "__init__": [
-                    "self",
-                    "data",
-                    "index",
-                    "columns",
-                    "dtype",
-                    "objects"
-                ],
-                "_init_dict": [
-                    "self",
-                    "data",
-                    "index",
-                    "columns",
-                    "objects",
-                    "dtype"
-                ],
-                "_init_matrix": [
-                    "self",
-                    "values",
-                    "index",
-                    "columns",
-                    "dtype"
-                ],
-                "_constructor": [
-                    "self"
-                ],
-                "__array__": [
-                    "self"
-                ],
-                "__array_wrap__": [
-                    "self",
-                    "result"
-                ],
-                "_join_on": [
-                    "self",
-                    "other",
-                    "on"
-                ],
-                "_reindex_index": [
-                    "self",
-                    "index",
-                    "method"
-                ],
-                "_reindex_columns": [
-                    "self",
-                    "columns"
-                ],
-                "_rename_columns_inplace": [
-                    "self",
-                    "mapper"
-                ],
-                "_combine_frame": [
-                    "self",
-                    "other",
-                    "func"
-                ],
-                "_combine_series": [
-                    "self",
-                    "other",
-                    "func"
-                ],
-                "_combine_const": [
-                    "self",
-                    "other",
-                    "func"
-                ],
-                "_set_columns": [
-                    "self",
-                    "cols"
-                ],
-                "_set_index": [
-                    "self",
-                    "index"
-                ],
-                "__getstate__": [
-                    "self"
-                ],
-                "_matrix_state": [
-                    "self",
-                    "pickle_index"
-                ],
-                "__setstate__": [
-                    "self",
-                    "state"
-                ],
-                "__nonzero__": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__getitem__": [
-                    "self",
-                    "item"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_insert_float_dtype": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_insert_object_dtype": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__delitem__": [
-                    "self",
-                    "key"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__contains__": [
-                    "self",
-                    "key"
-                ],
-                "iteritems": [
-                    "self"
-                ],
-                "_getSeries": [
-                    "self",
-                    "item",
-                    "loc"
-                ],
-                "_getSeriesDict": [
-                    "self"
-                ],
-                "toString": [
-                    "self",
-                    "buffer",
-                    "columns",
-                    "colSpace",
-                    "nanRep",
-                    "formatters",
-                    "float_format"
-                ],
-                "info": [
-                    "self",
-                    "buffer"
-                ],
-                "apply": [
-                    "self",
-                    "func",
-                    "axis"
-                ],
-                "applymap": [
-                    "self",
-                    "func"
-                ],
-                "append": [
-                    "self",
-                    "other"
-                ],
-                "asMatrix": [
-                    "self",
-                    "columns"
-                ],
-                "cols": [
-                    "self"
-                ],
-                "copy": [
-                    "self"
-                ],
-                "cumsum": [
-                    "self",
-                    "axis"
-                ],
-                "min": [
-                    "self",
-                    "axis"
-                ],
-                "max": [
-                    "self",
-                    "axis"
-                ],
-                "fill": [
-                    "self",
-                    "value",
-                    "method"
-                ],
-                "xs": [
-                    "self",
-                    "key"
-                ],
-                "T": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ]
-            }
-        },
-        "pandas.core.daterange": {
-            "_bin_op": [
-                "op"
-            ],
-            "generate_range": [
-                "start",
-                "end",
-                "periods",
-                "offset",
-                "timeRule"
-            ],
-            "DateRange": {
-                "__new__": [
-                    "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "__reduce__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "aug_state"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "_cached_range": [
-                    "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "fromIndex": [
-                    "cls",
-                    "index"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "__getslice__": [
-                    "self",
-                    "i",
-                    "j"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "n",
-                    "offset"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ]
-            }
-        },
+        "pandas.core.api": {},
         "pandas.core.series": {
             "_seriesOpWrap": [
                 "opname"
@@ -798,214 +389,6 @@
             },
             "TimeSeries": {}
         },
-        "pandas.core.mixins": {
-            "Picklable": {
-                "save": [
-                    "self",
-                    "fileName"
-                ],
-                "load": [
-                    "cls",
-                    "fileName"
-                ]
-            },
-            "Groupable": {
-                "groupby": [
-                    "self",
-                    "mapper"
-                ]
-            }
-        },
-        "pandas.core.index": {
-            "_indexOp": [
-                "opname"
-            ],
-            "Index": {
-                "__new__": [
-                    "cls",
-                    "data",
-                    "dtype",
-                    "copy"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "indexMap": [
-                    "self"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "_checkForDuplicates": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "state"
-                ],
-                "__deepcopy__": [
-                    "self",
-                    "memo"
-                ],
-                "__contains__": [
-                    "self",
-                    "date"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "equals": [
-                    "self",
-                    "other"
-                ],
-                "asOfDate": [
-                    "self",
-                    "date"
-                ],
-                "sort": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "periods",
-                    "offset"
-                ],
-                "argsort": [
-                    "self"
-                ],
-                "__add__": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "diff": [
-                    "self",
-                    "other"
-                ],
-                "take": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.core.groupby": {
-            "groupby": [
-                "obj",
-                "grouper"
-            ],
-            "GroupDict": {
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "GroupBy": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "grouper"
-                ],
-                "groups": [
-                    "self"
-                ],
-                "group_indices": [
-                    "self"
-                ],
-                "_group_axis": [
-                    "self"
-                ],
-                "getGroup": [
-                    "self",
-                    "groupList"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "aggregate": [
-                    "self",
-                    "func"
-                ],
-                "agg": [
-                    "self",
-                    "func"
-                ],
-                "_aggregate_generic": [
-                    "self",
-                    "getter",
-                    "agger",
-                    "axis"
-                ],
-                "transform": [
-                    "self",
-                    "func"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ]
-            },
-            "SeriesGroupBy": {
-                "aggregate": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_multiple": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_simple": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_named": [
-                    "self",
-                    "applyfunc"
-                ],
-                "transform": [
-                    "self",
-                    "applyfunc"
-                ]
-            },
-            "DataFrameGroupBy": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "grouper",
-                    "axis"
-                ],
-                "_group_axis": [
-                    "self"
-                ],
-                "aggregate": [
-                    "self",
-                    "applyfunc"
-                ],
-                "getGroup": [
-                    "self",
-                    "groupList"
-                ],
-                "transform": [
-                    "self",
-                    "applyfunc"
-                ]
-            },
-            "DataMatrixGroupBy": {}
-        },
         "pandas.core.collection": {
             "PickleContainer": {
                 "__init__": [
@@ -1043,7 +426,6 @@
                 ]
             }
         },
-        "pandas.core.api": {},
         "pandas.core.panel": {
             "_arith_method": [
                 "func",
@@ -1603,6 +985,232 @@
             },
             "LongPanelGroupBy": {}
         },
+        "pandas.core": {},
+        "pandas.core.mixins": {
+            "Picklable": {
+                "save": [
+                    "self",
+                    "fileName"
+                ],
+                "load": [
+                    "cls",
+                    "fileName"
+                ]
+            },
+            "Groupable": {
+                "groupby": [
+                    "self",
+                    "mapper"
+                ]
+            }
+        },
+        "pandas.core.matrix": {
+            "_reorder_columns": [
+                "mat",
+                "current",
+                "desired"
+            ],
+            "DataMatrix": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "index",
+                    "columns",
+                    "dtype",
+                    "objects"
+                ],
+                "_init_dict": [
+                    "self",
+                    "data",
+                    "index",
+                    "columns",
+                    "objects",
+                    "dtype"
+                ],
+                "_init_matrix": [
+                    "self",
+                    "values",
+                    "index",
+                    "columns",
+                    "dtype"
+                ],
+                "_constructor": [
+                    "self"
+                ],
+                "__array__": [
+                    "self"
+                ],
+                "__array_wrap__": [
+                    "self",
+                    "result"
+                ],
+                "_join_on": [
+                    "self",
+                    "other",
+                    "on"
+                ],
+                "_reindex_index": [
+                    "self",
+                    "index",
+                    "method"
+                ],
+                "_reindex_columns": [
+                    "self",
+                    "columns"
+                ],
+                "_rename_columns_inplace": [
+                    "self",
+                    "mapper"
+                ],
+                "_combine_frame": [
+                    "self",
+                    "other",
+                    "func"
+                ],
+                "_combine_series": [
+                    "self",
+                    "other",
+                    "func"
+                ],
+                "_combine_const": [
+                    "self",
+                    "other",
+                    "func"
+                ],
+                "_set_columns": [
+                    "self",
+                    "cols"
+                ],
+                "_set_index": [
+                    "self",
+                    "index"
+                ],
+                "__getstate__": [
+                    "self"
+                ],
+                "_matrix_state": [
+                    "self",
+                    "pickle_index"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__nonzero__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "item"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_insert_float_dtype": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_insert_object_dtype": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__delitem__": [
+                    "self",
+                    "key"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__contains__": [
+                    "self",
+                    "key"
+                ],
+                "iteritems": [
+                    "self"
+                ],
+                "_getSeries": [
+                    "self",
+                    "item",
+                    "loc"
+                ],
+                "_getSeriesDict": [
+                    "self"
+                ],
+                "toString": [
+                    "self",
+                    "buffer",
+                    "columns",
+                    "colSpace",
+                    "nanRep",
+                    "formatters",
+                    "float_format"
+                ],
+                "info": [
+                    "self",
+                    "buffer"
+                ],
+                "apply": [
+                    "self",
+                    "func",
+                    "axis"
+                ],
+                "applymap": [
+                    "self",
+                    "func"
+                ],
+                "append": [
+                    "self",
+                    "other"
+                ],
+                "asMatrix": [
+                    "self",
+                    "columns"
+                ],
+                "cols": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "cumsum": [
+                    "self",
+                    "axis"
+                ],
+                "min": [
+                    "self",
+                    "axis"
+                ],
+                "max": [
+                    "self",
+                    "axis"
+                ],
+                "fill": [
+                    "self",
+                    "value",
+                    "method"
+                ],
+                "xs": [
+                    "self",
+                    "key"
+                ],
+                "T": [
+                    "self"
+                ],
+                "shift": [
+                    "self",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ]
+            }
+        },
         "pandas.core.pytools": {
             "rands": [
                 "n"
@@ -1637,11 +1245,162 @@
                 ]
             }
         },
-        "pandas.core.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
+        "pandas.core.daterange": {
+            "_bin_op": [
+                "op"
+            ],
+            "generate_range": [
+                "start",
+                "end",
+                "periods",
+                "offset",
+                "timeRule"
+            ],
+            "DateRange": {
+                "__new__": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "__reduce__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "aug_state"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "_cached_range": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "fromIndex": [
+                    "cls",
+                    "index"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "__getslice__": [
+                    "self",
+                    "i",
+                    "j"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "shift": [
+                    "self",
+                    "n",
+                    "offset"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "pandas.core.index": {
+            "_indexOp": [
+                "opname"
+            ],
+            "Index": {
+                "__new__": [
+                    "cls",
+                    "data",
+                    "dtype",
+                    "copy"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "indexMap": [
+                    "self"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "_checkForDuplicates": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__deepcopy__": [
+                    "self",
+                    "memo"
+                ],
+                "__contains__": [
+                    "self",
+                    "date"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "equals": [
+                    "self",
+                    "other"
+                ],
+                "asOfDate": [
+                    "self",
+                    "date"
+                ],
+                "sort": [
+                    "self"
+                ],
+                "shift": [
+                    "self",
+                    "periods",
+                    "offset"
+                ],
+                "argsort": [
+                    "self"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "diff": [
+                    "self",
+                    "other"
+                ],
+                "take": [
+                    "self"
+                ]
+            }
         },
         "pandas.core.common": {
             "isnull": [
@@ -1673,80 +1432,325 @@
                 "axis"
             ]
         },
-        "pandas.core": {},
-        "pandas.lib.build": {},
-        "pandas.lib.setup": {
-            "get_cython_ext": [],
+        "pandas.core.groupby": {
+            "groupby": [
+                "obj",
+                "grouper"
+            ],
+            "GroupDict": {
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "GroupBy": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "grouper"
+                ],
+                "groups": [
+                    "self"
+                ],
+                "group_indices": [
+                    "self"
+                ],
+                "_group_axis": [
+                    "self"
+                ],
+                "getGroup": [
+                    "self",
+                    "groupList"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "aggregate": [
+                    "self",
+                    "func"
+                ],
+                "agg": [
+                    "self",
+                    "func"
+                ],
+                "_aggregate_generic": [
+                    "self",
+                    "getter",
+                    "agger",
+                    "axis"
+                ],
+                "transform": [
+                    "self",
+                    "func"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ]
+            },
+            "SeriesGroupBy": {
+                "aggregate": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_multiple": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_simple": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_named": [
+                    "self",
+                    "applyfunc"
+                ],
+                "transform": [
+                    "self",
+                    "applyfunc"
+                ]
+            },
+            "DataFrameGroupBy": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "grouper",
+                    "axis"
+                ],
+                "_group_axis": [
+                    "self"
+                ],
+                "aggregate": [
+                    "self",
+                    "applyfunc"
+                ],
+                "getGroup": [
+                    "self",
+                    "groupList"
+                ],
+                "transform": [
+                    "self",
+                    "applyfunc"
+                ]
+            },
+            "DataMatrixGroupBy": {}
+        },
+        "pandas.stats.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "pandas.lib": {},
-        "pandas.sandbox": {},
-        "pandas.rpy.mass": {
-            "rlm": {}
+        "pandas.stats.api": {},
+        "pandas.stats.math": {
+            "rank": [
+                "X",
+                "cond"
+            ],
+            "solve": [
+                "a",
+                "b"
+            ],
+            "inv": [
+                "a"
+            ],
+            "is_psd": [
+                "m"
+            ],
+            "newey_west": [
+                "m",
+                "max_lags",
+                "nobs",
+                "df",
+                "nw_overlap"
+            ],
+            "calc_F": [
+                "R",
+                "r",
+                "beta",
+                "var_beta",
+                "nobs",
+                "df"
+            ],
+            "chain_dot": []
         },
-        "pandas.rpy.vars": {
-            "VAR": {
-                "__init__": [
-                    "y",
-                    "p",
-                    "type",
-                    "season",
-                    "exogen",
-                    "lag_max",
-                    "ic"
-                ]
-            }
+        "pandas.stats.misc": {
+            "zscore": [
+                "series"
+            ],
+            "correl_ts": [
+                "frame1",
+                "frame2"
+            ],
+            "correl_xs": [
+                "frame1",
+                "frame2"
+            ],
+            "bucket": [
+                "series",
+                "k",
+                "by"
+            ],
+            "_split_quantile": [
+                "arr",
+                "k"
+            ],
+            "bucketcat": [
+                "series",
+                "cats"
+            ],
+            "bucketpanel": [
+                "series",
+                "bins",
+                "by",
+                "cat"
+            ],
+            "_bucketpanel_by": [
+                "series",
+                "xby",
+                "yby",
+                "xbins",
+                "ybins"
+            ],
+            "_bucketpanel_cat": [
+                "series",
+                "xcat",
+                "ycat"
+            ],
+            "_intern": [
+                "values"
+            ],
+            "_intern_fast": [
+                "values"
+            ],
+            "_uniquify": [
+                "xlabels",
+                "ylabels",
+                "xbins",
+                "ybins"
+            ],
+            "_cat_labels": [
+                "labels"
+            ],
+            "_bucket_labels": [
+                "series",
+                "k"
+            ],
+            "makeQuantiles": [
+                "series",
+                "n"
+            ],
+            "quantileTS": [
+                "frame",
+                "percentile"
+            ],
+            "percentileRank": [
+                "frame",
+                "column",
+                "kind"
+            ]
         },
-        "pandas.rpy.common": {
-            "load_data": [
-                "name",
-                "package",
-                "convert"
+        "pandas.stats.fama_macbeth": {
+            "fama_macbeth": [],
+            "_calc_t_stat": [
+                "beta",
+                "nw_lags_beta"
             ],
-            "_rclass": [
-                "obj"
-            ],
-            "_is_null": [
-                "obj"
-            ],
-            "_convert_list": [
-                "obj"
-            ],
-            "_convert_vector": [
-                "obj"
-            ],
-            "_convert_DataFrame": [
-                "rdf"
-            ],
-            "_convert_Matrix": [
-                "mat"
-            ],
-            "_check_int": [
-                "vec"
-            ],
-            "convert_robj": [
-                "obj"
-            ],
-            "test_convert_list": [],
-            "test_convert_nested_list": [],
-            "test_convert_frame": [],
-            "_test_matrix": [],
-            "test_convert_matrix": []
-        },
-        "pandas.rpy.base": {
-            "lm": {
+            "FamaMacBeth": {
                 "__init__": [
                     "self",
-                    "formula",
-                    "data"
+                    "y",
+                    "x",
+                    "weights",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_stats": [
+                    "self"
+                ],
+                "_mean_beta_raw": [
+                    "self"
+                ],
+                "_std_beta_raw": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "mean_beta": [
+                    "self"
+                ],
+                "std_beta": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_coef_table": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ]
+            },
+            "MovingFamaMacBeth": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "weights",
+                    "window_type",
+                    "window",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_is_rolling": [
+                    "self"
+                ],
+                "_calc_stats": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
                 ]
             }
         },
-        "pandas.rpy": {},
-        "pandas.stats.api": {},
         "pandas.stats.ols": {
             "_safe_update": [
                 "d",
@@ -2094,6 +2098,123 @@
                 ]
             }
         },
+        "pandas.stats": {},
+        "pandas.stats.common": {
+            "_get_cluster_type": [
+                "cluster_type"
+            ],
+            "_get_window_type": [
+                "window_type"
+            ],
+            "banner": [
+                "text",
+                "width"
+            ],
+            "f_stat_to_dict": [
+                "result"
+            ]
+        },
+        "pandas.stats.moments": {
+            "rolling_count": [
+                "arg",
+                "window",
+                "time_rule"
+            ],
+            "rolling_cov": [
+                "arg1",
+                "arg2",
+                "window",
+                "min_periods",
+                "time_rule"
+            ],
+            "rolling_corr": [
+                "arg1",
+                "arg2",
+                "window",
+                "min_periods",
+                "time_rule"
+            ],
+            "_rolling_moment": [
+                "arg",
+                "window",
+                "func",
+                "minp",
+                "axis",
+                "time_rule"
+            ],
+            "_process_data_structure": [
+                "arg",
+                "kill_inf"
+            ],
+            "_get_center_of_mass": [
+                "com",
+                "span"
+            ],
+            "ewma": [
+                "arg",
+                "com",
+                "span",
+                "min_periods",
+                "time_rule"
+            ],
+            "_first_valid_index": [
+                "arr"
+            ],
+            "ewmvar": [
+                "arg",
+                "com",
+                "span",
+                "min_periods",
+                "bias",
+                "time_rule"
+            ],
+            "ewmstd": [
+                "arg",
+                "com",
+                "span",
+                "min_periods",
+                "bias",
+                "time_rule"
+            ],
+            "ewmcov": [
+                "arg1",
+                "arg2",
+                "com",
+                "span",
+                "min_periods",
+                "bias",
+                "time_rule"
+            ],
+            "ewmcorr": [
+                "arg1",
+                "arg2",
+                "com",
+                "span",
+                "min_periods",
+                "time_rule"
+            ],
+            "_prep_binary": [
+                "arg1",
+                "arg2"
+            ],
+            "_conv_timerule": [
+                "arg",
+                "time_rule"
+            ],
+            "_two_periods": [
+                "minp",
+                "window"
+            ],
+            "_use_window": [
+                "minp",
+                "window"
+            ],
+            "_rolling_func": [
+                "func",
+                "desc",
+                "check_minp"
+            ]
+        },
         "pandas.stats.var": {
             "lag_select": [
                 "data",
@@ -2254,338 +2375,217 @@
         "pandas.stats.interface": {
             "ols": []
         },
-        "pandas.stats.fama_macbeth": {
-            "fama_macbeth": [],
-            "_calc_t_stat": [
-                "beta",
-                "nw_lags_beta"
-            ],
-            "FamaMacBeth": {
+        "pandas.rpy.base": {
+            "lm": {
                 "__init__": [
                     "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_stats": [
-                    "self"
-                ],
-                "_mean_beta_raw": [
-                    "self"
-                ],
-                "_std_beta_raw": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "mean_beta": [
-                    "self"
-                ],
-                "std_beta": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_coef_table": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ]
-            },
-            "MovingFamaMacBeth": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "window_type",
-                    "window",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_is_rolling": [
-                    "self"
-                ],
-                "_calc_stats": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
+                    "formula",
+                    "data"
                 ]
             }
         },
-        "pandas.stats.math": {
-            "rank": [
-                "X",
-                "cond"
-            ],
-            "solve": [
-                "a",
-                "b"
-            ],
-            "inv": [
-                "a"
-            ],
-            "is_psd": [
-                "m"
-            ],
-            "newey_west": [
-                "m",
-                "max_lags",
-                "nobs",
-                "df",
-                "nw_overlap"
-            ],
-            "calc_F": [
-                "R",
-                "r",
-                "beta",
-                "var_beta",
-                "nobs",
-                "df"
-            ],
-            "chain_dot": []
+        "pandas.rpy": {},
+        "pandas.rpy.mass": {
+            "rlm": {}
         },
-        "pandas.stats.misc": {
-            "zscore": [
-                "series"
+        "pandas.rpy.common": {
+            "load_data": [
+                "name",
+                "package",
+                "convert"
             ],
-            "correl_ts": [
-                "frame1",
-                "frame2"
+            "_rclass": [
+                "obj"
             ],
-            "correl_xs": [
-                "frame1",
-                "frame2"
+            "_is_null": [
+                "obj"
             ],
-            "bucket": [
-                "series",
-                "k",
-                "by"
+            "_convert_list": [
+                "obj"
             ],
-            "_split_quantile": [
-                "arr",
-                "k"
+            "_convert_vector": [
+                "obj"
             ],
-            "bucketcat": [
-                "series",
-                "cats"
+            "_convert_DataFrame": [
+                "rdf"
             ],
-            "bucketpanel": [
-                "series",
-                "bins",
-                "by",
-                "cat"
+            "_convert_Matrix": [
+                "mat"
             ],
-            "_bucketpanel_by": [
-                "series",
-                "xby",
-                "yby",
-                "xbins",
-                "ybins"
+            "_check_int": [
+                "vec"
             ],
-            "_bucketpanel_cat": [
-                "series",
-                "xcat",
-                "ycat"
+            "convert_robj": [
+                "obj"
             ],
-            "_intern": [
-                "values"
-            ],
-            "_intern_fast": [
-                "values"
-            ],
-            "_uniquify": [
-                "xlabels",
-                "ylabels",
-                "xbins",
-                "ybins"
-            ],
-            "_cat_labels": [
-                "labels"
-            ],
-            "_bucket_labels": [
-                "series",
-                "k"
-            ],
-            "makeQuantiles": [
-                "series",
-                "n"
-            ],
-            "quantileTS": [
-                "frame",
-                "percentile"
-            ],
-            "percentileRank": [
-                "frame",
-                "column",
-                "kind"
-            ]
+            "test_convert_list": [],
+            "test_convert_nested_list": [],
+            "test_convert_frame": [],
+            "_test_matrix": [],
+            "test_convert_matrix": []
         },
-        "pandas.stats.setup": {
+        "pandas.rpy.vars": {
+            "VAR": {
+                "__init__": [
+                    "y",
+                    "p",
+                    "type",
+                    "season",
+                    "exogen",
+                    "lag_max",
+                    "ic"
+                ]
+            }
+        },
+        "pandas.lib.setup": {
+            "get_cython_ext": [],
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "pandas.stats.common": {
-            "_get_cluster_type": [
-                "cluster_type"
+        "pandas.lib": {},
+        "pandas.lib.build": {},
+        "pandas.io.pytables": {
+            "_read_group": [
+                "group"
             ],
-            "_get_window_type": [
-                "window_type"
+            "_read_series": [
+                "group"
             ],
-            "banner": [
-                "text",
-                "width"
+            "_read_frame": [
+                "group"
             ],
-            "f_stat_to_dict": [
-                "result"
-            ]
+            "_read_matrix": [
+                "group"
+            ],
+            "_read_wide": [
+                "group"
+            ],
+            "_read_long": [
+                "group"
+            ],
+            "_read_index": [
+                "group",
+                "key"
+            ],
+            "_convert_index": [
+                "index"
+            ],
+            "_unconvert_index": [
+                "data",
+                "kind"
+            ],
+            "HDFStore": {
+                "__init__": [
+                    "self",
+                    "path"
+                ],
+                "close": [
+                    "self"
+                ],
+                "flush": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "put": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_write_group": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_write_series": [
+                    "self",
+                    "group",
+                    "series"
+                ],
+                "_write_frame": [
+                    "self",
+                    "group",
+                    "df"
+                ],
+                "_write_matrix": [
+                    "self",
+                    "group",
+                    "dm"
+                ],
+                "_write_wide": [
+                    "self",
+                    "group",
+                    "value"
+                ],
+                "_write_long": [
+                    "self",
+                    "group",
+                    "value"
+                ],
+                "_write_index": [
+                    "self",
+                    "group",
+                    "key",
+                    "value"
+                ],
+                "_write_array": [
+                    "self",
+                    "group",
+                    "key",
+                    "value"
+                ],
+                "_get_write_handler": [
+                    "self",
+                    "kind"
+                ]
+            }
         },
-        "pandas.stats.moments": {
-            "rolling_count": [
-                "arg",
-                "window",
-                "time_rule"
+        "pandas.io": {},
+        "pandas.io.parsers": {
+            "simpleParser": [
+                "nestedList",
+                "colNames",
+                "header",
+                "indexCol"
             ],
-            "rolling_cov": [
-                "arg1",
-                "arg2",
-                "window",
-                "min_periods",
-                "time_rule"
+            "parseCSV": [
+                "filepath",
+                "header",
+                "indexCol"
             ],
-            "rolling_corr": [
-                "arg1",
-                "arg2",
-                "window",
-                "min_periods",
-                "time_rule"
+            "parseText": [
+                "filepath",
+                "sep",
+                "header",
+                "indexCol",
+                "colNames"
             ],
-            "_rolling_moment": [
-                "arg",
-                "window",
-                "func",
-                "minp",
-                "axis",
-                "time_rule"
+            "ole2datetime": [
+                "oledt"
             ],
-            "_process_data_structure": [
-                "arg",
-                "kill_inf"
-            ],
-            "_get_center_of_mass": [
-                "com",
-                "span"
-            ],
-            "ewma": [
-                "arg",
-                "com",
-                "span",
-                "min_periods",
-                "time_rule"
-            ],
-            "_first_valid_index": [
-                "arr"
-            ],
-            "ewmvar": [
-                "arg",
-                "com",
-                "span",
-                "min_periods",
-                "bias",
-                "time_rule"
-            ],
-            "ewmstd": [
-                "arg",
-                "com",
-                "span",
-                "min_periods",
-                "bias",
-                "time_rule"
-            ],
-            "ewmcov": [
-                "arg1",
-                "arg2",
-                "com",
-                "span",
-                "min_periods",
-                "bias",
-                "time_rule"
-            ],
-            "ewmcorr": [
-                "arg1",
-                "arg2",
-                "com",
-                "span",
-                "min_periods",
-                "time_rule"
-            ],
-            "_prep_binary": [
-                "arg1",
-                "arg2"
-            ],
-            "_conv_timerule": [
-                "arg",
-                "time_rule"
-            ],
-            "_two_periods": [
-                "minp",
-                "window"
-            ],
-            "_use_window": [
-                "minp",
-                "window"
-            ],
-            "_rolling_func": [
-                "func",
-                "desc",
-                "check_minp"
+            "parseExcel": [
+                "filepath",
+                "header",
+                "indexCol",
+                "dateCol",
+                "sheetname"
             ]
-        },
-        "pandas.stats": {}
+        }
     }
 }
