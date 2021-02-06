@@ -8,241 +8,10 @@
         },
         "pandas.version": {},
         "pandas.info": {},
-        "pandas.io.pytables": {
-            "_read_group": [
-                "group"
-            ],
-            "_read_series": [
-                "group"
-            ],
-            "_read_frame": [
-                "group"
-            ],
-            "_read_matrix": [
-                "group"
-            ],
-            "_read_wide": [
-                "group"
-            ],
-            "_read_long": [
-                "group"
-            ],
-            "_read_index": [
-                "group",
-                "key"
-            ],
-            "_convert_index": [
-                "index"
-            ],
-            "_unconvert_index": [
-                "data",
-                "kind"
-            ],
-            "HDFStore": {
-                "__init__": [
-                    "self",
-                    "path"
-                ],
-                "close": [
-                    "self"
-                ],
-                "flush": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "get": [
-                    "self",
-                    "key"
-                ],
-                "put": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_write_group": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "_write_series": [
-                    "self",
-                    "group",
-                    "series"
-                ],
-                "_write_frame": [
-                    "self",
-                    "group",
-                    "df"
-                ],
-                "_write_matrix": [
-                    "self",
-                    "group",
-                    "dm"
-                ],
-                "_write_wide": [
-                    "self",
-                    "group",
-                    "value"
-                ],
-                "_write_long": [
-                    "self",
-                    "group",
-                    "value"
-                ],
-                "_write_index": [
-                    "self",
-                    "group",
-                    "key",
-                    "value"
-                ],
-                "_write_array": [
-                    "self",
-                    "group",
-                    "key",
-                    "value"
-                ],
-                "_get_write_handler": [
-                    "self",
-                    "kind"
-                ]
-            }
-        },
-        "pandas.io": {},
-        "pandas.io.parsers": {
-            "parseCSV": [
-                "filepath",
-                "header",
-                "indexCol"
-            ],
-            "read_table": [
-                "path",
-                "header",
-                "index_col",
-                "delimiter"
-            ],
-            "parseText": [
-                "filepath",
-                "sep",
-                "header",
-                "indexCol",
-                "colNames"
-            ],
-            "simpleParser": [
-                "lines",
-                "colNames",
-                "header",
-                "indexCol"
-            ],
-            "_floatify": [
-                "data_dict"
-            ],
-            "_convert_float": [
-                "val"
-            ],
-            "_convert_to_ndarrays": [
-                "dct"
-            ],
-            "_try_parse_dates": [
-                "values"
-            ],
-            "parseExcel": [
-                "filepath",
-                "header",
-                "indexCol",
-                "dateCol",
-                "sheetname"
-            ]
-        },
-        "pandas.lib.setup": {
-            "get_cython_ext": [],
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "pandas.lib.build": {},
-        "pandas.lib": {},
-        "pandas.sandbox": {},
-        "pandas.rpy.mass": {
-            "rlm": {}
-        },
-        "pandas.rpy.common": {
-            "load_data": [
-                "name",
-                "package",
-                "convert"
-            ],
-            "_rclass": [
-                "obj"
-            ],
-            "_is_null": [
-                "obj"
-            ],
-            "_convert_list": [
-                "obj"
-            ],
-            "_convert_array": [
-                "obj"
-            ],
-            "_convert_vector": [
-                "obj"
-            ],
-            "_convert_DataFrame": [
-                "rdf"
-            ],
-            "_convert_Matrix": [
-                "mat"
-            ],
-            "_check_int": [
-                "vec"
-            ],
-            "convert_robj": [
-                "obj",
-                "use_pandas"
-            ],
-            "test_convert_list": [],
-            "test_convert_nested_list": [],
-            "test_convert_frame": [],
-            "_test_matrix": [],
-            "test_convert_matrix": []
-        },
-        "pandas.rpy.vars": {
-            "VAR": {
-                "__init__": [
-                    "y",
-                    "p",
-                    "type",
-                    "season",
-                    "exogen",
-                    "lag_max",
-                    "ic"
-                ]
-            }
-        },
-        "pandas.rpy": {},
-        "pandas.rpy.base": {
-            "lm": {
-                "__init__": [
-                    "self",
-                    "formula",
-                    "data"
-                ]
-            }
-        },
         "pandas.util.misc": {
             "exclusive": []
         },
+        "pandas.util": {},
         "pandas.util.testing": {
             "rands": [
                 "n"
@@ -316,110 +85,14 @@
             ],
             "makeLongPanel": []
         },
-        "pandas.util": {},
-        "pandas.core.api": {},
-        "pandas.core.groupby": {
-            "groupby": [
-                "obj",
-                "grouper"
-            ],
-            "GroupDict": {
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "GroupBy": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "grouper"
-                ],
-                "groups": [
-                    "self"
-                ],
-                "group_indices": [
-                    "self"
-                ],
-                "_group_axis": [
-                    "self"
-                ],
-                "getGroup": [
-                    "self",
-                    "groupList"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "aggregate": [
-                    "self",
-                    "func"
-                ],
-                "agg": [
-                    "self",
-                    "func"
-                ],
-                "_aggregate_generic": [
-                    "self",
-                    "getter",
-                    "agger",
-                    "axis"
-                ],
-                "transform": [
-                    "self",
-                    "func"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ]
-            },
-            "SeriesGroupBy": {
-                "aggregate": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_multiple": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_simple": [
-                    "self",
-                    "applyfunc"
-                ],
-                "_aggregate_named": [
-                    "self",
-                    "applyfunc"
-                ],
-                "transform": [
-                    "self",
-                    "applyfunc"
-                ]
-            },
-            "DataFrameGroupBy": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "grouper",
-                    "axis"
-                ],
-                "_group_axis": [
-                    "self"
-                ],
-                "aggregate": [
-                    "self",
-                    "applyfunc"
-                ],
-                "getGroup": [
-                    "self",
-                    "groupList"
-                ],
-                "transform": [
-                    "self",
-                    "applyfunc"
-                ]
-            },
-            "DataMatrixGroupBy": {}
+        "pandas.sandbox": {},
+        "pandas.core.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
         },
+        "pandas.core.api": {},
         "pandas.core.series": {
             "_seriesOpWrap": [
                 "opname"
@@ -723,83 +396,15 @@
             },
             "TimeSeries": {}
         },
-        "pandas.core.common": {
-            "isnull": [
-                "input"
-            ],
-            "notnull": [
-                "input"
-            ],
-            "_pickle_array": [
-                "arr"
-            ],
-            "_unpickle_array": [
-                "bytes"
-            ],
-            "_pfixed": [
-                "s",
-                "space",
-                "nanRep",
-                "float_format"
-            ],
-            "get_indexer": [
-                "source",
-                "target",
-                "fill_method"
-            ],
-            "null_out_axis": [
-                "arr",
-                "mask",
-                "axis"
-            ],
-            "ensure_float": [
-                "arr"
-            ]
-        },
-        "pandas.core.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "pandas.core.index": {
-            "_indexOp": [
-                "opname"
-            ],
-            "Index": {
-                "__new__": [
-                    "cls",
-                    "data",
-                    "dtype",
-                    "copy"
-                ],
-                "__array_finalize__": [
+        "pandas.core.collection": {
+            "PickleContainer": {
+                "__init__": [
                     "self",
-                    "obj"
+                    "dirPath",
+                    "lruSize"
                 ],
-                "indexMap": [
+                "__repr__": [
                     "self"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "_checkForDuplicates": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "state"
-                ],
-                "__deepcopy__": [
-                    "self",
-                    "memo"
-                ],
-                "__contains__": [
-                    "self",
-                    "date"
                 ],
                 "__setitem__": [
                     "self",
@@ -810,47 +415,24 @@
                     "self",
                     "key"
                 ],
-                "equals": [
+                "__delitem__": [
                     "self",
-                    "other"
+                    "key"
                 ],
-                "asOfDate": [
-                    "self",
-                    "date"
-                ],
-                "sort": [
+                "__iter__": [
                     "self"
                 ],
-                "shift": [
-                    "self",
-                    "periods",
-                    "offset"
-                ],
-                "argsort": [
+                "iteritems": [
                     "self"
                 ],
-                "__add__": [
-                    "self",
-                    "other"
+                "keys": [
+                    "self"
                 ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "diff": [
-                    "self",
-                    "other"
-                ],
-                "take": [
+                "values": [
                     "self"
                 ]
             }
         },
-        "pandas.core": {},
         "pandas.core.panel": {
             "_arith_method": [
                 "func",
@@ -1418,106 +1000,22 @@
             },
             "LongPanelGroupBy": {}
         },
-        "pandas.core.daterange": {
-            "_bin_op": [
-                "op"
-            ],
-            "generate_range": [
-                "start",
-                "end",
-                "periods",
-                "offset",
-                "timeRule"
-            ],
-            "DateRange": {
-                "__new__": [
+        "pandas.core": {},
+        "pandas.core.mixins": {
+            "Picklable": {
+                "save": [
+                    "self",
+                    "fileName"
+                ],
+                "load": [
                     "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "__reduce__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "aug_state"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "_cached_range": [
-                    "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "fromIndex": [
-                    "cls",
-                    "index"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "__getslice__": [
-                    "self",
-                    "i",
-                    "j"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "n",
-                    "offset"
-                ],
-                "union": [
-                    "self",
-                    "other"
+                    "fileName"
                 ]
-            }
-        },
-        "pandas.core.pytools": {
-            "rands": [
-                "n"
-            ],
-            "adjoin": [
-                "space"
-            ],
-            "iterpairs": [
-                "seq"
-            ],
-            "indent": [
-                "string",
-                "spaces"
-            ],
-            "banner": [
-                "message"
-            ],
-            "map_indices_py": [
-                "arr"
-            ],
-            "union": [],
-            "difference": [
-                "a",
-                "b"
-            ],
-            "intersection": [],
-            "groupby": {
-                "__init__": [
+            },
+            "Groupable": {
+                "groupby": [
                     "self",
-                    "seq",
-                    "key"
+                    "mapper"
                 ]
             }
         },
@@ -1747,15 +1245,147 @@
                 ]
             }
         },
-        "pandas.core.collection": {
-            "PickleContainer": {
+        "pandas.core.pytools": {
+            "rands": [
+                "n"
+            ],
+            "adjoin": [
+                "space"
+            ],
+            "iterpairs": [
+                "seq"
+            ],
+            "indent": [
+                "string",
+                "spaces"
+            ],
+            "banner": [
+                "message"
+            ],
+            "map_indices_py": [
+                "arr"
+            ],
+            "union": [],
+            "difference": [
+                "a",
+                "b"
+            ],
+            "intersection": [],
+            "groupby": {
                 "__init__": [
                     "self",
-                    "dirPath",
-                    "lruSize"
+                    "seq",
+                    "key"
+                ]
+            }
+        },
+        "pandas.core.daterange": {
+            "_bin_op": [
+                "op"
+            ],
+            "generate_range": [
+                "start",
+                "end",
+                "periods",
+                "offset",
+                "timeRule"
+            ],
+            "DateRange": {
+                "__new__": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "__reduce__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "aug_state"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "_cached_range": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "fromIndex": [
+                    "cls",
+                    "index"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "__getslice__": [
+                    "self",
+                    "i",
+                    "j"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
                 ],
                 "__repr__": [
                     "self"
+                ],
+                "shift": [
+                    "self",
+                    "n",
+                    "offset"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "pandas.core.index": {
+            "_indexOp": [
+                "opname"
+            ],
+            "Index": {
+                "__new__": [
+                    "cls",
+                    "data",
+                    "dtype",
+                    "copy"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "indexMap": [
+                    "self"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "_checkForDuplicates": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__deepcopy__": [
+                    "self",
+                    "memo"
+                ],
+                "__contains__": [
+                    "self",
+                    "date"
                 ],
                 "__setitem__": [
                     "self",
@@ -1766,41 +1396,219 @@
                     "self",
                     "key"
                 ],
-                "__delitem__": [
+                "equals": [
                     "self",
-                    "key"
+                    "other"
                 ],
-                "__iter__": [
+                "asOfDate": [
+                    "self",
+                    "date"
+                ],
+                "sort": [
                     "self"
                 ],
-                "iteritems": [
+                "shift": [
+                    "self",
+                    "periods",
+                    "offset"
+                ],
+                "argsort": [
                     "self"
                 ],
-                "keys": [
-                    "self"
+                "__add__": [
+                    "self",
+                    "other"
                 ],
-                "values": [
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "diff": [
+                    "self",
+                    "other"
+                ],
+                "take": [
                     "self"
                 ]
             }
         },
-        "pandas.core.mixins": {
-            "Picklable": {
-                "save": [
-                    "self",
-                    "fileName"
-                ],
-                "load": [
-                    "cls",
-                    "fileName"
+        "pandas.core.common": {
+            "isnull": [
+                "input"
+            ],
+            "notnull": [
+                "input"
+            ],
+            "_pickle_array": [
+                "arr"
+            ],
+            "_unpickle_array": [
+                "bytes"
+            ],
+            "_pfixed": [
+                "s",
+                "space",
+                "nanRep",
+                "float_format"
+            ],
+            "get_indexer": [
+                "source",
+                "target",
+                "fill_method"
+            ],
+            "null_out_axis": [
+                "arr",
+                "mask",
+                "axis"
+            ],
+            "ensure_float": [
+                "arr"
+            ]
+        },
+        "pandas.core.groupby": {
+            "groupby": [
+                "obj",
+                "grouper"
+            ],
+            "GroupDict": {
+                "__repr__": [
+                    "self"
                 ]
             },
-            "Groupable": {
-                "groupby": [
+            "GroupBy": {
+                "__init__": [
                     "self",
-                    "mapper"
+                    "obj",
+                    "grouper"
+                ],
+                "groups": [
+                    "self"
+                ],
+                "group_indices": [
+                    "self"
+                ],
+                "_group_axis": [
+                    "self"
+                ],
+                "getGroup": [
+                    "self",
+                    "groupList"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "aggregate": [
+                    "self",
+                    "func"
+                ],
+                "agg": [
+                    "self",
+                    "func"
+                ],
+                "_aggregate_generic": [
+                    "self",
+                    "getter",
+                    "agger",
+                    "axis"
+                ],
+                "transform": [
+                    "self",
+                    "func"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
                 ]
-            }
+            },
+            "SeriesGroupBy": {
+                "aggregate": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_multiple": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_simple": [
+                    "self",
+                    "applyfunc"
+                ],
+                "_aggregate_named": [
+                    "self",
+                    "applyfunc"
+                ],
+                "transform": [
+                    "self",
+                    "applyfunc"
+                ]
+            },
+            "DataFrameGroupBy": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "grouper",
+                    "axis"
+                ],
+                "_group_axis": [
+                    "self"
+                ],
+                "aggregate": [
+                    "self",
+                    "applyfunc"
+                ],
+                "getGroup": [
+                    "self",
+                    "groupList"
+                ],
+                "transform": [
+                    "self",
+                    "applyfunc"
+                ]
+            },
+            "DataMatrixGroupBy": {}
+        },
+        "pandas.stats.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "pandas.stats.api": {},
+        "pandas.stats.math": {
+            "rank": [
+                "X",
+                "cond"
+            ],
+            "solve": [
+                "a",
+                "b"
+            ],
+            "inv": [
+                "a"
+            ],
+            "is_psd": [
+                "m"
+            ],
+            "newey_west": [
+                "m",
+                "max_lags",
+                "nobs",
+                "df",
+                "nw_overlap"
+            ],
+            "calc_F": [
+                "R",
+                "r",
+                "beta",
+                "var_beta",
+                "nobs",
+                "df"
+            ],
+            "chain_dot": []
         },
         "pandas.stats.misc": {
             "zscore": [
@@ -1878,61 +1686,6 @@
                 "kind"
             ]
         },
-        "pandas.stats.api": {},
-        "pandas.stats.common": {
-            "_get_cluster_type": [
-                "cluster_type"
-            ],
-            "_get_window_type": [
-                "window_type"
-            ],
-            "banner": [
-                "text",
-                "width"
-            ],
-            "f_stat_to_dict": [
-                "result"
-            ]
-        },
-        "pandas.stats.math": {
-            "rank": [
-                "X",
-                "cond"
-            ],
-            "solve": [
-                "a",
-                "b"
-            ],
-            "inv": [
-                "a"
-            ],
-            "is_psd": [
-                "m"
-            ],
-            "newey_west": [
-                "m",
-                "max_lags",
-                "nobs",
-                "df",
-                "nw_overlap"
-            ],
-            "calc_F": [
-                "R",
-                "r",
-                "beta",
-                "var_beta",
-                "nobs",
-                "df"
-            ],
-            "chain_dot": []
-        },
-        "pandas.stats.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "pandas.stats": {},
         "pandas.stats.fama_macbeth": {
             "fama_macbeth": [],
             "_calc_t_stat": [
@@ -2034,9 +1787,6 @@
                     "self"
                 ]
             }
-        },
-        "pandas.stats.interface": {
-            "ols": []
         },
         "pandas.stats.ols": {
             "_safe_update": [
@@ -2385,6 +2135,22 @@
                 ]
             }
         },
+        "pandas.stats": {},
+        "pandas.stats.common": {
+            "_get_cluster_type": [
+                "cluster_type"
+            ],
+            "_get_window_type": [
+                "window_type"
+            ],
+            "banner": [
+                "text",
+                "width"
+            ],
+            "f_stat_to_dict": [
+                "result"
+            ]
+        },
         "pandas.stats.moments": {
             "rolling_count": [
                 "arg",
@@ -2642,6 +2408,240 @@
                     "self"
                 ]
             }
+        },
+        "pandas.stats.interface": {
+            "ols": []
+        },
+        "pandas.rpy.base": {
+            "lm": {
+                "__init__": [
+                    "self",
+                    "formula",
+                    "data"
+                ]
+            }
+        },
+        "pandas.rpy": {},
+        "pandas.rpy.mass": {
+            "rlm": {}
+        },
+        "pandas.rpy.common": {
+            "load_data": [
+                "name",
+                "package",
+                "convert"
+            ],
+            "_rclass": [
+                "obj"
+            ],
+            "_is_null": [
+                "obj"
+            ],
+            "_convert_list": [
+                "obj"
+            ],
+            "_convert_array": [
+                "obj"
+            ],
+            "_convert_vector": [
+                "obj"
+            ],
+            "_convert_DataFrame": [
+                "rdf"
+            ],
+            "_convert_Matrix": [
+                "mat"
+            ],
+            "_check_int": [
+                "vec"
+            ],
+            "convert_robj": [
+                "obj",
+                "use_pandas"
+            ],
+            "test_convert_list": [],
+            "test_convert_nested_list": [],
+            "test_convert_frame": [],
+            "_test_matrix": [],
+            "test_convert_matrix": []
+        },
+        "pandas.rpy.vars": {
+            "VAR": {
+                "__init__": [
+                    "y",
+                    "p",
+                    "type",
+                    "season",
+                    "exogen",
+                    "lag_max",
+                    "ic"
+                ]
+            }
+        },
+        "pandas.lib.setup": {
+            "get_cython_ext": [],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "pandas.lib": {},
+        "pandas.lib.build": {},
+        "pandas.io.pytables": {
+            "_read_group": [
+                "group"
+            ],
+            "_read_series": [
+                "group"
+            ],
+            "_read_frame": [
+                "group"
+            ],
+            "_read_matrix": [
+                "group"
+            ],
+            "_read_wide": [
+                "group"
+            ],
+            "_read_long": [
+                "group"
+            ],
+            "_read_index": [
+                "group",
+                "key"
+            ],
+            "_convert_index": [
+                "index"
+            ],
+            "_unconvert_index": [
+                "data",
+                "kind"
+            ],
+            "HDFStore": {
+                "__init__": [
+                    "self",
+                    "path"
+                ],
+                "close": [
+                    "self"
+                ],
+                "flush": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "put": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_write_group": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "_write_series": [
+                    "self",
+                    "group",
+                    "series"
+                ],
+                "_write_frame": [
+                    "self",
+                    "group",
+                    "df"
+                ],
+                "_write_matrix": [
+                    "self",
+                    "group",
+                    "dm"
+                ],
+                "_write_wide": [
+                    "self",
+                    "group",
+                    "value"
+                ],
+                "_write_long": [
+                    "self",
+                    "group",
+                    "value"
+                ],
+                "_write_index": [
+                    "self",
+                    "group",
+                    "key",
+                    "value"
+                ],
+                "_write_array": [
+                    "self",
+                    "group",
+                    "key",
+                    "value"
+                ],
+                "_get_write_handler": [
+                    "self",
+                    "kind"
+                ]
+            }
+        },
+        "pandas.io": {},
+        "pandas.io.parsers": {
+            "parseCSV": [
+                "filepath",
+                "header",
+                "indexCol"
+            ],
+            "read_table": [
+                "path",
+                "header",
+                "index_col",
+                "delimiter"
+            ],
+            "parseText": [
+                "filepath",
+                "sep",
+                "header",
+                "indexCol",
+                "colNames"
+            ],
+            "simpleParser": [
+                "lines",
+                "colNames",
+                "header",
+                "indexCol"
+            ],
+            "_floatify": [
+                "data_dict"
+            ],
+            "_convert_float": [
+                "val"
+            ],
+            "_convert_to_ndarrays": [
+                "dct"
+            ],
+            "_try_parse_dates": [
+                "values"
+            ],
+            "parseExcel": [
+                "filepath",
+                "header",
+                "indexCol",
+                "dateCol",
+                "sheetname"
+            ]
         }
     }
 }
