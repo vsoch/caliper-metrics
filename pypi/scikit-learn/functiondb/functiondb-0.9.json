@@ -1,54 +1,64 @@
 {
     "0.9": {
-        "scikits": {},
-        "scikits.learn.pipeline": {},
-        "scikits.learn.base": {},
-        "scikits.learn.lda": {},
-        "scikits.learn": {},
-        "scikits.learn.naive_bayes": {},
-        "scikits.learn.qda": {},
-        "scikits.learn.cross_val": {},
-        "scikits.learn.grid_search": {},
-        "scikits.learn.ball_tree": {},
-        "scikits.learn.neighbors": {},
-        "scikits.learn.datasets.base": {},
-        "scikits.learn.datasets": {},
-        "scikits.learn.mixture": {},
-        "scikits.learn.cluster": {},
-        "scikits.learn.svm": {},
-        "scikits.learn.linear_model": {},
-        "scikits.learn.decomposition": {},
-        "scikits.learn.feature_extraction.image": {},
-        "scikits.learn.feature_extraction": {},
-        "scikits.learn.feature_extraction.text": {},
-        "scikits.learn.metrics": {},
-        "sklearn.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.pipeline": {
-            "Pipeline": {
+        "sklearn.multiclass": {
+            "fit_binary": [
+                "estimator",
+                "X",
+                "y"
+            ],
+            "predict_binary": [
+                "estimator",
+                "X"
+            ],
+            "check_estimator": [
+                "estimator"
+            ],
+            "fit_ovr": [
+                "estimator",
+                "X",
+                "y"
+            ],
+            "predict_ovr": [
+                "estimators",
+                "label_binarizer",
+                "X"
+            ],
+            "fit_ovo_binary": [
+                "estimator",
+                "X",
+                "y",
+                "i",
+                "j"
+            ],
+            "fit_ovo": [
+                "estimator",
+                "X",
+                "y"
+            ],
+            "predict_ovo": [
+                "estimators",
+                "classes",
+                "X"
+            ],
+            "fit_ecoc": [
+                "estimator",
+                "X",
+                "y",
+                "code_size",
+                "random_state"
+            ],
+            "predict_ecoc": [
+                "estimators",
+                "classes",
+                "code_book",
+                "X"
+            ],
+            "OneVsRestClassifier": {
                 "__init__": [
                     "self",
-                    "steps"
-                ],
-                "_get_params": [
-                    "self",
-                    "deep"
-                ],
-                "_pre_transform": [
-                    "self",
-                    "X",
-                    "y"
+                    "estimator"
                 ],
                 "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "fit_transform": [
                     "self",
                     "X",
                     "y"
@@ -56,27 +66,38 @@
                 "predict": [
                     "self",
                     "X"
-                ],
-                "predict_proba": [
+                ]
+            },
+            "OneVsOneClassifier": {
+                "__init__": [
                     "self",
-                    "X"
+                    "estimator"
                 ],
-                "predict_log_proba": [
-                    "self",
-                    "X"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ],
-                "inverse_transform": [
-                    "self",
-                    "X"
-                ],
-                "score": [
+                "fit": [
                     "self",
                     "X",
                     "y"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ]
+            },
+            "OutputCodeClassifier": {
+                "__init__": [
+                    "self",
+                    "estimator",
+                    "code_size",
+                    "random_state"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "predict": [
+                    "self",
+                    "X"
                 ]
             }
         },
@@ -363,6 +384,106 @@
                 ]
             }
         },
+        "sklearn.ball_tree": {},
+        "sklearn.pls": {
+            "_nipals_twoblocks_inner_loop": [
+                "X",
+                "Y",
+                "mode",
+                "max_iter",
+                "tol"
+            ],
+            "_svd_cross_product": [
+                "X",
+                "Y"
+            ],
+            "_center_scale_xy": [
+                "X",
+                "Y",
+                "scale"
+            ],
+            "_PLS": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "deflation_mode",
+                    "mode",
+                    "scale",
+                    "algorithm",
+                    "max_iter",
+                    "tol",
+                    "copy"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "Y"
+                ],
+                "transform": [
+                    "self",
+                    "X",
+                    "Y",
+                    "copy"
+                ],
+                "predict": [
+                    "self",
+                    "X",
+                    "copy"
+                ]
+            },
+            "PLSRegression": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "scale",
+                    "algorithm",
+                    "max_iter",
+                    "tol",
+                    "copy"
+                ]
+            },
+            "PLSCanonical": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "scale",
+                    "algorithm",
+                    "max_iter",
+                    "tol",
+                    "copy"
+                ]
+            },
+            "CCA": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "scale",
+                    "algorithm",
+                    "max_iter",
+                    "tol",
+                    "copy"
+                ]
+            },
+            "PLSSVD": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "scale",
+                    "copy"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "Y"
+                ],
+                "transform": [
+                    "self",
+                    "X",
+                    "Y"
+                ]
+            }
+        },
+        "sklearn.cross_val": {},
         "sklearn.cross_validation": {
             "_cross_val_score": [
                 "estimator",
@@ -550,107 +671,6 @@
                 ]
             }
         },
-        "sklearn.multiclass": {
-            "fit_binary": [
-                "estimator",
-                "X",
-                "y"
-            ],
-            "predict_binary": [
-                "estimator",
-                "X"
-            ],
-            "check_estimator": [
-                "estimator"
-            ],
-            "fit_ovr": [
-                "estimator",
-                "X",
-                "y"
-            ],
-            "predict_ovr": [
-                "estimators",
-                "label_binarizer",
-                "X"
-            ],
-            "fit_ovo_binary": [
-                "estimator",
-                "X",
-                "y",
-                "i",
-                "j"
-            ],
-            "fit_ovo": [
-                "estimator",
-                "X",
-                "y"
-            ],
-            "predict_ovo": [
-                "estimators",
-                "classes",
-                "X"
-            ],
-            "fit_ecoc": [
-                "estimator",
-                "X",
-                "y",
-                "code_size",
-                "random_state"
-            ],
-            "predict_ecoc": [
-                "estimators",
-                "classes",
-                "code_book",
-                "X"
-            ],
-            "OneVsRestClassifier": {
-                "__init__": [
-                    "self",
-                    "estimator"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            },
-            "OneVsOneClassifier": {
-                "__init__": [
-                    "self",
-                    "estimator"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            },
-            "OutputCodeClassifier": {
-                "__init__": [
-                    "self",
-                    "estimator",
-                    "code_size",
-                    "random_state"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
         "sklearn.base": {
             "clone": [
                 "estimator",
@@ -710,102 +730,34 @@
                 ]
             }
         },
-        "sklearn": {},
-        "sklearn.pls": {
-            "_nipals_twoblocks_inner_loop": [
-                "X",
-                "Y",
-                "mode",
-                "max_iter",
-                "tol"
-            ],
-            "_svd_cross_product": [
-                "X",
-                "Y"
-            ],
-            "_center_scale_xy": [
-                "X",
-                "Y",
-                "scale"
-            ],
-            "_PLS": {
+        "sklearn.qda": {
+            "QDA": {
                 "__init__": [
                     "self",
-                    "n_components",
-                    "deflation_mode",
-                    "mode",
-                    "scale",
-                    "algorithm",
-                    "max_iter",
-                    "tol",
-                    "copy"
+                    "priors"
                 ],
                 "fit": [
                     "self",
                     "X",
-                    "Y"
+                    "y",
+                    "store_covariances",
+                    "tol"
                 ],
-                "transform": [
+                "decision_function": [
                     "self",
-                    "X",
-                    "Y",
-                    "copy"
+                    "X"
                 ],
                 "predict": [
                     "self",
-                    "X",
-                    "copy"
-                ]
-            },
-            "PLSRegression": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "scale",
-                    "algorithm",
-                    "max_iter",
-                    "tol",
-                    "copy"
-                ]
-            },
-            "PLSCanonical": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "scale",
-                    "algorithm",
-                    "max_iter",
-                    "tol",
-                    "copy"
-                ]
-            },
-            "CCA": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "scale",
-                    "algorithm",
-                    "max_iter",
-                    "tol",
-                    "copy"
-                ]
-            },
-            "PLSSVD": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "scale",
-                    "copy"
+                    "X"
                 ],
-                "fit": [
+                "predict_proba": [
                     "self",
-                    "X",
-                    "Y"
+                    "X"
                 ],
-                "transform": [
+                "predict_log_proba": [
                     "self",
-                    "X",
-                    "Y"
+                    "X"
                 ]
             }
         },
@@ -886,22 +838,37 @@
                 ]
             }
         },
-        "sklearn.qda": {
-            "QDA": {
+        "sklearn.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "sklearn": {},
+        "sklearn.pipeline": {
+            "Pipeline": {
                 "__init__": [
                     "self",
-                    "priors"
+                    "steps"
+                ],
+                "_get_params": [
+                    "self",
+                    "deep"
+                ],
+                "_pre_transform": [
+                    "self",
+                    "X",
+                    "y"
                 ],
                 "fit": [
                     "self",
                     "X",
-                    "y",
-                    "store_covariances",
-                    "tol"
+                    "y"
                 ],
-                "decision_function": [
+                "fit_transform": [
                     "self",
-                    "X"
+                    "X",
+                    "y"
                 ],
                 "predict": [
                     "self",
@@ -914,266 +881,1488 @@
                 "predict_log_proba": [
                     "self",
                     "X"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ],
+                "inverse_transform": [
+                    "self",
+                    "X"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "y"
                 ]
             }
         },
-        "sklearn.cross_val": {},
-        "sklearn.ball_tree": {},
-        "sklearn.datasets.setup": {
+        "sklearn.manifold.isomap": {
+            "Isomap": {
+                "__init__": [
+                    "self",
+                    "n_neighbors",
+                    "out_dim",
+                    "eigen_solver",
+                    "tol",
+                    "max_iter",
+                    "path_method"
+                ],
+                "_fit_transform": [
+                    "self",
+                    "X"
+                ],
+                "reconstruction_error": [
+                    "self"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "fit_transform": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.manifold.locally_linear": {
+            "barycenter_weights": [
+                "X",
+                "Z",
+                "reg"
+            ],
+            "barycenter_kneighbors_graph": [
+                "X",
+                "n_neighbors",
+                "reg"
+            ],
+            "null_space": [
+                "M",
+                "k",
+                "k_skip",
+                "eigen_solver",
+                "tol",
+                "max_iter"
+            ],
+            "locally_linear_embedding": [
+                "X",
+                "n_neighbors",
+                "out_dim",
+                "reg",
+                "eigen_solver",
+                "tol",
+                "max_iter",
+                "method",
+                "hessian_tol",
+                "modified_tol"
+            ],
+            "LocallyLinearEmbedding": {
+                "__init__": [
+                    "self",
+                    "n_neighbors",
+                    "out_dim",
+                    "reg",
+                    "eigen_solver",
+                    "tol",
+                    "max_iter",
+                    "method",
+                    "hessian_tol",
+                    "modified_tol"
+                ],
+                "_fit_transform": [
+                    "self",
+                    "X"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "fit_transform": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.manifold": {},
+        "sklearn.metrics.cluster": {
+            "comb2": [
+                "n"
+            ],
+            "check_clusterings": [
+                "labels_true",
+                "labels_pred"
+            ],
+            "adjusted_rand_score": [
+                "labels_true",
+                "labels_pred"
+            ],
+            "homogeneity_completeness_v_measure": [
+                "labels_true",
+                "labels_pred"
+            ],
+            "homogeneity_score": [
+                "labels_true",
+                "labels_pred"
+            ],
+            "completeness_score": [
+                "labels_true",
+                "labels_pred"
+            ],
+            "v_measure_score": [
+                "labels_true",
+                "labels_pred"
+            ]
+        },
+        "sklearn.metrics.metrics": {
+            "unique_labels": [],
+            "confusion_matrix": [
+                "y_true",
+                "y_pred",
+                "labels"
+            ],
+            "roc_curve": [
+                "y_true",
+                "y_score"
+            ],
+            "auc": [
+                "x",
+                "y"
+            ],
+            "precision_score": [
+                "y_true",
+                "y_pred",
+                "pos_label"
+            ],
+            "recall_score": [
+                "y_true",
+                "y_pred",
+                "pos_label"
+            ],
+            "fbeta_score": [
+                "y_true",
+                "y_pred",
+                "beta",
+                "pos_label"
+            ],
+            "f1_score": [
+                "y_true",
+                "y_pred",
+                "pos_label"
+            ],
+            "precision_recall_fscore_support": [
+                "y_true",
+                "y_pred",
+                "beta",
+                "labels"
+            ],
+            "classification_report": [
+                "y_true",
+                "y_pred",
+                "labels",
+                "target_names"
+            ],
+            "precision_recall_curve": [
+                "y_true",
+                "probas_pred"
+            ],
+            "explained_variance_score": [
+                "y_true",
+                "y_pred"
+            ],
+            "r2_score": [
+                "y_true",
+                "y_pred"
+            ],
+            "zero_one_score": [
+                "y_true",
+                "y_pred"
+            ],
+            "zero_one": [
+                "y_true",
+                "y_pred"
+            ],
+            "mean_square_error": [
+                "y_true",
+                "y_pred"
+            ],
+            "hinge_loss": [
+                "y_true",
+                "pred_decision",
+                "pos_label",
+                "neg_label"
+            ]
+        },
+        "sklearn.metrics.pairwise": {
+            "check_pairwise_arrays": [
+                "X",
+                "Y"
+            ],
+            "euclidean_distances": [
+                "X",
+                "Y",
+                "Y_norm_squared",
+                "squared"
+            ],
+            "euclidian_distances": [],
+            "manhattan_distances": [
+                "X",
+                "Y",
+                "sum_over_features"
+            ],
+            "linear_kernel": [
+                "X",
+                "Y"
+            ],
+            "polynomial_kernel": [
+                "X",
+                "Y",
+                "degree",
+                "gamma",
+                "coef0"
+            ],
+            "sigmoid_kernel": [
+                "X",
+                "Y",
+                "gamma",
+                "coef0"
+            ],
+            "rbf_kernel": [
+                "X",
+                "Y",
+                "gamma"
+            ],
+            "distance_metrics": [],
+            "pairwise_distances": [
+                "X",
+                "Y",
+                "metric"
+            ],
+            "kernel_metrics": [],
+            "pairwise_kernels": [
+                "X",
+                "Y",
+                "metric"
+            ]
+        },
+        "sklearn.metrics": {},
+        "sklearn.metrics.tests.test_pairwise": {
+            "test_pairwise_distances": [],
+            "test_pairwise_kernels": [],
+            "callable_rbf_kernel": [
+                "x",
+                "y"
+            ],
+            "test_euclidean_distances": [],
+            "test_kernel_symmetry": [],
+            "test_kernel_sparse": [],
+            "test_linear_kernel": [],
+            "test_rbf_kernel": [],
+            "test_check_dense_matrices": [],
+            "test_check_XB_returned": [],
+            "test_check_different_dimensions": [],
+            "test_check_invalid_dimensions": [],
+            "test_check_sparse_arrays": [],
+            "tuplify": [
+                "X"
+            ],
+            "test_check_tuple_input": []
+        },
+        "sklearn.metrics.tests.test_metrics": {
+            "make_prediction": [
+                "dataset",
+                "binary"
+            ],
+            "test_roc_curve": [],
+            "test_roc_curve_multi": [],
+            "test_roc_curve_confidence": [],
+            "test_roc_curve_hard": [],
+            "test_precision_recall_f1_score_binary": [],
+            "test_confusion_matrix_binary": [],
+            "test_precision_recall_f1_score_multiclass": [],
+            "test_zero_precision_recall": [],
+            "test_confusion_matrix_multiclass": [],
+            "test_classification_report": [],
+            "_test_precision_recall_curve": [],
+            "test_losses": [],
+            "test_losses_at_limits": [],
+            "test_symmetry": [],
+            "test_hinge_loss_binary": []
+        },
+        "sklearn.metrics.tests": {},
+        "sklearn.gaussian_process.regression_models": {
+            "constant": [
+                "x"
+            ],
+            "linear": [
+                "x"
+            ],
+            "quadratic": [
+                "x"
+            ]
+        },
+        "sklearn.gaussian_process.correlation_models": {
+            "absolute_exponential": [
+                "theta",
+                "d"
+            ],
+            "squared_exponential": [
+                "theta",
+                "d"
+            ],
+            "generalized_exponential": [
+                "theta",
+                "d"
+            ],
+            "pure_nugget": [
+                "theta",
+                "d"
+            ],
+            "cubic": [
+                "theta",
+                "d"
+            ],
+            "linear": [
+                "theta",
+                "d"
+            ]
+        },
+        "sklearn.gaussian_process": {},
+        "sklearn.gaussian_process.tests.test_gaussian_process": {
+            "test_1d": [
+                "regr",
+                "corr",
+                "random_start",
+                "beta0"
+            ],
+            "test_2d": [
+                "regr",
+                "corr",
+                "random_start",
+                "beta0"
+            ],
+            "test_wrong_number_of_outputs": [],
+            "test_more_builtin_correlation_models": [
+                "random_start"
+            ],
+            "test_ordinary_kriging": []
+        },
+        "sklearn.gaussian_process.tests": {},
+        "sklearn.feature_selection.rfe": {
+            "RFE": {
+                "__init__": [
+                    "self",
+                    "estimator",
+                    "n_features_to_select",
+                    "step"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ]
+            },
+            "RFECV": {
+                "__init__": [
+                    "self",
+                    "estimator",
+                    "step",
+                    "cv",
+                    "loss_func"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            }
+        },
+        "sklearn.feature_selection.univariate_selection": {
+            "f_oneway": [],
+            "f_classif": [
+                "X",
+                "y"
+            ],
+            "chi2": [
+                "X",
+                "y"
+            ],
+            "f_regression": [
+                "X",
+                "y",
+                "center"
+            ],
+            "_AbstractUnivariateFilter": {
+                "__init__": [
+                    "self",
+                    "score_func"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "get_support": [
+                    "self",
+                    "indices"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ],
+                "inverse_transform": [
+                    "self",
+                    "X"
+                ]
+            },
+            "SelectPercentile": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "percentile"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            },
+            "SelectKBest": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "k"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            },
+            "SelectFpr": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "alpha"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            },
+            "SelectFdr": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "alpha"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            },
+            "SelectFwe": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "alpha"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            },
+            "GenericUnivariateSelect": {
+                "__init__": [
+                    "self",
+                    "score_func",
+                    "mode",
+                    "param"
+                ],
+                "_get_support_mask": [
+                    "self"
+                ]
+            }
+        },
+        "sklearn.feature_selection": {},
+        "sklearn.feature_selection.tests.test_rfe": {
+            "test_rfe": [],
+            "test_rfecv": []
+        },
+        "sklearn.feature_selection.tests.test_chi2": {
+            "mkchi2": [
+                "k"
+            ],
+            "test_chi2": []
+        },
+        "sklearn.feature_selection.tests.test_feature_select": {
+            "test_f_oneway_vs_scipy_stats": [],
+            "test_f_classif": [],
+            "test_f_regression": [],
+            "test_f_classif_multi_class": [],
+            "test_select_percentile_classif": [],
+            "test_select_kbest_classif": [],
+            "test_select_fpr_classif": [],
+            "test_select_fdr_classif": [],
+            "test_select_fwe_classif": [],
+            "test_select_percentile_regression": [],
+            "test_select_percentile_regression_full": [],
+            "test_select_kbest_regression": [],
+            "test_select_fpr_regression": [],
+            "test_select_fdr_regression": [],
+            "test_select_fwe_regression": []
+        },
+        "sklearn.feature_selection.tests": {},
+        "sklearn.covariance.shrunk_covariance_": {
+            "shrunk_covariance": [
+                "emp_cov",
+                "shrinkage"
+            ],
+            "ledoit_wolf": [
+                "X",
+                "assume_centered"
+            ],
+            "oas": [
+                "X",
+                "assume_centered"
+            ],
+            "ShrunkCovariance": {
+                "__init__": [
+                    "self",
+                    "store_precision",
+                    "shrinkage"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "assume_centered"
+                ]
+            },
+            "LedoitWolf": {
+                "fit": [
+                    "self",
+                    "X",
+                    "assume_centered"
+                ]
+            },
+            "OAS": {
+                "fit": [
+                    "self",
+                    "X",
+                    "assume_centered"
+                ]
+            }
+        },
+        "sklearn.covariance.empirical_covariance_": {
+            "log_likelihood": [
+                "emp_cov",
+                "precision"
+            ],
+            "empirical_covariance": [
+                "X",
+                "assume_centered"
+            ],
+            "EmpiricalCovariance": {
+                "__init__": [
+                    "self",
+                    "store_precision"
+                ],
+                "_set_estimates": [
+                    "self",
+                    "covariance"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "assume_centered"
+                ],
+                "score": [
+                    "self",
+                    "X_test",
+                    "assume_centered"
+                ],
+                "error_norm": [
+                    "self",
+                    "comp_cov",
+                    "norm",
+                    "scaling",
+                    "squared"
+                ]
+            }
+        },
+        "sklearn.covariance": {},
+        "sklearn.covariance.tests.test_covariance": {
+            "test_covariance": [],
+            "test_shrunk_covariance": [],
+            "test_ledoit_wolf": [],
+            "test_oas": []
+        },
+        "sklearn.covariance.tests": {},
+        "sklearn.tests.test_multiclass": {
+            "test_ovr_exceptions": [],
+            "test_ovr_fit_predict": [],
+            "test_ovr_gridsearch": [],
+            "test_ovo_exceptions": [],
+            "test_ovo_fit_predict": [],
+            "test_ovo_gridsearch": [],
+            "test_ecoc_exceptions": [],
+            "test_ecoc_fit_predict": [],
+            "test_ecoc_gridsearch": []
+        },
+        "sklearn.tests.test_grid_search": {
+            "test_grid_search": [],
+            "test_grid_search_error": [],
+            "test_grid_search_sparse": [],
+            "test_grid_search_sparse_score_func": [],
+            "MockClassifier": {
+                "__init__": [
+                    "self",
+                    "foo_param"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "Y"
+                ],
+                "predict": [
+                    "self",
+                    "T"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "Y"
+                ]
+            }
+        },
+        "sklearn.tests.test_qda": {
+            "test_qda": []
+        },
+        "sklearn.tests.test_base": {
+            "test_clone": [],
+            "test_clone_2": [],
+            "test_clone_buggy": [],
+            "test_repr": [],
+            "test_str": [],
+            "test_get_params": [],
+            "test_is_classifier": [],
+            "MyEstimator": {
+                "__init__": [
+                    "self",
+                    "l1"
+                ]
+            },
+            "K": {
+                "__init__": [
+                    "self",
+                    "c",
+                    "d"
+                ]
+            },
+            "T": {
+                "__init__": [
+                    "self",
+                    "a",
+                    "b"
+                ]
+            },
+            "Buggy": {
+                "__init__": [
+                    "self",
+                    "a"
+                ]
+            }
+        },
+        "sklearn.tests.test_pipeline": {
+            "test_pipeline_init": [],
+            "test_pipeline_methods_anova": [],
+            "test_pipeline_fit_params": [],
+            "test_pipeline_methods_pca_svm": [],
+            "test_pipeline_methods_randomized_pca_svm": [],
+            "test_pipeline_methods_scaler_svm": [],
+            "IncorrectT": {
+                "__init__": [
+                    "self",
+                    "a",
+                    "b"
+                ]
+            },
+            "T": {
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            },
+            "TransfT": {
+                "transform": [
+                    "self",
+                    "X",
+                    "y"
+                ]
+            },
+            "FitParamT": {
+                "__init__": [
+                    "self"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "should_succeed"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.tests.test_pls": {
+            "test_pls": []
+        },
+        "sklearn.tests.test_lda": {
+            "test_lda_predict": [],
+            "test_lda_transform": []
+        },
+        "sklearn.tests.test_cross_validation": {
+            "test_kfold": [],
+            "test_cross_val_score": [],
+            "test_cross_val_score_with_score_func_classification": [],
+            "test_cross_val_score_with_score_func_regression": [],
+            "test_permutation_score": [],
+            "test_cross_val_generator_with_indices": [],
+            "test_bootstrap_errors": [],
+            "MockClassifier": {
+                "__init__": [
+                    "self",
+                    "a"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "Y"
+                ],
+                "predict": [
+                    "self",
+                    "T"
+                ],
+                "score": [
+                    "self",
+                    "X",
+                    "Y"
+                ]
+            }
+        },
+        "sklearn.tests.test_naive_bayes": {
+            "test_gnb": [],
+            "test_mnnb": [],
+            "test_sparse_mnnb": [],
+            "test_discretenb_pickle": [],
+            "test_discretenb_predict_proba": [],
+            "test_discretenb_uniform_prior": []
+        },
+        "sklearn.tests": {},
+        "sklearn.feature_extraction.image": {
+            "_make_edges_3d": [
+                "n_x",
+                "n_y",
+                "n_z"
+            ],
+            "_compute_gradient_3d": [
+                "edges",
+                "img"
+            ],
+            "_mask_edges_weights": [
+                "mask",
+                "edges",
+                "weights"
+            ],
+            "_to_graph": [
+                "n_x",
+                "n_y",
+                "n_z",
+                "mask",
+                "img",
+                "return_as",
+                "dtype"
+            ],
+            "img_to_graph": [
+                "img",
+                "mask",
+                "return_as",
+                "dtype"
+            ],
+            "grid_to_graph": [
+                "n_x",
+                "n_y",
+                "n_z",
+                "mask",
+                "return_as",
+                "dtype"
+            ],
+            "extract_patches_2d": [
+                "image",
+                "patch_size",
+                "max_patches",
+                "random_state"
+            ],
+            "reconstruct_from_patches_2d": [
+                "patches",
+                "image_size"
+            ],
+            "PatchExtractor": {
+                "__init__": [
+                    "self",
+                    "patch_size",
+                    "max_patches",
+                    "random_state"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.feature_extraction.text": {
+            "strip_accents": [
+                "s"
+            ],
+            "to_ascii": [
+                "s"
+            ],
+            "strip_tags": [
+                "s"
+            ],
+            "RomanPreprocessor": {
+                "preprocess": [
+                    "self",
+                    "unicode_text"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "WordNGramAnalyzer": {
+                "__init__": [
+                    "self",
+                    "charset",
+                    "min_n",
+                    "max_n",
+                    "preprocessor",
+                    "stop_words",
+                    "token_pattern"
+                ],
+                "analyze": [
+                    "self",
+                    "text_document"
+                ]
+            },
+            "CharNGramAnalyzer": {
+                "__init__": [
+                    "self",
+                    "charset",
+                    "preprocessor",
+                    "min_n",
+                    "max_n"
+                ],
+                "analyze": [
+                    "self",
+                    "text_document"
+                ]
+            },
+            "CountVectorizer": {
+                "__init__": [
+                    "self",
+                    "analyzer",
+                    "vocabulary",
+                    "max_df",
+                    "max_features",
+                    "dtype"
+                ],
+                "_term_count_dicts_to_matrix": [
+                    "self",
+                    "term_count_dicts"
+                ],
+                "fit": [
+                    "self",
+                    "raw_documents",
+                    "y"
+                ],
+                "fit_transform": [
+                    "self",
+                    "raw_documents",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "raw_documents"
+                ],
+                "inverse_transform": [
+                    "self",
+                    "X"
+                ]
+            },
+            "TfidfTransformer": {
+                "__init__": [
+                    "self",
+                    "norm",
+                    "use_idf",
+                    "smooth_idf"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X",
+                    "copy"
+                ]
+            },
+            "Vectorizer": {
+                "__init__": [
+                    "self",
+                    "analyzer",
+                    "max_df",
+                    "max_features",
+                    "norm",
+                    "use_idf",
+                    "smooth_idf"
+                ],
+                "fit": [
+                    "self",
+                    "raw_documents"
+                ],
+                "fit_transform": [
+                    "self",
+                    "raw_documents"
+                ],
+                "transform": [
+                    "self",
+                    "raw_documents",
+                    "copy"
+                ],
+                "inverse_transform": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.feature_extraction": {},
+        "sklearn.feature_extraction.tests.test_image": {
+            "test_img_to_graph": [],
+            "test_grid_to_graph": [],
+            "test_connect_regions": [],
+            "test_connect_regions_with_grid": [],
+            "_downsampled_lena": [],
+            "_orange_lena": [
+                "lena"
+            ],
+            "_make_images": [
+                "lena"
+            ],
+            "test_extract_patches_all": [],
+            "test_extract_patches_all_color": [],
+            "test_extract_patches_all_rect": [],
+            "test_extract_patches_max_patches": [],
+            "test_reconstruct_patches_perfect": [],
+            "test_reconstruct_patches_perfect_color": [],
+            "test_patch_extractor_fit": [],
+            "test_patch_extractor_max_patches": [],
+            "test_patch_extractor_all_patches": [],
+            "test_patch_extractor_color": []
+        },
+        "sklearn.feature_extraction.tests.test_text": {
+            "toarray": [
+                "a"
+            ],
+            "test_strip_accents": [],
+            "test_to_ascii": [],
+            "test_word_analyzer_unigrams": [],
+            "test_word_analyzer_unigrams_and_bigrams": [],
+            "test_char_ngram_analyzer": [],
+            "test_countvectorizer_custom_vocabulary": [],
+            "test_countvectorizer_custom_vocabulary_pipeline": [],
+            "test_fit_countvectorizer_twice": [],
+            "test_vectorizer": [],
+            "test_vectorizer_max_features": [],
+            "test_vectorizer_max_df": [],
+            "test_vectorizer_inverse_transform": [],
+            "test_dense_vectorizer_pipeline_grid_selection": [],
+            "test_pickle": []
+        },
+        "sklearn.feature_extraction.tests": {},
+        "sklearn.svm.classes": {
+            "LinearSVC": {},
+            "SVC": {
+                "__init__": [
+                    "self",
+                    "C",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "probability",
+                    "tol"
+                ]
+            },
+            "NuSVC": {
+                "__init__": [
+                    "self",
+                    "nu",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "probability",
+                    "tol"
+                ]
+            },
+            "SVR": {
+                "__init__": [
+                    "self",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "C",
+                    "epsilon",
+                    "shrinking",
+                    "probability"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight"
+                ]
+            },
+            "NuSVR": {
+                "__init__": [
+                    "self",
+                    "nu",
+                    "C",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "probability",
+                    "tol"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight"
+                ]
+            },
+            "OneClassSVM": {
+                "__init__": [
+                    "self",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "nu",
+                    "shrinking"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "class_weight",
+                    "sample_weight"
+                ]
+            }
+        },
+        "sklearn.svm.bounds": {
+            "l1_min_c": [
+                "X",
+                "y",
+                "loss",
+                "fit_intercept",
+                "intercept_scaling"
+            ]
+        },
+        "sklearn.svm.base": {
+            "_get_class_weight": [
+                "class_weight",
+                "y"
+            ],
+            "BaseLibSVM": {
+                "__init__": [
+                    "self",
+                    "impl",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "C",
+                    "nu",
+                    "epsilon",
+                    "shrinking",
+                    "probability"
+                ],
+                "_compute_kernel": [
+                    "self",
+                    "X"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "class_weight",
+                    "sample_weight",
+                    "cache_size"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "predict_proba": [
+                    "self",
+                    "X"
+                ],
+                "predict_log_proba": [
+                    "self",
+                    "T"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
+                ],
+                "coef_": [
+                    "self"
+                ]
+            },
+            "BaseLibLinear": {
+                "__init__": [
+                    "self",
+                    "penalty",
+                    "loss",
+                    "dual",
+                    "tol",
+                    "C",
+                    "multi_class",
+                    "fit_intercept",
+                    "intercept_scaling"
+                ],
+                "_get_solver_type": [
+                    "self"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "class_weight"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
+                ],
+                "_check_n_features": [
+                    "self",
+                    "X"
+                ],
+                "intercept_": [
+                    "self"
+                ],
+                "coef_": [
+                    "self"
+                ],
+                "predict_proba": [
+                    "self",
+                    "T"
+                ],
+                "_get_bias": [
+                    "self"
+                ]
+            }
+        },
+        "sklearn.svm.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "sklearn.datasets.svmlight_format": {
-            "_load_svmlight_file": [
-                "file_path",
-                "buffer_mb"
+        "sklearn.svm": {},
+        "sklearn.svm.tests.test_svm": {
+            "test_libsvm_parameters": [],
+            "test_libsvm_iris": [],
+            "test_precomputed": [],
+            "test_SVR": [],
+            "test_oneclass": [],
+            "test_tweak_params": [],
+            "test_probability": [],
+            "test_decision_function": [],
+            "test_weight": [],
+            "test_sample_weights": [],
+            "test_auto_weight": [],
+            "test_bad_input": [],
+            "test_LinearSVC": [],
+            "test_LinearSVC_iris": [],
+            "test_dense_liblinear_intercept_handling": [
+                "classifier"
             ],
-            "load_svmlight_file": [
-                "file_path",
-                "other_file_path",
-                "n_features",
-                "buffer_mb"
-            ]
+            "test_liblinear_predict": []
         },
-        "sklearn.datasets.base": {
-            "get_data_home": [
-                "data_home"
+        "sklearn.svm.tests.test_bounds": {
+            "test_l1_min_c": [],
+            "check_l1_min_c": [
+                "X",
+                "y",
+                "loss",
+                "fit_intercept",
+                "intercept_scaling"
             ],
-            "clear_data_home": [
-                "data_home"
-            ],
-            "load_files": [
-                "container_path",
-                "description",
-                "categories",
-                "load_content",
-                "shuffle",
-                "random_state"
-            ],
-            "load_iris": [],
-            "load_digits": [
-                "n_class"
-            ],
-            "load_diabetes": [],
-            "load_linnerud": [],
-            "load_boston": [],
-            "load_sample_images": [],
-            "load_sample_image": [
-                "image_name"
-            ],
-            "Bunch": {
+            "test_ill_posed_min_c": [],
+            "test_unsupported_loss": []
+        },
+        "sklearn.svm.tests.test_sparse": {
+            "test_SVC": [],
+            "test_SVC_iris": [],
+            "test_error": [],
+            "test_LinearSVC": [],
+            "test_LinearSVC_iris": [],
+            "test_weight": [],
+            "test_sample_weights": [],
+            "test_sparse_liblinear_intercept_handling": [],
+            "test_sparse_realdata": []
+        },
+        "sklearn.svm.tests": {},
+        "sklearn.svm.sparse.classes": {
+            "SVC": {
                 "__init__": [
-                    "self"
+                    "self",
+                    "C",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "probability",
+                    "tol"
+                ]
+            },
+            "NuSVC": {
+                "__init__": [
+                    "self",
+                    "nu",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "probability",
+                    "tol"
+                ]
+            },
+            "SVR": {
+                "__init__": [
+                    "self",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "C",
+                    "nu",
+                    "epsilon",
+                    "shrinking",
+                    "probability"
+                ]
+            },
+            "NuSVR": {
+                "__init__": [
+                    "self",
+                    "nu",
+                    "C",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "shrinking",
+                    "epsilon",
+                    "probability",
+                    "tol"
+                ]
+            },
+            "OneClassSVM": {
+                "__init__": [
+                    "self",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "nu",
+                    "shrinking",
+                    "probability"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "class_weight",
+                    "sample_weight"
+                ]
+            },
+            "LinearSVC": {}
+        },
+        "sklearn.svm.sparse.base": {
+            "SparseBaseLibSVM": {
+                "__init__": [
+                    "self",
+                    "impl",
+                    "kernel",
+                    "degree",
+                    "gamma",
+                    "coef0",
+                    "tol",
+                    "C",
+                    "nu",
+                    "epsilon",
+                    "shrinking",
+                    "probability"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "class_weight",
+                    "sample_weight",
+                    "cache_size"
+                ],
+                "predict": [
+                    "self",
+                    "T"
+                ],
+                "predict_proba": [
+                    "self",
+                    "X"
+                ]
+            },
+            "SparseBaseLibLinear": {
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "class_weight"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
                 ]
             }
         },
-        "sklearn.datasets.mlcomp": {
-            "_load_document_classification": [
-                "dataset_path",
-                "metadata",
-                "set_"
-            ],
-            "load_mlcomp": [
-                "name_or_id",
-                "set_",
-                "mlcomp_root"
+        "sklearn.svm.sparse.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
             ]
         },
-        "sklearn.datasets": {
-            "load_filenames": []
+        "sklearn.svm.sparse": {},
+        "sklearn.mixture": {},
+        "sklearn.mixture.tests.test_gmm": {
+            "test_normalize_1D": [],
+            "test_normalize_3D": [],
+            "test_sample_gaussian": [],
+            "_naive_lmvnpdf_diag": [
+                "obs",
+                "mu",
+                "cv"
+            ],
+            "test_lmvnpdf_diag": [],
+            "test_lmvnpdf_spherical": [],
+            "test_lmvnpdf_full": [],
+            "test_GMM_attributes": [],
+            "GMMTester": {
+                "test_eval": [
+                    "self"
+                ],
+                "test_rvs": [
+                    "self",
+                    "n"
+                ],
+                "test_train": [
+                    "self",
+                    "params"
+                ],
+                "score": [
+                    "self",
+                    "g",
+                    "train_obs"
+                ]
+            },
+            "TestGMMWithSphericalCovars": {},
+            "TestGMMWithDiagonalCovars": {},
+            "TestGMMWithTiedCovars": {},
+            "TestGMMWithFullCovars": {}
         },
-        "sklearn.datasets.samples_generator": {
-            "make_classification": [
-                "n_samples",
-                "n_features",
-                "n_informative",
-                "n_redundant",
-                "n_repeated",
-                "n_classes",
-                "n_clusters_per_class",
-                "weights",
-                "flip_y",
-                "class_sep",
-                "hypercube",
-                "shift",
-                "scale",
-                "shuffle",
-                "random_state"
+        "sklearn.mixture.tests.test_dpgmm": {
+            "test_log_normalize": [],
+            "do_model": [
+                "self"
             ],
-            "make_regression": [
-                "n_samples",
-                "n_features",
-                "n_informative",
-                "bias",
-                "effective_rank",
-                "tail_strength",
-                "noise",
-                "shuffle",
-                "coef",
-                "random_state"
-            ],
-            "make_blobs": [
-                "n_samples",
-                "n_features",
-                "centers",
-                "cluster_std",
-                "center_box",
-                "shuffle",
-                "random_state"
-            ],
-            "make_friedman1": [
-                "n_samples",
-                "n_features",
-                "noise",
-                "random_state"
-            ],
-            "make_friedman2": [
-                "n_samples",
-                "noise",
-                "random_state"
-            ],
-            "make_friedman3": [
-                "n_samples",
-                "noise",
-                "random_state"
-            ],
-            "make_low_rank_matrix": [
-                "n_samples",
-                "n_features",
-                "effective_rank",
-                "tail_strength",
-                "random_state"
-            ],
-            "make_sparse_coded_signal": [
-                "n_samples",
-                "n_components",
-                "n_features",
-                "n_nonzero_coefs",
-                "random_state"
-            ],
-            "make_sparse_uncorrelated": [
-                "n_samples",
-                "n_features",
-                "random_state"
-            ],
-            "make_spd_matrix": [
-                "n_dim",
-                "random_state"
-            ],
-            "make_swiss_roll": [
-                "n_samples",
-                "noise",
-                "random_state"
-            ],
-            "make_s_curve": [
-                "n_samples",
-                "noise",
-                "random_state"
-            ]
+            "DPGMMTester": {
+                "score": [
+                    "self",
+                    "g",
+                    "train_obs"
+                ]
+            },
+            "TestDPGMMWithSphericalCovars": {},
+            "TestDPGMMWithDiagCovars": {},
+            "TestDPGMMWithTiedCovars": {},
+            "TestDPGMMWithFullCovars": {},
+            "VBGMMTester": {
+                "score": [
+                    "self",
+                    "g",
+                    "train_obs"
+                ]
+            },
+            "TestVBGMMWithSphericalCovars": {},
+            "TestVBGMMWithDiagCovars": {},
+            "TestVBGMMWithTiedCovars": {},
+            "TestVBGMMWithFullCovars": {}
         },
-        "sklearn.datasets.lfw": {
-            "scale_face": [
-                "face"
-            ],
-            "check_fetch_lfw": [
-                "data_home",
-                "funneled",
-                "download_if_missing"
-            ],
-            "_load_imgs": [
-                "file_paths",
-                "slice_",
-                "color",
-                "resize"
-            ],
-            "_fetch_lfw_people": [
-                "data_folder_path",
-                "slice_",
-                "color",
-                "resize",
-                "min_faces_per_person"
-            ],
-            "fetch_lfw_people": [
-                "data_home",
-                "funneled",
-                "resize",
-                "min_faces_per_person",
-                "color",
-                "slice_",
-                "download_if_missing"
-            ],
-            "_fetch_lfw_pairs": [
-                "index_file_path",
-                "data_folder_path",
-                "slice_",
-                "color",
-                "resize"
-            ],
-            "load_lfw_people": [
-                "download_if_missing"
-            ],
-            "fetch_lfw_pairs": [
-                "subset",
-                "data_home",
-                "funneled",
-                "resize",
-                "color",
-                "slice_",
-                "download_if_missing"
-            ],
-            "load_lfw_pairs": [
-                "download_if_missing"
-            ]
-        },
-        "sklearn.datasets.tests.test_20news": {
-            "test_20news": []
-        },
-        "sklearn.datasets.tests.test_mldata": {
-            "setup_tmpdata": [],
-            "teardown_tmpdata": [],
-            "test_mldata_filename": [],
-            "test_download": [],
-            "test_fetch_one_column": [],
-            "test_fetch_multiple_column": []
-        },
-        "sklearn.datasets.tests.test_samples_generator": {
-            "test_make_classification": [],
-            "test_make_regression": [],
-            "test_make_blobs": [],
-            "test_make_friedman1": [],
-            "test_make_friedman2": [],
-            "test_make_friedman3": [],
-            "test_make_low_rank_matrix": [],
-            "test_make_sparse_coded_signal": [],
-            "test_make_sparse_uncorrelated": [],
-            "test_make_spd_matrix": [],
-            "test_make_swiss_roll": [],
-            "test_make_s_curve": []
-        },
-        "sklearn.datasets.tests": {},
-        "sklearn.datasets.tests.test_svmlight_format": {
-            "test_load_svmlight_file": [],
-            "test_load_svmlight_file_2_files": [],
-            "test_load_svmlight_file_n_features": [],
-            "test_load_invalid_file": [],
-            "test_not_a_filename": [],
-            "test_invalid_filename": []
-        },
-        "sklearn.datasets.tests.test_lfw": {
-            "setup_module": [],
-            "teardown_module": [],
-            "test_load_empty_lfw_people": [],
-            "test_load_fake_lfw_people": [],
-            "test_load_fake_lfw_people_too_restrictive": [],
-            "test_load_empty_lfw_pairs": [],
-            "test_load_fake_lfw_pairs": []
-        },
-        "sklearn.datasets.tests.test_base": {
-            "teardown_module": [],
-            "test_data_home": []
-        },
+        "sklearn.mixture.tests": {},
         "sklearn.neighbors.classification": {
             "KNeighborsClassifier": {
                 "__init__": [
@@ -1215,12 +2404,6 @@
                     "X"
                 ]
             }
-        },
-        "sklearn.neighbors.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
         },
         "sklearn.neighbors.unsupervised": {
             "NearestNeighbors": {
@@ -1358,7 +2541,25 @@
                 ]
             }
         },
+        "sklearn.neighbors.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
         "sklearn.neighbors": {},
+        "sklearn.neighbors.tests.test_ball_tree": {
+            "test_ball_tree_query_radius": [
+                "n_samples",
+                "n_features"
+            ],
+            "test_ball_tree_query_radius_distance": [
+                "n_samples",
+                "n_features"
+            ],
+            "test_ball_tree_pickle": [],
+            "test_ball_tree_p_distance": []
+        },
         "sklearn.neighbors.tests.test_neighbors": {
             "test_unsupervised_kneighbors": [
                 "n_samples",
@@ -1422,26 +2623,7 @@
             "test_radius_neighbors_graph": [],
             "test_neighbors_badargs": []
         },
-        "sklearn.neighbors.tests.test_ball_tree": {
-            "test_ball_tree_query_radius": [
-                "n_samples",
-                "n_features"
-            ],
-            "test_ball_tree_query_radius_distance": [
-                "n_samples",
-                "n_features"
-            ],
-            "test_ball_tree_pickle": [],
-            "test_ball_tree_p_distance": []
-        },
         "sklearn.neighbors.tests": {},
-        "sklearn.check_build.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.check_build": {},
         "sklearn.preprocessing.setup": {
             "configuration": [
                 "parent_package",
@@ -1581,665 +2763,227 @@
             "test_center_kernel": [],
             "test_fit_transform": []
         },
-        "sklearn.mixture": {},
-        "sklearn.mixture.tests": {},
-        "sklearn.mixture.tests.test_dpgmm": {
-            "test_log_normalize": [],
-            "do_model": [
-                "self"
-            ],
-            "DPGMMTester": {
-                "score": [
-                    "self",
-                    "g",
-                    "train_obs"
-                ]
-            },
-            "TestDPGMMWithSphericalCovars": {},
-            "TestDPGMMWithDiagCovars": {},
-            "TestDPGMMWithTiedCovars": {},
-            "TestDPGMMWithFullCovars": {},
-            "VBGMMTester": {
-                "score": [
-                    "self",
-                    "g",
-                    "train_obs"
-                ]
-            },
-            "TestVBGMMWithSphericalCovars": {},
-            "TestVBGMMWithDiagCovars": {},
-            "TestVBGMMWithTiedCovars": {},
-            "TestVBGMMWithFullCovars": {}
-        },
-        "sklearn.mixture.tests.test_gmm": {
-            "test_normalize_1D": [],
-            "test_normalize_3D": [],
-            "test_sample_gaussian": [],
-            "_naive_lmvnpdf_diag": [
-                "obs",
-                "mu",
-                "cv"
-            ],
-            "test_lmvnpdf_diag": [],
-            "test_lmvnpdf_spherical": [],
-            "test_lmvnpdf_full": [],
-            "test_GMM_attributes": [],
-            "GMMTester": {
-                "test_eval": [
-                    "self"
-                ],
-                "test_rvs": [
-                    "self",
-                    "n"
-                ],
-                "test_train": [
-                    "self",
-                    "params"
-                ],
-                "score": [
-                    "self",
-                    "g",
-                    "train_obs"
-                ]
-            },
-            "TestGMMWithSphericalCovars": {},
-            "TestGMMWithDiagonalCovars": {},
-            "TestGMMWithTiedCovars": {},
-            "TestGMMWithFullCovars": {}
-        },
-        "sklearn.cluster.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.cluster": {},
-        "sklearn.cluster.dbscan_": {
-            "dbscan": [
+        "sklearn.linear_model.omp": {
+            "_cholesky_omp": [
                 "X",
-                "eps",
-                "min_samples",
-                "metric",
-                "random_state",
-                "verbose"
+                "y",
+                "n_nonzero_coefs",
+                "tol",
+                "overwrite_X"
             ],
-            "DBSCAN": {
+            "_gram_omp": [
+                "Gram",
+                "Xy",
+                "n_nonzero_coefs",
+                "tol_0",
+                "tol",
+                "overwrite_gram",
+                "overwrite_Xy"
+            ],
+            "orthogonal_mp": [
+                "X",
+                "y",
+                "n_nonzero_coefs",
+                "tol",
+                "precompute_gram",
+                "overwrite_X"
+            ],
+            "orthogonal_mp_gram": [
+                "Gram",
+                "Xy",
+                "n_nonzero_coefs",
+                "tol",
+                "norms_squared",
+                "overwrite_gram",
+                "overwrite_Xy"
+            ],
+            "OrthogonalMatchingPursuit": {
                 "__init__": [
                     "self",
-                    "eps",
-                    "min_samples",
-                    "metric",
-                    "verbose",
-                    "random_state"
+                    "overwrite_X",
+                    "overwrite_gram",
+                    "overwrite_Xy",
+                    "n_nonzero_coefs",
+                    "tol",
+                    "fit_intercept",
+                    "normalize",
+                    "precompute_gram"
                 ],
                 "fit": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.cluster.mean_shift_": {
-            "estimate_bandwidth": [
-                "X",
-                "quantile",
-                "n_samples",
-                "random_state"
-            ],
-            "mean_shift": [
-                "X",
-                "bandwidth",
-                "seeds",
-                "bin_seeding",
-                "cluster_all",
-                "max_iterations"
-            ],
-            "get_bin_seeds": [
-                "X",
-                "bin_size",
-                "min_bin_freq"
-            ],
-            "MeanShift": {
-                "__init__": [
-                    "self",
-                    "bandwidth",
-                    "seeds",
-                    "bin_seeding",
-                    "cluster_all"
-                ],
-                "fit": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.cluster._feature_agglomeration": {
-            "AgglomerationTransform": {
-                "transform": [
                     "self",
                     "X",
-                    "pooling_func"
-                ],
-                "inverse_transform": [
-                    "self",
-                    "Xred"
+                    "y",
+                    "Gram",
+                    "Xy"
                 ]
             }
         },
-        "sklearn.cluster.hierarchical": {
-            "ward_tree": [
+        "sklearn.linear_model.ridge": {
+            "_solve": [
+                "A",
+                "b",
+                "solver",
+                "tol"
+            ],
+            "ridge_regression": [
                 "X",
-                "connectivity",
-                "n_components",
-                "copy"
+                "y",
+                "alpha",
+                "sample_weight",
+                "solver",
+                "tol"
             ],
-            "_hc_get_descendent": [
-                "ind",
-                "children",
-                "n_leaves"
-            ],
-            "_hc_cut": [
-                "n_clusters",
-                "children",
-                "n_leaves"
-            ],
-            "Ward": {
+            "Ridge": {
                 "__init__": [
                     "self",
-                    "n_clusters",
-                    "memory",
-                    "connectivity",
-                    "copy",
-                    "n_components"
+                    "alpha",
+                    "fit_intercept",
+                    "normalize",
+                    "overwrite_X",
+                    "tol"
                 ],
                 "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight",
+                    "solver"
+                ]
+            },
+            "RidgeClassifier": {
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "solver"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
+                ],
+                "predict": [
                     "self",
                     "X"
                 ]
             },
-            "WardAgglomeration": {
+            "_RidgeGCV": {
+                "__init__": [
+                    "self",
+                    "alphas",
+                    "fit_intercept",
+                    "normalize",
+                    "score_func",
+                    "loss_func",
+                    "overwrite_X"
+                ],
+                "_pre_compute": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "_errors": [
+                    "self",
+                    "v",
+                    "Q",
+                    "y",
+                    "alpha"
+                ],
+                "_values": [
+                    "self",
+                    "K",
+                    "v",
+                    "Q",
+                    "y",
+                    "alpha"
+                ],
                 "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight"
+                ]
+            },
+            "RidgeCV": {
+                "__init__": [
+                    "self",
+                    "alphas",
+                    "fit_intercept",
+                    "normalize",
+                    "score_func",
+                    "loss_func",
+                    "cv"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight"
+                ]
+            },
+            "RidgeClassifierCV": {
+                "fit": [
+                    "self",
+                    "X",
+                    "y",
+                    "sample_weight",
+                    "class_weight"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.linear_model.stochastic_gradient": {
+            "_train_ova_classifier": [
+                "i",
+                "c",
+                "X",
+                "y",
+                "coef_",
+                "intercept_",
+                "loss_function",
+                "penalty_type",
+                "alpha",
+                "rho",
+                "n_iter",
+                "fit_intercept",
+                "verbose",
+                "shuffle",
+                "seed",
+                "class_weight_pos",
+                "sample_weight",
+                "learning_rate",
+                "eta0",
+                "power_t"
+            ],
+            "SGDClassifier": {
+                "_fit_binary": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "_fit_multiclass": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "decision_function": [
+                    "self",
+                    "X"
+                ]
+            },
+            "SGDRegressor": {
+                "_fit_regressor": [
                     "self",
                     "X",
                     "y"
                 ]
             }
-        },
-        "sklearn.cluster.spectral": {
-            "spectral_embedding": [
-                "adjacency",
-                "n_components",
-                "mode",
-                "random_state"
-            ],
-            "spectral_clustering": [
-                "affinity",
-                "k",
-                "n_components",
-                "mode",
-                "random_state",
-                "n_init"
-            ],
-            "SpectralClustering": {
-                "__init__": [
-                    "self",
-                    "k",
-                    "mode",
-                    "random_state",
-                    "n_init"
-                ],
-                "fit": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.cluster.tests.test_mean_shift": {
-            "test_mean_shift": [],
-            "test_bin_seeds": []
-        },
-        "sklearn.cluster.tests.test_k_means": {
-            "test_k_means_pp_init": [],
-            "test_mini_batch_k_means_pp_init": [],
-            "test_sparse_mini_batch_k_means_pp_init": [],
-            "test_k_means_pp_random_init": [],
-            "test_k_means_fixed_array_init": [],
-            "test_k_means_invalid_init": [],
-            "test_k_means_copyx": [],
-            "test_k_means_singleton": [],
-            "test_mbk_means_fixed_array_init": [],
-            "test_sparse_mbk_means_fixed_array_init": [],
-            "test_sparse_mbk_means_pp_init": [],
-            "test_sparse_mbk_means_callable_init": [],
-            "test_k_means_fixed_array_init_fit": [],
-            "test_mbkm_fixed_array_init_fit": [],
-            "test_mbk_means": [],
-            "test_predict": [],
-            "test_predict_minibatch": [],
-            "test_predict_minibatch_sparse_input": [],
-            "test_transform": []
-        },
-        "sklearn.cluster.tests.test_affinity_propagation": {
-            "test_affinity_propagation": []
-        },
-        "sklearn.cluster.tests": {},
-        "sklearn.cluster.tests.test_hierarchical": {
-            "test_structured_ward_tree": [],
-            "test_unstructured_ward_tree": [],
-            "test_height_ward_tree": [],
-            "test_ward_clustering": [],
-            "test_ward_agglomeration": [],
-            "assess_same_labelling": [
-                "cut1",
-                "cut2"
-            ],
-            "test_scikit_vs_scipy": []
-        },
-        "sklearn.cluster.tests.test_spectral": {
-            "test_spectral_clustering": [],
-            "test_spectral_clustering_sparse": []
-        },
-        "sklearn.cluster.tests.test_dbscan": {
-            "test_dbscan_similarity": [],
-            "test_dbscan_feature": [],
-            "test_dbscan_callable": [],
-            "test_pickle": []
-        },
-        "sklearn.cluster.tests.common": {
-            "generate_clustered_data": [
-                "seed",
-                "n_clusters",
-                "n_features",
-                "n_samples_per_cluster",
-                "std"
-            ]
-        },
-        "sklearn.svm.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.svm.base": {
-            "_get_class_weight": [
-                "class_weight",
-                "y"
-            ],
-            "BaseLibSVM": {
-                "__init__": [
-                    "self",
-                    "impl",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "C",
-                    "nu",
-                    "epsilon",
-                    "shrinking",
-                    "probability"
-                ],
-                "_compute_kernel": [
-                    "self",
-                    "X"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "class_weight",
-                    "sample_weight",
-                    "cache_size"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ],
-                "predict_proba": [
-                    "self",
-                    "X"
-                ],
-                "predict_log_proba": [
-                    "self",
-                    "T"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ],
-                "coef_": [
-                    "self"
-                ]
-            },
-            "BaseLibLinear": {
-                "__init__": [
-                    "self",
-                    "penalty",
-                    "loss",
-                    "dual",
-                    "tol",
-                    "C",
-                    "multi_class",
-                    "fit_intercept",
-                    "intercept_scaling"
-                ],
-                "_get_solver_type": [
-                    "self"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "class_weight"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ],
-                "_check_n_features": [
-                    "self",
-                    "X"
-                ],
-                "intercept_": [
-                    "self"
-                ],
-                "coef_": [
-                    "self"
-                ],
-                "predict_proba": [
-                    "self",
-                    "T"
-                ],
-                "_get_bias": [
-                    "self"
-                ]
-            }
-        },
-        "sklearn.svm": {},
-        "sklearn.svm.classes": {
-            "LinearSVC": {},
-            "SVC": {
-                "__init__": [
-                    "self",
-                    "C",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "probability",
-                    "tol"
-                ]
-            },
-            "NuSVC": {
-                "__init__": [
-                    "self",
-                    "nu",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "probability",
-                    "tol"
-                ]
-            },
-            "SVR": {
-                "__init__": [
-                    "self",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "C",
-                    "epsilon",
-                    "shrinking",
-                    "probability"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight"
-                ]
-            },
-            "NuSVR": {
-                "__init__": [
-                    "self",
-                    "nu",
-                    "C",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "probability",
-                    "tol"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight"
-                ]
-            },
-            "OneClassSVM": {
-                "__init__": [
-                    "self",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "nu",
-                    "shrinking"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "class_weight",
-                    "sample_weight"
-                ]
-            }
-        },
-        "sklearn.svm.bounds": {
-            "l1_min_c": [
-                "X",
-                "y",
-                "loss",
-                "fit_intercept",
-                "intercept_scaling"
-            ]
-        },
-        "sklearn.svm.sparse.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.svm.sparse.base": {
-            "SparseBaseLibSVM": {
-                "__init__": [
-                    "self",
-                    "impl",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "C",
-                    "nu",
-                    "epsilon",
-                    "shrinking",
-                    "probability"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "class_weight",
-                    "sample_weight",
-                    "cache_size"
-                ],
-                "predict": [
-                    "self",
-                    "T"
-                ],
-                "predict_proba": [
-                    "self",
-                    "X"
-                ]
-            },
-            "SparseBaseLibLinear": {
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "class_weight"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.svm.sparse": {},
-        "sklearn.svm.sparse.classes": {
-            "SVC": {
-                "__init__": [
-                    "self",
-                    "C",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "probability",
-                    "tol"
-                ]
-            },
-            "NuSVC": {
-                "__init__": [
-                    "self",
-                    "nu",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "probability",
-                    "tol"
-                ]
-            },
-            "SVR": {
-                "__init__": [
-                    "self",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "C",
-                    "nu",
-                    "epsilon",
-                    "shrinking",
-                    "probability"
-                ]
-            },
-            "NuSVR": {
-                "__init__": [
-                    "self",
-                    "nu",
-                    "C",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "shrinking",
-                    "epsilon",
-                    "probability",
-                    "tol"
-                ]
-            },
-            "OneClassSVM": {
-                "__init__": [
-                    "self",
-                    "kernel",
-                    "degree",
-                    "gamma",
-                    "coef0",
-                    "tol",
-                    "nu",
-                    "shrinking",
-                    "probability"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "class_weight",
-                    "sample_weight"
-                ]
-            },
-            "LinearSVC": {}
-        },
-        "sklearn.svm.tests": {},
-        "sklearn.svm.tests.test_svm": {
-            "test_libsvm_parameters": [],
-            "test_libsvm_iris": [],
-            "test_precomputed": [],
-            "test_SVR": [],
-            "test_oneclass": [],
-            "test_tweak_params": [],
-            "test_probability": [],
-            "test_decision_function": [],
-            "test_weight": [],
-            "test_sample_weights": [],
-            "test_auto_weight": [],
-            "test_bad_input": [],
-            "test_LinearSVC": [],
-            "test_LinearSVC_iris": [],
-            "test_dense_liblinear_intercept_handling": [
-                "classifier"
-            ],
-            "test_liblinear_predict": []
-        },
-        "sklearn.svm.tests.test_bounds": {
-            "test_l1_min_c": [],
-            "check_l1_min_c": [
-                "X",
-                "y",
-                "loss",
-                "fit_intercept",
-                "intercept_scaling"
-            ],
-            "test_ill_posed_min_c": [],
-            "test_unsupported_loss": []
-        },
-        "sklearn.svm.tests.test_sparse": {
-            "test_SVC": [],
-            "test_SVC_iris": [],
-            "test_error": [],
-            "test_LinearSVC": [],
-            "test_LinearSVC_iris": [],
-            "test_weight": [],
-            "test_sample_weights": [],
-            "test_sparse_liblinear_intercept_handling": [],
-            "test_sparse_realdata": []
-        },
-        "sklearn.linear_model.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
         },
         "sklearn.linear_model.base": {
             "LinearModel": {
@@ -2417,7 +3161,12 @@
                 ]
             }
         },
-        "sklearn.linear_model": {},
+        "sklearn.linear_model.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
         "sklearn.linear_model.logistic": {
             "LogisticRegression": {
                 "__init__": [
@@ -2439,384 +3188,7 @@
                 ]
             }
         },
-        "sklearn.linear_model.ridge": {
-            "_solve": [
-                "A",
-                "b",
-                "solver",
-                "tol"
-            ],
-            "ridge_regression": [
-                "X",
-                "y",
-                "alpha",
-                "sample_weight",
-                "solver",
-                "tol"
-            ],
-            "Ridge": {
-                "__init__": [
-                    "self",
-                    "alpha",
-                    "fit_intercept",
-                    "normalize",
-                    "overwrite_X",
-                    "tol"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight",
-                    "solver"
-                ]
-            },
-            "RidgeClassifier": {
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "solver"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            },
-            "_RidgeGCV": {
-                "__init__": [
-                    "self",
-                    "alphas",
-                    "fit_intercept",
-                    "normalize",
-                    "score_func",
-                    "loss_func",
-                    "overwrite_X"
-                ],
-                "_pre_compute": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "_errors": [
-                    "self",
-                    "v",
-                    "Q",
-                    "y",
-                    "alpha"
-                ],
-                "_values": [
-                    "self",
-                    "K",
-                    "v",
-                    "Q",
-                    "y",
-                    "alpha"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight"
-                ]
-            },
-            "RidgeCV": {
-                "__init__": [
-                    "self",
-                    "alphas",
-                    "fit_intercept",
-                    "normalize",
-                    "score_func",
-                    "loss_func",
-                    "cv"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight"
-                ]
-            },
-            "RidgeClassifierCV": {
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "sample_weight",
-                    "class_weight"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.linear_model.omp": {
-            "_cholesky_omp": [
-                "X",
-                "y",
-                "n_nonzero_coefs",
-                "tol",
-                "overwrite_X"
-            ],
-            "_gram_omp": [
-                "Gram",
-                "Xy",
-                "n_nonzero_coefs",
-                "tol_0",
-                "tol",
-                "overwrite_gram",
-                "overwrite_Xy"
-            ],
-            "orthogonal_mp": [
-                "X",
-                "y",
-                "n_nonzero_coefs",
-                "tol",
-                "precompute_gram",
-                "overwrite_X"
-            ],
-            "orthogonal_mp_gram": [
-                "Gram",
-                "Xy",
-                "n_nonzero_coefs",
-                "tol",
-                "norms_squared",
-                "overwrite_gram",
-                "overwrite_Xy"
-            ],
-            "OrthogonalMatchingPursuit": {
-                "__init__": [
-                    "self",
-                    "overwrite_X",
-                    "overwrite_gram",
-                    "overwrite_Xy",
-                    "n_nonzero_coefs",
-                    "tol",
-                    "fit_intercept",
-                    "normalize",
-                    "precompute_gram"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "Gram",
-                    "Xy"
-                ]
-            }
-        },
-        "sklearn.linear_model.stochastic_gradient": {
-            "_train_ova_classifier": [
-                "i",
-                "c",
-                "X",
-                "y",
-                "coef_",
-                "intercept_",
-                "loss_function",
-                "penalty_type",
-                "alpha",
-                "rho",
-                "n_iter",
-                "fit_intercept",
-                "verbose",
-                "shuffle",
-                "seed",
-                "class_weight_pos",
-                "sample_weight",
-                "learning_rate",
-                "eta0",
-                "power_t"
-            ],
-            "SGDClassifier": {
-                "_fit_binary": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "_fit_multiclass": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ]
-            },
-            "SGDRegressor": {
-                "_fit_regressor": [
-                    "self",
-                    "X",
-                    "y"
-                ]
-            }
-        },
-        "sklearn.linear_model.sparse.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.linear_model.sparse.coordinate_descent": {
-            "ElasticNet": {
-                "__init__": [
-                    "self",
-                    "alpha",
-                    "rho",
-                    "fit_intercept",
-                    "normalize",
-                    "max_iter",
-                    "tol"
-                ],
-                "_set_coef": [
-                    "self",
-                    "coef_"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            },
-            "Lasso": {
-                "__init__": [
-                    "self",
-                    "alpha",
-                    "fit_intercept",
-                    "normalize",
-                    "max_iter",
-                    "tol"
-                ]
-            }
-        },
-        "sklearn.linear_model.sparse.base": {
-            "CoefSelectTransformerMixin": {
-                "transform": [
-                    "self",
-                    "X",
-                    "threshold"
-                ]
-            }
-        },
-        "sklearn.linear_model.sparse": {},
-        "sklearn.linear_model.sparse.logistic": {
-            "LogisticRegression": {
-                "__init__": [
-                    "self",
-                    "penalty",
-                    "dual",
-                    "tol",
-                    "C",
-                    "fit_intercept",
-                    "intercept_scaling"
-                ],
-                "predict_proba": [
-                    "self",
-                    "X"
-                ],
-                "predict_log_proba": [
-                    "self",
-                    "T"
-                ]
-            }
-        },
-        "sklearn.linear_model.sparse.stochastic_gradient": {
-            "_train_ova_classifier": [
-                "i",
-                "c",
-                "X_data",
-                "X_indices",
-                "X_indptr",
-                "y",
-                "coef_",
-                "intercept_",
-                "loss_function",
-                "penalty_type",
-                "alpha",
-                "rho",
-                "n_iter",
-                "fit_intercept",
-                "verbose",
-                "shuffle",
-                "seed",
-                "class_weight_pos",
-                "sample_weight",
-                "learning_rate",
-                "eta0",
-                "power_t"
-            ],
-            "SGDClassifier": {
-                "_set_coef": [
-                    "self",
-                    "coef_"
-                ],
-                "_fit_binary": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "_fit_multiclass": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "decision_function": [
-                    "self",
-                    "X"
-                ]
-            },
-            "SGDRegressor": {
-                "_set_coef": [
-                    "self",
-                    "coef_"
-                ],
-                "_fit_regressor": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.linear_model.sparse.tests.test_logistic": {
-            "test_predict_2_classes": [],
-            "test_error": [],
-            "test_predict_3_classes": [],
-            "test_predict_iris": [],
-            "test_inconsistent_input": []
-        },
-        "sklearn.linear_model.sparse.tests": {},
-        "sklearn.linear_model.sparse.tests.test_coordinate_descent": {
-            "test_sparse_predict": [],
-            "test_lasso_zero": [],
-            "test_enet_toy_list_input": [],
-            "test_enet_toy_explicit_sparse_input": [],
-            "make_sparse_data": [
-                "n_samples",
-                "n_features",
-                "n_informative",
-                "seed"
-            ],
-            "test_sparse_enet_not_as_toy_dataset": [],
-            "test_sparse_lasso_not_as_toy_dataset": []
-        },
+        "sklearn.linear_model": {},
         "sklearn.linear_model.tests.test_logistic": {
             "test_predict_2_classes": [],
             "test_error": [],
@@ -2825,63 +3197,6 @@
             "test_inconsistent_input": [],
             "test_nan": [],
             "test_transform": []
-        },
-        "sklearn.linear_model.tests.test_ridge": {
-            "test_ridge": [],
-            "test_toy_ridge_object": [],
-            "test_ridge_vs_lstsq": [],
-            "_test_ridge_loo": [
-                "filter_"
-            ],
-            "_test_ridge_cv": [
-                "filter_"
-            ],
-            "_test_ridge_diabetes": [
-                "filter_"
-            ],
-            "_test_multi_ridge_diabetes": [
-                "filter_"
-            ],
-            "_test_ridge_classifiers": [
-                "filter_"
-            ],
-            "_test_tolerance": [
-                "filter_"
-            ],
-            "test_dense_sparse": []
-        },
-        "sklearn.linear_model.tests.test_omp": {
-            "test_correct_shapes": [],
-            "test_correct_shapes_gram": [],
-            "test_n_nonzero_coefs": [],
-            "test_tol": [],
-            "test_with_without_gram": [],
-            "test_with_without_gram_tol": [],
-            "test_bad_input": [],
-            "test_perfect_signal_recovery": [],
-            "test_estimator_shapes": []
-        },
-        "sklearn.linear_model.tests.test_least_angle": {
-            "test_simple": [],
-            "test_simple_precomputed": [],
-            "test_lars_lstsq": [],
-            "test_lasso_gives_lstsq_solution": [],
-            "test_collinearity": [],
-            "test_singular_matrix": [],
-            "test_lasso_lars_vs_lasso_cd": [
-                "verbose"
-            ],
-            "test_lasso_lars_vs_lasso_cd_early_stopping": [
-                "verbose"
-            ],
-            "test_lars_add_features": [
-                "verbose"
-            ],
-            "test_lars_n_nonzero_coefs": [
-                "verbose"
-            ],
-            "test_lars_cv": [],
-            "test_lasso_lars_ic": []
         },
         "sklearn.linear_model.tests.test_sgd": {
             "DenseSGDClassifierTestCase": {
@@ -2987,11 +3302,8 @@
             },
             "SparseSGDRegressorTestCase": {}
         },
-        "sklearn.linear_model.tests": {},
-        "sklearn.linear_model.tests.test_bayes": {
-            "test_bayesian_on_diabetes": [],
-            "test_toy_bayesian_ridge_object": [],
-            "test_toy_ard_object": []
+        "sklearn.linear_model.tests.test_base": {
+            "test_LinearRegression": []
         },
         "sklearn.linear_model.tests.test_coordinate_descent": {
             "test_lasso_zero": [],
@@ -3001,16 +3313,83 @@
             "test_enet_path": [],
             "test_path_parameters": []
         },
-        "sklearn.linear_model.tests.test_base": {
-            "test_LinearRegression": []
+        "sklearn.linear_model.tests.test_ridge": {
+            "test_ridge": [],
+            "test_toy_ridge_object": [],
+            "test_ridge_vs_lstsq": [],
+            "_test_ridge_loo": [
+                "filter_"
+            ],
+            "_test_ridge_cv": [
+                "filter_"
+            ],
+            "_test_ridge_diabetes": [
+                "filter_"
+            ],
+            "_test_multi_ridge_diabetes": [
+                "filter_"
+            ],
+            "_test_ridge_classifiers": [
+                "filter_"
+            ],
+            "_test_tolerance": [
+                "filter_"
+            ],
+            "test_dense_sparse": []
         },
-        "sklearn.feature_selection.rfe": {
-            "RFE": {
+        "sklearn.linear_model.tests.test_least_angle": {
+            "test_simple": [],
+            "test_simple_precomputed": [],
+            "test_lars_lstsq": [],
+            "test_lasso_gives_lstsq_solution": [],
+            "test_collinearity": [],
+            "test_singular_matrix": [],
+            "test_lasso_lars_vs_lasso_cd": [
+                "verbose"
+            ],
+            "test_lasso_lars_vs_lasso_cd_early_stopping": [
+                "verbose"
+            ],
+            "test_lars_add_features": [
+                "verbose"
+            ],
+            "test_lars_n_nonzero_coefs": [
+                "verbose"
+            ],
+            "test_lars_cv": [],
+            "test_lasso_lars_ic": []
+        },
+        "sklearn.linear_model.tests.test_bayes": {
+            "test_bayesian_on_diabetes": [],
+            "test_toy_bayesian_ridge_object": [],
+            "test_toy_ard_object": []
+        },
+        "sklearn.linear_model.tests.test_omp": {
+            "test_correct_shapes": [],
+            "test_correct_shapes_gram": [],
+            "test_n_nonzero_coefs": [],
+            "test_tol": [],
+            "test_with_without_gram": [],
+            "test_with_without_gram_tol": [],
+            "test_bad_input": [],
+            "test_perfect_signal_recovery": [],
+            "test_estimator_shapes": []
+        },
+        "sklearn.linear_model.tests": {},
+        "sklearn.linear_model.sparse.coordinate_descent": {
+            "ElasticNet": {
                 "__init__": [
                     "self",
-                    "estimator",
-                    "n_features_to_select",
-                    "step"
+                    "alpha",
+                    "rho",
+                    "fit_intercept",
+                    "normalize",
+                    "max_iter",
+                    "tol"
+                ],
+                "_set_coef": [
+                    "self",
+                    "coef_"
                 ],
                 "fit": [
                     "self",
@@ -3020,25 +3399,224 @@
                 "predict": [
                     "self",
                     "X"
+                ]
+            },
+            "Lasso": {
+                "__init__": [
+                    "self",
+                    "alpha",
+                    "fit_intercept",
+                    "normalize",
+                    "max_iter",
+                    "tol"
+                ]
+            }
+        },
+        "sklearn.linear_model.sparse.stochastic_gradient": {
+            "_train_ova_classifier": [
+                "i",
+                "c",
+                "X_data",
+                "X_indices",
+                "X_indptr",
+                "y",
+                "coef_",
+                "intercept_",
+                "loss_function",
+                "penalty_type",
+                "alpha",
+                "rho",
+                "n_iter",
+                "fit_intercept",
+                "verbose",
+                "shuffle",
+                "seed",
+                "class_weight_pos",
+                "sample_weight",
+                "learning_rate",
+                "eta0",
+                "power_t"
+            ],
+            "SGDClassifier": {
+                "_set_coef": [
+                    "self",
+                    "coef_"
                 ],
-                "score": [
+                "_fit_binary": [
                     "self",
                     "X",
                     "y"
                 ],
-                "transform": [
+                "_fit_multiclass": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "decision_function": [
                     "self",
                     "X"
                 ]
             },
-            "RFECV": {
+            "SGDRegressor": {
+                "_set_coef": [
+                    "self",
+                    "coef_"
+                ],
+                "_fit_regressor": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "predict": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.linear_model.sparse.base": {
+            "CoefSelectTransformerMixin": {
+                "transform": [
+                    "self",
+                    "X",
+                    "threshold"
+                ]
+            }
+        },
+        "sklearn.linear_model.sparse.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "sklearn.linear_model.sparse.logistic": {
+            "LogisticRegression": {
                 "__init__": [
                     "self",
-                    "estimator",
-                    "step",
-                    "cv",
-                    "loss_func"
+                    "penalty",
+                    "dual",
+                    "tol",
+                    "C",
+                    "fit_intercept",
+                    "intercept_scaling"
                 ],
+                "predict_proba": [
+                    "self",
+                    "X"
+                ],
+                "predict_log_proba": [
+                    "self",
+                    "T"
+                ]
+            }
+        },
+        "sklearn.linear_model.sparse": {},
+        "sklearn.linear_model.sparse.tests.test_logistic": {
+            "test_predict_2_classes": [],
+            "test_error": [],
+            "test_predict_3_classes": [],
+            "test_predict_iris": [],
+            "test_inconsistent_input": []
+        },
+        "sklearn.linear_model.sparse.tests.test_coordinate_descent": {
+            "test_sparse_predict": [],
+            "test_lasso_zero": [],
+            "test_enet_toy_list_input": [],
+            "test_enet_toy_explicit_sparse_input": [],
+            "make_sparse_data": [
+                "n_samples",
+                "n_features",
+                "n_informative",
+                "seed"
+            ],
+            "test_sparse_enet_not_as_toy_dataset": [],
+            "test_sparse_lasso_not_as_toy_dataset": []
+        },
+        "sklearn.linear_model.sparse.tests": {},
+        "sklearn.cluster.spectral": {
+            "spectral_embedding": [
+                "adjacency",
+                "n_components",
+                "mode",
+                "random_state"
+            ],
+            "spectral_clustering": [
+                "affinity",
+                "k",
+                "n_components",
+                "mode",
+                "random_state",
+                "n_init"
+            ],
+            "SpectralClustering": {
+                "__init__": [
+                    "self",
+                    "k",
+                    "mode",
+                    "random_state",
+                    "n_init"
+                ],
+                "fit": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.cluster.dbscan_": {
+            "dbscan": [
+                "X",
+                "eps",
+                "min_samples",
+                "metric",
+                "random_state",
+                "verbose"
+            ],
+            "DBSCAN": {
+                "__init__": [
+                    "self",
+                    "eps",
+                    "min_samples",
+                    "metric",
+                    "verbose",
+                    "random_state"
+                ],
+                "fit": [
+                    "self",
+                    "X"
+                ]
+            }
+        },
+        "sklearn.cluster.hierarchical": {
+            "ward_tree": [
+                "X",
+                "connectivity",
+                "n_components",
+                "copy"
+            ],
+            "_hc_get_descendent": [
+                "ind",
+                "children",
+                "n_leaves"
+            ],
+            "_hc_cut": [
+                "n_clusters",
+                "children",
+                "n_leaves"
+            ],
+            "Ward": {
+                "__init__": [
+                    "self",
+                    "n_clusters",
+                    "memory",
+                    "connectivity",
+                    "copy",
+                    "n_components"
+                ],
+                "fit": [
+                    "self",
+                    "X"
+                ]
+            },
+            "WardAgglomeration": {
                 "fit": [
                     "self",
                     "X",
@@ -3046,135 +3624,127 @@
                 ]
             }
         },
-        "sklearn.feature_selection.univariate_selection": {
-            "f_oneway": [],
-            "f_classif": [
-                "X",
-                "y"
-            ],
-            "chi2": [
-                "X",
-                "y"
-            ],
-            "f_regression": [
-                "X",
-                "y",
-                "center"
-            ],
-            "_AbstractUnivariateFilter": {
-                "__init__": [
-                    "self",
-                    "score_func"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "get_support": [
-                    "self",
-                    "indices"
-                ],
+        "sklearn.cluster._feature_agglomeration": {
+            "AgglomerationTransform": {
                 "transform": [
                     "self",
-                    "X"
+                    "X",
+                    "pooling_func"
                 ],
                 "inverse_transform": [
                     "self",
-                    "X"
-                ]
-            },
-            "SelectPercentile": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "percentile"
-                ],
-                "_get_support_mask": [
-                    "self"
-                ]
-            },
-            "SelectKBest": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "k"
-                ],
-                "_get_support_mask": [
-                    "self"
-                ]
-            },
-            "SelectFpr": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "alpha"
-                ],
-                "_get_support_mask": [
-                    "self"
-                ]
-            },
-            "SelectFdr": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "alpha"
-                ],
-                "_get_support_mask": [
-                    "self"
-                ]
-            },
-            "SelectFwe": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "alpha"
-                ],
-                "_get_support_mask": [
-                    "self"
-                ]
-            },
-            "GenericUnivariateSelect": {
-                "__init__": [
-                    "self",
-                    "score_func",
-                    "mode",
-                    "param"
-                ],
-                "_get_support_mask": [
-                    "self"
+                    "Xred"
                 ]
             }
         },
-        "sklearn.feature_selection": {},
-        "sklearn.feature_selection.tests.test_rfe": {
-            "test_rfe": [],
-            "test_rfecv": []
-        },
-        "sklearn.feature_selection.tests.test_feature_select": {
-            "test_f_oneway_vs_scipy_stats": [],
-            "test_f_classif": [],
-            "test_f_regression": [],
-            "test_f_classif_multi_class": [],
-            "test_select_percentile_classif": [],
-            "test_select_kbest_classif": [],
-            "test_select_fpr_classif": [],
-            "test_select_fdr_classif": [],
-            "test_select_fwe_classif": [],
-            "test_select_percentile_regression": [],
-            "test_select_percentile_regression_full": [],
-            "test_select_kbest_regression": [],
-            "test_select_fpr_regression": [],
-            "test_select_fdr_regression": [],
-            "test_select_fwe_regression": []
-        },
-        "sklearn.feature_selection.tests": {},
-        "sklearn.feature_selection.tests.test_chi2": {
-            "mkchi2": [
-                "k"
+        "sklearn.cluster.mean_shift_": {
+            "estimate_bandwidth": [
+                "X",
+                "quantile",
+                "n_samples",
+                "random_state"
             ],
-            "test_chi2": []
+            "mean_shift": [
+                "X",
+                "bandwidth",
+                "seeds",
+                "bin_seeding",
+                "cluster_all",
+                "max_iterations"
+            ],
+            "get_bin_seeds": [
+                "X",
+                "bin_size",
+                "min_bin_freq"
+            ],
+            "MeanShift": {
+                "__init__": [
+                    "self",
+                    "bandwidth",
+                    "seeds",
+                    "bin_seeding",
+                    "cluster_all"
+                ],
+                "fit": [
+                    "self",
+                    "X"
+                ]
+            }
         },
+        "sklearn.cluster.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "sklearn.cluster": {},
+        "sklearn.cluster.tests.test_affinity_propagation": {
+            "test_affinity_propagation": []
+        },
+        "sklearn.cluster.tests.test_hierarchical": {
+            "test_structured_ward_tree": [],
+            "test_unstructured_ward_tree": [],
+            "test_height_ward_tree": [],
+            "test_ward_clustering": [],
+            "test_ward_agglomeration": [],
+            "assess_same_labelling": [
+                "cut1",
+                "cut2"
+            ],
+            "test_scikit_vs_scipy": []
+        },
+        "sklearn.cluster.tests.test_dbscan": {
+            "test_dbscan_similarity": [],
+            "test_dbscan_feature": [],
+            "test_dbscan_callable": [],
+            "test_pickle": []
+        },
+        "sklearn.cluster.tests.test_mean_shift": {
+            "test_mean_shift": [],
+            "test_bin_seeds": []
+        },
+        "sklearn.cluster.tests.common": {
+            "generate_clustered_data": [
+                "seed",
+                "n_clusters",
+                "n_features",
+                "n_samples_per_cluster",
+                "std"
+            ]
+        },
+        "sklearn.cluster.tests.test_spectral": {
+            "test_spectral_clustering": [],
+            "test_spectral_clustering_sparse": []
+        },
+        "sklearn.cluster.tests.test_k_means": {
+            "test_k_means_pp_init": [],
+            "test_mini_batch_k_means_pp_init": [],
+            "test_sparse_mini_batch_k_means_pp_init": [],
+            "test_k_means_pp_random_init": [],
+            "test_k_means_fixed_array_init": [],
+            "test_k_means_invalid_init": [],
+            "test_k_means_copyx": [],
+            "test_k_means_singleton": [],
+            "test_mbk_means_fixed_array_init": [],
+            "test_sparse_mbk_means_fixed_array_init": [],
+            "test_sparse_mbk_means_pp_init": [],
+            "test_sparse_mbk_means_callable_init": [],
+            "test_k_means_fixed_array_init_fit": [],
+            "test_mbkm_fixed_array_init_fit": [],
+            "test_mbk_means": [],
+            "test_predict": [],
+            "test_predict_minibatch": [],
+            "test_predict_minibatch_sparse_input": [],
+            "test_transform": []
+        },
+        "sklearn.cluster.tests": {},
+        "sklearn.check_build.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "sklearn.check_build": {},
         "sklearn.decomposition.sparse_pca": {
             "SparsePCA": {
                 "__init__": [
@@ -3224,7 +3794,62 @@
                 ]
             }
         },
-        "sklearn.decomposition": {},
+        "sklearn.decomposition.nmf": {
+            "_pos": [
+                "x"
+            ],
+            "_neg": [
+                "x"
+            ],
+            "norm": [
+                "x"
+            ],
+            "_sparseness": [
+                "x"
+            ],
+            "_initialize_nmf": [
+                "X",
+                "n_components",
+                "variant",
+                "eps",
+                "random_state"
+            ],
+            "_nls_subproblem": [
+                "V",
+                "W",
+                "H_init",
+                "tol",
+                "max_iter"
+            ],
+            "ProjectedGradientNMF": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "init",
+                    "sparseness",
+                    "beta",
+                    "eta",
+                    "tol",
+                    "max_iter",
+                    "nls_max_iter"
+                ],
+                "fit_transform": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ]
+            },
+            "NMF": {}
+        },
         "sklearn.decomposition.fastica_": {
             "_gs_decorrelation": [
                 "w",
@@ -3287,111 +3912,6 @@
                 ],
                 "get_mixing_matrix": [
                     "self"
-                ]
-            }
-        },
-        "sklearn.decomposition.nmf": {
-            "_pos": [
-                "x"
-            ],
-            "_neg": [
-                "x"
-            ],
-            "norm": [
-                "x"
-            ],
-            "_sparseness": [
-                "x"
-            ],
-            "_initialize_nmf": [
-                "X",
-                "n_components",
-                "variant",
-                "eps",
-                "random_state"
-            ],
-            "_nls_subproblem": [
-                "V",
-                "W",
-                "H_init",
-                "tol",
-                "max_iter"
-            ],
-            "ProjectedGradientNMF": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "init",
-                    "sparseness",
-                    "beta",
-                    "eta",
-                    "tol",
-                    "max_iter",
-                    "nls_max_iter"
-                ],
-                "fit_transform": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ]
-            },
-            "NMF": {}
-        },
-        "sklearn.decomposition.kernel_pca": {
-            "KernelPCA": {
-                "__init__": [
-                    "self",
-                    "n_components",
-                    "kernel",
-                    "gamma",
-                    "degree",
-                    "coef0",
-                    "alpha",
-                    "fit_inverse_transform",
-                    "eigen_solver",
-                    "tol",
-                    "max_iter"
-                ],
-                "_get_kernel": [
-                    "self",
-                    "X",
-                    "Y"
-                ],
-                "_fit_transform": [
-                    "self",
-                    "X"
-                ],
-                "_fit_inverse_transform": [
-                    "self",
-                    "X_transformed",
-                    "X"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "fit_transform": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ],
-                "inverse_transform": [
-                    "self",
-                    "X"
                 ]
             }
         },
@@ -3472,42 +3992,56 @@
                 ]
             }
         },
-        "sklearn.decomposition.tests.test_sparse_pca": {
-            "generate_toy_data": [
-                "n_atoms",
-                "n_samples",
-                "image_size",
-                "random_state"
-            ],
-            "test_correct_shapes": [],
-            "test_fit_transform": [],
-            "test_fit_transform_tall": [],
-            "test_initialization": [],
-            "test_mini_batch_correct_shapes": [],
-            "test_mini_batch_fit_transform": []
+        "sklearn.decomposition": {},
+        "sklearn.decomposition.kernel_pca": {
+            "KernelPCA": {
+                "__init__": [
+                    "self",
+                    "n_components",
+                    "kernel",
+                    "gamma",
+                    "degree",
+                    "coef0",
+                    "alpha",
+                    "fit_inverse_transform",
+                    "eigen_solver",
+                    "tol",
+                    "max_iter"
+                ],
+                "_get_kernel": [
+                    "self",
+                    "X",
+                    "Y"
+                ],
+                "_fit_transform": [
+                    "self",
+                    "X"
+                ],
+                "_fit_inverse_transform": [
+                    "self",
+                    "X_transformed",
+                    "X"
+                ],
+                "fit": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "fit_transform": [
+                    "self",
+                    "X",
+                    "y"
+                ],
+                "transform": [
+                    "self",
+                    "X"
+                ],
+                "inverse_transform": [
+                    "self",
+                    "X"
+                ]
+            }
         },
-        "sklearn.decomposition.tests.test_kernel_pca": {
-            "test_kernel_pca": [],
-            "test_kernel_pca_sparse": [],
-            "test_kernel_pca_linear_kernel": [],
-            "test_kernel_pca_n_components": [],
-            "test_kernel_pca_precomputed": [],
-            "test_kernel_pca_invalid_kernel": []
-        },
-        "sklearn.decomposition.tests.test_fastica": {
-            "center_and_norm": [
-                "x",
-                "axis"
-            ],
-            "test_gs": [],
-            "test_fastica": [
-                "add_noise"
-            ],
-            "test_non_square_fastica": [
-                "add_noise"
-            ]
-        },
-        "sklearn.decomposition.tests": {},
         "sklearn.decomposition.tests.test_nmf": {
             "test_initialize_nn_input": [],
             "test_initialize_nn_output": [],
@@ -3522,18 +4056,40 @@
             "test_projgrad_nmf_transform": [],
             "test_projgrad_nmf_sparseness": []
         },
-        "sklearn.decomposition.tests.test_dict_learning": {
-            "test_dict_learning_shapes": [],
-            "test_dict_learning_overcomplete": [],
-            "test_dict_learning_reconstruction": [],
-            "test_dict_learning_nonzero_coefs": [],
-            "test_dict_learning_split": [],
-            "test_dict_learning_online_shapes": [],
-            "test_dict_learning_online_estimator_shapes": [],
-            "test_dict_learning_online_overcomplete": [],
-            "test_dict_learning_online_initialization": [],
-            "test_dict_learning_online_partial_fit": [],
-            "test_sparse_code": []
+        "sklearn.decomposition.tests.test_kernel_pca": {
+            "test_kernel_pca": [],
+            "test_kernel_pca_sparse": [],
+            "test_kernel_pca_linear_kernel": [],
+            "test_kernel_pca_n_components": [],
+            "test_kernel_pca_precomputed": [],
+            "test_kernel_pca_invalid_kernel": []
+        },
+        "sklearn.decomposition.tests.test_sparse_pca": {
+            "generate_toy_data": [
+                "n_atoms",
+                "n_samples",
+                "image_size",
+                "random_state"
+            ],
+            "test_correct_shapes": [],
+            "test_fit_transform": [],
+            "test_fit_transform_tall": [],
+            "test_initialization": [],
+            "test_mini_batch_correct_shapes": [],
+            "test_mini_batch_fit_transform": []
+        },
+        "sklearn.decomposition.tests.test_fastica": {
+            "center_and_norm": [
+                "x",
+                "axis"
+            ],
+            "test_gs": [],
+            "test_fastica": [
+                "add_noise"
+            ],
+            "test_non_square_fastica": [
+                "add_noise"
+            ]
         },
         "sklearn.decomposition.tests.test_pca": {
             "test_pca": [],
@@ -3555,662 +4111,20 @@
             "test_probabilistic_pca_3": [],
             "test_probabilistic_pca_4": []
         },
-        "sklearn.feature_extraction.image": {
-            "_make_edges_3d": [
-                "n_x",
-                "n_y",
-                "n_z"
-            ],
-            "_compute_gradient_3d": [
-                "edges",
-                "img"
-            ],
-            "_mask_edges_weights": [
-                "mask",
-                "edges",
-                "weights"
-            ],
-            "_to_graph": [
-                "n_x",
-                "n_y",
-                "n_z",
-                "mask",
-                "img",
-                "return_as",
-                "dtype"
-            ],
-            "img_to_graph": [
-                "img",
-                "mask",
-                "return_as",
-                "dtype"
-            ],
-            "grid_to_graph": [
-                "n_x",
-                "n_y",
-                "n_z",
-                "mask",
-                "return_as",
-                "dtype"
-            ],
-            "extract_patches_2d": [
-                "image",
-                "patch_size",
-                "max_patches",
-                "random_state"
-            ],
-            "reconstruct_from_patches_2d": [
-                "patches",
-                "image_size"
-            ],
-            "PatchExtractor": {
-                "__init__": [
-                    "self",
-                    "patch_size",
-                    "max_patches",
-                    "random_state"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ]
-            }
+        "sklearn.decomposition.tests.test_dict_learning": {
+            "test_dict_learning_shapes": [],
+            "test_dict_learning_overcomplete": [],
+            "test_dict_learning_reconstruction": [],
+            "test_dict_learning_nonzero_coefs": [],
+            "test_dict_learning_split": [],
+            "test_dict_learning_online_shapes": [],
+            "test_dict_learning_online_estimator_shapes": [],
+            "test_dict_learning_online_overcomplete": [],
+            "test_dict_learning_online_initialization": [],
+            "test_dict_learning_online_partial_fit": [],
+            "test_sparse_code": []
         },
-        "sklearn.feature_extraction": {},
-        "sklearn.feature_extraction.text": {
-            "strip_accents": [
-                "s"
-            ],
-            "to_ascii": [
-                "s"
-            ],
-            "strip_tags": [
-                "s"
-            ],
-            "RomanPreprocessor": {
-                "preprocess": [
-                    "self",
-                    "unicode_text"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "WordNGramAnalyzer": {
-                "__init__": [
-                    "self",
-                    "charset",
-                    "min_n",
-                    "max_n",
-                    "preprocessor",
-                    "stop_words",
-                    "token_pattern"
-                ],
-                "analyze": [
-                    "self",
-                    "text_document"
-                ]
-            },
-            "CharNGramAnalyzer": {
-                "__init__": [
-                    "self",
-                    "charset",
-                    "preprocessor",
-                    "min_n",
-                    "max_n"
-                ],
-                "analyze": [
-                    "self",
-                    "text_document"
-                ]
-            },
-            "CountVectorizer": {
-                "__init__": [
-                    "self",
-                    "analyzer",
-                    "vocabulary",
-                    "max_df",
-                    "max_features",
-                    "dtype"
-                ],
-                "_term_count_dicts_to_matrix": [
-                    "self",
-                    "term_count_dicts"
-                ],
-                "fit": [
-                    "self",
-                    "raw_documents",
-                    "y"
-                ],
-                "fit_transform": [
-                    "self",
-                    "raw_documents",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "raw_documents"
-                ],
-                "inverse_transform": [
-                    "self",
-                    "X"
-                ]
-            },
-            "TfidfTransformer": {
-                "__init__": [
-                    "self",
-                    "norm",
-                    "use_idf",
-                    "smooth_idf"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X",
-                    "copy"
-                ]
-            },
-            "Vectorizer": {
-                "__init__": [
-                    "self",
-                    "analyzer",
-                    "max_df",
-                    "max_features",
-                    "norm",
-                    "use_idf",
-                    "smooth_idf"
-                ],
-                "fit": [
-                    "self",
-                    "raw_documents"
-                ],
-                "fit_transform": [
-                    "self",
-                    "raw_documents"
-                ],
-                "transform": [
-                    "self",
-                    "raw_documents",
-                    "copy"
-                ],
-                "inverse_transform": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.feature_extraction.tests": {},
-        "sklearn.feature_extraction.tests.test_image": {
-            "test_img_to_graph": [],
-            "test_grid_to_graph": [],
-            "test_connect_regions": [],
-            "test_connect_regions_with_grid": [],
-            "_downsampled_lena": [],
-            "_orange_lena": [
-                "lena"
-            ],
-            "_make_images": [
-                "lena"
-            ],
-            "test_extract_patches_all": [],
-            "test_extract_patches_all_color": [],
-            "test_extract_patches_all_rect": [],
-            "test_extract_patches_max_patches": [],
-            "test_reconstruct_patches_perfect": [],
-            "test_reconstruct_patches_perfect_color": [],
-            "test_patch_extractor_fit": [],
-            "test_patch_extractor_max_patches": [],
-            "test_patch_extractor_all_patches": [],
-            "test_patch_extractor_color": []
-        },
-        "sklearn.feature_extraction.tests.test_text": {
-            "toarray": [
-                "a"
-            ],
-            "test_strip_accents": [],
-            "test_to_ascii": [],
-            "test_word_analyzer_unigrams": [],
-            "test_word_analyzer_unigrams_and_bigrams": [],
-            "test_char_ngram_analyzer": [],
-            "test_countvectorizer_custom_vocabulary": [],
-            "test_countvectorizer_custom_vocabulary_pipeline": [],
-            "test_fit_countvectorizer_twice": [],
-            "test_vectorizer": [],
-            "test_vectorizer_max_features": [],
-            "test_vectorizer_max_df": [],
-            "test_vectorizer_inverse_transform": [],
-            "test_dense_vectorizer_pipeline_grid_selection": [],
-            "test_pickle": []
-        },
-        "sklearn.externals.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "sklearn.externals": {},
-        "sklearn.externals.test_externals_setup": {},
-        "sklearn.covariance.shrunk_covariance_": {
-            "shrunk_covariance": [
-                "emp_cov",
-                "shrinkage"
-            ],
-            "ledoit_wolf": [
-                "X",
-                "assume_centered"
-            ],
-            "oas": [
-                "X",
-                "assume_centered"
-            ],
-            "ShrunkCovariance": {
-                "__init__": [
-                    "self",
-                    "store_precision",
-                    "shrinkage"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "assume_centered"
-                ]
-            },
-            "LedoitWolf": {
-                "fit": [
-                    "self",
-                    "X",
-                    "assume_centered"
-                ]
-            },
-            "OAS": {
-                "fit": [
-                    "self",
-                    "X",
-                    "assume_centered"
-                ]
-            }
-        },
-        "sklearn.covariance": {},
-        "sklearn.covariance.empirical_covariance_": {
-            "log_likelihood": [
-                "emp_cov",
-                "precision"
-            ],
-            "empirical_covariance": [
-                "X",
-                "assume_centered"
-            ],
-            "EmpiricalCovariance": {
-                "__init__": [
-                    "self",
-                    "store_precision"
-                ],
-                "_set_estimates": [
-                    "self",
-                    "covariance"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "assume_centered"
-                ],
-                "score": [
-                    "self",
-                    "X_test",
-                    "assume_centered"
-                ],
-                "error_norm": [
-                    "self",
-                    "comp_cov",
-                    "norm",
-                    "scaling",
-                    "squared"
-                ]
-            }
-        },
-        "sklearn.covariance.tests": {},
-        "sklearn.covariance.tests.test_covariance": {
-            "test_covariance": [],
-            "test_shrunk_covariance": [],
-            "test_ledoit_wolf": [],
-            "test_oas": []
-        },
-        "sklearn.gaussian_process.regression_models": {
-            "constant": [
-                "x"
-            ],
-            "linear": [
-                "x"
-            ],
-            "quadratic": [
-                "x"
-            ]
-        },
-        "sklearn.gaussian_process": {},
-        "sklearn.gaussian_process.correlation_models": {
-            "absolute_exponential": [
-                "theta",
-                "d"
-            ],
-            "squared_exponential": [
-                "theta",
-                "d"
-            ],
-            "generalized_exponential": [
-                "theta",
-                "d"
-            ],
-            "pure_nugget": [
-                "theta",
-                "d"
-            ],
-            "cubic": [
-                "theta",
-                "d"
-            ],
-            "linear": [
-                "theta",
-                "d"
-            ]
-        },
-        "sklearn.gaussian_process.tests.test_gaussian_process": {
-            "test_1d": [
-                "regr",
-                "corr",
-                "random_start",
-                "beta0"
-            ],
-            "test_2d": [
-                "regr",
-                "corr",
-                "random_start",
-                "beta0"
-            ],
-            "test_wrong_number_of_outputs": [],
-            "test_more_builtin_correlation_models": [
-                "random_start"
-            ],
-            "test_ordinary_kriging": []
-        },
-        "sklearn.gaussian_process.tests": {},
-        "sklearn.tests.test_cross_validation": {
-            "test_kfold": [],
-            "test_cross_val_score": [],
-            "test_cross_val_score_with_score_func_classification": [],
-            "test_cross_val_score_with_score_func_regression": [],
-            "test_permutation_score": [],
-            "test_cross_val_generator_with_indices": [],
-            "test_bootstrap_errors": [],
-            "MockClassifier": {
-                "__init__": [
-                    "self",
-                    "a"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "Y"
-                ],
-                "predict": [
-                    "self",
-                    "T"
-                ],
-                "score": [
-                    "self",
-                    "X",
-                    "Y"
-                ]
-            }
-        },
-        "sklearn.tests.test_lda": {
-            "test_lda_predict": [],
-            "test_lda_transform": []
-        },
-        "sklearn.tests": {},
-        "sklearn.tests.test_multiclass": {
-            "test_ovr_exceptions": [],
-            "test_ovr_fit_predict": [],
-            "test_ovr_gridsearch": [],
-            "test_ovo_exceptions": [],
-            "test_ovo_fit_predict": [],
-            "test_ovo_gridsearch": [],
-            "test_ecoc_exceptions": [],
-            "test_ecoc_fit_predict": [],
-            "test_ecoc_gridsearch": []
-        },
-        "sklearn.tests.test_pls": {
-            "test_pls": []
-        },
-        "sklearn.tests.test_grid_search": {
-            "test_grid_search": [],
-            "test_grid_search_error": [],
-            "test_grid_search_sparse": [],
-            "test_grid_search_sparse_score_func": [],
-            "MockClassifier": {
-                "__init__": [
-                    "self",
-                    "foo_param"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "Y"
-                ],
-                "predict": [
-                    "self",
-                    "T"
-                ],
-                "score": [
-                    "self",
-                    "X",
-                    "Y"
-                ]
-            }
-        },
-        "sklearn.tests.test_naive_bayes": {
-            "test_gnb": [],
-            "test_mnnb": [],
-            "test_sparse_mnnb": [],
-            "test_discretenb_pickle": [],
-            "test_discretenb_predict_proba": [],
-            "test_discretenb_uniform_prior": []
-        },
-        "sklearn.tests.test_pipeline": {
-            "test_pipeline_init": [],
-            "test_pipeline_methods_anova": [],
-            "test_pipeline_fit_params": [],
-            "test_pipeline_methods_pca_svm": [],
-            "test_pipeline_methods_randomized_pca_svm": [],
-            "test_pipeline_methods_scaler_svm": [],
-            "IncorrectT": {
-                "__init__": [
-                    "self",
-                    "a",
-                    "b"
-                ]
-            },
-            "T": {
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ]
-            },
-            "TransfT": {
-                "transform": [
-                    "self",
-                    "X",
-                    "y"
-                ]
-            },
-            "FitParamT": {
-                "__init__": [
-                    "self"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y",
-                    "should_succeed"
-                ],
-                "predict": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.tests.test_qda": {
-            "test_qda": []
-        },
-        "sklearn.tests.test_base": {
-            "test_clone": [],
-            "test_clone_2": [],
-            "test_clone_buggy": [],
-            "test_repr": [],
-            "test_str": [],
-            "test_get_params": [],
-            "test_is_classifier": [],
-            "MyEstimator": {
-                "__init__": [
-                    "self",
-                    "l1"
-                ]
-            },
-            "K": {
-                "__init__": [
-                    "self",
-                    "c",
-                    "d"
-                ]
-            },
-            "T": {
-                "__init__": [
-                    "self",
-                    "a",
-                    "b"
-                ]
-            },
-            "Buggy": {
-                "__init__": [
-                    "self",
-                    "a"
-                ]
-            }
-        },
-        "sklearn.manifold.isomap": {
-            "Isomap": {
-                "__init__": [
-                    "self",
-                    "n_neighbors",
-                    "out_dim",
-                    "eigen_solver",
-                    "tol",
-                    "max_iter",
-                    "path_method"
-                ],
-                "_fit_transform": [
-                    "self",
-                    "X"
-                ],
-                "reconstruction_error": [
-                    "self"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "fit_transform": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.manifold": {},
-        "sklearn.manifold.locally_linear": {
-            "barycenter_weights": [
-                "X",
-                "Z",
-                "reg"
-            ],
-            "barycenter_kneighbors_graph": [
-                "X",
-                "n_neighbors",
-                "reg"
-            ],
-            "null_space": [
-                "M",
-                "k",
-                "k_skip",
-                "eigen_solver",
-                "tol",
-                "max_iter"
-            ],
-            "locally_linear_embedding": [
-                "X",
-                "n_neighbors",
-                "out_dim",
-                "reg",
-                "eigen_solver",
-                "tol",
-                "max_iter",
-                "method",
-                "hessian_tol",
-                "modified_tol"
-            ],
-            "LocallyLinearEmbedding": {
-                "__init__": [
-                    "self",
-                    "n_neighbors",
-                    "out_dim",
-                    "reg",
-                    "eigen_solver",
-                    "tol",
-                    "max_iter",
-                    "method",
-                    "hessian_tol",
-                    "modified_tol"
-                ],
-                "_fit_transform": [
-                    "self",
-                    "X"
-                ],
-                "fit": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "fit_transform": [
-                    "self",
-                    "X",
-                    "y"
-                ],
-                "transform": [
-                    "self",
-                    "X"
-                ]
-            }
-        },
-        "sklearn.utils.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
+        "sklearn.decomposition.tests": {},
         "sklearn.utils.extmath": {
             "norm": [
                 "v"
@@ -4247,10 +4161,33 @@
                 "axis"
             ]
         },
-        "sklearn.utils.bench": {
-            "total_seconds": [
-                "delta"
-            ]
+        "sklearn.utils.testing": {
+            "assert_in": [
+                "obj",
+                "in_",
+                "out_"
+            ],
+            "fake_mldata_cache": [
+                "columns_dict",
+                "dataname",
+                "matfile",
+                "ordering"
+            ],
+            "mock_urllib2": {
+                "__init__": [
+                    "self",
+                    "mock_datasets"
+                ],
+                "urlopen": [
+                    "self",
+                    "urlname"
+                ],
+                "quote": [
+                    "self",
+                    "string",
+                    "safe"
+                ]
+            }
         },
         "sklearn.utils.graph": {
             "single_source_shortest_path_length": [
@@ -4272,6 +4209,44 @@
                 "graph",
                 "normed",
                 "return_diag"
+            ]
+        },
+        "sklearn.utils.bench": {
+            "total_seconds": [
+                "delta"
+            ]
+        },
+        "sklearn.utils.fixes": {
+            "_unique": [
+                "ar",
+                "return_index",
+                "return_inverse"
+            ],
+            "_copysign": [
+                "x1",
+                "x2"
+            ],
+            "_in1d": [
+                "ar1",
+                "ar2",
+                "assume_unique"
+            ],
+            "qr_economic": [
+                "A"
+            ],
+            "arpack_eigsh": [
+                "A"
+            ],
+            "savemat": [
+                "file_name",
+                "mdict",
+                "oned_as"
+            ]
+        },
+        "sklearn.utils.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
             ]
         },
         "sklearn.utils": {
@@ -4327,70 +4302,9 @@
                 ]
             }
         },
-        "sklearn.utils.testing": {
-            "assert_in": [
-                "obj",
-                "in_",
-                "out_"
-            ],
-            "fake_mldata_cache": [
-                "columns_dict",
-                "dataname",
-                "matfile",
-                "ordering"
-            ],
-            "mock_urllib2": {
-                "__init__": [
-                    "self",
-                    "mock_datasets"
-                ],
-                "urlopen": [
-                    "self",
-                    "urlname"
-                ],
-                "quote": [
-                    "self",
-                    "string",
-                    "safe"
-                ]
-            }
-        },
         "sklearn.utils._csgraph": {
             "cs_graph_components": [
                 "x"
-            ]
-        },
-        "sklearn.utils.fixes": {
-            "_unique": [
-                "ar",
-                "return_index",
-                "return_inverse"
-            ],
-            "_copysign": [
-                "x1",
-                "x2"
-            ],
-            "_in1d": [
-                "ar1",
-                "ar2",
-                "assume_unique"
-            ],
-            "qr_economic": [
-                "A"
-            ],
-            "arpack_eigsh": [
-                "A"
-            ],
-            "savemat": [
-                "file_name",
-                "mdict",
-                "oned_as"
-            ]
-        },
-        "sklearn.utils.sparsetools.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
             ]
         },
         "sklearn.utils.sparsetools.csgraph": {
@@ -4417,7 +4331,31 @@
             ],
             "cs_graph_components": []
         },
+        "sklearn.utils.sparsetools.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
         "sklearn.utils.sparsetools": {},
+        "sklearn.utils.tests.test___init__": {
+            "test_as_float_array": []
+        },
+        "sklearn.utils.tests.test_svd": {
+            "test_fast_svd_low_rank": [],
+            "test_fast_svd_low_rank_with_noise": [],
+            "test_fast_svd_infinite_rank": [],
+            "test_fast_svd_transpose_consistency": []
+        },
+        "sklearn.utils.tests.test_graph": {
+            "test_graph_laplacian": []
+        },
+        "sklearn.utils.tests.test_utils": {
+            "test_make_rng": [],
+            "test_resample_noarg": [],
+            "test_check_arrays_value_errors": [],
+            "test_resample_value_errors": []
+        },
         "sklearn.utils.tests.test_shortest_path": {
             "FloydWarshallSlow": [
                 "graph",
@@ -4429,239 +4367,338 @@
             "test_FloydWarshall": [],
             "test_Dijkstra": []
         },
-        "sklearn.utils.tests.test_svd": {
-            "test_fast_svd_low_rank": [],
-            "test_fast_svd_low_rank_with_noise": [],
-            "test_fast_svd_infinite_rank": [],
-            "test_fast_svd_transpose_consistency": []
-        },
-        "sklearn.utils.tests": {},
-        "sklearn.utils.tests.test___init__": {
-            "test_as_float_array": []
+        "sklearn.utils.tests.test_fixes": {
+            "test_in1d": [],
+            "test_copysign": []
         },
         "sklearn.utils.tests.test_weighted_mode": {
             "test_uniform_weights": [],
             "test_random_weights": []
         },
-        "sklearn.utils.tests.test_utils": {
-            "test_make_rng": [],
-            "test_resample_noarg": [],
-            "test_check_arrays_value_errors": [],
-            "test_resample_value_errors": []
-        },
-        "sklearn.utils.tests.test_fixes": {
-            "test_in1d": [],
-            "test_copysign": []
-        },
-        "sklearn.utils.tests.test_graph": {
-            "test_graph_laplacian": []
-        },
-        "sklearn.metrics.pairwise": {
-            "check_pairwise_arrays": [
-                "X",
-                "Y"
-            ],
-            "euclidean_distances": [
-                "X",
-                "Y",
-                "Y_norm_squared",
-                "squared"
-            ],
-            "euclidian_distances": [],
-            "manhattan_distances": [
-                "X",
-                "Y",
-                "sum_over_features"
-            ],
-            "linear_kernel": [
-                "X",
-                "Y"
-            ],
-            "polynomial_kernel": [
-                "X",
-                "Y",
-                "degree",
-                "gamma",
-                "coef0"
-            ],
-            "sigmoid_kernel": [
-                "X",
-                "Y",
-                "gamma",
-                "coef0"
-            ],
-            "rbf_kernel": [
-                "X",
-                "Y",
-                "gamma"
-            ],
-            "distance_metrics": [],
-            "pairwise_distances": [
-                "X",
-                "Y",
-                "metric"
-            ],
-            "kernel_metrics": [],
-            "pairwise_kernels": [
-                "X",
-                "Y",
-                "metric"
+        "sklearn.utils.tests": {},
+        "sklearn.externals.test_externals_setup": {},
+        "sklearn.externals.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
             ]
         },
-        "sklearn.metrics": {},
-        "sklearn.metrics.cluster": {
-            "comb2": [
-                "n"
+        "sklearn.externals": {},
+        "sklearn.datasets.lfw": {
+            "scale_face": [
+                "face"
             ],
-            "check_clusterings": [
-                "labels_true",
-                "labels_pred"
+            "check_fetch_lfw": [
+                "data_home",
+                "funneled",
+                "download_if_missing"
             ],
-            "adjusted_rand_score": [
-                "labels_true",
-                "labels_pred"
+            "_load_imgs": [
+                "file_paths",
+                "slice_",
+                "color",
+                "resize"
             ],
-            "homogeneity_completeness_v_measure": [
-                "labels_true",
-                "labels_pred"
+            "_fetch_lfw_people": [
+                "data_folder_path",
+                "slice_",
+                "color",
+                "resize",
+                "min_faces_per_person"
             ],
-            "homogeneity_score": [
-                "labels_true",
-                "labels_pred"
+            "fetch_lfw_people": [
+                "data_home",
+                "funneled",
+                "resize",
+                "min_faces_per_person",
+                "color",
+                "slice_",
+                "download_if_missing"
             ],
-            "completeness_score": [
-                "labels_true",
-                "labels_pred"
+            "_fetch_lfw_pairs": [
+                "index_file_path",
+                "data_folder_path",
+                "slice_",
+                "color",
+                "resize"
             ],
-            "v_measure_score": [
-                "labels_true",
-                "labels_pred"
+            "load_lfw_people": [
+                "download_if_missing"
+            ],
+            "fetch_lfw_pairs": [
+                "subset",
+                "data_home",
+                "funneled",
+                "resize",
+                "color",
+                "slice_",
+                "download_if_missing"
+            ],
+            "load_lfw_pairs": [
+                "download_if_missing"
             ]
         },
-        "sklearn.metrics.metrics": {
-            "unique_labels": [],
-            "confusion_matrix": [
-                "y_true",
-                "y_pred",
-                "labels"
+        "sklearn.datasets.mlcomp": {
+            "_load_document_classification": [
+                "dataset_path",
+                "metadata",
+                "set_"
             ],
-            "roc_curve": [
-                "y_true",
-                "y_score"
-            ],
-            "auc": [
-                "x",
-                "y"
-            ],
-            "precision_score": [
-                "y_true",
-                "y_pred",
-                "pos_label"
-            ],
-            "recall_score": [
-                "y_true",
-                "y_pred",
-                "pos_label"
-            ],
-            "fbeta_score": [
-                "y_true",
-                "y_pred",
-                "beta",
-                "pos_label"
-            ],
-            "f1_score": [
-                "y_true",
-                "y_pred",
-                "pos_label"
-            ],
-            "precision_recall_fscore_support": [
-                "y_true",
-                "y_pred",
-                "beta",
-                "labels"
-            ],
-            "classification_report": [
-                "y_true",
-                "y_pred",
-                "labels",
-                "target_names"
-            ],
-            "precision_recall_curve": [
-                "y_true",
-                "probas_pred"
-            ],
-            "explained_variance_score": [
-                "y_true",
-                "y_pred"
-            ],
-            "r2_score": [
-                "y_true",
-                "y_pred"
-            ],
-            "zero_one_score": [
-                "y_true",
-                "y_pred"
-            ],
-            "zero_one": [
-                "y_true",
-                "y_pred"
-            ],
-            "mean_square_error": [
-                "y_true",
-                "y_pred"
-            ],
-            "hinge_loss": [
-                "y_true",
-                "pred_decision",
-                "pos_label",
-                "neg_label"
+            "load_mlcomp": [
+                "name_or_id",
+                "set_",
+                "mlcomp_root"
             ]
         },
-        "sklearn.metrics.tests": {},
-        "sklearn.metrics.tests.test_pairwise": {
-            "test_pairwise_distances": [],
-            "test_pairwise_kernels": [],
-            "callable_rbf_kernel": [
-                "x",
-                "y"
+        "sklearn.datasets.base": {
+            "get_data_home": [
+                "data_home"
             ],
-            "test_euclidean_distances": [],
-            "test_kernel_symmetry": [],
-            "test_kernel_sparse": [],
-            "test_linear_kernel": [],
-            "test_rbf_kernel": [],
-            "test_check_dense_matrices": [],
-            "test_check_XB_returned": [],
-            "test_check_different_dimensions": [],
-            "test_check_invalid_dimensions": [],
-            "test_check_sparse_arrays": [],
-            "tuplify": [
-                "X"
+            "clear_data_home": [
+                "data_home"
             ],
-            "test_check_tuple_input": []
+            "load_files": [
+                "container_path",
+                "description",
+                "categories",
+                "load_content",
+                "shuffle",
+                "random_state"
+            ],
+            "load_iris": [],
+            "load_digits": [
+                "n_class"
+            ],
+            "load_diabetes": [],
+            "load_linnerud": [],
+            "load_boston": [],
+            "load_sample_images": [],
+            "load_sample_image": [
+                "image_name"
+            ],
+            "Bunch": {
+                "__init__": [
+                    "self"
+                ]
+            }
         },
-        "sklearn.metrics.tests.test_metrics": {
-            "make_prediction": [
-                "dataset",
-                "binary"
-            ],
-            "test_roc_curve": [],
-            "test_roc_curve_multi": [],
-            "test_roc_curve_confidence": [],
-            "test_roc_curve_hard": [],
-            "test_precision_recall_f1_score_binary": [],
-            "test_confusion_matrix_binary": [],
-            "test_precision_recall_f1_score_multiclass": [],
-            "test_zero_precision_recall": [],
-            "test_confusion_matrix_multiclass": [],
-            "test_classification_report": [],
-            "_test_precision_recall_curve": [],
-            "test_losses": [],
-            "test_losses_at_limits": [],
-            "test_symmetry": [],
-            "test_hinge_loss_binary": []
+        "sklearn.datasets.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
         },
-        "doc.sphinxext.numpy_ext": {},
+        "sklearn.datasets": {
+            "load_filenames": []
+        },
+        "sklearn.datasets.samples_generator": {
+            "make_classification": [
+                "n_samples",
+                "n_features",
+                "n_informative",
+                "n_redundant",
+                "n_repeated",
+                "n_classes",
+                "n_clusters_per_class",
+                "weights",
+                "flip_y",
+                "class_sep",
+                "hypercube",
+                "shift",
+                "scale",
+                "shuffle",
+                "random_state"
+            ],
+            "make_regression": [
+                "n_samples",
+                "n_features",
+                "n_informative",
+                "bias",
+                "effective_rank",
+                "tail_strength",
+                "noise",
+                "shuffle",
+                "coef",
+                "random_state"
+            ],
+            "make_blobs": [
+                "n_samples",
+                "n_features",
+                "centers",
+                "cluster_std",
+                "center_box",
+                "shuffle",
+                "random_state"
+            ],
+            "make_friedman1": [
+                "n_samples",
+                "n_features",
+                "noise",
+                "random_state"
+            ],
+            "make_friedman2": [
+                "n_samples",
+                "noise",
+                "random_state"
+            ],
+            "make_friedman3": [
+                "n_samples",
+                "noise",
+                "random_state"
+            ],
+            "make_low_rank_matrix": [
+                "n_samples",
+                "n_features",
+                "effective_rank",
+                "tail_strength",
+                "random_state"
+            ],
+            "make_sparse_coded_signal": [
+                "n_samples",
+                "n_components",
+                "n_features",
+                "n_nonzero_coefs",
+                "random_state"
+            ],
+            "make_sparse_uncorrelated": [
+                "n_samples",
+                "n_features",
+                "random_state"
+            ],
+            "make_spd_matrix": [
+                "n_dim",
+                "random_state"
+            ],
+            "make_swiss_roll": [
+                "n_samples",
+                "noise",
+                "random_state"
+            ],
+            "make_s_curve": [
+                "n_samples",
+                "noise",
+                "random_state"
+            ]
+        },
+        "sklearn.datasets.svmlight_format": {
+            "_load_svmlight_file": [
+                "file_path",
+                "buffer_mb"
+            ],
+            "load_svmlight_file": [
+                "file_path",
+                "other_file_path",
+                "n_features",
+                "buffer_mb"
+            ]
+        },
+        "sklearn.datasets.tests.test_base": {
+            "teardown_module": [],
+            "test_data_home": []
+        },
+        "sklearn.datasets.tests.test_lfw": {
+            "setup_module": [],
+            "teardown_module": [],
+            "test_load_empty_lfw_people": [],
+            "test_load_fake_lfw_people": [],
+            "test_load_fake_lfw_people_too_restrictive": [],
+            "test_load_empty_lfw_pairs": [],
+            "test_load_fake_lfw_pairs": []
+        },
+        "sklearn.datasets.tests.test_mldata": {
+            "setup_tmpdata": [],
+            "teardown_tmpdata": [],
+            "test_mldata_filename": [],
+            "test_download": [],
+            "test_fetch_one_column": [],
+            "test_fetch_multiple_column": []
+        },
+        "sklearn.datasets.tests.test_samples_generator": {
+            "test_make_classification": [],
+            "test_make_regression": [],
+            "test_make_blobs": [],
+            "test_make_friedman1": [],
+            "test_make_friedman2": [],
+            "test_make_friedman3": [],
+            "test_make_low_rank_matrix": [],
+            "test_make_sparse_coded_signal": [],
+            "test_make_sparse_uncorrelated": [],
+            "test_make_spd_matrix": [],
+            "test_make_swiss_roll": [],
+            "test_make_s_curve": []
+        },
+        "sklearn.datasets.tests.test_20news": {
+            "test_20news": []
+        },
+        "sklearn.datasets.tests.test_svmlight_format": {
+            "test_load_svmlight_file": [],
+            "test_load_svmlight_file_2_files": [],
+            "test_load_svmlight_file_n_features": [],
+            "test_load_invalid_file": [],
+            "test_not_a_filename": [],
+            "test_invalid_filename": []
+        },
+        "sklearn.datasets.tests": {},
+        "doc.sphinxext.numpy_ext_old.docscrape_sphinx": {
+            "get_doc_object": [
+                "obj",
+                "what"
+            ],
+            "SphinxDocString": {
+                "_str_header": [
+                    "self",
+                    "name",
+                    "symbol"
+                ],
+                "_str_field_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_indent": [
+                    "self",
+                    "doc",
+                    "indent"
+                ],
+                "_str_signature": [
+                    "self"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "_str_param_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_section": [
+                    "self",
+                    "name"
+                ],
+                "_str_see_also": [
+                    "self",
+                    "func_role"
+                ],
+                "_str_warnings": [
+                    "self"
+                ],
+                "_str_index": [
+                    "self"
+                ],
+                "_str_references": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            },
+            "SphinxFunctionDoc": {},
+            "SphinxClassDoc": {}
+        },
+        "doc.sphinxext.numpy_ext_old": {},
         "doc.sphinxext.numpy_ext.docscrape_sphinx": {
             "get_doc_object": [
                 "obj",
@@ -4761,65 +4798,28 @@
                 ]
             }
         },
-        "doc.sphinxext.numpy_ext_old": {},
-        "doc.sphinxext.numpy_ext_old.docscrape_sphinx": {
-            "get_doc_object": [
-                "obj",
-                "what"
-            ],
-            "SphinxDocString": {
-                "_str_header": [
-                    "self",
-                    "name",
-                    "symbol"
-                ],
-                "_str_field_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_indent": [
-                    "self",
-                    "doc",
-                    "indent"
-                ],
-                "_str_signature": [
-                    "self"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "_str_param_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_section": [
-                    "self",
-                    "name"
-                ],
-                "_str_see_also": [
-                    "self",
-                    "func_role"
-                ],
-                "_str_warnings": [
-                    "self"
-                ],
-                "_str_index": [
-                    "self"
-                ],
-                "_str_references": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "indent",
-                    "func_role"
-                ]
-            },
-            "SphinxFunctionDoc": {},
-            "SphinxClassDoc": {}
-        }
+        "doc.sphinxext.numpy_ext": {},
+        "scikits": {},
+        "scikits.learn.lda": {},
+        "scikits.learn.neighbors": {},
+        "scikits.learn.ball_tree": {},
+        "scikits.learn.cross_val": {},
+        "scikits.learn.base": {},
+        "scikits.learn.qda": {},
+        "scikits.learn.naive_bayes": {},
+        "scikits.learn.grid_search": {},
+        "scikits.learn": {},
+        "scikits.learn.pipeline": {},
+        "scikits.learn.metrics": {},
+        "scikits.learn.feature_extraction.image": {},
+        "scikits.learn.feature_extraction.text": {},
+        "scikits.learn.feature_extraction": {},
+        "scikits.learn.svm": {},
+        "scikits.learn.mixture": {},
+        "scikits.learn.linear_model": {},
+        "scikits.learn.cluster": {},
+        "scikits.learn.decomposition": {},
+        "scikits.learn.datasets.base": {},
+        "scikits.learn.datasets": {}
     }
 }
