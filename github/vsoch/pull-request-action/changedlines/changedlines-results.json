@@ -1,532 +1,137 @@
 {
-    "EMPTY..1.0.0": {
+    "EMPTY..1.0.15": {
         "by-file": [
-            {
-                "insertions": 14,
-                "deletions": 0,
-                "lines": 14,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/Dockerfile",
-                "commit": "145cda39deeda0e201df2267b7c724a3de03fb7a",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:10+0000"
-            },
-            {
-                "insertions": 45,
-                "deletions": 0,
-                "lines": 45,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "145cda39deeda0e201df2267b7c724a3de03fb7a",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:10+0000"
-            },
-            {
-                "insertions": 120,
-                "deletions": 0,
-                "lines": 120,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "145cda39deeda0e201df2267b7c724a3de03fb7a",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:10+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 179,
-            "deletions": 0,
-            "lines": 179
-        }
-    },
-    "1.0.0..1.0.1": {
-        "by-file": [],
-        "by-group": {
-            "insertions": 0,
-            "deletions": 0,
-            "lines": 0
-        }
-    },
-    "1.0.9..1.0.10": {
-        "by-file": [
-            {
-                "insertions": 3,
-                "deletions": 3,
-                "lines": 6,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "04d4a8cfacdbc00463e4269e5adc9d75c863e839",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
-            },
-            {
-                "insertions": 36,
-                "deletions": 24,
-                "lines": 60,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "04d4a8cfacdbc00463e4269e5adc9d75c863e839",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 39,
-            "deletions": 27,
-            "lines": 66
-        }
-    },
-    "1.0.10..1.0.11": {
-        "by-file": [
-            {
-                "insertions": 3,
-                "deletions": 1,
-                "lines": 4,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "c7e0b5c1540fb0f6d75036bbb21b3f46b4438691",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            },
-            {
-                "insertions": 12,
-                "deletions": 5,
-                "lines": 17,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "c7e0b5c1540fb0f6d75036bbb21b3f46b4438691",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 15,
-            "deletions": 6,
-            "lines": 21
-        }
-    },
-    "1.0.11..1.0.12": {
-        "by-file": [
-            {
-                "insertions": 2,
-                "deletions": 2,
-                "lines": 4,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "75e27dfb03de43c5ccd22d002636e0dc9037a452",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            },
-            {
-                "insertions": 1,
-                "deletions": 1,
-                "lines": 2,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/branch-from-environment.yml",
-                "commit": "75e27dfb03de43c5ccd22d002636e0dc9037a452",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            },
-            {
-                "insertions": 55,
-                "deletions": 0,
-                "lines": 55,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/custom-body-example.yml",
-                "commit": "75e27dfb03de43c5ccd22d002636e0dc9037a452",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            },
-            {
-                "insertions": 13,
-                "deletions": 5,
-                "lines": 18,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "75e27dfb03de43c5ccd22d002636e0dc9037a452",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 71,
-            "deletions": 8,
-            "lines": 79
-        }
-    },
-    "1.0.12..1.0.13": {
-        "by-file": [
-            {
-                "insertions": 14,
-                "deletions": 31,
-                "lines": 45,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "96a79f16a62153f3c4eeb44b10794dea41013c3c",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:14+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 14,
-            "deletions": 31,
-            "lines": 45
-        }
-    },
-    "1.0.13..1.0.14": {
-        "by-file": [
-            {
-                "insertions": 3,
-                "deletions": 0,
-                "lines": 3,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "82e505efe2ad11ada4ae11aadc1396e57831c63d",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:15+0000"
-            },
-            {
-                "insertions": 280,
-                "deletions": 163,
-                "lines": 443,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "82e505efe2ad11ada4ae11aadc1396e57831c63d",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:15+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 283,
-            "deletions": 163,
-            "lines": 446
-        }
-    },
-    "1.0.1..1.0.2": {
-        "by-file": [
-            {
-                "insertions": 2,
-                "deletions": 2,
-                "lines": 4,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/Dockerfile",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 78,
-                "deletions": 20,
-                "lines": 98,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 9,
-                "deletions": 0,
-                "lines": 9,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/action.yml",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 18,
-                "deletions": 0,
-                "lines": 18,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/push-example.yml",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 48,
-                "deletions": 0,
-                "lines": 48,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/release-example.yml",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 69,
-                "deletions": 26,
-                "lines": 95,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "f6f8309fa6c440335fffb9e2aa5993f159587940",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 224,
-            "deletions": 48,
-            "lines": 272
-        }
-    },
-    "1.0.2..1.0.3": {
-        "by-file": [
-            {
-                "insertions": 13,
-                "deletions": 3,
-                "lines": 16,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "c75c9662eab329582bc61e2e01c9c51e9c4db8cb",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
             {
                 "insertions": 17,
                 "deletions": 0,
                 "lines": 17,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/assignees-example.yml",
-                "commit": "c75c9662eab329582bc61e2e01c9c51e9c4db8cb",
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/.github/stale.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
             },
             {
-                "insertions": 56,
-                "deletions": 15,
-                "lines": 71,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "c75c9662eab329582bc61e2e01c9c51e9c4db8cb",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 86,
-            "deletions": 18,
-            "lines": 104
-        }
-    },
-    "1.0.3..1.0.4": {
-        "by-file": [
-            {
-                "insertions": 18,
+                "insertions": 20,
                 "deletions": 0,
-                "lines": 18,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/CHANGELOG.md",
-                "commit": "0e7be5d72184412a156c2d7d468e1a767990a744",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 4,
-                "deletions": 1,
-                "lines": 5,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "0e7be5d72184412a156c2d7d468e1a767990a744",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 17,
-                "deletions": 0,
-                "lines": 17,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/reviewers-example.yml",
-                "commit": "0e7be5d72184412a156c2d7d468e1a767990a744",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            },
-            {
-                "insertions": 60,
-                "deletions": 15,
-                "lines": 75,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "0e7be5d72184412a156c2d7d468e1a767990a744",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:11+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 99,
-            "deletions": 16,
-            "lines": 115
-        }
-    },
-    "1.0.4..1.0.5": {
-        "by-file": [
-            {
-                "insertions": 1,
-                "deletions": 0,
-                "lines": 1,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/CHANGELOG.md",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 24,
-                "deletions": 3,
-                "lines": 27,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 11,
-                "deletions": 0,
-                "lines": 11,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/action.yml",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 28,
-                "deletions": 0,
-                "lines": 28,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/outputs-example.yml",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 0,
-                "deletions": 0,
-                "lines": 0,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/img/outputs.png",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 18,
-                "deletions": 2,
                 "lines": 20,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "941d23f0af1aa4257ccacc5ed8f12509139f4bc0",
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/CHANGELOG.md",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 82,
-            "deletions": 5,
-            "lines": 87
-        }
-    },
-    "1.0.5..1.0.6": {
-        "by-file": [
-            {
-                "insertions": 2,
-                "deletions": 2,
-                "lines": 4,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "7422cf00f73a6f24cf42222c72dc1c05654c87d2",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
             },
             {
-                "insertions": 1,
-                "deletions": 1,
-                "lines": 2,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/outputs-example.yml",
-                "commit": "7422cf00f73a6f24cf42222c72dc1c05654c87d2",
+                "insertions": 15,
+                "deletions": 0,
+                "lines": 15,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/Dockerfile",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
             },
             {
-                "insertions": 3,
-                "deletions": 3,
-                "lines": 6,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "7422cf00f73a6f24cf42222c72dc1c05654c87d2",
+                "insertions": 145,
+                "deletions": 0,
+                "lines": 145,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/README.md",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 6,
-            "deletions": 6,
-            "lines": 12
-        }
-    },
-    "1.0.6..1.0.7": {
-        "by-file": [
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 20,
+                "deletions": 0,
+                "lines": 20,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/action.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
             {
                 "insertions": 17,
                 "deletions": 0,
                 "lines": 17,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/.github/stale.yml",
-                "commit": "bdb0b5b1171d2692ed3a74815bdd717eccf6a154",
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/assignees-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            },
-            {
-                "insertions": 4,
-                "deletions": 2,
-                "lines": 6,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "bdb0b5b1171d2692ed3a74815bdd717eccf6a154",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
             },
             {
                 "insertions": 49,
                 "deletions": 0,
                 "lines": 49,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/examples/branch-from-environment.yml",
-                "commit": "bdb0b5b1171d2692ed3a74815bdd717eccf6a154",
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/branch-from-environment.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
             },
             {
-                "insertions": 47,
-                "deletions": 19,
-                "lines": 66,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "bdb0b5b1171d2692ed3a74815bdd717eccf6a154",
+                "insertions": 55,
+                "deletions": 0,
+                "lines": 55,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/custom-body-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:12+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 117,
-            "deletions": 21,
-            "lines": 138
-        }
-    },
-    "1.0.7..1.0.8": {
-        "by-file": [
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
             {
-                "insertions": 12,
-                "deletions": 5,
+                "insertions": 28,
+                "deletions": 0,
+                "lines": 28,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/outputs-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 18,
+                "deletions": 0,
+                "lines": 18,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/push-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 48,
+                "deletions": 0,
+                "lines": 48,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/release-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 17,
+                "deletions": 0,
                 "lines": 17,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.sh",
-                "commit": "40900933a292e72eddf63db2e665413ef1137ee6",
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/examples/reviewers-example.yml",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
                 "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 0,
+                "deletions": 0,
+                "lines": 0,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/img/outputs.png",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
+            },
+            {
+                "insertions": 456,
+                "deletions": 0,
+                "lines": 456,
+                "object": "/tmp/vsoch-pull-request-action-lvi5rw8v/pull-request.py",
+                "commit": "15479b10433fe9dd992409637de19fe70dd24e59",
+                "author": "vsoch-caliper@users.noreply.github.com",
+                "timestamp": "2021-02-16T01:44:18+0000"
             }
         ],
         "by-group": {
-            "insertions": 12,
-            "deletions": 5,
-            "lines": 17
-        }
-    },
-    "1.0.8..1.0.9": {
-        "by-file": [
-            {
-                "insertions": 5,
-                "deletions": 4,
-                "lines": 9,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/Dockerfile",
-                "commit": "f79c3232e8aee51ef67f9424793677ba97f77de9",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
-            },
-            {
-                "insertions": 1,
-                "deletions": 0,
-                "lines": 1,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/README.md",
-                "commit": "f79c3232e8aee51ef67f9424793677ba97f77de9",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
-            },
-            {
-                "insertions": 328,
-                "deletions": 0,
-                "lines": 328,
-                "object": "/tmp/vsoch-pull-request-action-m9h72gi6/pull-request.py",
-                "commit": "f79c3232e8aee51ef67f9424793677ba97f77de9",
-                "author": "vsoch-caliper@users.noreply.github.com",
-                "timestamp": "2021-02-14T01:46:13+0000"
-            }
-        ],
-        "by-group": {
-            "insertions": 334,
-            "deletions": 4,
-            "lines": 338
+            "insertions": 905,
+            "deletions": 0,
+            "lines": 905
         }
     }
 }
