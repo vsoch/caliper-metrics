@@ -112,8 +112,7 @@
                     "self"
                 ],
                 "_str_returns": [
-                    "self",
-                    "name"
+                    "self"
                 ],
                 "_str_param_list": [
                     "self",
@@ -615,11 +614,6 @@
                     "self"
                 ]
             },
-            "ParseError": {
-                "__str__": [
-                    "self"
-                ]
-            },
             "NumpyDocString": {
                 "__init__": [
                     "self",
@@ -634,12 +628,6 @@
                     "self",
                     "key",
                     "val"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__len__": [
-                    "self"
                 ],
                 "_is_at_section": [
                     "self"
@@ -741,10 +729,6 @@
                 ],
                 "properties": [
                     "self"
-                ],
-                "_is_show_member": [
-                    "self",
-                    "name"
                 ]
             }
         },
@@ -8810,8 +8794,7 @@
                 "f",
                 "astype",
                 "in_",
-                "out",
-                "simd"
+                "out"
             ],
             "english_upper": [
                 "s"
@@ -8844,8 +8827,7 @@
                     "f",
                     "in_",
                     "out",
-                    "astype",
-                    "simd"
+                    "astype"
                 ],
                 "finish_signature": [
                     "self",
