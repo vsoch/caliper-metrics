@@ -1,7 +1,552 @@
 {
-    "2.4.1": {
-        "commit": "3c677eb8c974d038c558ce3c491e7f95a32096da",
-        "timestamp": "2021-03-10T01:39:42+0000",
-        "files": 7664
+    "0.12.0": {
+        "commit": "9a36ef2c91c602c8dc1c9eb4007cd479b15fb841",
+        "timestamp": "2021-03-11T03:23:45+0000",
+        "files": 1542
+    },
+    "0.12.0rc0": {
+        "commit": "8250ddd8474b26b6a7b5ec66e5643f9f1cef60b2",
+        "timestamp": "2021-03-11T03:23:47+0000",
+        "files": 1228
+    },
+    "0.12.0rc1": {
+        "commit": "af5fc31d000e531195d24aa6dc9f4faba67f50b4",
+        "timestamp": "2021-03-11T03:23:49+0000",
+        "files": 1542
+    },
+    "0.12.1": {
+        "commit": "e2186626115500deefe940aebce0dcf68239aac2",
+        "timestamp": "2021-03-11T03:23:57+0000",
+        "files": 3430
+    },
+    "1.0.0": {
+        "commit": "ea803091cd4ff53a8700636967fd637ffea45f84",
+        "timestamp": "2021-03-11T03:24:04+0000",
+        "files": 3724
+    },
+    "1.0.1": {
+        "commit": "2c5115d9579918f2d32ca1215e4227ae23bb9c4b",
+        "timestamp": "2021-03-11T03:24:12+0000",
+        "files": 3726
+    },
+    "1.1.0": {
+        "commit": "303ed34bc7ca2b141c957094ef278e6ed22ed4af",
+        "timestamp": "2021-03-11T03:24:20+0000",
+        "files": 3938
+    },
+    "1.1.0rc0": {
+        "commit": "19ac3a375d3e0cea19980ae2f65303fb260205ae",
+        "timestamp": "2021-03-11T03:24:26+0000",
+        "files": 3933
+    },
+    "1.1.0rc1": {
+        "commit": "df46fd6502c1e5b1693b42daa82f506d0d4d5fc3",
+        "timestamp": "2021-03-11T03:24:32+0000",
+        "files": 3938
+    },
+    "1.1.0rc2": {
+        "commit": "d9ff691031a5b87e62e9d41bc89577ec4cd844d5",
+        "timestamp": "2021-03-11T03:24:37+0000",
+        "files": 3938
+    },
+    "1.10.0": {
+        "commit": "1dc7f25700309cd81f9b3d59ba58bcbc398c7bed",
+        "timestamp": "2021-03-11T03:24:45+0000",
+        "files": 4568
+    },
+    "1.10.0rc0": {
+        "commit": "7b57444a01e65ac2424ba691878da07ff750eefa",
+        "timestamp": "2021-03-11T03:24:55+0000",
+        "files": 4562
+    },
+    "1.10.0rc1": {
+        "commit": "4575c59f5d4fef4838cc9367c5118d6e097626c7",
+        "timestamp": "2021-03-11T03:25:06+0000",
+        "files": 4562
+    },
+    "1.10.1": {
+        "commit": "b2ba62d7af1a101b384c00b0f5af976a6ba5ccfc",
+        "timestamp": "2021-03-11T03:25:20+0000",
+        "files": 5167
+    },
+    "1.11.0": {
+        "commit": "df1e6b6588dc53ffec48f5baabec1f7b72763754",
+        "timestamp": "2021-03-11T03:25:31+0000",
+        "files": 4051
+    },
+    "1.11.0rc0": {
+        "commit": "8dc4814e8edac69bc5a8e91dd7d40880d72eebd8",
+        "timestamp": "2021-03-11T03:25:43+0000",
+        "files": 4051
+    },
+    "1.11.0rc1": {
+        "commit": "944f567891f1ddad971691e924b1e86feea29495",
+        "timestamp": "2021-03-11T03:25:52+0000",
+        "files": 4051
+    },
+    "1.11.0rc2": {
+        "commit": "2cae12d8c708983d8d2ee95bdcae69ccfcb83aa1",
+        "timestamp": "2021-03-11T03:26:02+0000",
+        "files": 4051
+    },
+    "1.12.0": {
+        "commit": "9922ed7e4976cbfea80edc3ac83414390bff169c",
+        "timestamp": "2021-03-11T03:26:11+0000",
+        "files": 4103
+    },
+    "1.12.0rc0": {
+        "commit": "1a8583a26642db8515aa42105f5e03e1e5bf11fc",
+        "timestamp": "2021-03-11T03:26:25+0000",
+        "files": 4097
+    },
+    "1.12.0rc1": {
+        "commit": "df04594918ff1d38589da2726d10bfa0ae75308c",
+        "timestamp": "2021-03-11T03:26:34+0000",
+        "files": 4097
+    },
+    "1.12.0rc2": {
+        "commit": "45d09caeffc1a8aa339b271972ffba940e2751ed",
+        "timestamp": "2021-03-11T03:26:43+0000",
+        "files": 4103
+    },
+    "1.12.2": {
+        "commit": "7362184b9cde9791909ff60fe79a0639471652ef",
+        "timestamp": "2021-03-11T03:26:52+0000",
+        "files": 4103
+    },
+    "1.12.3": {
+        "commit": "8fe984fb186864997ba75eb61677d5fc3e30ad4a",
+        "timestamp": "2021-03-11T03:27:01+0000",
+        "files": 4103
+    },
+    "1.13.0rc0": {
+        "commit": "8501493107fd684aef73a7b85b1c763b8deb13bc",
+        "timestamp": "2021-03-11T03:27:14+0000",
+        "files": 4500
+    },
+    "1.13.0rc1": {
+        "commit": "78c35d60938e7046ae7b18580011df604cea80ff",
+        "timestamp": "2021-03-11T03:27:28+0000",
+        "files": 4500
+    },
+    "1.13.0rc2": {
+        "commit": "406ec3966a16527dba34214066c88f1fac37e574",
+        "timestamp": "2021-03-11T03:27:41+0000",
+        "files": 4500
+    },
+    "1.13.1": {
+        "commit": "73a1048a0d0cfec0c38a91fc138d27f0d81f0695",
+        "timestamp": "2021-03-11T03:27:55+0000",
+        "files": 4500
+    },
+    "1.13.2": {
+        "commit": "db2374447310d3e6814e838a9314486535e16488",
+        "timestamp": "2021-03-11T03:28:10+0000",
+        "files": 4500
+    },
+    "1.14.0": {
+        "commit": "5b667c17ca2bc91e9622a5640587821aaa9b9dea",
+        "timestamp": "2021-03-11T03:28:25+0000",
+        "files": 4893
+    },
+    "1.14.0rc0": {
+        "commit": "8dae14b18791326aad0bf2838ef9159aacaf49a1",
+        "timestamp": "2021-03-11T03:28:48+0000",
+        "files": 4893
+    },
+    "1.14.0rc1": {
+        "commit": "b99eb0ee6c8e17d534472fd119649a1d50930eca",
+        "timestamp": "2021-03-11T03:29:06+0000",
+        "files": 4893
+    },
+    "1.15.0": {
+        "commit": "9cfe9eea200872b33368cc7edd1cb5c58eac6132",
+        "timestamp": "2021-03-11T03:30:17+0000",
+        "files": 4155
+    },
+    "1.15.0rc0": {
+        "commit": "fc4b32f71cca6290aa6f3c002edf03cbd4343029",
+        "timestamp": "2021-03-11T03:31:38+0000",
+        "files": 4160
+    },
+    "1.15.0rc1": {
+        "commit": "6ceb7860740a8c3144bf0fc4be432c0e2c952a16",
+        "timestamp": "2021-03-11T03:33:07+0000",
+        "files": 4160
+    },
+    "1.15.0rc2": {
+        "commit": "0bbebd9120607bc084bbaf759ff8867f84cbeada",
+        "timestamp": "2021-03-11T03:34:32+0000",
+        "files": 4160
+    },
+    "1.15.0rc3": {
+        "commit": "3f066942b20092e6a397f463acd012f9905f3216",
+        "timestamp": "2021-03-11T03:36:00+0000",
+        "files": 4160
+    },
+    "1.15.2": {
+        "commit": "0b84c9622e45f625b9ec268e6d310ab405836094",
+        "timestamp": "2021-03-11T03:36:20+0000",
+        "files": 4133
+    },
+    "1.15.3": {
+        "commit": "1895264f72d3c4ec21c5718491370e103cbe190b",
+        "timestamp": "2021-03-11T03:36:37+0000",
+        "files": 4133
+    },
+    "1.15.4": {
+        "commit": "8ee43de587bbe45d9ee7b9b39bf32a3e924ff8d2",
+        "timestamp": "2021-03-11T03:36:49+0000",
+        "files": 4133
+    },
+    "1.15.5": {
+        "commit": "06b75b6d6ecc05fe6168840093884ddb54ae14e3",
+        "timestamp": "2021-03-11T03:37:00+0000",
+        "files": 4133
+    },
+    "1.2.0": {
+        "commit": "9176ab3b66b8706d41aa8ac2af8065cc2ab2a78a",
+        "timestamp": "2021-03-11T03:37:06+0000",
+        "files": 5524
+    },
+    "1.2.0rc0": {
+        "commit": "933b52254f8ba8fab17d20e14f24d52e246657c6",
+        "timestamp": "2021-03-11T03:37:13+0000",
+        "files": 7593
+    },
+    "1.2.0rc1": {
+        "commit": "7f4f98fc920ff01738e4476ce2fff542d48ebb2e",
+        "timestamp": "2021-03-11T03:37:21+0000",
+        "files": 7593
+    },
+    "1.2.0rc2": {
+        "commit": "d4589b289e2380a52321f1b4b1afc3c65f1ab5d7",
+        "timestamp": "2021-03-11T03:37:28+0000",
+        "files": 5524
+    },
+    "1.2.1": {
+        "commit": "036d8625098d1760e6f1654949bf6e8ad721de9a",
+        "timestamp": "2021-03-11T03:37:35+0000",
+        "files": 5524
+    },
+    "1.3.0": {
+        "commit": "f0d26fc2a2a6f3f66f9bd0590f6f4b6a8d384350",
+        "timestamp": "2021-03-11T03:37:43+0000",
+        "files": 6802
+    },
+    "1.3.0rc0": {
+        "commit": "7aceca3f21131cce873b9eed5a036637c5dbd89a",
+        "timestamp": "2021-03-11T03:37:52+0000",
+        "files": 6798
+    },
+    "1.3.0rc1": {
+        "commit": "0365d4dad09fead86249d929ce66631b079b6076",
+        "timestamp": "2021-03-11T03:38:00+0000",
+        "files": 6802
+    },
+    "1.3.0rc2": {
+        "commit": "eae887349d0f2bd476f99545bd3b4aeadd776059",
+        "timestamp": "2021-03-11T03:38:07+0000",
+        "files": 6802
+    },
+    "1.4.0": {
+        "commit": "358accebb58d84f936490c91d4930d76b4f908cd",
+        "timestamp": "2021-03-11T03:38:14+0000",
+        "files": 7079
+    },
+    "1.4.0rc0": {
+        "commit": "b8278f3c7e55afaff12def44a4ff3bc264f2b4eb",
+        "timestamp": "2021-03-11T03:38:20+0000",
+        "files": 7079
+    },
+    "1.4.0rc1": {
+        "commit": "2130a381137657ab2c910e6929c479894cb20e74",
+        "timestamp": "2021-03-11T03:38:27+0000",
+        "files": 7079
+    },
+    "1.4.1": {
+        "commit": "88d48615c3f330fa0ca4248c710396a32a77e902",
+        "timestamp": "2021-03-11T03:38:37+0000",
+        "files": 8049
+    },
+    "1.5.0": {
+        "commit": "8e697fa3e4269f8e6af985613036bb363eb01b75",
+        "timestamp": "2021-03-11T03:38:45+0000",
+        "files": 7183
+    },
+    "1.5.0rc0": {
+        "commit": "f7d4d468d62bbc5540b64e7310f96549088ecf11",
+        "timestamp": "2021-03-11T03:38:54+0000",
+        "files": 7182
+    },
+    "1.5.0rc1": {
+        "commit": "858e5da6c72b5ed444716fd1cb7f13d595a00ab1",
+        "timestamp": "2021-03-11T03:39:00+0000",
+        "files": 7182
+    },
+    "1.5.1": {
+        "commit": "265de90eadbf7e77ae7f0d3d0768dc557fed800b",
+        "timestamp": "2021-03-11T03:39:06+0000",
+        "files": 7183
+    },
+    "1.6.0": {
+        "commit": "12cff518db579034a3ad7d091024cb492e4302c3",
+        "timestamp": "2021-03-11T03:39:13+0000",
+        "files": 7237
+    },
+    "1.6.0rc0": {
+        "commit": "e0f440a116b3c793cb26f8b95954825812595a63",
+        "timestamp": "2021-03-11T03:39:22+0000",
+        "files": 7237
+    },
+    "1.6.0rc1": {
+        "commit": "b13b22928d2477358c5a2d5d2d320b3e86e3b7e6",
+        "timestamp": "2021-03-11T03:39:29+0000",
+        "files": 7237
+    },
+    "1.7.0": {
+        "commit": "895d7de009c8d2691494e883231698ecd8e68e18",
+        "timestamp": "2021-03-11T03:39:36+0000",
+        "files": 7271
+    },
+    "1.7.0rc0": {
+        "commit": "9ba0f99efeabc815397457e1d330421bceee981e",
+        "timestamp": "2021-03-11T03:39:44+0000",
+        "files": 7271
+    },
+    "1.7.0rc1": {
+        "commit": "8f2197f4eb88abdf842a7b9726a7e303d0e26a74",
+        "timestamp": "2021-03-11T03:39:54+0000",
+        "files": 7271
+    },
+    "1.7.1": {
+        "commit": "97e1858efd48afd7fb343ef266e6fff43fb19097",
+        "timestamp": "2021-03-11T03:40:02+0000",
+        "files": 7271
+    },
+    "1.8.0": {
+        "commit": "69d88d937db46035552de385803f08145e8f520e",
+        "timestamp": "2021-03-11T03:40:10+0000",
+        "files": 7453
+    },
+    "1.8.0rc0": {
+        "commit": "e5cb3f71f78c3b6c4771bfeff357d93f52bf6686",
+        "timestamp": "2021-03-11T03:40:18+0000",
+        "files": 7453
+    },
+    "1.8.0rc1": {
+        "commit": "c03d69571d641b72f20fca6376808bc0c3ba364a",
+        "timestamp": "2021-03-11T03:40:26+0000",
+        "files": 7453
+    },
+    "1.9.0": {
+        "commit": "6ab243729bf75c9b87bee5dc2f574303458ecdcf",
+        "timestamp": "2021-03-11T03:40:34+0000",
+        "files": 8003
+    },
+    "1.9.0rc0": {
+        "commit": "430365e2a0c35199fa0fec1641a9039f0537619a",
+        "timestamp": "2021-03-11T03:40:42+0000",
+        "files": 7509
+    },
+    "1.9.0rc1": {
+        "commit": "da7bb53fec1384348042bef7dcb40d5fa037039f",
+        "timestamp": "2021-03-11T03:40:49+0000",
+        "files": 7510
+    },
+    "1.9.0rc2": {
+        "commit": "3f9bd39ad361c80115aff75567ff0f527efe1cd4",
+        "timestamp": "2021-03-11T03:40:56+0000",
+        "files": 8003
+    },
+    "2.0.0": {
+        "commit": "f1fee87a8b00cb6176b0af95f471a305ad649b8d",
+        "timestamp": "2021-03-11T03:41:07+0000",
+        "files": 4337
+    },
+    "2.0.0a0": {
+        "commit": "3adf4434d4e2ad8ffba6481d96f1b1f4743bb787",
+        "timestamp": "2021-03-11T03:41:18+0000",
+        "files": 7433
+    },
+    "2.0.0b0": {
+        "commit": "d227246634bfeb09d7c2903698728b4d8e4fe726",
+        "timestamp": "2021-03-11T03:41:27+0000",
+        "files": 7580
+    },
+    "2.0.0b1": {
+        "commit": "767619f7ff60ca6f07a3ad55f2a36afc4b25d0af",
+        "timestamp": "2021-03-11T03:41:39+0000",
+        "files": 7580
+    },
+    "2.0.0rc0": {
+        "commit": "75280df5566d1ab777425ff973c47f1b2be16790",
+        "timestamp": "2021-03-11T03:41:50+0000",
+        "files": 4337
+    },
+    "2.0.0rc1": {
+        "commit": "fd5aadc96615ceb6d85a8dcf9ae7806d8363bab3",
+        "timestamp": "2021-03-11T03:42:02+0000",
+        "files": 4337
+    },
+    "2.0.0rc2": {
+        "commit": "05fcf17615e86dbfa6cbbaed9bda804bdc1e136d",
+        "timestamp": "2021-03-11T03:42:13+0000",
+        "files": 4337
+    },
+    "2.0.1": {
+        "commit": "63f66e1fc9fb0e8f1b4da1f6a39ab604b4e269df",
+        "timestamp": "2021-03-11T03:42:23+0000",
+        "files": 4337
+    },
+    "2.0.2": {
+        "commit": "0ce73824f41fee4211e5a436a353e82b00e61851",
+        "timestamp": "2021-03-11T03:42:33+0000",
+        "files": 4337
+    },
+    "2.0.3": {
+        "commit": "30496cde38e4a1faeb708532cc46b8302b45974d",
+        "timestamp": "2021-03-11T03:42:42+0000",
+        "files": 4337
+    },
+    "2.0.4": {
+        "commit": "060a6cdb83285d0a002a95839c563fb4a1a208b0",
+        "timestamp": "2021-03-11T03:42:52+0000",
+        "files": 4337
+    },
+    "2.1.0": {
+        "commit": "4c5ce5aefacb7112c68798dd4c9a941e59f19044",
+        "timestamp": "2021-03-11T03:44:25+0000",
+        "files": 4457
+    },
+    "2.1.0rc0": {
+        "commit": "7845231706546bfe1a9131d4da4526c8047af89e",
+        "timestamp": "2021-03-11T03:45:51+0000",
+        "files": 4457
+    },
+    "2.1.0rc1": {
+        "commit": "8c341d246a94a6e9ba0297e6bf80b40f592beb1a",
+        "timestamp": "2021-03-11T03:47:34+0000",
+        "files": 4457
+    },
+    "2.1.0rc2": {
+        "commit": "ad0ae2df8f9c2d87c240e93642606e8f6b8a6003",
+        "timestamp": "2021-03-11T03:49:15+0000",
+        "files": 4457
+    },
+    "2.1.1": {
+        "commit": "38bf03c9fd30ec7c67ee3ff52f41d6751c92ca31",
+        "timestamp": "2021-03-11T03:50:56+0000",
+        "files": 4457
+    },
+    "2.1.2": {
+        "commit": "e643670892d4a18a2f77479cc500d0e5aba9801d",
+        "timestamp": "2021-03-11T03:52:38+0000",
+        "files": 4457
+    },
+    "2.1.3": {
+        "commit": "ce852ff5baa1d35cecd4b1ad35378b5df251ee37",
+        "timestamp": "2021-03-11T03:54:20+0000",
+        "files": 4457
+    },
+    "2.2.0": {
+        "commit": "790acc04a9011a14d6b331d5d0d8ba3f7ceb1e29",
+        "timestamp": "2021-03-11T03:56:13+0000",
+        "files": 10402
+    },
+    "2.2.0rc0": {
+        "commit": "89641b2df0d60e2d4b40e20a617da597e0454233",
+        "timestamp": "2021-03-11T03:58:06+0000",
+        "files": 10442
+    },
+    "2.2.0rc1": {
+        "commit": "d1e1f0db30be66ea57b6dd07c1621b112d0c6e2e",
+        "timestamp": "2021-03-11T04:00:28+0000",
+        "files": 10442
+    },
+    "2.2.0rc2": {
+        "commit": "99f3b2408d76403ce4e845665addb61b7853c293",
+        "timestamp": "2021-03-11T04:02:40+0000",
+        "files": 10442
+    },
+    "2.2.0rc3": {
+        "commit": "ba82f377aa22abaf34a9d05d4da51267e5011901",
+        "timestamp": "2021-03-11T04:04:46+0000",
+        "files": 10442
+    },
+    "2.2.0rc4": {
+        "commit": "755d019c9dda8b826f3e53d6185d41e0ade681ec",
+        "timestamp": "2021-03-11T04:06:59+0000",
+        "files": 10442
+    },
+    "2.2.1": {
+        "commit": "97292430eb472fc5aed8378f91fd054ba000c95f",
+        "timestamp": "2021-03-11T04:09:05+0000",
+        "files": 10442
+    },
+    "2.2.2": {
+        "commit": "4dbc06f1c2165816b8e8d4bb465625e67741500e",
+        "timestamp": "2021-03-11T04:11:09+0000",
+        "files": 10442
+    },
+    "2.3.0": {
+        "commit": "efe80700af0135f9c9140f4939c294b4f66584db",
+        "timestamp": "2021-03-11T04:12:37+0000",
+        "files": 12039
+    },
+    "2.3.0rc0": {
+        "commit": "cdf73931c679514894c8a51cd41e3c11f459fbc1",
+        "timestamp": "2021-03-11T04:14:03+0000",
+        "files": 12039
+    },
+    "2.3.0rc1": {
+        "commit": "86dac92ec2dc51ba4eb581f2192d74639302566e",
+        "timestamp": "2021-03-11T04:15:25+0000",
+        "files": 12039
+    },
+    "2.3.0rc2": {
+        "commit": "92a84033225068a5a164a83d57ced668e1b0de80",
+        "timestamp": "2021-03-11T04:16:47+0000",
+        "files": 12039
+    },
+    "2.3.1": {
+        "commit": "af14229db5f130464d11592c3edce85739082dbd",
+        "timestamp": "2021-03-11T04:18:08+0000",
+        "files": 12039
+    },
+    "2.3.2": {
+        "commit": "d51f4f3730b2270f4a6d79db01c9b51b93271c27",
+        "timestamp": "2021-03-11T04:19:29+0000",
+        "files": 12039
+    },
+    "2.4.0": {
+        "commit": "6e2b23004d2400f30db849926c17b06c4e725b77",
+        "timestamp": "2021-03-11T04:21:01+0000",
+        "files": 12423
+    },
+    "2.4.0rc0": {
+        "commit": "25db5c79c3d6914166ce0f89c20673a5876d548d",
+        "timestamp": "2021-03-11T04:22:33+0000",
+        "files": 12423
+    },
+    "2.4.0rc1": {
+        "commit": "924109d5ec859d0d4b76db483791f748e397b7b4",
+        "timestamp": "2021-03-11T04:24:06+0000",
+        "files": 12423
+    },
+    "2.4.0rc2": {
+        "commit": "87c6612866db80a731c201a4ba82b0e1e845630f",
+        "timestamp": "2021-03-11T04:25:38+0000",
+        "files": 12423
+    },
+    "2.4.0rc3": {
+        "commit": "c027972cbde67026949a4149fb8657dba6311019",
+        "timestamp": "2021-03-11T04:27:09+0000",
+        "files": 12423
+    },
+    "2.4.0rc4": {
+        "commit": "902894dac1aeb3e66bf0f7f84669a9a01792f316",
+        "timestamp": "2021-03-11T04:28:41+0000",
+        "files": 12423
     }
 }
