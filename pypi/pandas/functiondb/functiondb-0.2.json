@@ -1,874 +1,5 @@
 {
     "0.2": {
-        "doc.sphinxext.numpydoc.docscrape": {
-            "indent": [
-                "str",
-                "indent"
-            ],
-            "dedent_lines": [
-                "lines"
-            ],
-            "header": [
-                "text",
-                "style"
-            ],
-            "Reader": {
-                "__init__": [
-                    "self",
-                    "data"
-                ],
-                "__getitem__": [
-                    "self",
-                    "n"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "read": [
-                    "self"
-                ],
-                "seek_next_non_empty_line": [
-                    "self"
-                ],
-                "eof": [
-                    "self"
-                ],
-                "read_to_condition": [
-                    "self",
-                    "condition_func"
-                ],
-                "read_to_next_empty_line": [
-                    "self"
-                ],
-                "read_to_next_unindented_line": [
-                    "self"
-                ],
-                "peek": [
-                    "self",
-                    "n"
-                ],
-                "is_empty": [
-                    "self"
-                ]
-            },
-            "NumpyDocString": {
-                "__init__": [
-                    "self",
-                    "docstring",
-                    "config"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "val"
-                ],
-                "_is_at_section": [
-                    "self"
-                ],
-                "_strip": [
-                    "self",
-                    "doc"
-                ],
-                "_read_to_next_section": [
-                    "self"
-                ],
-                "_read_sections": [
-                    "self"
-                ],
-                "_parse_param_list": [
-                    "self",
-                    "content"
-                ],
-                "_parse_see_also": [
-                    "self",
-                    "content"
-                ],
-                "_parse_index": [
-                    "self",
-                    "section",
-                    "content"
-                ],
-                "_parse_summary": [
-                    "self"
-                ],
-                "_parse": [
-                    "self"
-                ],
-                "_str_header": [
-                    "self",
-                    "name",
-                    "symbol"
-                ],
-                "_str_indent": [
-                    "self",
-                    "doc",
-                    "indent"
-                ],
-                "_str_signature": [
-                    "self"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "_str_param_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_section": [
-                    "self",
-                    "name"
-                ],
-                "_str_see_also": [
-                    "self",
-                    "func_role"
-                ],
-                "_str_index": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "func_role"
-                ]
-            },
-            "FunctionDoc": {
-                "__init__": [
-                    "self",
-                    "func",
-                    "role",
-                    "doc",
-                    "config"
-                ],
-                "get_func": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "ClassDoc": {
-                "__init__": [
-                    "self",
-                    "cls",
-                    "doc",
-                    "modulename",
-                    "func_doc",
-                    "config"
-                ],
-                "methods": [
-                    "self"
-                ],
-                "properties": [
-                    "self"
-                ]
-            }
-        },
-        "doc.sphinxext.numpydoc.compiler_unparse": {
-            "unparse": [
-                "ast",
-                "single_line_functions"
-            ],
-            "UnparseCompilerAst": {
-                "__init__": [
-                    "self",
-                    "tree",
-                    "file",
-                    "single_line_functions"
-                ],
-                "_fill": [
-                    "self",
-                    "text"
-                ],
-                "_write": [
-                    "self",
-                    "text"
-                ],
-                "_enter": [
-                    "self"
-                ],
-                "_leave": [
-                    "self"
-                ],
-                "_dispatch": [
-                    "self",
-                    "tree"
-                ],
-                "_Add": [
-                    "self",
-                    "t"
-                ],
-                "_And": [
-                    "self",
-                    "t"
-                ],
-                "_AssAttr": [
-                    "self",
-                    "t"
-                ],
-                "_Assign": [
-                    "self",
-                    "t"
-                ],
-                "_AssName": [
-                    "self",
-                    "t"
-                ],
-                "_AssTuple": [
-                    "self",
-                    "t"
-                ],
-                "_AugAssign": [
-                    "self",
-                    "t"
-                ],
-                "_Bitand": [
-                    "self",
-                    "t"
-                ],
-                "_Bitor": [
-                    "self",
-                    "t"
-                ],
-                "_CallFunc": [
-                    "self",
-                    "t"
-                ],
-                "_Compare": [
-                    "self",
-                    "t"
-                ],
-                "_Const": [
-                    "self",
-                    "t"
-                ],
-                "_Decorators": [
-                    "self",
-                    "t"
-                ],
-                "_Dict": [
-                    "self",
-                    "t"
-                ],
-                "_Discard": [
-                    "self",
-                    "t"
-                ],
-                "_Div": [
-                    "self",
-                    "t"
-                ],
-                "_Ellipsis": [
-                    "self",
-                    "t"
-                ],
-                "_From": [
-                    "self",
-                    "t"
-                ],
-                "_Function": [
-                    "self",
-                    "t"
-                ],
-                "_Getattr": [
-                    "self",
-                    "t"
-                ],
-                "_If": [
-                    "self",
-                    "t"
-                ],
-                "_IfExp": [
-                    "self",
-                    "t"
-                ],
-                "_Import": [
-                    "self",
-                    "t"
-                ],
-                "_Keyword": [
-                    "self",
-                    "t"
-                ],
-                "_List": [
-                    "self",
-                    "t"
-                ],
-                "_Module": [
-                    "self",
-                    "t"
-                ],
-                "_Mul": [
-                    "self",
-                    "t"
-                ],
-                "_Name": [
-                    "self",
-                    "t"
-                ],
-                "_NoneType": [
-                    "self",
-                    "t"
-                ],
-                "_Not": [
-                    "self",
-                    "t"
-                ],
-                "_Or": [
-                    "self",
-                    "t"
-                ],
-                "_Pass": [
-                    "self",
-                    "t"
-                ],
-                "_Printnl": [
-                    "self",
-                    "t"
-                ],
-                "_Power": [
-                    "self",
-                    "t"
-                ],
-                "_Return": [
-                    "self",
-                    "t"
-                ],
-                "_Slice": [
-                    "self",
-                    "t"
-                ],
-                "_Sliceobj": [
-                    "self",
-                    "t"
-                ],
-                "_Stmt": [
-                    "self",
-                    "tree"
-                ],
-                "_Sub": [
-                    "self",
-                    "t"
-                ],
-                "_Subscript": [
-                    "self",
-                    "t"
-                ],
-                "_TryExcept": [
-                    "self",
-                    "t"
-                ],
-                "_Tuple": [
-                    "self",
-                    "t"
-                ],
-                "_UnaryAdd": [
-                    "self",
-                    "t"
-                ],
-                "_UnarySub": [
-                    "self",
-                    "t"
-                ],
-                "_With": [
-                    "self",
-                    "t"
-                ],
-                "_int": [
-                    "self",
-                    "t"
-                ],
-                "__binary_op": [
-                    "self",
-                    "t",
-                    "symbol"
-                ],
-                "_float": [
-                    "self",
-                    "t"
-                ],
-                "_str": [
-                    "self",
-                    "t"
-                ],
-                "_tuple": [
-                    "self",
-                    "t"
-                ]
-            }
-        },
-        "doc.sphinxext.numpydoc.linkcode": {
-            "doctree_read": [
-                "app",
-                "doctree"
-            ],
-            "setup": [
-                "app"
-            ],
-            "LinkcodeError": {}
-        },
-        "doc.sphinxext.numpydoc.numpydoc": {
-            "mangle_docstrings": [
-                "app",
-                "what",
-                "name",
-                "obj",
-                "options",
-                "lines",
-                "reference_offset"
-            ],
-            "mangle_signature": [
-                "app",
-                "what",
-                "name",
-                "obj",
-                "options",
-                "sig",
-                "retann"
-            ],
-            "setup": [
-                "app",
-                "get_doc_object_"
-            ],
-            "wrap_mangling_directive": [
-                "base_directive",
-                "objtype"
-            ],
-            "ManglingDomainBase": {
-                "__init__": [
-                    "self"
-                ],
-                "wrap_mangling_directives": [
-                    "self"
-                ]
-            },
-            "NumpyPythonDomain": {},
-            "NumpyCDomain": {}
-        },
-        "doc.sphinxext.numpydoc.docscrape_sphinx": {
-            "get_doc_object": [
-                "obj",
-                "what",
-                "doc",
-                "config"
-            ],
-            "SphinxDocString": {
-                "__init__": [
-                    "self",
-                    "docstring",
-                    "config"
-                ],
-                "load_config": [
-                    "self",
-                    "config"
-                ],
-                "_str_header": [
-                    "self",
-                    "name",
-                    "symbol"
-                ],
-                "_str_field_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_indent": [
-                    "self",
-                    "doc",
-                    "indent"
-                ],
-                "_str_signature": [
-                    "self"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "_str_returns": [
-                    "self"
-                ],
-                "_str_param_list": [
-                    "self",
-                    "name"
-                ],
-                "_obj": [
-                    "self"
-                ],
-                "_str_member_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_section": [
-                    "self",
-                    "name"
-                ],
-                "_str_see_also": [
-                    "self",
-                    "func_role"
-                ],
-                "_str_warnings": [
-                    "self"
-                ],
-                "_str_index": [
-                    "self"
-                ],
-                "_str_references": [
-                    "self"
-                ],
-                "_str_examples": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "indent",
-                    "func_role"
-                ]
-            },
-            "SphinxFunctionDoc": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "doc",
-                    "config"
-                ]
-            },
-            "SphinxClassDoc": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "doc",
-                    "func_doc",
-                    "config"
-                ]
-            },
-            "SphinxObjDoc": {
-                "__init__": [
-                    "self",
-                    "obj",
-                    "doc",
-                    "config"
-                ]
-            }
-        },
-        "doc.sphinxext.numpydoc.plot_directive": {
-            "setup": [
-                "app"
-            ],
-            "plot_directive": [
-                "name",
-                "arguments",
-                "options",
-                "content",
-                "lineno",
-                "content_offset",
-                "block_text",
-                "state",
-                "state_machine"
-            ],
-            "_option_boolean": [
-                "arg"
-            ],
-            "_option_format": [
-                "arg"
-            ],
-            "_option_align": [
-                "arg"
-            ],
-            "run": [
-                "arguments",
-                "content",
-                "options",
-                "state_machine",
-                "state",
-                "lineno"
-            ],
-            "contains_doctest": [
-                "text"
-            ],
-            "unescape_doctest": [
-                "text"
-            ],
-            "split_code_at_show": [
-                "text"
-            ],
-            "run_code": [
-                "code",
-                "code_path",
-                "ns"
-            ],
-            "out_of_date": [
-                "original",
-                "derived"
-            ],
-            "makefig": [
-                "code",
-                "code_path",
-                "output_dir",
-                "output_base",
-                "config"
-            ],
-            "ImageFile": {
-                "__init__": [
-                    "self",
-                    "basename",
-                    "dirname"
-                ],
-                "filename": [
-                    "self",
-                    "format"
-                ],
-                "filenames": [
-                    "self"
-                ]
-            },
-            "PlotError": {}
-        },
-        "doc.sphinxext.numpydoc.comment_eater": {
-            "strip_comment_marker": [
-                "text"
-            ],
-            "get_class_traits": [
-                "klass"
-            ],
-            "Comment": {
-                "__init__": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno",
-                    "text"
-                ],
-                "add": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "NonComment": {
-                "__init__": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno"
-                ],
-                "add": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "CommentBlocker": {
-                "__init__": [
-                    "self"
-                ],
-                "process_file": [
-                    "self",
-                    "file"
-                ],
-                "process_token": [
-                    "self",
-                    "kind",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "new_noncomment": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno"
-                ],
-                "new_comment": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "make_index": [
-                    "self"
-                ],
-                "search_for_comment": [
-                    "self",
-                    "lineno",
-                    "default"
-                ]
-            }
-        },
-        "doc.sphinxext.numpydoc.phantom_import": {
-            "setup": [
-                "app"
-            ],
-            "initialize": [
-                "app"
-            ],
-            "import_phantom_module": [
-                "xml_file"
-            ]
-        },
-        "doc.sphinxext.numpydoc.traitsdoc": {
-            "looks_like_issubclass": [
-                "obj",
-                "classname"
-            ],
-            "get_doc_object": [
-                "obj",
-                "what",
-                "config"
-            ],
-            "setup": [
-                "app"
-            ],
-            "SphinxTraitsDoc": {
-                "__init__": [
-                    "self",
-                    "cls",
-                    "modulename",
-                    "func_doc"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "indent",
-                    "func_role"
-                ]
-            }
-        },
-        "doc.sphinxext.numpydoc": {},
-        "doc.sphinxext.ipython_sphinxext.ipython_directive": {
-            "block_parser": [
-                "part",
-                "rgxin",
-                "rgxout",
-                "fmtin",
-                "fmtout"
-            ],
-            "setup": [
-                "app"
-            ],
-            "test": [],
-            "DecodingStringIO": {
-                "__init__": [
-                    "self",
-                    "buf",
-                    "encodings"
-                ],
-                "set_encodings": [
-                    "self",
-                    "encodings"
-                ],
-                "write": [
-                    "self",
-                    "data"
-                ]
-            },
-            "EmbeddedSphinxShell": {
-                "__init__": [
-                    "self",
-                    "exec_lines",
-                    "state"
-                ],
-                "clear_cout": [
-                    "self"
-                ],
-                "process_input_line": [
-                    "self",
-                    "line",
-                    "store_history"
-                ],
-                "process_image": [
-                    "self",
-                    "decorator"
-                ],
-                "process_input": [
-                    "self",
-                    "data",
-                    "input_prompt",
-                    "lineno"
-                ],
-                "process_output": [
-                    "self",
-                    "data",
-                    "output_prompt",
-                    "input_lines",
-                    "output",
-                    "is_doctest",
-                    "decorator",
-                    "image_file"
-                ],
-                "process_comment": [
-                    "self",
-                    "data"
-                ],
-                "save_image": [
-                    "self",
-                    "image_file"
-                ],
-                "process_block": [
-                    "self",
-                    "block"
-                ],
-                "ensure_pyplot": [
-                    "self"
-                ],
-                "process_pure_python": [
-                    "self",
-                    "content"
-                ],
-                "custom_doctest": [
-                    "self",
-                    "decorator",
-                    "input_lines",
-                    "found",
-                    "submitted"
-                ]
-            },
-            "IPythonDirective": {
-                "get_config_options": [
-                    "self"
-                ],
-                "setup": [
-                    "self"
-                ],
-                "teardown": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "doc.sphinxext.ipython_sphinxext": {},
-        "doc.sphinxext.ipython_sphinxext.ipython_console_highlighting": {
-            "setup": [
-                "app"
-            ],
-            "IPythonConsoleLexer": {
-                "get_tokens_unprocessed": [
-                    "self",
-                    "text"
-                ]
-            }
-        },
         "pandas.setup": {
             "configuration": [
                 "parent_package",
@@ -877,820 +8,382 @@
         },
         "pandas.info": {},
         "pandas.version": {},
-        "pandas.lib.setup": {
-            "get_cython_ext": [],
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "pandas.lib.build": {},
-        "pandas.lib": {},
-        "pandas.io.parsers": {
-            "simpleParser": [
-                "nestedList",
-                "colNames",
-                "header",
-                "indexCol"
-            ],
-            "parseCSV": [
-                "filepath",
-                "header",
-                "indexCol"
-            ],
-            "parseText": [
-                "filepath",
-                "sep",
-                "header",
-                "indexCol",
-                "colNames"
-            ],
-            "ole2datetime": [
-                "oledt"
-            ],
-            "parseExcel": [
-                "filepath",
-                "header",
-                "indexCol",
-                "dateCol",
-                "sheetname"
-            ]
-        },
-        "pandas.io": {},
         "pandas.sandbox": {},
-        "pandas.stats.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "pandas.stats.var": {
-            "_drop_incomplete_rows": [
-                "array"
+        "pandas.core.pytools": {
+            "rands": [
+                "n"
             ],
-            "_make_param_name": [
-                "lag",
-                "name"
+            "adjoin": [
+                "space"
             ],
-            "VAR": {
-                "__init__": [
-                    "self",
-                    "data",
-                    "lags",
-                    "intercept"
-                ],
-                "aic": [
-                    "self"
-                ],
-                "bic": [
-                    "self"
-                ],
-                "beta": [
-                    "self"
-                ],
-                "forecast": [
-                    "self",
-                    "h"
-                ],
-                "forecast_cov": [
-                    "self",
-                    "h"
-                ],
-                "forecast_std_err": [
-                    "self",
-                    "h"
-                ],
-                "granger_causality": [
-                    "self"
-                ],
-                "ols_results": [
-                    "self"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ],
-                "_alpha": [
-                    "self"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_trans_B": [
-                    "self",
-                    "h"
-                ],
-                "_x": [
-                    "self"
-                ],
-                "_cov_beta": [
-                    "self"
-                ],
-                "_data_xs": [
-                    "self",
-                    "i"
-                ],
-                "_forecast_cov_raw": [
-                    "self",
-                    "n"
-                ],
-                "_forecast_cov_beta_raw": [
-                    "self",
-                    "n"
-                ],
-                "_forecast_cov_resid_raw": [
-                    "self",
-                    "h"
-                ],
-                "_forecast_raw": [
-                    "self",
-                    "h"
-                ],
-                "_forecast_std_err_raw": [
-                    "self",
-                    "h"
-                ],
-                "_ic": [
-                    "self"
-                ],
-                "_k": [
-                    "self"
-                ],
-                "_lag_betas": [
-                    "self"
-                ],
-                "_lagged_data": [
-                    "self"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "_psi": [
-                    "self",
-                    "h"
-                ],
-                "_resid_raw": [
-                    "self"
-                ],
-                "_rss": [
-                    "self"
-                ],
-                "_sigma": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "PanelVAR": {
-                "__init__": [
-                    "self",
-                    "data",
-                    "lags",
-                    "intercept"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "_prepare_data": [
-                    "data"
-                ],
-                "_rss": [
-                    "self"
-                ],
-                "forecast": [
-                    "self",
-                    "h"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "_data_xs": [
-                    "self",
-                    "i"
-                ],
-                "_sigma": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.common": {
-            "_get_cluster_type": [
-                "cluster_type"
+            "iterpairs": [
+                "seq"
             ],
-            "_get_window_type": [
-                "window_type"
+            "indent": [
+                "string",
+                "spaces"
             ],
             "banner": [
-                "text",
-                "width"
+                "message"
             ],
-            "f_stat_to_dict": [
-                "result"
-            ]
-        },
-        "pandas.stats.fama_macbeth": {
-            "fama_macbeth": [],
-            "_calc_t_stat": [
-                "beta",
-                "nw_lags_beta"
+            "map_indices_py": [
+                "arr"
             ],
-            "FamaMacBeth": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_stats": [
-                    "self"
-                ],
-                "_mean_beta_raw": [
-                    "self"
-                ],
-                "_std_beta_raw": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "mean_beta": [
-                    "self"
-                ],
-                "std_beta": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_coef_table": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ]
-            },
-            "MovingFamaMacBeth": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "window_type",
-                    "window",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_stats": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.api": {},
-        "pandas.stats.moments": {
-            "rolling_count": [
-                "arg",
-                "window",
-                "timeRule"
-            ],
-            "rolling_sum": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "_rollingMoment": [
-                "arg",
-                "window",
-                "func",
-                "minp",
-                "timeRule"
-            ],
-            "rolling_cov": [
-                "arg1",
-                "arg2",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_corr": [
-                "arg1",
-                "arg2",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_mean": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_std": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_var": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_skew": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_kurt": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "rolling_median": [
-                "arg",
-                "window",
-                "minPeriods",
-                "timeRule"
-            ],
-            "test_rolling_median": [],
-            "_getMinPeriods": [
-                "minPct",
-                "rho"
-            ],
-            "_ewmoment": [
-                "values",
-                "func",
-                "minPeriods",
-                "minPct",
-                "biasCorrection"
-            ],
-            "ewma": [
-                "arg",
-                "com",
-                "minCom"
-            ],
-            "ewmvar": [
-                "arg",
-                "com",
-                "minCom",
-                "correctBias"
-            ],
-            "ewmvol": [
-                "arg",
-                "com",
-                "minCom",
-                "correctBias"
-            ],
-            "ewmcov": [
-                "seriesA",
-                "seriesB",
-                "com",
-                "minCom",
-                "correctBias"
-            ],
-            "ewmcorr": [
-                "seriesA",
-                "seriesB",
-                "com",
-                "minCom"
-            ]
-        },
-        "pandas.stats.ols": {
-            "_safe_update": [
-                "d",
-                "other"
-            ],
-            "_combine_rhs": [
-                "rhs"
-            ],
-            "_filter_data": [
-                "lhs",
-                "rhs"
-            ],
-            "_y_converter": [
-                "y"
-            ],
-            "OLS": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "intercept",
-                    "nw_lags",
-                    "nw_overlap"
-                ],
-                "_prepare_data": [
-                    "self"
-                ],
-                "nobs": [
-                    "self"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "nw_lags": [
-                    "self"
-                ],
-                "x": [
-                    "self"
-                ],
-                "y": [
-                    "self"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "beta": [
-                    "self"
-                ],
-                "_df_raw": [
-                    "self"
-                ],
-                "df": [
-                    "self"
-                ],
-                "_df_model_raw": [
-                    "self"
-                ],
-                "df_model": [
-                    "self"
-                ],
-                "_df_resid_raw": [
-                    "self"
-                ],
-                "df_resid": [
-                    "self"
-                ],
-                "_f_stat_raw": [
-                    "self"
-                ],
-                "f_stat": [
-                    "self"
-                ],
-                "f_test": [
-                    "self",
-                    "hypothesis"
-                ],
-                "_p_value_raw": [
-                    "self"
-                ],
-                "p_value": [
-                    "self"
-                ],
-                "_r2_raw": [
-                    "self"
-                ],
-                "r2": [
-                    "self"
-                ],
-                "_r2_adj_raw": [
-                    "self"
-                ],
-                "r2_adj": [
-                    "self"
-                ],
-                "_resid_raw": [
-                    "self"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "_rmse_raw": [
-                    "self"
-                ],
-                "rmse": [
-                    "self"
-                ],
-                "_std_err_raw": [
-                    "self"
-                ],
-                "std_err": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "_var_beta_raw": [
-                    "self"
-                ],
-                "var_beta": [
-                    "self"
-                ],
-                "_y_fitted_raw": [
-                    "self"
-                ],
-                "y_fitted": [
-                    "self"
-                ],
-                "_y_predict_raw": [
-                    "self"
-                ],
-                "y_predict": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_coef_table": [
-                    "self"
-                ],
-                "summary_as_matrix": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "_time_obs_count": [
-                    "self"
-                ],
-                "_total_times": [
-                    "self"
-                ]
-            },
-            "MovingOLS": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "window_type",
-                    "window",
-                    "min_periods",
-                    "intercept",
-                    "nw_lags",
-                    "nw_overlap"
-                ],
-                "_set_window": [
-                    "self",
-                    "window_type",
-                    "window",
-                    "min_periods"
-                ],
-                "beta": [
-                    "self"
-                ],
-                "rank": [
-                    "self"
-                ],
-                "df": [
-                    "self"
-                ],
-                "df_model": [
-                    "self"
-                ],
-                "df_resid": [
-                    "self"
-                ],
-                "f_stat": [
-                    "self"
-                ],
-                "f_test": [
-                    "self",
-                    "hypothesis"
-                ],
-                "forecast_mean": [
-                    "self"
-                ],
-                "forecast_vol": [
-                    "self"
-                ],
-                "p_value": [
-                    "self"
-                ],
-                "r2": [
-                    "self"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "r2_adj": [
-                    "self"
-                ],
-                "rmse": [
-                    "self"
-                ],
-                "std_err": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "var_beta": [
-                    "self"
-                ],
-                "y_fitted": [
-                    "self"
-                ],
-                "y_predict": [
-                    "self"
-                ],
-                "_is_rolling": [
-                    "self"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_valid_indices": [
-                    "self"
-                ],
-                "_rolling_ols_call": [
-                    "self"
-                ],
-                "_calc_betas": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "_rolling_rank": [
-                    "self"
-                ],
-                "_cum_xx": [
-                    "self",
-                    "x"
-                ],
-                "_cum_xy": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "_rank_raw": [
-                    "self"
-                ],
-                "_df_raw": [
-                    "self"
-                ],
-                "_df_model_raw": [
-                    "self"
-                ],
-                "_df_resid_raw": [
-                    "self"
-                ],
-                "_f_stat_raw": [
-                    "self"
-                ],
-                "_p_value_raw": [
-                    "self"
-                ],
-                "_resid_stats": [
-                    "self"
-                ],
-                "_rmse_raw": [
-                    "self"
-                ],
-                "_r2_raw": [
-                    "self"
-                ],
-                "_r2_adj_raw": [
-                    "self"
-                ],
-                "_resid_raw": [
-                    "self"
-                ],
-                "_std_err_raw": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "_var_beta_raw": [
-                    "self"
-                ],
-                "_forecast_mean_raw": [
-                    "self"
-                ],
-                "_forecast_vol_raw": [
-                    "self"
-                ],
-                "_y_fitted_raw": [
-                    "self"
-                ],
-                "_y_predict_raw": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_window_time_obs": [
-                    "self"
-                ],
-                "_nobs_raw": [
-                    "self"
-                ],
-                "_beta_matrix": [
-                    "self",
-                    "lag"
-                ],
-                "_valid_obs_labels": [
-                    "self"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "nobs": [
-                    "self"
-                ],
-                "_enough_obs": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.interface": {
-            "ols": []
-        },
-        "pandas.stats.math": {
-            "rank": [
-                "X",
-                "cond"
-            ],
-            "solve": [
+            "union": [],
+            "difference": [
                 "a",
                 "b"
             ],
-            "inv": [
-                "a"
-            ],
-            "is_psd": [
-                "m"
-            ],
-            "newey_west": [
-                "m",
-                "max_lags",
-                "nobs",
-                "df",
-                "nw_overlap"
-            ],
-            "calc_F": [
-                "R",
-                "r",
-                "beta",
-                "var_beta",
-                "nobs",
-                "df"
-            ],
-            "chain_dot": []
+            "intersection": [],
+            "groupby": {
+                "__init__": [
+                    "self",
+                    "seq",
+                    "key"
+                ]
+            }
         },
-        "pandas.stats": {},
+        "pandas.core.common": {
+            "_pickle_array": [
+                "arr"
+            ],
+            "_unpickle_array": [
+                "bytes"
+            ],
+            "_pfixed": [
+                "s",
+                "space",
+                "nanRep",
+                "float_format"
+            ]
+        },
         "pandas.core.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
+        },
+        "pandas.core.series": {
+            "_seriesOpWrap": [
+                "opname"
+            ],
+            "remove_na": [
+                "arr"
+            ],
+            "_seriesRepr": [
+                "index",
+                "vals",
+                "nanRep"
+            ],
+            "Series": {
+                "__new__": [
+                    "cls",
+                    "data",
+                    "index",
+                    "dtype",
+                    "copy"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "_get_index": [
+                    "self"
+                ],
+                "_set_index": [
+                    "self",
+                    "index"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "toDict": [
+                    "self"
+                ],
+                "fromValue": [
+                    "cls",
+                    "value",
+                    "index",
+                    "dtype"
+                ],
+                "__contains__": [
+                    "self",
+                    "key"
+                ],
+                "__reduce__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "get": [
+                    "self",
+                    "key",
+                    "default"
+                ],
+                "__getslice__": [
+                    "self",
+                    "i",
+                    "j"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__setslice__": [
+                    "self",
+                    "i",
+                    "j",
+                    "value"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "toString": [
+                    "self",
+                    "buffer",
+                    "nanRep"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "count": [
+                    "self"
+                ],
+                "_ndarray_statistic": [
+                    "self",
+                    "funcname"
+                ],
+                "sum": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out"
+                ],
+                "mean": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out"
+                ],
+                "min": [
+                    "self",
+                    "axis",
+                    "out"
+                ],
+                "max": [
+                    "self",
+                    "axis",
+                    "out"
+                ],
+                "std": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out",
+                    "ddof"
+                ],
+                "var": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out",
+                    "ddof"
+                ],
+                "skew": [
+                    "self"
+                ],
+                "keys": [
+                    "self"
+                ],
+                "values": [
+                    "self"
+                ],
+                "iteritems": [
+                    "self"
+                ],
+                "append": [
+                    "self",
+                    "other"
+                ],
+                "combineFunc": [
+                    "self",
+                    "other",
+                    "func"
+                ],
+                "combineFirst": [
+                    "self",
+                    "other"
+                ],
+                "cumsum": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out"
+                ],
+                "cumprod": [
+                    "self",
+                    "axis",
+                    "dtype",
+                    "out"
+                ],
+                "median": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "corr": [
+                    "self",
+                    "other"
+                ],
+                "sort": [
+                    "self",
+                    "axis",
+                    "kind",
+                    "order"
+                ],
+                "argsort": [
+                    "self",
+                    "axis",
+                    "kind",
+                    "order"
+                ],
+                "order": [
+                    "self",
+                    "missingAtEnd"
+                ],
+                "map": [
+                    "self",
+                    "func"
+                ],
+                "plot": [
+                    "self",
+                    "label",
+                    "kind",
+                    "rot"
+                ],
+                "toCSV": [
+                    "self",
+                    "path"
+                ],
+                "cap": [
+                    "self",
+                    "threshold"
+                ],
+                "floor": [
+                    "self",
+                    "threshold"
+                ],
+                "valid": [
+                    "self"
+                ],
+                "_firstTimeWithValue": [
+                    "self"
+                ],
+                "_lastTimeWithValue": [
+                    "self"
+                ],
+                "shift": [
+                    "self",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "truncate": [
+                    "self",
+                    "before",
+                    "after"
+                ],
+                "asOf": [
+                    "self",
+                    "date"
+                ],
+                "fill": [
+                    "self",
+                    "value",
+                    "method"
+                ],
+                "asfreq": [
+                    "self",
+                    "freq",
+                    "fillMethod"
+                ],
+                "interpolate": [
+                    "self",
+                    "method"
+                ],
+                "merge": [
+                    "self",
+                    "other"
+                ],
+                "reindex": [
+                    "self",
+                    "newIndex",
+                    "fillMethod"
+                ],
+                "rename": [
+                    "self",
+                    "mapper"
+                ],
+                "weekday": [
+                    "self"
+                ],
+                "diff": [
+                    "self"
+                ],
+                "autocorr": [
+                    "self"
+                ]
+            },
+            "TimeSeries": {}
+        },
+        "pandas.core.api": {},
+        "pandas.core.collection": {
+            "PickleContainer": {
+                "__init__": [
+                    "self",
+                    "dirPath",
+                    "lruSize"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__delitem__": [
+                    "self",
+                    "key"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "iteritems": [
+                    "self"
+                ],
+                "keys": [
+                    "self"
+                ],
+                "values": [
+                    "self"
+                ]
+            }
         },
         "pandas.core.groupby": {
             "groupby": [
@@ -1786,19 +479,68 @@
                 ]
             }
         },
-        "pandas.core.common": {
-            "_pickle_array": [
-                "arr"
+        "pandas.core.daterange": {
+            "_bin_op": [
+                "op"
             ],
-            "_unpickle_array": [
-                "bytes"
-            ],
-            "_pfixed": [
-                "s",
-                "space",
-                "nanRep",
-                "float_format"
-            ]
+            "XDateRange": {
+                "__init__": [
+                    "self",
+                    "fromDate",
+                    "toDate",
+                    "nPeriods",
+                    "offset",
+                    "timeRule"
+                ],
+                "__iter__": [
+                    "self"
+                ]
+            },
+            "DateRange": {
+                "__new__": [
+                    "cls",
+                    "fromDate",
+                    "toDate",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "getCachedRange": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "fromIndex": [
+                    "cls",
+                    "index"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "__getslice__": [
+                    "self",
+                    "i",
+                    "j"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "shift": [
+                    "self",
+                    "n"
+                ]
+            }
         },
         "pandas.core.panel": {
             "_arith_method": [
@@ -2366,523 +1108,6 @@
             "WidePanelGroupBy": {},
             "LongPanelGroupBy": {}
         },
-        "pandas.core.daterange": {
-            "_bin_op": [
-                "op"
-            ],
-            "XDateRange": {
-                "__init__": [
-                    "self",
-                    "fromDate",
-                    "toDate",
-                    "nPeriods",
-                    "offset",
-                    "timeRule"
-                ],
-                "__iter__": [
-                    "self"
-                ]
-            },
-            "DateRange": {
-                "__new__": [
-                    "cls",
-                    "fromDate",
-                    "toDate",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "getCachedRange": [
-                    "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "fromIndex": [
-                    "cls",
-                    "index"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "__getslice__": [
-                    "self",
-                    "i",
-                    "j"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "n"
-                ]
-            }
-        },
-        "pandas.core.api": {},
-        "pandas.core.collection": {
-            "PickleContainer": {
-                "__init__": [
-                    "self",
-                    "dirPath",
-                    "lruSize"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__delitem__": [
-                    "self",
-                    "key"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "iteritems": [
-                    "self"
-                ],
-                "keys": [
-                    "self"
-                ],
-                "values": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.core.mixins": {
-            "Picklable": {
-                "save": [
-                    "self",
-                    "fileName"
-                ],
-                "load": [
-                    "cls",
-                    "fileName"
-                ]
-            },
-            "Groupable": {
-                "groupby": [
-                    "self",
-                    "mapper"
-                ]
-            }
-        },
-        "pandas.core.index": {
-            "_indexOp": [
-                "opname"
-            ],
-            "Index": {
-                "__new__": [
-                    "cls",
-                    "data",
-                    "dtype",
-                    "copy"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "indexMap": [
-                    "self"
-                ],
-                "_allDates": [
-                    "self"
-                ],
-                "_checkForDuplicates": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "state"
-                ],
-                "__deepcopy__": [
-                    "self",
-                    "memo"
-                ],
-                "__contains__": [
-                    "self",
-                    "date"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "equals": [
-                    "self",
-                    "other"
-                ],
-                "asOfDate": [
-                    "self",
-                    "date"
-                ],
-                "sort": [
-                    "self"
-                ],
-                "argsort": [
-                    "self"
-                ],
-                "__add__": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "diff": [
-                    "self",
-                    "other"
-                ]
-            }
-        },
-        "pandas.core.series": {
-            "_seriesOpWrap": [
-                "opname"
-            ],
-            "remove_na": [
-                "arr"
-            ],
-            "_seriesRepr": [
-                "index",
-                "vals",
-                "nanRep"
-            ],
-            "Series": {
-                "__new__": [
-                    "cls",
-                    "data",
-                    "index",
-                    "dtype",
-                    "copy"
-                ],
-                "__hash__": [
-                    "self"
-                ],
-                "_get_index": [
-                    "self"
-                ],
-                "_set_index": [
-                    "self",
-                    "index"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "toDict": [
-                    "self"
-                ],
-                "fromValue": [
-                    "cls",
-                    "value",
-                    "index",
-                    "dtype"
-                ],
-                "__contains__": [
-                    "self",
-                    "key"
-                ],
-                "__reduce__": [
-                    "self"
-                ],
-                "__setstate__": [
-                    "self",
-                    "state"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "get": [
-                    "self",
-                    "key",
-                    "default"
-                ],
-                "__getslice__": [
-                    "self",
-                    "i",
-                    "j"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__setslice__": [
-                    "self",
-                    "i",
-                    "j",
-                    "value"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "toString": [
-                    "self",
-                    "buffer",
-                    "nanRep"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "count": [
-                    "self"
-                ],
-                "_ndarray_statistic": [
-                    "self",
-                    "funcname"
-                ],
-                "sum": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out"
-                ],
-                "mean": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out"
-                ],
-                "min": [
-                    "self",
-                    "axis",
-                    "out"
-                ],
-                "max": [
-                    "self",
-                    "axis",
-                    "out"
-                ],
-                "std": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out",
-                    "ddof"
-                ],
-                "var": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out",
-                    "ddof"
-                ],
-                "skew": [
-                    "self"
-                ],
-                "keys": [
-                    "self"
-                ],
-                "values": [
-                    "self"
-                ],
-                "iteritems": [
-                    "self"
-                ],
-                "append": [
-                    "self",
-                    "other"
-                ],
-                "combineFunc": [
-                    "self",
-                    "other",
-                    "func"
-                ],
-                "combineFirst": [
-                    "self",
-                    "other"
-                ],
-                "cumsum": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out"
-                ],
-                "cumprod": [
-                    "self",
-                    "axis",
-                    "dtype",
-                    "out"
-                ],
-                "median": [
-                    "self"
-                ],
-                "copy": [
-                    "self"
-                ],
-                "corr": [
-                    "self",
-                    "other"
-                ],
-                "sort": [
-                    "self",
-                    "axis",
-                    "kind",
-                    "order"
-                ],
-                "argsort": [
-                    "self",
-                    "axis",
-                    "kind",
-                    "order"
-                ],
-                "order": [
-                    "self",
-                    "missingAtEnd"
-                ],
-                "map": [
-                    "self",
-                    "func"
-                ],
-                "plot": [
-                    "self",
-                    "label",
-                    "kind",
-                    "rot"
-                ],
-                "toCSV": [
-                    "self",
-                    "path"
-                ],
-                "cap": [
-                    "self",
-                    "threshold"
-                ],
-                "floor": [
-                    "self",
-                    "threshold"
-                ],
-                "valid": [
-                    "self"
-                ],
-                "_firstTimeWithValue": [
-                    "self"
-                ],
-                "_lastTimeWithValue": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "truncate": [
-                    "self",
-                    "before",
-                    "after"
-                ],
-                "asOf": [
-                    "self",
-                    "date"
-                ],
-                "fill": [
-                    "self",
-                    "value",
-                    "method"
-                ],
-                "asfreq": [
-                    "self",
-                    "freq",
-                    "fillMethod"
-                ],
-                "interpolate": [
-                    "self",
-                    "method"
-                ],
-                "merge": [
-                    "self",
-                    "other"
-                ],
-                "reindex": [
-                    "self",
-                    "newIndex",
-                    "fillMethod"
-                ],
-                "rename": [
-                    "self",
-                    "mapper"
-                ],
-                "weekday": [
-                    "self"
-                ],
-                "diff": [
-                    "self"
-                ],
-                "autocorr": [
-                    "self"
-                ]
-            },
-            "TimeSeries": {}
-        },
-        "pandas.core.pytools": {
-            "rands": [
-                "n"
-            ],
-            "adjoin": [
-                "space"
-            ],
-            "iterpairs": [
-                "seq"
-            ],
-            "indent": [
-                "string",
-                "spaces"
-            ],
-            "banner": [
-                "message"
-            ],
-            "map_indices_py": [
-                "arr"
-            ],
-            "union": [],
-            "difference": [
-                "a",
-                "b"
-            ],
-            "intersection": [],
-            "groupby": {
-                "__init__": [
-                    "self",
-                    "seq",
-                    "key"
-                ]
-            }
-        },
         "pandas.core.datetools": {
             "format": [
                 "dt"
@@ -3108,7 +1333,145 @@
                 ]
             }
         },
+        "pandas.core.index": {
+            "_indexOp": [
+                "opname"
+            ],
+            "Index": {
+                "__new__": [
+                    "cls",
+                    "data",
+                    "dtype",
+                    "copy"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "indexMap": [
+                    "self"
+                ],
+                "_allDates": [
+                    "self"
+                ],
+                "_checkForDuplicates": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__deepcopy__": [
+                    "self",
+                    "memo"
+                ],
+                "__contains__": [
+                    "self",
+                    "date"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "equals": [
+                    "self",
+                    "other"
+                ],
+                "asOfDate": [
+                    "self",
+                    "date"
+                ],
+                "sort": [
+                    "self"
+                ],
+                "argsort": [
+                    "self"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "diff": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
         "pandas.core": {},
+        "pandas.core.mixins": {
+            "Picklable": {
+                "save": [
+                    "self",
+                    "fileName"
+                ],
+                "load": [
+                    "cls",
+                    "fileName"
+                ]
+            },
+            "Groupable": {
+                "groupby": [
+                    "self",
+                    "mapper"
+                ]
+            }
+        },
+        "pandas.io.parsers": {
+            "simpleParser": [
+                "nestedList",
+                "colNames",
+                "header",
+                "indexCol"
+            ],
+            "parseCSV": [
+                "filepath",
+                "header",
+                "indexCol"
+            ],
+            "parseText": [
+                "filepath",
+                "sep",
+                "header",
+                "indexCol",
+                "colNames"
+            ],
+            "ole2datetime": [
+                "oledt"
+            ],
+            "parseExcel": [
+                "filepath",
+                "header",
+                "indexCol",
+                "dateCol",
+                "sheetname"
+            ]
+        },
+        "pandas.io": {},
+        "pandas.lib.setup": {
+            "get_cython_ext": [],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "pandas.lib.build": {},
+        "pandas.lib": {},
         "pandas.util.testing": {
             "debug": [
                 "f"
@@ -3181,6 +1544,1643 @@
             ],
             "makeLongPanel": []
         },
-        "pandas.util": {}
+        "pandas.util": {},
+        "pandas.stats.common": {
+            "_get_cluster_type": [
+                "cluster_type"
+            ],
+            "_get_window_type": [
+                "window_type"
+            ],
+            "banner": [
+                "text",
+                "width"
+            ],
+            "f_stat_to_dict": [
+                "result"
+            ]
+        },
+        "pandas.stats.moments": {
+            "rolling_count": [
+                "arg",
+                "window",
+                "timeRule"
+            ],
+            "rolling_sum": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "_rollingMoment": [
+                "arg",
+                "window",
+                "func",
+                "minp",
+                "timeRule"
+            ],
+            "rolling_cov": [
+                "arg1",
+                "arg2",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_corr": [
+                "arg1",
+                "arg2",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_mean": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_std": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_var": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_skew": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_kurt": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "rolling_median": [
+                "arg",
+                "window",
+                "minPeriods",
+                "timeRule"
+            ],
+            "test_rolling_median": [],
+            "_getMinPeriods": [
+                "minPct",
+                "rho"
+            ],
+            "_ewmoment": [
+                "values",
+                "func",
+                "minPeriods",
+                "minPct",
+                "biasCorrection"
+            ],
+            "ewma": [
+                "arg",
+                "com",
+                "minCom"
+            ],
+            "ewmvar": [
+                "arg",
+                "com",
+                "minCom",
+                "correctBias"
+            ],
+            "ewmvol": [
+                "arg",
+                "com",
+                "minCom",
+                "correctBias"
+            ],
+            "ewmcov": [
+                "seriesA",
+                "seriesB",
+                "com",
+                "minCom",
+                "correctBias"
+            ],
+            "ewmcorr": [
+                "seriesA",
+                "seriesB",
+                "com",
+                "minCom"
+            ]
+        },
+        "pandas.stats.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "pandas.stats.api": {},
+        "pandas.stats.fama_macbeth": {
+            "fama_macbeth": [],
+            "_calc_t_stat": [
+                "beta",
+                "nw_lags_beta"
+            ],
+            "FamaMacBeth": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "weights",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_stats": [
+                    "self"
+                ],
+                "_mean_beta_raw": [
+                    "self"
+                ],
+                "_std_beta_raw": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "mean_beta": [
+                    "self"
+                ],
+                "std_beta": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_coef_table": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ]
+            },
+            "MovingFamaMacBeth": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "weights",
+                    "window_type",
+                    "window",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_stats": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.stats.var": {
+            "_drop_incomplete_rows": [
+                "array"
+            ],
+            "_make_param_name": [
+                "lag",
+                "name"
+            ],
+            "VAR": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "lags",
+                    "intercept"
+                ],
+                "aic": [
+                    "self"
+                ],
+                "bic": [
+                    "self"
+                ],
+                "beta": [
+                    "self"
+                ],
+                "forecast": [
+                    "self",
+                    "h"
+                ],
+                "forecast_cov": [
+                    "self",
+                    "h"
+                ],
+                "forecast_std_err": [
+                    "self",
+                    "h"
+                ],
+                "granger_causality": [
+                    "self"
+                ],
+                "ols_results": [
+                    "self"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ],
+                "_alpha": [
+                    "self"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_trans_B": [
+                    "self",
+                    "h"
+                ],
+                "_x": [
+                    "self"
+                ],
+                "_cov_beta": [
+                    "self"
+                ],
+                "_data_xs": [
+                    "self",
+                    "i"
+                ],
+                "_forecast_cov_raw": [
+                    "self",
+                    "n"
+                ],
+                "_forecast_cov_beta_raw": [
+                    "self",
+                    "n"
+                ],
+                "_forecast_cov_resid_raw": [
+                    "self",
+                    "h"
+                ],
+                "_forecast_raw": [
+                    "self",
+                    "h"
+                ],
+                "_forecast_std_err_raw": [
+                    "self",
+                    "h"
+                ],
+                "_ic": [
+                    "self"
+                ],
+                "_k": [
+                    "self"
+                ],
+                "_lag_betas": [
+                    "self"
+                ],
+                "_lagged_data": [
+                    "self"
+                ],
+                "_nobs": [
+                    "self"
+                ],
+                "_psi": [
+                    "self",
+                    "h"
+                ],
+                "_resid_raw": [
+                    "self"
+                ],
+                "_rss": [
+                    "self"
+                ],
+                "_sigma": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "PanelVAR": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "lags",
+                    "intercept"
+                ],
+                "_nobs": [
+                    "self"
+                ],
+                "_prepare_data": [
+                    "data"
+                ],
+                "_rss": [
+                    "self"
+                ],
+                "forecast": [
+                    "self",
+                    "h"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "_data_xs": [
+                    "self",
+                    "i"
+                ],
+                "_sigma": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.stats.math": {
+            "rank": [
+                "X",
+                "cond"
+            ],
+            "solve": [
+                "a",
+                "b"
+            ],
+            "inv": [
+                "a"
+            ],
+            "is_psd": [
+                "m"
+            ],
+            "newey_west": [
+                "m",
+                "max_lags",
+                "nobs",
+                "df",
+                "nw_overlap"
+            ],
+            "calc_F": [
+                "R",
+                "r",
+                "beta",
+                "var_beta",
+                "nobs",
+                "df"
+            ],
+            "chain_dot": []
+        },
+        "pandas.stats.interface": {
+            "ols": []
+        },
+        "pandas.stats": {},
+        "pandas.stats.ols": {
+            "_safe_update": [
+                "d",
+                "other"
+            ],
+            "_combine_rhs": [
+                "rhs"
+            ],
+            "_filter_data": [
+                "lhs",
+                "rhs"
+            ],
+            "_y_converter": [
+                "y"
+            ],
+            "OLS": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "intercept",
+                    "nw_lags",
+                    "nw_overlap"
+                ],
+                "_prepare_data": [
+                    "self"
+                ],
+                "nobs": [
+                    "self"
+                ],
+                "_nobs": [
+                    "self"
+                ],
+                "nw_lags": [
+                    "self"
+                ],
+                "x": [
+                    "self"
+                ],
+                "y": [
+                    "self"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "beta": [
+                    "self"
+                ],
+                "_df_raw": [
+                    "self"
+                ],
+                "df": [
+                    "self"
+                ],
+                "_df_model_raw": [
+                    "self"
+                ],
+                "df_model": [
+                    "self"
+                ],
+                "_df_resid_raw": [
+                    "self"
+                ],
+                "df_resid": [
+                    "self"
+                ],
+                "_f_stat_raw": [
+                    "self"
+                ],
+                "f_stat": [
+                    "self"
+                ],
+                "f_test": [
+                    "self",
+                    "hypothesis"
+                ],
+                "_p_value_raw": [
+                    "self"
+                ],
+                "p_value": [
+                    "self"
+                ],
+                "_r2_raw": [
+                    "self"
+                ],
+                "r2": [
+                    "self"
+                ],
+                "_r2_adj_raw": [
+                    "self"
+                ],
+                "r2_adj": [
+                    "self"
+                ],
+                "_resid_raw": [
+                    "self"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "_rmse_raw": [
+                    "self"
+                ],
+                "rmse": [
+                    "self"
+                ],
+                "_std_err_raw": [
+                    "self"
+                ],
+                "std_err": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "_var_beta_raw": [
+                    "self"
+                ],
+                "var_beta": [
+                    "self"
+                ],
+                "_y_fitted_raw": [
+                    "self"
+                ],
+                "y_fitted": [
+                    "self"
+                ],
+                "_y_predict_raw": [
+                    "self"
+                ],
+                "y_predict": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_coef_table": [
+                    "self"
+                ],
+                "summary_as_matrix": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "_time_obs_count": [
+                    "self"
+                ],
+                "_total_times": [
+                    "self"
+                ]
+            },
+            "MovingOLS": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "window_type",
+                    "window",
+                    "min_periods",
+                    "intercept",
+                    "nw_lags",
+                    "nw_overlap"
+                ],
+                "_set_window": [
+                    "self",
+                    "window_type",
+                    "window",
+                    "min_periods"
+                ],
+                "beta": [
+                    "self"
+                ],
+                "rank": [
+                    "self"
+                ],
+                "df": [
+                    "self"
+                ],
+                "df_model": [
+                    "self"
+                ],
+                "df_resid": [
+                    "self"
+                ],
+                "f_stat": [
+                    "self"
+                ],
+                "f_test": [
+                    "self",
+                    "hypothesis"
+                ],
+                "forecast_mean": [
+                    "self"
+                ],
+                "forecast_vol": [
+                    "self"
+                ],
+                "p_value": [
+                    "self"
+                ],
+                "r2": [
+                    "self"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "r2_adj": [
+                    "self"
+                ],
+                "rmse": [
+                    "self"
+                ],
+                "std_err": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "var_beta": [
+                    "self"
+                ],
+                "y_fitted": [
+                    "self"
+                ],
+                "y_predict": [
+                    "self"
+                ],
+                "_is_rolling": [
+                    "self"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_valid_indices": [
+                    "self"
+                ],
+                "_rolling_ols_call": [
+                    "self"
+                ],
+                "_calc_betas": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "_rolling_rank": [
+                    "self"
+                ],
+                "_cum_xx": [
+                    "self",
+                    "x"
+                ],
+                "_cum_xy": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "_rank_raw": [
+                    "self"
+                ],
+                "_df_raw": [
+                    "self"
+                ],
+                "_df_model_raw": [
+                    "self"
+                ],
+                "_df_resid_raw": [
+                    "self"
+                ],
+                "_f_stat_raw": [
+                    "self"
+                ],
+                "_p_value_raw": [
+                    "self"
+                ],
+                "_resid_stats": [
+                    "self"
+                ],
+                "_rmse_raw": [
+                    "self"
+                ],
+                "_r2_raw": [
+                    "self"
+                ],
+                "_r2_adj_raw": [
+                    "self"
+                ],
+                "_resid_raw": [
+                    "self"
+                ],
+                "_std_err_raw": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "_var_beta_raw": [
+                    "self"
+                ],
+                "_forecast_mean_raw": [
+                    "self"
+                ],
+                "_forecast_vol_raw": [
+                    "self"
+                ],
+                "_y_fitted_raw": [
+                    "self"
+                ],
+                "_y_predict_raw": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_window_time_obs": [
+                    "self"
+                ],
+                "_nobs_raw": [
+                    "self"
+                ],
+                "_beta_matrix": [
+                    "self",
+                    "lag"
+                ],
+                "_valid_obs_labels": [
+                    "self"
+                ],
+                "_nobs": [
+                    "self"
+                ],
+                "nobs": [
+                    "self"
+                ],
+                "_enough_obs": [
+                    "self"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc.phantom_import": {
+            "setup": [
+                "app"
+            ],
+            "initialize": [
+                "app"
+            ],
+            "import_phantom_module": [
+                "xml_file"
+            ]
+        },
+        "doc.sphinxext.numpydoc.docscrape": {
+            "indent": [
+                "str",
+                "indent"
+            ],
+            "dedent_lines": [
+                "lines"
+            ],
+            "header": [
+                "text",
+                "style"
+            ],
+            "Reader": {
+                "__init__": [
+                    "self",
+                    "data"
+                ],
+                "__getitem__": [
+                    "self",
+                    "n"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "read": [
+                    "self"
+                ],
+                "seek_next_non_empty_line": [
+                    "self"
+                ],
+                "eof": [
+                    "self"
+                ],
+                "read_to_condition": [
+                    "self",
+                    "condition_func"
+                ],
+                "read_to_next_empty_line": [
+                    "self"
+                ],
+                "read_to_next_unindented_line": [
+                    "self"
+                ],
+                "peek": [
+                    "self",
+                    "n"
+                ],
+                "is_empty": [
+                    "self"
+                ]
+            },
+            "NumpyDocString": {
+                "__init__": [
+                    "self",
+                    "docstring",
+                    "config"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "val"
+                ],
+                "_is_at_section": [
+                    "self"
+                ],
+                "_strip": [
+                    "self",
+                    "doc"
+                ],
+                "_read_to_next_section": [
+                    "self"
+                ],
+                "_read_sections": [
+                    "self"
+                ],
+                "_parse_param_list": [
+                    "self",
+                    "content"
+                ],
+                "_parse_see_also": [
+                    "self",
+                    "content"
+                ],
+                "_parse_index": [
+                    "self",
+                    "section",
+                    "content"
+                ],
+                "_parse_summary": [
+                    "self"
+                ],
+                "_parse": [
+                    "self"
+                ],
+                "_str_header": [
+                    "self",
+                    "name",
+                    "symbol"
+                ],
+                "_str_indent": [
+                    "self",
+                    "doc",
+                    "indent"
+                ],
+                "_str_signature": [
+                    "self"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "_str_param_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_section": [
+                    "self",
+                    "name"
+                ],
+                "_str_see_also": [
+                    "self",
+                    "func_role"
+                ],
+                "_str_index": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "func_role"
+                ]
+            },
+            "FunctionDoc": {
+                "__init__": [
+                    "self",
+                    "func",
+                    "role",
+                    "doc",
+                    "config"
+                ],
+                "get_func": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "ClassDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "doc",
+                    "modulename",
+                    "func_doc",
+                    "config"
+                ],
+                "methods": [
+                    "self"
+                ],
+                "properties": [
+                    "self"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc.docscrape_sphinx": {
+            "get_doc_object": [
+                "obj",
+                "what",
+                "doc",
+                "config"
+            ],
+            "SphinxDocString": {
+                "__init__": [
+                    "self",
+                    "docstring",
+                    "config"
+                ],
+                "load_config": [
+                    "self",
+                    "config"
+                ],
+                "_str_header": [
+                    "self",
+                    "name",
+                    "symbol"
+                ],
+                "_str_field_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_indent": [
+                    "self",
+                    "doc",
+                    "indent"
+                ],
+                "_str_signature": [
+                    "self"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "_str_returns": [
+                    "self"
+                ],
+                "_str_param_list": [
+                    "self",
+                    "name"
+                ],
+                "_obj": [
+                    "self"
+                ],
+                "_str_member_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_section": [
+                    "self",
+                    "name"
+                ],
+                "_str_see_also": [
+                    "self",
+                    "func_role"
+                ],
+                "_str_warnings": [
+                    "self"
+                ],
+                "_str_index": [
+                    "self"
+                ],
+                "_str_references": [
+                    "self"
+                ],
+                "_str_examples": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            },
+            "SphinxFunctionDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "config"
+                ]
+            },
+            "SphinxClassDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "func_doc",
+                    "config"
+                ]
+            },
+            "SphinxObjDoc": {
+                "__init__": [
+                    "self",
+                    "obj",
+                    "doc",
+                    "config"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc.numpydoc": {
+            "mangle_docstrings": [
+                "app",
+                "what",
+                "name",
+                "obj",
+                "options",
+                "lines",
+                "reference_offset"
+            ],
+            "mangle_signature": [
+                "app",
+                "what",
+                "name",
+                "obj",
+                "options",
+                "sig",
+                "retann"
+            ],
+            "setup": [
+                "app",
+                "get_doc_object_"
+            ],
+            "wrap_mangling_directive": [
+                "base_directive",
+                "objtype"
+            ],
+            "ManglingDomainBase": {
+                "__init__": [
+                    "self"
+                ],
+                "wrap_mangling_directives": [
+                    "self"
+                ]
+            },
+            "NumpyPythonDomain": {},
+            "NumpyCDomain": {}
+        },
+        "doc.sphinxext.numpydoc.compiler_unparse": {
+            "unparse": [
+                "ast",
+                "single_line_functions"
+            ],
+            "UnparseCompilerAst": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "file",
+                    "single_line_functions"
+                ],
+                "_fill": [
+                    "self",
+                    "text"
+                ],
+                "_write": [
+                    "self",
+                    "text"
+                ],
+                "_enter": [
+                    "self"
+                ],
+                "_leave": [
+                    "self"
+                ],
+                "_dispatch": [
+                    "self",
+                    "tree"
+                ],
+                "_Add": [
+                    "self",
+                    "t"
+                ],
+                "_And": [
+                    "self",
+                    "t"
+                ],
+                "_AssAttr": [
+                    "self",
+                    "t"
+                ],
+                "_Assign": [
+                    "self",
+                    "t"
+                ],
+                "_AssName": [
+                    "self",
+                    "t"
+                ],
+                "_AssTuple": [
+                    "self",
+                    "t"
+                ],
+                "_AugAssign": [
+                    "self",
+                    "t"
+                ],
+                "_Bitand": [
+                    "self",
+                    "t"
+                ],
+                "_Bitor": [
+                    "self",
+                    "t"
+                ],
+                "_CallFunc": [
+                    "self",
+                    "t"
+                ],
+                "_Compare": [
+                    "self",
+                    "t"
+                ],
+                "_Const": [
+                    "self",
+                    "t"
+                ],
+                "_Decorators": [
+                    "self",
+                    "t"
+                ],
+                "_Dict": [
+                    "self",
+                    "t"
+                ],
+                "_Discard": [
+                    "self",
+                    "t"
+                ],
+                "_Div": [
+                    "self",
+                    "t"
+                ],
+                "_Ellipsis": [
+                    "self",
+                    "t"
+                ],
+                "_From": [
+                    "self",
+                    "t"
+                ],
+                "_Function": [
+                    "self",
+                    "t"
+                ],
+                "_Getattr": [
+                    "self",
+                    "t"
+                ],
+                "_If": [
+                    "self",
+                    "t"
+                ],
+                "_IfExp": [
+                    "self",
+                    "t"
+                ],
+                "_Import": [
+                    "self",
+                    "t"
+                ],
+                "_Keyword": [
+                    "self",
+                    "t"
+                ],
+                "_List": [
+                    "self",
+                    "t"
+                ],
+                "_Module": [
+                    "self",
+                    "t"
+                ],
+                "_Mul": [
+                    "self",
+                    "t"
+                ],
+                "_Name": [
+                    "self",
+                    "t"
+                ],
+                "_NoneType": [
+                    "self",
+                    "t"
+                ],
+                "_Not": [
+                    "self",
+                    "t"
+                ],
+                "_Or": [
+                    "self",
+                    "t"
+                ],
+                "_Pass": [
+                    "self",
+                    "t"
+                ],
+                "_Printnl": [
+                    "self",
+                    "t"
+                ],
+                "_Power": [
+                    "self",
+                    "t"
+                ],
+                "_Return": [
+                    "self",
+                    "t"
+                ],
+                "_Slice": [
+                    "self",
+                    "t"
+                ],
+                "_Sliceobj": [
+                    "self",
+                    "t"
+                ],
+                "_Stmt": [
+                    "self",
+                    "tree"
+                ],
+                "_Sub": [
+                    "self",
+                    "t"
+                ],
+                "_Subscript": [
+                    "self",
+                    "t"
+                ],
+                "_TryExcept": [
+                    "self",
+                    "t"
+                ],
+                "_Tuple": [
+                    "self",
+                    "t"
+                ],
+                "_UnaryAdd": [
+                    "self",
+                    "t"
+                ],
+                "_UnarySub": [
+                    "self",
+                    "t"
+                ],
+                "_With": [
+                    "self",
+                    "t"
+                ],
+                "_int": [
+                    "self",
+                    "t"
+                ],
+                "__binary_op": [
+                    "self",
+                    "t",
+                    "symbol"
+                ],
+                "_float": [
+                    "self",
+                    "t"
+                ],
+                "_str": [
+                    "self",
+                    "t"
+                ],
+                "_tuple": [
+                    "self",
+                    "t"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc.comment_eater": {
+            "strip_comment_marker": [
+                "text"
+            ],
+            "get_class_traits": [
+                "klass"
+            ],
+            "Comment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno",
+                    "text"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "NonComment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "CommentBlocker": {
+                "__init__": [
+                    "self"
+                ],
+                "process_file": [
+                    "self",
+                    "file"
+                ],
+                "process_token": [
+                    "self",
+                    "kind",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "new_noncomment": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "new_comment": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "make_index": [
+                    "self"
+                ],
+                "search_for_comment": [
+                    "self",
+                    "lineno",
+                    "default"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc.linkcode": {
+            "doctree_read": [
+                "app",
+                "doctree"
+            ],
+            "setup": [
+                "app"
+            ],
+            "LinkcodeError": {}
+        },
+        "doc.sphinxext.numpydoc.plot_directive": {
+            "setup": [
+                "app"
+            ],
+            "plot_directive": [
+                "name",
+                "arguments",
+                "options",
+                "content",
+                "lineno",
+                "content_offset",
+                "block_text",
+                "state",
+                "state_machine"
+            ],
+            "_option_boolean": [
+                "arg"
+            ],
+            "_option_format": [
+                "arg"
+            ],
+            "_option_align": [
+                "arg"
+            ],
+            "run": [
+                "arguments",
+                "content",
+                "options",
+                "state_machine",
+                "state",
+                "lineno"
+            ],
+            "contains_doctest": [
+                "text"
+            ],
+            "unescape_doctest": [
+                "text"
+            ],
+            "split_code_at_show": [
+                "text"
+            ],
+            "run_code": [
+                "code",
+                "code_path",
+                "ns"
+            ],
+            "out_of_date": [
+                "original",
+                "derived"
+            ],
+            "makefig": [
+                "code",
+                "code_path",
+                "output_dir",
+                "output_base",
+                "config"
+            ],
+            "ImageFile": {
+                "__init__": [
+                    "self",
+                    "basename",
+                    "dirname"
+                ],
+                "filename": [
+                    "self",
+                    "format"
+                ],
+                "filenames": [
+                    "self"
+                ]
+            },
+            "PlotError": {}
+        },
+        "doc.sphinxext.numpydoc.traitsdoc": {
+            "looks_like_issubclass": [
+                "obj",
+                "classname"
+            ],
+            "get_doc_object": [
+                "obj",
+                "what",
+                "config"
+            ],
+            "setup": [
+                "app"
+            ],
+            "SphinxTraitsDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "modulename",
+                    "func_doc"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            }
+        },
+        "doc.sphinxext.numpydoc": {},
+        "doc.sphinxext.ipython_sphinxext.ipython_directive": {
+            "block_parser": [
+                "part",
+                "rgxin",
+                "rgxout",
+                "fmtin",
+                "fmtout"
+            ],
+            "setup": [
+                "app"
+            ],
+            "test": [],
+            "DecodingStringIO": {
+                "__init__": [
+                    "self",
+                    "buf",
+                    "encodings"
+                ],
+                "set_encodings": [
+                    "self",
+                    "encodings"
+                ],
+                "write": [
+                    "self",
+                    "data"
+                ]
+            },
+            "EmbeddedSphinxShell": {
+                "__init__": [
+                    "self",
+                    "exec_lines",
+                    "state"
+                ],
+                "clear_cout": [
+                    "self"
+                ],
+                "process_input_line": [
+                    "self",
+                    "line",
+                    "store_history"
+                ],
+                "process_image": [
+                    "self",
+                    "decorator"
+                ],
+                "process_input": [
+                    "self",
+                    "data",
+                    "input_prompt",
+                    "lineno"
+                ],
+                "process_output": [
+                    "self",
+                    "data",
+                    "output_prompt",
+                    "input_lines",
+                    "output",
+                    "is_doctest",
+                    "decorator",
+                    "image_file"
+                ],
+                "process_comment": [
+                    "self",
+                    "data"
+                ],
+                "save_image": [
+                    "self",
+                    "image_file"
+                ],
+                "process_block": [
+                    "self",
+                    "block"
+                ],
+                "ensure_pyplot": [
+                    "self"
+                ],
+                "process_pure_python": [
+                    "self",
+                    "content"
+                ],
+                "custom_doctest": [
+                    "self",
+                    "decorator",
+                    "input_lines",
+                    "found",
+                    "submitted"
+                ]
+            },
+            "IPythonDirective": {
+                "get_config_options": [
+                    "self"
+                ],
+                "setup": [
+                    "self"
+                ],
+                "teardown": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "doc.sphinxext.ipython_sphinxext.ipython_console_highlighting": {
+            "setup": [
+                "app"
+            ],
+            "IPythonConsoleLexer": {
+                "get_tokens_unprocessed": [
+                    "self",
+                    "text"
+                ]
+            }
+        },
+        "doc.sphinxext.ipython_sphinxext": {}
     }
 }
