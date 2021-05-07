@@ -1,77 +1,700 @@
 {
     "v0.8.15": {
-        "lib.spack.external.ordereddict": {
-            "OrderedDict": {
-                "__init__": [
-                    "self"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value",
-                    "dict_setitem"
-                ],
-                "__delitem__": [
-                    "self",
-                    "key",
-                    "dict_delitem"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__reversed__": [
-                    "self"
-                ],
-                "clear": [
-                    "self"
-                ],
-                "popitem": [
-                    "self",
-                    "last"
-                ],
-                "keys": [
-                    "self"
-                ],
-                "values": [
-                    "self"
-                ],
-                "items": [
-                    "self"
-                ],
-                "iterkeys": [
-                    "self"
-                ],
-                "itervalues": [
-                    "self"
-                ],
-                "iteritems": [
-                    "self"
-                ],
-                "update": [],
-                "pop": [
-                    "self",
-                    "key",
-                    "default"
-                ],
-                "setdefault": [
-                    "self",
-                    "key",
-                    "default"
-                ],
-                "__repr__": [
-                    "self",
-                    "_repr_running"
-                ],
-                "__reduce__": [
+        "lib.spack.llnl": {},
+        "lib.spack.llnl.util.lang": {
+            "index_by": [
+                "objects"
+            ],
+            "partition_list": [
+                "elements",
+                "predicate"
+            ],
+            "caller_locals": [],
+            "get_calling_package_name": [],
+            "attr_required": [
+                "obj",
+                "attr_name"
+            ],
+            "attr_setdefault": [
+                "obj",
+                "name",
+                "value"
+            ],
+            "has_method": [
+                "cls",
+                "name"
+            ],
+            "memoized": [
+                "obj"
+            ],
+            "list_modules": [
+                "directory"
+            ],
+            "key_ordering": [
+                "cls"
+            ],
+            "in_function": [
+                "function_name"
+            ],
+            "check_kwargs": [
+                "kwargs",
+                "fun"
+            ],
+            "match_predicate": [],
+            "HashableMap": {
+                "_cmp_key": [
                     "self"
                 ],
                 "copy": [
                     "self"
+                ]
+            },
+            "RequiredAttributeError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            }
+        },
+        "lib.spack.llnl.util.link_tree": {
+            "traverse_tree": [
+                "source_root",
+                "dest_root",
+                "rel_path"
+            ],
+            "LinkTree": {
+                "__init__": [
+                    "self",
+                    "source_root"
                 ],
-                "fromkeys": [
+                "find_conflict": [
+                    "self",
+                    "dest_root"
+                ],
+                "merge": [
+                    "self",
+                    "dest_root"
+                ],
+                "unmerge": [
+                    "self",
+                    "dest_root"
+                ]
+            }
+        },
+        "lib.spack.llnl.util": {},
+        "lib.spack.llnl.util.tty.color": {
+            "colorize": [
+                "string"
+            ],
+            "clen": [
+                "string"
+            ],
+            "cwrite": [
+                "string",
+                "stream",
+                "color"
+            ],
+            "cprint": [
+                "string",
+                "stream",
+                "color"
+            ],
+            "cescape": [
+                "string"
+            ],
+            "ColorParseError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            },
+            "match_to_ansi": {
+                "__init__": [
+                    "self",
+                    "color"
+                ],
+                "escape": [
+                    "self",
+                    "s"
+                ],
+                "__call__": [
+                    "self",
+                    "match"
+                ]
+            },
+            "ColorStream": {
+                "__init__": [
+                    "self",
+                    "stream",
+                    "color"
+                ],
+                "write": [
+                    "self",
+                    "string"
+                ],
+                "writelines": [
+                    "self",
+                    "sequence"
+                ]
+            }
+        },
+        "lib.spack.llnl.util.tty.colify": {
+            "config_variable_cols": [
+                "elts",
+                "console_width",
+                "padding",
+                "cols"
+            ],
+            "config_uniform_cols": [
+                "elts",
+                "console_width",
+                "padding",
+                "cols"
+            ],
+            "colify": [
+                "elts"
+            ],
+            "colify_table": [
+                "table"
+            ],
+            "colified": [
+                "elts"
+            ],
+            "ColumnConfig": {
+                "__init__": [
+                    "self",
+                    "cols"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.docs.exts.sphinxcontrib.programoutput": {
+            "_slice": [
+                "value"
+            ],
+            "run_programs": [
+                "app",
+                "doctree"
+            ],
+            "init_cache": [
+                "app"
+            ],
+            "setup": [
+                "app"
+            ],
+            "program_output": {},
+            "ProgramOutputDirective": {
+                "run": [
+                    "self"
+                ]
+            },
+            "Command": {
+                "__new__": [
                     "cls",
-                    "iterable",
-                    "value"
+                    "command",
+                    "shell",
+                    "hide_standard_error",
+                    "working_directory"
+                ],
+                "from_program_output_node": [
+                    "cls",
+                    "node"
+                ],
+                "execute": [
+                    "self"
+                ],
+                "get_output": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "ProgramOutputCache": {
+                "__missing__": [
+                    "self",
+                    "command"
+                ]
+            }
+        },
+        "lib.spack.docs.exts.sphinxcontrib": {},
+        "lib.spack.docs._themes.sphinx_rtd_theme": {
+            "get_html_theme_path": []
+        },
+        "lib.spack.spack.error": {
+            "SpackError": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "long_message"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "UnsupportedPlatformError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            },
+            "NoNetworkConnectionError": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "url"
+                ]
+            }
+        },
+        "lib.spack.spack.multimethod": {
+            "SpecMultiMethod": {
+                "__init__": [
+                    "self",
+                    "default"
+                ],
+                "register": [
+                    "self",
+                    "spec",
+                    "method"
+                ],
+                "__get__": [
+                    "self",
+                    "obj",
+                    "objtype"
+                ],
+                "__call__": [
+                    "self",
+                    "package_self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "when": {
+                "__init__": [
+                    "self",
+                    "spec"
+                ],
+                "__call__": [
+                    "self",
+                    "method"
+                ]
+            },
+            "MultiMethodError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            },
+            "NoSuchMethodError": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "method_name",
+                    "spec",
+                    "possible_specs"
+                ]
+            }
+        },
+        "lib.spack.spack.modules": {
+            "print_help": [],
+            "EnvModule": {
+                "__init__": [
+                    "self",
+                    "spec"
+                ],
+                "paths": [
+                    "self"
+                ],
+                "write": [
+                    "self"
+                ],
+                "_write": [
+                    "self",
+                    "stream"
+                ],
+                "file_name": [
+                    "self"
+                ],
+                "use_name": [
+                    "self"
+                ],
+                "remove": [
+                    "self"
+                ]
+            },
+            "Dotkit": {
+                "file_name": [
+                    "self"
+                ],
+                "use_name": [
+                    "self"
+                ],
+                "_write": [
+                    "self",
+                    "dk_file"
+                ]
+            },
+            "TclModule": {
+                "file_name": [
+                    "self"
+                ],
+                "use_name": [
+                    "self"
+                ],
+                "_write": [
+                    "self",
+                    "m_file"
+                ]
+            }
+        },
+        "lib.spack.spack.fetch_strategy": {
+            "_needs_stage": [
+                "fun"
+            ],
+            "from_url": [
+                "url"
+            ],
+            "args_are_for": [
+                "args",
+                "fetcher"
+            ],
+            "for_package_version": [
+                "pkg",
+                "version"
+            ],
+            "FetchStrategy": {
+                "__init__": [
+                    "self"
+                ],
+                "set_stage": [
+                    "self",
+                    "stage"
+                ],
+                "fetch": [
+                    "self"
+                ],
+                "check": [
+                    "self"
+                ],
+                "expand": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "matches": [
+                    "cls",
+                    "args"
+                ]
+            },
+            "URLFetchStrategy": {
+                "__init__": [
+                    "self",
+                    "url",
+                    "digest"
+                ],
+                "fetch": [
+                    "self"
+                ],
+                "archive_file": [
+                    "self"
+                ],
+                "expand": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "check": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "VCSFetchStrategy": {
+                "__init__": [
+                    "self",
+                    "name"
+                ],
+                "check": [
+                    "self"
+                ],
+                "expand": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "GitFetchStrategy": {
+                "__init__": [
+                    "self"
+                ],
+                "git_version": [
+                    "self"
+                ],
+                "git": [
+                    "self"
+                ],
+                "fetch": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "SvnFetchStrategy": {
+                "__init__": [
+                    "self"
+                ],
+                "svn": [
+                    "self"
+                ],
+                "fetch": [
+                    "self"
+                ],
+                "_remove_untracked_files": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "HgFetchStrategy": {
+                "__init__": [
+                    "self"
+                ],
+                "hg": [
+                    "self"
+                ],
+                "fetch": [
+                    "self"
+                ],
+                "archive": [
+                    "self",
+                    "destination"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "FetchError": {
+                "__init__": [
+                    "self",
+                    "msg",
+                    "long_msg"
+                ]
+            },
+            "FailedDownloadError": {
+                "__init__": [
+                    "self",
+                    "url",
+                    "msg"
+                ]
+            },
+            "NoArchiveFileError": {
+                "__init__": [
+                    "self",
+                    "msg",
+                    "long_msg"
+                ]
+            },
+            "NoDigestError": {
+                "__init__": [
+                    "self",
+                    "msg",
+                    "long_msg"
+                ]
+            },
+            "InvalidArgsError": {
+                "__init__": [
+                    "self",
+                    "pkg",
+                    "version"
+                ]
+            },
+            "ChecksumError": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "long_msg"
+                ]
+            },
+            "NoStageError": {
+                "__init__": [
+                    "self",
+                    "method"
+                ]
+            }
+        },
+        "lib.spack.spack.graph": {
+            "topological_sort": [
+                "spec"
+            ],
+            "find": [
+                "seq",
+                "predicate"
+            ],
+            "graph_ascii": [
+                "spec"
+            ],
+            "graph_dot": [],
+            "AsciiGraph": {
+                "__init__": [
+                    "self"
+                ],
+                "_indent": [
+                    "self"
+                ],
+                "_write_edge": [
+                    "self",
+                    "string",
+                    "index",
+                    "sub"
+                ],
+                "_connect_deps": [
+                    "self",
+                    "i",
+                    "deps",
+                    "label"
+                ],
+                "_set_state": [
+                    "self",
+                    "state",
+                    "index",
+                    "label"
+                ],
+                "_back_edge_line": [
+                    "self",
+                    "prev_ends",
+                    "end",
+                    "start",
+                    "collapse",
+                    "label"
+                ],
+                "_node_line": [
+                    "self",
+                    "index",
+                    "name"
+                ],
+                "_collapse_line": [
+                    "self",
+                    "index"
+                ],
+                "_merge_right_line": [
+                    "self",
+                    "index"
+                ],
+                "_expand_right_line": [
+                    "self",
+                    "index"
+                ],
+                "write": [
+                    "self",
+                    "spec"
+                ]
+            }
+        },
+        "lib.spack.spack.version": {
+            "int_if_int": [
+                "string"
+            ],
+            "coerce_versions": [
+                "a",
+                "b"
+            ],
+            "coerced": [
+                "method"
+            ],
+            "_string_to_version": [
+                "string"
+            ],
+            "ver": [
+                "obj"
+            ],
+            "Version": {
+                "__init__": [
+                    "self",
+                    "string"
+                ],
+                "up_to": [
+                    "self",
+                    "index"
+                ],
+                "lowest": [
+                    "self"
+                ],
+                "highest": [
+                    "self"
+                ],
+                "satisfies": [
+                    "self",
+                    "other"
+                ],
+                "wildcard": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "idx"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "concrete": [
+                    "self"
+                ],
+                "__lt__": [
+                    "self",
+                    "other"
                 ],
                 "__eq__": [
                     "self",
@@ -81,20 +704,1748 @@
                     "self",
                     "other"
                 ],
-                "viewkeys": [
+                "__hash__": [
                     "self"
                 ],
-                "viewvalues": [
+                "__contains__": [
+                    "self",
+                    "other"
+                ],
+                "is_predecessor": [
+                    "self",
+                    "other"
+                ],
+                "is_successor": [
+                    "self",
+                    "other"
+                ],
+                "overlaps": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ]
+            },
+            "VersionRange": {
+                "__init__": [
+                    "self",
+                    "start",
+                    "end"
+                ],
+                "lowest": [
                     "self"
                 ],
-                "viewitems": [
+                "highest": [
+                    "self"
+                ],
+                "__lt__": [
+                    "self",
+                    "other"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "__ne__": [
+                    "self",
+                    "other"
+                ],
+                "concrete": [
+                    "self"
+                ],
+                "__contains__": [
+                    "self",
+                    "other"
+                ],
+                "satisfies": [
+                    "self",
+                    "other"
+                ],
+                "overlaps": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "VersionList": {
+                "__init__": [
+                    "self",
+                    "vlist"
+                ],
+                "add": [
+                    "self",
+                    "version"
+                ],
+                "concrete": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "lowest": [
+                    "self"
+                ],
+                "highest": [
+                    "self"
+                ],
+                "overlaps": [
+                    "self",
+                    "other"
+                ],
+                "satisfies": [
+                    "self",
+                    "other"
+                ],
+                "update": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "intersect": [
+                    "self",
+                    "other"
+                ],
+                "__contains__": [
+                    "self",
+                    "other"
+                ],
+                "__getitem__": [
+                    "self",
+                    "index"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__reversed__": [
+                    "self"
+                ],
+                "__len__": [
+                    "self"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "__ne__": [
+                    "self",
+                    "other"
+                ],
+                "__lt__": [
+                    "self",
+                    "other"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
                     "self"
                 ]
             }
         },
-        "lib.spack.external.functools": {
-            "total_ordering": [
-                "cls"
+        "lib.spack.spack.architecture": {
+            "get_sys_type_from_spack_globals": [],
+            "get_sys_type_from_environment": [],
+            "get_mac_sys_type": [],
+            "sys_type": [],
+            "InvalidSysTypeError": {
+                "__init__": [
+                    "self",
+                    "sys_type"
+                ]
+            },
+            "NoSysTypeError": {
+                "__init__": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.virtual": {
+            "ProviderIndex": {
+                "__init__": [
+                    "self",
+                    "specs"
+                ],
+                "update": [
+                    "self",
+                    "spec"
+                ],
+                "providers_for": [
+                    "self"
+                ],
+                "_cross_provider_maps": [
+                    "self",
+                    "lmap",
+                    "rmap"
+                ],
+                "__contains__": [
+                    "self",
+                    "name"
+                ],
+                "satisfies": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "lib.spack.spack.parse": {
+            "Token": {
+                "__init__": [
+                    "self",
+                    "type",
+                    "value",
+                    "start",
+                    "end"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "is_a": [
+                    "self",
+                    "type"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Lexer": {
+                "__init__": [
+                    "self",
+                    "lexicon"
+                ],
+                "token": [
+                    "self",
+                    "type",
+                    "value"
+                ],
+                "lex": [
+                    "self",
+                    "text"
+                ]
+            },
+            "Parser": {
+                "__init__": [
+                    "self",
+                    "lexer"
+                ],
+                "gettok": [
+                    "self"
+                ],
+                "push_tokens": [
+                    "self",
+                    "iterable"
+                ],
+                "accept": [
+                    "self",
+                    "id"
+                ],
+                "next_token_error": [
+                    "self",
+                    "message"
+                ],
+                "last_token_error": [
+                    "self",
+                    "message"
+                ],
+                "unexpected_token": [
+                    "self"
+                ],
+                "expect": [
+                    "self",
+                    "id"
+                ],
+                "setup": [
+                    "self",
+                    "text"
+                ],
+                "parse": [
+                    "self",
+                    "text"
+                ]
+            },
+            "ParseError": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "string",
+                    "pos"
+                ]
+            },
+            "LexError": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "string",
+                    "pos"
+                ]
+            }
+        },
+        "lib.spack.spack": {},
+        "lib.spack.spack.relations": {
+            "version": [
+                "ver",
+                "checksum"
+            ],
+            "depends_on": [],
+            "extends": [
+                "spec"
+            ],
+            "provides": [],
+            "patch": [
+                "url_or_filename"
+            ],
+            "conflicts": [],
+            "RelationError": {
+                "__init__": [
+                    "self",
+                    "relation",
+                    "message"
+                ]
+            },
+            "ScopeError": {
+                "__init__": [
+                    "self",
+                    "relation"
+                ]
+            },
+            "CircularReferenceError": {
+                "__init__": [
+                    "self",
+                    "relation",
+                    "package"
+                ]
+            }
+        },
+        "lib.spack.spack.patch": {
+            "Patch": {
+                "__init__": [
+                    "self",
+                    "pkg_name",
+                    "path_or_url",
+                    "level"
+                ],
+                "apply": [
+                    "self",
+                    "stage"
+                ]
+            },
+            "NoSuchPatchFileError": {
+                "__init__": [
+                    "self",
+                    "package",
+                    "path"
+                ]
+            }
+        },
+        "lib.spack.spack.concretize": {
+            "DefaultConcretizer": {
+                "concretize_version": [
+                    "self",
+                    "spec"
+                ],
+                "concretize_architecture": [
+                    "self",
+                    "spec"
+                ],
+                "concretize_compiler": [
+                    "self",
+                    "spec"
+                ],
+                "choose_provider": [
+                    "self",
+                    "spec",
+                    "providers"
+                ]
+            },
+            "UnavailableCompilerVersionError": {
+                "__init__": [
+                    "self",
+                    "compiler_spec"
+                ]
+            },
+            "NoValidVersionError": {
+                "__init__": [
+                    "self",
+                    "spec"
+                ]
+            }
+        },
+        "lib.spack.spack.cmd.bootstrap": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "get_origin_url": [],
+            "bootstrap": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.restage": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "restage": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.clean": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "clean": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.graph": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "graph": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.providers": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "providers": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.unuse": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "unuse": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.doc": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "doc": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.cd": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "cd": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.activate": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "activate": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.dependents": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "dependents": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.load": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "load": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.edit": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "edit": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.install": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "install": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.fetch": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "fetch": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.help": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "help": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.use": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "use": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.unload": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "unload": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.list": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "list": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.extensions": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "extensions": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.purge": {
+            "purge": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.patch": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "patch": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.compilers": {
+            "compilers": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.stage": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "stage": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.python": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "python": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.cmd.deactivate": {
+            "setup_parser": [
+                "subparser"
+            ],
+            "deactivate": [
+                "parser",
+                "args"
+            ]
+        },
+        "lib.spack.spack.test.multimethod": {
+            "MultiMethodTest": {
+                "test_no_version_match": [
+                    "self"
+                ],
+                "test_one_version_match": [
+                    "self"
+                ],
+                "test_version_overlap": [
+                    "self"
+                ],
+                "test_mpi_version": [
+                    "self"
+                ],
+                "test_undefined_mpi_version": [
+                    "self"
+                ],
+                "test_default_works": [
+                    "self"
+                ],
+                "test_architecture_match": [
+                    "self"
+                ],
+                "test_dependency_match": [
+                    "self"
+                ],
+                "test_virtual_dep_match": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.url_substitution": {
+            "PackageSanityTest": {
+                "test_hypre_url_substitution": [
+                    "self"
+                ],
+                "test_otf2_url_substitution": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.mirror": {
+            "MirrorTest": {
+                "setUp": [
+                    "self"
+                ],
+                "set_up_package": [
+                    "self",
+                    "name",
+                    "MockRepoClass",
+                    "url_attr"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "check_mirror": [
+                    "self"
+                ],
+                "test_git_mirror": [
+                    "self"
+                ],
+                "test_svn_mirror": [
+                    "self"
+                ],
+                "test_hg_mirror": [
+                    "self"
+                ],
+                "test_url_mirror": [
+                    "self"
+                ],
+                "test_all_mirror": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.mock_packages_test": {
+            "set_pkg_dep": [
+                "pkg",
+                "spec"
+            ],
+            "MockPackagesTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.config": {
+            "ConfigTest": {
+                "setUp": [
+                    "cls"
+                ],
+                "tearDown": [
+                    "cls"
+                ],
+                "get_path": [
+                    "self"
+                ],
+                "test_write_key": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.spec_syntax": {
+            "SpecSyntaxTest": {
+                "check_parse": [
+                    "self",
+                    "expected",
+                    "spec"
+                ],
+                "check_lex": [
+                    "self",
+                    "tokens",
+                    "spec"
+                ],
+                "test_package_names": [
+                    "self"
+                ],
+                "test_simple_dependence": [
+                    "self"
+                ],
+                "test_dependencies_with_versions": [
+                    "self"
+                ],
+                "test_full_specs": [
+                    "self"
+                ],
+                "test_canonicalize": [
+                    "self"
+                ],
+                "test_parse_errors": [
+                    "self"
+                ],
+                "test_duplicate_variant": [
+                    "self"
+                ],
+                "test_duplicate_depdendence": [
+                    "self"
+                ],
+                "test_duplicate_compiler": [
+                    "self"
+                ],
+                "test_ambiguous": [
+                    "self"
+                ],
+                "test_minimal_spaces": [
+                    "self"
+                ],
+                "test_spaces_between_dependences": [
+                    "self"
+                ],
+                "test_spaces_between_options": [
+                    "self"
+                ],
+                "test_way_too_many_spaces": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.svn_fetch": {
+            "SvnFetchTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "assert_rev": [
+                    "self",
+                    "rev"
+                ],
+                "try_fetch": [
+                    "self",
+                    "rev",
+                    "test_file",
+                    "args"
+                ],
+                "test_fetch_default": [
+                    "self"
+                ],
+                "test_fetch_r1": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.spec_semantics": {
+            "SpecSematicsTest": {
+                "check_satisfies": [
+                    "self",
+                    "spec",
+                    "anon_spec"
+                ],
+                "check_unsatisfiable": [
+                    "self",
+                    "spec",
+                    "anon_spec"
+                ],
+                "check_constrain": [
+                    "self",
+                    "expected",
+                    "spec",
+                    "constraint"
+                ],
+                "check_invalid_constraint": [
+                    "self",
+                    "spec",
+                    "constraint"
+                ],
+                "test_satisfies": [
+                    "self"
+                ],
+                "test_satisfies_compiler": [
+                    "self"
+                ],
+                "test_satisfies_compiler_version": [
+                    "self"
+                ],
+                "test_satisfies_architecture": [
+                    "self"
+                ],
+                "test_satisfies_dependencies": [
+                    "self"
+                ],
+                "test_satisfies_dependency_versions": [
+                    "self"
+                ],
+                "test_satisfies_virtual_dependencies": [
+                    "self"
+                ],
+                "test_satisfies_virtual_dependency_versions": [
+                    "self"
+                ],
+                "test_constrain": [
+                    "self"
+                ],
+                "test_invalid_constraint": [
+                    "self"
+                ],
+                "test_compiler_satisfies": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.packages": {
+            "PackagesTest": {
+                "test_load_package": [
+                    "self"
+                ],
+                "test_package_name": [
+                    "self"
+                ],
+                "test_package_filename": [
+                    "self"
+                ],
+                "test_nonexisting_package_filename": [
+                    "self"
+                ],
+                "test_package_class_names": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.versions": {
+            "VersionsTest": {
+                "assert_ver_lt": [
+                    "self",
+                    "a",
+                    "b"
+                ],
+                "assert_ver_gt": [
+                    "self",
+                    "a",
+                    "b"
+                ],
+                "assert_ver_eq": [
+                    "self",
+                    "a",
+                    "b"
+                ],
+                "assert_in": [
+                    "self",
+                    "needle",
+                    "haystack"
+                ],
+                "assert_not_in": [
+                    "self",
+                    "needle",
+                    "haystack"
+                ],
+                "assert_canonical": [
+                    "self",
+                    "canonical_list",
+                    "version_list"
+                ],
+                "assert_overlaps": [
+                    "self",
+                    "v1",
+                    "v2"
+                ],
+                "assert_no_overlap": [
+                    "self",
+                    "v1",
+                    "v2"
+                ],
+                "assert_satisfies": [
+                    "self",
+                    "v1",
+                    "v2"
+                ],
+                "assert_does_not_satisfy": [
+                    "self",
+                    "v1",
+                    "v2"
+                ],
+                "check_intersection": [
+                    "self",
+                    "expected",
+                    "a",
+                    "b"
+                ],
+                "check_union": [
+                    "self",
+                    "expected",
+                    "a",
+                    "b"
+                ],
+                "test_two_segments": [
+                    "self"
+                ],
+                "test_three_segments": [
+                    "self"
+                ],
+                "test_alpha": [
+                    "self"
+                ],
+                "test_patch": [
+                    "self"
+                ],
+                "test_num_alpha_with_no_separator": [
+                    "self"
+                ],
+                "test_alpha_with_dots": [
+                    "self"
+                ],
+                "test_nums_and_patch": [
+                    "self"
+                ],
+                "test_rc_versions": [
+                    "self"
+                ],
+                "test_alpha_beta": [
+                    "self"
+                ],
+                "test_double_alpha": [
+                    "self"
+                ],
+                "test_padded_numbers": [
+                    "self"
+                ],
+                "test_close_numbers": [
+                    "self"
+                ],
+                "test_date_stamps": [
+                    "self"
+                ],
+                "test_underscores": [
+                    "self"
+                ],
+                "test_rpm_oddities": [
+                    "self"
+                ],
+                "test_version_ranges": [
+                    "self"
+                ],
+                "test_contains": [
+                    "self"
+                ],
+                "test_in_list": [
+                    "self"
+                ],
+                "test_ranges_overlap": [
+                    "self"
+                ],
+                "test_overlap_with_containment": [
+                    "self"
+                ],
+                "test_lists_overlap": [
+                    "self"
+                ],
+                "test_canonicalize_list": [
+                    "self"
+                ],
+                "test_intersection": [
+                    "self"
+                ],
+                "test_intersect_with_containment": [
+                    "self"
+                ],
+                "test_union_with_containment": [
+                    "self"
+                ],
+                "test_basic_version_satisfaction": [
+                    "self"
+                ],
+                "test_basic_version_satisfaction_in_lists": [
+                    "self"
+                ],
+                "test_version_range_satisfaction": [
+                    "self"
+                ],
+                "test_version_range_satisfaction_in_lists": [
+                    "self"
+                ],
+                "test_satisfaction_with_lists": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.directory_layout": {
+            "DirectoryLayoutTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "test_read_and_write_spec": [
+                    "self"
+                ],
+                "test_handle_unknown_package": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.link_tree": {
+            "LinkTreeTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "check_file_link": [
+                    "self",
+                    "filename"
+                ],
+                "check_dir": [
+                    "self",
+                    "filename"
+                ],
+                "test_merge_to_new_directory": [
+                    "self"
+                ],
+                "test_merge_to_existing_directory": [
+                    "self"
+                ],
+                "test_merge_with_empty_directories": [
+                    "self"
+                ],
+                "test_ignore": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.url_extrapolate": {
+            "UrlExtrapolateTest": {
+                "check_url": [
+                    "self",
+                    "base",
+                    "version",
+                    "new_url"
+                ],
+                "test_libelf_version": [
+                    "self"
+                ],
+                "test_libdwarf_version": [
+                    "self"
+                ],
+                "test_dyninst_version": [
+                    "self"
+                ],
+                "test_partial_version_prefix": [
+                    "self"
+                ],
+                "test_scalasca_partial_version": [
+                    "self"
+                ],
+                "test_mpileaks_version": [
+                    "self"
+                ],
+                "test_gcc": [
+                    "self"
+                ],
+                "test_github_raw": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.git_fetch": {
+            "GitFetchTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "assert_rev": [
+                    "self",
+                    "rev"
+                ],
+                "try_fetch": [
+                    "self",
+                    "rev",
+                    "test_file",
+                    "args"
+                ],
+                "test_fetch_master": [
+                    "self"
+                ],
+                "ztest_fetch_branch": [
+                    "self"
+                ],
+                "ztest_fetch_tag": [
+                    "self"
+                ],
+                "ztest_fetch_commit": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.package_sanity": {
+            "PackageSanityTest": {
+                "check_db": [
+                    "self"
+                ],
+                "test_get_all_packages": [
+                    "self"
+                ],
+                "test_get_all_mock_packages": [
+                    "self"
+                ],
+                "test_url_versions": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.url_parse": {
+            "UrlParseTest": {
+                "assert_not_detected": [
+                    "self",
+                    "string"
+                ],
+                "check": [
+                    "self",
+                    "name",
+                    "v",
+                    "string"
+                ],
+                "test_wwwoffle_version": [
+                    "self"
+                ],
+                "test_version_sourceforge_download": [
+                    "self"
+                ],
+                "test_no_version": [
+                    "self"
+                ],
+                "test_version_all_dots": [
+                    "self"
+                ],
+                "test_version_underscore_separator": [
+                    "self"
+                ],
+                "test_boost_version_style": [
+                    "self"
+                ],
+                "test_erlang_version_style": [
+                    "self"
+                ],
+                "test_another_erlang_version_style": [
+                    "self"
+                ],
+                "test_yet_another_erlang_version_style": [
+                    "self"
+                ],
+                "test_p7zip_version_style": [
+                    "self"
+                ],
+                "test_new_github_style": [
+                    "self"
+                ],
+                "test_gloox_beta_style": [
+                    "self"
+                ],
+                "test_sphinx_beta_style": [
+                    "self"
+                ],
+                "test_astyle_verson_style": [
+                    "self"
+                ],
+                "test_version_dos2unix": [
+                    "self"
+                ],
+                "test_version_internal_dash": [
+                    "self"
+                ],
+                "test_version_single_digit": [
+                    "self"
+                ],
+                "test_noseparator_single_digit": [
+                    "self"
+                ],
+                "test_version_developer_that_hates_us_format": [
+                    "self"
+                ],
+                "test_version_regular": [
+                    "self"
+                ],
+                "test_version_github": [
+                    "self"
+                ],
+                "test_version_github_with_high_patch_number": [
+                    "self"
+                ],
+                "test_yet_another_version": [
+                    "self"
+                ],
+                "test_lame_version_style": [
+                    "self"
+                ],
+                "test_ruby_version_style": [
+                    "self"
+                ],
+                "test_omega_version_style": [
+                    "self"
+                ],
+                "test_rc_style": [
+                    "self"
+                ],
+                "test_dash_rc_style": [
+                    "self"
+                ],
+                "test_angband_version_style": [
+                    "self"
+                ],
+                "test_stable_suffix": [
+                    "self"
+                ],
+                "test_debian_style_1": [
+                    "self"
+                ],
+                "test_debian_style_2": [
+                    "self"
+                ],
+                "test_imagemagick_style": [
+                    "self"
+                ],
+                "test_dash_version_dash_style": [
+                    "self"
+                ],
+                "test_apache_version_style": [
+                    "self"
+                ],
+                "test_jpeg_style": [
+                    "self"
+                ],
+                "test_pypy_version": [
+                    "self"
+                ],
+                "test_openssl_version": [
+                    "self"
+                ],
+                "test_xaw3d_version": [
+                    "self"
+                ],
+                "test_fann_version": [
+                    "self"
+                ],
+                "test_iges_version": [
+                    "self"
+                ],
+                "test_haxe_version": [
+                    "self"
+                ],
+                "test_imap_version": [
+                    "self"
+                ],
+                "test_suite3270_version": [
+                    "self"
+                ],
+                "test_synergy_version": [
+                    "self"
+                ],
+                "test_mvapich2_19_version": [
+                    "self"
+                ],
+                "test_hdf5_version": [
+                    "self"
+                ],
+                "test_scalasca_version": [
+                    "self"
+                ],
+                "test_mpileaks_version": [
+                    "self"
+                ],
+                "test_gcc_version": [
+                    "self"
+                ],
+                "test_gcc_version_precedence": [
+                    "self"
+                ],
+                "test_github_raw_url": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.concretize": {
+            "ConcretizeTest": {
+                "check_spec": [
+                    "self",
+                    "abstract",
+                    "concrete"
+                ],
+                "check_concretize": [
+                    "self",
+                    "abstract_spec"
+                ],
+                "test_concretize_no_deps": [
+                    "self"
+                ],
+                "test_concretize_dag": [
+                    "self"
+                ],
+                "test_concretize_with_virtual": [
+                    "self"
+                ],
+                "test_concretize_with_restricted_virtual": [
+                    "self"
+                ],
+                "test_concretize_with_provides_when": [
+                    "self"
+                ],
+                "test_virtual_is_fully_expanded_for_callpath": [
+                    "self"
+                ],
+                "test_virtual_is_fully_expanded_for_mpileaks": [
+                    "self"
+                ],
+                "test_my_dep_depends_on_provider_of_my_virtual_dep": [
+                    "self"
+                ],
+                "test_compiler_inheritance": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.stage": {
+            "use_tmp": [
+                "use_tmp"
+            ],
+            "StageTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "get_stage_path": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_setup": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_fetch": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_expand_archive": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_chdir": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_chdir_to_source": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "check_destroy": [
+                    "self",
+                    "stage",
+                    "stage_name"
+                ],
+                "test_setup_and_destroy_name_with_tmp": [
+                    "self"
+                ],
+                "test_setup_and_destroy_name_without_tmp": [
+                    "self"
+                ],
+                "test_setup_and_destroy_no_name_with_tmp": [
+                    "self"
+                ],
+                "test_setup_and_destroy_no_name_without_tmp": [
+                    "self"
+                ],
+                "test_chdir": [
+                    "self"
+                ],
+                "test_fetch": [
+                    "self"
+                ],
+                "test_expand_archive": [
+                    "self"
+                ],
+                "test_restage": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.hg_fetch": {
+            "HgFetchTest": {
+                "setUp": [
+                    "self"
+                ],
+                "tearDown": [
+                    "self"
+                ],
+                "try_fetch": [
+                    "self",
+                    "rev",
+                    "test_file",
+                    "args"
+                ],
+                "test_fetch_default": [
+                    "self"
+                ],
+                "test_fetch_rev0": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.test.cc": {
+            "CompilerTest": {
+                "setUp": [
+                    "self"
+                ],
+                "check_cc": [
+                    "self",
+                    "command",
+                    "args",
+                    "expected"
+                ],
+                "check_ld": [
+                    "self",
+                    "command",
+                    "args",
+                    "expected"
+                ],
+                "check_cpp": [
+                    "self",
+                    "command",
+                    "args",
+                    "expected"
+                ],
+                "test_vcheck_mode": [
+                    "self"
+                ],
+                "test_cpp_mode": [
+                    "self"
+                ],
+                "test_ccld_mode": [
+                    "self"
+                ],
+                "test_ld_mode": [
+                    "self"
+                ],
+                "test_includes": [
+                    "self"
+                ],
+                "test_libraries": [
+                    "self"
+                ],
+                "test_libs": [
+                    "self"
+                ],
+                "test_rpaths": [
+                    "self"
+                ],
+                "test_other_args": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.compilers.pgi": {
+            "Pgi": {
+                "default_version": [
+                    "cls",
+                    "comp"
+                ]
+            }
+        },
+        "lib.spack.spack.compilers.clang": {
+            "Clang": {
+                "default_version": [
+                    "self",
+                    "comp"
+                ]
+            }
+        },
+        "lib.spack.spack.compilers.intel": {
+            "Intel": {
+                "cxx11_flag": [
+                    "self"
+                ],
+                "default_version": [
+                    "cls",
+                    "comp"
+                ]
+            }
+        },
+        "lib.spack.spack.compilers": {
+            "_auto_compiler_spec": [
+                "function"
+            ],
+            "_get_config": [],
+            "default_compiler": [],
+            "find_compilers": [],
+            "add_compilers_to_config": [
+                "scope"
+            ],
+            "add_compiler": [
+                "config",
+                "compiler"
+            ],
+            "supported_compilers": [],
+            "supported": [
+                "compiler_spec"
+            ],
+            "all_compilers": [],
+            "find": [
+                "compiler_spec"
+            ],
+            "compilers_for_spec": [
+                "compiler_spec"
+            ],
+            "compiler_for_spec": [
+                "compiler_spec"
+            ],
+            "class_for_compiler_name": [
+                "compiler_name"
+            ],
+            "all_compiler_types": [],
+            "InvalidCompilerConfigurationError": {
+                "__init__": [
+                    "self",
+                    "compiler_spec"
+                ]
+            },
+            "NoCompilersError": {
+                "__init__": [
+                    "self"
+                ]
+            }
+        },
+        "lib.spack.spack.compilers.gcc": {
+            "Gcc": {
+                "cxx11_flag": [
+                    "self"
+                ],
+                "fc_version": [
+                    "cls",
+                    "fc"
+                ],
+                "f77_version": [
+                    "cls",
+                    "f77"
+                ]
+            }
+        },
+        "lib.spack.spack.util.environment": {
+            "get_path": [
+                "name"
+            ],
+            "env_flag": [
+                "name"
+            ],
+            "path_set": [
+                "var_name",
+                "directories"
+            ],
+            "path_put_first": [
+                "var_name",
+                "directories"
+            ],
+            "pop_keys": [
+                "dictionary"
+            ]
+        },
+        "lib.spack.spack.util.multiproc": {
+            "spawn": [
+                "f"
+            ],
+            "parmap": [
+                "f",
+                "X"
+            ]
+        },
+        "lib.spack.spack.util.crypto": {
+            "checksum": [
+                "hashlib_algo",
+                "filename"
+            ],
+            "Checker": {
+                "__init__": [
+                    "self",
+                    "hexdigest"
+                ],
+                "hash_name": [
+                    "self"
+                ],
+                "check": [
+                    "self",
+                    "filename"
+                ]
+            }
+        },
+        "lib.spack.spack.util.naming": {
+            "mod_to_class": [
+                "mod_name"
+            ],
+            "valid_module_name": [
+                "mod_name"
+            ],
+            "validate_module_name": [
+                "mod_name"
+            ],
+            "InvalidModuleNameError": {
+                "__init__": [
+                    "self",
+                    "name"
+                ]
+            }
+        },
+        "lib.spack.spack.util.prefix": {
+            "Prefix": {
+                "__new__": [
+                    "cls",
+                    "path"
+                ]
+            }
+        },
+        "lib.spack.spack.util": {},
+        "lib.spack.spack.util.string": {
+            "comma_list": [
+                "sequence",
+                "article"
+            ],
+            "comma_or": [
+                "sequence"
+            ],
+            "comma_and": [
+                "sequence"
+            ]
+        },
+        "lib.spack.spack.util.compression": {
+            "allowed_archive": [
+                "path"
+            ],
+            "decompressor_for": [
+                "path"
+            ],
+            "strip_extension": [
+                "path"
+            ],
+            "extension": [
+                "path"
+            ]
+        },
+        "lib.spack.spack.hooks.tclmodule": {
+            "post_install": [
+                "pkg"
+            ],
+            "post_uninstall": [
+                "pkg"
+            ]
+        },
+        "lib.spack.spack.hooks": {
+            "all_hook_modules": [],
+            "HookRunner": {
+                "__init__": [
+                    "self",
+                    "hook_name"
+                ],
+                "__call__": [
+                    "self",
+                    "pkg"
+                ]
+            }
+        },
+        "lib.spack.spack.hooks.extensions": {
+            "pre_uninstall": [
+                "pkg"
+            ]
+        },
+        "lib.spack.spack.hooks.dotkit": {
+            "post_install": [
+                "pkg"
+            ],
+            "post_uninstall": [
+                "pkg"
             ]
         },
         "lib.spack.external.argparse": {
@@ -741,1000 +3092,26 @@
             }
         },
         "lib.spack.external": {},
-        "lib.spack.llnl": {},
-        "lib.spack.llnl.util.link_tree": {
-            "traverse_tree": [
-                "source_root",
-                "dest_root",
-                "rel_path"
-            ],
-            "LinkTree": {
-                "__init__": [
-                    "self",
-                    "source_root"
-                ],
-                "find_conflict": [
-                    "self",
-                    "dest_root"
-                ],
-                "merge": [
-                    "self",
-                    "dest_root"
-                ],
-                "unmerge": [
-                    "self",
-                    "dest_root"
-                ]
-            }
-        },
-        "lib.spack.llnl.util": {},
-        "lib.spack.llnl.util.lang": {
-            "index_by": [
-                "objects"
-            ],
-            "partition_list": [
-                "elements",
-                "predicate"
-            ],
-            "caller_locals": [],
-            "get_calling_package_name": [],
-            "attr_required": [
-                "obj",
-                "attr_name"
-            ],
-            "attr_setdefault": [
-                "obj",
-                "name",
-                "value"
-            ],
-            "has_method": [
-                "cls",
-                "name"
-            ],
-            "memoized": [
-                "obj"
-            ],
-            "list_modules": [
-                "directory"
-            ],
-            "key_ordering": [
+        "lib.spack.external.functools": {
+            "total_ordering": [
                 "cls"
-            ],
-            "in_function": [
-                "function_name"
-            ],
-            "check_kwargs": [
-                "kwargs",
-                "fun"
-            ],
-            "match_predicate": [],
-            "HashableMap": {
-                "_cmp_key": [
-                    "self"
-                ],
-                "copy": [
-                    "self"
-                ]
-            },
-            "RequiredAttributeError": {
-                "__init__": [
-                    "self",
-                    "message"
-                ]
-            }
+            ]
         },
-        "lib.spack.llnl.util.tty.color": {
-            "colorize": [
-                "string"
-            ],
-            "clen": [
-                "string"
-            ],
-            "cwrite": [
-                "string",
-                "stream",
-                "color"
-            ],
-            "cprint": [
-                "string",
-                "stream",
-                "color"
-            ],
-            "cescape": [
-                "string"
-            ],
-            "ColorParseError": {
-                "__init__": [
-                    "self",
-                    "message"
-                ]
-            },
-            "match_to_ansi": {
-                "__init__": [
-                    "self",
-                    "color"
-                ],
-                "escape": [
-                    "self",
-                    "s"
-                ],
-                "__call__": [
-                    "self",
-                    "match"
-                ]
-            },
-            "ColorStream": {
-                "__init__": [
-                    "self",
-                    "stream",
-                    "color"
-                ],
-                "write": [
-                    "self",
-                    "string"
-                ],
-                "writelines": [
-                    "self",
-                    "sequence"
-                ]
-            }
-        },
-        "lib.spack.llnl.util.tty.colify": {
-            "config_variable_cols": [
-                "elts",
-                "console_width",
-                "padding",
-                "cols"
-            ],
-            "config_uniform_cols": [
-                "elts",
-                "console_width",
-                "padding",
-                "cols"
-            ],
-            "colify": [
-                "elts"
-            ],
-            "colify_table": [
-                "table"
-            ],
-            "colified": [
-                "elts"
-            ],
-            "ColumnConfig": {
-                "__init__": [
-                    "self",
-                    "cols"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.concretize": {
-            "DefaultConcretizer": {
-                "concretize_version": [
-                    "self",
-                    "spec"
-                ],
-                "concretize_architecture": [
-                    "self",
-                    "spec"
-                ],
-                "concretize_compiler": [
-                    "self",
-                    "spec"
-                ],
-                "choose_provider": [
-                    "self",
-                    "spec",
-                    "providers"
-                ]
-            },
-            "UnavailableCompilerVersionError": {
-                "__init__": [
-                    "self",
-                    "compiler_spec"
-                ]
-            },
-            "NoValidVersionError": {
-                "__init__": [
-                    "self",
-                    "spec"
-                ]
-            }
-        },
-        "lib.spack.spack.modules": {
-            "print_help": [],
-            "EnvModule": {
-                "__init__": [
-                    "self",
-                    "spec"
-                ],
-                "paths": [
-                    "self"
-                ],
-                "write": [
-                    "self"
-                ],
-                "_write": [
-                    "self",
-                    "stream"
-                ],
-                "file_name": [
-                    "self"
-                ],
-                "use_name": [
-                    "self"
-                ],
-                "remove": [
-                    "self"
-                ]
-            },
-            "Dotkit": {
-                "file_name": [
-                    "self"
-                ],
-                "use_name": [
-                    "self"
-                ],
-                "_write": [
-                    "self",
-                    "dk_file"
-                ]
-            },
-            "TclModule": {
-                "file_name": [
-                    "self"
-                ],
-                "use_name": [
-                    "self"
-                ],
-                "_write": [
-                    "self",
-                    "m_file"
-                ]
-            }
-        },
-        "lib.spack.spack.fetch_strategy": {
-            "_needs_stage": [
-                "fun"
-            ],
-            "from_url": [
-                "url"
-            ],
-            "args_are_for": [
-                "args",
-                "fetcher"
-            ],
-            "for_package_version": [
-                "pkg",
-                "version"
-            ],
-            "FetchStrategy": {
+        "lib.spack.external.ordereddict": {
+            "OrderedDict": {
                 "__init__": [
                     "self"
                 ],
-                "set_stage": [
+                "__setitem__": [
                     "self",
-                    "stage"
-                ],
-                "fetch": [
-                    "self"
-                ],
-                "check": [
-                    "self"
-                ],
-                "expand": [
-                    "self"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "matches": [
-                    "cls",
-                    "args"
-                ]
-            },
-            "URLFetchStrategy": {
-                "__init__": [
-                    "self",
-                    "url",
-                    "digest"
-                ],
-                "fetch": [
-                    "self"
-                ],
-                "archive_file": [
-                    "self"
-                ],
-                "expand": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "check": [
-                    "self"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "VCSFetchStrategy": {
-                "__init__": [
-                    "self",
-                    "name"
-                ],
-                "check": [
-                    "self"
-                ],
-                "expand": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "GitFetchStrategy": {
-                "__init__": [
-                    "self"
-                ],
-                "git_version": [
-                    "self"
-                ],
-                "git": [
-                    "self"
-                ],
-                "fetch": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "SvnFetchStrategy": {
-                "__init__": [
-                    "self"
-                ],
-                "svn": [
-                    "self"
-                ],
-                "fetch": [
-                    "self"
-                ],
-                "_remove_untracked_files": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "HgFetchStrategy": {
-                "__init__": [
-                    "self"
-                ],
-                "hg": [
-                    "self"
-                ],
-                "fetch": [
-                    "self"
-                ],
-                "archive": [
-                    "self",
-                    "destination"
-                ],
-                "reset": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "FetchError": {
-                "__init__": [
-                    "self",
-                    "msg",
-                    "long_msg"
-                ]
-            },
-            "FailedDownloadError": {
-                "__init__": [
-                    "self",
-                    "url",
-                    "msg"
-                ]
-            },
-            "NoArchiveFileError": {
-                "__init__": [
-                    "self",
-                    "msg",
-                    "long_msg"
-                ]
-            },
-            "NoDigestError": {
-                "__init__": [
-                    "self",
-                    "msg",
-                    "long_msg"
-                ]
-            },
-            "InvalidArgsError": {
-                "__init__": [
-                    "self",
-                    "pkg",
-                    "version"
-                ]
-            },
-            "ChecksumError": {
-                "__init__": [
-                    "self",
-                    "message",
-                    "long_msg"
-                ]
-            },
-            "NoStageError": {
-                "__init__": [
-                    "self",
-                    "method"
-                ]
-            }
-        },
-        "lib.spack.spack.patch": {
-            "Patch": {
-                "__init__": [
-                    "self",
-                    "pkg_name",
-                    "path_or_url",
-                    "level"
-                ],
-                "apply": [
-                    "self",
-                    "stage"
-                ]
-            },
-            "NoSuchPatchFileError": {
-                "__init__": [
-                    "self",
-                    "package",
-                    "path"
-                ]
-            }
-        },
-        "lib.spack.spack.architecture": {
-            "get_sys_type_from_spack_globals": [],
-            "get_sys_type_from_environment": [],
-            "get_mac_sys_type": [],
-            "sys_type": [],
-            "InvalidSysTypeError": {
-                "__init__": [
-                    "self",
-                    "sys_type"
-                ]
-            },
-            "NoSysTypeError": {
-                "__init__": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.parse": {
-            "Token": {
-                "__init__": [
-                    "self",
-                    "type",
+                    "key",
                     "value",
-                    "start",
-                    "end"
+                    "dict_setitem"
                 ],
-                "__repr__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "is_a": [
-                    "self",
-                    "type"
-                ],
-                "__cmp__": [
-                    "self",
-                    "other"
-                ]
-            },
-            "Lexer": {
-                "__init__": [
-                    "self",
-                    "lexicon"
-                ],
-                "token": [
-                    "self",
-                    "type",
-                    "value"
-                ],
-                "lex": [
-                    "self",
-                    "text"
-                ]
-            },
-            "Parser": {
-                "__init__": [
-                    "self",
-                    "lexer"
-                ],
-                "gettok": [
-                    "self"
-                ],
-                "push_tokens": [
-                    "self",
-                    "iterable"
-                ],
-                "accept": [
-                    "self",
-                    "id"
-                ],
-                "next_token_error": [
-                    "self",
-                    "message"
-                ],
-                "last_token_error": [
-                    "self",
-                    "message"
-                ],
-                "unexpected_token": [
-                    "self"
-                ],
-                "expect": [
-                    "self",
-                    "id"
-                ],
-                "setup": [
-                    "self",
-                    "text"
-                ],
-                "parse": [
-                    "self",
-                    "text"
-                ]
-            },
-            "ParseError": {
-                "__init__": [
-                    "self",
-                    "message",
-                    "string",
-                    "pos"
-                ]
-            },
-            "LexError": {
-                "__init__": [
-                    "self",
-                    "message",
-                    "string",
-                    "pos"
-                ]
-            }
-        },
-        "lib.spack.spack.multimethod": {
-            "SpecMultiMethod": {
-                "__init__": [
-                    "self",
-                    "default"
-                ],
-                "register": [
-                    "self",
-                    "spec",
-                    "method"
-                ],
-                "__get__": [
-                    "self",
-                    "obj",
-                    "objtype"
-                ],
-                "__call__": [
-                    "self",
-                    "package_self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "when": {
-                "__init__": [
-                    "self",
-                    "spec"
-                ],
-                "__call__": [
-                    "self",
-                    "method"
-                ]
-            },
-            "MultiMethodError": {
-                "__init__": [
-                    "self",
-                    "message"
-                ]
-            },
-            "NoSuchMethodError": {
-                "__init__": [
-                    "self",
-                    "cls",
-                    "method_name",
-                    "spec",
-                    "possible_specs"
-                ]
-            }
-        },
-        "lib.spack.spack.relations": {
-            "version": [
-                "ver",
-                "checksum"
-            ],
-            "depends_on": [],
-            "extends": [
-                "spec"
-            ],
-            "provides": [],
-            "patch": [
-                "url_or_filename"
-            ],
-            "conflicts": [],
-            "RelationError": {
-                "__init__": [
-                    "self",
-                    "relation",
-                    "message"
-                ]
-            },
-            "ScopeError": {
-                "__init__": [
-                    "self",
-                    "relation"
-                ]
-            },
-            "CircularReferenceError": {
-                "__init__": [
-                    "self",
-                    "relation",
-                    "package"
-                ]
-            }
-        },
-        "lib.spack.spack.virtual": {
-            "ProviderIndex": {
-                "__init__": [
-                    "self",
-                    "specs"
-                ],
-                "update": [
-                    "self",
-                    "spec"
-                ],
-                "providers_for": [
-                    "self"
-                ],
-                "_cross_provider_maps": [
-                    "self",
-                    "lmap",
-                    "rmap"
-                ],
-                "__contains__": [
-                    "self",
-                    "name"
-                ],
-                "satisfies": [
-                    "self",
-                    "other"
-                ]
-            }
-        },
-        "lib.spack.spack": {},
-        "lib.spack.spack.graph": {
-            "topological_sort": [
-                "spec"
-            ],
-            "find": [
-                "seq",
-                "predicate"
-            ],
-            "graph_ascii": [
-                "spec"
-            ],
-            "graph_dot": [],
-            "AsciiGraph": {
-                "__init__": [
-                    "self"
-                ],
-                "_indent": [
-                    "self"
-                ],
-                "_write_edge": [
-                    "self",
-                    "string",
-                    "index",
-                    "sub"
-                ],
-                "_connect_deps": [
-                    "self",
-                    "i",
-                    "deps",
-                    "label"
-                ],
-                "_set_state": [
-                    "self",
-                    "state",
-                    "index",
-                    "label"
-                ],
-                "_back_edge_line": [
-                    "self",
-                    "prev_ends",
-                    "end",
-                    "start",
-                    "collapse",
-                    "label"
-                ],
-                "_node_line": [
-                    "self",
-                    "index",
-                    "name"
-                ],
-                "_collapse_line": [
-                    "self",
-                    "index"
-                ],
-                "_merge_right_line": [
-                    "self",
-                    "index"
-                ],
-                "_expand_right_line": [
-                    "self",
-                    "index"
-                ],
-                "write": [
-                    "self",
-                    "spec"
-                ]
-            }
-        },
-        "lib.spack.spack.version": {
-            "int_if_int": [
-                "string"
-            ],
-            "coerce_versions": [
-                "a",
-                "b"
-            ],
-            "coerced": [
-                "method"
-            ],
-            "_string_to_version": [
-                "string"
-            ],
-            "ver": [
-                "obj"
-            ],
-            "Version": {
-                "__init__": [
-                    "self",
-                    "string"
-                ],
-                "up_to": [
-                    "self",
-                    "index"
-                ],
-                "lowest": [
-                    "self"
-                ],
-                "highest": [
-                    "self"
-                ],
-                "satisfies": [
-                    "self",
-                    "other"
-                ],
-                "wildcard": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__getitem__": [
-                    "self",
-                    "idx"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "concrete": [
-                    "self"
-                ],
-                "__lt__": [
-                    "self",
-                    "other"
-                ],
-                "__eq__": [
-                    "self",
-                    "other"
-                ],
-                "__ne__": [
-                    "self",
-                    "other"
-                ],
-                "__hash__": [
-                    "self"
-                ],
-                "__contains__": [
-                    "self",
-                    "other"
-                ],
-                "is_predecessor": [
-                    "self",
-                    "other"
-                ],
-                "is_successor": [
-                    "self",
-                    "other"
-                ],
-                "overlaps": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ]
-            },
-            "VersionRange": {
-                "__init__": [
-                    "self",
-                    "start",
-                    "end"
-                ],
-                "lowest": [
-                    "self"
-                ],
-                "highest": [
-                    "self"
-                ],
-                "__lt__": [
-                    "self",
-                    "other"
-                ],
-                "__eq__": [
-                    "self",
-                    "other"
-                ],
-                "__ne__": [
-                    "self",
-                    "other"
-                ],
-                "concrete": [
-                    "self"
-                ],
-                "__contains__": [
-                    "self",
-                    "other"
-                ],
-                "satisfies": [
-                    "self",
-                    "other"
-                ],
-                "overlaps": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "__hash__": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "VersionList": {
-                "__init__": [
-                    "self",
-                    "vlist"
-                ],
-                "add": [
-                    "self",
-                    "version"
-                ],
-                "concrete": [
-                    "self"
-                ],
-                "copy": [
-                    "self"
-                ],
-                "lowest": [
-                    "self"
-                ],
-                "highest": [
-                    "self"
-                ],
-                "overlaps": [
-                    "self",
-                    "other"
-                ],
-                "satisfies": [
-                    "self",
-                    "other"
-                ],
-                "update": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "intersect": [
-                    "self",
-                    "other"
-                ],
-                "__contains__": [
-                    "self",
-                    "other"
-                ],
-                "__getitem__": [
+                "__delitem__": [
                     "self",
-                    "index"
+                    "key",
+                    "dict_delitem"
                 ],
                 "__iter__": [
                     "self"
@@ -1742,8 +3119,56 @@
                 "__reversed__": [
                     "self"
                 ],
-                "__len__": [
+                "clear": [
                     "self"
+                ],
+                "popitem": [
+                    "self",
+                    "last"
+                ],
+                "keys": [
+                    "self"
+                ],
+                "values": [
+                    "self"
+                ],
+                "items": [
+                    "self"
+                ],
+                "iterkeys": [
+                    "self"
+                ],
+                "itervalues": [
+                    "self"
+                ],
+                "iteritems": [
+                    "self"
+                ],
+                "update": [],
+                "pop": [
+                    "self",
+                    "key",
+                    "default"
+                ],
+                "setdefault": [
+                    "self",
+                    "key",
+                    "default"
+                ],
+                "__repr__": [
+                    "self",
+                    "_repr_running"
+                ],
+                "__reduce__": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "fromkeys": [
+                    "cls",
+                    "iterable",
+                    "value"
                 ],
                 "__eq__": [
                     "self",
@@ -1753,1439 +3178,14 @@
                     "self",
                     "other"
                 ],
-                "__lt__": [
-                    "self",
-                    "other"
-                ],
-                "__hash__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.error": {
-            "SpackError": {
-                "__init__": [
-                    "self",
-                    "message",
-                    "long_message"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            },
-            "UnsupportedPlatformError": {
-                "__init__": [
-                    "self",
-                    "message"
-                ]
-            },
-            "NoNetworkConnectionError": {
-                "__init__": [
-                    "self",
-                    "message",
-                    "url"
-                ]
-            }
-        },
-        "lib.spack.spack.cmd.help": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "help": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.bootstrap": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "get_origin_url": [],
-            "bootstrap": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.purge": {
-            "purge": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.patch": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "patch": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.extensions": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "extensions": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.cd": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "cd": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.doc": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "doc": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.stage": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "stage": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.list": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "list": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.providers": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "providers": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.deactivate": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "deactivate": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.python": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "python": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.use": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "use": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.activate": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "activate": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.load": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "load": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.clean": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "clean": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.unuse": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "unuse": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.fetch": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "fetch": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.edit": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "edit": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.graph": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "graph": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.install": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "install": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.compilers": {
-            "compilers": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.unload": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "unload": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.restage": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "restage": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.cmd.dependents": {
-            "setup_parser": [
-                "subparser"
-            ],
-            "dependents": [
-                "parser",
-                "args"
-            ]
-        },
-        "lib.spack.spack.test.svn_fetch": {
-            "SvnFetchTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "assert_rev": [
-                    "self",
-                    "rev"
-                ],
-                "try_fetch": [
-                    "self",
-                    "rev",
-                    "test_file",
-                    "args"
-                ],
-                "test_fetch_default": [
-                    "self"
-                ],
-                "test_fetch_r1": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.versions": {
-            "VersionsTest": {
-                "assert_ver_lt": [
-                    "self",
-                    "a",
-                    "b"
-                ],
-                "assert_ver_gt": [
-                    "self",
-                    "a",
-                    "b"
-                ],
-                "assert_ver_eq": [
-                    "self",
-                    "a",
-                    "b"
-                ],
-                "assert_in": [
-                    "self",
-                    "needle",
-                    "haystack"
-                ],
-                "assert_not_in": [
-                    "self",
-                    "needle",
-                    "haystack"
-                ],
-                "assert_canonical": [
-                    "self",
-                    "canonical_list",
-                    "version_list"
-                ],
-                "assert_overlaps": [
-                    "self",
-                    "v1",
-                    "v2"
-                ],
-                "assert_no_overlap": [
-                    "self",
-                    "v1",
-                    "v2"
-                ],
-                "assert_satisfies": [
-                    "self",
-                    "v1",
-                    "v2"
-                ],
-                "assert_does_not_satisfy": [
-                    "self",
-                    "v1",
-                    "v2"
-                ],
-                "check_intersection": [
-                    "self",
-                    "expected",
-                    "a",
-                    "b"
-                ],
-                "check_union": [
-                    "self",
-                    "expected",
-                    "a",
-                    "b"
-                ],
-                "test_two_segments": [
-                    "self"
-                ],
-                "test_three_segments": [
-                    "self"
-                ],
-                "test_alpha": [
-                    "self"
-                ],
-                "test_patch": [
-                    "self"
-                ],
-                "test_num_alpha_with_no_separator": [
-                    "self"
-                ],
-                "test_alpha_with_dots": [
-                    "self"
-                ],
-                "test_nums_and_patch": [
-                    "self"
-                ],
-                "test_rc_versions": [
-                    "self"
-                ],
-                "test_alpha_beta": [
-                    "self"
-                ],
-                "test_double_alpha": [
-                    "self"
-                ],
-                "test_padded_numbers": [
-                    "self"
-                ],
-                "test_close_numbers": [
-                    "self"
-                ],
-                "test_date_stamps": [
-                    "self"
-                ],
-                "test_underscores": [
-                    "self"
-                ],
-                "test_rpm_oddities": [
-                    "self"
-                ],
-                "test_version_ranges": [
-                    "self"
-                ],
-                "test_contains": [
-                    "self"
-                ],
-                "test_in_list": [
-                    "self"
-                ],
-                "test_ranges_overlap": [
-                    "self"
-                ],
-                "test_overlap_with_containment": [
-                    "self"
-                ],
-                "test_lists_overlap": [
-                    "self"
-                ],
-                "test_canonicalize_list": [
-                    "self"
-                ],
-                "test_intersection": [
-                    "self"
-                ],
-                "test_intersect_with_containment": [
-                    "self"
-                ],
-                "test_union_with_containment": [
-                    "self"
-                ],
-                "test_basic_version_satisfaction": [
-                    "self"
-                ],
-                "test_basic_version_satisfaction_in_lists": [
-                    "self"
-                ],
-                "test_version_range_satisfaction": [
-                    "self"
-                ],
-                "test_version_range_satisfaction_in_lists": [
-                    "self"
-                ],
-                "test_satisfaction_with_lists": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.concretize": {
-            "ConcretizeTest": {
-                "check_spec": [
-                    "self",
-                    "abstract",
-                    "concrete"
-                ],
-                "check_concretize": [
-                    "self",
-                    "abstract_spec"
-                ],
-                "test_concretize_no_deps": [
-                    "self"
-                ],
-                "test_concretize_dag": [
-                    "self"
-                ],
-                "test_concretize_with_virtual": [
-                    "self"
-                ],
-                "test_concretize_with_restricted_virtual": [
-                    "self"
-                ],
-                "test_concretize_with_provides_when": [
-                    "self"
-                ],
-                "test_virtual_is_fully_expanded_for_callpath": [
-                    "self"
-                ],
-                "test_virtual_is_fully_expanded_for_mpileaks": [
-                    "self"
-                ],
-                "test_my_dep_depends_on_provider_of_my_virtual_dep": [
-                    "self"
-                ],
-                "test_compiler_inheritance": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.directory_layout": {
-            "DirectoryLayoutTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "test_read_and_write_spec": [
-                    "self"
-                ],
-                "test_handle_unknown_package": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.packages": {
-            "PackagesTest": {
-                "test_load_package": [
-                    "self"
-                ],
-                "test_package_name": [
-                    "self"
-                ],
-                "test_package_filename": [
-                    "self"
-                ],
-                "test_nonexisting_package_filename": [
-                    "self"
-                ],
-                "test_package_class_names": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.package_sanity": {
-            "PackageSanityTest": {
-                "check_db": [
-                    "self"
-                ],
-                "test_get_all_packages": [
-                    "self"
-                ],
-                "test_get_all_mock_packages": [
-                    "self"
-                ],
-                "test_url_versions": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.mirror": {
-            "MirrorTest": {
-                "setUp": [
-                    "self"
-                ],
-                "set_up_package": [
-                    "self",
-                    "name",
-                    "MockRepoClass",
-                    "url_attr"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "check_mirror": [
-                    "self"
-                ],
-                "test_git_mirror": [
-                    "self"
-                ],
-                "test_svn_mirror": [
-                    "self"
-                ],
-                "test_hg_mirror": [
-                    "self"
-                ],
-                "test_url_mirror": [
-                    "self"
-                ],
-                "test_all_mirror": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.link_tree": {
-            "LinkTreeTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "check_file_link": [
-                    "self",
-                    "filename"
-                ],
-                "check_dir": [
-                    "self",
-                    "filename"
-                ],
-                "test_merge_to_new_directory": [
-                    "self"
-                ],
-                "test_merge_to_existing_directory": [
-                    "self"
-                ],
-                "test_merge_with_empty_directories": [
-                    "self"
-                ],
-                "test_ignore": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.url_parse": {
-            "UrlParseTest": {
-                "assert_not_detected": [
-                    "self",
-                    "string"
-                ],
-                "check": [
-                    "self",
-                    "name",
-                    "v",
-                    "string"
-                ],
-                "test_wwwoffle_version": [
-                    "self"
-                ],
-                "test_version_sourceforge_download": [
-                    "self"
-                ],
-                "test_no_version": [
-                    "self"
-                ],
-                "test_version_all_dots": [
-                    "self"
-                ],
-                "test_version_underscore_separator": [
-                    "self"
-                ],
-                "test_boost_version_style": [
-                    "self"
-                ],
-                "test_erlang_version_style": [
-                    "self"
-                ],
-                "test_another_erlang_version_style": [
-                    "self"
-                ],
-                "test_yet_another_erlang_version_style": [
-                    "self"
-                ],
-                "test_p7zip_version_style": [
-                    "self"
-                ],
-                "test_new_github_style": [
-                    "self"
-                ],
-                "test_gloox_beta_style": [
-                    "self"
-                ],
-                "test_sphinx_beta_style": [
-                    "self"
-                ],
-                "test_astyle_verson_style": [
-                    "self"
-                ],
-                "test_version_dos2unix": [
-                    "self"
-                ],
-                "test_version_internal_dash": [
-                    "self"
-                ],
-                "test_version_single_digit": [
-                    "self"
-                ],
-                "test_noseparator_single_digit": [
-                    "self"
-                ],
-                "test_version_developer_that_hates_us_format": [
-                    "self"
-                ],
-                "test_version_regular": [
-                    "self"
-                ],
-                "test_version_github": [
-                    "self"
-                ],
-                "test_version_github_with_high_patch_number": [
-                    "self"
-                ],
-                "test_yet_another_version": [
-                    "self"
-                ],
-                "test_lame_version_style": [
-                    "self"
-                ],
-                "test_ruby_version_style": [
-                    "self"
-                ],
-                "test_omega_version_style": [
-                    "self"
-                ],
-                "test_rc_style": [
-                    "self"
-                ],
-                "test_dash_rc_style": [
-                    "self"
-                ],
-                "test_angband_version_style": [
-                    "self"
-                ],
-                "test_stable_suffix": [
-                    "self"
-                ],
-                "test_debian_style_1": [
-                    "self"
-                ],
-                "test_debian_style_2": [
-                    "self"
-                ],
-                "test_imagemagick_style": [
-                    "self"
-                ],
-                "test_dash_version_dash_style": [
-                    "self"
-                ],
-                "test_apache_version_style": [
-                    "self"
-                ],
-                "test_jpeg_style": [
-                    "self"
-                ],
-                "test_pypy_version": [
-                    "self"
-                ],
-                "test_openssl_version": [
-                    "self"
-                ],
-                "test_xaw3d_version": [
-                    "self"
-                ],
-                "test_fann_version": [
-                    "self"
-                ],
-                "test_iges_version": [
-                    "self"
-                ],
-                "test_haxe_version": [
-                    "self"
-                ],
-                "test_imap_version": [
-                    "self"
-                ],
-                "test_suite3270_version": [
-                    "self"
-                ],
-                "test_synergy_version": [
-                    "self"
-                ],
-                "test_mvapich2_19_version": [
-                    "self"
-                ],
-                "test_hdf5_version": [
-                    "self"
-                ],
-                "test_scalasca_version": [
-                    "self"
-                ],
-                "test_mpileaks_version": [
-                    "self"
-                ],
-                "test_gcc_version": [
-                    "self"
-                ],
-                "test_gcc_version_precedence": [
-                    "self"
-                ],
-                "test_github_raw_url": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.config": {
-            "ConfigTest": {
-                "setUp": [
-                    "cls"
-                ],
-                "tearDown": [
-                    "cls"
-                ],
-                "get_path": [
-                    "self"
-                ],
-                "test_write_key": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.cc": {
-            "CompilerTest": {
-                "setUp": [
-                    "self"
-                ],
-                "check_cc": [
-                    "self",
-                    "command",
-                    "args",
-                    "expected"
-                ],
-                "check_ld": [
-                    "self",
-                    "command",
-                    "args",
-                    "expected"
-                ],
-                "check_cpp": [
-                    "self",
-                    "command",
-                    "args",
-                    "expected"
-                ],
-                "test_vcheck_mode": [
-                    "self"
-                ],
-                "test_cpp_mode": [
-                    "self"
-                ],
-                "test_ccld_mode": [
-                    "self"
-                ],
-                "test_ld_mode": [
-                    "self"
-                ],
-                "test_includes": [
-                    "self"
-                ],
-                "test_libraries": [
-                    "self"
-                ],
-                "test_libs": [
-                    "self"
-                ],
-                "test_rpaths": [
-                    "self"
-                ],
-                "test_other_args": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.url_substitution": {
-            "PackageSanityTest": {
-                "test_hypre_url_substitution": [
-                    "self"
-                ],
-                "test_otf2_url_substitution": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.stage": {
-            "use_tmp": [
-                "use_tmp"
-            ],
-            "StageTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "get_stage_path": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_setup": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_fetch": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_expand_archive": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_chdir": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_chdir_to_source": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "check_destroy": [
-                    "self",
-                    "stage",
-                    "stage_name"
-                ],
-                "test_setup_and_destroy_name_with_tmp": [
-                    "self"
-                ],
-                "test_setup_and_destroy_name_without_tmp": [
-                    "self"
-                ],
-                "test_setup_and_destroy_no_name_with_tmp": [
-                    "self"
-                ],
-                "test_setup_and_destroy_no_name_without_tmp": [
-                    "self"
-                ],
-                "test_chdir": [
-                    "self"
-                ],
-                "test_fetch": [
-                    "self"
-                ],
-                "test_expand_archive": [
-                    "self"
-                ],
-                "test_restage": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.spec_syntax": {
-            "SpecSyntaxTest": {
-                "check_parse": [
-                    "self",
-                    "expected",
-                    "spec"
-                ],
-                "check_lex": [
-                    "self",
-                    "tokens",
-                    "spec"
-                ],
-                "test_package_names": [
-                    "self"
-                ],
-                "test_simple_dependence": [
-                    "self"
-                ],
-                "test_dependencies_with_versions": [
-                    "self"
-                ],
-                "test_full_specs": [
-                    "self"
-                ],
-                "test_canonicalize": [
-                    "self"
-                ],
-                "test_parse_errors": [
-                    "self"
-                ],
-                "test_duplicate_variant": [
-                    "self"
-                ],
-                "test_duplicate_depdendence": [
-                    "self"
-                ],
-                "test_duplicate_compiler": [
-                    "self"
-                ],
-                "test_ambiguous": [
-                    "self"
-                ],
-                "test_minimal_spaces": [
-                    "self"
-                ],
-                "test_spaces_between_dependences": [
-                    "self"
-                ],
-                "test_spaces_between_options": [
-                    "self"
-                ],
-                "test_way_too_many_spaces": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.multimethod": {
-            "MultiMethodTest": {
-                "test_no_version_match": [
-                    "self"
-                ],
-                "test_one_version_match": [
-                    "self"
-                ],
-                "test_version_overlap": [
-                    "self"
-                ],
-                "test_mpi_version": [
-                    "self"
-                ],
-                "test_undefined_mpi_version": [
-                    "self"
-                ],
-                "test_default_works": [
-                    "self"
-                ],
-                "test_architecture_match": [
-                    "self"
-                ],
-                "test_dependency_match": [
-                    "self"
-                ],
-                "test_virtual_dep_match": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.url_extrapolate": {
-            "UrlExtrapolateTest": {
-                "check_url": [
-                    "self",
-                    "base",
-                    "version",
-                    "new_url"
-                ],
-                "test_libelf_version": [
-                    "self"
-                ],
-                "test_libdwarf_version": [
-                    "self"
-                ],
-                "test_dyninst_version": [
-                    "self"
-                ],
-                "test_partial_version_prefix": [
-                    "self"
-                ],
-                "test_scalasca_partial_version": [
-                    "self"
-                ],
-                "test_mpileaks_version": [
-                    "self"
-                ],
-                "test_gcc": [
-                    "self"
-                ],
-                "test_github_raw": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.git_fetch": {
-            "GitFetchTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "assert_rev": [
-                    "self",
-                    "rev"
-                ],
-                "try_fetch": [
-                    "self",
-                    "rev",
-                    "test_file",
-                    "args"
-                ],
-                "test_fetch_master": [
-                    "self"
-                ],
-                "ztest_fetch_branch": [
-                    "self"
-                ],
-                "ztest_fetch_tag": [
-                    "self"
-                ],
-                "ztest_fetch_commit": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.mock_packages_test": {
-            "set_pkg_dep": [
-                "pkg",
-                "spec"
-            ],
-            "MockPackagesTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.spec_semantics": {
-            "SpecSematicsTest": {
-                "check_satisfies": [
-                    "self",
-                    "spec",
-                    "anon_spec"
-                ],
-                "check_unsatisfiable": [
-                    "self",
-                    "spec",
-                    "anon_spec"
-                ],
-                "check_constrain": [
-                    "self",
-                    "expected",
-                    "spec",
-                    "constraint"
-                ],
-                "check_invalid_constraint": [
-                    "self",
-                    "spec",
-                    "constraint"
-                ],
-                "test_satisfies": [
-                    "self"
-                ],
-                "test_satisfies_compiler": [
-                    "self"
-                ],
-                "test_satisfies_compiler_version": [
-                    "self"
-                ],
-                "test_satisfies_architecture": [
-                    "self"
-                ],
-                "test_satisfies_dependencies": [
-                    "self"
-                ],
-                "test_satisfies_dependency_versions": [
-                    "self"
-                ],
-                "test_satisfies_virtual_dependencies": [
-                    "self"
-                ],
-                "test_satisfies_virtual_dependency_versions": [
-                    "self"
-                ],
-                "test_constrain": [
-                    "self"
-                ],
-                "test_invalid_constraint": [
-                    "self"
-                ],
-                "test_compiler_satisfies": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.test.hg_fetch": {
-            "HgFetchTest": {
-                "setUp": [
-                    "self"
-                ],
-                "tearDown": [
-                    "self"
-                ],
-                "try_fetch": [
-                    "self",
-                    "rev",
-                    "test_file",
-                    "args"
-                ],
-                "test_fetch_default": [
-                    "self"
-                ],
-                "test_fetch_rev0": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.util.naming": {
-            "mod_to_class": [
-                "mod_name"
-            ],
-            "valid_module_name": [
-                "mod_name"
-            ],
-            "validate_module_name": [
-                "mod_name"
-            ],
-            "InvalidModuleNameError": {
-                "__init__": [
-                    "self",
-                    "name"
-                ]
-            }
-        },
-        "lib.spack.spack.util.environment": {
-            "get_path": [
-                "name"
-            ],
-            "env_flag": [
-                "name"
-            ],
-            "path_set": [
-                "var_name",
-                "directories"
-            ],
-            "path_put_first": [
-                "var_name",
-                "directories"
-            ],
-            "pop_keys": [
-                "dictionary"
-            ]
-        },
-        "lib.spack.spack.util.compression": {
-            "allowed_archive": [
-                "path"
-            ],
-            "decompressor_for": [
-                "path"
-            ],
-            "strip_extension": [
-                "path"
-            ],
-            "extension": [
-                "path"
-            ]
-        },
-        "lib.spack.spack.util.multiproc": {
-            "spawn": [
-                "f"
-            ],
-            "parmap": [
-                "f",
-                "X"
-            ]
-        },
-        "lib.spack.spack.util.crypto": {
-            "checksum": [
-                "hashlib_algo",
-                "filename"
-            ],
-            "Checker": {
-                "__init__": [
-                    "self",
-                    "hexdigest"
-                ],
-                "hash_name": [
-                    "self"
-                ],
-                "check": [
-                    "self",
-                    "filename"
-                ]
-            }
-        },
-        "lib.spack.spack.util.prefix": {
-            "Prefix": {
-                "__new__": [
-                    "cls",
-                    "path"
-                ]
-            }
-        },
-        "lib.spack.spack.util.string": {
-            "comma_list": [
-                "sequence",
-                "article"
-            ],
-            "comma_or": [
-                "sequence"
-            ],
-            "comma_and": [
-                "sequence"
-            ]
-        },
-        "lib.spack.spack.util": {},
-        "lib.spack.spack.compilers.pgi": {
-            "Pgi": {
-                "default_version": [
-                    "cls",
-                    "comp"
-                ]
-            }
-        },
-        "lib.spack.spack.compilers.gcc": {
-            "Gcc": {
-                "cxx11_flag": [
-                    "self"
-                ],
-                "fc_version": [
-                    "cls",
-                    "fc"
-                ],
-                "f77_version": [
-                    "cls",
-                    "f77"
-                ]
-            }
-        },
-        "lib.spack.spack.compilers.intel": {
-            "Intel": {
-                "cxx11_flag": [
-                    "self"
-                ],
-                "default_version": [
-                    "cls",
-                    "comp"
-                ]
-            }
-        },
-        "lib.spack.spack.compilers.clang": {
-            "Clang": {
-                "default_version": [
-                    "self",
-                    "comp"
-                ]
-            }
-        },
-        "lib.spack.spack.compilers": {
-            "_auto_compiler_spec": [
-                "function"
-            ],
-            "_get_config": [],
-            "default_compiler": [],
-            "find_compilers": [],
-            "add_compilers_to_config": [
-                "scope"
-            ],
-            "add_compiler": [
-                "config",
-                "compiler"
-            ],
-            "supported_compilers": [],
-            "supported": [
-                "compiler_spec"
-            ],
-            "all_compilers": [],
-            "find": [
-                "compiler_spec"
-            ],
-            "compilers_for_spec": [
-                "compiler_spec"
-            ],
-            "compiler_for_spec": [
-                "compiler_spec"
-            ],
-            "class_for_compiler_name": [
-                "compiler_name"
-            ],
-            "all_compiler_types": [],
-            "InvalidCompilerConfigurationError": {
-                "__init__": [
-                    "self",
-                    "compiler_spec"
-                ]
-            },
-            "NoCompilersError": {
-                "__init__": [
-                    "self"
-                ]
-            }
-        },
-        "lib.spack.spack.hooks.dotkit": {
-            "post_install": [
-                "pkg"
-            ],
-            "post_uninstall": [
-                "pkg"
-            ]
-        },
-        "lib.spack.spack.hooks.extensions": {
-            "pre_uninstall": [
-                "pkg"
-            ]
-        },
-        "lib.spack.spack.hooks.tclmodule": {
-            "post_install": [
-                "pkg"
-            ],
-            "post_uninstall": [
-                "pkg"
-            ]
-        },
-        "lib.spack.spack.hooks": {
-            "all_hook_modules": [],
-            "HookRunner": {
-                "__init__": [
-                    "self",
-                    "hook_name"
-                ],
-                "__call__": [
-                    "self",
-                    "pkg"
-                ]
-            }
-        },
-        "lib.spack.docs._themes.sphinx_rtd_theme": {
-            "get_html_theme_path": []
-        },
-        "lib.spack.docs.exts.sphinxcontrib": {},
-        "lib.spack.docs.exts.sphinxcontrib.programoutput": {
-            "_slice": [
-                "value"
-            ],
-            "run_programs": [
-                "app",
-                "doctree"
-            ],
-            "init_cache": [
-                "app"
-            ],
-            "setup": [
-                "app"
-            ],
-            "program_output": {},
-            "ProgramOutputDirective": {
-                "run": [
-                    "self"
-                ]
-            },
-            "Command": {
-                "__new__": [
-                    "cls",
-                    "command",
-                    "shell",
-                    "hide_standard_error",
-                    "working_directory"
-                ],
-                "from_program_output_node": [
-                    "cls",
-                    "node"
-                ],
-                "execute": [
+                "viewkeys": [
                     "self"
                 ],
-                "get_output": [
+                "viewvalues": [
                     "self"
                 ],
-                "__str__": [
+                "viewitems": [
                     "self"
-                ]
-            },
-            "ProgramOutputCache": {
-                "__missing__": [
-                    "self",
-                    "command"
                 ]
             }
         }
