@@ -1,11 +1,6 @@
 {
     "0.8.0": {
-        "scipy.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
+        "scipy.version": {},
         "scipy.setupscons": {
             "configuration": [
                 "parent_package",
@@ -13,163 +8,21 @@
                 "setup_name"
             ]
         },
-        "scipy.version": {},
-        "scipy.signal.setup": {
+        "scipy.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.signal.setupscons": {
+        "scipy.integrate": {},
+        "scipy.integrate.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.signal.info": {},
-        "scipy.signal": {},
-        "scipy.linalg.misc": {
-            "norm": [
-                "a",
-                "ord"
-            ],
-            "_datanotshared": [
-                "a1",
-                "a"
-            ]
-        },
-        "scipy.linalg.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.linalg.linalg_version": {},
-        "scipy.linalg.info": {},
-        "scipy.linalg.flinalg": {
-            "has_column_major_storage": [
-                "arr"
-            ],
-            "get_flinalg_funcs": [
-                "names",
-                "arrays",
-                "debug"
-            ]
-        },
-        "scipy.linalg.scons_support": {
-            "do_generate_interface": [
-                "target",
-                "source",
-                "env"
-            ],
-            "generate_interface_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_fake_interface": [
-                "target",
-                "source",
-                "env"
-            ]
-        },
-        "scipy.linalg.decomp_svd": {
-            "svd": [
-                "a",
-                "full_matrices",
-                "compute_uv",
-                "overwrite_a"
-            ],
-            "svdvals": [
-                "a",
-                "overwrite_a"
-            ],
-            "diagsvd": [
-                "s",
-                "M",
-                "N"
-            ],
-            "orth": [
-                "A"
-            ]
-        },
-        "scipy.linalg.special_matrices": {
-            "tri": [
-                "N",
-                "M",
-                "k",
-                "dtype"
-            ],
-            "tril": [
-                "m",
-                "k"
-            ],
-            "triu": [
-                "m",
-                "k"
-            ],
-            "toeplitz": [
-                "c",
-                "r"
-            ],
-            "circulant": [
-                "c"
-            ],
-            "hankel": [
-                "c",
-                "r"
-            ],
-            "hadamard": [
-                "n",
-                "dtype"
-            ],
-            "leslie": [
-                "f",
-                "s"
-            ],
-            "all_mat": [],
-            "kron": [
-                "a",
-                "b"
-            ],
-            "block_diag": [],
-            "companion": [
-                "a"
-            ]
-        },
-        "scipy.linalg": {},
-        "scipy.linalg.blas": {
-            "has_column_major_storage": [
-                "arr"
-            ],
-            "get_blas_funcs": [
-                "names",
-                "arrays",
-                "debug"
-            ]
-        },
-        "scipy.ndimage.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.ndimage.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.ndimage.info": {},
-        "scipy.ndimage.io": {
-            "imread": [
-                "fname",
-                "flatten"
-            ]
-        },
-        "scipy.ndimage": {},
-        "scipy.fftpack.fftpack_version": {},
-        "scipy.fftpack.setup": {
+        "scipy.integrate.info": {},
+        "scipy.integrate.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
@@ -236,13 +89,7 @@
                 "_cache"
             ]
         },
-        "scipy.fftpack.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.fftpack.info": {},
+        "scipy.fftpack.fftpack_version": {},
         "scipy.fftpack.helper": {
             "rfftfreq": [
                 "n",
@@ -250,237 +97,880 @@
             ]
         },
         "scipy.fftpack": {},
-        "scipy.special.special_version": {},
-        "scipy.special.setup": {
+        "scipy.fftpack.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.special.gendoc": {
-            "parse": [
-                "infile"
-            ]
-        },
-        "scipy.special.setupscons": {
+        "scipy.fftpack.info": {},
+        "scipy.fftpack.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.special.info": {},
-        "scipy.special.spfun_stats": {
-            "multigammaln": [
-                "a",
-                "d"
+        "scipy.stats.vonmises": {
+            "von_mises_cdf_series": [
+                "k",
+                "x",
+                "p"
+            ],
+            "von_mises_cdf_normalapprox": [
+                "k",
+                "x",
+                "C1"
+            ],
+            "von_mises_cdf": [
+                "k",
+                "x"
             ]
         },
-        "scipy.special.orthogonal": {
-            "poch": [
-                "z",
-                "m"
-            ],
-            "gen_roots_and_weights": [
-                "n",
-                "an_func",
-                "sqrt_bn_func",
-                "mu"
-            ],
-            "j_roots": [
-                "n",
-                "alpha",
-                "beta",
-                "mu"
-            ],
-            "jacobi": [
-                "n",
-                "alpha",
-                "beta",
-                "monic"
-            ],
-            "js_roots": [
-                "n",
-                "p1",
-                "q1",
-                "mu"
-            ],
-            "sh_jacobi": [
-                "n",
-                "p",
-                "q",
-                "monic"
-            ],
-            "la_roots": [
-                "n",
-                "alpha",
-                "mu"
-            ],
-            "genlaguerre": [
-                "n",
-                "alpha",
-                "monic"
-            ],
-            "l_roots": [
-                "n",
-                "mu"
-            ],
-            "laguerre": [
-                "n",
-                "monic"
-            ],
-            "h_roots": [
-                "n",
-                "mu"
-            ],
-            "hermite": [
-                "n",
-                "monic"
-            ],
-            "he_roots": [
-                "n",
-                "mu"
-            ],
-            "hermitenorm": [
-                "n",
-                "monic"
-            ],
-            "cg_roots": [
-                "n",
-                "alpha",
-                "mu"
-            ],
-            "gegenbauer": [
-                "n",
-                "alpha",
-                "monic"
-            ],
-            "t_roots": [
-                "n",
-                "mu"
-            ],
-            "chebyt": [
-                "n",
-                "monic"
-            ],
-            "u_roots": [
-                "n",
-                "mu"
-            ],
-            "chebyu": [
-                "n",
-                "monic"
-            ],
-            "c_roots": [
-                "n",
-                "mu"
-            ],
-            "chebyc": [
-                "n",
-                "monic"
-            ],
-            "s_roots": [
-                "n",
-                "mu"
-            ],
-            "chebys": [
-                "n",
-                "monic"
-            ],
-            "ts_roots": [
-                "n",
-                "mu"
-            ],
-            "sh_chebyt": [
-                "n",
-                "monic"
-            ],
-            "us_roots": [
-                "n",
-                "mu"
-            ],
-            "sh_chebyu": [
-                "n",
-                "monic"
-            ],
-            "p_roots": [
-                "n",
-                "mu"
-            ],
-            "legendre": [
-                "n",
-                "monic"
-            ],
-            "ps_roots": [
-                "n",
-                "mu"
-            ],
-            "sh_legendre": [
-                "n",
-                "monic"
-            ],
-            "orthopoly1d": {
+        "scipy.stats.kde": {
+            "gaussian_kde": {
                 "__init__": [
                     "self",
-                    "roots",
-                    "weights",
-                    "hn",
-                    "kn",
-                    "wfunc",
-                    "limits",
-                    "monic",
-                    "eval_func"
+                    "dataset"
                 ],
-                "__call__": [
+                "evaluate": [
                     "self",
-                    "v"
+                    "points"
                 ],
-                "_scale": [
+                "integrate_gaussian": [
                     "self",
-                    "p"
+                    "mean",
+                    "cov"
+                ],
+                "integrate_box_1d": [
+                    "self",
+                    "low",
+                    "high"
+                ],
+                "integrate_box": [
+                    "self",
+                    "low_bounds",
+                    "high_bounds",
+                    "maxpts"
+                ],
+                "integrate_kde": [
+                    "self",
+                    "other"
+                ],
+                "resample": [
+                    "self",
+                    "size"
+                ],
+                "scotts_factor": [
+                    "self"
+                ],
+                "silverman_factor": [
+                    "self"
+                ],
+                "_compute_covariance": [
+                    "self"
                 ]
             }
         },
-        "scipy.special": {},
-        "scipy.integrate.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.integrate.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.integrate.info": {},
-        "scipy.integrate": {},
-        "scipy.io.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.io.data_store": {
-            "_create_module": [
-                "file_name"
+        "scipy.stats.rv": {
+            "randwppf": [
+                "ppf",
+                "args",
+                "size"
             ],
-            "_create_shelf": [
-                "file_name",
+            "randwcdf": [
+                "cdf",
+                "mean",
+                "args",
+                "size"
+            ]
+        },
+        "scipy.stats": {},
+        "scipy.stats.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.stats.info": {},
+        "scipy.stats.mstats": {},
+        "scipy.stats.mstats_extras": {
+            "hdquantiles": [
+                "data",
+                "prob",
+                "axis",
+                "var"
+            ],
+            "hdmedian": [
+                "data",
+                "axis",
+                "var"
+            ],
+            "hdquantiles_sd": [
+                "data",
+                "prob",
+                "axis"
+            ],
+            "trimmed_mean_ci": [
+                "data",
+                "limits",
+                "inclusive",
+                "alpha",
+                "axis"
+            ],
+            "mjci": [
+                "data",
+                "prob",
+                "axis"
+            ],
+            "mquantiles_cimj": [
+                "data",
+                "prob",
+                "alpha",
+                "axis"
+            ],
+            "median_cihs": [
+                "data",
+                "alpha",
+                "axis"
+            ],
+            "compare_medians_ms": [
+                "group_1",
+                "group_2",
+                "axis"
+            ],
+            "idealfourths": [
+                "data",
+                "axis"
+            ],
+            "rsh": [
+                "data",
+                "points"
+            ]
+        },
+        "scipy.stats.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.misc.helpmod": {
+            "split_line": [
+                "name",
+                "arguments",
+                "width"
+            ],
+            "makenamedict": [],
+            "info": [
+                "object",
+                "maxwidth",
+                "output"
+            ],
+            "source": [
+                "object",
+                "output"
+            ]
+        },
+        "scipy.misc.pexec": {
+            "ParallelExec": {
+                "__init__": [
+                    "self"
+                ],
+                "__call__": [
+                    "self",
+                    "code",
+                    "frame",
+                    "wait"
+                ],
+                "shutdown": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.misc.doccer": {
+            "docformat": [
+                "docstring",
+                "docdict"
+            ],
+            "indentcount_lines": [
+                "lines"
+            ],
+            "filldoc": [
+                "docdict",
+                "unindent_params"
+            ],
+            "unindent_dict": [
+                "docdict"
+            ],
+            "unindent_string": [
+                "docstring"
+            ]
+        },
+        "scipy.misc": {
+            "info": [
+                "object",
+                "maxwidth",
+                "output",
+                "toplevel"
+            ]
+        },
+        "scipy.misc.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.misc.info": {},
+        "scipy.misc.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.ndimage": {},
+        "scipy.ndimage.io": {
+            "imread": [
+                "fname",
+                "flatten"
+            ]
+        },
+        "scipy.ndimage.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.ndimage.info": {},
+        "scipy.ndimage.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib": {},
+        "scipy.lib.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.info": {},
+        "scipy.lib.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.lapack.scons_support": {
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.lib.lapack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.lapack.info": {},
+        "scipy.lib.blas": {
+            "get_blas_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.lib.blas.scons_support": {
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.lib.blas.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.lib.blas.info": {},
+        "scipy.lib.blas.setup": {
+            "needs_cblas_wrapper": [
+                "info"
+            ],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.weave.md5_load": {},
+        "scipy.weave.converters": {},
+        "scipy.weave.numpy_scalar_spec": {
+            "numpy_complex_scalar_converter": {
+                "init_info": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.swigptr2": {},
+        "scipy.weave.swigptr": {},
+        "scipy.weave.standard_array_spec": {
+            "array_converter": {
+                "init_info": [
+                    "self"
+                ],
+                "get_var_type": [
+                    "self",
+                    "value"
+                ],
+                "template_vars": [
+                    "self",
+                    "inline"
+                ],
+                "declaration_code": [
+                    "self",
+                    "templatize",
+                    "inline"
+                ],
+                "cleanup_code": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.common_info": {
+            "basic_module_info": {},
+            "inline_info": {},
+            "swig_info": {}
+        },
+        "scipy.weave.vtk_spec": {
+            "vtk_converter": {
+                "__init__": [
+                    "self",
+                    "class_name"
+                ],
+                "init_info": [
+                    "self"
+                ],
+                "type_match": [
+                    "self",
+                    "value"
+                ],
+                "generate_build_info": [
+                    "self"
+                ],
+                "py_to_c_code": [
+                    "self"
+                ],
+                "c_to_py_code": [
+                    "self"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.weave": {},
+        "scipy.weave.weave_version": {},
+        "scipy.weave.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.weave.info": {},
+        "scipy.weave.base_info": {
+            "unique_values": [
+                "lst"
+            ],
+            "base_info": {
+                "set_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "check_compiler": [
+                    "self",
+                    "compiler"
+                ],
+                "warnings": [
+                    "self"
+                ],
+                "headers": [
+                    "self"
+                ],
+                "include_dirs": [
+                    "self"
+                ],
+                "libraries": [
+                    "self"
+                ],
+                "library_dirs": [
+                    "self"
+                ],
+                "support_code": [
+                    "self"
+                ],
+                "module_init_code": [
+                    "self"
+                ],
+                "sources": [
+                    "self"
+                ],
+                "define_macros": [
+                    "self"
+                ],
+                "undefine_macros": [
+                    "self"
+                ],
+                "extra_compile_args": [
+                    "self"
+                ],
+                "extra_link_args": [
+                    "self"
+                ]
+            },
+            "custom_info": {
+                "__init__": [
+                    "self"
+                ],
+                "add_warning": [
+                    "self",
+                    "warning"
+                ],
+                "add_header": [
+                    "self",
+                    "header"
+                ],
+                "add_include_dir": [
+                    "self",
+                    "include_dir"
+                ],
+                "add_library": [
+                    "self",
+                    "library"
+                ],
+                "add_library_dir": [
+                    "self",
+                    "library_dir"
+                ],
+                "add_support_code": [
+                    "self",
+                    "support_code"
+                ],
+                "add_module_init_code": [
+                    "self",
+                    "module_init_code"
+                ],
+                "add_source": [
+                    "self",
+                    "source"
+                ],
+                "add_define_macro": [
+                    "self",
+                    "define_macro"
+                ],
+                "add_undefine_macro": [
+                    "self",
+                    "undefine_macro"
+                ],
+                "add_extra_compile_arg": [
+                    "self",
+                    "compile_arg"
+                ],
+                "add_extra_link_arg": [
+                    "self",
+                    "link_arg"
+                ]
+            },
+            "info_list": {
+                "get_unique_values": [
+                    "self",
+                    "attribute"
+                ],
+                "extra_compile_args": [
+                    "self"
+                ],
+                "extra_link_args": [
+                    "self"
+                ],
+                "sources": [
+                    "self"
+                ],
+                "define_macros": [
+                    "self"
+                ],
+                "warnings": [
+                    "self"
+                ],
+                "headers": [
+                    "self"
+                ],
+                "include_dirs": [
+                    "self"
+                ],
+                "libraries": [
+                    "self"
+                ],
+                "library_dirs": [
+                    "self"
+                ],
+                "support_code": [
+                    "self"
+                ],
+                "module_init_code": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.weave.cpp_namespace_spec": {
+            "cpp_namespace_converter": {
+                "__init__": [
+                    "self",
+                    "class_name"
+                ],
+                "type_match": [
+                    "self",
+                    "value"
+                ],
+                "type_spec": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "declaration_code": [
+                    "self",
+                    "inline"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "scipy.weave.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.maxentropy": {},
+        "scipy.maxentropy.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.maxentropy.info": {},
+        "scipy.maxentropy.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.interpolate.polyint": {
+            "krogh_interpolate": [
+                "xi",
+                "yi",
+                "x",
+                "der"
+            ],
+            "approximate_taylor_polynomial": [
+                "f",
+                "x",
+                "degree",
+                "scale",
+                "order"
+            ],
+            "barycentric_interpolate": [
+                "xi",
+                "yi",
+                "x"
+            ],
+            "piecewise_polynomial_interpolate": [
+                "xi",
+                "yi",
+                "x",
+                "orders",
+                "der"
+            ],
+            "_isscalar": [
+                "x"
+            ],
+            "_edge_case": [
+                "m0",
+                "d1"
+            ],
+            "_find_derivatives": [
+                "x",
+                "y"
+            ],
+            "pchip": [
+                "x",
+                "y"
+            ],
+            "KroghInterpolator": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ],
+                "derivatives": [
+                    "self",
+                    "x",
+                    "der"
+                ],
+                "derivative": [
+                    "self",
+                    "x",
+                    "der"
+                ]
+            },
+            "BarycentricInterpolator": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "set_yi": [
+                    "self",
+                    "yi"
+                ],
+                "add_xi": [
+                    "self",
+                    "xi",
+                    "yi"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ]
+            },
+            "PiecewisePolynomial": {
+                "__init__": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "orders",
+                    "direction"
+                ],
+                "_make_polynomial": [
+                    "self",
+                    "x1",
+                    "y1",
+                    "x2",
+                    "y2",
+                    "order",
+                    "direction"
+                ],
+                "append": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "order"
+                ],
+                "extend": [
+                    "self",
+                    "xi",
+                    "yi",
+                    "orders"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ],
+                "derivative": [
+                    "self",
+                    "x",
+                    "der"
+                ],
+                "derivatives": [
+                    "self",
+                    "x",
+                    "der"
+                ]
+            }
+        },
+        "scipy.interpolate": {},
+        "scipy.interpolate.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.interpolate.info": {},
+        "scipy.interpolate.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.constants.constants": {
+            "C2K": [
+                "C"
+            ],
+            "K2C": [
+                "K"
+            ],
+            "F2C": [
+                "F"
+            ],
+            "C2F": [
+                "C"
+            ],
+            "F2K": [
+                "F"
+            ],
+            "K2F": [
+                "K"
+            ],
+            "lambda2nu": [
+                "lambda_"
+            ],
+            "nu2lambda": [
+                "nu"
+            ]
+        },
+        "scipy.constants": {},
+        "scipy.constants.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.odr.models": {
+            "_lin_fcn": [
+                "B",
+                "x"
+            ],
+            "_lin_fjb": [
+                "B",
+                "x"
+            ],
+            "_lin_fjd": [
+                "B",
+                "x"
+            ],
+            "_lin_est": [
                 "data"
             ],
-            "save_as_module": [
-                "file_name",
+            "_poly_fcn": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_poly_fjacb": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_poly_fjacd": [
+                "B",
+                "x",
+                "powers"
+            ],
+            "_exp_fcn": [
+                "B",
+                "x"
+            ],
+            "_exp_fjd": [
+                "B",
+                "x"
+            ],
+            "_exp_fjb": [
+                "B",
+                "x"
+            ],
+            "_exp_est": [
+                "data"
+            ],
+            "polynomial": [
+                "order"
+            ],
+            "_unilin": [
+                "B",
+                "x"
+            ],
+            "_unilin_fjd": [
+                "B",
+                "x"
+            ],
+            "_unilin_fjb": [
+                "B",
+                "x"
+            ],
+            "_unilin_est": [
+                "data"
+            ],
+            "_quadratic": [
+                "B",
+                "x"
+            ],
+            "_quad_fjd": [
+                "B",
+                "x"
+            ],
+            "_quad_fjb": [
+                "B",
+                "x"
+            ],
+            "_quad_est": [
                 "data"
             ]
         },
-        "scipy.io.setupscons": {
+        "scipy.odr": {},
+        "scipy.odr.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.io.info": {},
+        "scipy.odr.info": {},
+        "scipy.odr.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.signal": {},
+        "scipy.signal.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.signal.info": {},
+        "scipy.signal.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
         "scipy.io.netcdf": {
             "netcdf_file": {
                 "__init__": [
@@ -656,6 +1146,19 @@
                 ]
             }
         },
+        "scipy.io.data_store": {
+            "_create_module": [
+                "file_name"
+            ],
+            "_create_shelf": [
+                "file_name",
+                "data"
+            ],
+            "save_as_module": [
+                "file_name",
+                "data"
+            ]
+        },
         "scipy.io": {},
         "scipy.io.wavfile": {
             "_read_fmt_chunk": [
@@ -679,13 +1182,33 @@
             ],
             "WavFileWarning": {}
         },
-        "scipy.io.matlab.setup": {
+        "scipy.io.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.io.matlab.setupscons": {
+        "scipy.io.info": {},
+        "scipy.io.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.io.arff.myfunctools": {
+            "partial": {
+                "__init__": [
+                    "self",
+                    "fun"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.io.arff.utils": {},
+        "scipy.io.arff": {},
+        "scipy.io.arff.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
@@ -756,6 +1279,7 @@
                 "code"
             ]
         },
+        "scipy.io.matlab": {},
         "scipy.io.matlab.mio5_params": {
             "mat_struct": {},
             "MatlabObject": {
@@ -782,147 +1306,19 @@
                 ]
             }
         },
-        "scipy.io.matlab": {},
-        "scipy.io.arff.setup": {
+        "scipy.io.matlab.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.io.arff.myfunctools": {
-            "partial": {
-                "__init__": [
-                    "self",
-                    "fun"
-                ],
-                "__call__": [
-                    "self"
-                ]
-            }
-        },
-        "scipy.io.arff.utils": {},
-        "scipy.io.arff": {},
-        "scipy.lib.setup": {
+        "scipy.io.matlab.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.lib.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.lib.info": {},
-        "scipy.lib": {},
-        "scipy.lib.blas.setup": {
-            "needs_cblas_wrapper": [
-                "info"
-            ],
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.lib.blas.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.lib.blas.info": {},
-        "scipy.lib.blas.scons_support": {
-            "generate_interface_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_fake_interface": [
-                "target",
-                "source",
-                "env"
-            ]
-        },
-        "scipy.lib.blas": {
-            "get_blas_funcs": [
-                "names",
-                "arrays",
-                "debug"
-            ]
-        },
-        "scipy.lib.lapack.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.lib.lapack.info": {},
-        "scipy.lib.lapack.scons_support": {
-            "generate_interface_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_fake_interface": [
-                "target",
-                "source",
-                "env"
-            ]
-        },
-        "scipy.maxentropy.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.maxentropy.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.maxentropy.info": {},
-        "scipy.maxentropy": {},
-        "scipy.constants.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.constants.constants": {
-            "C2K": [
-                "C"
-            ],
-            "K2C": [
-                "K"
-            ],
-            "F2C": [
-                "F"
-            ],
-            "C2F": [
-                "C"
-            ],
-            "F2K": [
-                "F"
-            ],
-            "K2F": [
-                "K"
-            ],
-            "lambda2nu": [
-                "lambda_"
-            ],
-            "nu2lambda": [
-                "nu"
-            ]
-        },
-        "scipy.constants": {},
-        "scipy.cluster.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
+        "scipy.cluster": {},
         "scipy.cluster.setupscons": {
             "configuration": [
                 "parent_package",
@@ -930,266 +1326,318 @@
             ]
         },
         "scipy.cluster.info": {},
-        "scipy.cluster": {},
-        "scipy.weave.cpp_namespace_spec": {
-            "cpp_namespace_converter": {
-                "__init__": [
-                    "self",
-                    "class_name"
-                ],
-                "type_match": [
-                    "self",
-                    "value"
-                ],
-                "type_spec": [
-                    "self",
-                    "name",
-                    "value"
-                ],
-                "declaration_code": [
-                    "self",
-                    "inline"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__cmp__": [
-                    "self",
-                    "other"
-                ]
-            }
+        "scipy.cluster.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
         },
-        "scipy.weave.converters": {},
-        "scipy.weave.base_info": {
-            "unique_values": [
-                "lst"
+        "scipy.linalg.linalg_version": {},
+        "scipy.linalg.decomp_svd": {
+            "svd": [
+                "a",
+                "full_matrices",
+                "compute_uv",
+                "overwrite_a"
             ],
-            "base_info": {
-                "set_compiler": [
-                    "self",
-                    "compiler"
-                ],
-                "check_compiler": [
-                    "self",
-                    "compiler"
-                ],
-                "warnings": [
-                    "self"
-                ],
-                "headers": [
-                    "self"
-                ],
-                "include_dirs": [
-                    "self"
-                ],
-                "libraries": [
-                    "self"
-                ],
-                "library_dirs": [
-                    "self"
-                ],
-                "support_code": [
-                    "self"
-                ],
-                "module_init_code": [
-                    "self"
-                ],
-                "sources": [
-                    "self"
-                ],
-                "define_macros": [
-                    "self"
-                ],
-                "undefine_macros": [
-                    "self"
-                ],
-                "extra_compile_args": [
-                    "self"
-                ],
-                "extra_link_args": [
-                    "self"
-                ]
-            },
-            "custom_info": {
-                "__init__": [
-                    "self"
-                ],
-                "add_warning": [
-                    "self",
-                    "warning"
-                ],
-                "add_header": [
-                    "self",
-                    "header"
-                ],
-                "add_include_dir": [
-                    "self",
-                    "include_dir"
-                ],
-                "add_library": [
-                    "self",
-                    "library"
-                ],
-                "add_library_dir": [
-                    "self",
-                    "library_dir"
-                ],
-                "add_support_code": [
-                    "self",
-                    "support_code"
-                ],
-                "add_module_init_code": [
-                    "self",
-                    "module_init_code"
-                ],
-                "add_source": [
-                    "self",
-                    "source"
-                ],
-                "add_define_macro": [
-                    "self",
-                    "define_macro"
-                ],
-                "add_undefine_macro": [
-                    "self",
-                    "undefine_macro"
-                ],
-                "add_extra_compile_arg": [
-                    "self",
-                    "compile_arg"
-                ],
-                "add_extra_link_arg": [
-                    "self",
-                    "link_arg"
-                ]
-            },
-            "info_list": {
-                "get_unique_values": [
-                    "self",
-                    "attribute"
-                ],
-                "extra_compile_args": [
-                    "self"
-                ],
-                "extra_link_args": [
-                    "self"
-                ],
-                "sources": [
-                    "self"
-                ],
-                "define_macros": [
-                    "self"
-                ],
-                "warnings": [
-                    "self"
-                ],
-                "headers": [
-                    "self"
-                ],
-                "include_dirs": [
-                    "self"
-                ],
-                "libraries": [
-                    "self"
-                ],
-                "library_dirs": [
-                    "self"
-                ],
-                "support_code": [
-                    "self"
-                ],
-                "module_init_code": [
-                    "self"
-                ]
-            }
+            "svdvals": [
+                "a",
+                "overwrite_a"
+            ],
+            "diagsvd": [
+                "s",
+                "M",
+                "N"
+            ],
+            "orth": [
+                "A"
+            ]
         },
-        "scipy.weave.setup": {
+        "scipy.linalg.blas": {
+            "has_column_major_storage": [
+                "arr"
+            ],
+            "get_blas_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.linalg.flinalg": {
+            "has_column_major_storage": [
+                "arr"
+            ],
+            "get_flinalg_funcs": [
+                "names",
+                "arrays",
+                "debug"
+            ]
+        },
+        "scipy.linalg.special_matrices": {
+            "tri": [
+                "N",
+                "M",
+                "k",
+                "dtype"
+            ],
+            "tril": [
+                "m",
+                "k"
+            ],
+            "triu": [
+                "m",
+                "k"
+            ],
+            "toeplitz": [
+                "c",
+                "r"
+            ],
+            "circulant": [
+                "c"
+            ],
+            "hankel": [
+                "c",
+                "r"
+            ],
+            "hadamard": [
+                "n",
+                "dtype"
+            ],
+            "leslie": [
+                "f",
+                "s"
+            ],
+            "all_mat": [],
+            "kron": [
+                "a",
+                "b"
+            ],
+            "block_diag": [],
+            "companion": [
+                "a"
+            ]
+        },
+        "scipy.linalg": {},
+        "scipy.linalg.scons_support": {
+            "do_generate_interface": [
+                "target",
+                "source",
+                "env"
+            ],
+            "generate_interface_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_fake_interface": [
+                "target",
+                "source",
+                "env"
+            ]
+        },
+        "scipy.linalg.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.weave.standard_array_spec": {
-            "array_converter": {
-                "init_info": [
-                    "self"
-                ],
-                "get_var_type": [
-                    "self",
-                    "value"
-                ],
-                "template_vars": [
-                    "self",
-                    "inline"
-                ],
-                "declaration_code": [
-                    "self",
-                    "templatize",
-                    "inline"
-                ],
-                "cleanup_code": [
-                    "self"
-                ]
-            }
+        "scipy.linalg.info": {},
+        "scipy.linalg.misc": {
+            "norm": [
+                "a",
+                "ord"
+            ],
+            "_datanotshared": [
+                "a1",
+                "a"
+            ]
         },
-        "scipy.weave.numpy_scalar_spec": {
-            "numpy_complex_scalar_converter": {
-                "init_info": [
-                    "self"
-                ]
-            }
+        "scipy.special.spfun_stats": {
+            "multigammaln": [
+                "a",
+                "d"
+            ]
         },
-        "scipy.weave.setupscons": {
+        "scipy.special.special_version": {},
+        "scipy.special.gendoc": {
+            "parse": [
+                "infile"
+            ]
+        },
+        "scipy.special": {},
+        "scipy.special.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.weave.swigptr2": {},
-        "scipy.weave.info": {},
-        "scipy.weave.md5_load": {},
-        "scipy.weave.common_info": {
-            "basic_module_info": {},
-            "inline_info": {},
-            "swig_info": {}
-        },
-        "scipy.weave.weave_version": {},
-        "scipy.weave": {},
-        "scipy.weave.vtk_spec": {
-            "vtk_converter": {
+        "scipy.special.info": {},
+        "scipy.special.orthogonal": {
+            "poch": [
+                "z",
+                "m"
+            ],
+            "gen_roots_and_weights": [
+                "n",
+                "an_func",
+                "sqrt_bn_func",
+                "mu"
+            ],
+            "j_roots": [
+                "n",
+                "alpha",
+                "beta",
+                "mu"
+            ],
+            "jacobi": [
+                "n",
+                "alpha",
+                "beta",
+                "monic"
+            ],
+            "js_roots": [
+                "n",
+                "p1",
+                "q1",
+                "mu"
+            ],
+            "sh_jacobi": [
+                "n",
+                "p",
+                "q",
+                "monic"
+            ],
+            "la_roots": [
+                "n",
+                "alpha",
+                "mu"
+            ],
+            "genlaguerre": [
+                "n",
+                "alpha",
+                "monic"
+            ],
+            "l_roots": [
+                "n",
+                "mu"
+            ],
+            "laguerre": [
+                "n",
+                "monic"
+            ],
+            "h_roots": [
+                "n",
+                "mu"
+            ],
+            "hermite": [
+                "n",
+                "monic"
+            ],
+            "he_roots": [
+                "n",
+                "mu"
+            ],
+            "hermitenorm": [
+                "n",
+                "monic"
+            ],
+            "cg_roots": [
+                "n",
+                "alpha",
+                "mu"
+            ],
+            "gegenbauer": [
+                "n",
+                "alpha",
+                "monic"
+            ],
+            "t_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyt": [
+                "n",
+                "monic"
+            ],
+            "u_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyu": [
+                "n",
+                "monic"
+            ],
+            "c_roots": [
+                "n",
+                "mu"
+            ],
+            "chebyc": [
+                "n",
+                "monic"
+            ],
+            "s_roots": [
+                "n",
+                "mu"
+            ],
+            "chebys": [
+                "n",
+                "monic"
+            ],
+            "ts_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_chebyt": [
+                "n",
+                "monic"
+            ],
+            "us_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_chebyu": [
+                "n",
+                "monic"
+            ],
+            "p_roots": [
+                "n",
+                "mu"
+            ],
+            "legendre": [
+                "n",
+                "monic"
+            ],
+            "ps_roots": [
+                "n",
+                "mu"
+            ],
+            "sh_legendre": [
+                "n",
+                "monic"
+            ],
+            "orthopoly1d": {
                 "__init__": [
                     "self",
-                    "class_name"
+                    "roots",
+                    "weights",
+                    "hn",
+                    "kn",
+                    "wfunc",
+                    "limits",
+                    "monic",
+                    "eval_func"
                 ],
-                "init_info": [
-                    "self"
-                ],
-                "type_match": [
+                "__call__": [
                     "self",
-                    "value"
+                    "v"
                 ],
-                "generate_build_info": [
-                    "self"
-                ],
-                "py_to_c_code": [
-                    "self"
-                ],
-                "c_to_py_code": [
-                    "self"
-                ],
-                "type_spec": [
+                "_scale": [
                     "self",
-                    "name",
-                    "value"
-                ],
-                "__cmp__": [
-                    "self",
-                    "other"
+                    "p"
                 ]
             }
         },
-        "scipy.weave.swigptr": {},
-        "scipy.spatial.setup": {
+        "scipy.special.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
@@ -1319,6 +1767,7 @@
                 ]
             }
         },
+        "scipy.spatial": {},
         "scipy.spatial.setupscons": {
             "configuration": [
                 "parent_package",
@@ -1326,181 +1775,30 @@
             ]
         },
         "scipy.spatial.info": {},
-        "scipy.spatial": {},
-        "scipy.misc.setup": {
+        "scipy.spatial.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.misc.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.misc.info": {},
-        "scipy.misc.doccer": {
-            "docformat": [
-                "docstring",
-                "docdict"
-            ],
-            "indentcount_lines": [
-                "lines"
-            ],
-            "filldoc": [
-                "docdict",
-                "unindent_params"
-            ],
-            "unindent_dict": [
-                "docdict"
-            ],
-            "unindent_string": [
-                "docstring"
-            ]
-        },
-        "scipy.misc.pexec": {
-            "ParallelExec": {
-                "__init__": [
-                    "self"
-                ],
-                "__call__": [
-                    "self",
-                    "code",
-                    "frame",
-                    "wait"
-                ],
-                "shutdown": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "scipy.misc.helpmod": {
-            "split_line": [
-                "name",
-                "arguments",
-                "width"
-            ],
-            "makenamedict": [],
-            "info": [
-                "object",
-                "maxwidth",
-                "output"
-            ],
-            "source": [
-                "object",
-                "output"
-            ]
-        },
-        "scipy.misc": {
-            "info": [
-                "object",
-                "maxwidth",
-                "output",
-                "toplevel"
-            ]
-        },
-        "scipy.odr.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.odr.models": {
-            "_lin_fcn": [
-                "B",
+        "scipy.optimize._tstutils": {
+            "f1": [
                 "x"
             ],
-            "_lin_fjb": [
-                "B",
+            "f2": [
                 "x"
             ],
-            "_lin_fjd": [
-                "B",
+            "f3": [
                 "x"
             ],
-            "_lin_est": [
-                "data"
-            ],
-            "_poly_fcn": [
-                "B",
-                "x",
-                "powers"
-            ],
-            "_poly_fjacb": [
-                "B",
-                "x",
-                "powers"
-            ],
-            "_poly_fjacd": [
-                "B",
-                "x",
-                "powers"
-            ],
-            "_exp_fcn": [
-                "B",
+            "f4": [
                 "x"
             ],
-            "_exp_fjd": [
-                "B",
+            "f5": [
                 "x"
             ],
-            "_exp_fjb": [
-                "B",
+            "f6": [
                 "x"
-            ],
-            "_exp_est": [
-                "data"
-            ],
-            "polynomial": [
-                "order"
-            ],
-            "_unilin": [
-                "B",
-                "x"
-            ],
-            "_unilin_fjd": [
-                "B",
-                "x"
-            ],
-            "_unilin_fjb": [
-                "B",
-                "x"
-            ],
-            "_unilin_est": [
-                "data"
-            ],
-            "_quadratic": [
-                "B",
-                "x"
-            ],
-            "_quad_fjd": [
-                "B",
-                "x"
-            ],
-            "_quad_fjb": [
-                "B",
-                "x"
-            ],
-            "_quad_est": [
-                "data"
-            ]
-        },
-        "scipy.odr.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.odr.info": {},
-        "scipy.odr": {},
-        "scipy.optimize.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
             ]
         },
         "scipy.optimize.zeros": {
@@ -1570,6 +1868,35 @@
                 ]
             }
         },
+        "scipy.optimize.linesearch": {
+            "line_search": [
+                "f",
+                "myfprime",
+                "xk",
+                "pk",
+                "gfk",
+                "old_fval",
+                "old_old_fval",
+                "args",
+                "c1",
+                "c2",
+                "amax"
+            ]
+        },
+        "scipy.optimize.cobyla": {
+            "fmin_cobyla": [
+                "func",
+                "x0",
+                "cons",
+                "args",
+                "consargs",
+                "rhobeg",
+                "rhoend",
+                "iprint",
+                "maxfun"
+            ]
+        },
+        "scipy.optimize": {},
         "scipy.optimize.setupscons": {
             "configuration": [
                 "parent_package",
@@ -1667,339 +1994,64 @@
                 "maxiter"
             ]
         },
-        "scipy.optimize._tstutils": {
-            "f1": [
-                "x"
-            ],
-            "f2": [
-                "x"
-            ],
-            "f3": [
-                "x"
-            ],
-            "f4": [
-                "x"
-            ],
-            "f5": [
-                "x"
-            ],
-            "f6": [
-                "x"
-            ]
-        },
-        "scipy.optimize.linesearch": {
-            "line_search": [
-                "f",
-                "myfprime",
-                "xk",
-                "pk",
-                "gfk",
-                "old_fval",
-                "old_old_fval",
-                "args",
-                "c1",
-                "c2",
-                "amax"
-            ]
-        },
-        "scipy.optimize.cobyla": {
-            "fmin_cobyla": [
-                "func",
-                "x0",
-                "cons",
-                "args",
-                "consargs",
-                "rhobeg",
-                "rhoend",
-                "iprint",
-                "maxfun"
-            ]
-        },
-        "scipy.optimize": {},
-        "scipy.interpolate.setup": {
+        "scipy.optimize.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.interpolate.polyint": {
-            "krogh_interpolate": [
-                "xi",
-                "yi",
-                "x",
-                "der"
-            ],
-            "approximate_taylor_polynomial": [
-                "f",
-                "x",
-                "degree",
-                "scale",
-                "order"
-            ],
-            "barycentric_interpolate": [
-                "xi",
-                "yi",
+        "scipy.sparse.csc": {
+            "isspmatrix_csc": [
                 "x"
             ],
-            "piecewise_polynomial_interpolate": [
-                "xi",
-                "yi",
-                "x",
-                "orders",
-                "der"
-            ],
-            "_isscalar": [
-                "x"
-            ],
-            "_edge_case": [
-                "m0",
-                "d1"
-            ],
-            "_find_derivatives": [
-                "x",
-                "y"
-            ],
-            "pchip": [
-                "x",
-                "y"
-            ],
-            "KroghInterpolator": {
-                "__init__": [
+            "csc_matrix": {
+                "__getattr__": [
                     "self",
-                    "xi",
-                    "yi"
+                    "attr"
                 ],
-                "__call__": [
+                "transpose": [
+                    "self",
+                    "copy"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "rowcol": [
+                    "self",
+                    "ind"
+                ],
+                "tocsc": [
+                    "self",
+                    "copy"
+                ],
+                "tocsr": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "_swap": [
                     "self",
                     "x"
-                ],
-                "derivatives": [
-                    "self",
-                    "x",
-                    "der"
-                ],
-                "derivative": [
-                    "self",
-                    "x",
-                    "der"
-                ]
-            },
-            "BarycentricInterpolator": {
-                "__init__": [
-                    "self",
-                    "xi",
-                    "yi"
-                ],
-                "set_yi": [
-                    "self",
-                    "yi"
-                ],
-                "add_xi": [
-                    "self",
-                    "xi",
-                    "yi"
-                ],
-                "__call__": [
-                    "self",
-                    "x"
-                ]
-            },
-            "PiecewisePolynomial": {
-                "__init__": [
-                    "self",
-                    "xi",
-                    "yi",
-                    "orders",
-                    "direction"
-                ],
-                "_make_polynomial": [
-                    "self",
-                    "x1",
-                    "y1",
-                    "x2",
-                    "y2",
-                    "order",
-                    "direction"
-                ],
-                "append": [
-                    "self",
-                    "xi",
-                    "yi",
-                    "order"
-                ],
-                "extend": [
-                    "self",
-                    "xi",
-                    "yi",
-                    "orders"
-                ],
-                "__call__": [
-                    "self",
-                    "x"
-                ],
-                "derivative": [
-                    "self",
-                    "x",
-                    "der"
-                ],
-                "derivatives": [
-                    "self",
-                    "x",
-                    "der"
                 ]
             }
         },
-        "scipy.interpolate.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.interpolate.info": {},
-        "scipy.interpolate": {},
-        "scipy.stats.vonmises": {
-            "von_mises_cdf_series": [
+        "scipy.sparse.extract": {
+            "find": [
+                "A"
+            ],
+            "tril": [
+                "A",
                 "k",
-                "x",
-                "p"
+                "format"
             ],
-            "von_mises_cdf_normalapprox": [
+            "triu": [
+                "A",
                 "k",
-                "x",
-                "C1"
-            ],
-            "von_mises_cdf": [
-                "k",
-                "x"
+                "format"
             ]
         },
-        "scipy.stats.mstats": {},
-        "scipy.stats.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.stats.kde": {
-            "gaussian_kde": {
-                "__init__": [
-                    "self",
-                    "dataset"
-                ],
-                "evaluate": [
-                    "self",
-                    "points"
-                ],
-                "integrate_gaussian": [
-                    "self",
-                    "mean",
-                    "cov"
-                ],
-                "integrate_box_1d": [
-                    "self",
-                    "low",
-                    "high"
-                ],
-                "integrate_box": [
-                    "self",
-                    "low_bounds",
-                    "high_bounds",
-                    "maxpts"
-                ],
-                "integrate_kde": [
-                    "self",
-                    "other"
-                ],
-                "resample": [
-                    "self",
-                    "size"
-                ],
-                "scotts_factor": [
-                    "self"
-                ],
-                "silverman_factor": [
-                    "self"
-                ],
-                "_compute_covariance": [
-                    "self"
-                ]
-            }
-        },
-        "scipy.stats.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.stats.info": {},
-        "scipy.stats.mstats_extras": {
-            "hdquantiles": [
-                "data",
-                "prob",
-                "axis",
-                "var"
-            ],
-            "hdmedian": [
-                "data",
-                "axis",
-                "var"
-            ],
-            "hdquantiles_sd": [
-                "data",
-                "prob",
-                "axis"
-            ],
-            "trimmed_mean_ci": [
-                "data",
-                "limits",
-                "inclusive",
-                "alpha",
-                "axis"
-            ],
-            "mjci": [
-                "data",
-                "prob",
-                "axis"
-            ],
-            "mquantiles_cimj": [
-                "data",
-                "prob",
-                "alpha",
-                "axis"
-            ],
-            "median_cihs": [
-                "data",
-                "alpha",
-                "axis"
-            ],
-            "compare_medians_ms": [
-                "group_1",
-                "group_2",
-                "axis"
-            ],
-            "idealfourths": [
-                "data",
-                "axis"
-            ],
-            "rsh": [
-                "data",
-                "points"
-            ]
-        },
-        "scipy.stats.rv": {
-            "randwppf": [
-                "ppf",
-                "args",
-                "size"
-            ],
-            "randwcdf": [
-                "cdf",
-                "mean",
-                "args",
-                "size"
-            ]
-        },
-        "scipy.stats": {},
         "scipy.sparse.dia": {
             "isspmatrix_dia": [
                 "x"
@@ -2046,6 +2098,14 @@
                 ]
             }
         },
+        "scipy.sparse": {},
+        "scipy.sparse.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.info": {},
         "scipy.sparse.data": {
             "_data_matrix": {
                 "__init__": [
@@ -2093,99 +2153,6 @@
                     "other"
                 ]
             }
-        },
-        "scipy.sparse.coo": {
-            "isspmatrix_coo": [
-                "x"
-            ],
-            "coo_matrix": {
-                "__init__": [
-                    "self",
-                    "arg1",
-                    "shape",
-                    "dtype",
-                    "copy",
-                    "dims"
-                ],
-                "getnnz": [
-                    "self"
-                ],
-                "_check": [
-                    "self"
-                ],
-                "rowcol": [
-                    "self",
-                    "num"
-                ],
-                "getdata": [
-                    "self",
-                    "num"
-                ],
-                "transpose": [
-                    "self",
-                    "copy"
-                ],
-                "toarray": [
-                    "self"
-                ],
-                "tocsc": [
-                    "self"
-                ],
-                "tocsr": [
-                    "self"
-                ],
-                "tocoo": [
-                    "self",
-                    "copy"
-                ],
-                "todia": [
-                    "self"
-                ],
-                "todok": [
-                    "self"
-                ],
-                "_with_data": [
-                    "self",
-                    "data",
-                    "copy"
-                ],
-                "_mul_vector": [
-                    "self",
-                    "other"
-                ],
-                "_mul_multivector": [
-                    "self",
-                    "other"
-                ]
-            }
-        },
-        "scipy.sparse.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.info": {},
-        "scipy.sparse.extract": {
-            "find": [
-                "A"
-            ],
-            "tril": [
-                "A",
-                "k",
-                "format"
-            ],
-            "triu": [
-                "A",
-                "k",
-                "format"
-            ]
         },
         "scipy.sparse.lil": {
             "isspmatrix_lil": [
@@ -2297,57 +2264,91 @@
                 ]
             }
         },
-        "scipy.sparse": {},
-        "scipy.sparse.csc": {
-            "isspmatrix_csc": [
+        "scipy.sparse.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.coo": {
+            "isspmatrix_coo": [
                 "x"
             ],
-            "csc_matrix": {
-                "__getattr__": [
+            "coo_matrix": {
+                "__init__": [
                     "self",
-                    "attr"
+                    "arg1",
+                    "shape",
+                    "dtype",
+                    "copy",
+                    "dims"
+                ],
+                "getnnz": [
+                    "self"
+                ],
+                "_check": [
+                    "self"
+                ],
+                "rowcol": [
+                    "self",
+                    "num"
+                ],
+                "getdata": [
+                    "self",
+                    "num"
                 ],
                 "transpose": [
                     "self",
                     "copy"
                 ],
-                "__iter__": [
+                "toarray": [
                     "self"
                 ],
-                "rowcol": [
-                    "self",
-                    "ind"
-                ],
                 "tocsc": [
-                    "self",
-                    "copy"
+                    "self"
                 ],
                 "tocsr": [
                     "self"
                 ],
-                "__getitem__": [
+                "tocoo": [
                     "self",
-                    "key"
+                    "copy"
                 ],
-                "_swap": [
+                "todia": [
+                    "self"
+                ],
+                "todok": [
+                    "self"
+                ],
+                "_with_data": [
                     "self",
-                    "x"
+                    "data",
+                    "copy"
+                ],
+                "_mul_vector": [
+                    "self",
+                    "other"
+                ],
+                "_mul_multivector": [
+                    "self",
+                    "other"
                 ]
             }
         },
-        "scipy.sparse.linalg.setup": {
+        "scipy.sparse.sparsetools": {},
+        "scipy.sparse.sparsetools.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.sparse.linalg.setupscons": {
+        "scipy.sparse.sparsetools.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.sparse.linalg.info": {},
+        "scipy.sparse.linalg": {},
         "scipy.sparse.linalg.interface": {
             "aslinearoperator": [
                 "A"
@@ -2382,13 +2383,20 @@
                 ]
             }
         },
-        "scipy.sparse.linalg": {},
-        "scipy.sparse.linalg.eigen.setup": {
+        "scipy.sparse.linalg.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
+        "scipy.sparse.linalg.info": {},
+        "scipy.sparse.linalg.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen": {},
         "scipy.sparse.linalg.eigen.setupscons": {
             "configuration": [
                 "parent_package",
@@ -2396,7 +2404,107 @@
             ]
         },
         "scipy.sparse.linalg.eigen.info": {},
-        "scipy.sparse.linalg.eigen": {},
+        "scipy.sparse.linalg.eigen.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.lobpcg": {},
+        "scipy.sparse.linalg.eigen.lobpcg.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.lobpcg.info": {},
+        "scipy.sparse.linalg.eigen.lobpcg.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.arpack.speigs": {
+            "check_init": [
+                "n",
+                "nev",
+                "ncv"
+            ],
+            "init_workspaces": [
+                "n",
+                "nev",
+                "ncv"
+            ],
+            "init_debug": [],
+            "init_postproc_workspace": [
+                "n",
+                "nev",
+                "ncv"
+            ],
+            "postproc": [
+                "n",
+                "nev",
+                "ncv",
+                "sigmar",
+                "sigmai",
+                "bmat",
+                "which",
+                "tol",
+                "resid",
+                "v",
+                "iparam",
+                "ipntr",
+                "workd",
+                "workl",
+                "info"
+            ],
+            "ARPACK_eigs": [
+                "matvec",
+                "n",
+                "nev",
+                "which",
+                "ncv",
+                "tol"
+            ],
+            "ARPACK_gen_eigs": [
+                "matvec",
+                "sigma_solve",
+                "n",
+                "sigma",
+                "nev",
+                "which",
+                "ncv",
+                "tol"
+            ],
+            "ARPACK_iteration": [
+                "matvec",
+                "sigma_solve",
+                "n",
+                "bmat",
+                "which",
+                "nev",
+                "tol",
+                "ncv",
+                "mode"
+            ],
+            "ArpackException": {
+                "__init__": [
+                    "self",
+                    "info"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            }
+        },
+        "scipy.sparse.linalg.eigen.arpack": {},
+        "scipy.sparse.linalg.eigen.arpack.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "scipy.sparse.linalg.eigen.arpack.info": {},
         "scipy.sparse.linalg.eigen.arpack.arpack": {
             "eigen": [
                 "A",
@@ -2486,125 +2594,6 @@
                 ]
             }
         },
-        "scipy.sparse.linalg.eigen.arpack.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.linalg.eigen.arpack.speigs": {
-            "check_init": [
-                "n",
-                "nev",
-                "ncv"
-            ],
-            "init_workspaces": [
-                "n",
-                "nev",
-                "ncv"
-            ],
-            "init_debug": [],
-            "init_postproc_workspace": [
-                "n",
-                "nev",
-                "ncv"
-            ],
-            "postproc": [
-                "n",
-                "nev",
-                "ncv",
-                "sigmar",
-                "sigmai",
-                "bmat",
-                "which",
-                "tol",
-                "resid",
-                "v",
-                "iparam",
-                "ipntr",
-                "workd",
-                "workl",
-                "info"
-            ],
-            "ARPACK_eigs": [
-                "matvec",
-                "n",
-                "nev",
-                "which",
-                "ncv",
-                "tol"
-            ],
-            "ARPACK_gen_eigs": [
-                "matvec",
-                "sigma_solve",
-                "n",
-                "sigma",
-                "nev",
-                "which",
-                "ncv",
-                "tol"
-            ],
-            "ARPACK_iteration": [
-                "matvec",
-                "sigma_solve",
-                "n",
-                "bmat",
-                "which",
-                "nev",
-                "tol",
-                "ncv",
-                "mode"
-            ],
-            "ArpackException": {
-                "__init__": [
-                    "self",
-                    "info"
-                ],
-                "__str__": [
-                    "self"
-                ]
-            }
-        },
-        "scipy.sparse.linalg.eigen.arpack.info": {},
-        "scipy.sparse.linalg.eigen.arpack": {},
-        "scipy.sparse.linalg.eigen.lobpcg.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.linalg.eigen.lobpcg.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.linalg.eigen.lobpcg.info": {},
-        "scipy.sparse.linalg.eigen.lobpcg": {},
-        "scipy.sparse.linalg.isolve.lgmres": {
-            "norm2": [
-                "q"
-            ],
-            "lgmres": [
-                "A",
-                "b",
-                "x0",
-                "tol",
-                "maxiter",
-                "M",
-                "callback",
-                "inner_m",
-                "outer_k",
-                "outer_v",
-                "store_outer_Av"
-            ]
-        },
-        "scipy.sparse.linalg.isolve.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
         "scipy.sparse.linalg.isolve.iterative": {
             "set_docstring": [
                 "header",
@@ -2675,12 +2664,31 @@
             ]
         },
         "scipy.sparse.linalg.isolve": {},
-        "scipy.sparse.linalg.dsolve.setup": {
+        "scipy.sparse.linalg.isolve.setupscons": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
+        "scipy.sparse.linalg.isolve.lgmres": {
+            "norm2": [
+                "q"
+            ],
+            "lgmres": [
+                "A",
+                "b",
+                "x0",
+                "tol",
+                "maxiter",
+                "M",
+                "callback",
+                "inner_m",
+                "outer_k",
+                "outer_v",
+                "store_outer_Av"
+            ]
+        },
+        "scipy.sparse.linalg.dsolve": {},
         "scipy.sparse.linalg.dsolve.setupscons": {
             "configuration": [
                 "parent_package",
@@ -2688,13 +2696,13 @@
             ]
         },
         "scipy.sparse.linalg.dsolve.info": {},
-        "scipy.sparse.linalg.dsolve": {},
-        "scipy.sparse.linalg.dsolve.umfpack.setup": {
+        "scipy.sparse.linalg.dsolve.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
+        "scipy.sparse.linalg.dsolve.umfpack": {},
         "scipy.sparse.linalg.dsolve.umfpack.setupscons": {
             "configuration": [
                 "parent_package",
@@ -2702,21 +2710,12 @@
             ]
         },
         "scipy.sparse.linalg.dsolve.umfpack.info": {},
-        "scipy.sparse.linalg.dsolve.umfpack": {},
-        "scipy.sparse.sparsetools.setup": {
+        "scipy.sparse.linalg.dsolve.umfpack.setup": {
             "configuration": [
                 "parent_package",
                 "top_path"
             ]
         },
-        "scipy.sparse.sparsetools.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "scipy.sparse.sparsetools": {},
-        "doc.sphinxext.setup": {},
         "doc.sphinxext.docscrape_sphinx": {
             "get_doc_object": [
                 "obj",
@@ -3049,6 +3048,53 @@
                 ]
             }
         },
+        "doc.sphinxext.only_directives": {
+            "run": [
+                "content",
+                "node_class",
+                "state",
+                "content_offset"
+            ],
+            "setup": [
+                "app"
+            ],
+            "html_only": {},
+            "latex_only": {}
+        },
+        "doc.sphinxext.traitsdoc": {
+            "looks_like_issubclass": [
+                "obj",
+                "classname"
+            ],
+            "get_doc_object": [
+                "obj",
+                "what",
+                "config"
+            ],
+            "setup": [
+                "app"
+            ],
+            "SphinxTraitsDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "modulename",
+                    "func_doc"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            }
+        },
+        "doc.sphinxext": {},
         "doc.sphinxext.comment_eater": {
             "strip_comment_marker": [
                 "text"
@@ -3129,52 +3175,6 @@
                 ]
             }
         },
-        "doc.sphinxext.only_directives": {
-            "run": [
-                "content",
-                "node_class",
-                "state",
-                "content_offset"
-            ],
-            "setup": [
-                "app"
-            ],
-            "html_only": {},
-            "latex_only": {}
-        },
-        "doc.sphinxext.traitsdoc": {
-            "looks_like_issubclass": [
-                "obj",
-                "classname"
-            ],
-            "get_doc_object": [
-                "obj",
-                "what",
-                "config"
-            ],
-            "setup": [
-                "app"
-            ],
-            "SphinxTraitsDoc": {
-                "__init__": [
-                    "self",
-                    "cls",
-                    "modulename",
-                    "func_doc"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "indent",
-                    "func_role"
-                ]
-            }
-        },
-        "doc.sphinxext": {}
+        "doc.sphinxext.setup": {}
     }
 }

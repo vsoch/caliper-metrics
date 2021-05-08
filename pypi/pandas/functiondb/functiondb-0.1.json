@@ -1,42 +1,44 @@
 {
     "0.1": {
-        "pandas.info": {},
         "pandas.version": {},
-        "pandas.sandbox": {},
-        "pandas.sandbox.stats.rls": {
-            "RLS": {
+        "pandas.info": {},
+        "pandas.core.collection": {
+            "PickleContainer": {
                 "__init__": [
                     "self",
-                    "endog",
-                    "exog",
-                    "constr",
-                    "param",
-                    "sigma"
+                    "dirPath",
+                    "lruSize"
                 ],
-                "rwexog": [
+                "__repr__": [
                     "self"
                 ],
-                "inv_rwexog": [
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__delitem__": [
+                    "self",
+                    "key"
+                ],
+                "__iter__": [
                     "self"
                 ],
-                "rwendog": [
+                "iteritems": [
                     "self"
                 ],
-                "rnorm_cov_params": [
+                "keys": [
                     "self"
                 ],
-                "wrnorm_cov_params": [
-                    "self"
-                ],
-                "coeffs": [
-                    "self"
-                ],
-                "fit": [
+                "values": [
                     "self"
                 ]
             }
         },
-        "pandas.sandbox.stats": {},
         "pandas.core.pytools": {
             "rands": [
                 "n"
@@ -71,6 +73,105 @@
                 ]
             }
         },
+        "pandas.core.index": {
+            "_indexOp": [
+                "opname"
+            ],
+            "Index": {
+                "__new__": [
+                    "cls",
+                    "data",
+                    "dtype",
+                    "copy"
+                ],
+                "__array_finalize__": [
+                    "self",
+                    "obj"
+                ],
+                "_checkForDuplicates": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__setstate__": [
+                    "self",
+                    "state"
+                ],
+                "__deepcopy__": [
+                    "self",
+                    "memo"
+                ],
+                "__contains__": [
+                    "self",
+                    "date"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "equals": [
+                    "self",
+                    "other"
+                ],
+                "_computeMD5": [
+                    "self"
+                ],
+                "_md5": [
+                    "self"
+                ],
+                "asOfDate": [
+                    "self",
+                    "date"
+                ],
+                "sort": [
+                    "self"
+                ],
+                "argsort": [
+                    "self"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "union": [
+                    "self",
+                    "other"
+                ],
+                "intersection": [
+                    "self",
+                    "other"
+                ],
+                "diff": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "pandas.core.mixins": {
+            "Picklable": {
+                "save": [
+                    "self",
+                    "fileName"
+                ],
+                "load": [
+                    "cls",
+                    "fileName"
+                ]
+            },
+            "Groupable": {
+                "groupby": [
+                    "self",
+                    "mapper"
+                ]
+            }
+        },
+        "pandas.core": {},
         "pandas.core.series": {
             "_seriesOpWrap": [
                 "opname"
@@ -355,123 +456,6 @@
             },
             "TimeSeries": {}
         },
-        "pandas.core.api": {},
-        "pandas.core.collection": {
-            "PickleContainer": {
-                "__init__": [
-                    "self",
-                    "dirPath",
-                    "lruSize"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__setitem__": [
-                    "self",
-                    "key",
-                    "value"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__delitem__": [
-                    "self",
-                    "key"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "iteritems": [
-                    "self"
-                ],
-                "keys": [
-                    "self"
-                ],
-                "values": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.core.daterange": {
-            "_getIndexLoc": [
-                "index",
-                "date"
-            ],
-            "XDateRange": {
-                "__init__": [
-                    "self",
-                    "fromDate",
-                    "toDate",
-                    "nPeriods",
-                    "offset",
-                    "timeRule"
-                ],
-                "__iter__": [
-                    "self"
-                ]
-            },
-            "DateRange": {
-                "__new__": [
-                    "cls",
-                    "fromDate",
-                    "toDate",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "getCachedRange": [
-                    "cls",
-                    "start",
-                    "end",
-                    "periods",
-                    "offset",
-                    "timeRule"
-                ],
-                "fromIndex": [
-                    "cls",
-                    "index"
-                ],
-                "__array_finalize__": [
-                    "self",
-                    "obj"
-                ],
-                "__lt__": [
-                    "self",
-                    "other"
-                ],
-                "__le__": [
-                    "self",
-                    "other"
-                ],
-                "__gt__": [
-                    "self",
-                    "other"
-                ],
-                "__ge__": [
-                    "self",
-                    "other"
-                ],
-                "__eq__": [
-                    "self",
-                    "other"
-                ],
-                "__getitem__": [
-                    "self",
-                    "key"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__str__": [
-                    "self"
-                ],
-                "shift": [
-                    "self",
-                    "n"
-                ]
-            }
-        },
         "pandas.core.datetools": {
             "format": [
                 "dt"
@@ -701,104 +685,109 @@
                 ]
             }
         },
-        "pandas.core.index": {
-            "_indexOp": [
-                "opname"
+        "pandas.core.daterange": {
+            "_getIndexLoc": [
+                "index",
+                "date"
             ],
-            "Index": {
+            "XDateRange": {
+                "__init__": [
+                    "self",
+                    "fromDate",
+                    "toDate",
+                    "nPeriods",
+                    "offset",
+                    "timeRule"
+                ],
+                "__iter__": [
+                    "self"
+                ]
+            },
+            "DateRange": {
                 "__new__": [
                     "cls",
-                    "data",
-                    "dtype",
-                    "copy"
+                    "fromDate",
+                    "toDate",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "getCachedRange": [
+                    "cls",
+                    "start",
+                    "end",
+                    "periods",
+                    "offset",
+                    "timeRule"
+                ],
+                "fromIndex": [
+                    "cls",
+                    "index"
                 ],
                 "__array_finalize__": [
                     "self",
                     "obj"
                 ],
-                "_checkForDuplicates": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ],
-                "__setstate__": [
+                "__lt__": [
                     "self",
-                    "state"
+                    "other"
                 ],
-                "__deepcopy__": [
+                "__le__": [
                     "self",
-                    "memo"
+                    "other"
                 ],
-                "__contains__": [
+                "__gt__": [
                     "self",
-                    "date"
+                    "other"
                 ],
-                "__setitem__": [
+                "__ge__": [
                     "self",
-                    "key",
-                    "value"
+                    "other"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
                 ],
                 "__getitem__": [
                     "self",
                     "key"
                 ],
-                "equals": [
-                    "self",
-                    "other"
-                ],
-                "_computeMD5": [
+                "__repr__": [
                     "self"
                 ],
-                "_md5": [
+                "__str__": [
                     "self"
                 ],
-                "asOfDate": [
+                "shift": [
                     "self",
-                    "date"
-                ],
-                "sort": [
-                    "self"
-                ],
-                "argsort": [
-                    "self"
-                ],
-                "__add__": [
-                    "self",
-                    "other"
-                ],
-                "union": [
-                    "self",
-                    "other"
-                ],
-                "intersection": [
-                    "self",
-                    "other"
-                ],
-                "diff": [
-                    "self",
-                    "other"
+                    "n"
                 ]
             }
         },
-        "pandas.core": {},
-        "pandas.core.mixins": {
-            "Picklable": {
-                "save": [
-                    "self",
-                    "fileName"
+        "pandas.core.api": {},
+        "pandas.core.tests.test_groupby": {
+            "commonSetUp": [
+                "self"
+            ],
+            "GroupByTestCase": {
+                "testPythonGrouper": [
+                    "self"
                 ],
-                "load": [
-                    "cls",
-                    "fileName"
+                "testCythonGrouper": [
+                    "self"
+                ],
+                "testNaNGrouping": [
+                    "self"
+                ],
+                "testMembership": [
+                    "self"
+                ],
+                "testByColumnName": [
+                    "self"
                 ]
             },
-            "Groupable": {
-                "groupby": [
-                    "self",
-                    "mapper"
-                ]
-            }
+            "TestAggregate": {},
+            "TestTransform": {}
         },
         "pandas.core.tests.common": {
             "rands": [
@@ -860,207 +849,7 @@
             "makeDataMatrix": [],
             "makeTimeDataMatrix": []
         },
-        "pandas.core.tests.test_series": {
-            "TestSeries": {
-                "setUp": [
-                    "self"
-                ],
-                "test_constructor": [
-                    "self"
-                ],
-                "test_setindex": [
-                    "self"
-                ],
-                "test_array_finalize": [
-                    "self"
-                ],
-                "test_fromDict": [
-                    "self"
-                ],
-                "test_fromValue": [
-                    "self"
-                ],
-                "test_contains": [
-                    "self"
-                ],
-                "test_pickle": [
-                    "self"
-                ],
-                "test_getitem_get": [
-                    "self"
-                ],
-                "test_fancy": [
-                    "self"
-                ],
-                "test_slice": [
-                    "self"
-                ],
-                "test_setitem": [
-                    "self"
-                ],
-                "test_setslice": [
-                    "self"
-                ],
-                "test_repr": [
-                    "self"
-                ],
-                "test_iter": [
-                    "self"
-                ],
-                "test_keys": [
-                    "self"
-                ],
-                "test_values": [
-                    "self"
-                ],
-                "test_iteritems": [
-                    "self"
-                ],
-                "test_stats": [
-                    "self"
-                ],
-                "test_append": [
-                    "self"
-                ],
-                "test_operators": [
-                    "self"
-                ],
-                "test_operators_date": [
-                    "self"
-                ],
-                "test_operators_corner": [
-                    "self"
-                ],
-                "test_operators_frame": [
-                    "self"
-                ],
-                "test_combineFirst": [
-                    "self"
-                ],
-                "test_overloads": [
-                    "self"
-                ],
-                "test_median": [
-                    "self"
-                ],
-                "test_corr": [
-                    "self"
-                ],
-                "test_copy": [
-                    "self"
-                ],
-                "test_count": [
-                    "self"
-                ],
-                "test_sort": [
-                    "self"
-                ],
-                "test_order": [
-                    "self"
-                ],
-                "test_map": [
-                    "self"
-                ],
-                "test_toCSV": [
-                    "self"
-                ],
-                "test_toDict": [
-                    "self"
-                ],
-                "test_cap": [
-                    "self"
-                ],
-                "test_floor": [
-                    "self"
-                ],
-                "test_valid": [
-                    "self"
-                ],
-                "test_shift": [
-                    "self"
-                ],
-                "test_truncate": [
-                    "self"
-                ],
-                "test_asOf": [
-                    "self"
-                ],
-                "test_merge": [
-                    "self"
-                ],
-                "test_reindex": [
-                    "self"
-                ],
-                "test_reindex_bool": [
-                    "self"
-                ],
-                "test_reindex_bool_pad": [
-                    "self"
-                ],
-                "test_preserveRefs": [
-                    "self"
-                ],
-                "test_fill": [
-                    "self"
-                ],
-                "test_asfreq": [
-                    "self"
-                ],
-                "test_interpolate": [
-                    "self"
-                ],
-                "test_weekday": [
-                    "self"
-                ],
-                "test_diff": [
-                    "self"
-                ],
-                "test_autocorr": [
-                    "self"
-                ],
-                "test_firstValid": [
-                    "self"
-                ],
-                "test_lastValid": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.core.tests.test_matrix": {
-            "TestDataMatrix": {
-                "test_more_constructor": [
-                    "self"
-                ],
-                "test_more_fromDict": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.core.tests.test_groupby": {
-            "commonSetUp": [
-                "self"
-            ],
-            "GroupByTestCase": {
-                "testPythonGrouper": [
-                    "self"
-                ],
-                "testCythonGrouper": [
-                    "self"
-                ],
-                "testNaNGrouping": [
-                    "self"
-                ],
-                "testMembership": [
-                    "self"
-                ],
-                "testByColumnName": [
-                    "self"
-                ]
-            },
-            "TestAggregate": {},
-            "TestTransform": {}
-        },
-        "pandas.core.tests.test_index": {
+        "pandas.core.tests.test_index_flymake": {
             "TestIndex": {
                 "setUp": [
                     "self"
@@ -1117,6 +906,247 @@
                     "self"
                 ],
                 "test_pickle": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.core.tests.test_matrix": {
+            "TestDataMatrix": {
+                "test_more_constructor": [
+                    "self"
+                ],
+                "test_more_fromDict": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.core.tests.test_panel": {
+            "TestWidePanel": {
+                "test_wide_axis_number": [
+                    "self"
+                ],
+                "test_wide_axis_name": [
+                    "self"
+                ],
+                "test_get_plane_axes": [
+                    "self"
+                ],
+                "test_fromDict": [
+                    "self"
+                ],
+                "test_keys": [
+                    "self"
+                ],
+                "test_iteritems": [
+                    "self"
+                ],
+                "test_values": [
+                    "self"
+                ],
+                "test_getitem": [
+                    "self"
+                ],
+                "test_setitem": [
+                    "self"
+                ],
+                "test_pickle": [
+                    "self"
+                ],
+                "test_conform": [
+                    "self"
+                ],
+                "test_reindex": [
+                    "self"
+                ],
+                "test_combineFrame": [
+                    "self"
+                ],
+                "test_combinePanel": [
+                    "self"
+                ],
+                "test_operators": [
+                    "self"
+                ],
+                "test_getMajorXS": [
+                    "self"
+                ],
+                "test_getMinorXS": [
+                    "self"
+                ],
+                "test_groupby": [
+                    "self"
+                ],
+                "test_swapaxes": [
+                    "self"
+                ],
+                "test_toLong": [
+                    "self"
+                ],
+                "test_filterItems": [
+                    "self"
+                ],
+                "test_apply": [
+                    "self"
+                ],
+                "test_shift": [
+                    "self"
+                ]
+            },
+            "TestLongPanelIndex": {
+                "test_constructor": [
+                    "self"
+                ],
+                "test_isConsistent": [
+                    "self"
+                ],
+                "test_truncate": [
+                    "self"
+                ],
+                "test_getMajorBounds": [
+                    "self"
+                ],
+                "test_getAxisBounds": [
+                    "self"
+                ],
+                "test_getLabelBounds": [
+                    "self"
+                ],
+                "test_bounds": [
+                    "self"
+                ],
+                "test_makeMask": [
+                    "self"
+                ],
+                "test_dims": [
+                    "self"
+                ]
+            },
+            "TestLongPanel": {
+                "test_constructor": [
+                    "self"
+                ],
+                "test_fromRecords": [
+                    "self"
+                ],
+                "test_columns": [
+                    "self"
+                ],
+                "test_copy": [
+                    "self"
+                ],
+                "test_values": [
+                    "self"
+                ],
+                "test_getitem": [
+                    "self"
+                ],
+                "test_setitem": [
+                    "self"
+                ],
+                "test_pickle": [
+                    "self"
+                ],
+                "test_combineFrame": [
+                    "self"
+                ],
+                "test_combinePanel": [
+                    "self"
+                ],
+                "test_operators": [
+                    "self"
+                ],
+                "test_sort": [
+                    "self"
+                ],
+                "test_toWide": [
+                    "self"
+                ],
+                "test_toCSV": [
+                    "self"
+                ],
+                "test_toString": [
+                    "self"
+                ],
+                "test_swapaxes": [
+                    "self"
+                ],
+                "test_truncate": [
+                    "self"
+                ],
+                "test_filterItems": [
+                    "self"
+                ],
+                "test_getAxisDummies": [
+                    "self"
+                ],
+                "test_getFrameDummies": [
+                    "self"
+                ],
+                "test_getItemDummies": [
+                    "self"
+                ],
+                "test_applyToAxis": [
+                    "self"
+                ],
+                "test_mean": [
+                    "self"
+                ],
+                "test_sum": [
+                    "self"
+                ],
+                "test_apply": [
+                    "self"
+                ],
+                "test_count": [
+                    "self"
+                ],
+                "test_leftJoin": [
+                    "self"
+                ],
+                "test_merge": [
+                    "self"
+                ],
+                "test_addPrefix": [
+                    "self"
+                ]
+            },
+            "TestFactor": {
+                "test_constructor": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.core.tests.test_tseries": {
+            "TestUtil": {
+                "test_map_indices": [
+                    "self"
+                ]
+            },
+            "TestReindex": {
+                "test_getMergeVec": [
+                    "self"
+                ],
+                "test_getFillVec": [
+                    "self"
+                ]
+            },
+            "TestGroupby": {},
+            "TestIsnull": {},
+            "TestOperators": {},
+            "TestMoments": {
+                "test_sum": [
+                    "self"
+                ],
+                "test_mean": [
+                    "self"
+                ],
+                "test_var": [
+                    "self"
+                ],
+                "test_skewness": [
+                    "self"
+                ],
+                "test_kurtosis": [
                     "self"
                 ]
             }
@@ -1356,203 +1386,61 @@
                 ]
             }
         },
-        "pandas.core.tests.test_panel": {
-            "TestWidePanel": {
-                "test_wide_axis_number": [
-                    "self"
-                ],
-                "test_wide_axis_name": [
-                    "self"
-                ],
-                "test_get_plane_axes": [
-                    "self"
-                ],
-                "test_fromDict": [
-                    "self"
-                ],
-                "test_keys": [
-                    "self"
-                ],
-                "test_iteritems": [
-                    "self"
-                ],
-                "test_values": [
-                    "self"
-                ],
-                "test_getitem": [
-                    "self"
-                ],
-                "test_setitem": [
-                    "self"
-                ],
-                "test_pickle": [
-                    "self"
-                ],
-                "test_conform": [
-                    "self"
-                ],
-                "test_reindex": [
-                    "self"
-                ],
-                "test_combineFrame": [
-                    "self"
-                ],
-                "test_combinePanel": [
-                    "self"
-                ],
-                "test_operators": [
-                    "self"
-                ],
-                "test_getMajorXS": [
-                    "self"
-                ],
-                "test_getMinorXS": [
-                    "self"
-                ],
-                "test_groupby": [
-                    "self"
-                ],
-                "test_swapaxes": [
-                    "self"
-                ],
-                "test_toLong": [
-                    "self"
-                ],
-                "test_filterItems": [
-                    "self"
-                ],
-                "test_apply": [
-                    "self"
-                ],
-                "test_shift": [
-                    "self"
-                ]
-            },
-            "TestLongPanelIndex": {
-                "test_constructor": [
-                    "self"
-                ],
-                "test_isConsistent": [
-                    "self"
-                ],
-                "test_truncate": [
-                    "self"
-                ],
-                "test_getMajorBounds": [
-                    "self"
-                ],
-                "test_getAxisBounds": [
-                    "self"
-                ],
-                "test_getLabelBounds": [
-                    "self"
-                ],
-                "test_bounds": [
-                    "self"
-                ],
-                "test_makeMask": [
-                    "self"
-                ],
-                "test_dims": [
-                    "self"
-                ]
-            },
-            "TestLongPanel": {
-                "test_constructor": [
-                    "self"
-                ],
-                "test_fromRecords": [
-                    "self"
-                ],
-                "test_columns": [
-                    "self"
-                ],
-                "test_copy": [
-                    "self"
-                ],
-                "test_values": [
-                    "self"
-                ],
-                "test_getitem": [
-                    "self"
-                ],
-                "test_setitem": [
-                    "self"
-                ],
-                "test_pickle": [
-                    "self"
-                ],
-                "test_combineFrame": [
-                    "self"
-                ],
-                "test_combinePanel": [
-                    "self"
-                ],
-                "test_operators": [
-                    "self"
-                ],
-                "test_sort": [
-                    "self"
-                ],
-                "test_toWide": [
-                    "self"
-                ],
-                "test_toCSV": [
-                    "self"
-                ],
-                "test_toString": [
-                    "self"
-                ],
-                "test_swapaxes": [
-                    "self"
-                ],
-                "test_truncate": [
-                    "self"
-                ],
-                "test_filterItems": [
-                    "self"
-                ],
-                "test_getAxisDummies": [
-                    "self"
-                ],
-                "test_getFrameDummies": [
-                    "self"
-                ],
-                "test_getItemDummies": [
-                    "self"
-                ],
-                "test_applyToAxis": [
-                    "self"
-                ],
-                "test_mean": [
-                    "self"
-                ],
-                "test_sum": [
-                    "self"
-                ],
-                "test_apply": [
-                    "self"
-                ],
-                "test_count": [
-                    "self"
-                ],
-                "test_leftJoin": [
-                    "self"
-                ],
-                "test_merge": [
-                    "self"
-                ],
-                "test_addPrefix": [
-                    "self"
-                ]
-            },
-            "TestFactor": {
-                "test_constructor": [
-                    "self"
-                ]
-            }
+        "pandas.core.tests.test_datetools": {
+            "testFormat": [],
+            "testOle2datetime": [],
+            "testTto_datetime1": [],
+            "testTto_datetime2": [],
+            "testNormalize_date": [],
+            "myAssert": [
+                "actual",
+                "expected"
+            ],
+            "testEQ": [],
+            "testHash": [],
+            "testCall": [],
+            "testRAdd": [],
+            "testSub": [],
+            "testRSub": [],
+            "testMult1": [],
+            "testMult2": [],
+            "testRollback1": [],
+            "testRollback2": [],
+            "testRollforward1": [],
+            "testRollforward2": [],
+            "assertOnOffset": [
+                "offset",
+                "date",
+                "expected"
+            ],
+            "testOnOffset": [],
+            "assertEq": [
+                "dateOffset",
+                "baseDate",
+                "expected"
+            ],
+            "testBday": [],
+            "testWeek": [],
+            "testBMonthEnd": [],
+            "testBYearEnd": [],
+            "testYearBegin": [],
+            "testBQuarterEnd": [],
+            "testBQuarterEndOffsets": [],
+            "eqXDateRange": [
+                "kwargs",
+                "expected"
+            ],
+            "testXDateRange1": [],
+            "testXDateRange2": [],
+            "testXDateRange3": [],
+            "assertEqual": [
+                "a",
+                "b"
+            ],
+            "testDateRange1": []
         },
-        "pandas.core.tests.test_index_flymake": {
+        "pandas.core.tests": {},
+        "pandas.core.tests.test_index": {
             "TestIndex": {
                 "setUp": [
                     "self"
@@ -1613,146 +1501,172 @@
                 ]
             }
         },
-        "pandas.core.tests.test_datetools": {
-            "testFormat": [],
-            "testOle2datetime": [],
-            "testTto_datetime1": [],
-            "testTto_datetime2": [],
-            "testNormalize_date": [],
-            "myAssert": [
-                "actual",
-                "expected"
-            ],
-            "testEQ": [],
-            "testHash": [],
-            "testCall": [],
-            "testRAdd": [],
-            "testSub": [],
-            "testRSub": [],
-            "testMult1": [],
-            "testMult2": [],
-            "testRollback1": [],
-            "testRollback2": [],
-            "testRollforward1": [],
-            "testRollforward2": [],
-            "assertOnOffset": [
-                "offset",
-                "date",
-                "expected"
-            ],
-            "testOnOffset": [],
-            "assertEq": [
-                "dateOffset",
-                "baseDate",
-                "expected"
-            ],
-            "testBday": [],
-            "testWeek": [],
-            "testBMonthEnd": [],
-            "testBYearEnd": [],
-            "testYearBegin": [],
-            "testBQuarterEnd": [],
-            "testBQuarterEndOffsets": [],
-            "eqXDateRange": [
-                "kwargs",
-                "expected"
-            ],
-            "testXDateRange1": [],
-            "testXDateRange2": [],
-            "testXDateRange3": [],
-            "assertEqual": [
-                "a",
-                "b"
-            ],
-            "testDateRange1": []
-        },
-        "pandas.core.tests": {},
-        "pandas.core.tests.test_tseries": {
-            "TestUtil": {
-                "test_map_indices": [
-                    "self"
-                ]
-            },
-            "TestReindex": {
-                "test_getMergeVec": [
+        "pandas.core.tests.test_series": {
+            "TestSeries": {
+                "setUp": [
                     "self"
                 ],
-                "test_getFillVec": [
-                    "self"
-                ]
-            },
-            "TestGroupby": {},
-            "TestIsnull": {},
-            "TestOperators": {},
-            "TestMoments": {
-                "test_sum": [
+                "test_constructor": [
                     "self"
                 ],
-                "test_mean": [
+                "test_setindex": [
                     "self"
                 ],
-                "test_var": [
+                "test_array_finalize": [
                     "self"
                 ],
-                "test_skewness": [
+                "test_fromDict": [
                     "self"
                 ],
-                "test_kurtosis": [
+                "test_fromValue": [
+                    "self"
+                ],
+                "test_contains": [
+                    "self"
+                ],
+                "test_pickle": [
+                    "self"
+                ],
+                "test_getitem_get": [
+                    "self"
+                ],
+                "test_fancy": [
+                    "self"
+                ],
+                "test_slice": [
+                    "self"
+                ],
+                "test_setitem": [
+                    "self"
+                ],
+                "test_setslice": [
+                    "self"
+                ],
+                "test_repr": [
+                    "self"
+                ],
+                "test_iter": [
+                    "self"
+                ],
+                "test_keys": [
+                    "self"
+                ],
+                "test_values": [
+                    "self"
+                ],
+                "test_iteritems": [
+                    "self"
+                ],
+                "test_stats": [
+                    "self"
+                ],
+                "test_append": [
+                    "self"
+                ],
+                "test_operators": [
+                    "self"
+                ],
+                "test_operators_date": [
+                    "self"
+                ],
+                "test_operators_corner": [
+                    "self"
+                ],
+                "test_operators_frame": [
+                    "self"
+                ],
+                "test_combineFirst": [
+                    "self"
+                ],
+                "test_overloads": [
+                    "self"
+                ],
+                "test_median": [
+                    "self"
+                ],
+                "test_corr": [
+                    "self"
+                ],
+                "test_copy": [
+                    "self"
+                ],
+                "test_count": [
+                    "self"
+                ],
+                "test_sort": [
+                    "self"
+                ],
+                "test_order": [
+                    "self"
+                ],
+                "test_map": [
+                    "self"
+                ],
+                "test_toCSV": [
+                    "self"
+                ],
+                "test_toDict": [
+                    "self"
+                ],
+                "test_cap": [
+                    "self"
+                ],
+                "test_floor": [
+                    "self"
+                ],
+                "test_valid": [
+                    "self"
+                ],
+                "test_shift": [
+                    "self"
+                ],
+                "test_truncate": [
+                    "self"
+                ],
+                "test_asOf": [
+                    "self"
+                ],
+                "test_merge": [
+                    "self"
+                ],
+                "test_reindex": [
+                    "self"
+                ],
+                "test_reindex_bool": [
+                    "self"
+                ],
+                "test_reindex_bool_pad": [
+                    "self"
+                ],
+                "test_preserveRefs": [
+                    "self"
+                ],
+                "test_fill": [
+                    "self"
+                ],
+                "test_asfreq": [
+                    "self"
+                ],
+                "test_interpolate": [
+                    "self"
+                ],
+                "test_weekday": [
+                    "self"
+                ],
+                "test_diff": [
+                    "self"
+                ],
+                "test_autocorr": [
+                    "self"
+                ],
+                "test_firstValid": [
+                    "self"
+                ],
+                "test_lastValid": [
                     "self"
                 ]
             }
         },
-        "pandas.io.parsers": {
-            "simpleParser": [
-                "nestedList",
-                "forceFloat",
-                "colNames",
-                "header",
-                "indexCol"
-            ],
-            "parseCSV": [
-                "filepath",
-                "header",
-                "indexCol"
-            ],
-            "parseText": [
-                "filepath",
-                "sep",
-                "header",
-                "indexCol",
-                "colNames"
-            ],
-            "ole2datetime": [
-                "oledt"
-            ],
-            "parseExcel": [
-                "filepath",
-                "header",
-                "indexCol",
-                "dateCol",
-                "sheetname"
-            ]
-        },
-        "pandas.io": {},
-        "pandas.lib.build": {},
-        "pandas.lib": {},
-        "pandas.util": {},
-        "pandas.stats.common": {
-            "_get_cluster_type": [
-                "cluster_type"
-            ],
-            "_get_window_type": [
-                "window_type"
-            ],
-            "banner": [
-                "text",
-                "width"
-            ],
-            "f_stat_to_dict": [
-                "result"
-            ]
-        },
-        "pandas.stats.api": {},
         "pandas.stats.fama_macbeth": {
             "fama_macbeth": [],
             "_calc_t_stat": [
@@ -1884,10 +1798,6 @@
             ],
             "chain_dot": []
         },
-        "pandas.stats.interface": {
-            "ols": []
-        },
-        "pandas.stats": {},
         "pandas.stats.ols": {
             "_safe_update": [
                 "d",
@@ -2214,6 +2124,26 @@
                 ]
             }
         },
+        "pandas.stats.common": {
+            "_get_cluster_type": [
+                "cluster_type"
+            ],
+            "_get_window_type": [
+                "window_type"
+            ],
+            "banner": [
+                "text",
+                "width"
+            ],
+            "f_stat_to_dict": [
+                "result"
+            ]
+        },
+        "pandas.stats": {},
+        "pandas.stats.interface": {
+            "ols": []
+        },
+        "pandas.stats.api": {},
         "pandas.stats.tests.common": {
             "makeDataMatrix": [],
             "getBasicDatasets": [],
@@ -2369,19 +2299,7 @@
                 ]
             }
         },
-        "pandas.stats.tests.test_fama_macbeth": {
-            "TestFamaMacBeth": {
-                "testFamaMacBethRolling": [
-                    "self"
-                ],
-                "checkFamaMacBethExtended": [
-                    "self",
-                    "window_type",
-                    "x",
-                    "y"
-                ]
-            }
-        },
+        "pandas.stats.tests": {},
         "pandas.stats.tests.test_ols_filter": {
             "TestOLSFilter": {
                 "setUp": [
@@ -2409,8 +2327,89 @@
                 ]
             }
         },
-        "pandas.stats.tests": {},
-        "doc.sphinxext.setup": {},
+        "pandas.stats.tests.test_fama_macbeth": {
+            "TestFamaMacBeth": {
+                "testFamaMacBethRolling": [
+                    "self"
+                ],
+                "checkFamaMacBethExtended": [
+                    "self",
+                    "window_type",
+                    "x",
+                    "y"
+                ]
+            }
+        },
+        "pandas.lib.build": {},
+        "pandas.lib": {},
+        "pandas.sandbox": {},
+        "pandas.sandbox.stats": {},
+        "pandas.sandbox.stats.rls": {
+            "RLS": {
+                "__init__": [
+                    "self",
+                    "endog",
+                    "exog",
+                    "constr",
+                    "param",
+                    "sigma"
+                ],
+                "rwexog": [
+                    "self"
+                ],
+                "inv_rwexog": [
+                    "self"
+                ],
+                "rwendog": [
+                    "self"
+                ],
+                "rnorm_cov_params": [
+                    "self"
+                ],
+                "wrnorm_cov_params": [
+                    "self"
+                ],
+                "coeffs": [
+                    "self"
+                ],
+                "fit": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.io": {},
+        "pandas.io.parsers": {
+            "simpleParser": [
+                "nestedList",
+                "forceFloat",
+                "colNames",
+                "header",
+                "indexCol"
+            ],
+            "parseCSV": [
+                "filepath",
+                "header",
+                "indexCol"
+            ],
+            "parseText": [
+                "filepath",
+                "sep",
+                "header",
+                "indexCol",
+                "colNames"
+            ],
+            "ole2datetime": [
+                "oledt"
+            ],
+            "parseExcel": [
+                "filepath",
+                "header",
+                "indexCol",
+                "dateCol",
+                "sheetname"
+            ]
+        },
+        "pandas.util": {},
         "doc.sphinxext.docscrape_sphinx": {
             "get_doc_object": [
                 "obj",
@@ -2721,6 +2720,52 @@
                 ]
             }
         },
+        "doc.sphinxext.only_directives": {
+            "run": [
+                "content",
+                "node_class",
+                "state",
+                "content_offset"
+            ],
+            "setup": [
+                "app"
+            ],
+            "html_only": {},
+            "latex_only": {}
+        },
+        "doc.sphinxext.traitsdoc": {
+            "looks_like_issubclass": [
+                "obj",
+                "classname"
+            ],
+            "get_doc_object": [
+                "obj",
+                "what"
+            ],
+            "setup": [
+                "app"
+            ],
+            "SphinxTraitsDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "modulename",
+                    "func_doc"
+                ],
+                "_str_summary": [
+                    "self"
+                ],
+                "_str_extended_summary": [
+                    "self"
+                ],
+                "__str__": [
+                    "self",
+                    "indent",
+                    "func_role"
+                ]
+            }
+        },
+        "doc.sphinxext": {},
         "doc.sphinxext.comment_eater": {
             "strip_comment_marker": [
                 "text"
@@ -2801,51 +2846,6 @@
                 ]
             }
         },
-        "doc.sphinxext.only_directives": {
-            "run": [
-                "content",
-                "node_class",
-                "state",
-                "content_offset"
-            ],
-            "setup": [
-                "app"
-            ],
-            "html_only": {},
-            "latex_only": {}
-        },
-        "doc.sphinxext.traitsdoc": {
-            "looks_like_issubclass": [
-                "obj",
-                "classname"
-            ],
-            "get_doc_object": [
-                "obj",
-                "what"
-            ],
-            "setup": [
-                "app"
-            ],
-            "SphinxTraitsDoc": {
-                "__init__": [
-                    "self",
-                    "cls",
-                    "modulename",
-                    "func_doc"
-                ],
-                "_str_summary": [
-                    "self"
-                ],
-                "_str_extended_summary": [
-                    "self"
-                ],
-                "__str__": [
-                    "self",
-                    "indent",
-                    "func_role"
-                ]
-            }
-        },
-        "doc.sphinxext": {}
+        "doc.sphinxext.setup": {}
     }
 }
