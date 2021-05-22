@@ -1,28 +1,2266 @@
 {
     "1.3.0": {
-        "doc.sphinxext.docscrape_sphinx": {
-            "get_doc_object": [
-                "obj",
-                "what",
-                "doc"
+        "numpy.add_newdocs": {},
+        "numpy.version": {},
+        "numpy.matlib": {
+            "empty": [
+                "shape",
+                "dtype",
+                "order"
             ],
-            "SphinxDocString": {
-                "_str_header": [
+            "ones": [
+                "shape",
+                "dtype",
+                "order"
+            ],
+            "zeros": [
+                "shape",
+                "dtype",
+                "order"
+            ],
+            "identity": [
+                "n",
+                "dtype"
+            ],
+            "eye": [
+                "n",
+                "M",
+                "k",
+                "dtype"
+            ],
+            "rand": [],
+            "randn": [],
+            "repmat": [
+                "a",
+                "m",
+                "n"
+            ]
+        },
+        "numpy.distutils.numpy_distribution": {
+            "NumpyDistribution": {
+                "__init__": [
+                    "self",
+                    "attrs"
+                ],
+                "has_scons_scripts": [
+                    "self"
+                ],
+                "get_scons_scripts": [
+                    "self"
+                ],
+                "get_scons_pre_hooks": [
+                    "self"
+                ],
+                "get_scons_post_hooks": [
+                    "self"
+                ],
+                "get_scons_sources": [
+                    "self"
+                ],
+                "get_scons_parent_names": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils": {},
+        "numpy.distutils.extension": {
+            "Extension": {
+                "__init__": [
                     "self",
                     "name",
-                    "symbol"
+                    "sources",
+                    "include_dirs",
+                    "define_macros",
+                    "undef_macros",
+                    "library_dirs",
+                    "libraries",
+                    "runtime_library_dirs",
+                    "extra_objects",
+                    "extra_compile_args",
+                    "extra_link_args",
+                    "export_symbols",
+                    "swig_opts",
+                    "depends",
+                    "language",
+                    "f2py_options",
+                    "module_dirs"
                 ],
-                "_str_field_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_indent": [
-                    "self",
-                    "doc",
-                    "indent"
-                ],
-                "_str_signature": [
+                "has_cxx_sources": [
                     "self"
+                ],
+                "has_f2py_sources": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.info": {},
+        "numpy.distutils.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.__version__": {},
+        "numpy.distutils.intelccompiler": {
+            "IntelCCompiler": {
+                "__init__": [
+                    "self",
+                    "verbose",
+                    "dry_run",
+                    "force"
+                ]
+            },
+            "IntelItaniumCCompiler": {}
+        },
+        "numpy.distutils.command.install": {
+            "install": {
+                "finalize_options": [
+                    "self"
+                ],
+                "setuptools_run": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.install_headers": {
+            "install_headers": {
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.config_compiler": {
+            "show_fortran_compilers": [
+                "_cache"
+            ],
+            "config_fc": {
+                "initialize_options": [
+                    "self"
+                ],
+                "finalize_options": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            },
+            "config_cc": {
+                "initialize_options": [
+                    "self"
+                ],
+                "finalize_options": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command": {},
+        "numpy.distutils.command.egg_info": {
+            "egg_info": {
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.build_py": {
+            "build_py": {
+                "find_package_modules": [
+                    "self",
+                    "package",
+                    "package_dir"
+                ],
+                "find_modules": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.sdist": {
+            "sdist": {
+                "add_defaults": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.autodist": {
+            "check_inline": [
+                "cmd"
+            ]
+        },
+        "numpy.distutils.command.build_scripts": {
+            "build_scripts": {
+                "generate_scripts": [
+                    "self",
+                    "scripts"
+                ],
+                "run": [
+                    "self"
+                ],
+                "get_source_files": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.bdist_rpm": {
+            "bdist_rpm": {
+                "_make_spec_file": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.build": {
+            "build": {
+                "initialize_options": [
+                    "self"
+                ],
+                "finalize_options": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.develop": {
+            "develop": {
+                "install_for_development": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.command.install_data": {
+            "install_data": {
+                "finalize_options": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.distutils.tests.f2py_f90_ext.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.tests.f2py_f90_ext": {},
+        "numpy.distutils.tests.gen_ext.setup": {
+            "source_func": [
+                "ext",
+                "build_dir"
+            ],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.tests.gen_ext": {},
+        "numpy.distutils.tests.pyrex_ext.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.tests.pyrex_ext": {},
+        "numpy.distutils.tests.f2py_ext.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.tests.f2py_ext": {},
+        "numpy.distutils.tests.swig_ext.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.distutils.tests.swig_ext": {},
+        "numpy.f2py": {
+            "compile": [
+                "source",
+                "modulename",
+                "extra_args",
+                "verbose",
+                "source_fn"
+            ]
+        },
+        "numpy.f2py.info": {},
+        "numpy.f2py.cb_rules": {
+            "buildcallbacks": [
+                "m"
+            ],
+            "buildcallback": [
+                "rout",
+                "um"
+            ]
+        },
+        "numpy.f2py.common_rules": {
+            "findcommonblocks": [
+                "block",
+                "top"
+            ],
+            "buildhooks": [
+                "m"
+            ]
+        },
+        "numpy.f2py.func2subr": {
+            "var2fixfortran": [
+                "vars",
+                "a",
+                "fa",
+                "f90mode"
+            ],
+            "createfuncwrapper": [
+                "rout",
+                "signature"
+            ],
+            "assubr": [
+                "rout"
+            ]
+        },
+        "numpy.f2py.__version__": {},
+        "numpy.core": {},
+        "numpy.core.fromnumeric": {
+            "_wrapit": [
+                "obj",
+                "method"
+            ],
+            "take": [
+                "a",
+                "indices",
+                "axis",
+                "out",
+                "mode"
+            ],
+            "reshape": [
+                "a",
+                "newshape",
+                "order"
+            ],
+            "choose": [
+                "a",
+                "choices",
+                "out",
+                "mode"
+            ],
+            "repeat": [
+                "a",
+                "repeats",
+                "axis"
+            ],
+            "put": [
+                "a",
+                "ind",
+                "v",
+                "mode"
+            ],
+            "swapaxes": [
+                "a",
+                "axis1",
+                "axis2"
+            ],
+            "transpose": [
+                "a",
+                "axes"
+            ],
+            "sort": [
+                "a",
+                "axis",
+                "kind",
+                "order"
+            ],
+            "argsort": [
+                "a",
+                "axis",
+                "kind",
+                "order"
+            ],
+            "argmax": [
+                "a",
+                "axis"
+            ],
+            "argmin": [
+                "a",
+                "axis"
+            ],
+            "searchsorted": [
+                "a",
+                "v",
+                "side"
+            ],
+            "resize": [
+                "a",
+                "new_shape"
+            ],
+            "squeeze": [
+                "a"
+            ],
+            "diagonal": [
+                "a",
+                "offset",
+                "axis1",
+                "axis2"
+            ],
+            "trace": [
+                "a",
+                "offset",
+                "axis1",
+                "axis2",
+                "dtype",
+                "out"
+            ],
+            "ravel": [
+                "a",
+                "order"
+            ],
+            "nonzero": [
+                "a"
+            ],
+            "shape": [
+                "a"
+            ],
+            "compress": [
+                "condition",
+                "a",
+                "axis",
+                "out"
+            ],
+            "clip": [
+                "a",
+                "a_min",
+                "a_max",
+                "out"
+            ],
+            "sum": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "product": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "sometrue": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "alltrue": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "any": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "all": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "cumsum": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "cumproduct": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "ptp": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "amax": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "amin": [
+                "a",
+                "axis",
+                "out"
+            ],
+            "alen": [
+                "a"
+            ],
+            "prod": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "cumprod": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "ndim": [
+                "a"
+            ],
+            "rank": [
+                "a"
+            ],
+            "size": [
+                "a",
+                "axis"
+            ],
+            "around": [
+                "a",
+                "decimals",
+                "out"
+            ],
+            "round_": [
+                "a",
+                "decimals",
+                "out"
+            ],
+            "mean": [
+                "a",
+                "axis",
+                "dtype",
+                "out"
+            ],
+            "std": [
+                "a",
+                "axis",
+                "dtype",
+                "out",
+                "ddof"
+            ],
+            "var": [
+                "a",
+                "axis",
+                "dtype",
+                "out",
+                "ddof"
+            ]
+        },
+        "numpy.core.arrayprint": {
+            "product": [
+                "x",
+                "y"
+            ],
+            "set_printoptions": [
+                "precision",
+                "threshold",
+                "edgeitems",
+                "linewidth",
+                "suppress",
+                "nanstr",
+                "infstr"
+            ],
+            "get_printoptions": [],
+            "_leading_trailing": [
+                "a"
+            ],
+            "_boolFormatter": [
+                "x"
+            ],
+            "_array2string": [
+                "a",
+                "max_line_width",
+                "precision",
+                "suppress_small",
+                "separator",
+                "prefix"
+            ],
+            "_convert_arrays": [
+                "obj"
+            ],
+            "array2string": [
+                "a",
+                "max_line_width",
+                "precision",
+                "suppress_small",
+                "separator",
+                "prefix",
+                "style"
+            ],
+            "_extendLine": [
+                "s",
+                "line",
+                "word",
+                "max_line_len",
+                "next_line_prefix"
+            ],
+            "_formatArray": [
+                "a",
+                "format_function",
+                "rank",
+                "max_line_len",
+                "next_line_prefix",
+                "separator",
+                "edge_items",
+                "summary_insert"
+            ],
+            "_digits": [
+                "x",
+                "precision",
+                "format"
+            ],
+            "_formatInteger": [
+                "x",
+                "format"
+            ],
+            "_longfloatFormatter": [
+                "precision"
+            ],
+            "_clongfloatFormatter": [
+                "precision"
+            ],
+            "FloatFormat": {
+                "__init__": [
+                    "self",
+                    "data",
+                    "precision",
+                    "suppress_small",
+                    "sign"
+                ],
+                "fillFormat": [
+                    "self",
+                    "data"
+                ],
+                "__call__": [
+                    "self",
+                    "x",
+                    "strip_zeros"
+                ]
+            },
+            "ComplexFormat": {
+                "__init__": [
+                    "self",
+                    "x",
+                    "precision",
+                    "suppress_small"
+                ],
+                "__call__": [
+                    "self",
+                    "x"
+                ]
+            }
+        },
+        "numpy.core.info": {},
+        "numpy.core.scons_support": {
+            "split_ext": [
+                "string"
+            ],
+            "do_generate_numpy_api": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_ufunc_api": [
+                "target",
+                "source",
+                "env"
+            ],
+            "generate_api_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_from_template": [
+                "targetfile",
+                "sourcefile",
+                "env"
+            ],
+            "generate_from_template": [
+                "target",
+                "source",
+                "env"
+            ],
+            "generate_from_template_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "do_generate_umath": [
+                "targetfile",
+                "sourcefile",
+                "env"
+            ],
+            "generate_umath": [
+                "target",
+                "source",
+                "env"
+            ],
+            "generate_umath_emitter": [
+                "target",
+                "source",
+                "env"
+            ],
+            "CheckBrokenMathlib": [
+                "context",
+                "mathlib"
+            ],
+            "check_mlib": [
+                "config",
+                "mlib"
+            ],
+            "check_mlibs": [
+                "config",
+                "mlibs"
+            ],
+            "is_npy_no_signal": [],
+            "define_no_smp": [],
+            "CheckInline": [
+                "context"
+            ]
+        },
+        "numpy.core.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.core.setup_common": {
+            "fname2def": [
+                "name"
+            ]
+        },
+        "numpy.core.code_generators.ufunc_docstrings": {
+            "get": [
+                "name"
+            ],
+            "add_newdoc": [
+                "place",
+                "name",
+                "doc"
+            ]
+        },
+        "numpy.core.code_generators": {},
+        "numpy.core.code_generators.generate_umath": {
+            "build_func_data": [
+                "types",
+                "f"
+            ],
+            "TD": [
+                "types",
+                "f",
+                "in_",
+                "out"
+            ],
+            "indent": [
+                "st",
+                "spaces"
+            ],
+            "english_upper": [
+                "s"
+            ],
+            "make_arrays": [
+                "funcdict"
+            ],
+            "make_ufuncs": [
+                "funcdict"
+            ],
+            "make_code": [
+                "funcdict",
+                "filename"
+            ],
+            "TypeDescription": {
+                "__init__": [
+                    "self",
+                    "type",
+                    "f",
+                    "in_",
+                    "out"
+                ],
+                "finish_signature": [
+                    "self",
+                    "nin",
+                    "nout"
+                ]
+            },
+            "Ufunc": {
+                "__init__": [
+                    "self",
+                    "nin",
+                    "nout",
+                    "identity",
+                    "docstring"
+                ]
+            }
+        },
+        "numpy.core.code_generators.generate_ufunc_api": {
+            "generate_api": [
+                "output_dir",
+                "force"
+            ],
+            "do_generate_api": [
+                "targets",
+                "sources"
+            ]
+        },
+        "numpy.core.code_generators.generate_numpy_api": {
+            "generate_api": [
+                "output_dir",
+                "force"
+            ],
+            "do_generate_api": [
+                "targets",
+                "sources"
+            ]
+        },
+        "numpy.testing.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.testing": {},
+        "numpy.testing.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.testing.noseclasses": {
+            "NumpyDocTestFinder": {
+                "_from_module": [
+                    "self",
+                    "module",
+                    "object"
+                ],
+                "_find": [
+                    "self",
+                    "tests",
+                    "obj",
+                    "name",
+                    "module",
+                    "source_lines",
+                    "globs",
+                    "seen"
+                ]
+            },
+            "NumpyDocTestCase": {
+                "__init__": [
+                    "self",
+                    "test",
+                    "optionflags",
+                    "setUp",
+                    "tearDown",
+                    "checker",
+                    "obj",
+                    "result_var"
+                ]
+            },
+            "NumpyOutputChecker": {
+                "check_output": [
+                    "self",
+                    "want",
+                    "got",
+                    "optionflags"
+                ]
+            },
+            "NumpyDoctest": {
+                "options": [
+                    "self",
+                    "parser",
+                    "env"
+                ],
+                "configure": [
+                    "self",
+                    "options",
+                    "config"
+                ],
+                "loadTestsFromModule": [
+                    "self",
+                    "module"
+                ],
+                "afterContext": [
+                    "self"
+                ],
+                "wantFile": [
+                    "self",
+                    "file"
+                ]
+            },
+            "KnownFailureTest": {},
+            "KnownFailure": {
+                "options": [
+                    "self",
+                    "parser",
+                    "env"
+                ],
+                "configure": [
+                    "self",
+                    "options",
+                    "conf"
+                ]
+            },
+            "NumpyTestProgram": {
+                "runTests": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.ma.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.ma": {},
+        "numpy.ma.testutils": {
+            "approx": [
+                "a",
+                "b",
+                "fill_value",
+                "rtol",
+                "atol"
+            ],
+            "almost": [
+                "a",
+                "b",
+                "decimal",
+                "fill_value"
+            ],
+            "_assert_equal_on_sequences": [
+                "actual",
+                "desired",
+                "err_msg"
+            ],
+            "assert_equal_records": [
+                "a",
+                "b"
+            ],
+            "assert_equal": [
+                "actual",
+                "desired",
+                "err_msg"
+            ],
+            "fail_if_equal": [
+                "actual",
+                "desired",
+                "err_msg"
+            ],
+            "assert_almost_equal": [
+                "actual",
+                "desired",
+                "decimal",
+                "err_msg",
+                "verbose"
+            ],
+            "assert_array_compare": [
+                "comparison",
+                "x",
+                "y",
+                "err_msg",
+                "verbose",
+                "header",
+                "fill_value"
+            ],
+            "assert_array_equal": [
+                "x",
+                "y",
+                "err_msg",
+                "verbose"
+            ],
+            "fail_if_array_equal": [
+                "x",
+                "y",
+                "err_msg",
+                "verbose"
+            ],
+            "assert_array_approx_equal": [
+                "x",
+                "y",
+                "decimal",
+                "err_msg",
+                "verbose"
+            ],
+            "assert_array_almost_equal": [
+                "x",
+                "y",
+                "decimal",
+                "err_msg",
+                "verbose"
+            ],
+            "assert_array_less": [
+                "x",
+                "y",
+                "err_msg",
+                "verbose"
+            ],
+            "assert_mask_equal": [
+                "m1",
+                "m2"
+            ]
+        },
+        "numpy.ma.version": {},
+        "numpy.ma.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.lib.ufunclike": {
+            "fix": [
+                "x",
+                "y"
+            ],
+            "isposinf": [
+                "x",
+                "y"
+            ],
+            "isneginf": [
+                "x",
+                "y"
+            ],
+            "log2": [
+                "x",
+                "y"
+            ]
+        },
+        "numpy.lib.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.lib": {},
+        "numpy.lib.stride_tricks": {
+            "as_strided": [
+                "x",
+                "shape",
+                "strides"
+            ],
+            "broadcast_arrays": [],
+            "DummyArray": {
+                "__init__": [
+                    "self",
+                    "interface",
+                    "base"
+                ]
+            }
+        },
+        "numpy.lib.recfunctions": {
+            "recursive_fill_fields": [
+                "input",
+                "output"
+            ],
+            "get_names": [
+                "adtype"
+            ],
+            "get_names_flat": [
+                "adtype"
+            ],
+            "flatten_descr": [
+                "ndtype"
+            ],
+            "zip_descr": [
+                "seqarrays",
+                "flatten"
+            ],
+            "get_fieldstructure": [
+                "adtype",
+                "lastname",
+                "parents"
+            ],
+            "_izip_fields_flat": [
+                "iterable"
+            ],
+            "_izip_fields": [
+                "iterable"
+            ],
+            "izip_records": [
+                "seqarrays",
+                "fill_value",
+                "flatten"
+            ],
+            "_fix_output": [
+                "output",
+                "usemask",
+                "asrecarray"
+            ],
+            "_fix_defaults": [
+                "output",
+                "defaults"
+            ],
+            "merge_arrays": [
+                "seqarrays",
+                "fill_value",
+                "flatten",
+                "usemask",
+                "asrecarray"
+            ],
+            "drop_fields": [
+                "base",
+                "drop_names",
+                "usemask",
+                "asrecarray"
+            ],
+            "rec_drop_fields": [
+                "base",
+                "drop_names"
+            ],
+            "rename_fields": [
+                "base",
+                "namemapper"
+            ],
+            "append_fields": [
+                "base",
+                "names",
+                "data",
+                "dtypes",
+                "fill_value",
+                "usemask",
+                "asrecarray"
+            ],
+            "rec_append_fields": [
+                "base",
+                "names",
+                "data",
+                "dtypes"
+            ],
+            "stack_arrays": [
+                "arrays",
+                "defaults",
+                "usemask",
+                "asrecarray",
+                "autoconvert"
+            ],
+            "find_duplicates": [
+                "a",
+                "key",
+                "ignoremask",
+                "return_index"
+            ],
+            "join_by": [
+                "key",
+                "r1",
+                "r2",
+                "jointype",
+                "r1postfix",
+                "r2postfix",
+                "defaults",
+                "usemask",
+                "asrecarray"
+            ],
+            "rec_join": [
+                "key",
+                "r1",
+                "r2",
+                "jointype",
+                "r1postfix",
+                "r2postfix",
+                "defaults"
+            ]
+        },
+        "numpy.lib.financial": {
+            "_convert_when": [
+                "when"
+            ],
+            "fv": [
+                "rate",
+                "nper",
+                "pmt",
+                "pv",
+                "when"
+            ],
+            "pmt": [
+                "rate",
+                "nper",
+                "pv",
+                "fv",
+                "when"
+            ],
+            "nper": [
+                "rate",
+                "pmt",
+                "pv",
+                "fv",
+                "when"
+            ],
+            "ipmt": [
+                "rate",
+                "per",
+                "nper",
+                "pv",
+                "fv",
+                "when"
+            ],
+            "ppmt": [
+                "rate",
+                "per",
+                "nper",
+                "pv",
+                "fv",
+                "when"
+            ],
+            "pv": [
+                "rate",
+                "nper",
+                "pmt",
+                "fv",
+                "when"
+            ],
+            "_g_div_gp": [
+                "r",
+                "n",
+                "p",
+                "x",
+                "y",
+                "w"
+            ],
+            "rate": [
+                "nper",
+                "pmt",
+                "pv",
+                "fv",
+                "when",
+                "guess",
+                "tol",
+                "maxiter"
+            ],
+            "irr": [
+                "values"
+            ],
+            "npv": [
+                "rate",
+                "values"
+            ],
+            "mirr": [
+                "values",
+                "finance_rate",
+                "reinvest_rate"
+            ]
+        },
+        "numpy.lib.info": {},
+        "numpy.lib.type_check": {
+            "mintypecode": [
+                "typechars",
+                "typeset",
+                "default"
+            ],
+            "asfarray": [
+                "a",
+                "dtype"
+            ],
+            "real": [
+                "val"
+            ],
+            "imag": [
+                "val"
+            ],
+            "iscomplex": [
+                "x"
+            ],
+            "isreal": [
+                "x"
+            ],
+            "iscomplexobj": [
+                "x"
+            ],
+            "isrealobj": [
+                "x"
+            ],
+            "_getmaxmin": [
+                "t"
+            ],
+            "nan_to_num": [
+                "x"
+            ],
+            "real_if_close": [
+                "a",
+                "tol"
+            ],
+            "asscalar": [
+                "a"
+            ],
+            "typename": [
+                "char"
+            ],
+            "common_type": []
+        },
+        "numpy.lib._iotools": {
+            "_is_string_like": [
+                "obj"
+            ],
+            "_to_filehandle": [
+                "fname",
+                "flag",
+                "return_opened"
+            ],
+            "has_nested_fields": [
+                "ndtype"
+            ],
+            "flatten_dtype": [
+                "ndtype"
+            ],
+            "str2bool": [
+                "value"
+            ],
+            "LineSplitter": {
+                "autostrip": [
+                    "self",
+                    "method"
+                ],
+                "__init__": [
+                    "self",
+                    "delimiter",
+                    "comments",
+                    "autostrip"
+                ],
+                "_delimited_splitter": [
+                    "self",
+                    "line"
+                ],
+                "_fixedwidth_splitter": [
+                    "self",
+                    "line"
+                ],
+                "_variablewidth_splitter": [
+                    "self",
+                    "line"
+                ],
+                "__call__": [
+                    "self",
+                    "line"
+                ]
+            },
+            "NameValidator": {
+                "__init__": [
+                    "self",
+                    "excludelist",
+                    "deletechars",
+                    "case_sensitive"
+                ],
+                "validate": [
+                    "self",
+                    "names",
+                    "default"
+                ],
+                "__call__": [
+                    "self",
+                    "names",
+                    "default"
+                ]
+            },
+            "StringConverter": {
+                "_getsubdtype": [
+                    "cls",
+                    "val"
+                ],
+                "upgrade_mapper": [
+                    "cls",
+                    "func",
+                    "default"
+                ],
+                "__init__": [
+                    "self",
+                    "dtype_or_func",
+                    "default",
+                    "missing_values",
+                    "locked"
+                ],
+                "_loose_call": [
+                    "self",
+                    "value"
+                ],
+                "_strict_call": [
+                    "self",
+                    "value"
+                ],
+                "__call__": [
+                    "self",
+                    "value"
+                ],
+                "upgrade": [
+                    "self",
+                    "value"
+                ],
+                "update": [
+                    "self",
+                    "func",
+                    "default",
+                    "missing_values",
+                    "locked"
+                ]
+            }
+        },
+        "numpy.lib.arrayterator": {
+            "Arrayterator": {
+                "__init__": [
+                    "self",
+                    "var",
+                    "buf_size"
+                ],
+                "__getattr__": [
+                    "self",
+                    "attr"
+                ],
+                "__getitem__": [
+                    "self",
+                    "index"
+                ],
+                "__array__": [
+                    "self"
+                ],
+                "flat": [
+                    "self"
+                ],
+                "shape": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ]
+            }
+        },
+        "numpy.lib.scimath": {
+            "_tocomplex": [
+                "arr"
+            ],
+            "_fix_real_lt_zero": [
+                "x"
+            ],
+            "_fix_int_lt_zero": [
+                "x"
+            ],
+            "_fix_real_abs_gt_1": [
+                "x"
+            ],
+            "sqrt": [
+                "x"
+            ],
+            "log": [
+                "x"
+            ],
+            "log10": [
+                "x"
+            ],
+            "logn": [
+                "n",
+                "x"
+            ],
+            "log2": [
+                "x"
+            ],
+            "power": [
+                "x",
+                "p"
+            ],
+            "arccos": [
+                "x"
+            ],
+            "arcsin": [
+                "x"
+            ],
+            "arctanh": [
+                "x"
+            ]
+        },
+        "numpy.lib.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.lib.arraysetops": {
+            "ediff1d": [
+                "ary",
+                "to_end",
+                "to_begin"
+            ],
+            "unique1d": [
+                "ar1",
+                "return_index",
+                "return_inverse"
+            ],
+            "intersect1d": [
+                "ar1",
+                "ar2"
+            ],
+            "intersect1d_nu": [
+                "ar1",
+                "ar2"
+            ],
+            "setxor1d": [
+                "ar1",
+                "ar2"
+            ],
+            "setmember1d": [
+                "ar1",
+                "ar2"
+            ],
+            "union1d": [
+                "ar1",
+                "ar2"
+            ],
+            "setdiff1d": [
+                "ar1",
+                "ar2"
+            ]
+        },
+        "numpy.linalg": {},
+        "numpy.linalg.info": {},
+        "numpy.linalg.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.doc.ufuncs": {},
+        "numpy.doc.howtofind": {},
+        "numpy.doc.broadcasting": {},
+        "numpy.doc.structured_arrays": {},
+        "numpy.doc.performance": {},
+        "numpy.doc.jargon": {},
+        "numpy.doc.internals": {},
+        "numpy.doc": {},
+        "numpy.doc.subclassing": {},
+        "numpy.doc.constants": {
+            "add_newdoc": [
+                "module",
+                "name",
+                "doc"
+            ]
+        },
+        "numpy.doc.creation": {},
+        "numpy.doc.basics": {},
+        "numpy.doc.misc": {},
+        "numpy.doc.indexing": {},
+        "numpy.doc.glossary": {},
+        "numpy.doc.io": {},
+        "numpy.doc.methods_vs_functions": {},
+        "numpy.random.setup": {
+            "needs_mingw_ftime_workaround": [],
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ],
+            "testcode_wincrypt": []
+        },
+        "numpy.random": {
+            "__RandomState_ctor": []
+        },
+        "numpy.random.info": {},
+        "numpy.random.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ],
+            "testcode_wincrypt": []
+        },
+        "numpy.fft.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.fft": {},
+        "numpy.fft.helper": {
+            "fftshift": [
+                "x",
+                "axes"
+            ],
+            "ifftshift": [
+                "x",
+                "axes"
+            ],
+            "fftfreq": [
+                "n",
+                "d"
+            ]
+        },
+        "numpy.fft.info": {},
+        "numpy.fft.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.numarray.ufuncs": {},
+        "numpy.numarray.functions": {
+            "type2dtype": [
+                "typecode",
+                "type",
+                "dtype",
+                "use_default"
+            ],
+            "fromfunction": [
+                "shape",
+                "dimensions",
+                "type",
+                "typecode",
+                "dtype"
+            ],
+            "ones": [
+                "shape",
+                "type",
+                "typecode",
+                "dtype"
+            ],
+            "zeros": [
+                "shape",
+                "type",
+                "typecode",
+                "dtype"
+            ],
+            "where": [
+                "condition",
+                "x",
+                "y",
+                "out"
+            ],
+            "indices": [
+                "shape",
+                "type"
+            ],
+            "arange": [
+                "a1",
+                "a2",
+                "stride",
+                "type",
+                "shape",
+                "typecode",
+                "dtype"
+            ],
+            "alltrue": [
+                "x",
+                "axis"
+            ],
+            "and_": [
+                "a",
+                "b"
+            ],
+            "divide_remainder": [
+                "a",
+                "b"
+            ],
+            "around": [
+                "array",
+                "digits",
+                "output"
+            ],
+            "array2list": [
+                "arr"
+            ],
+            "choose": [
+                "selector",
+                "population",
+                "outarr",
+                "clipmode"
+            ],
+            "compress": [
+                "condition",
+                "a",
+                "axis"
+            ],
+            "explicit_type": [
+                "a"
+            ],
+            "flush_caches": [],
+            "fromfile": [
+                "infile",
+                "type",
+                "shape",
+                "sizing",
+                "typecode",
+                "dtype"
+            ],
+            "fromstring": [
+                "datastring",
+                "type",
+                "shape",
+                "typecode",
+                "dtype"
+            ],
+            "fromlist": [
+                "seq",
+                "type",
+                "shape",
+                "check_overflow",
+                "typecode",
+                "dtype"
+            ],
+            "array": [
+                "sequence",
+                "typecode",
+                "copy",
+                "savespace",
+                "type",
+                "shape",
+                "dtype"
+            ],
+            "asarray": [
+                "seq",
+                "type",
+                "typecode",
+                "dtype"
+            ],
+            "getTypeObject": [
+                "sequence",
+                "type"
+            ],
+            "getShape": [
+                "shape"
+            ],
+            "identity": [
+                "n",
+                "type",
+                "typecode",
+                "dtype"
+            ],
+            "info": [
+                "obj",
+                "output",
+                "numpy"
+            ],
+            "put": [
+                "array",
+                "indices",
+                "values",
+                "axis",
+                "clipmode"
+            ],
+            "repeat": [
+                "array",
+                "repeats",
+                "axis"
+            ],
+            "reshape": [
+                "array",
+                "shape"
+            ],
+            "round": [],
+            "sometrue": [
+                "array",
+                "axis"
+            ],
+            "take": [
+                "array",
+                "indices",
+                "axis",
+                "outarr",
+                "clipmode"
+            ],
+            "tensormultiply": [
+                "a1",
+                "a2"
+            ],
+            "cumsum": [
+                "a1",
+                "axis",
+                "out",
+                "type",
+                "dim"
+            ],
+            "cumproduct": [
+                "a1",
+                "axis",
+                "out",
+                "type",
+                "dim"
+            ],
+            "argmax": [
+                "x",
+                "axis"
+            ],
+            "argmin": [
+                "x",
+                "axis"
+            ],
+            "newobj": [
+                "self",
+                "type"
+            ],
+            "togglebyteorder": [
+                "self"
+            ],
+            "average": [
+                "a",
+                "axis",
+                "weights",
+                "returned"
+            ],
+            "EarlyEOFError": {},
+            "SizeMismatchError": {},
+            "SizeMismatchWarning": {},
+            "FileSeekWarning": {}
+        },
+        "numpy.numarray.numerictypes": {
+            "IsType": [
+                "rep"
+            ],
+            "_register": [
+                "name",
+                "type",
+                "force"
+            ],
+            "_scipy_alias": [
+                "scipy_type",
+                "numarray_type"
+            ],
+            "_initGenericCoercions": [],
+            "MaximumType": [
+                "t"
+            ],
+            "getType": [
+                "type"
+            ],
+            "typefrom": [
+                "obj"
+            ],
+            "NumericType": {
+                "__new__": [
+                    "type",
+                    "name",
+                    "bytes",
+                    "default",
+                    "typeno"
+                ],
+                "__init__": [
+                    "self",
+                    "name",
+                    "bytes",
+                    "default",
+                    "typeno"
+                ],
+                "__getnewargs__": [
+                    "self"
+                ],
+                "__getstate__": [
+                    "self"
+                ]
+            },
+            "BooleanType": {},
+            "SignedType": {},
+            "UnsignedType": {},
+            "IntegralType": {},
+            "SignedIntegralType": {},
+            "UnsignedIntegralType": {},
+            "FloatingType": {},
+            "ComplexType": {},
+            "AnyType": {},
+            "ObjectType": {}
+        },
+        "numpy.numarray.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.numarray.ma": {},
+        "numpy.numarray.nd_image": {},
+        "numpy.numarray": {},
+        "numpy.numarray.mlab": {},
+        "numpy.numarray.compat": {},
+        "numpy.numarray.linear_algebra": {
+            "qr_decomposition": [
+                "a",
+                "mode"
+            ]
+        },
+        "numpy.numarray.convolve": {},
+        "numpy.numarray.fft": {},
+        "numpy.numarray.alter_code2": {
+            "makenewfile": [
+                "name",
+                "filestr"
+            ],
+            "getandcopy": [
+                "name"
+            ],
+            "convertfile": [
+                "filename"
+            ],
+            "fromargs": [
+                "args"
+            ],
+            "convertall": [
+                "direc"
+            ],
+            "_func": [
+                "arg",
+                "dirname",
+                "fnames"
+            ],
+            "converttree": [
+                "direc"
+            ]
+        },
+        "numpy.numarray.image": {},
+        "numpy.numarray.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.numarray.matrix": {
+            "Matrix": [
+                "data",
+                "typecode",
+                "copy",
+                "savespace"
+            ]
+        },
+        "numpy.numarray.alter_code1": {
+            "changeimports": [
+                "fstr",
+                "name",
+                "newname"
+            ],
+            "addimport": [
+                "astr"
+            ],
+            "replaceattr": [
+                "astr"
+            ],
+            "replaceother": [
+                "astr"
+            ],
+            "fromstr": [
+                "filestr"
+            ],
+            "makenewfile": [
+                "name",
+                "filestr"
+            ],
+            "convertfile": [
+                "filename",
+                "orig"
+            ],
+            "fromargs": [
+                "args"
+            ],
+            "convertall": [
+                "direc",
+                "orig"
+            ],
+            "convertsrc": [
+                "direc",
+                "ext",
+                "orig"
+            ],
+            "_func": [
+                "arg",
+                "dirname",
+                "fnames"
+            ],
+            "converttree": [
+                "direc"
+            ]
+        },
+        "numpy.numarray.random_array": {},
+        "numpy.oldnumeric.ufuncs": {},
+        "numpy.oldnumeric.array_printer": {
+            "array2string": [
+                "a",
+                "max_line_width",
+                "precision",
+                "suppress_small",
+                "separator",
+                "array_output"
+            ]
+        },
+        "numpy.oldnumeric.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.oldnumeric": {
+            "_move_axis_to_0": [
+                "a",
+                "axis"
+            ]
+        },
+        "numpy.oldnumeric.user_array": {},
+        "numpy.oldnumeric.linear_algebra": {
+            "solve_linear_equations": [
+                "a",
+                "b"
+            ],
+            "inverse": [
+                "a"
+            ],
+            "cholesky_decomposition": [
+                "a"
+            ],
+            "eigenvalues": [
+                "a"
+            ],
+            "Heigenvalues": [
+                "a",
+                "UPLO"
+            ],
+            "eigenvectors": [
+                "A"
+            ],
+            "Heigenvectors": [
+                "A"
+            ],
+            "generalized_inverse": [
+                "a",
+                "rcond"
+            ],
+            "determinant": [
+                "a"
+            ],
+            "linear_least_squares": [
+                "a",
+                "b",
+                "rcond"
+            ],
+            "singular_value_decomposition": [
+                "A",
+                "full_matrices"
+            ]
+        },
+        "numpy.oldnumeric.fft": {},
+        "numpy.oldnumeric.alter_code2": {
+            "replacetypechars": [
+                "astr"
+            ],
+            "changeimports": [
+                "fstr",
+                "name",
+                "newname"
+            ],
+            "replaceattr": [
+                "astr"
+            ],
+            "replaceother": [
+                "astr"
+            ],
+            "fromstr": [
+                "filestr"
+            ],
+            "makenewfile": [
+                "name",
+                "filestr"
+            ],
+            "getandcopy": [
+                "name"
+            ],
+            "convertfile": [
+                "filename"
+            ],
+            "fromargs": [
+                "args"
+            ],
+            "convertall": [
+                "direc"
+            ],
+            "_func": [
+                "arg",
+                "dirname",
+                "fnames"
+            ],
+            "converttree": [
+                "direc"
+            ]
+        },
+        "numpy.oldnumeric.rng_stats": {
+            "average": [
+                "data"
+            ],
+            "variance": [
+                "data"
+            ],
+            "standardDeviation": [
+                "data"
+            ],
+            "histogram": [
+                "data",
+                "nbins",
+                "range"
+            ]
+        },
+        "numpy.oldnumeric.misc": {},
+        "numpy.oldnumeric.setupscons": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "numpy.oldnumeric.typeconv": {
+            "convtypecode": [
+                "typecode",
+                "dtype"
+            ],
+            "convtypecode2": [
+                "typecode",
+                "dtype"
+            ],
+            "_oldtypecodes": {
+                "__getitem__": [
+                    "self",
+                    "obj"
+                ]
+            }
+        },
+        "numpy.oldnumeric.alter_code1": {
+            "fixtypechars": [
+                "fstr"
+            ],
+            "changeimports": [
+                "fstr",
+                "name",
+                "newname"
+            ],
+            "fixistesting": [
+                "astr"
+            ],
+            "replaceattr": [
+                "astr"
+            ],
+            "replaceother": [
+                "astr"
+            ],
+            "fromstr": [
+                "filestr"
+            ],
+            "makenewfile": [
+                "name",
+                "filestr"
+            ],
+            "convertfile": [
+                "filename",
+                "orig"
+            ],
+            "fromargs": [
+                "args"
+            ],
+            "convertall": [
+                "direc",
+                "orig"
+            ],
+            "convertsrc": [
+                "direc",
+                "ext",
+                "orig"
+            ],
+            "_func": [
+                "arg",
+                "dirname",
+                "fnames"
+            ],
+            "converttree": [
+                "direc"
+            ]
+        },
+        "doc.sphinxext": {},
+        "doc.sphinxext.comment_eater": {
+            "strip_comment_marker": [
+                "text"
+            ],
+            "get_class_traits": [
+                "klass"
+            ],
+            "Comment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno",
+                    "text"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "NonComment": {
+                "__init__": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "add": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "CommentBlocker": {
+                "__init__": [
+                    "self"
+                ],
+                "process_file": [
+                    "self",
+                    "file"
+                ],
+                "process_token": [
+                    "self",
+                    "kind",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "new_noncomment": [
+                    "self",
+                    "start_lineno",
+                    "end_lineno"
+                ],
+                "new_comment": [
+                    "self",
+                    "string",
+                    "start",
+                    "end",
+                    "line"
+                ],
+                "make_index": [
+                    "self"
+                ],
+                "search_for_comment": [
+                    "self",
+                    "lineno",
+                    "default"
+                ]
+            }
+        },
+        "doc.sphinxext.traitsdoc": {
+            "looks_like_issubclass": [
+                "obj",
+                "classname"
+            ],
+            "get_doc_object": [
+                "obj",
+                "what"
+            ],
+            "setup": [
+                "app"
+            ],
+            "SphinxTraitsDoc": {
+                "__init__": [
+                    "self",
+                    "cls",
+                    "modulename",
+                    "func_doc"
                 ],
                 "_str_summary": [
                     "self"
@@ -30,35 +2268,12 @@
                 "_str_extended_summary": [
                     "self"
                 ],
-                "_str_param_list": [
-                    "self",
-                    "name"
-                ],
-                "_str_section": [
-                    "self",
-                    "name"
-                ],
-                "_str_see_also": [
-                    "self",
-                    "func_role"
-                ],
-                "_str_warnings": [
-                    "self"
-                ],
-                "_str_index": [
-                    "self"
-                ],
-                "_str_references": [
-                    "self"
-                ],
                 "__str__": [
                     "self",
                     "indent",
                     "func_role"
                 ]
-            },
-            "SphinxFunctionDoc": {},
-            "SphinxClassDoc": {}
+            }
         },
         "doc.sphinxext.compiler_unparse": {
             "unparse": [
@@ -306,24 +2521,29 @@
             "html_only": {},
             "latex_only": {}
         },
-        "doc.sphinxext.traitsdoc": {
-            "looks_like_issubclass": [
-                "obj",
-                "classname"
-            ],
+        "doc.sphinxext.docscrape_sphinx": {
             "get_doc_object": [
                 "obj",
-                "what"
+                "what",
+                "doc"
             ],
-            "setup": [
-                "app"
-            ],
-            "SphinxTraitsDoc": {
-                "__init__": [
+            "SphinxDocString": {
+                "_str_header": [
                     "self",
-                    "cls",
-                    "modulename",
-                    "func_doc"
+                    "name",
+                    "symbol"
+                ],
+                "_str_field_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_indent": [
+                    "self",
+                    "doc",
+                    "indent"
+                ],
+                "_str_signature": [
+                    "self"
                 ],
                 "_str_summary": [
                     "self"
@@ -331,2255 +2551,35 @@
                 "_str_extended_summary": [
                     "self"
                 ],
+                "_str_param_list": [
+                    "self",
+                    "name"
+                ],
+                "_str_section": [
+                    "self",
+                    "name"
+                ],
+                "_str_see_also": [
+                    "self",
+                    "func_role"
+                ],
+                "_str_warnings": [
+                    "self"
+                ],
+                "_str_index": [
+                    "self"
+                ],
+                "_str_references": [
+                    "self"
+                ],
                 "__str__": [
                     "self",
                     "indent",
                     "func_role"
                 ]
-            }
-        },
-        "doc.sphinxext": {},
-        "doc.sphinxext.comment_eater": {
-            "strip_comment_marker": [
-                "text"
-            ],
-            "get_class_traits": [
-                "klass"
-            ],
-            "Comment": {
-                "__init__": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno",
-                    "text"
-                ],
-                "add": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "__repr__": [
-                    "self"
-                ]
             },
-            "NonComment": {
-                "__init__": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno"
-                ],
-                "add": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "__repr__": [
-                    "self"
-                ]
-            },
-            "CommentBlocker": {
-                "__init__": [
-                    "self"
-                ],
-                "process_file": [
-                    "self",
-                    "file"
-                ],
-                "process_token": [
-                    "self",
-                    "kind",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "new_noncomment": [
-                    "self",
-                    "start_lineno",
-                    "end_lineno"
-                ],
-                "new_comment": [
-                    "self",
-                    "string",
-                    "start",
-                    "end",
-                    "line"
-                ],
-                "make_index": [
-                    "self"
-                ],
-                "search_for_comment": [
-                    "self",
-                    "lineno",
-                    "default"
-                ]
-            }
-        },
-        "numpy.version": {},
-        "numpy.matlib": {
-            "empty": [
-                "shape",
-                "dtype",
-                "order"
-            ],
-            "ones": [
-                "shape",
-                "dtype",
-                "order"
-            ],
-            "zeros": [
-                "shape",
-                "dtype",
-                "order"
-            ],
-            "identity": [
-                "n",
-                "dtype"
-            ],
-            "eye": [
-                "n",
-                "M",
-                "k",
-                "dtype"
-            ],
-            "rand": [],
-            "randn": [],
-            "repmat": [
-                "a",
-                "m",
-                "n"
-            ]
-        },
-        "numpy.add_newdocs": {},
-        "numpy.core.setup_common": {
-            "fname2def": [
-                "name"
-            ]
-        },
-        "numpy.core.arrayprint": {
-            "product": [
-                "x",
-                "y"
-            ],
-            "set_printoptions": [
-                "precision",
-                "threshold",
-                "edgeitems",
-                "linewidth",
-                "suppress",
-                "nanstr",
-                "infstr"
-            ],
-            "get_printoptions": [],
-            "_leading_trailing": [
-                "a"
-            ],
-            "_boolFormatter": [
-                "x"
-            ],
-            "_array2string": [
-                "a",
-                "max_line_width",
-                "precision",
-                "suppress_small",
-                "separator",
-                "prefix"
-            ],
-            "_convert_arrays": [
-                "obj"
-            ],
-            "array2string": [
-                "a",
-                "max_line_width",
-                "precision",
-                "suppress_small",
-                "separator",
-                "prefix",
-                "style"
-            ],
-            "_extendLine": [
-                "s",
-                "line",
-                "word",
-                "max_line_len",
-                "next_line_prefix"
-            ],
-            "_formatArray": [
-                "a",
-                "format_function",
-                "rank",
-                "max_line_len",
-                "next_line_prefix",
-                "separator",
-                "edge_items",
-                "summary_insert"
-            ],
-            "_digits": [
-                "x",
-                "precision",
-                "format"
-            ],
-            "_formatInteger": [
-                "x",
-                "format"
-            ],
-            "_longfloatFormatter": [
-                "precision"
-            ],
-            "_clongfloatFormatter": [
-                "precision"
-            ],
-            "FloatFormat": {
-                "__init__": [
-                    "self",
-                    "data",
-                    "precision",
-                    "suppress_small",
-                    "sign"
-                ],
-                "fillFormat": [
-                    "self",
-                    "data"
-                ],
-                "__call__": [
-                    "self",
-                    "x",
-                    "strip_zeros"
-                ]
-            },
-            "ComplexFormat": {
-                "__init__": [
-                    "self",
-                    "x",
-                    "precision",
-                    "suppress_small"
-                ],
-                "__call__": [
-                    "self",
-                    "x"
-                ]
-            }
-        },
-        "numpy.core": {},
-        "numpy.core.scons_support": {
-            "split_ext": [
-                "string"
-            ],
-            "do_generate_numpy_api": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_ufunc_api": [
-                "target",
-                "source",
-                "env"
-            ],
-            "generate_api_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_from_template": [
-                "targetfile",
-                "sourcefile",
-                "env"
-            ],
-            "generate_from_template": [
-                "target",
-                "source",
-                "env"
-            ],
-            "generate_from_template_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "do_generate_umath": [
-                "targetfile",
-                "sourcefile",
-                "env"
-            ],
-            "generate_umath": [
-                "target",
-                "source",
-                "env"
-            ],
-            "generate_umath_emitter": [
-                "target",
-                "source",
-                "env"
-            ],
-            "CheckBrokenMathlib": [
-                "context",
-                "mathlib"
-            ],
-            "check_mlib": [
-                "config",
-                "mlib"
-            ],
-            "check_mlibs": [
-                "config",
-                "mlibs"
-            ],
-            "is_npy_no_signal": [],
-            "define_no_smp": [],
-            "CheckInline": [
-                "context"
-            ]
-        },
-        "numpy.core.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.core.info": {},
-        "numpy.core.fromnumeric": {
-            "_wrapit": [
-                "obj",
-                "method"
-            ],
-            "take": [
-                "a",
-                "indices",
-                "axis",
-                "out",
-                "mode"
-            ],
-            "reshape": [
-                "a",
-                "newshape",
-                "order"
-            ],
-            "choose": [
-                "a",
-                "choices",
-                "out",
-                "mode"
-            ],
-            "repeat": [
-                "a",
-                "repeats",
-                "axis"
-            ],
-            "put": [
-                "a",
-                "ind",
-                "v",
-                "mode"
-            ],
-            "swapaxes": [
-                "a",
-                "axis1",
-                "axis2"
-            ],
-            "transpose": [
-                "a",
-                "axes"
-            ],
-            "sort": [
-                "a",
-                "axis",
-                "kind",
-                "order"
-            ],
-            "argsort": [
-                "a",
-                "axis",
-                "kind",
-                "order"
-            ],
-            "argmax": [
-                "a",
-                "axis"
-            ],
-            "argmin": [
-                "a",
-                "axis"
-            ],
-            "searchsorted": [
-                "a",
-                "v",
-                "side"
-            ],
-            "resize": [
-                "a",
-                "new_shape"
-            ],
-            "squeeze": [
-                "a"
-            ],
-            "diagonal": [
-                "a",
-                "offset",
-                "axis1",
-                "axis2"
-            ],
-            "trace": [
-                "a",
-                "offset",
-                "axis1",
-                "axis2",
-                "dtype",
-                "out"
-            ],
-            "ravel": [
-                "a",
-                "order"
-            ],
-            "nonzero": [
-                "a"
-            ],
-            "shape": [
-                "a"
-            ],
-            "compress": [
-                "condition",
-                "a",
-                "axis",
-                "out"
-            ],
-            "clip": [
-                "a",
-                "a_min",
-                "a_max",
-                "out"
-            ],
-            "sum": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "product": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "sometrue": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "alltrue": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "any": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "all": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "cumsum": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "cumproduct": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "ptp": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "amax": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "amin": [
-                "a",
-                "axis",
-                "out"
-            ],
-            "alen": [
-                "a"
-            ],
-            "prod": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "cumprod": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "ndim": [
-                "a"
-            ],
-            "rank": [
-                "a"
-            ],
-            "size": [
-                "a",
-                "axis"
-            ],
-            "around": [
-                "a",
-                "decimals",
-                "out"
-            ],
-            "round_": [
-                "a",
-                "decimals",
-                "out"
-            ],
-            "mean": [
-                "a",
-                "axis",
-                "dtype",
-                "out"
-            ],
-            "std": [
-                "a",
-                "axis",
-                "dtype",
-                "out",
-                "ddof"
-            ],
-            "var": [
-                "a",
-                "axis",
-                "dtype",
-                "out",
-                "ddof"
-            ]
-        },
-        "numpy.core.code_generators.generate_ufunc_api": {
-            "generate_api": [
-                "output_dir",
-                "force"
-            ],
-            "do_generate_api": [
-                "targets",
-                "sources"
-            ]
-        },
-        "numpy.core.code_generators.ufunc_docstrings": {
-            "get": [
-                "name"
-            ],
-            "add_newdoc": [
-                "place",
-                "name",
-                "doc"
-            ]
-        },
-        "numpy.core.code_generators": {},
-        "numpy.core.code_generators.generate_numpy_api": {
-            "generate_api": [
-                "output_dir",
-                "force"
-            ],
-            "do_generate_api": [
-                "targets",
-                "sources"
-            ]
-        },
-        "numpy.core.code_generators.generate_umath": {
-            "build_func_data": [
-                "types",
-                "f"
-            ],
-            "TD": [
-                "types",
-                "f",
-                "in_",
-                "out"
-            ],
-            "indent": [
-                "st",
-                "spaces"
-            ],
-            "english_upper": [
-                "s"
-            ],
-            "make_arrays": [
-                "funcdict"
-            ],
-            "make_ufuncs": [
-                "funcdict"
-            ],
-            "make_code": [
-                "funcdict",
-                "filename"
-            ],
-            "TypeDescription": {
-                "__init__": [
-                    "self",
-                    "type",
-                    "f",
-                    "in_",
-                    "out"
-                ],
-                "finish_signature": [
-                    "self",
-                    "nin",
-                    "nout"
-                ]
-            },
-            "Ufunc": {
-                "__init__": [
-                    "self",
-                    "nin",
-                    "nout",
-                    "identity",
-                    "docstring"
-                ]
-            }
-        },
-        "numpy.distutils.extension": {
-            "Extension": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "sources",
-                    "include_dirs",
-                    "define_macros",
-                    "undef_macros",
-                    "library_dirs",
-                    "libraries",
-                    "runtime_library_dirs",
-                    "extra_objects",
-                    "extra_compile_args",
-                    "extra_link_args",
-                    "export_symbols",
-                    "swig_opts",
-                    "depends",
-                    "language",
-                    "f2py_options",
-                    "module_dirs"
-                ],
-                "has_cxx_sources": [
-                    "self"
-                ],
-                "has_f2py_sources": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.numpy_distribution": {
-            "NumpyDistribution": {
-                "__init__": [
-                    "self",
-                    "attrs"
-                ],
-                "has_scons_scripts": [
-                    "self"
-                ],
-                "get_scons_scripts": [
-                    "self"
-                ],
-                "get_scons_pre_hooks": [
-                    "self"
-                ],
-                "get_scons_post_hooks": [
-                    "self"
-                ],
-                "get_scons_sources": [
-                    "self"
-                ],
-                "get_scons_parent_names": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.intelccompiler": {
-            "IntelCCompiler": {
-                "__init__": [
-                    "self",
-                    "verbose",
-                    "dry_run",
-                    "force"
-                ]
-            },
-            "IntelItaniumCCompiler": {}
-        },
-        "numpy.distutils": {},
-        "numpy.distutils.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.info": {},
-        "numpy.distutils.__version__": {},
-        "numpy.distutils.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.command.build_scripts": {
-            "build_scripts": {
-                "generate_scripts": [
-                    "self",
-                    "scripts"
-                ],
-                "run": [
-                    "self"
-                ],
-                "get_source_files": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.sdist": {
-            "sdist": {
-                "add_defaults": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.build": {
-            "build": {
-                "initialize_options": [
-                    "self"
-                ],
-                "finalize_options": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.develop": {
-            "develop": {
-                "install_for_development": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.install_data": {
-            "install_data": {
-                "finalize_options": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.autodist": {
-            "check_inline": [
-                "cmd"
-            ]
-        },
-        "numpy.distutils.command.egg_info": {
-            "egg_info": {
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.build_py": {
-            "build_py": {
-                "find_package_modules": [
-                    "self",
-                    "package",
-                    "package_dir"
-                ],
-                "find_modules": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.config_compiler": {
-            "show_fortran_compilers": [
-                "_cache"
-            ],
-            "config_fc": {
-                "initialize_options": [
-                    "self"
-                ],
-                "finalize_options": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            },
-            "config_cc": {
-                "initialize_options": [
-                    "self"
-                ],
-                "finalize_options": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.bdist_rpm": {
-            "bdist_rpm": {
-                "_make_spec_file": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command.install": {
-            "install": {
-                "finalize_options": [
-                    "self"
-                ],
-                "setuptools_run": [
-                    "self"
-                ],
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.command": {},
-        "numpy.distutils.command.install_headers": {
-            "install_headers": {
-                "run": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.distutils.tests.f2py_f90_ext": {},
-        "numpy.distutils.tests.f2py_f90_ext.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.tests.swig_ext": {},
-        "numpy.distutils.tests.swig_ext.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.tests.gen_ext": {},
-        "numpy.distutils.tests.gen_ext.setup": {
-            "source_func": [
-                "ext",
-                "build_dir"
-            ],
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.tests.pyrex_ext": {},
-        "numpy.distutils.tests.pyrex_ext.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.distutils.tests.f2py_ext": {},
-        "numpy.distutils.tests.f2py_ext.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.fft.helper": {
-            "fftshift": [
-                "x",
-                "axes"
-            ],
-            "ifftshift": [
-                "x",
-                "axes"
-            ],
-            "fftfreq": [
-                "n",
-                "d"
-            ]
-        },
-        "numpy.fft": {},
-        "numpy.fft.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.fft.info": {},
-        "numpy.fft.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.testing.noseclasses": {
-            "NumpyDocTestFinder": {
-                "_from_module": [
-                    "self",
-                    "module",
-                    "object"
-                ],
-                "_find": [
-                    "self",
-                    "tests",
-                    "obj",
-                    "name",
-                    "module",
-                    "source_lines",
-                    "globs",
-                    "seen"
-                ]
-            },
-            "NumpyDocTestCase": {
-                "__init__": [
-                    "self",
-                    "test",
-                    "optionflags",
-                    "setUp",
-                    "tearDown",
-                    "checker",
-                    "obj",
-                    "result_var"
-                ]
-            },
-            "NumpyOutputChecker": {
-                "check_output": [
-                    "self",
-                    "want",
-                    "got",
-                    "optionflags"
-                ]
-            },
-            "NumpyDoctest": {
-                "options": [
-                    "self",
-                    "parser",
-                    "env"
-                ],
-                "configure": [
-                    "self",
-                    "options",
-                    "config"
-                ],
-                "loadTestsFromModule": [
-                    "self",
-                    "module"
-                ],
-                "afterContext": [
-                    "self"
-                ],
-                "wantFile": [
-                    "self",
-                    "file"
-                ]
-            },
-            "KnownFailureTest": {},
-            "KnownFailure": {
-                "options": [
-                    "self",
-                    "parser",
-                    "env"
-                ],
-                "configure": [
-                    "self",
-                    "options",
-                    "conf"
-                ]
-            },
-            "NumpyTestProgram": {
-                "runTests": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.testing": {},
-        "numpy.testing.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.testing.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.oldnumeric.rng_stats": {
-            "average": [
-                "data"
-            ],
-            "variance": [
-                "data"
-            ],
-            "standardDeviation": [
-                "data"
-            ],
-            "histogram": [
-                "data",
-                "nbins",
-                "range"
-            ]
-        },
-        "numpy.oldnumeric.alter_code2": {
-            "replacetypechars": [
-                "astr"
-            ],
-            "changeimports": [
-                "fstr",
-                "name",
-                "newname"
-            ],
-            "replaceattr": [
-                "astr"
-            ],
-            "replaceother": [
-                "astr"
-            ],
-            "fromstr": [
-                "filestr"
-            ],
-            "makenewfile": [
-                "name",
-                "filestr"
-            ],
-            "getandcopy": [
-                "name"
-            ],
-            "convertfile": [
-                "filename"
-            ],
-            "fromargs": [
-                "args"
-            ],
-            "convertall": [
-                "direc"
-            ],
-            "_func": [
-                "arg",
-                "dirname",
-                "fnames"
-            ],
-            "converttree": [
-                "direc"
-            ]
-        },
-        "numpy.oldnumeric.alter_code1": {
-            "fixtypechars": [
-                "fstr"
-            ],
-            "changeimports": [
-                "fstr",
-                "name",
-                "newname"
-            ],
-            "fixistesting": [
-                "astr"
-            ],
-            "replaceattr": [
-                "astr"
-            ],
-            "replaceother": [
-                "astr"
-            ],
-            "fromstr": [
-                "filestr"
-            ],
-            "makenewfile": [
-                "name",
-                "filestr"
-            ],
-            "convertfile": [
-                "filename",
-                "orig"
-            ],
-            "fromargs": [
-                "args"
-            ],
-            "convertall": [
-                "direc",
-                "orig"
-            ],
-            "convertsrc": [
-                "direc",
-                "ext",
-                "orig"
-            ],
-            "_func": [
-                "arg",
-                "dirname",
-                "fnames"
-            ],
-            "converttree": [
-                "direc"
-            ]
-        },
-        "numpy.oldnumeric.fft": {},
-        "numpy.oldnumeric": {
-            "_move_axis_to_0": [
-                "a",
-                "axis"
-            ]
-        },
-        "numpy.oldnumeric.ufuncs": {},
-        "numpy.oldnumeric.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.oldnumeric.user_array": {},
-        "numpy.oldnumeric.typeconv": {
-            "convtypecode": [
-                "typecode",
-                "dtype"
-            ],
-            "convtypecode2": [
-                "typecode",
-                "dtype"
-            ],
-            "_oldtypecodes": {
-                "__getitem__": [
-                    "self",
-                    "obj"
-                ]
-            }
-        },
-        "numpy.oldnumeric.linear_algebra": {
-            "solve_linear_equations": [
-                "a",
-                "b"
-            ],
-            "inverse": [
-                "a"
-            ],
-            "cholesky_decomposition": [
-                "a"
-            ],
-            "eigenvalues": [
-                "a"
-            ],
-            "Heigenvalues": [
-                "a",
-                "UPLO"
-            ],
-            "eigenvectors": [
-                "A"
-            ],
-            "Heigenvectors": [
-                "A"
-            ],
-            "generalized_inverse": [
-                "a",
-                "rcond"
-            ],
-            "determinant": [
-                "a"
-            ],
-            "linear_least_squares": [
-                "a",
-                "b",
-                "rcond"
-            ],
-            "singular_value_decomposition": [
-                "A",
-                "full_matrices"
-            ]
-        },
-        "numpy.oldnumeric.misc": {},
-        "numpy.oldnumeric.array_printer": {
-            "array2string": [
-                "a",
-                "max_line_width",
-                "precision",
-                "suppress_small",
-                "separator",
-                "array_output"
-            ]
-        },
-        "numpy.oldnumeric.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.f2py.func2subr": {
-            "var2fixfortran": [
-                "vars",
-                "a",
-                "fa",
-                "f90mode"
-            ],
-            "createfuncwrapper": [
-                "rout",
-                "signature"
-            ],
-            "assubr": [
-                "rout"
-            ]
-        },
-        "numpy.f2py.cb_rules": {
-            "buildcallbacks": [
-                "m"
-            ],
-            "buildcallback": [
-                "rout",
-                "um"
-            ]
-        },
-        "numpy.f2py.common_rules": {
-            "findcommonblocks": [
-                "block",
-                "top"
-            ],
-            "buildhooks": [
-                "m"
-            ]
-        },
-        "numpy.f2py": {
-            "compile": [
-                "source",
-                "modulename",
-                "extra_args",
-                "verbose",
-                "source_fn"
-            ]
-        },
-        "numpy.f2py.info": {},
-        "numpy.f2py.__version__": {},
-        "numpy.numarray.matrix": {
-            "Matrix": [
-                "data",
-                "typecode",
-                "copy",
-                "savespace"
-            ]
-        },
-        "numpy.numarray.alter_code2": {
-            "makenewfile": [
-                "name",
-                "filestr"
-            ],
-            "getandcopy": [
-                "name"
-            ],
-            "convertfile": [
-                "filename"
-            ],
-            "fromargs": [
-                "args"
-            ],
-            "convertall": [
-                "direc"
-            ],
-            "_func": [
-                "arg",
-                "dirname",
-                "fnames"
-            ],
-            "converttree": [
-                "direc"
-            ]
-        },
-        "numpy.numarray.numerictypes": {
-            "IsType": [
-                "rep"
-            ],
-            "_register": [
-                "name",
-                "type",
-                "force"
-            ],
-            "_scipy_alias": [
-                "scipy_type",
-                "numarray_type"
-            ],
-            "_initGenericCoercions": [],
-            "MaximumType": [
-                "t"
-            ],
-            "getType": [
-                "type"
-            ],
-            "typefrom": [
-                "obj"
-            ],
-            "NumericType": {
-                "__new__": [
-                    "type",
-                    "name",
-                    "bytes",
-                    "default",
-                    "typeno"
-                ],
-                "__init__": [
-                    "self",
-                    "name",
-                    "bytes",
-                    "default",
-                    "typeno"
-                ],
-                "__getnewargs__": [
-                    "self"
-                ],
-                "__getstate__": [
-                    "self"
-                ]
-            },
-            "BooleanType": {},
-            "SignedType": {},
-            "UnsignedType": {},
-            "IntegralType": {},
-            "SignedIntegralType": {},
-            "UnsignedIntegralType": {},
-            "FloatingType": {},
-            "ComplexType": {},
-            "AnyType": {},
-            "ObjectType": {}
-        },
-        "numpy.numarray.ma": {},
-        "numpy.numarray.nd_image": {},
-        "numpy.numarray.mlab": {},
-        "numpy.numarray.alter_code1": {
-            "changeimports": [
-                "fstr",
-                "name",
-                "newname"
-            ],
-            "addimport": [
-                "astr"
-            ],
-            "replaceattr": [
-                "astr"
-            ],
-            "replaceother": [
-                "astr"
-            ],
-            "fromstr": [
-                "filestr"
-            ],
-            "makenewfile": [
-                "name",
-                "filestr"
-            ],
-            "convertfile": [
-                "filename",
-                "orig"
-            ],
-            "fromargs": [
-                "args"
-            ],
-            "convertall": [
-                "direc",
-                "orig"
-            ],
-            "convertsrc": [
-                "direc",
-                "ext",
-                "orig"
-            ],
-            "_func": [
-                "arg",
-                "dirname",
-                "fnames"
-            ],
-            "converttree": [
-                "direc"
-            ]
-        },
-        "numpy.numarray.random_array": {},
-        "numpy.numarray.image": {},
-        "numpy.numarray.fft": {},
-        "numpy.numarray": {},
-        "numpy.numarray.ufuncs": {},
-        "numpy.numarray.functions": {
-            "type2dtype": [
-                "typecode",
-                "type",
-                "dtype",
-                "use_default"
-            ],
-            "fromfunction": [
-                "shape",
-                "dimensions",
-                "type",
-                "typecode",
-                "dtype"
-            ],
-            "ones": [
-                "shape",
-                "type",
-                "typecode",
-                "dtype"
-            ],
-            "zeros": [
-                "shape",
-                "type",
-                "typecode",
-                "dtype"
-            ],
-            "where": [
-                "condition",
-                "x",
-                "y",
-                "out"
-            ],
-            "indices": [
-                "shape",
-                "type"
-            ],
-            "arange": [
-                "a1",
-                "a2",
-                "stride",
-                "type",
-                "shape",
-                "typecode",
-                "dtype"
-            ],
-            "alltrue": [
-                "x",
-                "axis"
-            ],
-            "and_": [
-                "a",
-                "b"
-            ],
-            "divide_remainder": [
-                "a",
-                "b"
-            ],
-            "around": [
-                "array",
-                "digits",
-                "output"
-            ],
-            "array2list": [
-                "arr"
-            ],
-            "choose": [
-                "selector",
-                "population",
-                "outarr",
-                "clipmode"
-            ],
-            "compress": [
-                "condition",
-                "a",
-                "axis"
-            ],
-            "explicit_type": [
-                "a"
-            ],
-            "flush_caches": [],
-            "fromfile": [
-                "infile",
-                "type",
-                "shape",
-                "sizing",
-                "typecode",
-                "dtype"
-            ],
-            "fromstring": [
-                "datastring",
-                "type",
-                "shape",
-                "typecode",
-                "dtype"
-            ],
-            "fromlist": [
-                "seq",
-                "type",
-                "shape",
-                "check_overflow",
-                "typecode",
-                "dtype"
-            ],
-            "array": [
-                "sequence",
-                "typecode",
-                "copy",
-                "savespace",
-                "type",
-                "shape",
-                "dtype"
-            ],
-            "asarray": [
-                "seq",
-                "type",
-                "typecode",
-                "dtype"
-            ],
-            "getTypeObject": [
-                "sequence",
-                "type"
-            ],
-            "getShape": [
-                "shape"
-            ],
-            "identity": [
-                "n",
-                "type",
-                "typecode",
-                "dtype"
-            ],
-            "info": [
-                "obj",
-                "output",
-                "numpy"
-            ],
-            "put": [
-                "array",
-                "indices",
-                "values",
-                "axis",
-                "clipmode"
-            ],
-            "repeat": [
-                "array",
-                "repeats",
-                "axis"
-            ],
-            "reshape": [
-                "array",
-                "shape"
-            ],
-            "round": [],
-            "sometrue": [
-                "array",
-                "axis"
-            ],
-            "take": [
-                "array",
-                "indices",
-                "axis",
-                "outarr",
-                "clipmode"
-            ],
-            "tensormultiply": [
-                "a1",
-                "a2"
-            ],
-            "cumsum": [
-                "a1",
-                "axis",
-                "out",
-                "type",
-                "dim"
-            ],
-            "cumproduct": [
-                "a1",
-                "axis",
-                "out",
-                "type",
-                "dim"
-            ],
-            "argmax": [
-                "x",
-                "axis"
-            ],
-            "argmin": [
-                "x",
-                "axis"
-            ],
-            "newobj": [
-                "self",
-                "type"
-            ],
-            "togglebyteorder": [
-                "self"
-            ],
-            "average": [
-                "a",
-                "axis",
-                "weights",
-                "returned"
-            ],
-            "EarlyEOFError": {},
-            "SizeMismatchError": {},
-            "SizeMismatchWarning": {},
-            "FileSeekWarning": {}
-        },
-        "numpy.numarray.convolve": {},
-        "numpy.numarray.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.numarray.compat": {},
-        "numpy.numarray.linear_algebra": {
-            "qr_decomposition": [
-                "a",
-                "mode"
-            ]
-        },
-        "numpy.numarray.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.lib._iotools": {
-            "_is_string_like": [
-                "obj"
-            ],
-            "_to_filehandle": [
-                "fname",
-                "flag",
-                "return_opened"
-            ],
-            "has_nested_fields": [
-                "ndtype"
-            ],
-            "flatten_dtype": [
-                "ndtype"
-            ],
-            "str2bool": [
-                "value"
-            ],
-            "LineSplitter": {
-                "autostrip": [
-                    "self",
-                    "method"
-                ],
-                "__init__": [
-                    "self",
-                    "delimiter",
-                    "comments",
-                    "autostrip"
-                ],
-                "_delimited_splitter": [
-                    "self",
-                    "line"
-                ],
-                "_fixedwidth_splitter": [
-                    "self",
-                    "line"
-                ],
-                "_variablewidth_splitter": [
-                    "self",
-                    "line"
-                ],
-                "__call__": [
-                    "self",
-                    "line"
-                ]
-            },
-            "NameValidator": {
-                "__init__": [
-                    "self",
-                    "excludelist",
-                    "deletechars",
-                    "case_sensitive"
-                ],
-                "validate": [
-                    "self",
-                    "names",
-                    "default"
-                ],
-                "__call__": [
-                    "self",
-                    "names",
-                    "default"
-                ]
-            },
-            "StringConverter": {
-                "_getsubdtype": [
-                    "cls",
-                    "val"
-                ],
-                "upgrade_mapper": [
-                    "cls",
-                    "func",
-                    "default"
-                ],
-                "__init__": [
-                    "self",
-                    "dtype_or_func",
-                    "default",
-                    "missing_values",
-                    "locked"
-                ],
-                "_loose_call": [
-                    "self",
-                    "value"
-                ],
-                "_strict_call": [
-                    "self",
-                    "value"
-                ],
-                "__call__": [
-                    "self",
-                    "value"
-                ],
-                "upgrade": [
-                    "self",
-                    "value"
-                ],
-                "update": [
-                    "self",
-                    "func",
-                    "default",
-                    "missing_values",
-                    "locked"
-                ]
-            }
-        },
-        "numpy.lib.type_check": {
-            "mintypecode": [
-                "typechars",
-                "typeset",
-                "default"
-            ],
-            "asfarray": [
-                "a",
-                "dtype"
-            ],
-            "real": [
-                "val"
-            ],
-            "imag": [
-                "val"
-            ],
-            "iscomplex": [
-                "x"
-            ],
-            "isreal": [
-                "x"
-            ],
-            "iscomplexobj": [
-                "x"
-            ],
-            "isrealobj": [
-                "x"
-            ],
-            "_getmaxmin": [
-                "t"
-            ],
-            "nan_to_num": [
-                "x"
-            ],
-            "real_if_close": [
-                "a",
-                "tol"
-            ],
-            "asscalar": [
-                "a"
-            ],
-            "typename": [
-                "char"
-            ],
-            "common_type": []
-        },
-        "numpy.lib.arraysetops": {
-            "ediff1d": [
-                "ary",
-                "to_end",
-                "to_begin"
-            ],
-            "unique1d": [
-                "ar1",
-                "return_index",
-                "return_inverse"
-            ],
-            "intersect1d": [
-                "ar1",
-                "ar2"
-            ],
-            "intersect1d_nu": [
-                "ar1",
-                "ar2"
-            ],
-            "setxor1d": [
-                "ar1",
-                "ar2"
-            ],
-            "setmember1d": [
-                "ar1",
-                "ar2"
-            ],
-            "union1d": [
-                "ar1",
-                "ar2"
-            ],
-            "setdiff1d": [
-                "ar1",
-                "ar2"
-            ]
-        },
-        "numpy.lib.financial": {
-            "_convert_when": [
-                "when"
-            ],
-            "fv": [
-                "rate",
-                "nper",
-                "pmt",
-                "pv",
-                "when"
-            ],
-            "pmt": [
-                "rate",
-                "nper",
-                "pv",
-                "fv",
-                "when"
-            ],
-            "nper": [
-                "rate",
-                "pmt",
-                "pv",
-                "fv",
-                "when"
-            ],
-            "ipmt": [
-                "rate",
-                "per",
-                "nper",
-                "pv",
-                "fv",
-                "when"
-            ],
-            "ppmt": [
-                "rate",
-                "per",
-                "nper",
-                "pv",
-                "fv",
-                "when"
-            ],
-            "pv": [
-                "rate",
-                "nper",
-                "pmt",
-                "fv",
-                "when"
-            ],
-            "_g_div_gp": [
-                "r",
-                "n",
-                "p",
-                "x",
-                "y",
-                "w"
-            ],
-            "rate": [
-                "nper",
-                "pmt",
-                "pv",
-                "fv",
-                "when",
-                "guess",
-                "tol",
-                "maxiter"
-            ],
-            "irr": [
-                "values"
-            ],
-            "npv": [
-                "rate",
-                "values"
-            ],
-            "mirr": [
-                "values",
-                "finance_rate",
-                "reinvest_rate"
-            ]
-        },
-        "numpy.lib.scimath": {
-            "_tocomplex": [
-                "arr"
-            ],
-            "_fix_real_lt_zero": [
-                "x"
-            ],
-            "_fix_int_lt_zero": [
-                "x"
-            ],
-            "_fix_real_abs_gt_1": [
-                "x"
-            ],
-            "sqrt": [
-                "x"
-            ],
-            "log": [
-                "x"
-            ],
-            "log10": [
-                "x"
-            ],
-            "logn": [
-                "n",
-                "x"
-            ],
-            "log2": [
-                "x"
-            ],
-            "power": [
-                "x",
-                "p"
-            ],
-            "arccos": [
-                "x"
-            ],
-            "arcsin": [
-                "x"
-            ],
-            "arctanh": [
-                "x"
-            ]
-        },
-        "numpy.lib.ufunclike": {
-            "fix": [
-                "x",
-                "y"
-            ],
-            "isposinf": [
-                "x",
-                "y"
-            ],
-            "isneginf": [
-                "x",
-                "y"
-            ],
-            "log2": [
-                "x",
-                "y"
-            ]
-        },
-        "numpy.lib.arrayterator": {
-            "Arrayterator": {
-                "__init__": [
-                    "self",
-                    "var",
-                    "buf_size"
-                ],
-                "__getattr__": [
-                    "self",
-                    "attr"
-                ],
-                "__getitem__": [
-                    "self",
-                    "index"
-                ],
-                "__array__": [
-                    "self"
-                ],
-                "flat": [
-                    "self"
-                ],
-                "shape": [
-                    "self"
-                ],
-                "__iter__": [
-                    "self"
-                ]
-            }
-        },
-        "numpy.lib": {},
-        "numpy.lib.stride_tricks": {
-            "as_strided": [
-                "x",
-                "shape",
-                "strides"
-            ],
-            "broadcast_arrays": [],
-            "DummyArray": {
-                "__init__": [
-                    "self",
-                    "interface",
-                    "base"
-                ]
-            }
-        },
-        "numpy.lib.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.lib.recfunctions": {
-            "recursive_fill_fields": [
-                "input",
-                "output"
-            ],
-            "get_names": [
-                "adtype"
-            ],
-            "get_names_flat": [
-                "adtype"
-            ],
-            "flatten_descr": [
-                "ndtype"
-            ],
-            "zip_descr": [
-                "seqarrays",
-                "flatten"
-            ],
-            "get_fieldstructure": [
-                "adtype",
-                "lastname",
-                "parents"
-            ],
-            "_izip_fields_flat": [
-                "iterable"
-            ],
-            "_izip_fields": [
-                "iterable"
-            ],
-            "izip_records": [
-                "seqarrays",
-                "fill_value",
-                "flatten"
-            ],
-            "_fix_output": [
-                "output",
-                "usemask",
-                "asrecarray"
-            ],
-            "_fix_defaults": [
-                "output",
-                "defaults"
-            ],
-            "merge_arrays": [
-                "seqarrays",
-                "fill_value",
-                "flatten",
-                "usemask",
-                "asrecarray"
-            ],
-            "drop_fields": [
-                "base",
-                "drop_names",
-                "usemask",
-                "asrecarray"
-            ],
-            "rec_drop_fields": [
-                "base",
-                "drop_names"
-            ],
-            "rename_fields": [
-                "base",
-                "namemapper"
-            ],
-            "append_fields": [
-                "base",
-                "names",
-                "data",
-                "dtypes",
-                "fill_value",
-                "usemask",
-                "asrecarray"
-            ],
-            "rec_append_fields": [
-                "base",
-                "names",
-                "data",
-                "dtypes"
-            ],
-            "stack_arrays": [
-                "arrays",
-                "defaults",
-                "usemask",
-                "asrecarray",
-                "autoconvert"
-            ],
-            "find_duplicates": [
-                "a",
-                "key",
-                "ignoremask",
-                "return_index"
-            ],
-            "join_by": [
-                "key",
-                "r1",
-                "r2",
-                "jointype",
-                "r1postfix",
-                "r2postfix",
-                "defaults",
-                "usemask",
-                "asrecarray"
-            ],
-            "rec_join": [
-                "key",
-                "r1",
-                "r2",
-                "jointype",
-                "r1postfix",
-                "r2postfix",
-                "defaults"
-            ]
-        },
-        "numpy.lib.info": {},
-        "numpy.lib.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.doc.structured_arrays": {},
-        "numpy.doc.internals": {},
-        "numpy.doc.jargon": {},
-        "numpy.doc.creation": {},
-        "numpy.doc.broadcasting": {},
-        "numpy.doc.methods_vs_functions": {},
-        "numpy.doc.constants": {
-            "add_newdoc": [
-                "module",
-                "name",
-                "doc"
-            ]
-        },
-        "numpy.doc.performance": {},
-        "numpy.doc.subclassing": {},
-        "numpy.doc.basics": {},
-        "numpy.doc": {},
-        "numpy.doc.io": {},
-        "numpy.doc.ufuncs": {},
-        "numpy.doc.indexing": {},
-        "numpy.doc.howtofind": {},
-        "numpy.doc.misc": {},
-        "numpy.doc.glossary": {},
-        "numpy.ma.version": {},
-        "numpy.ma.testutils": {
-            "approx": [
-                "a",
-                "b",
-                "fill_value",
-                "rtol",
-                "atol"
-            ],
-            "almost": [
-                "a",
-                "b",
-                "decimal",
-                "fill_value"
-            ],
-            "_assert_equal_on_sequences": [
-                "actual",
-                "desired",
-                "err_msg"
-            ],
-            "assert_equal_records": [
-                "a",
-                "b"
-            ],
-            "assert_equal": [
-                "actual",
-                "desired",
-                "err_msg"
-            ],
-            "fail_if_equal": [
-                "actual",
-                "desired",
-                "err_msg"
-            ],
-            "assert_almost_equal": [
-                "actual",
-                "desired",
-                "decimal",
-                "err_msg",
-                "verbose"
-            ],
-            "assert_array_compare": [
-                "comparison",
-                "x",
-                "y",
-                "err_msg",
-                "verbose",
-                "header",
-                "fill_value"
-            ],
-            "assert_array_equal": [
-                "x",
-                "y",
-                "err_msg",
-                "verbose"
-            ],
-            "fail_if_array_equal": [
-                "x",
-                "y",
-                "err_msg",
-                "verbose"
-            ],
-            "assert_array_approx_equal": [
-                "x",
-                "y",
-                "decimal",
-                "err_msg",
-                "verbose"
-            ],
-            "assert_array_almost_equal": [
-                "x",
-                "y",
-                "decimal",
-                "err_msg",
-                "verbose"
-            ],
-            "assert_array_less": [
-                "x",
-                "y",
-                "err_msg",
-                "verbose"
-            ],
-            "assert_mask_equal": [
-                "m1",
-                "m2"
-            ]
-        },
-        "numpy.ma": {},
-        "numpy.ma.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.ma.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.linalg": {},
-        "numpy.linalg.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "numpy.linalg.info": {},
-        "numpy.random": {
-            "__RandomState_ctor": []
-        },
-        "numpy.random.setupscons": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ],
-            "testcode_wincrypt": []
-        },
-        "numpy.random.info": {},
-        "numpy.random.setup": {
-            "needs_mingw_ftime_workaround": [],
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ],
-            "testcode_wincrypt": []
+            "SphinxFunctionDoc": {},
+            "SphinxClassDoc": {}
         }
     }
 }
