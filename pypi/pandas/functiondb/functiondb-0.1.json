@@ -113,6 +113,7 @@
             }
         },
         "doc.sphinxext.setup": {},
+        "doc.sphinxext": {},
         "doc.sphinxext.compiler_unparse": {
             "unparse": [
                 "ast",
@@ -346,7 +347,19 @@
                 ]
             }
         },
-        "doc.sphinxext": {},
+        "doc.sphinxext.only_directives": {
+            "run": [
+                "content",
+                "node_class",
+                "state",
+                "content_offset"
+            ],
+            "setup": [
+                "app"
+            ],
+            "html_only": {},
+            "latex_only": {}
+        },
         "doc.sphinxext.docscrape_sphinx": {
             "get_doc_object": [
                 "obj",
@@ -424,727 +437,45 @@
                 ]
             }
         },
-        "doc.sphinxext.only_directives": {
-            "run": [
-                "content",
-                "node_class",
-                "state",
-                "content_offset"
-            ],
-            "setup": [
-                "app"
-            ],
-            "html_only": {},
-            "latex_only": {}
-        },
-        "pandas.info": {},
         "pandas.version": {},
-        "pandas.io.parsers": {
-            "simpleParser": [
-                "nestedList",
-                "forceFloat",
-                "colNames",
-                "header",
-                "indexCol"
-            ],
-            "parseCSV": [
-                "filepath",
-                "header",
-                "indexCol"
-            ],
-            "parseText": [
-                "filepath",
-                "sep",
-                "header",
-                "indexCol",
-                "colNames"
-            ],
-            "ole2datetime": [
-                "oledt"
-            ],
-            "parseExcel": [
-                "filepath",
-                "header",
-                "indexCol",
-                "dateCol",
-                "sheetname"
-            ]
-        },
-        "pandas.io": {},
-        "pandas.stats.math": {
-            "rank": [
-                "X",
-                "cond"
-            ],
-            "solve": [
-                "a",
-                "b"
-            ],
-            "inv": [
-                "a"
-            ],
-            "is_psd": [
-                "m"
-            ],
-            "newey_west": [
-                "m",
-                "max_lags",
-                "nobs",
-                "df",
-                "nw_overlap"
-            ],
-            "calc_F": [
-                "R",
-                "r",
-                "beta",
-                "var_beta",
-                "nobs",
-                "df"
-            ],
-            "chain_dot": []
-        },
-        "pandas.stats.common": {
-            "_get_cluster_type": [
-                "cluster_type"
-            ],
-            "_get_window_type": [
-                "window_type"
-            ],
-            "banner": [
-                "text",
-                "width"
-            ],
-            "f_stat_to_dict": [
-                "result"
-            ]
-        },
-        "pandas.stats.fama_macbeth": {
-            "fama_macbeth": [],
-            "_calc_t_stat": [
-                "beta",
-                "nw_lags_beta"
-            ],
-            "FamaMacBeth": {
+        "pandas.info": {},
+        "pandas.sandbox": {},
+        "pandas.sandbox.stats.rls": {
+            "RLS": {
                 "__init__": [
                     "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_stats": [
-                    "self"
-                ],
-                "_mean_beta_raw": [
-                    "self"
-                ],
-                "_std_beta_raw": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "mean_beta": [
-                    "self"
-                ],
-                "std_beta": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_coef_table": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ]
-            },
-            "MovingFamaMacBeth": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "weights",
-                    "window_type",
-                    "window",
-                    "intercept",
-                    "nw_lags",
-                    "nw_lags_beta",
-                    "entity_effects",
-                    "time_effects",
-                    "x_effects",
-                    "cluster",
-                    "dropped_dummies",
-                    "verbose"
-                ],
-                "_stats": [
-                    "self"
-                ],
-                "_make_result": [
-                    "self",
-                    "result"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.interface": {
-            "ols": []
-        },
-        "pandas.stats": {},
-        "pandas.stats.ols": {
-            "_safe_update": [
-                "d",
-                "other"
-            ],
-            "_combine_rhs": [
-                "rhs"
-            ],
-            "_filter_data": [
-                "lhs",
-                "rhs"
-            ],
-            "OLS": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "intercept",
-                    "nw_lags",
-                    "nw_overlap"
-                ],
-                "_prepare_data": [
-                    "self"
-                ],
-                "nobs": [
-                    "self"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "nw_lags": [
-                    "self"
-                ],
-                "x": [
-                    "self"
-                ],
-                "y": [
-                    "self"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "beta": [
-                    "self"
-                ],
-                "_df_raw": [
-                    "self"
-                ],
-                "df": [
-                    "self"
-                ],
-                "_df_model_raw": [
-                    "self"
-                ],
-                "df_model": [
-                    "self"
-                ],
-                "_df_resid_raw": [
-                    "self"
-                ],
-                "df_resid": [
-                    "self"
-                ],
-                "_f_stat_raw": [
-                    "self"
-                ],
-                "f_stat": [
-                    "self"
-                ],
-                "f_test": [
-                    "self",
-                    "hypothesis"
-                ],
-                "_p_value_raw": [
-                    "self"
-                ],
-                "p_value": [
-                    "self"
-                ],
-                "_r2_raw": [
-                    "self"
-                ],
-                "r2": [
-                    "self"
-                ],
-                "_r2_adj_raw": [
-                    "self"
-                ],
-                "r2_adj": [
-                    "self"
-                ],
-                "_resid_raw": [
-                    "self"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "_rmse_raw": [
-                    "self"
-                ],
-                "rmse": [
-                    "self"
-                ],
-                "_std_err_raw": [
-                    "self"
-                ],
-                "std_err": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "_var_beta_raw": [
-                    "self"
-                ],
-                "var_beta": [
-                    "self"
-                ],
-                "_y_fitted_raw": [
-                    "self"
-                ],
-                "y_fitted": [
-                    "self"
-                ],
-                "_y_predict_raw": [
-                    "self"
-                ],
-                "y_predict": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_coef_table": [
-                    "self"
-                ],
-                "summary_as_matrix": [
-                    "self"
-                ],
-                "summary": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "_time_obs_count": [
-                    "self"
-                ],
-                "_total_times": [
-                    "self"
-                ]
-            },
-            "MovingOLS": {
-                "__init__": [
-                    "self",
-                    "y",
-                    "x",
-                    "window_type",
-                    "window",
-                    "min_periods",
-                    "intercept",
-                    "nw_lags",
-                    "nw_overlap"
-                ],
-                "beta": [
-                    "self"
-                ],
-                "rank": [
-                    "self"
-                ],
-                "df": [
-                    "self"
-                ],
-                "df_model": [
-                    "self"
-                ],
-                "df_resid": [
-                    "self"
-                ],
-                "f_stat": [
-                    "self"
-                ],
-                "f_test": [
-                    "self",
-                    "hypothesis"
-                ],
-                "p_value": [
-                    "self"
-                ],
-                "r2": [
-                    "self"
-                ],
-                "resid": [
-                    "self"
-                ],
-                "r2_adj": [
-                    "self"
-                ],
-                "rmse": [
-                    "self"
-                ],
-                "std_err": [
-                    "self"
-                ],
-                "t_stat": [
-                    "self"
-                ],
-                "var_beta": [
-                    "self"
-                ],
-                "y_fitted": [
-                    "self"
-                ],
-                "y_predict": [
-                    "self"
-                ],
-                "_is_rolling": [
-                    "self"
-                ],
-                "_beta_raw": [
-                    "self"
-                ],
-                "_result_index": [
-                    "self"
-                ],
-                "_valid_indices": [
-                    "self"
-                ],
-                "_rolling_ols_call": [
-                    "self"
-                ],
-                "_calc_betas": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "_rolling_rank": [
-                    "self"
-                ],
-                "_cum_xx": [
-                    "self",
-                    "x"
-                ],
-                "_cum_xy": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "_rank_raw": [
-                    "self"
-                ],
-                "_df_raw": [
-                    "self"
-                ],
-                "_df_model_raw": [
-                    "self"
-                ],
-                "_df_resid_raw": [
-                    "self"
-                ],
-                "_f_stat_raw": [
-                    "self"
-                ],
-                "_p_value_raw": [
-                    "self"
-                ],
-                "_resid_stats": [
-                    "self"
-                ],
-                "_rmse_raw": [
-                    "self"
-                ],
-                "_r2_raw": [
-                    "self"
-                ],
-                "_r2_adj_raw": [
-                    "self"
-                ],
-                "_resid_raw": [
-                    "self"
-                ],
-                "_std_err_raw": [
-                    "self"
-                ],
-                "_t_stat_raw": [
-                    "self"
-                ],
-                "_var_beta_raw": [
-                    "self"
-                ],
-                "_y_fitted_raw": [
-                    "self"
-                ],
-                "_y_predict_raw": [
-                    "self"
-                ],
-                "_results": [
-                    "self"
-                ],
-                "_window_time_obs": [
-                    "self"
-                ],
-                "_nobs_raw": [
-                    "self"
-                ],
-                "_beta_matrix": [
-                    "self",
-                    "lag"
-                ],
-                "_valid_obs_labels": [
-                    "self"
-                ],
-                "_nobs": [
-                    "self"
-                ],
-                "nobs": [
-                    "self"
-                ],
-                "_enough_obs": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.api": {},
-        "pandas.stats.tests.common": {
-            "makeDataMatrix": [],
-            "getBasicDatasets": [],
-            "BaseTest": {
-                "setUp": [
-                    "self"
-                ],
-                "createData1": [
-                    "self"
-                ],
-                "createData2": [
-                    "self"
-                ],
-                "createData3": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.stats.tests.test_ols_filter": {
-            "TestOLSFilter": {
-                "setUp": [
-                    "self"
-                ],
-                "testFilterWithSeriesRHS": [
-                    "self"
-                ],
-                "testFilterWithSeriesRHS2": [
-                    "self"
-                ],
-                "testFilterWithSeriesRHS3": [
-                    "self"
-                ],
-                "testFilterWithDataFrameRHS": [
-                    "self"
-                ],
-                "testFilterWithDictRHS": [
-                    "self"
-                ],
-                "tsAssertEqual": [
-                    "self",
-                    "ts1",
-                    "ts2"
-                ]
-            }
-        },
-        "pandas.stats.tests": {},
-        "pandas.stats.tests.test_fama_macbeth": {
-            "TestFamaMacBeth": {
-                "testFamaMacBethRolling": [
-                    "self"
-                ],
-                "checkFamaMacBethExtended": [
-                    "self",
-                    "window_type",
-                    "x",
-                    "y"
-                ]
-            }
-        },
-        "pandas.stats.tests.test_ols": {
-            "_check_repr": [
-                "obj"
-            ],
-            "_check_non_raw_results": [
-                "model"
-            ],
-            "_period_slice": [
-                "panelModel",
-                "i"
-            ],
-            "TestOLS": {
-                "testOLSWithDatasets": [
-                    "self"
-                ],
-                "checkDataSet": [
-                    "self",
-                    "dataset",
-                    "start",
-                    "end",
-                    "skip_moving"
-                ],
-                "checkOLS": [
-                    "self",
-                    "exog",
                     "endog",
-                    "x",
-                    "y"
+                    "exog",
+                    "constr",
+                    "param",
+                    "sigma"
                 ],
-                "checkMovingOLS": [
-                    "self",
-                    "window_type",
-                    "x",
-                    "y"
-                ],
-                "compare": [
-                    "self",
-                    "static",
-                    "moving",
-                    "event_index",
-                    "result_index"
-                ]
-            },
-            "TestPanelOLS": {
-                "testFiltering": [
+                "rwexog": [
                     "self"
                 ],
-                "testWithWeights": [
+                "inv_rwexog": [
                     "self"
                 ],
-                "testWithTimeEffects": [
+                "rwendog": [
                     "self"
                 ],
-                "testWithEntityEffects": [
+                "rnorm_cov_params": [
                     "self"
                 ],
-                "testWithEntityEffectsAndDroppedDummies": [
+                "wrnorm_cov_params": [
                     "self"
                 ],
-                "testWithXEffects": [
+                "coeffs": [
                     "self"
                 ],
-                "testWithXEffectsAndDroppedDummies": [
+                "fit": [
                     "self"
-                ],
-                "testWithXEffectsAndConversion": [
-                    "self"
-                ],
-                "testWithXEffectsAndConversionAndDroppedDummies": [
-                    "self"
-                ],
-                "testForSeries": [
-                    "self"
-                ],
-                "testRollingWithWeights": [
-                    "self"
-                ],
-                "testRolling": [
-                    "self"
-                ],
-                "testRollingWithFixedEffects": [
-                    "self"
-                ],
-                "testRollingWithTimeEffects": [
-                    "self"
-                ],
-                "testRollingWithNeweyWest": [
-                    "self"
-                ],
-                "testRollingWithEntityCluster": [
-                    "self"
-                ],
-                "testRollingWithTimeEffectsAndEntityCluster": [
-                    "self"
-                ],
-                "testRollingWithTimeCluster": [
-                    "self"
-                ],
-                "testRollingWithNeweyWestAndEntityCluster": [
-                    "self"
-                ],
-                "testRollingWithNeweyWestAndTimeEffectsAndEntityCluster": [
-                    "self"
-                ],
-                "testExpanding": [
-                    "self"
-                ],
-                "testNonPooled": [
-                    "self"
-                ],
-                "checkNonPooled": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "checkMovingOLS": [
-                    "self",
-                    "x",
-                    "y",
-                    "window_type"
-                ],
-                "checkForSeries": [
-                    "self",
-                    "x",
-                    "y",
-                    "series_x",
-                    "series_y"
-                ],
-                "compare": [
-                    "self",
-                    "static",
-                    "moving",
-                    "event_index",
-                    "result_index"
                 ]
             }
         },
+        "pandas.sandbox.stats": {},
         "pandas.util": {},
+        "pandas.core": {},
         "pandas.core.pytools": {
             "rands": [
                 "n"
@@ -1176,236 +507,6 @@
                     "self",
                     "seq",
                     "key"
-                ]
-            }
-        },
-        "pandas.core": {},
-        "pandas.core.datetools": {
-            "format": [
-                "dt"
-            ],
-            "ole2datetime": [
-                "oledt"
-            ],
-            "to_datetime": [
-                "input"
-            ],
-            "normalize_date": [
-                "dt"
-            ],
-            "inferTimeRule": [
-                "index"
-            ],
-            "getOffset": [
-                "name"
-            ],
-            "hasOffsetName": [
-                "offset"
-            ],
-            "getOffsetName": [
-                "offset"
-            ],
-            "DateOffset": {
-                "__init__": [
-                    "self",
-                    "n"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "isAnchored": [
-                    "self"
-                ],
-                "copy": [
-                    "self"
-                ],
-                "_params": [
-                    "self"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "__eq__": [
-                    "self",
-                    "other"
-                ],
-                "__hash__": [
-                    "self"
-                ],
-                "__call__": [
-                    "self",
-                    "other"
-                ],
-                "__add__": [
-                    "self",
-                    "other"
-                ],
-                "__radd__": [
-                    "self",
-                    "other"
-                ],
-                "__sub__": [
-                    "self",
-                    "other"
-                ],
-                "__rsub__": [
-                    "self",
-                    "other"
-                ],
-                "__mul__": [
-                    "self",
-                    "someInt"
-                ],
-                "__rmul__": [
-                    "self",
-                    "someInt"
-                ],
-                "__neg__": [
-                    "self"
-                ],
-                "__contains__": [
-                    "self",
-                    "other"
-                ],
-                "rollback": [
-                    "self",
-                    "someDate"
-                ],
-                "rollforward": [
-                    "self",
-                    "someDate"
-                ],
-                "onOffset": [
-                    "cls",
-                    "someDate"
-                ]
-            },
-            "BDay": {
-                "__init__": [
-                    "self",
-                    "n"
-                ],
-                "__repr__": [
-                    "self"
-                ],
-                "isAnchored": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "cls",
-                    "someDate"
-                ]
-            },
-            "MonthEnd": {
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "cls",
-                    "someDate"
-                ]
-            },
-            "BMonthEnd": {
-                "isAnchored": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ]
-            },
-            "Week": {
-                "__init__": [
-                    "self",
-                    "n"
-                ],
-                "isAnchored": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "self",
-                    "someDate"
-                ]
-            },
-            "BQuarterEnd": {
-                "__init__": [
-                    "self",
-                    "n"
-                ],
-                "isAnchored": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "self",
-                    "someDate"
-                ]
-            },
-            "BYearEnd": {
-                "apply": [
-                    "self",
-                    "other"
-                ]
-            },
-            "YearEnd": {
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "cls",
-                    "someDate"
-                ]
-            },
-            "YearBegin": {
-                "apply": [
-                    "self",
-                    "other"
-                ],
-                "onOffset": [
-                    "cls",
-                    "someDate"
-                ]
-            },
-            "Tick": {},
-            "Hour": {
-                "delta": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ]
-            },
-            "Minute": {
-                "delta": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
-                ]
-            },
-            "Second": {
-                "delta": [
-                    "self"
-                ],
-                "apply": [
-                    "self",
-                    "other"
                 ]
             }
         },
@@ -1773,6 +874,254 @@
             },
             "TimeSeries": {}
         },
+        "pandas.core.api": {},
+        "pandas.core.datetools": {
+            "format": [
+                "dt"
+            ],
+            "ole2datetime": [
+                "oledt"
+            ],
+            "to_datetime": [
+                "input"
+            ],
+            "normalize_date": [
+                "dt"
+            ],
+            "inferTimeRule": [
+                "index"
+            ],
+            "getOffset": [
+                "name"
+            ],
+            "hasOffsetName": [
+                "offset"
+            ],
+            "getOffsetName": [
+                "offset"
+            ],
+            "DateOffset": {
+                "__init__": [
+                    "self",
+                    "n"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "isAnchored": [
+                    "self"
+                ],
+                "copy": [
+                    "self"
+                ],
+                "_params": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "__call__": [
+                    "self",
+                    "other"
+                ],
+                "__add__": [
+                    "self",
+                    "other"
+                ],
+                "__radd__": [
+                    "self",
+                    "other"
+                ],
+                "__sub__": [
+                    "self",
+                    "other"
+                ],
+                "__rsub__": [
+                    "self",
+                    "other"
+                ],
+                "__mul__": [
+                    "self",
+                    "someInt"
+                ],
+                "__rmul__": [
+                    "self",
+                    "someInt"
+                ],
+                "__neg__": [
+                    "self"
+                ],
+                "__contains__": [
+                    "self",
+                    "other"
+                ],
+                "rollback": [
+                    "self",
+                    "someDate"
+                ],
+                "rollforward": [
+                    "self",
+                    "someDate"
+                ],
+                "onOffset": [
+                    "cls",
+                    "someDate"
+                ]
+            },
+            "BDay": {
+                "__init__": [
+                    "self",
+                    "n"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "isAnchored": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "cls",
+                    "someDate"
+                ]
+            },
+            "MonthEnd": {
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "cls",
+                    "someDate"
+                ]
+            },
+            "BMonthEnd": {
+                "isAnchored": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Week": {
+                "__init__": [
+                    "self",
+                    "n"
+                ],
+                "isAnchored": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "self",
+                    "someDate"
+                ]
+            },
+            "BQuarterEnd": {
+                "__init__": [
+                    "self",
+                    "n"
+                ],
+                "isAnchored": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "self",
+                    "someDate"
+                ]
+            },
+            "BYearEnd": {
+                "apply": [
+                    "self",
+                    "other"
+                ]
+            },
+            "YearEnd": {
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "cls",
+                    "someDate"
+                ]
+            },
+            "YearBegin": {
+                "apply": [
+                    "self",
+                    "other"
+                ],
+                "onOffset": [
+                    "cls",
+                    "someDate"
+                ]
+            },
+            "Tick": {},
+            "Hour": {
+                "delta": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Minute": {
+                "delta": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Second": {
+                "delta": [
+                    "self"
+                ],
+                "apply": [
+                    "self",
+                    "other"
+                ]
+            }
+        },
+        "pandas.core.mixins": {
+            "Picklable": {
+                "save": [
+                    "self",
+                    "fileName"
+                ],
+                "load": [
+                    "cls",
+                    "fileName"
+                ]
+            },
+            "Groupable": {
+                "groupby": [
+                    "self",
+                    "mapper"
+                ]
+            }
+        },
         "pandas.core.daterange": {
             "_getIndexLoc": [
                 "index",
@@ -1852,24 +1201,6 @@
                 ]
             }
         },
-        "pandas.core.mixins": {
-            "Picklable": {
-                "save": [
-                    "self",
-                    "fileName"
-                ],
-                "load": [
-                    "cls",
-                    "fileName"
-                ]
-            },
-            "Groupable": {
-                "groupby": [
-                    "self",
-                    "mapper"
-                ]
-            }
-        },
         "pandas.core.collection": {
             "PickleContainer": {
                 "__init__": [
@@ -1907,127 +1238,29 @@
                 ]
             }
         },
-        "pandas.core.api": {},
-        "pandas.core.tests.test_index_flymake": {
-            "TestIndex": {
-                "setUp": [
+        "pandas.core.tests.test_groupby": {
+            "commonSetUp": [
+                "self"
+            ],
+            "GroupByTestCase": {
+                "testPythonGrouper": [
                     "self"
                 ],
-                "test_duplicates": [
+                "testCythonGrouper": [
                     "self"
                 ],
-                "test_sort": [
+                "testNaNGrouping": [
                     "self"
                 ],
-                "test_mutability": [
+                "testMembership": [
                     "self"
                 ],
-                "test_constructor": [
-                    "self"
-                ],
-                "test_compat": [
-                    "self"
-                ],
-                "test_equals": [
-                    "self"
-                ],
-                "test_md5": [
-                    "self"
-                ],
-                "test_asOfDate": [
-                    "self"
-                ],
-                "test_argsort": [
-                    "self"
-                ],
-                "test_comparators": [
-                    "self"
-                ],
-                "test_booleanindex": [
-                    "self"
-                ],
-                "test_fancy": [
-                    "self"
-                ],
-                "test_getitem": [
-                    "self"
-                ],
-                "test_add": [
-                    "self"
-                ],
-                "test_intersection": [
-                    "self"
-                ],
-                "test_union": [
-                    "self"
-                ],
-                "test_diff": [
-                    "self"
-                ],
-                "test_pickle": [
+                "testByColumnName": [
                     "self"
                 ]
-            }
-        },
-        "pandas.core.tests.common": {
-            "rands": [
-                "n"
-            ],
-            "equalContents": [
-                "arr1",
-                "arr2"
-            ],
-            "isiterable": [
-                "obj"
-            ],
-            "assert_almost_equal": [
-                "a",
-                "b"
-            ],
-            "is_sorted": [
-                "seq"
-            ],
-            "assert_dict_equal": [
-                "a",
-                "b",
-                "compare_keys"
-            ],
-            "assert_series_equal": [
-                "left",
-                "right"
-            ],
-            "assert_frame_equal": [
-                "left",
-                "right"
-            ],
-            "assert_contains_all": [
-                "iterable",
-                "dic"
-            ],
-            "getCols": [
-                "k"
-            ],
-            "makeStringIndex": [
-                "k"
-            ],
-            "makeIntIndex": [
-                "k"
-            ],
-            "makeDateIndex": [
-                "k"
-            ],
-            "makeFloatSeries": [],
-            "makeStringSeries": [],
-            "makeObjectSeries": [],
-            "makeTimeSeries": [],
-            "getArangeMat": [],
-            "getSeriesData": [],
-            "getTimeSeriesData": [],
-            "getMixedTypeDict": [],
-            "makeDataFrame": [],
-            "makeTimeDataFrame": [],
-            "makeDataMatrix": [],
-            "makeTimeDataMatrix": []
+            },
+            "TestAggregate": {},
+            "TestTransform": {}
         },
         "pandas.core.tests.test_frame": {
             "TestDataFrame": {
@@ -2264,59 +1497,6 @@
                 ]
             }
         },
-        "pandas.core.tests.test_datetools": {
-            "testFormat": [],
-            "testOle2datetime": [],
-            "testTto_datetime1": [],
-            "testTto_datetime2": [],
-            "testNormalize_date": [],
-            "myAssert": [
-                "actual",
-                "expected"
-            ],
-            "testEQ": [],
-            "testHash": [],
-            "testCall": [],
-            "testRAdd": [],
-            "testSub": [],
-            "testRSub": [],
-            "testMult1": [],
-            "testMult2": [],
-            "testRollback1": [],
-            "testRollback2": [],
-            "testRollforward1": [],
-            "testRollforward2": [],
-            "assertOnOffset": [
-                "offset",
-                "date",
-                "expected"
-            ],
-            "testOnOffset": [],
-            "assertEq": [
-                "dateOffset",
-                "baseDate",
-                "expected"
-            ],
-            "testBday": [],
-            "testWeek": [],
-            "testBMonthEnd": [],
-            "testBYearEnd": [],
-            "testYearBegin": [],
-            "testBQuarterEnd": [],
-            "testBQuarterEndOffsets": [],
-            "eqXDateRange": [
-                "kwargs",
-                "expected"
-            ],
-            "testXDateRange1": [],
-            "testXDateRange2": [],
-            "testXDateRange3": [],
-            "assertEqual": [
-                "a",
-                "b"
-            ],
-            "testDateRange1": []
-        },
         "pandas.core.tests": {},
         "pandas.core.tests.test_panel": {
             "TestWidePanel": {
@@ -2514,6 +1694,77 @@
                 ]
             }
         },
+        "pandas.core.tests.test_matrix": {
+            "TestDataMatrix": {
+                "test_more_constructor": [
+                    "self"
+                ],
+                "test_more_fromDict": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.core.tests.test_index_flymake": {
+            "TestIndex": {
+                "setUp": [
+                    "self"
+                ],
+                "test_duplicates": [
+                    "self"
+                ],
+                "test_sort": [
+                    "self"
+                ],
+                "test_mutability": [
+                    "self"
+                ],
+                "test_constructor": [
+                    "self"
+                ],
+                "test_compat": [
+                    "self"
+                ],
+                "test_equals": [
+                    "self"
+                ],
+                "test_md5": [
+                    "self"
+                ],
+                "test_asOfDate": [
+                    "self"
+                ],
+                "test_argsort": [
+                    "self"
+                ],
+                "test_comparators": [
+                    "self"
+                ],
+                "test_booleanindex": [
+                    "self"
+                ],
+                "test_fancy": [
+                    "self"
+                ],
+                "test_getitem": [
+                    "self"
+                ],
+                "test_add": [
+                    "self"
+                ],
+                "test_intersection": [
+                    "self"
+                ],
+                "test_union": [
+                    "self"
+                ],
+                "test_diff": [
+                    "self"
+                ],
+                "test_pickle": [
+                    "self"
+                ]
+            }
+        },
         "pandas.core.tests.test_tseries": {
             "TestUtil": {
                 "test_map_indices": [
@@ -2548,6 +1799,59 @@
                     "self"
                 ]
             }
+        },
+        "pandas.core.tests.test_datetools": {
+            "testFormat": [],
+            "testOle2datetime": [],
+            "testTto_datetime1": [],
+            "testTto_datetime2": [],
+            "testNormalize_date": [],
+            "myAssert": [
+                "actual",
+                "expected"
+            ],
+            "testEQ": [],
+            "testHash": [],
+            "testCall": [],
+            "testRAdd": [],
+            "testSub": [],
+            "testRSub": [],
+            "testMult1": [],
+            "testMult2": [],
+            "testRollback1": [],
+            "testRollback2": [],
+            "testRollforward1": [],
+            "testRollforward2": [],
+            "assertOnOffset": [
+                "offset",
+                "date",
+                "expected"
+            ],
+            "testOnOffset": [],
+            "assertEq": [
+                "dateOffset",
+                "baseDate",
+                "expected"
+            ],
+            "testBday": [],
+            "testWeek": [],
+            "testBMonthEnd": [],
+            "testBYearEnd": [],
+            "testYearBegin": [],
+            "testBQuarterEnd": [],
+            "testBQuarterEndOffsets": [],
+            "eqXDateRange": [
+                "kwargs",
+                "expected"
+            ],
+            "testXDateRange1": [],
+            "testXDateRange2": [],
+            "testXDateRange3": [],
+            "assertEqual": [
+                "a",
+                "b"
+            ],
+            "testDateRange1": []
         },
         "pandas.core.tests.test_index": {
             "TestIndex": {
@@ -2610,15 +1914,65 @@
                 ]
             }
         },
-        "pandas.core.tests.test_matrix": {
-            "TestDataMatrix": {
-                "test_more_constructor": [
-                    "self"
-                ],
-                "test_more_fromDict": [
-                    "self"
-                ]
-            }
+        "pandas.core.tests.common": {
+            "rands": [
+                "n"
+            ],
+            "equalContents": [
+                "arr1",
+                "arr2"
+            ],
+            "isiterable": [
+                "obj"
+            ],
+            "assert_almost_equal": [
+                "a",
+                "b"
+            ],
+            "is_sorted": [
+                "seq"
+            ],
+            "assert_dict_equal": [
+                "a",
+                "b",
+                "compare_keys"
+            ],
+            "assert_series_equal": [
+                "left",
+                "right"
+            ],
+            "assert_frame_equal": [
+                "left",
+                "right"
+            ],
+            "assert_contains_all": [
+                "iterable",
+                "dic"
+            ],
+            "getCols": [
+                "k"
+            ],
+            "makeStringIndex": [
+                "k"
+            ],
+            "makeIntIndex": [
+                "k"
+            ],
+            "makeDateIndex": [
+                "k"
+            ],
+            "makeFloatSeries": [],
+            "makeStringSeries": [],
+            "makeObjectSeries": [],
+            "makeTimeSeries": [],
+            "getArangeMat": [],
+            "getSeriesData": [],
+            "getTimeSeriesData": [],
+            "getMixedTypeDict": [],
+            "makeDataFrame": [],
+            "makeTimeDataFrame": [],
+            "makeDataMatrix": [],
+            "makeTimeDataMatrix": []
         },
         "pandas.core.tests.test_series": {
             "TestSeries": {
@@ -2786,66 +2140,712 @@
                 ]
             }
         },
-        "pandas.core.tests.test_groupby": {
-            "commonSetUp": [
-                "self"
+        "pandas.stats.interface": {
+            "ols": []
+        },
+        "pandas.stats.math": {
+            "rank": [
+                "X",
+                "cond"
             ],
-            "GroupByTestCase": {
-                "testPythonGrouper": [
+            "solve": [
+                "a",
+                "b"
+            ],
+            "inv": [
+                "a"
+            ],
+            "is_psd": [
+                "m"
+            ],
+            "newey_west": [
+                "m",
+                "max_lags",
+                "nobs",
+                "df",
+                "nw_overlap"
+            ],
+            "calc_F": [
+                "R",
+                "r",
+                "beta",
+                "var_beta",
+                "nobs",
+                "df"
+            ],
+            "chain_dot": []
+        },
+        "pandas.stats.ols": {
+            "_safe_update": [
+                "d",
+                "other"
+            ],
+            "_combine_rhs": [
+                "rhs"
+            ],
+            "_filter_data": [
+                "lhs",
+                "rhs"
+            ],
+            "OLS": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "intercept",
+                    "nw_lags",
+                    "nw_overlap"
+                ],
+                "_prepare_data": [
                     "self"
                 ],
-                "testCythonGrouper": [
+                "nobs": [
                     "self"
                 ],
-                "testNaNGrouping": [
+                "_nobs": [
                     "self"
                 ],
-                "testMembership": [
+                "nw_lags": [
                     "self"
                 ],
-                "testByColumnName": [
+                "x": [
+                    "self"
+                ],
+                "y": [
+                    "self"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "beta": [
+                    "self"
+                ],
+                "_df_raw": [
+                    "self"
+                ],
+                "df": [
+                    "self"
+                ],
+                "_df_model_raw": [
+                    "self"
+                ],
+                "df_model": [
+                    "self"
+                ],
+                "_df_resid_raw": [
+                    "self"
+                ],
+                "df_resid": [
+                    "self"
+                ],
+                "_f_stat_raw": [
+                    "self"
+                ],
+                "f_stat": [
+                    "self"
+                ],
+                "f_test": [
+                    "self",
+                    "hypothesis"
+                ],
+                "_p_value_raw": [
+                    "self"
+                ],
+                "p_value": [
+                    "self"
+                ],
+                "_r2_raw": [
+                    "self"
+                ],
+                "r2": [
+                    "self"
+                ],
+                "_r2_adj_raw": [
+                    "self"
+                ],
+                "r2_adj": [
+                    "self"
+                ],
+                "_resid_raw": [
+                    "self"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "_rmse_raw": [
+                    "self"
+                ],
+                "rmse": [
+                    "self"
+                ],
+                "_std_err_raw": [
+                    "self"
+                ],
+                "std_err": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "_var_beta_raw": [
+                    "self"
+                ],
+                "var_beta": [
+                    "self"
+                ],
+                "_y_fitted_raw": [
+                    "self"
+                ],
+                "y_fitted": [
+                    "self"
+                ],
+                "_y_predict_raw": [
+                    "self"
+                ],
+                "y_predict": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_coef_table": [
+                    "self"
+                ],
+                "summary_as_matrix": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "_time_obs_count": [
+                    "self"
+                ],
+                "_total_times": [
                     "self"
                 ]
             },
-            "TestAggregate": {},
-            "TestTransform": {}
-        },
-        "pandas.lib": {},
-        "pandas.lib.build": {},
-        "pandas.sandbox": {},
-        "pandas.sandbox.stats": {},
-        "pandas.sandbox.stats.rls": {
-            "RLS": {
+            "MovingOLS": {
                 "__init__": [
                     "self",
-                    "endog",
-                    "exog",
-                    "constr",
-                    "param",
-                    "sigma"
+                    "y",
+                    "x",
+                    "window_type",
+                    "window",
+                    "min_periods",
+                    "intercept",
+                    "nw_lags",
+                    "nw_overlap"
                 ],
-                "rwexog": [
+                "beta": [
                     "self"
                 ],
-                "inv_rwexog": [
+                "rank": [
                     "self"
                 ],
-                "rwendog": [
+                "df": [
                     "self"
                 ],
-                "rnorm_cov_params": [
+                "df_model": [
                     "self"
                 ],
-                "wrnorm_cov_params": [
+                "df_resid": [
                     "self"
                 ],
-                "coeffs": [
+                "f_stat": [
                     "self"
                 ],
-                "fit": [
+                "f_test": [
+                    "self",
+                    "hypothesis"
+                ],
+                "p_value": [
+                    "self"
+                ],
+                "r2": [
+                    "self"
+                ],
+                "resid": [
+                    "self"
+                ],
+                "r2_adj": [
+                    "self"
+                ],
+                "rmse": [
+                    "self"
+                ],
+                "std_err": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "var_beta": [
+                    "self"
+                ],
+                "y_fitted": [
+                    "self"
+                ],
+                "y_predict": [
+                    "self"
+                ],
+                "_is_rolling": [
+                    "self"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_valid_indices": [
+                    "self"
+                ],
+                "_rolling_ols_call": [
+                    "self"
+                ],
+                "_calc_betas": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "_rolling_rank": [
+                    "self"
+                ],
+                "_cum_xx": [
+                    "self",
+                    "x"
+                ],
+                "_cum_xy": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "_rank_raw": [
+                    "self"
+                ],
+                "_df_raw": [
+                    "self"
+                ],
+                "_df_model_raw": [
+                    "self"
+                ],
+                "_df_resid_raw": [
+                    "self"
+                ],
+                "_f_stat_raw": [
+                    "self"
+                ],
+                "_p_value_raw": [
+                    "self"
+                ],
+                "_resid_stats": [
+                    "self"
+                ],
+                "_rmse_raw": [
+                    "self"
+                ],
+                "_r2_raw": [
+                    "self"
+                ],
+                "_r2_adj_raw": [
+                    "self"
+                ],
+                "_resid_raw": [
+                    "self"
+                ],
+                "_std_err_raw": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "_var_beta_raw": [
+                    "self"
+                ],
+                "_y_fitted_raw": [
+                    "self"
+                ],
+                "_y_predict_raw": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_window_time_obs": [
+                    "self"
+                ],
+                "_nobs_raw": [
+                    "self"
+                ],
+                "_beta_matrix": [
+                    "self",
+                    "lag"
+                ],
+                "_valid_obs_labels": [
+                    "self"
+                ],
+                "_nobs": [
+                    "self"
+                ],
+                "nobs": [
+                    "self"
+                ],
+                "_enough_obs": [
                     "self"
                 ]
             }
-        }
+        },
+        "pandas.stats": {},
+        "pandas.stats.fama_macbeth": {
+            "fama_macbeth": [],
+            "_calc_t_stat": [
+                "beta",
+                "nw_lags_beta"
+            ],
+            "FamaMacBeth": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "weights",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_beta_raw": [
+                    "self"
+                ],
+                "_stats": [
+                    "self"
+                ],
+                "_mean_beta_raw": [
+                    "self"
+                ],
+                "_std_beta_raw": [
+                    "self"
+                ],
+                "_t_stat_raw": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "mean_beta": [
+                    "self"
+                ],
+                "std_beta": [
+                    "self"
+                ],
+                "t_stat": [
+                    "self"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ],
+                "_coef_table": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "summary": [
+                    "self"
+                ]
+            },
+            "MovingFamaMacBeth": {
+                "__init__": [
+                    "self",
+                    "y",
+                    "x",
+                    "weights",
+                    "window_type",
+                    "window",
+                    "intercept",
+                    "nw_lags",
+                    "nw_lags_beta",
+                    "entity_effects",
+                    "time_effects",
+                    "x_effects",
+                    "cluster",
+                    "dropped_dummies",
+                    "verbose"
+                ],
+                "_stats": [
+                    "self"
+                ],
+                "_make_result": [
+                    "self",
+                    "result"
+                ],
+                "_result_index": [
+                    "self"
+                ],
+                "_results": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.stats.common": {
+            "_get_cluster_type": [
+                "cluster_type"
+            ],
+            "_get_window_type": [
+                "window_type"
+            ],
+            "banner": [
+                "text",
+                "width"
+            ],
+            "f_stat_to_dict": [
+                "result"
+            ]
+        },
+        "pandas.stats.api": {},
+        "pandas.stats.tests": {},
+        "pandas.stats.tests.test_ols": {
+            "_check_repr": [
+                "obj"
+            ],
+            "_check_non_raw_results": [
+                "model"
+            ],
+            "_period_slice": [
+                "panelModel",
+                "i"
+            ],
+            "TestOLS": {
+                "testOLSWithDatasets": [
+                    "self"
+                ],
+                "checkDataSet": [
+                    "self",
+                    "dataset",
+                    "start",
+                    "end",
+                    "skip_moving"
+                ],
+                "checkOLS": [
+                    "self",
+                    "exog",
+                    "endog",
+                    "x",
+                    "y"
+                ],
+                "checkMovingOLS": [
+                    "self",
+                    "window_type",
+                    "x",
+                    "y"
+                ],
+                "compare": [
+                    "self",
+                    "static",
+                    "moving",
+                    "event_index",
+                    "result_index"
+                ]
+            },
+            "TestPanelOLS": {
+                "testFiltering": [
+                    "self"
+                ],
+                "testWithWeights": [
+                    "self"
+                ],
+                "testWithTimeEffects": [
+                    "self"
+                ],
+                "testWithEntityEffects": [
+                    "self"
+                ],
+                "testWithEntityEffectsAndDroppedDummies": [
+                    "self"
+                ],
+                "testWithXEffects": [
+                    "self"
+                ],
+                "testWithXEffectsAndDroppedDummies": [
+                    "self"
+                ],
+                "testWithXEffectsAndConversion": [
+                    "self"
+                ],
+                "testWithXEffectsAndConversionAndDroppedDummies": [
+                    "self"
+                ],
+                "testForSeries": [
+                    "self"
+                ],
+                "testRollingWithWeights": [
+                    "self"
+                ],
+                "testRolling": [
+                    "self"
+                ],
+                "testRollingWithFixedEffects": [
+                    "self"
+                ],
+                "testRollingWithTimeEffects": [
+                    "self"
+                ],
+                "testRollingWithNeweyWest": [
+                    "self"
+                ],
+                "testRollingWithEntityCluster": [
+                    "self"
+                ],
+                "testRollingWithTimeEffectsAndEntityCluster": [
+                    "self"
+                ],
+                "testRollingWithTimeCluster": [
+                    "self"
+                ],
+                "testRollingWithNeweyWestAndEntityCluster": [
+                    "self"
+                ],
+                "testRollingWithNeweyWestAndTimeEffectsAndEntityCluster": [
+                    "self"
+                ],
+                "testExpanding": [
+                    "self"
+                ],
+                "testNonPooled": [
+                    "self"
+                ],
+                "checkNonPooled": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "checkMovingOLS": [
+                    "self",
+                    "x",
+                    "y",
+                    "window_type"
+                ],
+                "checkForSeries": [
+                    "self",
+                    "x",
+                    "y",
+                    "series_x",
+                    "series_y"
+                ],
+                "compare": [
+                    "self",
+                    "static",
+                    "moving",
+                    "event_index",
+                    "result_index"
+                ]
+            }
+        },
+        "pandas.stats.tests.common": {
+            "makeDataMatrix": [],
+            "getBasicDatasets": [],
+            "BaseTest": {
+                "setUp": [
+                    "self"
+                ],
+                "createData1": [
+                    "self"
+                ],
+                "createData2": [
+                    "self"
+                ],
+                "createData3": [
+                    "self"
+                ]
+            }
+        },
+        "pandas.stats.tests.test_fama_macbeth": {
+            "TestFamaMacBeth": {
+                "testFamaMacBethRolling": [
+                    "self"
+                ],
+                "checkFamaMacBethExtended": [
+                    "self",
+                    "window_type",
+                    "x",
+                    "y"
+                ]
+            }
+        },
+        "pandas.stats.tests.test_ols_filter": {
+            "TestOLSFilter": {
+                "setUp": [
+                    "self"
+                ],
+                "testFilterWithSeriesRHS": [
+                    "self"
+                ],
+                "testFilterWithSeriesRHS2": [
+                    "self"
+                ],
+                "testFilterWithSeriesRHS3": [
+                    "self"
+                ],
+                "testFilterWithDataFrameRHS": [
+                    "self"
+                ],
+                "testFilterWithDictRHS": [
+                    "self"
+                ],
+                "tsAssertEqual": [
+                    "self",
+                    "ts1",
+                    "ts2"
+                ]
+            }
+        },
+        "pandas.io.parsers": {
+            "simpleParser": [
+                "nestedList",
+                "forceFloat",
+                "colNames",
+                "header",
+                "indexCol"
+            ],
+            "parseCSV": [
+                "filepath",
+                "header",
+                "indexCol"
+            ],
+            "parseText": [
+                "filepath",
+                "sep",
+                "header",
+                "indexCol",
+                "colNames"
+            ],
+            "ole2datetime": [
+                "oledt"
+            ],
+            "parseExcel": [
+                "filepath",
+                "header",
+                "indexCol",
+                "dateCol",
+                "sheetname"
+            ]
+        },
+        "pandas.io": {},
+        "pandas.lib": {},
+        "pandas.lib.build": {}
     }
 }
