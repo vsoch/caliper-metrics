@@ -1,5 +1,17 @@
 {
     "0.7.2": {
+        "skimage._build": {
+            "cython": [
+                "pyx_files",
+                "working_path"
+            ],
+            "_md5sum": [
+                "f"
+            ],
+            "_changed": [
+                "filename"
+            ]
+        },
         "skimage.setup": {
             "configuration": [
                 "parent_package",
@@ -16,28 +28,6 @@
             "_setup_log": []
         },
         "skimage.version": {},
-        "skimage._build": {
-            "cython": [
-                "pyx_files",
-                "working_path"
-            ],
-            "_md5sum": [
-                "f"
-            ],
-            "_changed": [
-                "filename"
-            ]
-        },
-        "skimage.scripts": {},
-        "skimage.graph.mcp": {
-            "route_through_array": [
-                "array",
-                "start",
-                "end",
-                "fully_connected",
-                "geometric"
-            ]
-        },
         "skimage.graph.setup": {
             "configuration": [
                 "parent_package",
@@ -51,6 +41,172 @@
                 "axis",
                 "output_indexlist"
             ]
+        },
+        "skimage.graph.mcp": {
+            "route_through_array": [
+                "array",
+                "start",
+                "end",
+                "fully_connected",
+                "geometric"
+            ]
+        },
+        "skimage.segmentation.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.segmentation": {},
+        "skimage.segmentation.random_walker_segmentation": {
+            "_make_graph_edges_3d": [
+                "n_x",
+                "n_y",
+                "n_z"
+            ],
+            "_compute_weights_3d": [
+                "data",
+                "beta",
+                "eps",
+                "depth",
+                "multichannel"
+            ],
+            "_compute_gradients_3d": [
+                "data",
+                "depth"
+            ],
+            "_make_laplacian_sparse": [
+                "edges",
+                "weights"
+            ],
+            "_clean_labels_ar": [
+                "X",
+                "labels",
+                "copy"
+            ],
+            "_buildAB": [
+                "lap_sparse",
+                "labels"
+            ],
+            "_mask_edges_weights": [
+                "edges",
+                "weights",
+                "mask"
+            ],
+            "_build_laplacian": [
+                "data",
+                "mask",
+                "beta",
+                "depth",
+                "multichannel"
+            ],
+            "random_walker": [
+                "data",
+                "labels",
+                "beta",
+                "mode",
+                "tol",
+                "copy",
+                "multichannel",
+                "return_full_prob",
+                "depth"
+            ],
+            "_solve_bf": [
+                "lap_sparse",
+                "B",
+                "return_full_prob"
+            ],
+            "_solve_cg": [
+                "lap_sparse",
+                "B",
+                "tol",
+                "return_full_prob"
+            ],
+            "_solve_cg_mg": [
+                "lap_sparse",
+                "B",
+                "tol",
+                "return_full_prob"
+            ]
+        },
+        "skimage.segmentation.boundaries": {
+            "find_boundaries": [
+                "label_img"
+            ],
+            "visualize_boundaries": [
+                "img",
+                "label_img"
+            ]
+        },
+        "skimage.segmentation._clear_border": {
+            "clear_border": [
+                "image",
+                "buffer_size",
+                "bgval"
+            ]
+        },
+        "skimage.segmentation._felzenszwalb": {
+            "felzenszwalb": [
+                "image",
+                "scale",
+                "sigma",
+                "min_size"
+            ]
+        },
+        "skimage.data": {
+            "load": [
+                "f"
+            ],
+            "camera": [],
+            "lena": [],
+            "text": [],
+            "checkerboard": [],
+            "coins": [],
+            "moon": [],
+            "page": []
+        },
+        "skimage.io._io": {
+            "push": [
+                "img"
+            ],
+            "pop": [],
+            "imread": [
+                "fname",
+                "as_grey",
+                "plugin",
+                "flatten"
+            ],
+            "imread_collection": [
+                "load_pattern",
+                "conserve_memory",
+                "plugin"
+            ],
+            "imsave": [
+                "fname",
+                "arr",
+                "plugin"
+            ],
+            "imshow": [
+                "arr",
+                "plugin"
+            ],
+            "show": [],
+            "Image": {
+                "__new__": [
+                    "cls",
+                    "arr"
+                ],
+                "_repr_png_": [
+                    "self"
+                ],
+                "_repr_jpeg_": [
+                    "self"
+                ],
+                "_repr_image_format": [
+                    "self",
+                    "format_str"
+                ]
+            }
         },
         "skimage.io.video": {
             "CvVideo": {
@@ -152,18 +308,6 @@
                 ]
             }
         },
-        "skimage.io.sift": {
-            "_sift_read": [
-                "f",
-                "mode"
-            ],
-            "load_sift": [
-                "f"
-            ],
-            "load_surf": [
-                "f"
-            ]
-        },
         "skimage.io.setup": {
             "configuration": [
                 "parent_package",
@@ -176,49 +320,6 @@
             "_update_doc": [
                 "doc"
             ]
-        },
-        "skimage.io._io": {
-            "push": [
-                "img"
-            ],
-            "pop": [],
-            "imread": [
-                "fname",
-                "as_grey",
-                "plugin",
-                "flatten"
-            ],
-            "imread_collection": [
-                "load_pattern",
-                "conserve_memory",
-                "plugin"
-            ],
-            "imsave": [
-                "fname",
-                "arr",
-                "plugin"
-            ],
-            "imshow": [
-                "arr",
-                "plugin"
-            ],
-            "show": [],
-            "Image": {
-                "__new__": [
-                    "cls",
-                    "arr"
-                ],
-                "_repr_png_": [
-                    "self"
-                ],
-                "_repr_jpeg_": [
-                    "self"
-                ],
-                "_repr_image_format": [
-                    "self",
-                    "format_str"
-                ]
-            }
         },
         "skimage.io.collection": {
             "concatenate_images": [
@@ -308,97 +409,25 @@
                 ]
             }
         },
-        "skimage.io._plugins.skivi": {
-            "ImageLabel": {
-                "__init__": [
-                    "self",
-                    "parent",
-                    "arr"
-                ],
-                "mouseMoveEvent": [
-                    "self",
-                    "evt"
-                ],
-                "resizeEvent": [
-                    "self",
-                    "evt"
-                ],
-                "update_image": [
-                    "self"
-                ]
-            },
-            "RGBHSVDisplay": {
-                "__init__": [
-                    "self"
-                ],
-                "update_vals": [
-                    "self",
-                    "data"
-                ]
-            },
-            "SkiviImageWindow": {
-                "__init__": [
-                    "self",
-                    "arr",
-                    "mgr"
-                ],
-                "closeEvent": [
-                    "self",
-                    "event"
-                ],
-                "update_histograms": [
-                    "self"
-                ],
-                "refresh_image": [
-                    "self"
-                ],
-                "scale_mouse_pos": [
-                    "self",
-                    "x",
-                    "y"
-                ],
-                "label_mouseMoveEvent": [
-                    "self",
-                    "evt"
-                ],
-                "save_to_stack": [
-                    "self"
-                ],
-                "save_to_file": [
-                    "self"
-                ]
-            }
-        },
-        "skimage.io._plugins.tifffile_plugin": {},
-        "skimage.io._plugins.test_plugin": {
-            "imread": [
-                "fname",
-                "dtype"
+        "skimage.io.sift": {
+            "_sift_read": [
+                "f",
+                "mode"
             ],
-            "imsave": [
-                "fname",
-                "arr"
+            "load_sift": [
+                "f"
             ],
-            "imshow": [
-                "arr",
-                "plugin_arg"
-            ],
-            "imread_collection": [
-                "x",
-                "conserve_memory"
+            "load_surf": [
+                "f"
             ]
         },
-        "skimage.io._plugins.null_plugin": {
-            "imshow": [],
-            "imread": []
-        },
+        "skimage.io._plugins": {},
         "skimage.io._plugins.gdal_plugin": {
             "imread": [
                 "fname",
                 "dtype"
             ]
         },
-        "skimage.io._plugins": {},
         "skimage.io._plugins.freeimage_plugin": {
             "_generate_candidate_libs": [],
             "load_freeimage": [],
@@ -470,6 +499,160 @@
             "IO_FLAGS": {},
             "METADATA_MODELS": {},
             "METADATA_DATATYPE": {}
+        },
+        "skimage.io._plugins.tifffile_plugin": {},
+        "skimage.io._plugins.q_histogram": {
+            "ColorHistogram": {
+                "__init__": [
+                    "self",
+                    "counts",
+                    "colormap"
+                ],
+                "_validate_input": [
+                    "self",
+                    "counts",
+                    "colormap"
+                ],
+                "paintEvent": [
+                    "self",
+                    "evt"
+                ],
+                "update_hist": [
+                    "self",
+                    "counts",
+                    "cmap"
+                ]
+            },
+            "QuadHistogram": {
+                "__init__": [
+                    "self",
+                    "img",
+                    "layout",
+                    "order"
+                ],
+                "update_hists": [
+                    "self",
+                    "img"
+                ]
+            }
+        },
+        "skimage.io._plugins.null_plugin": {
+            "imshow": [],
+            "imread": []
+        },
+        "skimage.io._plugins.test_plugin": {
+            "imread": [
+                "fname",
+                "dtype"
+            ],
+            "imsave": [
+                "fname",
+                "arr"
+            ],
+            "imshow": [
+                "arr",
+                "plugin_arg"
+            ],
+            "imread_collection": [
+                "x",
+                "conserve_memory"
+            ]
+        },
+        "skimage.io._plugins.matplotlib_plugin": {
+            "imshow": [],
+            "_app_show": []
+        },
+        "skimage.io._plugins.fits_plugin": {
+            "imread": [
+                "fname",
+                "dtype"
+            ],
+            "imread_collection": [
+                "load_pattern",
+                "conserve_memory"
+            ],
+            "FITSFactory": [
+                "image_ext"
+            ]
+        },
+        "skimage.io._plugins.skivi": {
+            "ImageLabel": {
+                "__init__": [
+                    "self",
+                    "parent",
+                    "arr"
+                ],
+                "mouseMoveEvent": [
+                    "self",
+                    "evt"
+                ],
+                "resizeEvent": [
+                    "self",
+                    "evt"
+                ],
+                "update_image": [
+                    "self"
+                ]
+            },
+            "RGBHSVDisplay": {
+                "__init__": [
+                    "self"
+                ],
+                "update_vals": [
+                    "self",
+                    "data"
+                ]
+            },
+            "SkiviImageWindow": {
+                "__init__": [
+                    "self",
+                    "arr",
+                    "mgr"
+                ],
+                "closeEvent": [
+                    "self",
+                    "event"
+                ],
+                "update_histograms": [
+                    "self"
+                ],
+                "refresh_image": [
+                    "self"
+                ],
+                "scale_mouse_pos": [
+                    "self",
+                    "x",
+                    "y"
+                ],
+                "label_mouseMoveEvent": [
+                    "self",
+                    "evt"
+                ],
+                "save_to_stack": [
+                    "self"
+                ],
+                "save_to_file": [
+                    "self"
+                ]
+            }
+        },
+        "skimage.io._plugins.pil_plugin": {
+            "imread": [
+                "fname",
+                "dtype"
+            ],
+            "_palette_is_grayscale": [
+                "pil_image"
+            ],
+            "imsave": [
+                "fname",
+                "arr",
+                "format_str"
+            ],
+            "imshow": [
+                "arr"
+            ],
+            "_app_show": []
         },
         "skimage.io._plugins.q_color_mixer": {
             "IntelligentSlider": {
@@ -555,1019 +738,34 @@
                 ]
             }
         },
-        "skimage.io._plugins.fits_plugin": {
-            "imread": [
-                "fname",
-                "dtype"
-            ],
-            "imread_collection": [
-                "load_pattern",
-                "conserve_memory"
-            ],
-            "FITSFactory": [
-                "image_ext"
+        "skimage.feature.peak": {
+            "peak_local_max": [
+                "image",
+                "min_distance",
+                "threshold",
+                "threshold_abs",
+                "threshold_rel",
+                "num_peaks"
             ]
         },
-        "skimage.io._plugins.pil_plugin": {
-            "imread": [
-                "fname",
-                "dtype"
-            ],
-            "_palette_is_grayscale": [
-                "pil_image"
-            ],
-            "imsave": [
-                "fname",
-                "arr",
-                "format_str"
-            ],
-            "imshow": [
-                "arr"
-            ],
-            "_app_show": []
-        },
-        "skimage.io._plugins.q_histogram": {
-            "ColorHistogram": {
-                "__init__": [
-                    "self",
-                    "counts",
-                    "colormap"
-                ],
-                "_validate_input": [
-                    "self",
-                    "counts",
-                    "colormap"
-                ],
-                "paintEvent": [
-                    "self",
-                    "evt"
-                ],
-                "update_hist": [
-                    "self",
-                    "counts",
-                    "cmap"
-                ]
-            },
-            "QuadHistogram": {
-                "__init__": [
-                    "self",
-                    "img",
-                    "layout",
-                    "order"
-                ],
-                "update_hists": [
-                    "self",
-                    "img"
-                ]
-            }
-        },
-        "skimage.io._plugins.matplotlib_plugin": {
-            "imshow": [],
-            "_app_show": []
-        },
-        "skimage._shared.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage._shared.testing": {
-            "_assert_less": [
-                "a",
-                "b",
-                "msg"
-            ],
-            "_assert_greater": [
-                "a",
-                "b",
-                "msg"
-            ]
-        },
-        "skimage._shared": {},
-        "skimage.viewer": {},
-        "skimage.viewer.plugins.overlayplugin": {
-            "OverlayPlugin": {
-                "__init__": [
-                    "self"
-                ],
-                "attach": [
-                    "self",
-                    "image_viewer"
-                ],
-                "overlay": [
-                    "self",
-                    "image"
-                ],
-                "color": [
-                    "self",
-                    "index"
-                ],
-                "display_filtered_image": [
-                    "self",
-                    "image"
-                ],
-                "closeEvent": [
-                    "self",
-                    "event"
-                ]
-            }
-        },
-        "skimage.viewer.plugins.canny": {
-            "CannyPlugin": {
-                "__init__": [
-                    "self"
-                ]
-            }
-        },
-        "skimage.viewer.plugins.plotplugin": {
-            "PlotCanvas": {
-                "__init__": [
-                    "self",
-                    "parent",
-                    "height",
-                    "width"
-                ]
-            },
-            "PlotPlugin": {
-                "attach": [
-                    "self",
-                    "image_viewer"
-                ],
-                "redraw": [
-                    "self"
-                ],
-                "add_plot": [
-                    "self",
-                    "height",
-                    "width"
-                ]
-            }
-        },
-        "skimage.viewer.plugins": {},
-        "skimage.viewer.plugins.base": {
-            "Plugin": {
-                "__init__": [
-                    "self",
-                    "image_filter",
-                    "height",
-                    "width",
-                    "useblit"
-                ],
-                "attach": [
-                    "self",
-                    "image_viewer"
-                ],
-                "add_widget": [
-                    "self",
-                    "widget"
-                ],
-                "__add__": [
-                    "self",
-                    "widget"
-                ],
-                "on_draw": [
-                    "self",
-                    "event"
-                ],
-                "filter_image": [
-                    "self"
-                ],
-                "_get_value": [
-                    "self",
-                    "param"
-                ],
-                "display_filtered_image": [
-                    "self",
-                    "image"
-                ],
-                "update_plugin": [
-                    "self",
-                    "name",
-                    "value"
-                ],
-                "closeEvent": [
-                    "self",
-                    "event"
-                ],
-                "connect_image_event": [
-                    "self",
-                    "event",
-                    "callback"
-                ],
-                "disconnect_image_events": [
-                    "self"
-                ],
-                "remove_image_artists": [
-                    "self"
-                ]
-            }
-        },
-        "skimage.viewer.widgets": {},
-        "skimage.viewer.widgets.history": {
-            "notify": [
-                "msg"
-            ],
-            "OKCancelButtons": {
-                "__init__": [
-                    "self",
-                    "button_width"
-                ],
-                "update_original_image": [
-                    "self"
-                ],
-                "close_plugin": [
-                    "self"
-                ]
-            },
-            "SaveButtons": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "default_format"
-                ],
-                "save_to_stack": [
-                    "self"
-                ],
-                "save_to_file": [
-                    "self"
-                ]
-            }
-        },
-        "skimage.viewer.widgets.core": {
-            "BaseWidget": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "ptype",
-                    "callback"
-                ],
-                "val": [
-                    "self"
-                ],
-                "_value_changed": [
-                    "self",
-                    "value"
-                ]
-            },
-            "Slider": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "low",
-                    "high",
-                    "value",
-                    "value_type",
-                    "ptype",
-                    "callback",
-                    "max_edit_width",
-                    "orientation",
-                    "update_on"
-                ],
-                "_on_slider_changed": [
-                    "self"
-                ],
-                "_on_editbox_changed": [
-                    "self"
-                ],
-                "_good_editbox_input": [
-                    "self"
-                ],
-                "_bad_editbox_input": [
-                    "self"
-                ],
-                "val": [
-                    "self",
-                    "value"
-                ]
-            },
-            "ComboBox": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "items",
-                    "ptype",
-                    "callback"
-                ],
-                "val": [
-                    "self"
-                ]
-            }
-        },
-        "skimage.viewer.utils": {},
-        "skimage.viewer.utils.core": {
-            "init_qtapp": [],
-            "start_qtapp": [],
-            "figimage": [
+        "skimage.feature.texture": {
+            "greycomatrix": [
                 "image",
-                "scale",
-                "dpi"
+                "distances",
+                "angles",
+                "levels",
+                "symmetric",
+                "normed"
             ],
-            "RequiredAttr": {
-                "__init__": [
-                    "self",
-                    "msg"
-                ],
-                "__get__": [
-                    "self",
-                    "obj",
-                    "objtype"
-                ],
-                "__set__": [
-                    "self",
-                    "obj",
-                    "val"
-                ]
-            },
-            "LinearColormap": {
-                "__init__": [
-                    "self",
-                    "name",
-                    "segmented_data"
-                ]
-            },
-            "ClearColormap": {
-                "__init__": [
-                    "self",
-                    "rgb",
-                    "max_alpha",
-                    "name"
-                ]
-            },
-            "MatplotlibCanvas": {
-                "__init__": [
-                    "self",
-                    "parent",
-                    "figure"
-                ]
-            }
-        },
-        "skimage.viewer.viewers": {},
-        "skimage.viewer.viewers.core": {
-            "ImageCanvas": {
-                "__init__": [
-                    "self",
-                    "parent",
-                    "image"
-                ]
-            },
-            "ImageViewer": {
-                "__init__": [
-                    "self",
-                    "image"
-                ],
-                "__add__": [
-                    "self",
-                    "plugin"
-                ],
-                "closeEvent": [
-                    "self",
-                    "event"
-                ],
-                "auto_layout": [
-                    "self"
-                ],
-                "show": [
-                    "self"
-                ],
-                "redraw": [
-                    "self"
-                ],
-                "image": [
-                    "self",
-                    "image"
-                ],
-                "reset_image": [
-                    "self"
-                ],
-                "connect_event": [
-                    "self",
-                    "event",
-                    "callback"
-                ],
-                "disconnect_event": [
-                    "self",
-                    "callback_id"
-                ],
-                "remove_artist": [
-                    "self",
-                    "artist"
-                ],
-                "_update_status_bar": [
-                    "self",
-                    "event"
-                ],
-                "_format_coord": [
-                    "self",
-                    "x",
-                    "y"
-                ]
-            },
-            "CollectionViewer": {
-                "__init__": [
-                    "self",
-                    "image_collection",
-                    "update_on"
-                ],
-                "update_index": [
-                    "self",
-                    "name",
-                    "index"
-                ],
-                "update_image": [
-                    "self",
-                    "image"
-                ],
-                "keyPressEvent": [
-                    "self",
-                    "event"
-                ]
-            }
-        },
-        "skimage.filter.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.filter.edges": {
-            "_mask_filter_result": [
-                "result",
-                "mask"
+            "greycoprops": [
+                "P",
+                "prop"
             ],
-            "sobel": [
+            "local_binary_pattern": [
                 "image",
-                "mask"
-            ],
-            "hsobel": [
-                "image",
-                "mask"
-            ],
-            "vsobel": [
-                "image",
-                "mask"
-            ],
-            "prewitt": [
-                "image",
-                "mask"
-            ],
-            "hprewitt": [
-                "image",
-                "mask"
-            ],
-            "vprewitt": [
-                "image",
-                "mask"
-            ]
-        },
-        "skimage.filter.ctmf": {
-            "median_filter": [
-                "image",
-                "radius",
-                "mask",
-                "percent"
-            ]
-        },
-        "skimage.filter": {},
-        "skimage.filter.thresholding": {
-            "threshold_adaptive": [
-                "image",
-                "block_size",
-                "method",
-                "offset",
-                "mode",
-                "param"
-            ],
-            "threshold_otsu": [
-                "image",
-                "nbins"
-            ]
-        },
-        "skimage.filter.lpi_filter": {
-            "_min_limit": [
-                "x",
-                "val"
-            ],
-            "_centre": [
-                "x",
-                "oshape"
-            ],
-            "_pad": [
-                "data",
-                "shape"
-            ],
-            "forward": [
-                "data",
-                "impulse_response",
-                "filter_params",
-                "predefined_filter"
-            ],
-            "inverse": [
-                "data",
-                "impulse_response",
-                "filter_params",
-                "max_gain",
-                "predefined_filter"
-            ],
-            "wiener": [
-                "data",
-                "impulse_response",
-                "filter_params",
-                "K",
-                "predefined_filter"
-            ],
-            "constrained_least_squares": [
-                "data",
-                "lam",
-                "impulse_response",
-                "filter_params"
-            ],
-            "LPIFilter2D": {
-                "__init__": [
-                    "self",
-                    "impulse_response"
-                ],
-                "_prepare": [
-                    "self",
-                    "data"
-                ],
-                "__call__": [
-                    "self",
-                    "data"
-                ]
-            }
-        },
-        "skimage.filter._tv_denoise": {
-            "_tv_denoise_3d": [
-                "im",
-                "weight",
-                "eps",
-                "n_iter_max"
-            ],
-            "_tv_denoise_2d": [
-                "im",
-                "weight",
-                "eps",
-                "n_iter_max"
-            ],
-            "tv_denoise": [
-                "im",
-                "weight",
-                "eps",
-                "n_iter_max"
-            ]
-        },
-        "skimage.filter._canny": {
-            "smooth_with_function_and_mask": [
-                "image",
-                "function",
-                "mask"
-            ],
-            "canny": [
-                "image",
-                "sigma",
-                "low_threshold",
-                "high_threshold",
-                "mask"
-            ]
-        },
-        "skimage.filter._rank_order": {
-            "rank_order": [
-                "image"
-            ]
-        },
-        "skimage.util": {},
-        "skimage.util.shape": {
-            "view_as_blocks": [
-                "arr_in",
-                "block_shape"
-            ],
-            "view_as_windows": [
-                "arr_in",
-                "window_shape"
-            ]
-        },
-        "skimage.util.montage": {
-            "montage2d": [
-                "arr_in",
-                "fill",
-                "rescale_intensity"
-            ]
-        },
-        "skimage.util.dtype": {
-            "convert": [
-                "image",
-                "dtype",
-                "force_copy",
-                "uniform"
-            ],
-            "img_as_float": [
-                "image",
-                "force_copy"
-            ],
-            "img_as_uint": [
-                "image",
-                "force_copy"
-            ],
-            "img_as_int": [
-                "image",
-                "force_copy"
-            ],
-            "img_as_ubyte": [
-                "image",
-                "force_copy"
-            ],
-            "img_as_bool": [
-                "image",
-                "force_copy"
-            ]
-        },
-        "skimage.morphology._skeletonize": {
-            "skeletonize": [
-                "image"
-            ],
-            "medial_axis": [
-                "image",
-                "mask",
-                "return_distance"
-            ],
-            "_pattern_of": [
-                "index"
-            ],
-            "_table_lookup": [
-                "image",
-                "table"
-            ]
-        },
-        "skimage.morphology.selem": {
-            "square": [
-                "width",
-                "dtype"
-            ],
-            "rectangle": [
-                "width",
-                "height",
-                "dtype"
-            ],
-            "diamond": [
-                "radius",
-                "dtype"
-            ],
-            "disk": [
-                "radius",
-                "dtype"
-            ]
-        },
-        "skimage.morphology.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.morphology.convex_hull": {
-            "convex_hull_image": [
-                "image"
-            ]
-        },
-        "skimage.morphology": {},
-        "skimage.morphology.watershed": {
-            "watershed": [
-                "image",
-                "markers",
-                "connectivity",
-                "offset",
-                "mask"
-            ],
-            "is_local_maximum": [
-                "image",
-                "labels",
-                "footprint"
-            ],
-            "__heapify_markers": [
-                "markers",
-                "image"
-            ],
-            "_slow_watershed": [
-                "image",
-                "markers",
-                "connectivity",
-                "mask"
-            ]
-        },
-        "skimage.morphology.grey": {
-            "erosion": [
-                "image",
-                "selem",
-                "out",
-                "shift_x",
-                "shift_y"
-            ],
-            "dilation": [
-                "image",
-                "selem",
-                "out",
-                "shift_x",
-                "shift_y"
-            ],
-            "opening": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "closing": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "white_tophat": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "black_tophat": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "greyscale_erode": [],
-            "greyscale_dilate": [],
-            "greyscale_open": [],
-            "greyscale_close": [],
-            "greyscale_white_top_hat": [],
-            "greyscale_black_top_hat": []
-        },
-        "skimage.morphology.binary": {
-            "binary_erosion": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "binary_dilation": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "binary_opening": [
-                "image",
-                "selem",
-                "out"
-            ],
-            "binary_closing": [
-                "image",
-                "selem",
-                "out"
-            ]
-        },
-        "skimage.morphology.greyreconstruct": {
-            "reconstruction": [
-                "seed",
-                "mask",
-                "method",
-                "selem",
-                "offset"
-            ]
-        },
-        "skimage.color": {},
-        "skimage.color.colorconv": {
-            "convert_colorspace": [
-                "arr",
-                "fromspace",
-                "tospace"
-            ],
-            "_prepare_colorarray": [
-                "arr"
-            ],
-            "rgb2hsv": [
-                "rgb"
-            ],
-            "hsv2rgb": [
-                "hsv"
-            ],
-            "_convert": [
-                "matrix",
-                "arr"
-            ],
-            "xyz2rgb": [
-                "xyz"
-            ],
-            "rgb2xyz": [
-                "rgb"
-            ],
-            "rgb2rgbcie": [
-                "rgb"
-            ],
-            "rgbcie2rgb": [
-                "rgbcie"
-            ],
-            "rgb2grey": [
-                "rgb"
-            ],
-            "gray2rgb": [
-                "image"
-            ],
-            "xyz2lab": [
-                "xyz"
-            ],
-            "lab2xyz": [
-                "lab"
-            ],
-            "rgb2lab": [
-                "rgb"
-            ],
-            "lab2rgb": [
-                "lab"
-            ]
-        },
-        "skimage.data": {
-            "load": [
-                "f"
-            ],
-            "camera": [],
-            "lena": [],
-            "text": [],
-            "checkerboard": [],
-            "coins": [],
-            "moon": [],
-            "page": []
-        },
-        "skimage.draw.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.draw": {},
-        "skimage.segmentation.boundaries": {
-            "find_boundaries": [
-                "label_img"
-            ],
-            "visualize_boundaries": [
-                "img",
-                "label_img"
-            ]
-        },
-        "skimage.segmentation.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.segmentation._clear_border": {
-            "clear_border": [
-                "image",
-                "buffer_size",
-                "bgval"
-            ]
-        },
-        "skimage.segmentation": {},
-        "skimage.segmentation.random_walker_segmentation": {
-            "_make_graph_edges_3d": [
-                "n_x",
-                "n_y",
-                "n_z"
-            ],
-            "_compute_weights_3d": [
-                "data",
-                "beta",
-                "eps",
-                "depth",
-                "multichannel"
-            ],
-            "_compute_gradients_3d": [
-                "data",
-                "depth"
-            ],
-            "_make_laplacian_sparse": [
-                "edges",
-                "weights"
-            ],
-            "_clean_labels_ar": [
-                "X",
-                "labels",
-                "copy"
-            ],
-            "_buildAB": [
-                "lap_sparse",
-                "labels"
-            ],
-            "_mask_edges_weights": [
-                "edges",
-                "weights",
-                "mask"
-            ],
-            "_build_laplacian": [
-                "data",
-                "mask",
-                "beta",
-                "depth",
-                "multichannel"
-            ],
-            "random_walker": [
-                "data",
-                "labels",
-                "beta",
-                "mode",
-                "tol",
-                "copy",
-                "multichannel",
-                "return_full_prob",
-                "depth"
-            ],
-            "_solve_bf": [
-                "lap_sparse",
-                "B",
-                "return_full_prob"
-            ],
-            "_solve_cg": [
-                "lap_sparse",
-                "B",
-                "tol",
-                "return_full_prob"
-            ],
-            "_solve_cg_mg": [
-                "lap_sparse",
-                "B",
-                "tol",
-                "return_full_prob"
-            ]
-        },
-        "skimage.segmentation._felzenszwalb": {
-            "felzenszwalb": [
-                "image",
-                "scale",
-                "sigma",
-                "min_size"
-            ]
-        },
-        "skimage.exposure.exposure": {
-            "histogram": [
-                "image",
-                "nbins"
-            ],
-            "cumulative_distribution": [
-                "image",
-                "nbins"
-            ],
-            "equalize": [
-                "image",
-                "nbins"
-            ],
-            "rescale_intensity": [
-                "image",
-                "in_range",
-                "out_range"
-            ]
-        },
-        "skimage.exposure": {},
-        "skimage.measure._polygon": {
-            "approximate_polygon": [
-                "coords",
-                "tolerance"
-            ],
-            "subdivide_polygon": [
-                "coords",
-                "degree",
-                "preserve_ends"
-            ]
-        },
-        "skimage.measure.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.measure._regionprops": {
-            "regionprops": [
-                "label_image",
-                "properties",
-                "intensity_image"
-            ],
-            "perimeter": [
-                "image",
-                "neighbourhood"
-            ]
-        },
-        "skimage.measure.find_contours": {
-            "find_contours": [
-                "array",
-                "level",
-                "fully_connected",
-                "positive_orientation"
-            ],
-            "_take_2": [
-                "seq"
-            ],
-            "_assemble_contours": [
-                "points_iterator"
-            ]
-        },
-        "skimage.measure": {},
-        "skimage.measure._structural_similarity": {
-            "structural_similarity": [
-                "X",
-                "Y",
-                "win_size",
-                "gradient",
-                "dynamic_range"
+                "P",
+                "R",
+                "method"
             ]
         },
         "skimage.feature.setup": {
@@ -1608,36 +806,6 @@
                 "prop"
             ]
         },
-        "skimage.feature.texture": {
-            "greycomatrix": [
-                "image",
-                "distances",
-                "angles",
-                "levels",
-                "symmetric",
-                "normed"
-            ],
-            "greycoprops": [
-                "P",
-                "prop"
-            ],
-            "local_binary_pattern": [
-                "image",
-                "P",
-                "R",
-                "method"
-            ]
-        },
-        "skimage.feature.peak": {
-            "peak_local_max": [
-                "image",
-                "min_distance",
-                "threshold",
-                "threshold_abs",
-                "threshold_rel",
-                "num_peaks"
-            ]
-        },
         "skimage.feature._harris": {
             "_compute_harris_response": [
                 "image",
@@ -1650,6 +818,139 @@
                 "threshold",
                 "eps",
                 "gaussian_deviation"
+            ]
+        },
+        "skimage.transform.radon_transform": {
+            "radon": [
+                "image",
+                "theta"
+            ],
+            "iradon": [
+                "radon_image",
+                "theta",
+                "output_size",
+                "filter",
+                "interpolation"
+            ]
+        },
+        "skimage.transform.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.transform.pyramids": {
+            "_smooth": [
+                "image",
+                "sigma",
+                "mode",
+                "cval"
+            ],
+            "_check_factor": [
+                "factor"
+            ],
+            "pyramid_reduce": [
+                "image",
+                "downscale",
+                "sigma",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "pyramid_expand": [
+                "image",
+                "upscale",
+                "sigma",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "pyramid_gaussian": [
+                "image",
+                "max_layer",
+                "downscale",
+                "sigma",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "pyramid_laplacian": [
+                "image",
+                "max_layer",
+                "downscale",
+                "sigma",
+                "order",
+                "mode",
+                "cval"
+            ]
+        },
+        "skimage.transform": {},
+        "skimage.transform.hough_transform": {
+            "_hough": [
+                "img",
+                "theta"
+            ],
+            "probabilistic_hough": [
+                "img",
+                "threshold",
+                "line_length",
+                "line_gap",
+                "theta"
+            ],
+            "hough": [
+                "img",
+                "theta"
+            ]
+        },
+        "skimage.transform._warps": {
+            "resize": [
+                "image",
+                "output_shape",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "rotate": [
+                "image",
+                "angle",
+                "resize",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "_swirl_mapping": [
+                "xy",
+                "center",
+                "rotation",
+                "strength",
+                "radius"
+            ],
+            "swirl": [
+                "image",
+                "center",
+                "strength",
+                "radius",
+                "rotation",
+                "output_shape",
+                "order",
+                "mode",
+                "cval"
+            ],
+            "homography": [
+                "image",
+                "H",
+                "output_shape",
+                "order",
+                "mode",
+                "cval"
+            ]
+        },
+        "skimage.transform.finite_radon_transform": {
+            "frt2": [
+                "a"
+            ],
+            "ifrt2": [
+                "a"
             ]
         },
         "skimage.transform._geometric": {
@@ -1810,65 +1111,6 @@
                 ]
             }
         },
-        "skimage.transform.pyramids": {
-            "_smooth": [
-                "image",
-                "sigma",
-                "mode",
-                "cval"
-            ],
-            "_check_factor": [
-                "factor"
-            ],
-            "pyramid_reduce": [
-                "image",
-                "downscale",
-                "sigma",
-                "order",
-                "mode",
-                "cval"
-            ],
-            "pyramid_expand": [
-                "image",
-                "upscale",
-                "sigma",
-                "order",
-                "mode",
-                "cval"
-            ],
-            "pyramid_gaussian": [
-                "image",
-                "max_layer",
-                "downscale",
-                "sigma",
-                "order",
-                "mode",
-                "cval"
-            ],
-            "pyramid_laplacian": [
-                "image",
-                "max_layer",
-                "downscale",
-                "sigma",
-                "order",
-                "mode",
-                "cval"
-            ]
-        },
-        "skimage.transform.setup": {
-            "configuration": [
-                "parent_package",
-                "top_path"
-            ]
-        },
-        "skimage.transform.finite_radon_transform": {
-            "frt2": [
-                "a"
-            ],
-            "ifrt2": [
-                "a"
-            ]
-        },
         "skimage.transform.integral": {
             "integral_image": [
                 "x"
@@ -1881,79 +1123,837 @@
                 "c1"
             ]
         },
-        "skimage.transform": {},
-        "skimage.transform._warps": {
-            "resize": [
-                "image",
-                "output_shape",
-                "order",
-                "mode",
-                "cval"
+        "skimage.color": {},
+        "skimage.color.colorconv": {
+            "convert_colorspace": [
+                "arr",
+                "fromspace",
+                "tospace"
             ],
-            "rotate": [
-                "image",
-                "angle",
-                "resize",
-                "order",
-                "mode",
-                "cval"
+            "_prepare_colorarray": [
+                "arr"
             ],
-            "_swirl_mapping": [
-                "xy",
-                "center",
-                "rotation",
-                "strength",
-                "radius"
+            "rgb2hsv": [
+                "rgb"
             ],
-            "swirl": [
+            "hsv2rgb": [
+                "hsv"
+            ],
+            "_convert": [
+                "matrix",
+                "arr"
+            ],
+            "xyz2rgb": [
+                "xyz"
+            ],
+            "rgb2xyz": [
+                "rgb"
+            ],
+            "rgb2rgbcie": [
+                "rgb"
+            ],
+            "rgbcie2rgb": [
+                "rgbcie"
+            ],
+            "rgb2grey": [
+                "rgb"
+            ],
+            "gray2rgb": [
+                "image"
+            ],
+            "xyz2lab": [
+                "xyz"
+            ],
+            "lab2xyz": [
+                "lab"
+            ],
+            "rgb2lab": [
+                "rgb"
+            ],
+            "lab2rgb": [
+                "lab"
+            ]
+        },
+        "skimage.morphology.convex_hull": {
+            "convex_hull_image": [
+                "image"
+            ]
+        },
+        "skimage.morphology._skeletonize": {
+            "skeletonize": [
+                "image"
+            ],
+            "medial_axis": [
                 "image",
-                "center",
-                "strength",
+                "mask",
+                "return_distance"
+            ],
+            "_pattern_of": [
+                "index"
+            ],
+            "_table_lookup": [
+                "image",
+                "table"
+            ]
+        },
+        "skimage.morphology.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.morphology": {},
+        "skimage.morphology.greyreconstruct": {
+            "reconstruction": [
+                "seed",
+                "mask",
+                "method",
+                "selem",
+                "offset"
+            ]
+        },
+        "skimage.morphology.binary": {
+            "binary_erosion": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "binary_dilation": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "binary_opening": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "binary_closing": [
+                "image",
+                "selem",
+                "out"
+            ]
+        },
+        "skimage.morphology.selem": {
+            "square": [
+                "width",
+                "dtype"
+            ],
+            "rectangle": [
+                "width",
+                "height",
+                "dtype"
+            ],
+            "diamond": [
                 "radius",
-                "rotation",
-                "output_shape",
-                "order",
-                "mode",
-                "cval"
+                "dtype"
             ],
-            "homography": [
-                "image",
-                "H",
-                "output_shape",
-                "order",
-                "mode",
-                "cval"
+            "disk": [
+                "radius",
+                "dtype"
             ]
         },
-        "skimage.transform.hough_transform": {
-            "_hough": [
-                "img",
-                "theta"
+        "skimage.morphology.watershed": {
+            "watershed": [
+                "image",
+                "markers",
+                "connectivity",
+                "offset",
+                "mask"
             ],
-            "probabilistic_hough": [
-                "img",
-                "threshold",
-                "line_length",
-                "line_gap",
-                "theta"
+            "is_local_maximum": [
+                "image",
+                "labels",
+                "footprint"
             ],
-            "hough": [
-                "img",
-                "theta"
+            "__heapify_markers": [
+                "markers",
+                "image"
+            ],
+            "_slow_watershed": [
+                "image",
+                "markers",
+                "connectivity",
+                "mask"
             ]
         },
-        "skimage.transform.radon_transform": {
-            "radon": [
+        "skimage.morphology.grey": {
+            "erosion": [
                 "image",
-                "theta"
+                "selem",
+                "out",
+                "shift_x",
+                "shift_y"
             ],
-            "iradon": [
-                "radon_image",
-                "theta",
-                "output_size",
-                "filter",
-                "interpolation"
+            "dilation": [
+                "image",
+                "selem",
+                "out",
+                "shift_x",
+                "shift_y"
+            ],
+            "opening": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "closing": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "white_tophat": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "black_tophat": [
+                "image",
+                "selem",
+                "out"
+            ],
+            "greyscale_erode": [],
+            "greyscale_dilate": [],
+            "greyscale_open": [],
+            "greyscale_close": [],
+            "greyscale_white_top_hat": [],
+            "greyscale_black_top_hat": []
+        },
+        "skimage.viewer": {},
+        "skimage.viewer.utils": {},
+        "skimage.viewer.utils.core": {
+            "init_qtapp": [],
+            "start_qtapp": [],
+            "figimage": [
+                "image",
+                "scale",
+                "dpi"
+            ],
+            "RequiredAttr": {
+                "__init__": [
+                    "self",
+                    "msg"
+                ],
+                "__get__": [
+                    "self",
+                    "obj",
+                    "objtype"
+                ],
+                "__set__": [
+                    "self",
+                    "obj",
+                    "val"
+                ]
+            },
+            "LinearColormap": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "segmented_data"
+                ]
+            },
+            "ClearColormap": {
+                "__init__": [
+                    "self",
+                    "rgb",
+                    "max_alpha",
+                    "name"
+                ]
+            },
+            "MatplotlibCanvas": {
+                "__init__": [
+                    "self",
+                    "parent",
+                    "figure"
+                ]
+            }
+        },
+        "skimage.viewer.widgets": {},
+        "skimage.viewer.widgets.core": {
+            "BaseWidget": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "ptype",
+                    "callback"
+                ],
+                "val": [
+                    "self"
+                ],
+                "_value_changed": [
+                    "self",
+                    "value"
+                ]
+            },
+            "Slider": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "low",
+                    "high",
+                    "value",
+                    "value_type",
+                    "ptype",
+                    "callback",
+                    "max_edit_width",
+                    "orientation",
+                    "update_on"
+                ],
+                "_on_slider_changed": [
+                    "self"
+                ],
+                "_on_editbox_changed": [
+                    "self"
+                ],
+                "_good_editbox_input": [
+                    "self"
+                ],
+                "_bad_editbox_input": [
+                    "self"
+                ],
+                "val": [
+                    "self",
+                    "value"
+                ]
+            },
+            "ComboBox": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "items",
+                    "ptype",
+                    "callback"
+                ],
+                "val": [
+                    "self"
+                ]
+            }
+        },
+        "skimage.viewer.widgets.history": {
+            "notify": [
+                "msg"
+            ],
+            "OKCancelButtons": {
+                "__init__": [
+                    "self",
+                    "button_width"
+                ],
+                "update_original_image": [
+                    "self"
+                ],
+                "close_plugin": [
+                    "self"
+                ]
+            },
+            "SaveButtons": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "default_format"
+                ],
+                "save_to_stack": [
+                    "self"
+                ],
+                "save_to_file": [
+                    "self"
+                ]
+            }
+        },
+        "skimage.viewer.plugins": {},
+        "skimage.viewer.plugins.base": {
+            "Plugin": {
+                "__init__": [
+                    "self",
+                    "image_filter",
+                    "height",
+                    "width",
+                    "useblit"
+                ],
+                "attach": [
+                    "self",
+                    "image_viewer"
+                ],
+                "add_widget": [
+                    "self",
+                    "widget"
+                ],
+                "__add__": [
+                    "self",
+                    "widget"
+                ],
+                "on_draw": [
+                    "self",
+                    "event"
+                ],
+                "filter_image": [
+                    "self"
+                ],
+                "_get_value": [
+                    "self",
+                    "param"
+                ],
+                "display_filtered_image": [
+                    "self",
+                    "image"
+                ],
+                "update_plugin": [
+                    "self",
+                    "name",
+                    "value"
+                ],
+                "closeEvent": [
+                    "self",
+                    "event"
+                ],
+                "connect_image_event": [
+                    "self",
+                    "event",
+                    "callback"
+                ],
+                "disconnect_image_events": [
+                    "self"
+                ],
+                "remove_image_artists": [
+                    "self"
+                ]
+            }
+        },
+        "skimage.viewer.plugins.canny": {
+            "CannyPlugin": {
+                "__init__": [
+                    "self"
+                ]
+            }
+        },
+        "skimage.viewer.plugins.plotplugin": {
+            "PlotCanvas": {
+                "__init__": [
+                    "self",
+                    "parent",
+                    "height",
+                    "width"
+                ]
+            },
+            "PlotPlugin": {
+                "attach": [
+                    "self",
+                    "image_viewer"
+                ],
+                "redraw": [
+                    "self"
+                ],
+                "add_plot": [
+                    "self",
+                    "height",
+                    "width"
+                ]
+            }
+        },
+        "skimage.viewer.plugins.overlayplugin": {
+            "OverlayPlugin": {
+                "__init__": [
+                    "self"
+                ],
+                "attach": [
+                    "self",
+                    "image_viewer"
+                ],
+                "overlay": [
+                    "self",
+                    "image"
+                ],
+                "color": [
+                    "self",
+                    "index"
+                ],
+                "display_filtered_image": [
+                    "self",
+                    "image"
+                ],
+                "closeEvent": [
+                    "self",
+                    "event"
+                ]
+            }
+        },
+        "skimage.viewer.viewers": {},
+        "skimage.viewer.viewers.core": {
+            "ImageCanvas": {
+                "__init__": [
+                    "self",
+                    "parent",
+                    "image"
+                ]
+            },
+            "ImageViewer": {
+                "__init__": [
+                    "self",
+                    "image"
+                ],
+                "__add__": [
+                    "self",
+                    "plugin"
+                ],
+                "closeEvent": [
+                    "self",
+                    "event"
+                ],
+                "auto_layout": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ],
+                "redraw": [
+                    "self"
+                ],
+                "image": [
+                    "self",
+                    "image"
+                ],
+                "reset_image": [
+                    "self"
+                ],
+                "connect_event": [
+                    "self",
+                    "event",
+                    "callback"
+                ],
+                "disconnect_event": [
+                    "self",
+                    "callback_id"
+                ],
+                "remove_artist": [
+                    "self",
+                    "artist"
+                ],
+                "_update_status_bar": [
+                    "self",
+                    "event"
+                ],
+                "_format_coord": [
+                    "self",
+                    "x",
+                    "y"
+                ]
+            },
+            "CollectionViewer": {
+                "__init__": [
+                    "self",
+                    "image_collection",
+                    "update_on"
+                ],
+                "update_index": [
+                    "self",
+                    "name",
+                    "index"
+                ],
+                "update_image": [
+                    "self",
+                    "image"
+                ],
+                "keyPressEvent": [
+                    "self",
+                    "event"
+                ]
+            }
+        },
+        "skimage.exposure": {},
+        "skimage.exposure.exposure": {
+            "histogram": [
+                "image",
+                "nbins"
+            ],
+            "cumulative_distribution": [
+                "image",
+                "nbins"
+            ],
+            "equalize": [
+                "image",
+                "nbins"
+            ],
+            "rescale_intensity": [
+                "image",
+                "in_range",
+                "out_range"
             ]
-        }
+        },
+        "skimage.filter.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.filter": {},
+        "skimage.filter._tv_denoise": {
+            "_tv_denoise_3d": [
+                "im",
+                "weight",
+                "eps",
+                "n_iter_max"
+            ],
+            "_tv_denoise_2d": [
+                "im",
+                "weight",
+                "eps",
+                "n_iter_max"
+            ],
+            "tv_denoise": [
+                "im",
+                "weight",
+                "eps",
+                "n_iter_max"
+            ]
+        },
+        "skimage.filter.edges": {
+            "_mask_filter_result": [
+                "result",
+                "mask"
+            ],
+            "sobel": [
+                "image",
+                "mask"
+            ],
+            "hsobel": [
+                "image",
+                "mask"
+            ],
+            "vsobel": [
+                "image",
+                "mask"
+            ],
+            "prewitt": [
+                "image",
+                "mask"
+            ],
+            "hprewitt": [
+                "image",
+                "mask"
+            ],
+            "vprewitt": [
+                "image",
+                "mask"
+            ]
+        },
+        "skimage.filter.ctmf": {
+            "median_filter": [
+                "image",
+                "radius",
+                "mask",
+                "percent"
+            ]
+        },
+        "skimage.filter.lpi_filter": {
+            "_min_limit": [
+                "x",
+                "val"
+            ],
+            "_centre": [
+                "x",
+                "oshape"
+            ],
+            "_pad": [
+                "data",
+                "shape"
+            ],
+            "forward": [
+                "data",
+                "impulse_response",
+                "filter_params",
+                "predefined_filter"
+            ],
+            "inverse": [
+                "data",
+                "impulse_response",
+                "filter_params",
+                "max_gain",
+                "predefined_filter"
+            ],
+            "wiener": [
+                "data",
+                "impulse_response",
+                "filter_params",
+                "K",
+                "predefined_filter"
+            ],
+            "constrained_least_squares": [
+                "data",
+                "lam",
+                "impulse_response",
+                "filter_params"
+            ],
+            "LPIFilter2D": {
+                "__init__": [
+                    "self",
+                    "impulse_response"
+                ],
+                "_prepare": [
+                    "self",
+                    "data"
+                ],
+                "__call__": [
+                    "self",
+                    "data"
+                ]
+            }
+        },
+        "skimage.filter.thresholding": {
+            "threshold_adaptive": [
+                "image",
+                "block_size",
+                "method",
+                "offset",
+                "mode",
+                "param"
+            ],
+            "threshold_otsu": [
+                "image",
+                "nbins"
+            ]
+        },
+        "skimage.filter._rank_order": {
+            "rank_order": [
+                "image"
+            ]
+        },
+        "skimage.filter._canny": {
+            "smooth_with_function_and_mask": [
+                "image",
+                "function",
+                "mask"
+            ],
+            "canny": [
+                "image",
+                "sigma",
+                "low_threshold",
+                "high_threshold",
+                "mask"
+            ]
+        },
+        "skimage.measure.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.measure": {},
+        "skimage.measure._polygon": {
+            "approximate_polygon": [
+                "coords",
+                "tolerance"
+            ],
+            "subdivide_polygon": [
+                "coords",
+                "degree",
+                "preserve_ends"
+            ]
+        },
+        "skimage.measure.find_contours": {
+            "find_contours": [
+                "array",
+                "level",
+                "fully_connected",
+                "positive_orientation"
+            ],
+            "_take_2": [
+                "seq"
+            ],
+            "_assemble_contours": [
+                "points_iterator"
+            ]
+        },
+        "skimage.measure._regionprops": {
+            "regionprops": [
+                "label_image",
+                "properties",
+                "intensity_image"
+            ],
+            "perimeter": [
+                "image",
+                "neighbourhood"
+            ]
+        },
+        "skimage.measure._structural_similarity": {
+            "structural_similarity": [
+                "X",
+                "Y",
+                "win_size",
+                "gradient",
+                "dynamic_range"
+            ]
+        },
+        "skimage.scripts": {},
+        "skimage._shared.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage._shared": {},
+        "skimage._shared.testing": {
+            "_assert_less": [
+                "a",
+                "b",
+                "msg"
+            ],
+            "_assert_greater": [
+                "a",
+                "b",
+                "msg"
+            ]
+        },
+        "skimage.util.montage": {
+            "montage2d": [
+                "arr_in",
+                "fill",
+                "rescale_intensity"
+            ]
+        },
+        "skimage.util": {},
+        "skimage.util.dtype": {
+            "convert": [
+                "image",
+                "dtype",
+                "force_copy",
+                "uniform"
+            ],
+            "img_as_float": [
+                "image",
+                "force_copy"
+            ],
+            "img_as_uint": [
+                "image",
+                "force_copy"
+            ],
+            "img_as_int": [
+                "image",
+                "force_copy"
+            ],
+            "img_as_ubyte": [
+                "image",
+                "force_copy"
+            ],
+            "img_as_bool": [
+                "image",
+                "force_copy"
+            ]
+        },
+        "skimage.util.shape": {
+            "view_as_blocks": [
+                "arr_in",
+                "block_shape"
+            ],
+            "view_as_windows": [
+                "arr_in",
+                "window_shape"
+            ]
+        },
+        "skimage.draw.setup": {
+            "configuration": [
+                "parent_package",
+                "top_path"
+            ]
+        },
+        "skimage.draw": {}
     }
 }
