@@ -252,223 +252,6 @@
                 "name"
             ]
         },
-        "pandas._testing": {
-            "set_testing_mode": [],
-            "reset_testing_mode": [],
-            "reset_display_options": [],
-            "equalContents": [
-                "arr1",
-                "arr2"
-            ],
-            "box_expected": [
-                "expected",
-                "box_cls",
-                "transpose"
-            ],
-            "to_array": [
-                "obj"
-            ],
-            "getCols": [
-                "k"
-            ],
-            "makeStringIndex": [
-                "k",
-                "name"
-            ],
-            "makeUnicodeIndex": [
-                "k",
-                "name"
-            ],
-            "makeCategoricalIndex": [
-                "k",
-                "n",
-                "name"
-            ],
-            "makeIntervalIndex": [
-                "k",
-                "name"
-            ],
-            "makeBoolIndex": [
-                "k",
-                "name"
-            ],
-            "makeNumericIndex": [
-                "k",
-                "name"
-            ],
-            "makeIntIndex": [
-                "k",
-                "name"
-            ],
-            "makeUIntIndex": [
-                "k",
-                "name"
-            ],
-            "makeRangeIndex": [
-                "k",
-                "name"
-            ],
-            "makeFloatIndex": [
-                "k",
-                "name"
-            ],
-            "makeDateIndex": [
-                "k",
-                "freq",
-                "name"
-            ],
-            "makeTimedeltaIndex": [
-                "k",
-                "freq",
-                "name"
-            ],
-            "makePeriodIndex": [
-                "k",
-                "name"
-            ],
-            "makeMultiIndex": [
-                "k",
-                "names"
-            ],
-            "_make_timeseries": [
-                "start",
-                "end",
-                "freq",
-                "seed"
-            ],
-            "index_subclass_makers_generator": [],
-            "all_timeseries_index_generator": [
-                "k"
-            ],
-            "makeFloatSeries": [
-                "name"
-            ],
-            "makeStringSeries": [
-                "name"
-            ],
-            "makeObjectSeries": [
-                "name"
-            ],
-            "getSeriesData": [],
-            "makeTimeSeries": [
-                "nper",
-                "freq",
-                "name"
-            ],
-            "makePeriodSeries": [
-                "nper",
-                "name"
-            ],
-            "getTimeSeriesData": [
-                "nper",
-                "freq"
-            ],
-            "getPeriodData": [
-                "nper"
-            ],
-            "makeTimeDataFrame": [
-                "nper",
-                "freq"
-            ],
-            "makeDataFrame": [],
-            "getMixedTypeDict": [],
-            "makeMixedDataFrame": [],
-            "makePeriodFrame": [
-                "nper"
-            ],
-            "makeCustomIndex": [
-                "nentries",
-                "nlevels",
-                "prefix",
-                "names",
-                "ndupe_l",
-                "idx_type"
-            ],
-            "makeCustomDataframe": [
-                "nrows",
-                "ncols",
-                "c_idx_names",
-                "r_idx_names",
-                "c_idx_nlevels",
-                "r_idx_nlevels",
-                "data_gen_f",
-                "c_ndupe_l",
-                "r_ndupe_l",
-                "dtype",
-                "c_idx_type",
-                "r_idx_type"
-            ],
-            "_create_missing_idx": [
-                "nrows",
-                "ncols",
-                "density",
-                "random_state"
-            ],
-            "makeMissingDataframe": [
-                "density",
-                "random_state"
-            ],
-            "test_parallel": [
-                "num_threads",
-                "kwargs_list"
-            ],
-            "_make_skipna_wrapper": [
-                "alternative",
-                "skipna_alternative"
-            ],
-            "convert_rows_list_to_csv_str": [
-                "rows_list"
-            ],
-            "external_error_raised": [
-                "expected_exception"
-            ],
-            "get_cython_table_params": [
-                "ndframe",
-                "func_names_and_expected"
-            ],
-            "get_op_from_name": [
-                "op_name"
-            ],
-            "getitem": [
-                "x"
-            ],
-            "setitem": [
-                "x"
-            ],
-            "loc": [
-                "x"
-            ],
-            "iloc": [
-                "x"
-            ],
-            "at": [
-                "x"
-            ],
-            "iat": [
-                "x"
-            ],
-            "SubclassedSeries": {
-                "_constructor": [
-                    "self"
-                ],
-                "_constructor_expanddim": [
-                    "self"
-                ]
-            },
-            "SubclassedDataFrame": {
-                "_constructor": [
-                    "self"
-                ],
-                "_constructor_sliced": [
-                    "self"
-                ]
-            },
-            "SubclassedCategorical": {
-                "_constructor": [
-                    "self"
-                ]
-            }
-        },
         "pandas.testing": {},
         "pandas._typing": {},
         "pandas.core.frame": {
@@ -17774,56 +17557,6 @@
                 "b"
             ]
         },
-        "pandas.core.ops.roperator": {
-            "radd": [
-                "left",
-                "right"
-            ],
-            "rsub": [
-                "left",
-                "right"
-            ],
-            "rmul": [
-                "left",
-                "right"
-            ],
-            "rdiv": [
-                "left",
-                "right"
-            ],
-            "rtruediv": [
-                "left",
-                "right"
-            ],
-            "rfloordiv": [
-                "left",
-                "right"
-            ],
-            "rmod": [
-                "left",
-                "right"
-            ],
-            "rdivmod": [
-                "left",
-                "right"
-            ],
-            "rpow": [
-                "left",
-                "right"
-            ],
-            "rand_": [
-                "left",
-                "right"
-            ],
-            "ror_": [
-                "left",
-                "right"
-            ],
-            "rxor": [
-                "left",
-                "right"
-            ]
-        },
         "pandas.core.ops.docstrings": {
             "make_flex_doc": [
                 "op_name",
@@ -18981,6 +18714,223 @@
             "_assert_raised_with_correct_stacklevel": [
                 "actual_warning"
             ]
+        },
+        "pandas._testing": {
+            "set_testing_mode": [],
+            "reset_testing_mode": [],
+            "reset_display_options": [],
+            "equalContents": [
+                "arr1",
+                "arr2"
+            ],
+            "box_expected": [
+                "expected",
+                "box_cls",
+                "transpose"
+            ],
+            "to_array": [
+                "obj"
+            ],
+            "getCols": [
+                "k"
+            ],
+            "makeStringIndex": [
+                "k",
+                "name"
+            ],
+            "makeUnicodeIndex": [
+                "k",
+                "name"
+            ],
+            "makeCategoricalIndex": [
+                "k",
+                "n",
+                "name"
+            ],
+            "makeIntervalIndex": [
+                "k",
+                "name"
+            ],
+            "makeBoolIndex": [
+                "k",
+                "name"
+            ],
+            "makeNumericIndex": [
+                "k",
+                "name"
+            ],
+            "makeIntIndex": [
+                "k",
+                "name"
+            ],
+            "makeUIntIndex": [
+                "k",
+                "name"
+            ],
+            "makeRangeIndex": [
+                "k",
+                "name"
+            ],
+            "makeFloatIndex": [
+                "k",
+                "name"
+            ],
+            "makeDateIndex": [
+                "k",
+                "freq",
+                "name"
+            ],
+            "makeTimedeltaIndex": [
+                "k",
+                "freq",
+                "name"
+            ],
+            "makePeriodIndex": [
+                "k",
+                "name"
+            ],
+            "makeMultiIndex": [
+                "k",
+                "names"
+            ],
+            "_make_timeseries": [
+                "start",
+                "end",
+                "freq",
+                "seed"
+            ],
+            "index_subclass_makers_generator": [],
+            "all_timeseries_index_generator": [
+                "k"
+            ],
+            "makeFloatSeries": [
+                "name"
+            ],
+            "makeStringSeries": [
+                "name"
+            ],
+            "makeObjectSeries": [
+                "name"
+            ],
+            "getSeriesData": [],
+            "makeTimeSeries": [
+                "nper",
+                "freq",
+                "name"
+            ],
+            "makePeriodSeries": [
+                "nper",
+                "name"
+            ],
+            "getTimeSeriesData": [
+                "nper",
+                "freq"
+            ],
+            "getPeriodData": [
+                "nper"
+            ],
+            "makeTimeDataFrame": [
+                "nper",
+                "freq"
+            ],
+            "makeDataFrame": [],
+            "getMixedTypeDict": [],
+            "makeMixedDataFrame": [],
+            "makePeriodFrame": [
+                "nper"
+            ],
+            "makeCustomIndex": [
+                "nentries",
+                "nlevels",
+                "prefix",
+                "names",
+                "ndupe_l",
+                "idx_type"
+            ],
+            "makeCustomDataframe": [
+                "nrows",
+                "ncols",
+                "c_idx_names",
+                "r_idx_names",
+                "c_idx_nlevels",
+                "r_idx_nlevels",
+                "data_gen_f",
+                "c_ndupe_l",
+                "r_ndupe_l",
+                "dtype",
+                "c_idx_type",
+                "r_idx_type"
+            ],
+            "_create_missing_idx": [
+                "nrows",
+                "ncols",
+                "density",
+                "random_state"
+            ],
+            "makeMissingDataframe": [
+                "density",
+                "random_state"
+            ],
+            "test_parallel": [
+                "num_threads",
+                "kwargs_list"
+            ],
+            "_make_skipna_wrapper": [
+                "alternative",
+                "skipna_alternative"
+            ],
+            "convert_rows_list_to_csv_str": [
+                "rows_list"
+            ],
+            "external_error_raised": [
+                "expected_exception"
+            ],
+            "get_cython_table_params": [
+                "ndframe",
+                "func_names_and_expected"
+            ],
+            "get_op_from_name": [
+                "op_name"
+            ],
+            "getitem": [
+                "x"
+            ],
+            "setitem": [
+                "x"
+            ],
+            "loc": [
+                "x"
+            ],
+            "iloc": [
+                "x"
+            ],
+            "at": [
+                "x"
+            ],
+            "iat": [
+                "x"
+            ],
+            "SubclassedSeries": {
+                "_constructor": [
+                    "self"
+                ],
+                "_constructor_expanddim": [
+                    "self"
+                ]
+            },
+            "SubclassedDataFrame": {
+                "_constructor": [
+                    "self"
+                ],
+                "_constructor_sliced": [
+                    "self"
+                ]
+            },
+            "SubclassedCategorical": {
+                "_constructor": [
+                    "self"
+                ]
+            }
         },
         "pandas._testing._random": {
             "randbool": [
@@ -20217,7 +20167,6 @@
                 "columns"
             ]
         },
-        "pandas.io.parsers": {},
         "pandas.io.pytables": {
             "_ensure_decoded": [
                 "s"
@@ -24671,6 +24620,7 @@
                 ]
             }
         },
+        "pandas.io.parsers": {},
         "pandas.io.parsers.python_parser": {
             "count_empty_vals": [
                 "vals"
@@ -26308,420 +26258,6 @@
                     "self"
                 ],
                 "test_getitem": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.test_strings": {
-            "assert_series_or_index_equal": [
-                "left",
-                "right"
-            ],
-            "any_string_method": [
-                "request"
-            ],
-            "any_allowed_skipna_inferred_dtype": [
-                "request"
-            ],
-            "test_string_array": [
-                "any_string_method"
-            ],
-            "test_string_array_numeric_integer_array": [
-                "method",
-                "expected"
-            ],
-            "test_string_array_boolean_array": [
-                "method",
-                "expected"
-            ],
-            "test_string_array_extract": [],
-            "test_cat_different_classes": [
-                "klass"
-            ],
-            "test_str_get_stringarray_multiple_nans": [],
-            "test_str_accessor_in_apply_func": [],
-            "TestStringMethods": {
-                "test_api": [
-                    "self"
-                ],
-                "test_api_mi_raises": [
-                    "self"
-                ],
-                "test_api_per_dtype": [
-                    "self",
-                    "index_or_series",
-                    "dtype",
-                    "any_skipna_inferred_dtype"
-                ],
-                "test_api_per_method": [
-                    "self",
-                    "index_or_series",
-                    "dtype",
-                    "any_allowed_skipna_inferred_dtype",
-                    "any_string_method",
-                    "request"
-                ],
-                "test_api_for_categorical": [
-                    "self",
-                    "any_string_method"
-                ],
-                "test_iter": [
-                    "self"
-                ],
-                "test_iter_empty": [
-                    "self"
-                ],
-                "test_iter_single_element": [
-                    "self"
-                ],
-                "test_iter_object_try_string": [
-                    "self"
-                ],
-                "test_str_cat_name": [
-                    "self",
-                    "index_or_series",
-                    "other"
-                ],
-                "test_str_cat": [
-                    "self",
-                    "index_or_series"
-                ],
-                "test_str_cat_raises_intuitive_error": [
-                    "self",
-                    "index_or_series"
-                ],
-                "test_str_cat_categorical": [
-                    "self",
-                    "index_or_series",
-                    "dtype_caller",
-                    "dtype_target",
-                    "sep"
-                ],
-                "test_str_cat_wrong_dtype_raises": [
-                    "self",
-                    "box",
-                    "data"
-                ],
-                "test_str_cat_mixed_inputs": [
-                    "self",
-                    "index_or_series"
-                ],
-                "test_str_cat_align_indexed": [
-                    "self",
-                    "index_or_series",
-                    "join"
-                ],
-                "test_str_cat_align_mixed_inputs": [
-                    "self",
-                    "join"
-                ],
-                "test_str_cat_all_na": [
-                    "self",
-                    "index_or_series",
-                    "index_or_series2"
-                ],
-                "test_str_cat_special_cases": [
-                    "self"
-                ],
-                "test_cat_on_filtered_index": [
-                    "self"
-                ],
-                "test_count": [
-                    "self"
-                ],
-                "test_contains": [
-                    "self"
-                ],
-                "test_contains_for_object_category": [
-                    "self"
-                ],
-                "test_startswith": [
-                    "self",
-                    "dtype",
-                    "null_value",
-                    "na"
-                ],
-                "test_endswith": [
-                    "self",
-                    "dtype",
-                    "null_value",
-                    "na"
-                ],
-                "test_title": [
-                    "self"
-                ],
-                "test_lower_upper": [
-                    "self"
-                ],
-                "test_capitalize": [
-                    "self"
-                ],
-                "test_swapcase": [
-                    "self"
-                ],
-                "test_casemethods": [
-                    "self"
-                ],
-                "test_replace": [
-                    "self"
-                ],
-                "test_replace_callable": [
-                    "self"
-                ],
-                "test_replace_compiled_regex": [
-                    "self"
-                ],
-                "test_replace_literal": [
-                    "self"
-                ],
-                "test_repeat": [
-                    "self"
-                ],
-                "test_repeat_with_null": [
-                    "self"
-                ],
-                "test_match": [
-                    "self"
-                ],
-                "test_fullmatch": [
-                    "self"
-                ],
-                "test_extract_expand_None": [
-                    "self"
-                ],
-                "test_extract_expand_unspecified": [
-                    "self"
-                ],
-                "test_extract_expand_False": [
-                    "self"
-                ],
-                "test_extract_expand_True": [
-                    "self"
-                ],
-                "test_extract_series": [
-                    "self"
-                ],
-                "test_extract_optional_groups": [
-                    "self"
-                ],
-                "test_extract_single_group_returns_frame": [
-                    "self"
-                ],
-                "test_extractall": [
-                    "self"
-                ],
-                "test_extractall_single_group": [
-                    "self"
-                ],
-                "test_extractall_single_group_with_quantifier": [
-                    "self"
-                ],
-                "test_extractall_no_matches": [
-                    "self",
-                    "data",
-                    "names"
-                ],
-                "test_extractall_stringindex": [
-                    "self"
-                ],
-                "test_extractall_errors": [
-                    "self"
-                ],
-                "test_extract_index_one_two_groups": [
-                    "self"
-                ],
-                "test_extractall_same_as_extract": [
-                    "self"
-                ],
-                "test_extractall_same_as_extract_subject_index": [
-                    "self"
-                ],
-                "test_empty_str_methods": [
-                    "self"
-                ],
-                "test_empty_str_methods_to_frame": [
-                    "self"
-                ],
-                "test_ismethods": [
-                    "self"
-                ],
-                "test_isnumeric": [
-                    "self"
-                ],
-                "test_get_dummies": [
-                    "self"
-                ],
-                "test_get_dummies_with_name_dummy": [
-                    "self"
-                ],
-                "test_join": [
-                    "self"
-                ],
-                "test_len": [
-                    "self"
-                ],
-                "test_findall": [
-                    "self"
-                ],
-                "test_find": [
-                    "self"
-                ],
-                "test_find_nan": [
-                    "self"
-                ],
-                "test_index": [
-                    "self"
-                ],
-                "test_pad": [
-                    "self"
-                ],
-                "test_pad_fillchar": [
-                    "self"
-                ],
-                "test_pad_width": [
-                    "self",
-                    "f"
-                ],
-                "test_translate": [
-                    "self"
-                ],
-                "test_center_ljust_rjust": [
-                    "self"
-                ],
-                "test_center_ljust_rjust_fillchar": [
-                    "self"
-                ],
-                "test_zfill": [
-                    "self"
-                ],
-                "test_split": [
-                    "self"
-                ],
-                "test_split_n": [
-                    "self",
-                    "dtype",
-                    "method"
-                ],
-                "test_rsplit": [
-                    "self"
-                ],
-                "test_split_blank_string": [
-                    "self"
-                ],
-                "test_split_noargs": [
-                    "self"
-                ],
-                "test_split_maxsplit": [
-                    "self"
-                ],
-                "test_split_no_pat_with_nonzero_n": [
-                    "self"
-                ],
-                "test_split_to_dataframe": [
-                    "self"
-                ],
-                "test_split_to_multiindex_expand": [
-                    "self"
-                ],
-                "test_rsplit_to_dataframe_expand": [
-                    "self"
-                ],
-                "test_rsplit_to_multiindex_expand": [
-                    "self"
-                ],
-                "test_split_nan_expand": [
-                    "self"
-                ],
-                "test_split_with_name": [
-                    "self"
-                ],
-                "test_partition_series": [
-                    "self"
-                ],
-                "test_partition_index": [
-                    "self"
-                ],
-                "test_partition_to_dataframe": [
-                    "self"
-                ],
-                "test_partition_with_name": [
-                    "self"
-                ],
-                "test_partition_sep_kwarg": [
-                    "self"
-                ],
-                "test_pipe_failures": [
-                    "self"
-                ],
-                "test_slice": [
-                    "self",
-                    "start",
-                    "stop",
-                    "step",
-                    "expected"
-                ],
-                "test_slice_replace": [
-                    "self"
-                ],
-                "test_strip_lstrip_rstrip": [
-                    "self"
-                ],
-                "test_strip_lstrip_rstrip_mixed": [
-                    "self"
-                ],
-                "test_strip_lstrip_rstrip_args": [
-                    "self"
-                ],
-                "test_wrap": [
-                    "self"
-                ],
-                "test_get": [
-                    "self"
-                ],
-                "test_get_complex": [
-                    "self"
-                ],
-                "test_get_complex_nested": [
-                    "self",
-                    "to_type"
-                ],
-                "test_contains_moar": [
-                    "self"
-                ],
-                "test_contains_nan": [
-                    "self"
-                ],
-                "test_replace_moar": [
-                    "self"
-                ],
-                "test_string_slice_get_syntax": [
-                    "self"
-                ],
-                "test_string_slice_out_of_bounds": [
-                    "self"
-                ],
-                "test_match_findall_flags": [
-                    "self"
-                ],
-                "test_encode_decode": [
-                    "self"
-                ],
-                "test_encode_decode_errors": [
-                    "self"
-                ],
-                "test_normalize": [
-                    "self"
-                ],
-                "test_index_str_accessor_visibility": [
-                    "self"
-                ],
-                "test_str_accessor_no_new_attributes": [
-                    "self"
-                ],
-                "test_method_on_bytes": [
-                    "self"
-                ],
-                "test_casefold": [
                     "self"
                 ]
             }
@@ -37609,182 +37145,6 @@
                 ]
             }
         },
-        "pandas.tests.indexes.test_numeric": {
-            "test_uint_index_does_not_convert_to_float64": [
-                "box"
-            ],
-            "test_float64_index_equals": [],
-            "TestArithmetic": {
-                "test_arithmetic_explicit_conversions": [
-                    "self",
-                    "klass"
-                ]
-            },
-            "TestNumericIndex": {
-                "test_index_groupby": [
-                    "self"
-                ]
-            },
-            "Numeric": {
-                "test_where": [
-                    "self"
-                ],
-                "test_can_hold_identifiers": [
-                    "self"
-                ],
-                "test_format": [
-                    "self"
-                ],
-                "test_numeric_compat": [
-                    "self"
-                ],
-                "test_insert_na": [
-                    "self",
-                    "nulls_fixture"
-                ]
-            },
-            "TestFloat64Index": {
-                "index": [
-                    "self",
-                    "request"
-                ],
-                "mixed_index": [
-                    "self"
-                ],
-                "float_index": [
-                    "self"
-                ],
-                "create_index": [
-                    "self"
-                ],
-                "test_repr_roundtrip": [
-                    "self",
-                    "index"
-                ],
-                "check_is_index": [
-                    "self",
-                    "i"
-                ],
-                "check_coerce": [
-                    "self",
-                    "a",
-                    "b",
-                    "is_float_index"
-                ],
-                "test_constructor": [
-                    "self"
-                ],
-                "test_invalid_dtype": [
-                    "self",
-                    "index",
-                    "dtype"
-                ],
-                "test_constructor_invalid": [
-                    "self"
-                ],
-                "test_constructor_coerce": [
-                    "self",
-                    "mixed_index",
-                    "float_index"
-                ],
-                "test_constructor_explicit": [
-                    "self",
-                    "mixed_index",
-                    "float_index"
-                ],
-                "test_type_coercion_fail": [
-                    "self",
-                    "any_int_dtype"
-                ],
-                "test_type_coercion_valid": [
-                    "self",
-                    "float_dtype"
-                ],
-                "test_equals_numeric": [
-                    "self"
-                ],
-                "test_equals_numeric_other_index_type": [
-                    "self",
-                    "other"
-                ],
-                "test_lookups_datetimelike_values": [
-                    "self",
-                    "vals"
-                ],
-                "test_doesnt_contain_all_the_things": [
-                    "self"
-                ],
-                "test_nan_multiple_containment": [
-                    "self"
-                ],
-                "test_fillna_float64": [
-                    "self"
-                ]
-            },
-            "NumericInt": {
-                "test_view": [
-                    "self"
-                ],
-                "test_is_monotonic": [
-                    "self"
-                ],
-                "test_is_strictly_monotonic": [
-                    "self"
-                ],
-                "test_logical_compat": [
-                    "self"
-                ],
-                "test_identical": [
-                    "self"
-                ],
-                "test_cant_or_shouldnt_cast": [
-                    "self"
-                ],
-                "test_view_index": [
-                    "self"
-                ],
-                "test_prevent_casting": [
-                    "self"
-                ]
-            },
-            "TestInt64Index": {
-                "index": [
-                    "self",
-                    "request"
-                ],
-                "create_index": [
-                    "self"
-                ],
-                "test_constructor": [
-                    "self"
-                ],
-                "test_constructor_corner": [
-                    "self"
-                ],
-                "test_constructor_coercion_signed_to_unsigned": [
-                    "self",
-                    "uint_dtype"
-                ],
-                "test_constructor_unwraps_index": [
-                    "self"
-                ],
-                "test_coerce_list": [
-                    "self"
-                ]
-            },
-            "TestUInt64Index": {
-                "index": [
-                    "self",
-                    "request"
-                ],
-                "create_index": [
-                    "self"
-                ],
-                "test_constructor": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.indexes.test_base": {
             "test_generated_op_names": [
                 "opname",
@@ -38528,59 +37888,6 @@
                 "test_invalid_dtype": [
                     "self",
                     "invalid_dtype"
-                ]
-            }
-        },
-        "pandas.tests.indexes.test_datetimelike": {
-            "EqualsTests": {
-                "test_not_equals_numeric": [
-                    "self",
-                    "index"
-                ],
-                "test_equals": [
-                    "self",
-                    "index"
-                ],
-                "test_not_equals_non_arraylike": [
-                    "self",
-                    "index"
-                ],
-                "test_not_equals_strings": [
-                    "self",
-                    "index"
-                ],
-                "test_not_equals_misc_strs": [
-                    "self",
-                    "index"
-                ]
-            },
-            "TestPeriodIndexEquals": {
-                "index": [
-                    "self"
-                ],
-                "test_equals2": [
-                    "self",
-                    "freq"
-                ]
-            },
-            "TestDatetimeIndexEquals": {
-                "index": [
-                    "self"
-                ],
-                "test_equals2": [
-                    "self"
-                ],
-                "test_not_equals_bday": [
-                    "self",
-                    "freq"
-                ]
-            },
-            "TestTimedeltaIndexEquals": {
-                "index": [
-                    "self"
-                ],
-                "test_equals2": [
-                    "self"
                 ]
             }
         },
@@ -40340,45 +39647,6 @@
                 ]
             }
         },
-        "pandas.tests.indexes.timedeltas.test_astype": {
-            "TestTimedeltaIndex": {
-                "test_astype_object": [
-                    "self"
-                ],
-                "test_astype_object_with_nat": [
-                    "self"
-                ],
-                "test_astype": [
-                    "self"
-                ],
-                "test_astype_uint": [
-                    "self"
-                ],
-                "test_astype_timedelta64": [
-                    "self"
-                ],
-                "test_astype_raises": [
-                    "self",
-                    "dtype"
-                ],
-                "test_astype_category": [
-                    "self"
-                ],
-                "test_astype_array_fallback": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.timedeltas.test_partial_slicing": {
-            "TestSlicing": {
-                "test_partial_slice": [
-                    "self"
-                ],
-                "test_partial_slice_high_reso": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.indexes.timedeltas.test_ops": {
             "TestTimedeltaIndexOps": {
                 "test_nonunique_contains": [
@@ -40438,30 +39706,6 @@
                     "expected_periods"
                 ],
                 "test_timedelta_range_infer_freq": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.timedeltas.test_insert": {
-            "TestTimedeltaIndexInsert": {
-                "test_insert": [
-                    "self"
-                ],
-                "test_insert_nat": [
-                    "self",
-                    "null"
-                ],
-                "test_insert_invalid_na": [
-                    "self"
-                ],
-                "test_insert_mismatched_types_raises": [
-                    "self",
-                    "item"
-                ],
-                "test_insert_dont_cast_strings": [
-                    "self"
-                ],
-                "test_insert_empty": [
                     "self"
                 ]
             }
@@ -40609,35 +39853,6 @@
                     "self"
                 ],
                 "test_from_categorical": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.timedeltas.test_fillna": {
-            "TestFillNA": {
-                "test_fillna_timedelta": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.timedeltas.test_shift": {
-            "TestTimedeltaIndexShift": {
-                "test_tdi_shift_empty": [
-                    "self"
-                ],
-                "test_tdi_shift_hours": [
-                    "self"
-                ],
-                "test_tdi_shift_minutes": [
-                    "self"
-                ],
-                "test_tdi_shift_int": [
-                    "self"
-                ],
-                "test_tdi_shift_nonstandard_freq": [
-                    "self"
-                ],
-                "test_shift_no_freq": [
                     "self"
                 ]
             }
@@ -41083,84 +40298,6 @@
                 ]
             }
         },
-        "pandas.tests.indexes.datetimes.test_astype": {
-            "TestDatetimeIndex": {
-                "test_astype": [
-                    "self"
-                ],
-                "test_astype_uint": [
-                    "self"
-                ],
-                "test_astype_with_tz": [
-                    "self"
-                ],
-                "test_astype_tzaware_to_tzaware": [
-                    "self"
-                ],
-                "test_astype_tznaive_to_tzaware": [
-                    "self"
-                ],
-                "test_astype_str_nat": [
-                    "self"
-                ],
-                "test_astype_str": [
-                    "self"
-                ],
-                "test_astype_str_tz_and_name": [
-                    "self"
-                ],
-                "test_astype_str_freq_and_name": [
-                    "self"
-                ],
-                "test_astype_str_freq_and_tz": [
-                    "self"
-                ],
-                "test_astype_datetime64": [
-                    "self"
-                ],
-                "test_astype_object": [
-                    "self"
-                ],
-                "test_astype_object_tz": [
-                    "self",
-                    "tz"
-                ],
-                "test_astype_object_with_nat": [
-                    "self"
-                ],
-                "test_astype_raises": [
-                    "self",
-                    "dtype"
-                ],
-                "test_index_convert_to_datetime_array": [
-                    "self"
-                ],
-                "test_index_convert_to_datetime_array_explicit_pytz": [
-                    "self"
-                ],
-                "test_index_convert_to_datetime_array_dateutil": [
-                    "self"
-                ],
-                "test_integer_index_astype_datetime": [
-                    "self",
-                    "tz",
-                    "dtype"
-                ],
-                "test_dti_astype_period": [
-                    "self"
-                ]
-            },
-            "TestAstype": {
-                "test_astype_category": [
-                    "self",
-                    "tz"
-                ],
-                "test_astype_array_fallback": [
-                    "self",
-                    "tz"
-                ]
-            }
-        },
         "pandas.tests.indexes.datetimes.test_partial_slicing": {
             "TestSlicing": {
                 "test_monotone_DTI_indexing_bug": [
@@ -41602,41 +40739,6 @@
             }
         },
         "pandas.tests.indexes.datetimes": {},
-        "pandas.tests.indexes.datetimes.test_snap": {
-            "test_dti_snap": [
-                "name",
-                "tz"
-            ]
-        },
-        "pandas.tests.indexes.datetimes.test_insert": {
-            "TestInsert": {
-                "test_insert_nat": [
-                    "self",
-                    "tz",
-                    "null"
-                ],
-                "test_insert_invalid_na": [
-                    "self",
-                    "tz"
-                ],
-                "test_insert_empty_preserves_freq": [
-                    "self",
-                    "tz_naive_fixture"
-                ],
-                "test_insert": [
-                    "self"
-                ],
-                "test_insert_mismatched_types_raises": [
-                    "self",
-                    "tz_aware_fixture",
-                    "item"
-                ],
-                "test_insert_object_casting": [
-                    "self",
-                    "tz_aware_fixture"
-                ]
-            }
-        },
         "pandas.tests.indexes.datetimes.test_pickle": {
             "TestPickle": {
                 "test_pickle": [
@@ -42107,14 +41209,6 @@
                 ]
             }
         },
-        "pandas.tests.indexes.datetimes.test_fillna": {
-            "TestDatetimeIndexFillNA": {
-                "test_fillna_datetime64": [
-                    "self",
-                    "tz"
-                ]
-            }
-        },
         "pandas.tests.indexes.datetimes.test_datetimelike": {
             "TestDatetimeIndex": {
                 "simple_index": [
@@ -42390,93 +41484,6 @@
                 "test_range_with_millisecond_resolution": [
                     "self",
                     "start_end"
-                ]
-            }
-        },
-        "pandas.tests.indexes.datetimes.test_shift": {
-            "TestDatetimeIndexShift": {
-                "test_dti_shift_tzaware": [
-                    "self",
-                    "tz_naive_fixture"
-                ],
-                "test_dti_shift_freqs": [
-                    "self"
-                ],
-                "test_dti_shift_int": [
-                    "self"
-                ],
-                "test_dti_shift_no_freq": [
-                    "self"
-                ],
-                "test_dti_shift_localized": [
-                    "self",
-                    "tzstr"
-                ],
-                "test_dti_shift_across_dst": [
-                    "self"
-                ],
-                "test_dti_shift_near_midnight": [
-                    "self",
-                    "shift",
-                    "result_time"
-                ],
-                "test_shift_periods": [
-                    "self"
-                ],
-                "test_shift_bday": [
-                    "self",
-                    "freq"
-                ],
-                "test_shift_bmonth": [
-                    "self"
-                ],
-                "test_shift_empty": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.datetimes.test_to_period": {
-            "TestToPeriod": {
-                "test_dti_to_period": [
-                    "self"
-                ],
-                "test_to_period_quarterly": [
-                    "self",
-                    "month"
-                ],
-                "test_to_period_quarterlyish": [
-                    "self",
-                    "off"
-                ],
-                "test_to_period_annualish": [
-                    "self",
-                    "off"
-                ],
-                "test_to_period_monthish": [
-                    "self"
-                ],
-                "test_to_period_infer": [
-                    "self"
-                ],
-                "test_period_dt64_round_trip": [
-                    "self"
-                ],
-                "test_to_period_millisecond": [
-                    "self"
-                ],
-                "test_to_period_microsecond": [
-                    "self"
-                ],
-                "test_to_period_tz": [
-                    "self",
-                    "tz"
-                ],
-                "test_to_period_tz_utc_offset_consistency": [
-                    "self",
-                    "tz"
-                ],
-                "test_to_period_nofreq": [
-                    "self"
                 ]
             }
         },
@@ -44583,35 +43590,6 @@
                 ]
             }
         },
-        "pandas.tests.indexes.period.test_astype": {
-            "TestPeriodIndexAsType": {
-                "test_astype_raises": [
-                    "self",
-                    "dtype"
-                ],
-                "test_astype_conversion": [
-                    "self"
-                ],
-                "test_astype_uint": [
-                    "self"
-                ],
-                "test_astype_object": [
-                    "self"
-                ],
-                "test_astype_object2": [
-                    "self"
-                ],
-                "test_astype_category": [
-                    "self"
-                ],
-                "test_astype_array_fallback": [
-                    "self"
-                ],
-                "test_period_astype_to_timestamp": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.indexes.period.test_partial_slicing": {
             "TestPeriodIndex": {
                 "test_pindex_slice_index": [
@@ -44754,13 +43732,6 @@
             }
         },
         "pandas.tests.indexes.period": {},
-        "pandas.tests.indexes.period.test_factorize": {
-            "TestFactorize": {
-                "test_factorize": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.indexes.period.test_formats": {
             "test_to_native_types": [],
             "TestPeriodIndexRendering": {
@@ -44980,80 +43951,6 @@
                     "self"
                 ],
                 "test_errors": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.period.test_to_timestamp": {
-            "TestToTimestamp": {
-                "test_to_timestamp_freq": [
-                    "self"
-                ],
-                "test_to_timestamp_pi_nat": [
-                    "self"
-                ],
-                "test_to_timestamp_preserve_name": [
-                    "self"
-                ],
-                "test_to_timestamp_quarterly_bug": [
-                    "self"
-                ],
-                "test_to_timestamp_pi_mult": [
-                    "self"
-                ],
-                "test_to_timestamp_pi_combined": [
-                    "self"
-                ],
-                "test_to_timestamp_1703": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.period.test_fillna": {
-            "TestFillNA": {
-                "test_fillna_period": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.period.test_shift": {
-            "TestPeriodIndexShift": {
-                "test_pi_shift_ndarray": [
-                    "self"
-                ],
-                "test_shift": [
-                    "self"
-                ],
-                "test_shift_corner_cases": [
-                    "self"
-                ],
-                "test_shift_nat": [
-                    "self"
-                ],
-                "test_shift_gh8083": [
-                    "self"
-                ],
-                "test_shift_periods": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.indexes.period.test_asfreq": {
-            "TestPeriodIndex": {
-                "test_asfreq": [
-                    "self"
-                ],
-                "test_asfreq_nat": [
-                    "self"
-                ],
-                "test_asfreq_mult_pi": [
-                    "self",
-                    "freq"
-                ],
-                "test_asfreq_combined_pi": [
-                    "self"
-                ],
-                "test_astype_asfreq": [
                     "self"
                 ]
             }
@@ -52778,315 +51675,6 @@
                 ]
             }
         },
-        "pandas.tests.io.formats.test_style": {
-            "test_block_names": [],
-            "test_from_custom_template": [
-                "tmpdir"
-            ],
-            "TestStyler": {
-                "setup_method": [
-                    "self",
-                    "method"
-                ],
-                "test_init_non_pandas": [
-                    "self"
-                ],
-                "test_init_series": [
-                    "self"
-                ],
-                "test_repr_html_ok": [
-                    "self"
-                ],
-                "test_repr_html_mathjax": [
-                    "self"
-                ],
-                "test_update_ctx": [
-                    "self"
-                ],
-                "test_update_ctx_flatten_multi": [
-                    "self"
-                ],
-                "test_update_ctx_flatten_multi_traliing_semi": [
-                    "self"
-                ],
-                "test_copy": [
-                    "self"
-                ],
-                "test_deepcopy": [
-                    "self"
-                ],
-                "test_clear": [
-                    "self"
-                ],
-                "test_render": [
-                    "self"
-                ],
-                "test_render_empty_dfs": [
-                    "self"
-                ],
-                "test_render_double": [
-                    "self"
-                ],
-                "test_set_properties": [
-                    "self"
-                ],
-                "test_set_properties_subset": [
-                    "self"
-                ],
-                "test_empty_index_name_doesnt_display": [
-                    "self"
-                ],
-                "test_index_name": [
-                    "self"
-                ],
-                "test_multiindex_name": [
-                    "self"
-                ],
-                "test_numeric_columns": [
-                    "self"
-                ],
-                "test_apply_axis": [
-                    "self"
-                ],
-                "test_apply_subset": [
-                    "self"
-                ],
-                "test_applymap_subset": [
-                    "self"
-                ],
-                "test_applymap_subset_multiindex": [
-                    "self"
-                ],
-                "test_applymap_subset_multiindex_code": [
-                    "self"
-                ],
-                "test_where_with_one_style": [
-                    "self"
-                ],
-                "test_where_subset": [
-                    "self"
-                ],
-                "test_where_subset_compare_with_applymap": [
-                    "self"
-                ],
-                "test_empty": [
-                    "self"
-                ],
-                "test_duplicate": [
-                    "self"
-                ],
-                "test_bar_align_left": [
-                    "self"
-                ],
-                "test_bar_align_left_0points": [
-                    "self"
-                ],
-                "test_bar_align_mid_pos_and_neg": [
-                    "self"
-                ],
-                "test_bar_align_mid_all_pos": [
-                    "self"
-                ],
-                "test_bar_align_mid_all_neg": [
-                    "self"
-                ],
-                "test_bar_align_zero_pos_and_neg": [
-                    "self"
-                ],
-                "test_bar_align_left_axis_none": [
-                    "self"
-                ],
-                "test_bar_align_zero_axis_none": [
-                    "self"
-                ],
-                "test_bar_align_mid_axis_none": [
-                    "self"
-                ],
-                "test_bar_align_mid_vmin": [
-                    "self"
-                ],
-                "test_bar_align_mid_vmax": [
-                    "self"
-                ],
-                "test_bar_align_mid_vmin_vmax_wide": [
-                    "self"
-                ],
-                "test_bar_align_mid_vmin_vmax_clipping": [
-                    "self"
-                ],
-                "test_bar_align_mid_nans": [
-                    "self"
-                ],
-                "test_bar_align_zero_nans": [
-                    "self"
-                ],
-                "test_bar_bad_align_raises": [
-                    "self"
-                ],
-                "test_format_with_na_rep": [
-                    "self"
-                ],
-                "test_init_with_na_rep": [
-                    "self"
-                ],
-                "test_set_na_rep": [
-                    "self"
-                ],
-                "test_format_non_numeric_na": [
-                    "self"
-                ],
-                "test_format_with_bad_na_rep": [
-                    "self"
-                ],
-                "test_highlight_null": [
-                    "self",
-                    "null_color"
-                ],
-                "test_highlight_null_subset": [
-                    "self"
-                ],
-                "test_nonunique_raises": [
-                    "self"
-                ],
-                "test_caption": [
-                    "self"
-                ],
-                "test_uuid": [
-                    "self"
-                ],
-                "test_unique_id": [
-                    "self"
-                ],
-                "test_table_styles": [
-                    "self"
-                ],
-                "test_table_attributes": [
-                    "self"
-                ],
-                "test_precision": [
-                    "self"
-                ],
-                "test_apply_none": [
-                    "self"
-                ],
-                "test_trim": [
-                    "self"
-                ],
-                "test_highlight_max": [
-                    "self"
-                ],
-                "test_export": [
-                    "self"
-                ],
-                "test_display_format": [
-                    "self"
-                ],
-                "test_display_format_raises": [
-                    "self"
-                ],
-                "test_display_set_precision": [
-                    "self"
-                ],
-                "test_display_subset": [
-                    "self"
-                ],
-                "test_display_dict": [
-                    "self"
-                ],
-                "test_bad_apply_shape": [
-                    "self"
-                ],
-                "test_apply_bad_return": [
-                    "self"
-                ],
-                "test_apply_bad_labels": [
-                    "self"
-                ],
-                "test_get_level_lengths": [
-                    "self"
-                ],
-                "test_get_level_lengths_un_sorted": [
-                    "self"
-                ],
-                "test_mi_sparse": [
-                    "self"
-                ],
-                "test_mi_sparse_disabled": [
-                    "self"
-                ],
-                "test_mi_sparse_index_names": [
-                    "self"
-                ],
-                "test_mi_sparse_column_names": [
-                    "self"
-                ],
-                "test_hide_single_index": [
-                    "self"
-                ],
-                "test_hide_multiindex": [
-                    "self"
-                ],
-                "test_hide_columns_single_level": [
-                    "self"
-                ],
-                "test_hide_columns_mult_levels": [
-                    "self"
-                ],
-                "test_pipe": [
-                    "self"
-                ],
-                "test_no_cell_ids": [
-                    "self"
-                ],
-                "test_set_data_classes": [
-                    "self",
-                    "classes"
-                ],
-                "test_chaining_table_styles": [
-                    "self"
-                ],
-                "test_column_and_row_styling": [
-                    "self"
-                ],
-                "test_colspan_w3": [
-                    "self"
-                ],
-                "test_rowspan_w3": [
-                    "self"
-                ],
-                "test_uuid_len": [
-                    "self",
-                    "len_"
-                ],
-                "test_uuid_len_raises": [
-                    "self",
-                    "len_"
-                ]
-            },
-            "TestStylerMatplotlibDep": {
-                "test_background_gradient": [
-                    "self"
-                ],
-                "test_text_color_threshold": [
-                    "self",
-                    "c_map",
-                    "expected"
-                ],
-                "test_text_color_threshold_raises": [
-                    "self",
-                    "text_color_threshold"
-                ],
-                "test_background_gradient_axis": [
-                    "self"
-                ],
-                "test_background_gradient_vmin_vmax": [
-                    "self"
-                ],
-                "test_background_gradient_int64": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.io.formats.test_css": {
             "assert_resolves": [
                 "css",
@@ -54064,237 +52652,6 @@
                 "warning_klass"
             ]
         },
-        "pandas.tests.io.parser.test_usecols": {
-            "test_raise_on_mixed_dtype_usecols": [
-                "all_parsers"
-            ],
-            "test_usecols": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_usecols_with_names": [
-                "all_parsers"
-            ],
-            "test_usecols_relative_to_names": [
-                "all_parsers",
-                "names",
-                "usecols"
-            ],
-            "test_usecols_relative_to_names2": [
-                "all_parsers"
-            ],
-            "test_usecols_name_length_conflict": [
-                "all_parsers"
-            ],
-            "test_usecols_single_string": [
-                "all_parsers"
-            ],
-            "test_usecols_index_col_false": [
-                "all_parsers",
-                "data"
-            ],
-            "test_usecols_index_col_conflict": [
-                "all_parsers",
-                "usecols",
-                "index_col"
-            ],
-            "test_usecols_index_col_conflict2": [
-                "all_parsers"
-            ],
-            "test_usecols_implicit_index_col": [
-                "all_parsers"
-            ],
-            "test_usecols_regex_sep": [
-                "all_parsers"
-            ],
-            "test_usecols_with_whitespace": [
-                "all_parsers"
-            ],
-            "test_usecols_with_integer_like_header": [
-                "all_parsers",
-                "usecols",
-                "expected"
-            ],
-            "test_usecols_with_parse_dates": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_usecols_with_parse_dates2": [
-                "all_parsers"
-            ],
-            "test_usecols_with_parse_dates3": [
-                "all_parsers"
-            ],
-            "test_usecols_with_parse_dates4": [
-                "all_parsers"
-            ],
-            "test_usecols_with_parse_dates_and_names": [
-                "all_parsers",
-                "usecols",
-                "names"
-            ],
-            "test_usecols_with_unicode_strings": [
-                "all_parsers"
-            ],
-            "test_usecols_with_single_byte_unicode_strings": [
-                "all_parsers"
-            ],
-            "test_usecols_with_mixed_encoding_strings": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_usecols_with_multi_byte_characters": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_empty_usecols": [
-                "all_parsers"
-            ],
-            "test_np_array_usecols": [
-                "all_parsers"
-            ],
-            "test_callable_usecols": [
-                "all_parsers",
-                "usecols",
-                "expected"
-            ],
-            "test_incomplete_first_row": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_uneven_length_cols": [
-                "all_parsers",
-                "data",
-                "usecols",
-                "kwargs",
-                "expected"
-            ],
-            "test_raises_on_usecols_names_mismatch": [
-                "all_parsers",
-                "usecols",
-                "kwargs",
-                "expected",
-                "msg"
-            ],
-            "test_usecols_subset_names_mismatch_orig_columns": [
-                "all_parsers",
-                "usecols",
-                "request"
-            ]
-        },
-        "pandas.tests.io.parser.test_dtypes": {
-            "test_dtype_all_columns": [
-                "all_parsers",
-                "dtype",
-                "check_orig"
-            ],
-            "test_dtype_all_columns_empty": [
-                "all_parsers"
-            ],
-            "test_dtype_per_column": [
-                "all_parsers"
-            ],
-            "test_invalid_dtype_per_column": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype": [
-                "all_parsers",
-                "dtype"
-            ],
-            "test_categorical_dtype_single": [
-                "all_parsers",
-                "dtype"
-            ],
-            "test_categorical_dtype_unsorted": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype_missing": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype_high_cardinality_numeric": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype_latin1": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_categorical_dtype_utf16": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_categorical_dtype_chunksize_infer_categories": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype_chunksize_explicit_categories": [
-                "all_parsers"
-            ],
-            "test_categorical_category_dtype": [
-                "all_parsers",
-                "categories",
-                "ordered"
-            ],
-            "test_categorical_category_dtype_unsorted": [
-                "all_parsers"
-            ],
-            "test_categorical_coerces_numeric": [
-                "all_parsers"
-            ],
-            "test_categorical_coerces_datetime": [
-                "all_parsers"
-            ],
-            "test_categorical_coerces_timestamp": [
-                "all_parsers"
-            ],
-            "test_categorical_coerces_timedelta": [
-                "all_parsers"
-            ],
-            "test_categorical_dtype_coerces_boolean": [
-                "all_parsers",
-                "data"
-            ],
-            "test_categorical_unexpected_categories": [
-                "all_parsers"
-            ],
-            "test_empty_pass_dtype": [
-                "all_parsers"
-            ],
-            "test_empty_with_index_pass_dtype": [
-                "all_parsers"
-            ],
-            "test_empty_with_multi_index_pass_dtype": [
-                "all_parsers"
-            ],
-            "test_empty_with_mangled_column_pass_dtype_by_names": [
-                "all_parsers"
-            ],
-            "test_empty_with_mangled_column_pass_dtype_by_indexes": [
-                "all_parsers"
-            ],
-            "test_empty_with_dup_column_pass_dtype_by_indexes": [
-                "all_parsers"
-            ],
-            "test_empty_with_dup_column_pass_dtype_by_indexes_raises": [
-                "all_parsers"
-            ],
-            "test_raise_on_passed_int_dtype_with_nas": [
-                "all_parsers"
-            ],
-            "test_dtype_with_converters": [
-                "all_parsers"
-            ],
-            "test_empty_dtype": [
-                "all_parsers",
-                "dtype",
-                "expected"
-            ],
-            "test_numeric_dtype": [
-                "all_parsers",
-                "dtype"
-            ],
-            "test_boolean_dtype": [
-                "all_parsers"
-            ]
-        },
         "pandas.tests.io.parser.test_skiprows": {
             "test_skip_rows_bug": [
                 "all_parsers",
@@ -55228,459 +53585,6 @@
                 "all_parsers"
             ],
             "test_converter_index_col_bug": [
-                "all_parsers"
-            ]
-        },
-        "pandas.tests.io.parser.test_common": {
-            "test_override_set_noconvert_columns": [],
-            "test_empty_decimal_marker": [
-                "all_parsers"
-            ],
-            "test_bad_stream_exception": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_read_csv_local": [
-                "all_parsers",
-                "csv1"
-            ],
-            "test_1000_sep": [
-                "all_parsers"
-            ],
-            "test_squeeze": [
-                "all_parsers"
-            ],
-            "test_malformed": [
-                "all_parsers"
-            ],
-            "test_malformed_chunks": [
-                "all_parsers",
-                "nrows"
-            ],
-            "test_unnamed_columns": [
-                "all_parsers"
-            ],
-            "test_csv_mixed_type": [
-                "all_parsers"
-            ],
-            "test_read_csv_low_memory_no_rows_with_index": [
-                "all_parsers"
-            ],
-            "test_read_csv_dataframe": [
-                "all_parsers",
-                "csv1"
-            ],
-            "test_read_csv_no_index_name": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_read_csv_wrong_num_columns": [
-                "all_parsers"
-            ],
-            "test_read_duplicate_index_explicit": [
-                "all_parsers"
-            ],
-            "test_read_duplicate_index_implicit": [
-                "all_parsers"
-            ],
-            "test_parse_bool": [
-                "all_parsers",
-                "data",
-                "kwargs",
-                "expected"
-            ],
-            "test_int_conversion": [
-                "all_parsers"
-            ],
-            "test_read_nrows": [
-                "all_parsers",
-                "nrows"
-            ],
-            "test_read_nrows_bad": [
-                "all_parsers",
-                "nrows"
-            ],
-            "test_read_chunksize_with_index": [
-                "all_parsers",
-                "index_col"
-            ],
-            "test_read_chunksize_bad": [
-                "all_parsers",
-                "chunksize"
-            ],
-            "test_read_chunksize_and_nrows": [
-                "all_parsers",
-                "chunksize"
-            ],
-            "test_read_chunksize_and_nrows_changing_size": [
-                "all_parsers"
-            ],
-            "test_get_chunk_passed_chunksize": [
-                "all_parsers"
-            ],
-            "test_read_chunksize_compat": [
-                "all_parsers",
-                "kwargs"
-            ],
-            "test_read_chunksize_jagged_names": [
-                "all_parsers"
-            ],
-            "test_read_data_list": [
-                "all_parsers"
-            ],
-            "test_iterator": [
-                "all_parsers"
-            ],
-            "test_iterator2": [
-                "all_parsers"
-            ],
-            "test_reader_list": [
-                "all_parsers"
-            ],
-            "test_reader_list_skiprows": [
-                "all_parsers"
-            ],
-            "test_iterator_stop_on_chunksize": [
-                "all_parsers"
-            ],
-            "test_iterator_skipfooter_errors": [
-                "all_parsers",
-                "kwargs"
-            ],
-            "test_nrows_skipfooter_errors": [
-                "all_parsers"
-            ],
-            "test_pass_names_with_index": [
-                "all_parsers",
-                "data",
-                "kwargs",
-                "expected"
-            ],
-            "test_multi_index_no_level_names": [
-                "all_parsers",
-                "index_col"
-            ],
-            "test_multi_index_no_level_names_implicit": [
-                "all_parsers"
-            ],
-            "test_multi_index_blank_df": [
-                "all_parsers",
-                "data",
-                "expected",
-                "header",
-                "round_trip"
-            ],
-            "test_no_unnamed_index": [
-                "all_parsers"
-            ],
-            "test_read_csv_parse_simple_list": [
-                "all_parsers"
-            ],
-            "test_url": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_local_file": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_path_path_lib": [
-                "all_parsers"
-            ],
-            "test_path_local_path": [
-                "all_parsers"
-            ],
-            "test_nonexistent_path": [
-                "all_parsers"
-            ],
-            "test_no_permission": [
-                "all_parsers"
-            ],
-            "test_missing_trailing_delimiters": [
-                "all_parsers"
-            ],
-            "test_skip_initial_space": [
-                "all_parsers"
-            ],
-            "test_trailing_delimiters": [
-                "all_parsers"
-            ],
-            "test_escapechar": [
-                "all_parsers"
-            ],
-            "test_int64_min_issues": [
-                "all_parsers"
-            ],
-            "test_parse_integers_above_fp_precision": [
-                "all_parsers"
-            ],
-            "test_chunks_have_consistent_numerical_type": [
-                "all_parsers"
-            ],
-            "test_warn_if_chunks_have_mismatched_type": [
-                "all_parsers"
-            ],
-            "test_integer_overflow_bug": [
-                "all_parsers",
-                "sep"
-            ],
-            "test_catch_too_many_names": [
-                "all_parsers"
-            ],
-            "test_ignore_leading_whitespace": [
-                "all_parsers"
-            ],
-            "test_chunk_begins_with_newline_whitespace": [
-                "all_parsers"
-            ],
-            "test_empty_with_index": [
-                "all_parsers"
-            ],
-            "test_empty_with_multi_index": [
-                "all_parsers"
-            ],
-            "test_empty_with_reversed_multi_index": [
-                "all_parsers"
-            ],
-            "test_float_parser": [
-                "all_parsers"
-            ],
-            "test_scientific_no_exponent": [
-                "all_parsers_all_precisions"
-            ],
-            "test_int64_overflow": [
-                "all_parsers",
-                "conv"
-            ],
-            "test_int64_uint64_range": [
-                "all_parsers",
-                "val"
-            ],
-            "test_outside_int64_uint64_range": [
-                "all_parsers",
-                "val"
-            ],
-            "test_numeric_range_too_wide": [
-                "all_parsers",
-                "exp_data"
-            ],
-            "test_very_negative_exponent": [
-                "all_parsers_all_precisions",
-                "neg_exp"
-            ],
-            "test_too_many_exponent_digits": [
-                "all_parsers_all_precisions",
-                "exp",
-                "request"
-            ],
-            "test_empty_with_nrows_chunksize": [
-                "all_parsers",
-                "iterator"
-            ],
-            "test_eof_states": [
-                "all_parsers",
-                "data",
-                "kwargs",
-                "expected",
-                "msg"
-            ],
-            "test_uneven_lines_with_usecols": [
-                "all_parsers",
-                "usecols"
-            ],
-            "test_read_empty_with_usecols": [
-                "all_parsers",
-                "data",
-                "kwargs",
-                "expected"
-            ],
-            "test_trailing_spaces": [
-                "all_parsers",
-                "kwargs",
-                "expected"
-            ],
-            "test_raise_on_sep_with_delim_whitespace": [
-                "all_parsers"
-            ],
-            "test_single_char_leading_whitespace": [
-                "all_parsers",
-                "delim_whitespace"
-            ],
-            "test_empty_lines": [
-                "all_parsers",
-                "sep",
-                "skip_blank_lines",
-                "exp_data"
-            ],
-            "test_whitespace_lines": [
-                "all_parsers"
-            ],
-            "test_whitespace_regex_separator": [
-                "all_parsers",
-                "data",
-                "expected"
-            ],
-            "test_verbose_read": [
-                "all_parsers",
-                "capsys"
-            ],
-            "test_verbose_read2": [
-                "all_parsers",
-                "capsys"
-            ],
-            "test_iteration_open_handle": [
-                "all_parsers"
-            ],
-            "test_1000_sep_with_decimal": [
-                "all_parsers",
-                "data",
-                "thousands",
-                "decimal"
-            ],
-            "test_euro_decimal_format": [
-                "all_parsers"
-            ],
-            "test_inf_parsing": [
-                "all_parsers",
-                "na_filter"
-            ],
-            "test_infinity_parsing": [
-                "all_parsers",
-                "na_filter"
-            ],
-            "test_raise_on_no_columns": [
-                "all_parsers",
-                "nrows"
-            ],
-            "test_memory_map": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_null_byte_char": [
-                "all_parsers"
-            ],
-            "test_temporary_file": [
-                "all_parsers"
-            ],
-            "test_internal_eof_byte": [
-                "all_parsers"
-            ],
-            "test_internal_eof_byte_to_file": [
-                "all_parsers"
-            ],
-            "test_sub_character": [
-                "all_parsers",
-                "csv_dir_path"
-            ],
-            "test_file_handle_string_io": [
-                "all_parsers"
-            ],
-            "test_file_handles_with_open": [
-                "all_parsers",
-                "csv1"
-            ],
-            "test_invalid_file_buffer_class": [
-                "all_parsers"
-            ],
-            "test_invalid_file_buffer_mock": [
-                "all_parsers"
-            ],
-            "test_valid_file_buffer_seems_invalid": [
-                "all_parsers"
-            ],
-            "test_error_bad_lines": [
-                "all_parsers",
-                "kwargs",
-                "warn_kwargs"
-            ],
-            "test_warn_bad_lines": [
-                "all_parsers",
-                "capsys"
-            ],
-            "test_suppress_error_output": [
-                "all_parsers",
-                "capsys"
-            ],
-            "test_filename_with_special_chars": [
-                "all_parsers",
-                "filename"
-            ],
-            "test_read_csv_memory_growth_chunksize": [
-                "all_parsers"
-            ],
-            "test_read_csv_raises_on_header_prefix": [
-                "all_parsers"
-            ],
-            "test_unexpected_keyword_parameter_exception": [
-                "all_parsers"
-            ],
-            "test_read_table_same_signature_as_read_csv": [
-                "all_parsers"
-            ],
-            "test_read_table_equivalency_to_read_csv": [
-                "all_parsers"
-            ],
-            "test_first_row_bom": [
-                "all_parsers"
-            ],
-            "test_first_row_bom_unquoted": [
-                "all_parsers"
-            ],
-            "test_integer_precision": [
-                "all_parsers"
-            ],
-            "test_file_descriptor_leak": [
-                "all_parsers"
-            ],
-            "test_blank_lines_between_header_and_data_rows": [
-                "all_parsers",
-                "nrows"
-            ],
-            "test_no_header_two_extra_columns": [
-                "all_parsers"
-            ],
-            "test_read_csv_names_not_accepting_sets": [
-                "all_parsers"
-            ],
-            "test_read_csv_with_use_inf_as_na": [
-                "all_parsers"
-            ],
-            "test_read_table_delim_whitespace_default_sep": [
-                "all_parsers"
-            ],
-            "test_read_csv_delim_whitespace_non_default_sep": [
-                "all_parsers",
-                "delimiter"
-            ],
-            "test_read_table_delim_whitespace_non_default_sep": [
-                "all_parsers",
-                "delimiter"
-            ],
-            "test_dict_keys_as_names": [
-                "all_parsers"
-            ],
-            "test_read_csv_file_handle": [
-                "all_parsers",
-                "io_class",
-                "encoding"
-            ],
-            "test_memory_map_file_handle_silent_fallback": [
-                "all_parsers",
-                "compression"
-            ],
-            "test_memory_map_compression": [
-                "all_parsers",
-                "compression"
-            ],
-            "test_context_manager": [
-                "all_parsers",
-                "datapath"
-            ],
-            "test_context_manageri_user_provided": [
-                "all_parsers",
-                "datapath"
-            ],
-            "test_open_file": [
                 "all_parsers"
             ]
         },
@@ -69858,22 +67762,6 @@
                 ]
             }
         },
-        "pandas.tests.frame.indexing.test_categorical": {
-            "TestDataFrameIndexingCategorical": {
-                "test_assignment": [
-                    "self"
-                ],
-                "test_assigning_ops": [
-                    "self"
-                ],
-                "test_loc_setitem_single_row_categorical": [
-                    "self"
-                ],
-                "test_loc_indexing_preserves_index_category_dtype": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.frame.indexing.test_where": {
             "where_frame": [
                 "request",
@@ -70551,370 +68439,6 @@
                 "test_setitem_listlike_key_scalar_value_not_inplace": [
                     "self",
                     "value"
-                ]
-            }
-        },
-        "pandas.tests.frame.apply.test_apply_relabeling": {
-            "TestDataFrameNamedAggregate": {
-                "test_agg_relabel": [
-                    "self"
-                ],
-                "test_agg_relabel_multi_columns_multi_methods": [
-                    "self"
-                ],
-                "test_agg_relabel_partial_functions": [
-                    "self"
-                ],
-                "test_agg_namedtuple": [
-                    "self"
-                ],
-                "test_agg_raises": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.frame.apply": {},
-        "pandas.tests.frame.apply.test_frame_transform": {
-            "unpack_obj": [
-                "obj",
-                "klass",
-                "axis"
-            ],
-            "test_transform_ufunc": [
-                "axis",
-                "float_frame",
-                "frame_or_series"
-            ],
-            "test_transform_groupby_kernel": [
-                "axis",
-                "float_frame",
-                "op"
-            ],
-            "test_transform_listlike": [
-                "axis",
-                "float_frame",
-                "ops",
-                "names"
-            ],
-            "test_transform_empty_listlike": [
-                "float_frame",
-                "ops",
-                "frame_or_series"
-            ],
-            "test_transform_dictlike": [
-                "axis",
-                "float_frame",
-                "box"
-            ],
-            "test_transform_dictlike_mixed": [],
-            "test_transform_empty_dictlike": [
-                "float_frame",
-                "ops",
-                "frame_or_series"
-            ],
-            "test_transform_udf": [
-                "axis",
-                "float_frame",
-                "use_apply",
-                "frame_or_series"
-            ],
-            "test_transform_method_name": [
-                "method"
-            ],
-            "test_transform_and_agg_err": [
-                "axis",
-                "float_frame"
-            ],
-            "test_agg_dict_nested_renaming_depr": [],
-            "test_transform_reducer_raises": [
-                "all_reductions",
-                "frame_or_series"
-            ],
-            "test_transform_bad_dtype": [
-                "op",
-                "frame_or_series"
-            ],
-            "test_transform_partial_failure": [
-                "op"
-            ],
-            "test_transform_passes_args": [
-                "use_apply",
-                "frame_or_series"
-            ],
-            "test_transform_missing_columns": [
-                "axis"
-            ],
-            "test_transform_empty_dataframe": []
-        },
-        "pandas.tests.frame.apply.test_frame_apply": {
-            "int_frame_const_col": [],
-            "test_apply_mutating": [],
-            "test_apply_empty_list_reduce": [],
-            "test_apply_no_suffix_index": [],
-            "test_apply_raw_returns_string": [],
-            "TestDataFrameApply": {
-                "test_apply": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_axis1_with_ea": [
-                    "self"
-                ],
-                "test_apply_mixed_datetimelike": [
-                    "self"
-                ],
-                "test_apply_empty": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_with_reduce_empty": [
-                    "self"
-                ],
-                "test_apply_funcs_over_empty": [
-                    "self",
-                    "func"
-                ],
-                "test_nunique_empty": [
-                    "self"
-                ],
-                "test_apply_standard_nonunique": [
-                    "self"
-                ],
-                "test_apply_with_string_funcs": [
-                    "self",
-                    "float_frame",
-                    "func",
-                    "args",
-                    "kwds"
-                ],
-                "test_apply_broadcast": [
-                    "self",
-                    "float_frame",
-                    "int_frame_const_col"
-                ],
-                "test_apply_broadcast_error": [
-                    "self",
-                    "int_frame_const_col"
-                ],
-                "test_apply_raw": [
-                    "self",
-                    "float_frame",
-                    "mixed_type_frame"
-                ],
-                "test_apply_axis1": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_mixed_dtype_corner": [
-                    "self"
-                ],
-                "test_apply_empty_infer_type": [
-                    "self"
-                ],
-                "test_apply_with_args_kwds": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_yield_list": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_reduce_Series": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_reduce_to_dict": [
-                    "self"
-                ],
-                "test_apply_differently_indexed": [
-                    "self"
-                ],
-                "test_apply_modify_traceback": [
-                    "self"
-                ],
-                "test_apply_bug": [
-                    "self"
-                ],
-                "test_apply_convert_objects": [
-                    "self"
-                ],
-                "test_apply_attach_name": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_multi_index": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_apply_dict": [
-                    "self"
-                ],
-                "test_applymap": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_applymap_na_ignore": [
-                    "self",
-                    "float_frame"
-                ],
-                "test_applymap_box_timestamps": [
-                    "self"
-                ],
-                "test_applymap_box": [
-                    "self"
-                ],
-                "test_frame_apply_dont_convert_datetime64": [
-                    "self"
-                ],
-                "test_apply_non_numpy_dtype": [
-                    "self"
-                ],
-                "test_apply_dup_names_multi_agg": [
-                    "self"
-                ],
-                "test_apply_nested_result_axis_1": [
-                    "self"
-                ],
-                "test_apply_noreduction_tzaware_object": [
-                    "self"
-                ],
-                "test_apply_function_runs_once": [
-                    "self"
-                ],
-                "test_apply_raw_function_runs_once": [
-                    "self"
-                ],
-                "test_applymap_function_runs_once": [
-                    "self"
-                ],
-                "test_apply_with_byte_string": [
-                    "self"
-                ],
-                "test_apply_category_equalness": [
-                    "self",
-                    "val"
-                ]
-            },
-            "TestInferOutputShape": {
-                "test_infer_row_shape": [
-                    "self"
-                ],
-                "test_with_dictlike_columns": [
-                    "self"
-                ],
-                "test_with_dictlike_columns_with_infer": [
-                    "self"
-                ],
-                "test_with_listlike_columns": [
-                    "self"
-                ],
-                "test_infer_output_shape_columns": [
-                    "self"
-                ],
-                "test_infer_output_shape_listlike_columns": [
-                    "self"
-                ],
-                "test_consistent_coerce_for_shapes": [
-                    "self"
-                ],
-                "test_consistent_names": [
-                    "self",
-                    "int_frame_const_col"
-                ],
-                "test_result_type": [
-                    "self",
-                    "int_frame_const_col"
-                ],
-                "test_result_type_error": [
-                    "self",
-                    "result_type",
-                    "int_frame_const_col"
-                ],
-                "test_consistency_for_boxed": [
-                    "self",
-                    "box",
-                    "int_frame_const_col"
-                ]
-            },
-            "TestDataFrameAggregate": {
-                "test_agg_transform": [
-                    "self",
-                    "axis",
-                    "float_frame"
-                ],
-                "test_transform_and_agg_err": [
-                    "self",
-                    "axis",
-                    "float_frame"
-                ],
-                "test_demo": [
-                    "self"
-                ],
-                "test_agg_with_name_as_column_name": [
-                    "self"
-                ],
-                "test_agg_multiple_mixed_no_warning": [
-                    "self"
-                ],
-                "test_agg_dict_nested_renaming_depr": [
-                    "self"
-                ],
-                "test_agg_reduce": [
-                    "self",
-                    "axis",
-                    "float_frame"
-                ],
-                "test_nuiscance_columns": [
-                    "self"
-                ],
-                "test_non_callable_aggregates": [
-                    "self"
-                ],
-                "test_agg_listlike_result": [
-                    "self"
-                ],
-                "test_agg_cython_table": [
-                    "self",
-                    "df",
-                    "func",
-                    "expected",
-                    "axis"
-                ],
-                "test_agg_cython_table_transform": [
-                    "self",
-                    "df",
-                    "func",
-                    "expected",
-                    "axis"
-                ],
-                "test_agg_cython_table_raises": [
-                    "self",
-                    "df",
-                    "func",
-                    "expected",
-                    "axis"
-                ],
-                "test_agg_args_kwargs": [
-                    "self",
-                    "axis",
-                    "args",
-                    "kwargs"
-                ],
-                "test_frequency_is_original": [
-                    "self",
-                    "num_cols"
-                ],
-                "test_apply_datetime_tz_issue": [
-                    "self"
-                ],
-                "test_consistency_of_aggregates_of_columns_with_missing_values": [
-                    "self",
-                    "df",
-                    "method"
-                ],
-                "test_apply_dtype": [
-                    "self",
-                    "col"
                 ]
             }
         },
@@ -74006,24 +71530,6 @@
                 ]
             }
         },
-        "pandas.tests.indexing.multiindex.test_ix": {
-            "TestMultiIndex": {
-                "test_frame_setitem_loc": [
-                    "self",
-                    "multiindex_dataframe_random_data"
-                ],
-                "test_loc_general": [
-                    "self"
-                ],
-                "test_loc_multiindex_missing_label_raises": [
-                    "self"
-                ],
-                "test_series_loc_getitem_fancy": [
-                    "self",
-                    "multiindex_year_month_day_dataframe_random_data"
-                ]
-            }
-        },
         "pandas.tests.indexing.multiindex.test_partial": {
             "test_loc_getitem_partial_both_axis": [],
             "TestMultiIndexPartial": {
@@ -74195,16 +71701,6 @@
             ]
         },
         "pandas.tests.indexing.multiindex": {},
-        "pandas.tests.indexing.multiindex.test_insert": {
-            "TestMultiIndexInsertion": {
-                "test_setitem_mixed_depth": [
-                    "self"
-                ],
-                "test_dataframe_insert_column_all_na": [
-                    "self"
-                ]
-            }
-        },
         "pandas.tests.indexing.multiindex.test_chaining_and_caching": {
             "test_detect_chained_assignment": [],
             "test_cache_updating": [],
@@ -75875,20 +73371,6 @@
             "test_infer_dtype_from_scalar_zerodim_datetimelike": [
                 "cls"
             ]
-        },
-        "pandas.tests.dtypes.cast.test_upcast": {
-            "test_upcast_error": [
-                "result"
-            ],
-            "test_upcast_scalar_other": [
-                "arr",
-                "other"
-            ],
-            "test_upcast": [],
-            "test_upcast_datetime": []
-        },
-        "pandas.tests.dtypes.cast.test_dict_compat": {
-            "test_dict_compat": []
         },
         "pandas.tests.dtypes.cast.test_downcast": {
             "test_downcast": [
@@ -81327,289 +78809,6 @@
                 ]
             }
         },
-        "pandas.tests.generic.methods": {},
-        "pandas.tests.generic.methods.test_first_valid_index": {
-            "TestFirstValidIndex": {
-                "test_first_valid_index_single_nan": [
-                    "self",
-                    "frame_or_series"
-                ],
-                "test_first_valid_index_empty": [
-                    "self",
-                    "empty"
-                ],
-                "test_first_last_valid_frame": [
-                    "self",
-                    "data",
-                    "idx",
-                    "expected_first",
-                    "expected_last"
-                ],
-                "test_first_last_valid": [
-                    "self",
-                    "index_func"
-                ],
-                "test_first_last_valid_all_nan": [
-                    "self",
-                    "index_func"
-                ],
-                "test_first_last_valid_preserves_freq": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.generic.methods.test_reorder_levels": {
-            "TestReorderLevels": {
-                "test_reorder_levels": [
-                    "self",
-                    "frame_or_series"
-                ],
-                "test_reorder_levels_swaplevel_equivalence": [
-                    "self",
-                    "multiindex_year_month_day_dataframe_random_data"
-                ]
-            }
-        },
-        "pandas.tests.generic.methods.test_sample": {
-            "TestSample": {
-                "obj": [
-                    "self",
-                    "request"
-                ],
-                "test_sample": [
-                    "self",
-                    "test",
-                    "obj"
-                ],
-                "test_sample_lengths": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_invalid_random_state": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_wont_accept_n_and_frac": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_requires_positive_n_frac": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_requires_integer_n": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_invalid_weight_lengths": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_negative_weights": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_inf_weights": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_zero_weights": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_missing_weights": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_none_weights": [
-                    "self",
-                    "obj"
-                ],
-                "test_sample_random_state": [
-                    "self",
-                    "func_str",
-                    "arg",
-                    "frame_or_series"
-                ],
-                "test_sample_upsampling_without_replacement": [
-                    "self",
-                    "frame_or_series"
-                ]
-            },
-            "TestSampleDataFrame": {
-                "test_sample": [
-                    "self"
-                ],
-                "test_sample_axis1": [
-                    "self"
-                ],
-                "test_sample_aligns_weights_with_frame": [
-                    "self"
-                ],
-                "test_sample_is_copy": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.generic.methods.test_pipe": {
-            "TestPipe": {
-                "test_pipe": [
-                    "self",
-                    "frame_or_series"
-                ],
-                "test_pipe_tuple": [
-                    "self",
-                    "frame_or_series"
-                ],
-                "test_pipe_tuple_error": [
-                    "self",
-                    "frame_or_series"
-                ]
-            }
-        },
-        "pandas.tests.generic.methods.test_set_axis": {
-            "SharedSetAxisTests": {
-                "obj": [
-                    "self"
-                ],
-                "test_set_axis": [
-                    "self",
-                    "obj"
-                ],
-                "test_set_axis_inplace_axis": [
-                    "self",
-                    "axis",
-                    "obj"
-                ],
-                "test_set_axis_unnamed_kwarg_warns": [
-                    "self",
-                    "obj"
-                ],
-                "test_set_axis_invalid_axis_name": [
-                    "self",
-                    "axis",
-                    "obj"
-                ],
-                "test_set_axis_setattr_index_not_collection": [
-                    "self",
-                    "obj"
-                ],
-                "test_set_axis_setattr_index_wrong_length": [
-                    "self",
-                    "obj"
-                ]
-            },
-            "TestDataFrameSetAxis": {
-                "obj": [
-                    "self"
-                ]
-            },
-            "TestSeriesSetAxis": {
-                "obj": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.generic.methods.test_dot": {
-            "DotSharedTests": {
-                "obj": [
-                    "self"
-                ],
-                "other": [
-                    "self"
-                ],
-                "expected": [
-                    "self",
-                    "obj",
-                    "other"
-                ],
-                "reduced_dim_assert": [
-                    "cls",
-                    "result",
-                    "expected"
-                ],
-                "test_dot_equiv_values_dot": [
-                    "self",
-                    "obj",
-                    "other",
-                    "expected"
-                ],
-                "test_dot_2d_ndarray": [
-                    "self",
-                    "obj",
-                    "other",
-                    "expected"
-                ],
-                "test_dot_1d_ndarray": [
-                    "self",
-                    "obj",
-                    "expected"
-                ],
-                "test_dot_series": [
-                    "self",
-                    "obj",
-                    "other",
-                    "expected"
-                ],
-                "test_dot_series_alignment": [
-                    "self",
-                    "obj",
-                    "other",
-                    "expected"
-                ],
-                "test_dot_aligns": [
-                    "self",
-                    "obj",
-                    "other",
-                    "expected"
-                ],
-                "test_dot_shape_mismatch": [
-                    "self",
-                    "obj"
-                ],
-                "test_dot_misaligned": [
-                    "self",
-                    "obj",
-                    "other"
-                ]
-            },
-            "TestSeriesDot": {
-                "obj": [
-                    "self"
-                ],
-                "other": [
-                    "self"
-                ],
-                "expected": [
-                    "self",
-                    "obj",
-                    "other"
-                ],
-                "reduced_dim_assert": [
-                    "cls",
-                    "result",
-                    "expected"
-                ]
-            },
-            "TestDataFrameDot": {
-                "obj": [
-                    "self"
-                ],
-                "other": [
-                    "self"
-                ],
-                "expected": [
-                    "self",
-                    "obj",
-                    "other"
-                ],
-                "reduced_dim_assert": [
-                    "cls",
-                    "result",
-                    "expected"
-                ]
-            }
-        },
         "pandas.tests.tslibs.test_parse_iso8601": {
             "test_parsers_iso8601": [
                 "date_str",
@@ -81953,21 +79152,6 @@
                 ]
             }
         },
-        "pandas.tests.series.test_duplicates": {
-            "test_nunique": [],
-            "test_numpy_unique": [
-                "datetime_series"
-            ],
-            "test_unique": [],
-            "test_unique_data_ownership": [],
-            "test_is_unique": [
-                "data",
-                "expected"
-            ],
-            "test_is_unique_class_ne": [
-                "capsys"
-            ]
-        },
         "pandas.tests.series.test_reductions": {
             "test_reductions_td64_with_nat": [],
             "test_td64_sum_empty": [
@@ -82102,33 +79286,6 @@
                     "self",
                     "float_ea_dtype",
                     "op"
-                ]
-            }
-        },
-        "pandas.tests.series.test_dtypes": {
-            "TestSeriesDtypes": {
-                "test_dtype": [
-                    "self",
-                    "datetime_series"
-                ],
-                "test_astype_from_categorical": [
-                    "self"
-                ],
-                "test_astype_categorical_to_other": [
-                    "self"
-                ],
-                "test_astype_categorical_invalid_conversions": [
-                    "self"
-                ],
-                "test_categorical_astype_to_int": [
-                    "self",
-                    "any_int_or_nullable_int_dtype"
-                ],
-                "test_series_to_categorical": [
-                    "self"
-                ],
-                "test_reindex_astype_order_consistency": [
-                    "self"
                 ]
             }
         },
@@ -85287,15 +82444,6 @@
             ],
             "test_get_none": []
         },
-        "pandas.tests.series.indexing.test_numeric": {
-            "test_slice_float64": [],
-            "test_getitem_negative_out_of_bounds": [],
-            "test_getitem_setitem_slice_bug": [],
-            "test_getitem_setitem_slice_integers": [],
-            "test_slice_float_get_set": [
-                "datetime_series"
-            ]
-        },
         "pandas.tests.series.indexing.test_where": {
             "test_where_unsafe_int": [
                 "sint_dtype"
@@ -85879,225 +83027,6 @@
                     "self"
                 ]
             }
-        },
-        "pandas.tests.series.apply.test_series_apply": {
-            "TestSeriesApply": {
-                "test_series_map_box_timedelta": [
-                    "self"
-                ],
-                "test_apply": [
-                    "self",
-                    "datetime_series"
-                ],
-                "test_apply_same_length_inference_bug": [
-                    "self"
-                ],
-                "test_apply_dont_convert_dtype": [
-                    "self"
-                ],
-                "test_with_string_args": [
-                    "self",
-                    "datetime_series"
-                ],
-                "test_apply_args": [
-                    "self"
-                ],
-                "test_series_map_box_timestamps": [
-                    "self"
-                ],
-                "test_apply_box": [
-                    "self"
-                ],
-                "test_apply_datetimetz": [
-                    "self"
-                ],
-                "test_apply_dict_depr": [
-                    "self"
-                ],
-                "test_apply_categorical": [
-                    "self"
-                ],
-                "test_apply_categorical_with_nan_values": [
-                    "self",
-                    "series"
-                ],
-                "test_apply_empty_integer_series_with_datetime_index": [
-                    "self"
-                ]
-            },
-            "TestSeriesAggregate": {
-                "test_transform": [
-                    "self",
-                    "string_series"
-                ],
-                "test_transform_and_agg_error": [
-                    "self",
-                    "string_series"
-                ],
-                "test_demo": [
-                    "self"
-                ],
-                "test_multiple_aggregators_with_dict_api": [
-                    "self"
-                ],
-                "test_agg_apply_evaluate_lambdas_the_same": [
-                    "self",
-                    "string_series"
-                ],
-                "test_with_nested_series": [
-                    "self",
-                    "datetime_series"
-                ],
-                "test_replicate_describe": [
-                    "self",
-                    "string_series"
-                ],
-                "test_reduce": [
-                    "self",
-                    "string_series"
-                ],
-                "test_non_callable_aggregates": [
-                    "self"
-                ],
-                "test_agg_cython_table": [
-                    "self",
-                    "series",
-                    "func",
-                    "expected"
-                ],
-                "test_agg_cython_table_transform": [
-                    "self",
-                    "series",
-                    "func",
-                    "expected"
-                ],
-                "test_agg_cython_table_raises": [
-                    "self",
-                    "series",
-                    "func",
-                    "expected"
-                ],
-                "test_series_apply_no_suffix_index": [
-                    "self"
-                ]
-            },
-            "TestSeriesMap": {
-                "test_map": [
-                    "self",
-                    "datetime_series"
-                ],
-                "test_map_empty": [
-                    "self",
-                    "index"
-                ],
-                "test_map_compat": [
-                    "self"
-                ],
-                "test_map_int": [
-                    "self"
-                ],
-                "test_map_type_inference": [
-                    "self"
-                ],
-                "test_map_decimal": [
-                    "self",
-                    "string_series"
-                ],
-                "test_map_na_exclusion": [
-                    "self"
-                ],
-                "test_map_dict_with_tuple_keys": [
-                    "self"
-                ],
-                "test_map_counter": [
-                    "self"
-                ],
-                "test_map_defaultdict": [
-                    "self"
-                ],
-                "test_map_dict_na_key": [
-                    "self"
-                ],
-                "test_map_dict_subclass_with_missing": [
-                    "self"
-                ],
-                "test_map_dict_subclass_without_missing": [
-                    "self"
-                ],
-                "test_map_abc_mapping": [
-                    "self",
-                    "non_dict_mapping_subclass"
-                ],
-                "test_map_abc_mapping_with_missing": [
-                    "self",
-                    "non_dict_mapping_subclass"
-                ],
-                "test_map_box": [
-                    "self"
-                ],
-                "test_map_categorical": [
-                    "self"
-                ],
-                "test_map_datetimetz": [
-                    "self"
-                ],
-                "test_map_missing_mixed": [
-                    "self",
-                    "vals",
-                    "mapping",
-                    "exp"
-                ],
-                "test_apply_series_on_date_time_index_aware_series": [
-                    "self",
-                    "dti",
-                    "exp"
-                ],
-                "test_apply_scaler_on_date_time_index_aware_series": [
-                    "self"
-                ],
-                "test_map_float_to_string_precision": [
-                    "self"
-                ],
-                "test_map_with_invalid_na_action_raises": [
-                    "self"
-                ],
-                "test_apply_to_timedelta": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.series.apply.test_apply_relabeling": {
-            "TestNamedAggregation": {
-                "test_relabel_no_duplicated_method": [
-                    "self"
-                ],
-                "test_relabel_duplicated_method": [
-                    "self"
-                ]
-            }
-        },
-        "pandas.tests.series.apply": {},
-        "pandas.tests.series.apply.test_series_transform": {
-            "test_transform_groupby_kernel": [
-                "string_series",
-                "op"
-            ],
-            "test_transform_listlike": [
-                "string_series",
-                "ops",
-                "names"
-            ],
-            "test_transform_dictlike": [
-                "string_series",
-                "box"
-            ],
-            "test_transform_dictlike_mixed": [],
-            "test_transform_wont_agg": [
-                "string_series"
-            ],
-            "test_transform_none_to_type": [],
-            "test_transform_axis_1_raises": [],
-            "test_transform_nested_renamer": []
         },
         "pandas.tests.reductions.test_reductions": {
             "get_objs": [],
